@@ -1,0 +1,324 @@
+================================
+OLD - IGNORE!!  SEE SPREADSHEET.
+================================
+
+This documents which Java/C++ WPILIB routines have been 
+duplicated in labview, which ones are not needed (for example because all that
+is needed is a cluster unpack function), and what isn't done....yet...
+(The excel file superceded this...)
+
+--------
+CONTROLLER
+--------
+RAMSETE
+	x| new
+	x| new(b, zeta)
+	x| calculate
+	x| calculate_trajectory
+	x| AtReference
+	x| SetEnabled
+	x| SetTolerance
+	x| sinc
+
+--------
+GEOMETRY
+--------
+POSE
+	 | pose2d new( ) 
+	x| pose2d new( translation2d, rotation2d )
+	x| pose2d new( dbl x, dbl y, rotation2d )
+	x| pose2d plus( transform2d other )
+	x| transform2d minus( pose2d other )
+	x| translation2d getTranslation()   |can also use cluster unpack
+	 | rotation2d getRotation()    |use cluster unpack
+	x| pose2d transformby( transform2d other )
+	x| pose2d relativeto( pose2d other )
+	x| pose2d exp( twist2d twist )
+	x| twist2d log( pose2d end )
+
+ROTATION
+	 | rotation2d new()
+	x| rotation2d new( dbl value )
+	x| rotation2d new( dbl x, dbl y )
+	 | rotation2d fromDegrees( dbl degrees )
+	x| rotation2d plus( rotation2d other )
+	x| rotation2d minus( rotation2d other )
+	x| rotation2d unaryminus( )
+	x| rotation2d times( dbl scalar )
+	x| rotation2d rotateby( rotation2d other )
+	 | double getRadians()  |use cluster unpack
+	 | double getDegrees()
+	 | double getCos()  |use cluster unpack
+	 | double getSin()  |use cluster unpack
+	 | double getTan()  |use cluster unpack
+
+TRANSFORM
+	x| transform2d new( pose2d, pose2d )
+	x| transform2d new( translation2d, rotation2d )
+	 | transform2d new( )
+	x| transform2d times( dbl scalar )
+	 | translation2d getTranslation()    |use cluster unpack
+	 | rotation2d getRotation()    |use cluster unpack
+	
+TRANSLATION
+	 | translation2d new()
+	x| translation2d new( dbl x, dbl y )
+	x| dbl getDistance( translation2d other )
+	 | dbl getX() 
+	 | dbl getY()
+	 | dbl getNorm()
+	x| translation2d rotateBy( rotation2d other )
+	x| translation2d plus( translation2d other )
+	x| translation2d minus( translation2d other )
+	 | translation2d unaryminus( )
+	x| translation2d times( dbl scalar )
+	 | translation2d div( dbl scalar )
+	
+TWIST
+	x| twist new( x, y, theta )
+
+--------
+KINEMATICS
+--------
+CHASSIS SPEEDS
+	 | chassisspeeds new ()
+	x| chassisspeeds new ( dbl xvel, dbl yvel, dbl angvel )
+	 | chassisspeeds fromFieldRelativeSpeeds( dbl x, dbl y, dbl angvel, rotation2d robotangle )
+	
+DIFFERENTIAL DRIVE KINEMATICS
+	x| diffDriveKine new( dbl trackWidth )
+	x| chassisSpeeds toChassisSpeeds( diffDrWheelSpeeds )
+	x| diffDriveWheelSpeed toWheelSpeeds( chassisSpeeds )
+
+DIFFERENTIAL DRIVE ODOMETRY
+	 | diffDrOdom new( rotation gyro, pose initial )
+	 | diffDrOdom new( rotation gyro )
+	 | void resetPosition( pose2d, rotation2d )  not needed
+	 | pose2d getPoseMeters()   use cluster unpack
+	x| pose2d update( rotation2d gyro, dbl leftdist, dbl right dist )
+
+DIFFERENTIAL DRIVE WHEEL SPEEDS
+	 | diffDrWheelSpeeds new()
+	 | diffDrWheelSpeeds new( dbl leftVel, dbl rightVel )
+	x| void normalize( dbl maxVel )
+
+MECANUM DRIVE KINEMATICS
+	nothing done
+
+MECANUM DRIVE MOTOR VOLTAGE
+	nothing done
+
+MECANUM DRIVE ODOMETRY
+	nothing done
+
+MECANUM DRIVE WHEEL SPEEDS
+	nothing done
+
+SWERVE DRIVE KINEMATICS
+	nothing done
+
+SWERVE DRIVE ODOMETRY
+	nothing done
+
+SWERVE DRIVE MODULE STATE
+	nothing done
+
+--------
+SPLINE
+--------
+CUBIC HERMITE SPLINE
+	x| public CubicHermiteSpline(double[] xInitialControlVector, 
+				double[] xFinalControlVector, 
+				double[] yInitialControlVector, 
+				double[] yFinalControlVector)
+	 | protected SimpleMatrix getCoefficients()	|not needed, use cluster unpack
+	x| private SimpleMatrix makeHermiteBasis()
+	x| private SimpleMatrix getControlVectorFromArrays( double[] initialVector, 
+							double[] finalVector) 
+
+POSE WITH CURVATURE
+  	x| public PoseWithCurvature(Pose2d poseMeters, double curvatureRadPerMeter)
+	 | public PoseWithCurvature()
+	 | public Pose2d poseMeters  |not needed, use cluster unpack
+  	 | public double curvatureRadPerMeter.. |not needed, use cluster unpack
+
+QUINTIC HERMITE SPLINE
+	x| public QuinticHermiteSpline(double[] xInitialControlVector, 
+				double[] xFinalControlVector,
+				double[] yInitialControlVector, 
+				double[] yFinalControlVector)
+	 | protected SimpleMatrix getCoefficients()	|not needed, use cluster unpack
+	x| private SimpleMatrix makeHermiteBasis()
+	x| private SimpleMatrix getControlVectorFromArrays(double[] initialVector, 
+				double[] finalVector)
+
+SPLINE (Abstract class)
+	 | Spline(int degree)
+  	x| public PoseWithCurvature getPoint(double t)
+	 | public static class ControlVector
+	 | public ControlVector(double[] x, double[] y)
+
+SPLINE HELPER
+	x| public static Spline.ControlVector[] getCubicControlVectorsFromWaypoints(
+				Pose2d start, 
+				Translation2d[] interiorWaypoints, 
+				Pose2d end )
+	x| public static List<Spline.ControlVector> getQuinticControlVectorsFromWaypoints(
+				List<Pose2d> waypoints )
+	x| public static CubicHermiteSpline[] getCubicSplinesFromControlVectors(
+				Spline.ControlVector start, 
+				Translation2d[] waypoints, 
+				Spline.ControlVector end)
+	x| public static QuinticHermiteSpline[] getQuinticSplinesFromControlVectors(
+				Spline.ControlVector[] controlVectors)
+	x| private static void thomasAlgorithm(double[] a, double[] b, double[] c, 
+					double[] d, double[] solutionVector)
+	x| private static Spline.ControlVector getCubicControlVector(double scalar, 
+					Pose2d point)
+	x| private static Spline.ControlVector getQuinticControlVector(double scalar, 
+					Pose2d point)
+
+SPLINE PARAMETERIZER
+	x| public static List<PoseWithCurvature> parameterize(Spline spline)
+	x| public static List<PoseWithCurvature> parameterize(Spline spline, 
+				double t0, double t1)
+
+--------
+TRAJECTORY
+--------
+TRAJECTORY
+	x| public Trajectory(final List<State> states)
+	 | public Pose2d getInitialPose()
+	 | public double getTotalTimeSeconds()  	|not needed, use unpack
+	 | public List<State> getStates()	|not needed, use unpack
+	x| public State sample(double timeSeconds)
+	x| public Trajectory transformBy(Transform2d transform)
+	 | public Trajectory relativeTo(Pose2d pose)
+	x| private static double lerp(double startValue, double endValue, double t)	
+	x| private static Pose2d lerp(Pose2d startValue, Pose2d endValue, double t)
+
+TRAJECORY (state class)
+	 | public State()
+	x| public State(double timeSeconds, double velocityMetersPerSecond,
+                 double accelerationMetersPerSecondSq, Pose2d poseMeters,
+                 double curvatureRadPerMeter)
+	x| State interpolate(State endValue, double i)
+	
+
+TRAJECTORY CONFIG
+	| public TrajectoryConfig(double maxVelocityMetersPerSecond,
+                          double maxAccelerationMetersPerSecondSq)
+	| public TrajectoryConfig addConstraint(TrajectoryConstraint constraint)
+	| public TrajectoryConfig addConstraints(List<? extends TrajectoryConstraint> constraints)
+	| public TrajectoryConfig setKinematics(DifferentialDriveKinematics kinematics)
+	| public TrajectoryConfig setKinematics(MecanumDriveKinematics kinematics)
+	| public TrajectoryConfig setKinematics(SwerveDriveKinematics kinematics)
+	| public double getStartVelocity()
+	| public TrajectoryConfig setStartVelocity(double startVelocityMetersPerSecond)
+	| public double getEndVelocity()
+	| public TrajectoryConfig setEndVelocity(double endVelocityMetersPerSecond)
+	| public double getMaxVelocity()
+	| public double getMaxAcceleration()
+	| public List<TrajectoryConstraint> getConstraints()
+	| public boolean isReversed()
+	| public TrajectoryConfig setReversed(boolean reversed)
+	
+
+TRAJECTORY GENERATE
+	x| public static Trajectory generateTrajectory(	|uses cubic splines
+		Spline.ControlVector initial,
+      		List<Translation2d> interiorWaypoints,
+      		Spline.ControlVector end,
+      		TrajectoryConfig config )
+	x| public static Trajectory generateTrajectory(	|uses cubic splines
+      		Pose2d start, List<Translation2d> interiorWaypoints, Pose2d end,
+      		TrajectoryConfig config )
+	x| public static Trajectory generateTrajectory(	|uses quintic splines
+      		ControlVectorList controlVectors,
+      		TrajectoryConfig config)
+	x| public static Trajectory generateTrajectory(List<Pose2d> waypoints, TrajectoryConfig config)	
+							|uses quintic splints
+	x| public static List<PoseWithCurvature> splinePointsFromSplines(Spline[] splines)
+
+TRAJECTORY GENERATE (Control Vector)
+	| public ControlVectorList(int initialCapacity)
+	| public ControlVectorList()
+	| public ControlVectorList(Collection<? extends Spline.ControlVector> collection)
+	
+
+TRAJECTORY PARAMETERIZE
+	x| public static Trajectory timeParameterizeTrajectory(
+      		List<PoseWithCurvature> points.
+      		List<TrajectoryConstraint> constraints,
+      		double startVelocityMetersPerSecond,
+      		double endVelocityMetersPerSecond,
+      		double maxVelocityMetersPerSecond,
+      		double maxAccelerationMetersPerSecondSq,
+      		boolean reversed )
+	x| private static void enforceAccelerationLimits(boolean reverse,
+                                                List<TrajectoryConstraint> constraints,
+                                                ConstrainedState state)
+
+TRAJECTORY PARAMETERIZE CONSTRAINEDSTATE
+	x| ConstrainedState(PoseWithCurvature pose, double distanceMeters,
+                     double maxVelocityMetersPerSecond,
+                     double minAccelerationMetersPerSecondSq,
+                     double maxAccelerationMetersPerSecondSq)
+	
+	| ConstrainedState()
+
+TRAJECTORY UTIL
+	| public static Trajectory fromPathweaverJson(Path path)
+	| public static void toPathweaverJson(Trajectory trajectory, Path path)
+	| public static Trajectory deserializeTrajectory(String json)
+	| public static String serializeTrajectory(Trajectory trajectory)
+
+--------
+TRAJECTORY CONSTRAINT
+--------
+CENTRIPETAL ACCELERATION CONSTRAINT
+	x |
+
+DIFF DRIVE KINEMATIC CONSTRAING
+	x |
+
+DIFF DRIVE VOLTAGE CONSTRAINT
+	not done
+
+MECANUM DRIVE KINEMATICS CONSTRAINT
+
+SWERVE DRIVE KINEMATICS CONSTRAINT
+
+TRAJECTORY CONSTRAINT
+	interface class
+	
+--------
+TRAJECTORY UTILITY
+--------
+THESE ROUTINES ARE SPECIFIC TO LABVIEW.  THEY DO NOT HAVE A
+JAVA / C++ WPILIB EQUIVALENT
+
+--------
+CONVERSIONS
+--------
+THESE ROUTINES ARE SPECIFIC TO LABVIEW.  THEY DO NOT HAVE A
+JAVA / C++ WPILIB EQUIVALENT
+
+--------
+PATHFINDER UTIL
+--------
+THESE ROUTINES ARE SPECIFIC TO LABVIEW.  THEY DO NOT HAVE A
+JAVA / C++ WPILIB EQUIVALENT
+
+
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	

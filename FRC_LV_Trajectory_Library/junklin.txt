@@ -1,0 +1,14 @@
+TRAPEZOID_PROFILE.ctl
+TRAPEZOID_PROFILE_CONSTRAINT.ctl
+TRAPEZOID_PROFILE_STATE.ctl
+TrapProfConstraint_New.vi
+TrapProfile_Calculate.vi
+TrapProfile_Direct.vi
+TrapProfile_IsFinished.vi
+TrapProfile_New.vi
+TrapProfile_New_DefInitial.vi
+TrapProfile_ShouldFlipAcceleration.vi
+TrapProfile_TimeLeftUntil.vi
+TrapProfile_TotalTime.vi
+TrapProfState_Equals.vi
+TrapProfState_New.vi
