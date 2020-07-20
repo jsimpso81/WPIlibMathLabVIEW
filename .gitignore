@@ -17,4 +17,6 @@
 .cache/
 
 # ignore builds
-builds/*
+**/builds/**
+**/bin/**
+
