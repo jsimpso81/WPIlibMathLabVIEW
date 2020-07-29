@@ -23,8 +23,6 @@
 		<Item Name="Modify Tank.vi" Type="VI" URL="../VIs/Modify Tank.vi"/>
 	</Item>
 	<Item Name="Typedef" Type="Folder">
-		<Item Name="_DELETE_ME_Wheel_Ctrl_Path.ctl" Type="VI" URL="../VIs/_DELETE_ME_Wheel_Ctrl_Path.ctl"/>
-		<Item Name="_DELETE_ME_Wheel_Ctrl_Path_Element.ctl" Type="VI" URL="../VIs/_DELETE_ME_Wheel_Ctrl_Path_Element.ctl"/>
 		<Item Name="Segment.ctl" Type="VI" URL="../VIs/Segment.ctl"/>
 		<Item Name="Waypoint.ctl" Type="VI" URL="../VIs/Waypoint.ctl"/>
 	</Item>

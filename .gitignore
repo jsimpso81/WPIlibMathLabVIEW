@@ -2,7 +2,7 @@
 *.lvlibp
 *.llb
 
-# Shared objects (inc. Windows DLLs)
+# Shared objects (inc. Windows DLLs, Linux shared object libraries)
 # -- *.dll
 # -- *.so
 # -- *.so.*
