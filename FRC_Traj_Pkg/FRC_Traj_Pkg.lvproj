@@ -54,7 +54,6 @@
 				<Item Name="FPGA_SystemFRC FPGA Ref.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemFRC FPGA Ref.ctl"/>
 				<Item Name="FPGA_SystemGet.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemGet.vi"/>
 				<Item Name="FPGA_SystemStart Async Agent.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemStart Async Agent.vi"/>
-				<Item Name="FPGA_UtilitiesRead LocalTime.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/Utilities/FPGA_UtilitiesRead LocalTime.vi"/>
 				<Item Name="GetNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/GetNamedSemaphorePrefix.vi"/>
 				<Item Name="NetComm_SendError.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_SendError.vi"/>
 				<Item Name="NetComm_SendMessage.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_SendMessage.vi"/>
@@ -105,7 +104,7 @@
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">50</Property>
+				<Property Name="Bld_version.build" Type="Int">53</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -127,7 +126,7 @@
 				<Property Name="Destination[4].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[4].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">5</Property>
-				<Property Name="Source[0].itemID" Type="Str">{ACE346B4-AEB5-4872-ABFB-AD35E10C98CC}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{FA8221F2-04C1-4033-A50E-101B162FBA9A}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">2</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib</Property>
@@ -164,40 +163,34 @@
 				<Property Name="Source[17].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[17].type" Type="Str">VI</Property>
 				<Property Name="Source[18].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[18].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Typedef/_DELETE_ME_Wheel_Ctrl_Path.ctl</Property>
+				<Property Name="Source[18].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Typedef/Segment.ctl</Property>
+				<Property Name="Source[18].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[18].type" Type="Str">VI</Property>
 				<Property Name="Source[19].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[19].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Typedef/_DELETE_ME_Wheel_Ctrl_Path_Element.ctl</Property>
+				<Property Name="Source[19].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Typedef/Waypoint.ctl</Property>
 				<Property Name="Source[19].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">3</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Pathfinder.lvlib</Property>
 				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">Library</Property>
+				<Property Name="Source[20].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[20].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[20].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[20].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Typedef/Segment.ctl</Property>
-				<Property Name="Source[20].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[20].type" Type="Str">VI</Property>
-				<Property Name="Source[21].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[21].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Typedef/Waypoint.ctl</Property>
-				<Property Name="Source[21].type" Type="Str">VI</Property>
-				<Property Name="Source[22].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[22].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[22].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[22].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Typedef</Property>
-				<Property Name="Source[22].type" Type="Str">Container</Property>
-				<Property Name="Source[23].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[23].Container.applyInclusion" Type="Bool">true</Property>
-				<Property Name="Source[23].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[23].destinationIndex" Type="Int">4</Property>
-				<Property Name="Source[23].itemID" Type="Ref">/My Computer/JAS_Junk</Property>
-				<Property Name="Source[23].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[23].type" Type="Str">Container</Property>
-				<Property Name="Source[24].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[24].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/License.rtf</Property>
-				<Property Name="Source[24].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[25].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[25].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/_Miscelaneous/FRC_LabVIEW_Trajectory_Library_Routines.xlsx</Property>
+				<Property Name="Source[20].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Typedef</Property>
+				<Property Name="Source[20].type" Type="Str">Container</Property>
+				<Property Name="Source[21].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[21].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[21].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[21].destinationIndex" Type="Int">4</Property>
+				<Property Name="Source[21].itemID" Type="Ref">/My Computer/JAS_Junk</Property>
+				<Property Name="Source[21].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[21].type" Type="Str">Container</Property>
+				<Property Name="Source[22].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[22].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/License.rtf</Property>
+				<Property Name="Source[22].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[23].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[23].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/_Miscelaneous/FRC_LabVIEW_Trajectory_Library_Routines.xlsx</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">3</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/LICENSE.txt</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
@@ -225,7 +218,7 @@
 				<Property Name="Source[9].destinationIndex" Type="Int">3</Property>
 				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Public</Property>
 				<Property Name="Source[9].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">26</Property>
+				<Property Name="SourceCount" Type="Int">24</Property>
 			</Item>
 			<Item Name="Book" Type="Source Distribution">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
@@ -249,7 +242,7 @@
 				<Property Name="Bld_previewCacheID" Type="Str">{8D079E02-BFA0-46FB-8CDC-1B67AE60BD8E}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/Book_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">21</Property>
+				<Property Name="Bld_version.build" Type="Int">23</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -260,7 +253,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/Book/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E26A34A9-F6DE-46FE-BE82-8EA82C2EC480}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{FA8221F2-04C1-4033-A50E-101B162FBA9A}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
@@ -288,7 +281,7 @@
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
 				<Property Name="PKG_buildNumber" Type="Int">30</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLib</Property>
-				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
@@ -296,10 +289,10 @@
 				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
 				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[0].Type" Type="Str">Package</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC Trajectory Library (port of WPILIB calls)</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">8</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
@@ -340,7 +333,6 @@
 				<Property Name="PKG_feedName" Type="Str"></Property>
 				<Property Name="PKG_homepage" Type="Str"></Property>
 				<Property Name="PKG_hostname" Type="Str"></Property>
-				<Property Name="PKG_lvrteTracking" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
 				<Property Name="PKG_maintainer" Type="Str">J. A. Simpson &lt;&gt;</Property>
 				<Property Name="PKG_output" Type="Path">../builds/jasjunkfrctrajlib</Property>
 				<Property Name="PKG_output.Type" Type="Str">relativeToProject</Property>
@@ -539,9 +531,9 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/UtilExe</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E685BE58-8AC4-40ED-B368-C46CA560D1D1}</Property>
-				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_LV_Trajectory_Package_UtilExe_log.txt</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/UtilExe_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">19</Property>
+				<Property Name="Bld_version.build" Type="Int">22</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -552,7 +544,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/UtilExe/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E26A34A9-F6DE-46FE-BE82-8EA82C2EC480}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{FA8221F2-04C1-4033-A50E-101B162FBA9A}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
