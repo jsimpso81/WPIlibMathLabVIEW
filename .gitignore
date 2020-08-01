@@ -10,6 +10,7 @@
 
 # Executables
 *.exe
+*.rtexe
 
 # Metadata
 *.aliases
@@ -19,4 +20,8 @@
 # ignore builds
 **/builds/**
 **/bin/**
+
+# ignore ni packages
+*.nipkg
+
 
