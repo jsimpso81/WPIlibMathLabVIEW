@@ -159,6 +159,8 @@ Use the github issues menu to submit information on issues and suggested enhance
 I'll attempt to deal with issues in a reasonable time, but there are no guarantees.
 
 When submitting an issue, please follow these guidelines:
+- Make certain you are using the latest version of the library.  If not, install the latest version and see if the issue still occurs.
+- See if the issue has already been reported.  If so, add any new details to the existing issue.
 - Write a very detailed specific description of the problem.
 - Include any screen shots or other data needed to show the issue.
 - Describe exactly how to reproduce the error.  (Likely, I can't try this on your robot...)
