@@ -8,7 +8,7 @@ A number of trajectory creation and transformation utility
 programs are installed along with the library.  These programs may be of use to FRC teams that use languages other than LabVIEW.
 
 	![Windows Pgm!](images/InstalledProgramMenu.png)
-
+                               
 
 This repository contains the library and a LabVIEW project used to build the library install package.  There is an accompanying repository containing samples, 
 the source of the utility programs, and a number of test programs.  This repository 
