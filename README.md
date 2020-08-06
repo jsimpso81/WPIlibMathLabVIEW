@@ -7,8 +7,8 @@ Originally this library was only a port of the Trajectory creation and execution
 A number of trajectory creation and transformation utility
 programs are installed along with the library.  These programs may be of use to FRC teams that use languages other than LabVIEW.
 
-	![Windows Pgm!](images/InstalledProgramMenu.png)
-	![Windows Pgm!](images/InstalledProgramMenu.PNG)
+  ![Windows Pgm!](images/InstalledProgramMenu.png)
+![Windows Pgm!](images/InstalledProgramMenu.png)
 
 This repository contains the library and a LabVIEW project used to build the library install package.  There is an accompanying repository containing samples, 
 the source of the utility programs, and a number of test programs.  This repository 
@@ -27,7 +27,7 @@ Download the latest install package.  These can be found in the **Releases** sec
 
 Select the *.nipkg* installation file, then double click it, or right click and select install.  Administrative privledges will be needed to perform this installation.  Follow the instructions.  Usually selection of all the default answers is sufficient.  Installation should take 5 minutes or less.
 
-	![sample install!](images/SampleInstall.png)
+![sample install!](images/SampleInstall.png)
 
 Previous versions do not have to be uninstalled prior to installing a new version.  The new version will automatically upgrade the older version.
 
@@ -35,7 +35,7 @@ Previous versions do not have to be uninstalled prior to installing a new versio
 
 To uninstall, open NI Package Manager.  Select the *Installed* tab.  Find and highlight  **JAS_Junk_FRC_TrajLib**.  Then click the *REMOVE* button.  The uninstall should start. It should take 5 minutes or less.
 
-	![sample uninstall!](images/SampleUninstall.png)
+![sample uninstall!](images/SampleUninstall.png)
 
 
 ---
@@ -56,13 +56,13 @@ To uninstall, open NI Package Manager.  Select the *Installed* tab.  Find and hi
 	1. Creating and reviewing the trajectory.  If changes need to be made to back to steps *i*,*ii*,*iii* as needed.
 	1. Write the trajectory to a file.
 
-	Sample screen shot
+    Sample screen shot
 
-	![Create Trajectory Field!](images/Util_create_traj.PNG)
+    ![Create Trajectory Field!](images/Util_create_traj.PNG)
 
-	Sample trajectory file
+    Sample trajectory file
 
-	![Trajectory File Sample!](images/trajectory_sample.PNG)
+    ![Trajectory File Sample!](images/trajectory_sample.PNG)
 
 - **Create_Trajectory_Using_PathfinderDifferential**
 
