@@ -1,6 +1,6 @@
 # FRC_LV_TrajLib
 
-This library is an UNOFFICIAL port of the Java/C++ WPILIB routines that don't already exist in LabVIEW.  The library is used for the First FRC robotic competition.
+This library is an UNOFFICIAL port of the Java/C++ WPILIB routines that don't already exist in LabVIEW.  The library is used for the First FRC robotics competition.
 
 Originally this library was only a port of the Trajectory creation and execution routines.  However, over time, many other of the routines were ported into this library.
 
@@ -22,7 +22,7 @@ There are a number of prerequisites needed before installing this library.
 1. Install the FRC version of LabVIEW.  (If only the utility programs are desired, LabVIEW may not need to be installed.  However this has **NOT** been tested.)
 1. Install the FRC game tools
 
-Download the latest install package.  These can be found in the **Releases** section of the github repository.  Here is a direct link.  https://github.com/jsimpso81/FRC_LV_TrajLib_Util_and_Samp/releases/latest
+Download the latest install package.  These can be found in the **Releases** section of the github repository.  Here is a direct link.  https://github.com/jsimpso81/FRC_LV_TrajLib/releases/latest
 
 Select the *.nipkg* installation file, then double click it, or right click and select install.  Administrative privledges will be needed to perform this installation.  Follow the instructions.  Usually selection of all the default answers is sufficient.  Installation should take 5 minutes or less.
 
@@ -42,7 +42,7 @@ To uninstall, open NI Package Manager.  Select the *Installed* tab.  Find and hi
 The library includes a large collection of subVIs that can be used in robot programs. 
 Menu items for all the subVI's are included as part of the standard LabVIEW WPI Robotics Library menu
 
-![sample VI menu!](images/SampleLabviewMenu.png)
+![sample VI menu!](images/SampleLabViewMenu.png)
 
 Each VI includes help that can be accessed using the standard LabVIEW help toggle (Ctrl H).
 
