@@ -8,7 +8,6 @@ A number of trajectory creation and transformation utility
 programs are installed along with the library.  These programs may be of use to FRC teams that use languages other than LabVIEW.
 
   ![Windows Pgm!](images/InstalledProgramMenu.png)
-![Windows Pgm!](images/InstalledProgramMenu.png)
 
 This repository contains the library and a LabVIEW project used to build the library install package.  There is an accompanying repository containing samples, 
 the source of the utility programs, and a number of test programs.  This repository 
@@ -37,13 +36,72 @@ To uninstall, open NI Package Manager.  Select the *Installed* tab.  Find and hi
 
 ![sample uninstall!](images/SampleUninstall.png)
 
-
 ---
 ## Library Summary
 
+The library includes a large collection of subVIs that can be used in robot programs. 
+Menu items for all the subVI's are included as part of the standard LabVIEW WPI Robotics Library menu
+
+![sample VI menu!](images/SampleLabviewMenu.png)
+
+Each VI includes help that can be accessed using the standard LabVIEW help toggle (Ctrl H).
+
+![sample help!](images/SampleViHelp.png)
+
+Robot trajectories can be created a number of different ways.  The following chart shows some (maybe most) of the different ways of creating a trajectory for robot execution.
+
+![sample traj!](images/TrajFlowChart.png)
+
+Here is a short list of the types of functions included in the library
+
+- Filters
+  - Linear Filter
+  - Median Filter
+- *Slew* Rate Limiter
+- Timer
+- Controllers
+  - PID
+  - Advanced PID
+  - Profiled PID
+  - Ramsete
+  - Simple Motor Feedforward
+  - Arm Feedforward
+  - Elevator Feedforward
+- Geometry
+  - Pose
+  - Rotation
+  - Transform
+  - Translation
+  - Twist
+- Kinematics 
+  - Differential drive (tank/arcade)
+  - Mecanum drive
+  - Swerve drive
+- Odometry 
+  - Differential drive (tank/arcade)
+  - Mecanum drive
+  - Swerve drive
+- Spline (Used by trajectory creation routines) 
+  - Cubic
+  - Quintic
+- Trajectory
+  - Configure, with constraints
+  - Generate
+  - Sample (forward and reverse)
+- Pathfinder Utilities
+  - Convert to trajectory
+- Utilities
+  - Read FPGA time (with rollover protection)
+  - Library use and version information
+  - Read trajectory CSV file
+  - Write and document trajectory CSV file 
+- Units Conversion
+
 
 ---
-## Utility Summary
+## Utility Program Summary
+
+The installed library contains a number of utility programs.
 
 - **Create Trajectory Using Trajectory Library**
 
