@@ -116,9 +116,9 @@
 		<Item Name="TWIST2D.ctl" Type="VI" URL="../TWIST2D.ctl"/>
 		<Item Name="UTIL_PATHFINDER_CONFIG.ctl" Type="VI" URL="../UTIL_PATHFINDER_CONFIG.ctl"/>
 		<Item Name="UTIL_WAYPOINT.ctl" Type="VI" URL="../UTIL_WAYPOINT.ctl"/>
-		<Item Name="WAYPOINTS.ctl" Type="VI" URL="../WAYPOINTS.ctl"/>
+		<Item Name="UTIL_WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../UTIL_WEIGHTED_WAYPOINT.ctl"/>
 		<Item Name="WAYPOINTS_README.txt" Type="Document" URL="../WAYPOINTS_README.txt"/>
-		<Item Name="X_Y_HEADING.ctl" Type="VI" URL="../X_Y_HEADING.ctl"/>
+		<Item Name="WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../WEIGHTED_WAYPOINT.ctl"/>
 	</Item>
 	<Item Name="VI" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
@@ -444,6 +444,7 @@
 			<Item Name="SplineHelper" Type="Folder">
 				<Item Name="SplineHelp_GetCubicCtrlVector.vi" Type="VI" URL="../SplineHelp_GetCubicCtrlVector.vi"/>
 				<Item Name="SplineHelp_GetCubicCtrlVectorsFromWayPts.vi" Type="VI" URL="../SplineHelp_GetCubicCtrlVectorsFromWayPts.vi"/>
+				<Item Name="SplineHelp_GetCubicCtrlVectorsFromWeightedWayPts.vi" Type="VI" URL="../SplineHelp_GetCubicCtrlVectorsFromWeightedWayPts.vi"/>
 				<Item Name="SplineHelp_GetCubicSpline_Calc1.vi" Type="VI" URL="../SplineHelp_GetCubicSpline_Calc1.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
@@ -456,6 +457,7 @@
 				<Item Name="SplineHelp_getCubicSplinesFromControlVectors.vi" Type="VI" URL="../SplineHelp_getCubicSplinesFromControlVectors.vi"/>
 				<Item Name="SplineHelp_GetQuinticCtrlVector.vi" Type="VI" URL="../SplineHelp_GetQuinticCtrlVector.vi"/>
 				<Item Name="SplineHelp_GetQuinticCtrlVectorsFromWayPts.vi" Type="VI" URL="../SplineHelp_GetQuinticCtrlVectorsFromWayPts.vi"/>
+				<Item Name="SplineHelp_GetQuinticCtrlVectorsFromWeightedWayPts.vi" Type="VI" URL="../SplineHelp_GetQuinticCtrlVectorsFromWeightedWayPts.vi"/>
 				<Item Name="SplineHelp_getQuinticSplinesFromControlVectors.vi" Type="VI" URL="../SplineHelp_getQuinticSplinesFromControlVectors.vi"/>
 				<Item Name="SplineHelp_ThomasAlgorithm.vi" Type="VI" URL="../SplineHelp_ThomasAlgorithm.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
