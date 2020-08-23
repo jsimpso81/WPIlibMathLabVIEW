@@ -573,6 +573,7 @@
 			</Item>
 		</Item>
 		<Item Name="Utility" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="Util_Array_PoseWCurv_to_XY.vi" Type="VI" URL="../Util_Array_PoseWCurv_to_XY.vi"/>
 			<Item Name="Util_CalcDist.vi" Type="VI" URL="../Util_CalcDist.vi"/>
 			<Item Name="Util_GetLibraryVersion.vi" Type="VI" URL="../Util_GetLibraryVersion.vi"/>
@@ -595,6 +596,7 @@
 			<Item Name="Util_Waypoint_Eng_To_SI.vi" Type="VI" URL="../Util_Waypoint_Eng_To_SI.vi"/>
 			<Item Name="Util_Waypoint_To_CubicInput.vi" Type="VI" URL="../Util_Waypoint_To_CubicInput.vi"/>
 			<Item Name="Util_Waypoint_To_QuinticInput.vi" Type="VI" URL="../Util_Waypoint_To_QuinticInput.vi"/>
+			<Item Name="Util_WeightedWaypoint_To_WeightedWayPoint.vi" Type="VI" URL="../Util_WeightedWaypoint_To_WeightedWayPoint.vi"/>
 		</Item>
 	</Item>
 	<Item Name="License.rtf" Type="Document" URL="../License.rtf"/>
