@@ -85,7 +85,12 @@
 		<Item Name="MEDIAN_FILTER.ctl" Type="VI" URL="../MEDIAN_FILTER.ctl"/>
 		<Item Name="PARAM_STACK.ctl" Type="VI" URL="../PARAM_STACK.ctl"/>
 		<Item Name="PARAM_STACK_ITEM.ctl" Type="VI" URL="../PARAM_STACK_ITEM.ctl"/>
+		<Item Name="PID_ADV_LIMITS.ctl" Type="VI" URL="../PID_ADV_LIMITS.ctl"/>
+		<Item Name="PID_ADV_TUNING.ctl" Type="VI" URL="../PID_ADV_TUNING.ctl"/>
 		<Item Name="PID_CONTROLLER.ctl" Type="VI" URL="../PID_CONTROLLER.ctl"/>
+		<Item Name="PID_ERROR_TOLERANCE.ctl" Type="VI" URL="../PID_ERROR_TOLERANCE.ctl"/>
+		<Item Name="PID_INPUT_LIMITS.ctl" Type="VI" URL="../PID_INPUT_LIMITS.ctl"/>
+		<Item Name="PID_TUNING.ctl" Type="VI" URL="../PID_TUNING.ctl"/>
 		<Item Name="POSE2D.ctl" Type="VI" URL="../POSE2D.ctl"/>
 		<Item Name="POSEwCURVATURE.ctl" Type="VI" URL="../POSEwCURVATURE.ctl"/>
 		<Item Name="PROFILED_PID_CONTROLLER.ctl" Type="VI" URL="../PROFILED_PID_CONTROLLER.ctl"/>
@@ -199,6 +204,7 @@
 				<Item Name="ElevFF_New_ZeroAccel.vi" Type="VI" URL="../ElevFF_New_ZeroAccel.vi"/>
 			</Item>
 			<Item Name="PIDController" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="PIDController_AdvCalculate_FF_Sp_Pv.vi" Type="VI" URL="../PIDController_AdvCalculate_FF_Sp_Pv.vi"/>
 				<Item Name="PIDController_AdvCalculate_FF_Sp_Pv_Per.vi" Type="VI" URL="../PIDController_AdvCalculate_FF_Sp_Pv_Per.vi"/>
 				<Item Name="PIDController_AdvExecute.vi" Type="VI" URL="../PIDController_AdvExecute.vi"/>
@@ -216,6 +222,11 @@
 				<Item Name="PIDController_GetVelocityError.vi" Type="VI" URL="../PIDController_GetVelocityError.vi"/>
 				<Item Name="PIDController_New.vi" Type="VI" URL="../PIDController_New.vi"/>
 				<Item Name="PIDController_NewPeriod.vi" Type="VI" URL="../PIDController_NewPeriod.vi"/>
+				<Item Name="PIDController_Pack_AdvLimits.vi" Type="VI" URL="../PIDController_Pack_AdvLimits.vi"/>
+				<Item Name="PIDController_Pack_AdvTuning.vi" Type="VI" URL="../PIDController_Pack_AdvTuning.vi"/>
+				<Item Name="PIDController_Pack_ErrorTolerance.vi" Type="VI" URL="../PIDController_Pack_ErrorTolerance.vi"/>
+				<Item Name="PIDController_Pack_InputLimits.vi" Type="VI" URL="../PIDController_Pack_InputLimits.vi"/>
+				<Item Name="PIDController_Pack_Tuning.vi" Type="VI" URL="../PIDController_Pack_Tuning.vi"/>
 				<Item Name="PIDController_Reset.vi" Type="VI" URL="../PIDController_Reset.vi"/>
 				<Item Name="PIDController_SetD.vi" Type="VI" URL="../PIDController_SetD.vi"/>
 				<Item Name="PIDController_SetDerivativeFilter.vi" Type="VI" URL="../PIDController_SetDerivativeFilter.vi"/>
@@ -307,6 +318,7 @@
 				<Item Name="Pose_getRotation.vi" Type="VI" URL="../Pose_getRotation.vi"/>
 				<Item Name="Pose_getTranslation.vi" Type="VI" URL="../Pose_getTranslation.vi"/>
 				<Item Name="Pose_getXY.vi" Type="VI" URL="../Pose_getXY.vi"/>
+				<Item Name="Pose_getXYAngle.vi" Type="VI" URL="../Pose_getXYAngle.vi"/>
 				<Item Name="Pose_Log.vi" Type="VI" URL="../Pose_Log.vi"/>
 				<Item Name="Pose_Minus.vi" Type="VI" URL="../Pose_Minus.vi"/>
 				<Item Name="Pose_New.vi" Type="VI" URL="../Pose_New.vi"/>
@@ -336,6 +348,7 @@
 				<Item Name="Transform_GetRotation.vi" Type="VI" URL="../Transform_GetRotation.vi"/>
 				<Item Name="Transform_GetTranslation.vi" Type="VI" URL="../Transform_GetTranslation.vi"/>
 				<Item Name="Transform_GetXY.vi" Type="VI" URL="../Transform_GetXY.vi"/>
+				<Item Name="Transform_GetXYAngle.vi" Type="VI" URL="../Transform_GetXYAngle.vi"/>
 				<Item Name="Transform_Inverse.vi" Type="VI" URL="../Transform_Inverse.vi"/>
 				<Item Name="Transform_Times.vi" Type="VI" URL="../Transform_Times.vi"/>
 			</Item>
@@ -552,6 +565,7 @@
 			</Item>
 			<Item Name="TrajectoryUtil" Type="Folder">
 				<Item Name="TrajectoryUtil_fromPathWeaverJSON.vi" Type="VI" URL="../TrajectoryUtil_fromPathWeaverJSON.vi"/>
+				<Item Name="TrajectoryUtil_toPathWeaverJSON.vi" Type="VI" URL="../TrajectoryUtil_toPathWeaverJSON.vi"/>
 			</Item>
 			<Item Name="TrapezoidProfile" Type="Folder">
 				<Item Name="TrapProfConstraint_New.vi" Type="VI" URL="../TrapProfConstraint_New.vi"/>
