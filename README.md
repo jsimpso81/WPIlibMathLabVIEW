@@ -64,6 +64,7 @@ Here is a short list of the types of functions included in the library
   - Advanced PID
   - Profiled PID
   - Ramsete
+  - Holonomic Drive
   - Simple Motor Feedforward
   - Arm Feedforward
   - Elevator Feedforward
@@ -112,7 +113,8 @@ The installed library contains a number of utility programs.
 	1. Defining drive system constraints
 	1. Defining the trajectory "waypoints".
 	1. Creating and reviewing the trajectory.  If changes need to be made to back to steps *i*,*ii*,*iii* as needed.
-	1. Write the trajectory to a file.
+	1. Write the trajectory to a file. (CSV or JSON)
+	1. Optionally write trajectory definition configuration.  (Allows future modification without redefining entire trajectory information.)
 
     Sample screen shot
 
@@ -176,4 +178,4 @@ should be written solely by FRC student members, with confirmation from a mentor
 See ![Contributing.md!](Contributing.md) for additional details.
 
 ---
-File last updated: 8/5/2020
+File last updated: 1/26/2021
