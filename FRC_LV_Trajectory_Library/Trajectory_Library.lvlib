@@ -78,6 +78,7 @@
 		<Item Name="CONSTRAINED_STATE.ctl" Type="VI" URL="../CONSTRAINED_STATE.ctl"/>
 		<Item Name="DIFF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../DIFF_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="ELEV_FF.ctl" Type="VI" URL="../ELEV_FF.ctl"/>
+		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../HOLONOMIC_DRV_CTRL.ctl"/>
 		<Item Name="LINEAR_FILTER.ctl" Type="VI" URL="../LINEAR_FILTER.ctl"/>
 		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../MECA_DRIVE_ODOMETRY.ctl"/>
@@ -202,6 +203,13 @@
 				<Item Name="ElevFF_MinAchieveVelocity.vi" Type="VI" URL="../ElevFF_MinAchieveVelocity.vi"/>
 				<Item Name="ElevFF_New.vi" Type="VI" URL="../ElevFF_New.vi"/>
 				<Item Name="ElevFF_New_ZeroAccel.vi" Type="VI" URL="../ElevFF_New_ZeroAccel.vi"/>
+			</Item>
+			<Item Name="HolonomicDriveController" Type="Folder">
+				<Item Name="HolDrvCtrl_AtReference.vi" Type="VI" URL="../HolDrvCtrl_AtReference.vi"/>
+				<Item Name="HolDrvCtrl_Calculate.vi" Type="VI" URL="../HolDrvCtrl_Calculate.vi"/>
+				<Item Name="HolDrvCtrl_Calculate_Trajectory.vi" Type="VI" URL="../HolDrvCtrl_Calculate_Trajectory.vi"/>
+				<Item Name="HolDrvCtrl_SetEnabled.vi" Type="VI" URL="../HolDrvCtrl_SetEnabled.vi"/>
+				<Item Name="HolDrvCtrl_SetTolerance.vi" Type="VI" URL="../HolDrvCtrl_SetTolerance.vi"/>
 			</Item>
 			<Item Name="PIDController" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
@@ -331,6 +339,7 @@
 				<Item Name="Rotation_CreateAngle.vi" Type="VI" URL="../Rotation_CreateAngle.vi"/>
 				<Item Name="Rotation_CreateXY.vi" Type="VI" URL="../Rotation_CreateXY.vi"/>
 				<Item Name="Rotation_Equals.vi" Type="VI" URL="../Rotation_Equals.vi"/>
+				<Item Name="Rotation_GetAngleCosSin.vi" Type="VI" URL="../Rotation_GetAngleCosSin.vi"/>
 				<Item Name="Rotation_GetCos.vi" Type="VI" URL="../Rotation_GetCos.vi"/>
 				<Item Name="Rotation_GetRadians.vi" Type="VI" URL="../Rotation_GetRadians.vi"/>
 				<Item Name="Rotation_GetSin.vi" Type="VI" URL="../Rotation_GetSin.vi"/>
