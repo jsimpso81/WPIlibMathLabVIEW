@@ -11,6 +11,7 @@
 		<Item Name="FRC_LV_Trajectory_Arm_FF.mnu" Type="Document" URL="../FRC_LV_Trajectory_Arm_FF.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Base_WPILIB.mnu" Type="Document" URL="../FRC_LV_Trajectory_Base_WPILIB.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Controller.mnu" Type="Document" URL="../FRC_LV_Trajectory_Controller.mnu"/>
+		<Item Name="FRC_LV_Trajectory_Controller_Holonomic.mnu" Type="Document" URL="../FRC_LV_Trajectory_Controller_Holonomic.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Controller_Ramsete.mnu" Type="Document" URL="../FRC_LV_Trajectory_Controller_Ramsete.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Controller_SimpleMotorFeedForward.mnu" Type="Document" URL="../FRC_LV_Trajectory_Controller_SimpleMotorFeedForward.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Controls.mnu" Type="Document" URL="../FRC_LV_Trajectory_Controls.mnu"/>
@@ -208,6 +209,7 @@
 				<Item Name="HolDrvCtrl_AtReference.vi" Type="VI" URL="../HolDrvCtrl_AtReference.vi"/>
 				<Item Name="HolDrvCtrl_Calculate.vi" Type="VI" URL="../HolDrvCtrl_Calculate.vi"/>
 				<Item Name="HolDrvCtrl_Calculate_Trajectory.vi" Type="VI" URL="../HolDrvCtrl_Calculate_Trajectory.vi"/>
+				<Item Name="HolDrvCtrl_New.vi" Type="VI" URL="../HolDrvCtrl_New.vi"/>
 				<Item Name="HolDrvCtrl_SetEnabled.vi" Type="VI" URL="../HolDrvCtrl_SetEnabled.vi"/>
 				<Item Name="HolDrvCtrl_SetTolerance.vi" Type="VI" URL="../HolDrvCtrl_SetTolerance.vi"/>
 			</Item>
