@@ -460,6 +460,9 @@
 				<Item Name="DCMotor_GetVex775Pro.vi" Type="VI" URL="../DCMotor_GetVex775Pro.vi"/>
 				<Item Name="DCMotor_New.vi" Type="VI" URL="../DCMotor_New.vi"/>
 			</Item>
+			<Item Name="Discretization" Type="Folder">
+				<Item Name="Discretization_DiscretizeAB.vi" Type="VI" URL="../Discretization_DiscretizeAB.vi"/>
+			</Item>
 			<Item Name="LinearSystem" Type="Folder">
 				<Item Name="LinearSystem_CalculateX.vi" Type="VI" URL="../LinearSystem_CalculateX.vi"/>
 				<Item Name="LinearSystem_CalculateY.vi" Type="VI" URL="../LinearSystem_CalculateY.vi"/>
