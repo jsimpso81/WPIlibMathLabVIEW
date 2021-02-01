@@ -476,6 +476,15 @@
 				<Item Name="LinearSystem_GetDElement.vi" Type="VI" URL="../LinearSystem_GetDElement.vi"/>
 				<Item Name="LinearSystem_New.vi" Type="VI" URL="../LinearSystem_New.vi"/>
 			</Item>
+			<Item Name="LinearsystemId" Type="Folder">
+				<Item Name="LinearSystemId_CreateDriveTrainSystem.vi" Type="VI" URL="../LinearSystemId_CreateDriveTrainSystem.vi"/>
+				<Item Name="LinearSystemId_CreateElevatorSystem.vi" Type="VI" URL="../LinearSystemId_CreateElevatorSystem.vi"/>
+				<Item Name="LinearSystemId_CreateFlywheelSystem.vi" Type="VI" URL="../LinearSystemId_CreateFlywheelSystem.vi"/>
+				<Item Name="LinearSystemId_CreateSingleJointedArmSystem.vi" Type="VI" URL="../LinearSystemId_CreateSingleJointedArmSystem.vi"/>
+				<Item Name="LinearSystemId_IdentifyDriveTrainSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyDriveTrainSystem.vi"/>
+				<Item Name="LinearSystemId_IdentifyPositionSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyPositionSystem.vi"/>
+				<Item Name="LinearSystemId_IdentifyVelocitySystem.vi" Type="VI" URL="../LinearSystemId_IdentifyVelocitySystem.vi"/>
+			</Item>
 		</Item>
 		<Item Name="PathfinderUtility" Type="Folder">
 			<Item Name="PathfinderUtil_Continuous_Heading_Difference.vi" Type="VI" URL="../PathfinderUtil_Continuous_Heading_Difference.vi"/>
