@@ -77,10 +77,12 @@
 		<Item Name="ARM_FF.ctl" Type="VI" URL="../ARM_FF.ctl"/>
 		<Item Name="CHASSIS_SPEEDS.ctl" Type="VI" URL="../CHASSIS_SPEEDS.ctl"/>
 		<Item Name="CONSTRAINED_STATE.ctl" Type="VI" URL="../CONSTRAINED_STATE.ctl"/>
+		<Item Name="DCMOTOR.CTL" Type="VI" URL="../DCMOTOR.CTL"/>
 		<Item Name="DIFF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../DIFF_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="ELEV_FF.ctl" Type="VI" URL="../ELEV_FF.ctl"/>
 		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../HOLONOMIC_DRV_CTRL.ctl"/>
 		<Item Name="LINEAR_FILTER.ctl" Type="VI" URL="../LINEAR_FILTER.ctl"/>
+		<Item Name="LINEARSYSTEM.ctl" Type="VI" URL="../LINEARSYSTEM.ctl"/>
 		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../MECA_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="MECA_WHEEL_SPEEDS.ctl" Type="VI" URL="../MECA_WHEEL_SPEEDS.ctl"/>
@@ -442,6 +444,36 @@
 				<Item Name="SwerveOdometry_UpdateX.vi" Type="VI" URL="../SwerveOdometry_UpdateX.vi"/>
 			</Item>
 		</Item>
+		<Item Name="NEW_THINGS_ARRANGE" Type="Folder">
+			<Item Name="DCMotor" Type="Folder">
+				<Item Name="DCMotor_GetAndymark9015.vi" Type="VI" URL="../DCMotor_GetAndymark9015.vi"/>
+				<Item Name="DCMotor_GetAndymarkRs775_125.vi" Type="VI" URL="../DCMotor_GetAndymarkRs775_125.vi"/>
+				<Item Name="DCMotor_GetBag.vi" Type="VI" URL="../DCMotor_GetBag.vi"/>
+				<Item Name="DCMotor_GetBanebotsRs550.vi" Type="VI" URL="../DCMotor_GetBanebotsRs550.vi"/>
+				<Item Name="DCMotor_GetBanebotsRs775.vi" Type="VI" URL="../DCMotor_GetBanebotsRs775.vi"/>
+				<Item Name="DCMotor_GetCIM.vi" Type="VI" URL="../DCMotor_GetCIM.vi"/>
+				<Item Name="DCMotor_GetCurrent.vi" Type="VI" URL="../DCMotor_GetCurrent.vi"/>
+				<Item Name="DCMotor_GetFalcon500.vi" Type="VI" URL="../DCMotor_GetFalcon500.vi"/>
+				<Item Name="DCMotor_GetMiniCIM.vi" Type="VI" URL="../DCMotor_GetMiniCIM.vi"/>
+				<Item Name="DCMotor_GetNEO.vi" Type="VI" URL="../DCMotor_GetNEO.vi"/>
+				<Item Name="DCMotor_GetNEO550.vi" Type="VI" URL="../DCMotor_GetNEO550.vi"/>
+				<Item Name="DCMotor_GetVex775Pro.vi" Type="VI" URL="../DCMotor_GetVex775Pro.vi"/>
+				<Item Name="DCMotor_New.vi" Type="VI" URL="../DCMotor_New.vi"/>
+			</Item>
+			<Item Name="LinearSystem" Type="Folder">
+				<Item Name="LinearSystem_CalculateX.vi" Type="VI" URL="../LinearSystem_CalculateX.vi"/>
+				<Item Name="LinearSystem_CalculateY.vi" Type="VI" URL="../LinearSystem_CalculateY.vi"/>
+				<Item Name="LinearSystem_GetA.vi" Type="VI" URL="../LinearSystem_GetA.vi"/>
+				<Item Name="LinearSystem_GetAElement.vi" Type="VI" URL="../LinearSystem_GetAElement.vi"/>
+				<Item Name="LinearSystem_GetB.vi" Type="VI" URL="../LinearSystem_GetB.vi"/>
+				<Item Name="LinearSystem_GetBElement.vi" Type="VI" URL="../LinearSystem_GetBElement.vi"/>
+				<Item Name="LinearSystem_GetC.vi" Type="VI" URL="../LinearSystem_GetC.vi"/>
+				<Item Name="LinearSystem_GetCElement.vi" Type="VI" URL="../LinearSystem_GetCElement.vi"/>
+				<Item Name="LinearSystem_GetD.vi" Type="VI" URL="../LinearSystem_GetD.vi"/>
+				<Item Name="LinearSystem_GetDElement.vi" Type="VI" URL="../LinearSystem_GetDElement.vi"/>
+				<Item Name="LinearSystem_New.vi" Type="VI" URL="../LinearSystem_New.vi"/>
+			</Item>
+		</Item>
 		<Item Name="PathfinderUtility" Type="Folder">
 			<Item Name="PathfinderUtil_Continuous_Heading_Difference.vi" Type="VI" URL="../PathfinderUtil_Continuous_Heading_Difference.vi"/>
 			<Item Name="PathfinderUtil_OptimizeTrajectoryStates.vi" Type="VI" URL="../PathfinderUtil_OptimizeTrajectoryStates.vi"/>
@@ -596,6 +628,16 @@
 				<Item Name="TrapProfState_Equals.vi" Type="VI" URL="../TrapProfState_Equals.vi"/>
 				<Item Name="TrapProfState_New.vi" Type="VI" URL="../TrapProfState_New.vi"/>
 			</Item>
+		</Item>
+		<Item Name="Units" Type="Folder">
+			<Item Name="Units_DegreesToRadians.vi" Type="VI" URL="../Units_DegreesToRadians.vi"/>
+			<Item Name="Units_FeetToMeters.vi" Type="VI" URL="../Units_FeetToMeters.vi"/>
+			<Item Name="Units_InchesToMeters.vi" Type="VI" URL="../Units_InchesToMeters.vi"/>
+			<Item Name="Units_MetersToFeet.vi" Type="VI" URL="../Units_MetersToFeet.vi"/>
+			<Item Name="Units_MetersToInches.vi" Type="VI" URL="../Units_MetersToInches.vi"/>
+			<Item Name="Units_RadiansPerSecondToRotationsPerMinute.vi" Type="VI" URL="../Units_RadiansPerSecondToRotationsPerMinute.vi"/>
+			<Item Name="Units_RadiansToDegrees.vi" Type="VI" URL="../Units_RadiansToDegrees.vi"/>
+			<Item Name="Units_RotationsPerMinuteToRadiansPerSecond.vi" Type="VI" URL="../Units_RotationsPerMinuteToRadiansPerSecond.vi"/>
 		</Item>
 		<Item Name="Utility" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
