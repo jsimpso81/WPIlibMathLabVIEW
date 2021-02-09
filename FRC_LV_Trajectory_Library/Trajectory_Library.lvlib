@@ -82,6 +82,7 @@
 		<Item Name="ELEV_FF.ctl" Type="VI" URL="../ELEV_FF.ctl"/>
 		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../HOLONOMIC_DRV_CTRL.ctl"/>
 		<Item Name="LINEAR_FILTER.ctl" Type="VI" URL="../LINEAR_FILTER.ctl"/>
+		<Item Name="LINEARQUADRATICREGULATOR.ctl" Type="VI" URL="../LINEARQUADRATICREGULATOR.ctl"/>
 		<Item Name="LINEARSYSTEM.ctl" Type="VI" URL="../LINEARSYSTEM.ctl"/>
 		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../MECA_DRIVE_ODOMETRY.ctl"/>
@@ -444,7 +445,7 @@
 				<Item Name="SwerveOdometry_UpdateX.vi" Type="VI" URL="../SwerveOdometry_UpdateX.vi"/>
 			</Item>
 		</Item>
-		<Item Name="NEW_THINGS_ARRANGE" Type="Folder">
+		<Item Name="NEW_THINGS_DONT_USE" Type="Folder">
 			<Item Name="DCMotor" Type="Folder">
 				<Item Name="DCMotor_GetAndymark9015.vi" Type="VI" URL="../DCMotor_GetAndymark9015.vi"/>
 				<Item Name="DCMotor_GetAndymarkRs775_125.vi" Type="VI" URL="../DCMotor_GetAndymarkRs775_125.vi"/>
@@ -462,6 +463,10 @@
 			</Item>
 			<Item Name="Discretization" Type="Folder">
 				<Item Name="Discretization_DiscretizeAB.vi" Type="VI" URL="../Discretization_DiscretizeAB.vi"/>
+			</Item>
+			<Item Name="LinearQuadraticRegulator" Type="Folder">
+				<Item Name="LinearQuadraticRegulator_New.vi" Type="VI" URL="../LinearQuadraticRegulator_New.vi"/>
+				<Item Name="LinearQuadraticRegulator_New_ELMS.vi" Type="VI" URL="../LinearQuadraticRegulator_New_ELMS.vi"/>
 			</Item>
 			<Item Name="LinearSystem" Type="Folder">
 				<Item Name="LinearSystem_CalculateX.vi" Type="VI" URL="../LinearSystem_CalculateX.vi"/>
@@ -484,6 +489,11 @@
 				<Item Name="LinearSystemId_IdentifyDriveTrainSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyDriveTrainSystem.vi"/>
 				<Item Name="LinearSystemId_IdentifyPositionSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyPositionSystem.vi"/>
 				<Item Name="LinearSystemId_IdentifyVelocitySystem.vi" Type="VI" URL="../LinearSystemId_IdentifyVelocitySystem.vi"/>
+			</Item>
+			<Item Name="StateSpaceUtil" Type="Folder"/>
+			<Item Name="VecBuilder" Type="Folder">
+				<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
+				<Item Name="VecBuilder_2x2Fill.vi" Type="VI" URL="../VecBuilder_2x2Fill.vi"/>
 			</Item>
 		</Item>
 		<Item Name="PathfinderUtility" Type="Folder">
