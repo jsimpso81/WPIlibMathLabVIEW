@@ -13,11 +13,24 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="bin" Type="Folder">
+			<Item Name="FieldInfo" Type="Folder">
+				<Item Name="2018-field.jpg" Type="Document" URL="../UtilExe/bin/FieldInfo/2018-field.jpg"/>
+				<Item Name="2019-field.jpg" Type="Document" URL="../UtilExe/bin/FieldInfo/2019-field.jpg"/>
+				<Item Name="2020-Field.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2020-Field.png"/>
+				<Item Name="2021-barrel.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-barrel.png"/>
+				<Item Name="2021-bounce.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-bounce.png"/>
+				<Item Name="2021-galacticsearcha.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-galacticsearcha.png"/>
+				<Item Name="2021-galacticsearchb.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-galacticsearchb.png"/>
+				<Item Name="2021-slalom.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-slalom.png"/>
+				<Item Name="field_info.ini" Type="Document" URL="../UtilExe/bin/FieldInfo/field_info.ini"/>
+			</Item>
 			<Item Name="Samples" Type="Folder">
 				<Item Name="PathWeaverTestPathOne.wpilib.json" Type="Document" URL="../UtilExe/bin/Samples/PathWeaverTestPathOne.wpilib.json"/>
+				<Item Name="PathWeaverTestPathTwo.wpilib.json" Type="Document" URL="../UtilExe/bin/Samples/PathWeaverTestPathTwo.wpilib.json"/>
 				<Item Name="Sample-JSON-to-Trajectory-Conversion.csv" Type="Document" URL="../UtilExe/bin/Samples/Sample-JSON-to-Trajectory-Conversion.csv"/>
 				<Item Name="Sample-Robot-2-Trajectory-Pathfinder.csv" Type="Document" URL="../UtilExe/bin/Samples/Sample-Robot-2-Trajectory-Pathfinder.csv"/>
 				<Item Name="Sample-Robot-2-Trajectory-TrajLibrary.csv" Type="Document" URL="../UtilExe/bin/Samples/Sample-Robot-2-Trajectory-TrajLibrary.csv"/>
+				<Item Name="Sample-Robot-2-Trajectory-TrajLibrary.xml" Type="Document" URL="../UtilExe/bin/Samples/Sample-Robot-2-Trajectory-TrajLibrary.xml"/>
 			</Item>
 			<Item Name="Convert_PathWeaver_JSON_To_Trajectory_File.aliases" Type="Document" URL="../UtilExe/bin/Convert_PathWeaver_JSON_To_Trajectory_File.aliases"/>
 			<Item Name="Convert_PathWeaver_JSON_To_Trajectory_File.exe" Type="Document" URL="../UtilExe/bin/Convert_PathWeaver_JSON_To_Trajectory_File.exe"/>
@@ -41,7 +54,7 @@
 			<Item Name="The Secret Book of FRC LabVIEW V2.07.pdf" Type="Document" URL="../SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf"/>
 		</Item>
 		<Item Name="_Read_Me.txt" Type="Document" URL="../_Read_Me.txt"/>
-		<Item Name="License.rtf" Type="Document" URL="../License.rtf"/>
+		<Item Name="License.RTF" Type="Document" URL="../License.RTF"/>
 		<Item Name="Pathfinder.lvlib" Type="Library" URL="../../Pathfinder-Lib/Pathfinder.lvlib"/>
 		<Item Name="Trajectory_Library.lvlib" Type="Library" URL="../../FRC_LV_Trajectory_Library/Trajectory_Library.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -229,7 +242,7 @@
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">77</Property>
+				<Property Name="Bld_version.build" Type="Int">83</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -251,7 +264,7 @@
 				<Property Name="Destination[4].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[4].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">5</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FA8221F2-04C1-4033-A50E-101B162FBA9A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E8F7309D-5677-40B6-91E2-FF62D1620A19}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">2</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib</Property>
@@ -315,7 +328,8 @@
 				<Property Name="Source[22].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/License.rtf</Property>
 				<Property Name="Source[22].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[23].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[23].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/_Miscelaneous/FRC_LabVIEW_Trajectory_Library_Routines.xlsx</Property>
+				<Property Name="Source[23].itemID" Type="Ref">/My Computer/License.RTF</Property>
+				<Property Name="Source[23].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">3</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/LICENSE.txt</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
@@ -367,7 +381,7 @@
 				<Property Name="Bld_previewCacheID" Type="Str">{8D079E02-BFA0-46FB-8CDC-1B67AE60BD8E}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/Book_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">33</Property>
+				<Property Name="Bld_version.build" Type="Int">34</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -398,7 +412,7 @@
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
 				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_1.0.4-56_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
-				<Property Name="NIPKG_releaseNotes" Type="Str">AS_Junk FRC Trajectory Library.  This version contains additional routines from the CJava WPILib.  Also the menus have been enhanced.</Property>
+				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  This version contains additional routines from the CJava WPILib.  Also the menus have been enhanced.</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
 				<Property Name="NIPKG_VisibleForRuntimeDeployment" Type="Bool">false</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
@@ -406,7 +420,7 @@
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
 				<Property Name="PKG_buildNumber" Type="Int">57</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLib</Property>
-				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
@@ -467,9 +481,8 @@
 				<Property Name="PKG_displayVersion" Type="Str"></Property>
 				<Property Name="PKG_feedDescription" Type="Str"></Property>
 				<Property Name="PKG_feedName" Type="Str"></Property>
-				<Property Name="PKG_homepage" Type="Str"></Property>
+				<Property Name="PKG_homepage" Type="Str">https://github.com/jsimpso81/FRC_LV_TrajLib</Property>
 				<Property Name="PKG_hostname" Type="Str"></Property>
-				<Property Name="PKG_lvrteTracking" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
 				<Property Name="PKG_maintainer" Type="Str">J. A. Simpson &lt;&gt;</Property>
 				<Property Name="PKG_output" Type="Path">../builds/jasjunkfrctrajlib</Property>
 				<Property Name="PKG_output.Type" Type="Str">relativeToProject</Property>
@@ -547,9 +560,9 @@
 				<Property Name="Bld_previewCacheID" Type="Str">{E685BE58-8AC4-40ED-B368-C46CA560D1D1}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/UtilExe_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">37</Property>
+				<Property Name="Bld_version.build" Type="Int">39</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.patch" Type="Int">3</Property>
+				<Property Name="Bld_version.patch" Type="Int">4</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/UtilExe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -558,7 +571,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/UtilExe/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FA8221F2-04C1-4033-A50E-101B162FBA9A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{3FB7EC71-77E8-4F7A-A242-2854711AAE3C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
