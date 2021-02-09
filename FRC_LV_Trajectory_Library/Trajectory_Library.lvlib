@@ -368,6 +368,7 @@
 			</Item>
 			<Item Name="Translation" Type="Folder">
 				<Item Name="Translation_Create.vi" Type="VI" URL="../Translation_Create.vi"/>
+				<Item Name="Translation_Create_DistAng.vi" Type="VI" URL="../Translation_Create_DistAng.vi"/>
 				<Item Name="Translation_Equals.vi" Type="VI" URL="../Translation_Equals.vi"/>
 				<Item Name="Translation_GetDistance.vi" Type="VI" URL="../Translation_GetDistance.vi"/>
 				<Item Name="Translation_GetNorm.vi" Type="VI" URL="../Translation_GetNorm.vi"/>
