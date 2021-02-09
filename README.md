@@ -120,6 +120,8 @@ The installed library contains a number of utility programs.
 
     ![Create Trajectory Field!](images/Util_create_traj.PNG)
 
+    ![Create Trajectory Field!](images/Util_create_traj2.PNG)
+
     Sample trajectory file
 
     ![Trajectory File Sample!](images/trajectory_sample.PNG)
@@ -153,6 +155,11 @@ The installed library contains a number of utility programs.
 - **Convert PathWeaver JSON File To Trajectory File**
 
 	Read a JSON file created by the PathWeaver utility.  Write this trajectory as a CSV file for use with this library.
+
+---
+## Special Notes
+
+Library routines in the library virtual directory *NEW_THINGS_DONT_USE* are a work in progress. These are not to be used or trusted.  As of this writing, this includes:  DCMotor, Discretization, LinearQuadraticRegulator, LinearSystem, LinearSystemID, StateSpaceUtil, VecBuilder.
 
 ---
 ## Reporting Issues
