@@ -113,6 +113,7 @@
 		<Item Name="TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_DIIF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_DIIF_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE.ctl"/>
+		<Item Name="TRAJ_CONSTRAINT_JERK.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_JERK.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_MINMAX.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_MINMAX.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS.ctl"/>
@@ -563,6 +564,7 @@
 				<Item Name="Trajectory_lerp_double.vi" Type="VI" URL="../Trajectory_lerp_double.vi"/>
 				<Item Name="Trajectory_lerp_Pose.vi" Type="VI" URL="../Trajectory_lerp_Pose.vi"/>
 				<Item Name="Trajectory_New.vi" Type="VI" URL="../Trajectory_New.vi"/>
+				<Item Name="Trajectory_New_Empty.vi" Type="VI" URL="../Trajectory_New_Empty.vi"/>
 				<Item Name="Trajectory_RelativeTo.vi" Type="VI" URL="../Trajectory_RelativeTo.vi"/>
 				<Item Name="Trajectory_Sample.vi" Type="VI" URL="../Trajectory_Sample.vi"/>
 				<Item Name="Trajectory_SampleReverse.vi" Type="VI" URL="../Trajectory_SampleReverse.vi"/>
@@ -598,6 +600,11 @@
 					<Item Name="DiffDriveVoltageConstraint_getMaxVelocity.vi" Type="VI" URL="../DiffDriveVoltageConstraint_getMaxVelocity.vi"/>
 					<Item Name="DiffDriveVoltageConstraint_getMinMaxAccel.vi" Type="VI" URL="../DiffDriveVoltageConstraint_getMinMaxAccel.vi"/>
 					<Item Name="DiffDriveVoltageConstraint_New.vi" Type="VI" URL="../DiffDriveVoltageConstraint_New.vi"/>
+				</Item>
+				<Item Name="JerkConstraint" Type="Folder">
+					<Item Name="JerkConstraint_getMaxVelocity.vi" Type="VI" URL="../JerkConstraint_getMaxVelocity.vi"/>
+					<Item Name="JerkConstraint_getMinMaxAccel.vi" Type="VI" URL="../JerkConstraint_getMinMaxAccel.vi"/>
+					<Item Name="JerkConstraint_New.vi" Type="VI" URL="../JerkConstraint_New.vi"/>
 				</Item>
 				<Item Name="MecaDriveKinematicsConstraint" Type="Folder">
 					<Item Name="MecaDriveKinematicsConstraint_getMaxVelocity.vi" Type="VI" URL="../MecaDriveKinematicsConstraint_getMaxVelocity.vi"/>
