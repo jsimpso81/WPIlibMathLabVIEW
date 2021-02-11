@@ -199,6 +199,9 @@
 				<Item Name="ArmFF_New.vi" Type="VI" URL="../ArmFF_New.vi"/>
 				<Item Name="ArmFF_New_ZeroGravity.vi" Type="VI" URL="../ArmFF_New_ZeroGravity.vi"/>
 			</Item>
+			<Item Name="ControllerUtil" Type="Folder">
+				<Item Name="ControllerUtil_GetModulusError.vi" Type="VI" URL="../ControllerUtil_GetModulusError.vi"/>
+			</Item>
 			<Item Name="ElevatorFeedforward" Type="Folder">
 				<Item Name="ElevFF_Calculate.vi" Type="VI" URL="../ElevFF_Calculate.vi"/>
 				<Item Name="ElevFF_CalculateVelocityOnly.vi" Type="VI" URL="../ElevFF_CalculateVelocityOnly.vi"/>
@@ -228,12 +231,12 @@
 				<Item Name="PIDController_DisableContinousInput.vi" Type="VI" URL="../PIDController_DisableContinousInput.vi"/>
 				<Item Name="PIDController_EnableContinousInput.vi" Type="VI" URL="../PIDController_EnableContinousInput.vi"/>
 				<Item Name="PIDController_Execute.vi" Type="VI" URL="../PIDController_Execute.vi"/>
-				<Item Name="PIDController_GetContinuousError.vi" Type="VI" URL="../PIDController_GetContinuousError.vi"/>
 				<Item Name="PIDController_GetPeriod.vi" Type="VI" URL="../PIDController_GetPeriod.vi"/>
 				<Item Name="PIDController_GetPID.vi" Type="VI" URL="../PIDController_GetPID.vi"/>
 				<Item Name="PIDController_GetPositionError.vi" Type="VI" URL="../PIDController_GetPositionError.vi"/>
 				<Item Name="PIDController_GetSetpoint.vi" Type="VI" URL="../PIDController_GetSetpoint.vi"/>
 				<Item Name="PIDController_GetVelocityError.vi" Type="VI" URL="../PIDController_GetVelocityError.vi"/>
+				<Item Name="PIDController_IsContinousInputEnabled.vi" Type="VI" URL="../PIDController_IsContinousInputEnabled.vi"/>
 				<Item Name="PIDController_New.vi" Type="VI" URL="../PIDController_New.vi"/>
 				<Item Name="PIDController_NewPeriod.vi" Type="VI" URL="../PIDController_NewPeriod.vi"/>
 				<Item Name="PIDController_Pack_AdvLimits.vi" Type="VI" URL="../PIDController_Pack_AdvLimits.vi"/>
@@ -247,7 +250,6 @@
 				<Item Name="PIDController_SetFeedForward.vi" Type="VI" URL="../PIDController_SetFeedForward.vi"/>
 				<Item Name="PIDController_SetFFGain.vi" Type="VI" URL="../PIDController_SetFFGain.vi"/>
 				<Item Name="PIDController_SetI.vi" Type="VI" URL="../PIDController_SetI.vi"/>
-				<Item Name="PIDController_SetInputRange.vi" Type="VI" URL="../PIDController_SetInputRange.vi"/>
 				<Item Name="PIDController_SetIntegratorRange.vi" Type="VI" URL="../PIDController_SetIntegratorRange.vi"/>
 				<Item Name="PIDController_SetOutputLimits.vi" Type="VI" URL="../PIDController_SetOutputLimits.vi"/>
 				<Item Name="PIDController_SetP.vi" Type="VI" URL="../PIDController_SetP.vi"/>
@@ -561,6 +563,7 @@
 		<Item Name="Trajectory" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="Trajectory" Type="Folder">
+				<Item Name="Trajectory_Equals.vi" Type="VI" URL="../Trajectory_Equals.vi"/>
 				<Item Name="Trajectory_lerp_double.vi" Type="VI" URL="../Trajectory_lerp_double.vi"/>
 				<Item Name="Trajectory_lerp_Pose.vi" Type="VI" URL="../Trajectory_lerp_Pose.vi"/>
 				<Item Name="Trajectory_New.vi" Type="VI" URL="../Trajectory_New.vi"/>
@@ -569,6 +572,7 @@
 				<Item Name="Trajectory_Sample.vi" Type="VI" URL="../Trajectory_Sample.vi"/>
 				<Item Name="Trajectory_SampleReverse.vi" Type="VI" URL="../Trajectory_SampleReverse.vi"/>
 				<Item Name="Trajectory_TransformBy.vi" Type="VI" URL="../Trajectory_TransformBy.vi"/>
+				<Item Name="TrajectoryState_Equals.vi" Type="VI" URL="../TrajectoryState_Equals.vi"/>
 				<Item Name="TrajectoryState_Interpolate.vi" Type="VI" URL="../TrajectoryState_Interpolate.vi"/>
 				<Item Name="TrajectoryState_New.vi" Type="VI" URL="../TrajectoryState_New.vi"/>
 			</Item>
