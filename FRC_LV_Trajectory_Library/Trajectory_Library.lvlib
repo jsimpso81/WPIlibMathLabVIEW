@@ -497,6 +497,7 @@
 				<Item Name="LinearSystemId_IdentifyPositionSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyPositionSystem.vi"/>
 				<Item Name="LinearSystemId_IdentifyVelocitySystem.vi" Type="VI" URL="../LinearSystemId_IdentifyVelocitySystem.vi"/>
 			</Item>
+			<Item Name="Riccati" Type="Folder"/>
 			<Item Name="StateSpaceUtil" Type="Folder"/>
 			<Item Name="VecBuilder" Type="Folder">
 				<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
