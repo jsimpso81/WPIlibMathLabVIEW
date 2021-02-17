@@ -532,9 +532,10 @@
 				<Item Name="LinearSystemLoop_Predict.vi" Type="VI" URL="../LinearSystemLoop_Predict.vi"/>
 				<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
 			</Item>
-			<Item Name="MatrixUtil" Type="Folder">
-				<Item Name="MatrixUtil_CoerceSize.vi" Type="VI" URL="../MatrixUtil_CoerceSize.vi"/>
-				<Item Name="MatrixUtil_Zero.vi" Type="VI" URL="../MatrixUtil_Zero.vi"/>
+			<Item Name="MatixHelper" Type="Folder">
+				<Item Name="MatrixHelper_CoerceSize.vi" Type="VI" URL="../MatrixHelper_CoerceSize.vi"/>
+				<Item Name="MatrixHelper_Create.vi" Type="VI" URL="../MatrixHelper_Create.vi"/>
+				<Item Name="MatrixHelper_Zero.vi" Type="VI" URL="../MatrixHelper_Zero.vi"/>
 			</Item>
 			<Item Name="Riccati" Type="Folder">
 				<Item Name="Riccati_Check_Detectable.vi" Type="VI" URL="../Riccati_Check_Detectable.vi"/>
