@@ -480,15 +480,20 @@
 			<Item Name="KalmanFilter" Type="Folder">
 				<Item Name="KalmanFilter_Correct.vi" Type="VI" URL="../KalmanFilter_Correct.vi"/>
 				<Item Name="KalmanFilter_New.vi" Type="VI" URL="../KalmanFilter_New.vi"/>
+				<Item Name="KalmanFilter_Predict.vi" Type="VI" URL="../KalmanFilter_Predict.vi"/>
 			</Item>
 			<Item Name="LinearPlantInversionFeedforward" Type="Folder">
-				<Item Name="LinearPlntInvFF_GetU.vi" Type="VI" URL="../LinearPlntInvFF_GetU.vi"/>
+				<Item Name="LinearPlntInvFF_Calculate.vi" Type="VI" URL="../LinearPlntInvFF_Calculate.vi"/>
+				<Item Name="LinearPlntInvFF_Calculate_NextR.vi" Type="VI" URL="../LinearPlntInvFF_Calculate_NextR.vi"/>
+				<Item Name="LinearPlntInvFF_GetUff.vi" Type="VI" URL="../LinearPlntInvFF_GetUff.vi"/>
 				<Item Name="LinearPlntInvFF_New.vi" Type="VI" URL="../LinearPlntInvFF_New.vi"/>
 				<Item Name="LinearPlntInvFF_New_Plant.vi" Type="VI" URL="../LinearPlntInvFF_New_Plant.vi"/>
 				<Item Name="LinearPlntInvFF_Reset_Initial.vi" Type="VI" URL="../LinearPlntInvFF_Reset_Initial.vi"/>
 				<Item Name="LinearPlntInvFF_Reset_Zero.vi" Type="VI" URL="../LinearPlntInvFF_Reset_Zero.vi"/>
 			</Item>
 			<Item Name="LinearQuadraticRegulator" Type="Folder">
+				<Item Name="LinearQuadraticRegulator_Calculate.vi" Type="VI" URL="../LinearQuadraticRegulator_Calculate.vi"/>
+				<Item Name="LinearQuadraticRegulator_Calculate_NextR.vi" Type="VI" URL="../LinearQuadraticRegulator_Calculate_NextR.vi"/>
 				<Item Name="LinearQuadraticRegulator_GetU.vi" Type="VI" URL="../LinearQuadraticRegulator_GetU.vi"/>
 				<Item Name="LinearQuadraticRegulator_New.vi" Type="VI" URL="../LinearQuadraticRegulator_New.vi"/>
 				<Item Name="LinearQuadraticRegulator_New_ELMS.vi" Type="VI" URL="../LinearQuadraticRegulator_New_ELMS.vi"/>
@@ -518,12 +523,17 @@
 			</Item>
 			<Item Name="LinearSystemLoop" Type="Folder">
 				<Item Name="LinearSystemLoop_Correct.vi" Type="VI" URL="../LinearSystemLoop_Correct.vi"/>
+				<Item Name="LinearSystemLoop_GetObserver.vi" Type="VI" URL="../LinearSystemLoop_GetObserver.vi"/>
 				<Item Name="LinearSystemLoop_GetU.vi" Type="VI" URL="../LinearSystemLoop_GetU.vi"/>
+				<Item Name="LinearSystemLoop_GetU_Row.vi" Type="VI" URL="../LinearSystemLoop_GetU_Row.vi"/>
+				<Item Name="LinearSystemLoop_GetXHat.vi" Type="VI" URL="../LinearSystemLoop_GetXHat.vi"/>
 				<Item Name="LinearSystemLoop_New.vi" Type="VI" URL="../LinearSystemLoop_New.vi"/>
 				<Item Name="LinearSystemLoop_New_LinearSystem.vi" Type="VI" URL="../LinearSystemLoop_New_LinearSystem.vi"/>
+				<Item Name="LinearSystemLoop_Predict.vi" Type="VI" URL="../LinearSystemLoop_Predict.vi"/>
 				<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
 			</Item>
 			<Item Name="MatrixUtil" Type="Folder">
+				<Item Name="MatrixUtil_CoerceSize.vi" Type="VI" URL="../MatrixUtil_CoerceSize.vi"/>
 				<Item Name="MatrixUtil_Zero.vi" Type="VI" URL="../MatrixUtil_Zero.vi"/>
 			</Item>
 			<Item Name="Riccati" Type="Folder">
@@ -539,7 +549,7 @@
 			</Item>
 			<Item Name="VecBuilder" Type="Folder">
 				<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
-				<Item Name="VecBuilder_2x2Fill.vi" Type="VI" URL="../VecBuilder_2x2Fill.vi"/>
+				<Item Name="VecBuilder_2x1Fill.vi" Type="VI" URL="../VecBuilder_2x1Fill.vi"/>
 			</Item>
 		</Item>
 		<Item Name="PathfinderUtility" Type="Folder">
