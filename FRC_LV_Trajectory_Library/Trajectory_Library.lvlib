@@ -81,9 +81,12 @@
 		<Item Name="DIFF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../DIFF_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="ELEV_FF.ctl" Type="VI" URL="../ELEV_FF.ctl"/>
 		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../HOLONOMIC_DRV_CTRL.ctl"/>
+		<Item Name="KALMAN_FILTER.ctl" Type="VI" URL="../KALMAN_FILTER.ctl"/>
 		<Item Name="LINEAR_FILTER.ctl" Type="VI" URL="../LINEAR_FILTER.ctl"/>
-		<Item Name="LINEARQUADRATICREGULATOR.ctl" Type="VI" URL="../LINEARQUADRATICREGULATOR.ctl"/>
-		<Item Name="LINEARSYSTEM.ctl" Type="VI" URL="../LINEARSYSTEM.ctl"/>
+		<Item Name="LINEAR_PLANT_INV_FF.ctl" Type="VI" URL="../LINEAR_PLANT_INV_FF.ctl"/>
+		<Item Name="LINEAR_QUADRATIC_REGULATOR.ctl" Type="VI" URL="../LINEAR_QUADRATIC_REGULATOR.ctl"/>
+		<Item Name="LINEAR_SYSTEM.ctl" Type="VI" URL="../LINEAR_SYSTEM.ctl"/>
+		<Item Name="LINEAR_SYSTEM_LOOP.ctl" Type="VI" URL="../LINEAR_SYSTEM_LOOP.ctl"/>
 		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../MECA_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="MECA_WHEEL_SPEEDS.ctl" Type="VI" URL="../MECA_WHEEL_SPEEDS.ctl"/>
@@ -469,11 +472,27 @@
 				<Item Name="DCMotor_New.vi" Type="VI" URL="../DCMotor_New.vi"/>
 			</Item>
 			<Item Name="Discretization" Type="Folder">
+				<Item Name="Discretization_DiscretizeA.vi" Type="VI" URL="../Discretization_DiscretizeA.vi"/>
 				<Item Name="Discretization_DiscretizeAB.vi" Type="VI" URL="../Discretization_DiscretizeAB.vi"/>
+				<Item Name="Discretization_DiscretizeAQTaylor.vi" Type="VI" URL="../Discretization_DiscretizeAQTaylor.vi"/>
+				<Item Name="Discretization_DiscretizeR.vi" Type="VI" URL="../Discretization_DiscretizeR.vi"/>
+			</Item>
+			<Item Name="KalmanFilter" Type="Folder">
+				<Item Name="KalmanFilter_Correct.vi" Type="VI" URL="../KalmanFilter_Correct.vi"/>
+				<Item Name="KalmanFilter_New.vi" Type="VI" URL="../KalmanFilter_New.vi"/>
+			</Item>
+			<Item Name="LinearPlantInversionFeedforward" Type="Folder">
+				<Item Name="LinearPlntInvFF_GetU.vi" Type="VI" URL="../LinearPlntInvFF_GetU.vi"/>
+				<Item Name="LinearPlntInvFF_New.vi" Type="VI" URL="../LinearPlntInvFF_New.vi"/>
+				<Item Name="LinearPlntInvFF_New_Plant.vi" Type="VI" URL="../LinearPlntInvFF_New_Plant.vi"/>
+				<Item Name="LinearPlntInvFF_Reset_Initial.vi" Type="VI" URL="../LinearPlntInvFF_Reset_Initial.vi"/>
+				<Item Name="LinearPlntInvFF_Reset_Zero.vi" Type="VI" URL="../LinearPlntInvFF_Reset_Zero.vi"/>
 			</Item>
 			<Item Name="LinearQuadraticRegulator" Type="Folder">
+				<Item Name="LinearQuadraticRegulator_GetU.vi" Type="VI" URL="../LinearQuadraticRegulator_GetU.vi"/>
 				<Item Name="LinearQuadraticRegulator_New.vi" Type="VI" URL="../LinearQuadraticRegulator_New.vi"/>
 				<Item Name="LinearQuadraticRegulator_New_ELMS.vi" Type="VI" URL="../LinearQuadraticRegulator_New_ELMS.vi"/>
+				<Item Name="LinearQuadraticRegulator_New_SystemELMS.vi" Type="VI" URL="../LinearQuadraticRegulator_New_SystemELMS.vi"/>
 			</Item>
 			<Item Name="LinearSystem" Type="Folder">
 				<Item Name="LinearSystem_CalculateX.vi" Type="VI" URL="../LinearSystem_CalculateX.vi"/>
@@ -497,13 +516,27 @@
 				<Item Name="LinearSystemId_IdentifyPositionSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyPositionSystem.vi"/>
 				<Item Name="LinearSystemId_IdentifyVelocitySystem.vi" Type="VI" URL="../LinearSystemId_IdentifyVelocitySystem.vi"/>
 			</Item>
+			<Item Name="LinearSystemLoop" Type="Folder">
+				<Item Name="LinearSystemLoop_Correct.vi" Type="VI" URL="../LinearSystemLoop_Correct.vi"/>
+				<Item Name="LinearSystemLoop_GetU.vi" Type="VI" URL="../LinearSystemLoop_GetU.vi"/>
+				<Item Name="LinearSystemLoop_New.vi" Type="VI" URL="../LinearSystemLoop_New.vi"/>
+				<Item Name="LinearSystemLoop_New_LinearSystem.vi" Type="VI" URL="../LinearSystemLoop_New_LinearSystem.vi"/>
+				<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
+			</Item>
+			<Item Name="MatrixUtil" Type="Folder">
+				<Item Name="MatrixUtil_Zero.vi" Type="VI" URL="../MatrixUtil_Zero.vi"/>
+			</Item>
 			<Item Name="Riccati" Type="Folder">
 				<Item Name="Riccati_Check_Detectable.vi" Type="VI" URL="../Riccati_Check_Detectable.vi"/>
 				<Item Name="Riccati_Check_Stabilizable.vi" Type="VI" URL="../Riccati_Check_Stabilizable.vi"/>
+				<Item Name="Riccati_DARE.vi" Type="VI" URL="../Riccati_DARE.vi"/>
 				<Item Name="Riccati_DARE_Iterate.vi" Type="VI" URL="../Riccati_DARE_Iterate.vi"/>
 				<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
 			</Item>
-			<Item Name="StateSpaceUtil" Type="Folder"/>
+			<Item Name="StateSpaceUtil" Type="Folder">
+				<Item Name="StateSpaceUtil_MakeCostMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCostMatrix.vi"/>
+				<Item Name="StateSpaceUtil_MakeCovarianceMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCovarianceMatrix.vi"/>
+			</Item>
 			<Item Name="VecBuilder" Type="Folder">
 				<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
 				<Item Name="VecBuilder_2x2Fill.vi" Type="VI" URL="../VecBuilder_2x2Fill.vi"/>
