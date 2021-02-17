@@ -479,8 +479,11 @@
 			</Item>
 			<Item Name="KalmanFilter" Type="Folder">
 				<Item Name="KalmanFilter_Correct.vi" Type="VI" URL="../KalmanFilter_Correct.vi"/>
+				<Item Name="KalmanFilter_GetXHat.vi" Type="VI" URL="../KalmanFilter_GetXHat.vi"/>
 				<Item Name="KalmanFilter_New.vi" Type="VI" URL="../KalmanFilter_New.vi"/>
 				<Item Name="KalmanFilter_Predict.vi" Type="VI" URL="../KalmanFilter_Predict.vi"/>
+				<Item Name="KalmanFilter_Reset.vi" Type="VI" URL="../KalmanFilter_Reset.vi"/>
+				<Item Name="KalmanFilter_SetXHat.vi" Type="VI" URL="../KalmanFilter_SetXHat.vi"/>
 			</Item>
 			<Item Name="LinearPlantInversionFeedforward" Type="Folder">
 				<Item Name="LinearPlntInvFF_Calculate.vi" Type="VI" URL="../LinearPlntInvFF_Calculate.vi"/>
@@ -498,6 +501,7 @@
 				<Item Name="LinearQuadraticRegulator_New.vi" Type="VI" URL="../LinearQuadraticRegulator_New.vi"/>
 				<Item Name="LinearQuadraticRegulator_New_ELMS.vi" Type="VI" URL="../LinearQuadraticRegulator_New_ELMS.vi"/>
 				<Item Name="LinearQuadraticRegulator_New_SystemELMS.vi" Type="VI" URL="../LinearQuadraticRegulator_New_SystemELMS.vi"/>
+				<Item Name="LinearQuadraticRegulator_Reset.vi" Type="VI" URL="../LinearQuadraticRegulator_Reset.vi"/>
 			</Item>
 			<Item Name="LinearSystem" Type="Folder">
 				<Item Name="LinearSystem_CalculateX.vi" Type="VI" URL="../LinearSystem_CalculateX.vi"/>
@@ -522,6 +526,7 @@
 				<Item Name="LinearSystemId_IdentifyVelocitySystem.vi" Type="VI" URL="../LinearSystemId_IdentifyVelocitySystem.vi"/>
 			</Item>
 			<Item Name="LinearSystemLoop" Type="Folder">
+				<Item Name="LinearSystemLoop_ClampInput.vi" Type="VI" URL="../LinearSystemLoop_ClampInput.vi"/>
 				<Item Name="LinearSystemLoop_Correct.vi" Type="VI" URL="../LinearSystemLoop_Correct.vi"/>
 				<Item Name="LinearSystemLoop_GetObserver.vi" Type="VI" URL="../LinearSystemLoop_GetObserver.vi"/>
 				<Item Name="LinearSystemLoop_GetU.vi" Type="VI" URL="../LinearSystemLoop_GetU.vi"/>
@@ -530,6 +535,7 @@
 				<Item Name="LinearSystemLoop_New.vi" Type="VI" URL="../LinearSystemLoop_New.vi"/>
 				<Item Name="LinearSystemLoop_New_LinearSystem.vi" Type="VI" URL="../LinearSystemLoop_New_LinearSystem.vi"/>
 				<Item Name="LinearSystemLoop_Predict.vi" Type="VI" URL="../LinearSystemLoop_Predict.vi"/>
+				<Item Name="LinearSystemLoop_Reset.vi" Type="VI" URL="../LinearSystemLoop_Reset.vi"/>
 				<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
 			</Item>
 			<Item Name="MatixHelper" Type="Folder">
@@ -544,9 +550,14 @@
 				<Item Name="Riccati_DARE_Iterate.vi" Type="VI" URL="../Riccati_DARE_Iterate.vi"/>
 				<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
 			</Item>
+			<Item Name="Simulation" Type="Folder">
+				<Item Name="FlywheelSim" Type="Folder"/>
+			</Item>
 			<Item Name="StateSpaceUtil" Type="Folder">
+				<Item Name="StateSpaceUtil_ClampInputMaxMagnitude.vi" Type="VI" URL="../StateSpaceUtil_ClampInputMaxMagnitude.vi"/>
 				<Item Name="StateSpaceUtil_MakeCostMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCostMatrix.vi"/>
 				<Item Name="StateSpaceUtil_MakeCovarianceMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCovarianceMatrix.vi"/>
+				<Item Name="StateSpaceUtil_NormalizeInputVector.vi" Type="VI" URL="../StateSpaceUtil_NormalizeInputVector.vi"/>
 			</Item>
 			<Item Name="VecBuilder" Type="Folder">
 				<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
