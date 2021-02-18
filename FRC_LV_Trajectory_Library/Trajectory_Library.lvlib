@@ -80,6 +80,7 @@
 		<Item Name="DCMOTOR.CTL" Type="VI" URL="../DCMOTOR.CTL"/>
 		<Item Name="DIFF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../DIFF_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="ELEV_FF.ctl" Type="VI" URL="../ELEV_FF.ctl"/>
+		<Item Name="FLYWHEEL_SIM.ctl" Type="VI" URL="../FLYWHEEL_SIM.ctl"/>
 		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../HOLONOMIC_DRV_CTRL.ctl"/>
 		<Item Name="KALMAN_FILTER.ctl" Type="VI" URL="../KALMAN_FILTER.ctl"/>
 		<Item Name="LINEAR_FILTER.ctl" Type="VI" URL="../LINEAR_FILTER.ctl"/>
@@ -87,6 +88,7 @@
 		<Item Name="LINEAR_QUADRATIC_REGULATOR.ctl" Type="VI" URL="../LINEAR_QUADRATIC_REGULATOR.ctl"/>
 		<Item Name="LINEAR_SYSTEM.ctl" Type="VI" URL="../LINEAR_SYSTEM.ctl"/>
 		<Item Name="LINEAR_SYSTEM_LOOP.ctl" Type="VI" URL="../LINEAR_SYSTEM_LOOP.ctl"/>
+		<Item Name="LINEAR_SYSTEM_SIM.ctl" Type="VI" URL="../LINEAR_SYSTEM_SIM.ctl"/>
 		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../MECA_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="MECA_WHEEL_SPEEDS.ctl" Type="VI" URL="../MECA_WHEEL_SPEEDS.ctl"/>
@@ -551,7 +553,20 @@
 				<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
 			</Item>
 			<Item Name="Simulation" Type="Folder">
-				<Item Name="FlywheelSim" Type="Folder"/>
+				<Item Name="FlywheelSim" Type="Folder">
+					<Item Name="FlyWheelSim_getAngularVelocityRadPerSec.vi" Type="VI" URL="../FlyWheelSim_getAngularVelocityRadPerSec.vi"/>
+					<Item Name="FlyWheelSim_New.vi" Type="VI" URL="../FlyWheelSim_New.vi"/>
+					<Item Name="FlyWheelSim_SetInput.vi" Type="VI" URL="../FlyWheelSim_SetInput.vi"/>
+					<Item Name="FlyWheelSim_Update.vi" Type="VI" URL="../FlyWheelSim_Update.vi"/>
+				</Item>
+				<Item Name="LinearSystemSim" Type="Folder">
+					<Item Name="LinearSystemSim_GetOutput.vi" Type="VI" URL="../LinearSystemSim_GetOutput.vi"/>
+					<Item Name="LinearSystemSim_GetOutput_Single.vi" Type="VI" URL="../LinearSystemSim_GetOutput_Single.vi"/>
+					<Item Name="LinearSystemSim_New.vi" Type="VI" URL="../LinearSystemSim_New.vi"/>
+					<Item Name="LinearSystemSim_SetInput_Single.vi" Type="VI" URL="../LinearSystemSim_SetInput_Single.vi"/>
+					<Item Name="LinearSystemSim_Update.vi" Type="VI" URL="../LinearSystemSim_Update.vi"/>
+					<Item Name="LinearSystemSim_UpdateX.vi" Type="VI" URL="../LinearSystemSim_UpdateX.vi"/>
+				</Item>
 			</Item>
 			<Item Name="StateSpaceUtil" Type="Folder">
 				<Item Name="StateSpaceUtil_ClampInputMaxMagnitude.vi" Type="VI" URL="../StateSpaceUtil_ClampInputMaxMagnitude.vi"/>
