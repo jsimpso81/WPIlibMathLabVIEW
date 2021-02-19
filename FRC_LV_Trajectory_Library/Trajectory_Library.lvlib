@@ -8,6 +8,27 @@
 
 </Property>
 	<Item Name="_Menus" Type="Folder">
+		<Item Name="FRC_LV_CtrlLib_BatterySim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BatterySim.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_DC_Motor.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DC_Motor.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Discretization.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Discretization.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Filter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Filter.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_FlyWheelSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_FlyWheelSim.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_KalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_KalmanFilter.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_LinearSystem.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinearSystem.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_LinearSystemID.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinearSystemID.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_LinearSystemLoop.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinearSystemLoop.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_LinearSystemSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinearSystemSim.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_LinPlntInvFF.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinPlntInvFF.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_LQR.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LQR.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Matrix_Helper.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Matrix_Helper.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Riccati.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Riccati.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Simulation.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Simulation.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_StateSpaceCtrl.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceCtrl.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_StateSpaceModel.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceModel.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_StateSpaceUtil.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtil.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Timing.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Timing.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_VectorBuilder.mnu" Type="Document" URL="../FRC_LV_CtrlLib_VectorBuilder.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Arm_FF.mnu" Type="Document" URL="../FRC_LV_Trajectory_Arm_FF.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Base_WPILIB.mnu" Type="Document" URL="../FRC_LV_Trajectory_Base_WPILIB.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Controller.mnu" Type="Document" URL="../FRC_LV_Trajectory_Controller.mnu"/>
@@ -601,7 +622,7 @@
 					<Item Name="StateSpaceUtil_NormalizeInputVector.vi" Type="VI" URL="../StateSpaceUtil_NormalizeInputVector.vi"/>
 				</Item>
 			</Item>
-			<Item Name="Utilities" Type="Folder">
+			<Item Name="State Space Utilities" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="MatixHelper" Type="Folder">
 					<Item Name="MatrixHelper_CoerceSize.vi" Type="VI" URL="../MatrixHelper_CoerceSize.vi"/>
