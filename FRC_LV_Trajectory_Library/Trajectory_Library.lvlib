@@ -101,6 +101,7 @@
 		<Item Name="DCMOTOR.CTL" Type="VI" URL="../DCMOTOR.CTL"/>
 		<Item Name="DIFF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../DIFF_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="ELEV_FF.ctl" Type="VI" URL="../ELEV_FF.ctl"/>
+		<Item Name="ELEVATOR_SIM.ctl" Type="VI" URL="../ELEVATOR_SIM.ctl"/>
 		<Item Name="FLYWHEEL_SIM.ctl" Type="VI" URL="../FLYWHEEL_SIM.ctl"/>
 		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../HOLONOMIC_DRV_CTRL.ctl"/>
 		<Item Name="KALMAN_FILTER.ctl" Type="VI" URL="../KALMAN_FILTER.ctl"/>
@@ -496,29 +497,29 @@
 					<Item Name="LinearSystemSim_SetInput_Single.vi" Type="VI" URL="../LinearSystemSim_SetInput_Single.vi"/>
 					<Item Name="LinearSystemSim_Update.vi" Type="VI" URL="../LinearSystemSim_Update.vi"/>
 					<Item Name="LinearSystemSim_UpdateX.vi" Type="VI" URL="../LinearSystemSim_UpdateX.vi"/>
+					<Item Name="LinearSystemSim_UpdateY.vi" Type="VI" URL="../LinearSystemSim_UpdateY.vi"/>
 				</Item>
 				<Item Name="BatterySim" Type="Folder">
 					<Item Name="BatterySim_CalculateDefaultBatteryLoadedVoltage.vi" Type="VI" URL="../BatterySim_CalculateDefaultBatteryLoadedVoltage.vi"/>
 					<Item Name="BatterySim_CalculateLoadedBatteryVoltage.vi" Type="VI" URL="../BatterySim_CalculateLoadedBatteryVoltage.vi"/>
 				</Item>
+				<Item Name="ElevatorSim" Type="Folder">
+					<Item Name="ElevatorSim_New.vi" Type="VI" URL="../ElevatorSim_New.vi"/>
+					<Item Name="ElevatorSim_GetCurrentDraw.vi" Type="VI" URL="../ElevatorSim_GetCurrentDraw.vi"/>
+					<Item Name="ElevatorSim_GetPositionMeters.vi" Type="VI" URL="../ElevatorSim_GetPositionMeters.vi"/>
+					<Item Name="ElevatorSim_GetVelocityMetersPerSecond.vi" Type="VI" URL="../ElevatorSim_GetVelocityMetersPerSecond.vi"/>
+					<Item Name="ElevatorSim_SetInputVoltage.vi" Type="VI" URL="../ElevatorSim_SetInputVoltage.vi"/>
+					<Item Name="ElevatorSim_UpdateX.vi" Type="VI" URL="../ElevatorSim_UpdateX.vi"/>
+					<Item Name="ElevatorSim_WouldHitLowerLimit.vi" Type="VI" URL="../ElevatorSim_WouldHitLowerLimit.vi"/>
+					<Item Name="ElevatorSim_WouldHitUpperLimit.vi" Type="VI" URL="../ElevatorSim_WouldHitUpperLimit.vi"/>
+					<Item Name="ElevatorSim_Update.vi" Type="VI" URL="../ElevatorSim_Update.vi"/>
+					<Item Name="ElevatorSim_HasHitLowerLimit.vi" Type="VI" URL="../ElevatorSim_HasHitLowerLimit.vi"/>
+					<Item Name="ElevatorSim_HasHitUpperLimit.vi" Type="VI" URL="../ElevatorSim_HasHitUpperLimit.vi"/>
+					<Item Name="ElevatorSim_CalcK14.vi" Type="VI" URL="../ElevatorSim_CalcK14.vi"/>
+				</Item>
 			</Item>
 			<Item Name="State Space Control" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
-				<Item Name="DCMotor" Type="Folder">
-					<Item Name="DCMotor_GetAndymark9015.vi" Type="VI" URL="../DCMotor_GetAndymark9015.vi"/>
-					<Item Name="DCMotor_GetAndymarkRs775_125.vi" Type="VI" URL="../DCMotor_GetAndymarkRs775_125.vi"/>
-					<Item Name="DCMotor_GetBag.vi" Type="VI" URL="../DCMotor_GetBag.vi"/>
-					<Item Name="DCMotor_GetBanebotsRs550.vi" Type="VI" URL="../DCMotor_GetBanebotsRs550.vi"/>
-					<Item Name="DCMotor_GetBanebotsRs775.vi" Type="VI" URL="../DCMotor_GetBanebotsRs775.vi"/>
-					<Item Name="DCMotor_GetCIM.vi" Type="VI" URL="../DCMotor_GetCIM.vi"/>
-					<Item Name="DCMotor_GetCurrent.vi" Type="VI" URL="../DCMotor_GetCurrent.vi"/>
-					<Item Name="DCMotor_GetFalcon500.vi" Type="VI" URL="../DCMotor_GetFalcon500.vi"/>
-					<Item Name="DCMotor_GetMiniCIM.vi" Type="VI" URL="../DCMotor_GetMiniCIM.vi"/>
-					<Item Name="DCMotor_GetNEO.vi" Type="VI" URL="../DCMotor_GetNEO.vi"/>
-					<Item Name="DCMotor_GetNEO550.vi" Type="VI" URL="../DCMotor_GetNEO550.vi"/>
-					<Item Name="DCMotor_GetVex775Pro.vi" Type="VI" URL="../DCMotor_GetVex775Pro.vi"/>
-					<Item Name="DCMotor_New.vi" Type="VI" URL="../DCMotor_New.vi"/>
-				</Item>
 				<Item Name="Discretization" Type="Folder">
 					<Item Name="Discretization_DiscretizeA.vi" Type="VI" URL="../Discretization_DiscretizeA.vi"/>
 					<Item Name="Discretization_DiscretizeAB.vi" Type="VI" URL="../Discretization_DiscretizeAB.vi"/>
@@ -578,15 +579,6 @@
 					<Item Name="LinearSystem_GetDElement.vi" Type="VI" URL="../LinearSystem_GetDElement.vi"/>
 					<Item Name="LinearSystem_New.vi" Type="VI" URL="../LinearSystem_New.vi"/>
 				</Item>
-				<Item Name="LinearsystemId" Type="Folder">
-					<Item Name="LinearSystemId_CreateDriveTrainSystem.vi" Type="VI" URL="../LinearSystemId_CreateDriveTrainSystem.vi"/>
-					<Item Name="LinearSystemId_CreateElevatorSystem.vi" Type="VI" URL="../LinearSystemId_CreateElevatorSystem.vi"/>
-					<Item Name="LinearSystemId_CreateFlywheelSystem.vi" Type="VI" URL="../LinearSystemId_CreateFlywheelSystem.vi"/>
-					<Item Name="LinearSystemId_CreateSingleJointedArmSystem.vi" Type="VI" URL="../LinearSystemId_CreateSingleJointedArmSystem.vi"/>
-					<Item Name="LinearSystemId_IdentifyDriveTrainSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyDriveTrainSystem.vi"/>
-					<Item Name="LinearSystemId_IdentifyPositionSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyPositionSystem.vi"/>
-					<Item Name="LinearSystemId_IdentifyVelocitySystem.vi" Type="VI" URL="../LinearSystemId_IdentifyVelocitySystem.vi"/>
-				</Item>
 				<Item Name="LinearSystemLoop" Type="Folder">
 					<Property Name="NI.SortType" Type="Int">0</Property>
 					<Item Name="LinearSystemLoop_ClampInput.vi" Type="VI" URL="../LinearSystemLoop_ClampInput.vi"/>
@@ -624,14 +616,51 @@
 			</Item>
 			<Item Name="State Space Utilities" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
+				<Item Name="MatBuilder" Type="Folder">
+					<Item Name="MatBuilder_Create.vi" Type="VI" URL="../MatBuilder_Create.vi"/>
+					<Item Name="MatBuilder_Fill.vi" Type="VI" URL="../MatBuilder_Fill.vi"/>
+				</Item>
 				<Item Name="MatixHelper" Type="Folder">
 					<Item Name="MatrixHelper_CoerceSize.vi" Type="VI" URL="../MatrixHelper_CoerceSize.vi"/>
-					<Item Name="MatrixHelper_Create.vi" Type="VI" URL="../MatrixHelper_Create.vi"/>
 					<Item Name="MatrixHelper_Zero.vi" Type="VI" URL="../MatrixHelper_Zero.vi"/>
+				</Item>
+				<Item Name="NumericalIntegration" Type="Folder">
+					<Item Name="NumIntegrate_Rk4_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_Dbl.vi"/>
+					<Item Name="NumIntegrate_Rk4_K_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_K_Dbl.vi"/>
+					<Item Name="NumIntegrate_Trap_Dbl.vi" Type="VI" URL="../NumIntegrate_Trap_Dbl.vi"/>
 				</Item>
 				<Item Name="VecBuilder" Type="Folder">
 					<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
 					<Item Name="VecBuilder_2x1Fill.vi" Type="VI" URL="../VecBuilder_2x1Fill.vi"/>
+					<Item Name="VecBuilder_3x1Fill.vi" Type="VI" URL="../VecBuilder_3x1Fill.vi"/>
+					<Item Name="VecBuilder_4x1Fill.vi" Type="VI" URL="../VecBuilder_4x1Fill.vi"/>
+					<Item Name="VecBuilder_ArrayBy1Fill.vi" Type="VI" URL="../VecBuilder_ArrayBy1Fill.vi"/>
+				</Item>
+			</Item>
+			<Item Name="State Space Model" Type="Folder">
+				<Item Name="DCMotor" Type="Folder">
+					<Item Name="DCMotor_GetAndymark9015.vi" Type="VI" URL="../DCMotor_GetAndymark9015.vi"/>
+					<Item Name="DCMotor_GetAndymarkRs775_125.vi" Type="VI" URL="../DCMotor_GetAndymarkRs775_125.vi"/>
+					<Item Name="DCMotor_GetBag.vi" Type="VI" URL="../DCMotor_GetBag.vi"/>
+					<Item Name="DCMotor_GetBanebotsRs550.vi" Type="VI" URL="../DCMotor_GetBanebotsRs550.vi"/>
+					<Item Name="DCMotor_GetBanebotsRs775.vi" Type="VI" URL="../DCMotor_GetBanebotsRs775.vi"/>
+					<Item Name="DCMotor_GetCIM.vi" Type="VI" URL="../DCMotor_GetCIM.vi"/>
+					<Item Name="DCMotor_GetCurrent.vi" Type="VI" URL="../DCMotor_GetCurrent.vi"/>
+					<Item Name="DCMotor_GetFalcon500.vi" Type="VI" URL="../DCMotor_GetFalcon500.vi"/>
+					<Item Name="DCMotor_GetMiniCIM.vi" Type="VI" URL="../DCMotor_GetMiniCIM.vi"/>
+					<Item Name="DCMotor_GetNEO.vi" Type="VI" URL="../DCMotor_GetNEO.vi"/>
+					<Item Name="DCMotor_GetNEO550.vi" Type="VI" URL="../DCMotor_GetNEO550.vi"/>
+					<Item Name="DCMotor_GetVex775Pro.vi" Type="VI" URL="../DCMotor_GetVex775Pro.vi"/>
+					<Item Name="DCMotor_New.vi" Type="VI" URL="../DCMotor_New.vi"/>
+				</Item>
+				<Item Name="LinearsystemId" Type="Folder">
+					<Item Name="LinearSystemId_CreateDriveTrainSystem.vi" Type="VI" URL="../LinearSystemId_CreateDriveTrainSystem.vi"/>
+					<Item Name="LinearSystemId_CreateElevatorSystem.vi" Type="VI" URL="../LinearSystemId_CreateElevatorSystem.vi"/>
+					<Item Name="LinearSystemId_CreateFlywheelSystem.vi" Type="VI" URL="../LinearSystemId_CreateFlywheelSystem.vi"/>
+					<Item Name="LinearSystemId_CreateSingleJointedArmSystem.vi" Type="VI" URL="../LinearSystemId_CreateSingleJointedArmSystem.vi"/>
+					<Item Name="LinearSystemId_IdentifyDriveTrainSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyDriveTrainSystem.vi"/>
+					<Item Name="LinearSystemId_IdentifyPositionSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyPositionSystem.vi"/>
+					<Item Name="LinearSystemId_IdentifyVelocitySystem.vi" Type="VI" URL="../LinearSystemId_IdentifyVelocitySystem.vi"/>
 				</Item>
 			</Item>
 		</Item>
