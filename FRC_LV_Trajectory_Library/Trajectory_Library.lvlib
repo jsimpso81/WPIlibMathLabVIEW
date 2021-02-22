@@ -515,7 +515,6 @@
 					<Item Name="ElevatorSim_Update.vi" Type="VI" URL="../ElevatorSim_Update.vi"/>
 					<Item Name="ElevatorSim_HasHitLowerLimit.vi" Type="VI" URL="../ElevatorSim_HasHitLowerLimit.vi"/>
 					<Item Name="ElevatorSim_HasHitUpperLimit.vi" Type="VI" URL="../ElevatorSim_HasHitUpperLimit.vi"/>
-					<Item Name="ElevatorSim_CalcK14.vi" Type="VI" URL="../ElevatorSim_CalcK14.vi"/>
 				</Item>
 			</Item>
 			<Item Name="State Space Control" Type="Folder">
@@ -624,11 +623,6 @@
 					<Item Name="MatrixHelper_CoerceSize.vi" Type="VI" URL="../MatrixHelper_CoerceSize.vi"/>
 					<Item Name="MatrixHelper_Zero.vi" Type="VI" URL="../MatrixHelper_Zero.vi"/>
 				</Item>
-				<Item Name="NumericalIntegration" Type="Folder">
-					<Item Name="NumIntegrate_Rk4_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_Dbl.vi"/>
-					<Item Name="NumIntegrate_Rk4_K_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_K_Dbl.vi"/>
-					<Item Name="NumIntegrate_Trap_Dbl.vi" Type="VI" URL="../NumIntegrate_Trap_Dbl.vi"/>
-				</Item>
 				<Item Name="VecBuilder" Type="Folder">
 					<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
 					<Item Name="VecBuilder_2x1Fill.vi" Type="VI" URL="../VecBuilder_2x1Fill.vi"/>
@@ -661,6 +655,20 @@
 					<Item Name="LinearSystemId_IdentifyDriveTrainSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyDriveTrainSystem.vi"/>
 					<Item Name="LinearSystemId_IdentifyPositionSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyPositionSystem.vi"/>
 					<Item Name="LinearSystemId_IdentifyVelocitySystem.vi" Type="VI" URL="../LinearSystemId_IdentifyVelocitySystem.vi"/>
+				</Item>
+			</Item>
+			<Item Name="Math" Type="Folder">
+				<Item Name="NumericalIntegration" Type="Folder">
+					<Item Name="NumIntegrate_Func_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Func_Ax_Bu_K.vi"/>
+					<Item Name="NumIntegrate_Func_Bs.vi" Type="VI" URL="../NumIntegrate_Func_Bs.vi"/>
+					<Item Name="NumIntegrate_Func_Ch.vi" Type="VI" URL="../NumIntegrate_Func_Ch.vi"/>
+					<Item Name="NumIntegrate_Func_Ct.vi" Type="VI" URL="../NumIntegrate_Func_Ct.vi"/>
+					<Item Name="NumIntegrate_Rk4_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_Dbl.vi"/>
+					<Item Name="NumIntegrate_Rk4_K_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_K_Dbl.vi"/>
+					<Item Name="NumIntegrate_Rkf45_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Rkf45_Ax_Bu_K.vi"/>
+					<Item Name="NumIntegrate_Rkf45impl_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Rkf45impl_Ax_Bu_K.vi"/>
+					<Item Name="NumIntegrate_Trap_Dbl.vi" Type="VI" URL="../NumIntegrate_Trap_Dbl.vi"/>
+					<Item Name="NumIntegrate_Trap_Mat.vi" Type="VI" URL="../NumIntegrate_Trap_Mat.vi"/>
 				</Item>
 			</Item>
 		</Item>
