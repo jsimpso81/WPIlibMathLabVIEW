@@ -11,6 +11,7 @@
 		<Item Name="FRC_LV_CtrlLib_BatterySim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BatterySim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DC_Motor.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DC_Motor.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Discretization.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Discretization.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_ElevatorSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ElevatorSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Filter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Filter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_FlyWheelSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_FlyWheelSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_KalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_KalmanFilter.mnu"/>
@@ -20,6 +21,7 @@
 		<Item Name="FRC_LV_CtrlLib_LinearSystemSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinearSystemSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_LinPlntInvFF.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinPlntInvFF.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_LQR.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LQR.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_MatBuilder.mnu" Type="Document" URL="../FRC_LV_CtrlLib_MatBuilder.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Matrix_Helper.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Matrix_Helper.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Riccati.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Riccati.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Simulation.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Simulation.mnu"/>
@@ -498,6 +500,9 @@
 					<Item Name="LinearSystemSim_Update.vi" Type="VI" URL="../LinearSystemSim_Update.vi"/>
 					<Item Name="LinearSystemSim_UpdateX.vi" Type="VI" URL="../LinearSystemSim_UpdateX.vi"/>
 					<Item Name="LinearSystemSim_UpdateY.vi" Type="VI" URL="../LinearSystemSim_UpdateY.vi"/>
+					<Item Name="LinearSystemSim_setState.vi" Type="VI" URL="../LinearSystemSim_setState.vi"/>
+					<Item Name="LinearSystemSim_setInput.vi" Type="VI" URL="../LinearSystemSim_setInput.vi"/>
+					<Item Name="LinearSystemSim_SetInput_Array.vi" Type="VI" URL="../LinearSystemSim_SetInput_Array.vi"/>
 				</Item>
 				<Item Name="BatterySim" Type="Folder">
 					<Item Name="BatterySim_CalculateDefaultBatteryLoadedVoltage.vi" Type="VI" URL="../BatterySim_CalculateDefaultBatteryLoadedVoltage.vi"/>
@@ -599,13 +604,6 @@
 					<Item Name="LinearSystemLoop_Reset.vi" Type="VI" URL="../LinearSystemLoop_Reset.vi"/>
 					<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
 				</Item>
-				<Item Name="Riccati" Type="Folder">
-					<Item Name="Riccati_Check_Detectable.vi" Type="VI" URL="../Riccati_Check_Detectable.vi"/>
-					<Item Name="Riccati_Check_Stabilizable.vi" Type="VI" URL="../Riccati_Check_Stabilizable.vi"/>
-					<Item Name="Riccati_DARE.vi" Type="VI" URL="../Riccati_DARE.vi"/>
-					<Item Name="Riccati_DARE_Iterate.vi" Type="VI" URL="../Riccati_DARE_Iterate.vi"/>
-					<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
-				</Item>
 				<Item Name="StateSpaceUtil" Type="Folder">
 					<Item Name="StateSpaceUtil_ClampInputMaxMagnitude.vi" Type="VI" URL="../StateSpaceUtil_ClampInputMaxMagnitude.vi"/>
 					<Item Name="StateSpaceUtil_MakeCostMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCostMatrix.vi"/>
@@ -669,6 +667,13 @@
 					<Item Name="NumIntegrate_Rkf45impl_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Rkf45impl_Ax_Bu_K.vi"/>
 					<Item Name="NumIntegrate_Trap_Dbl.vi" Type="VI" URL="../NumIntegrate_Trap_Dbl.vi"/>
 					<Item Name="NumIntegrate_Trap_Mat.vi" Type="VI" URL="../NumIntegrate_Trap_Mat.vi"/>
+				</Item>
+				<Item Name="Riccati" Type="Folder">
+					<Item Name="Riccati_Check_Detectable.vi" Type="VI" URL="../Riccati_Check_Detectable.vi"/>
+					<Item Name="Riccati_Check_Stabilizable.vi" Type="VI" URL="../Riccati_Check_Stabilizable.vi"/>
+					<Item Name="Riccati_DARE.vi" Type="VI" URL="../Riccati_DARE.vi"/>
+					<Item Name="Riccati_DARE_Iterate.vi" Type="VI" URL="../Riccati_DARE_Iterate.vi"/>
+					<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
 				</Item>
 			</Item>
 		</Item>
