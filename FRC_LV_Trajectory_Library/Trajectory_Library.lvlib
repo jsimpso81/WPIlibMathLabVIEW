@@ -25,6 +25,7 @@
 		<Item Name="FRC_LV_CtrlLib_Matrix_Helper.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Matrix_Helper.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Riccati.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Riccati.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Simulation.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Simulation.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_SingleJointedArmSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_SingleJointedArmSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceCtrl.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceCtrl.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceModel.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceModel.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtil.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtil.mnu"/>
@@ -131,6 +132,7 @@
 		<Item Name="RAMSETE.ctl" Type="VI" URL="../RAMSETE.ctl"/>
 		<Item Name="ROTATION2D.ctl" Type="VI" URL="../ROTATION2D.ctl"/>
 		<Item Name="SIMPLE_MOTOR_FF.ctl" Type="VI" URL="../SIMPLE_MOTOR_FF.ctl"/>
+		<Item Name="SINGLE_JOINT_ARM_SIM.ctl" Type="VI" URL="../SINGLE_JOINT_ARM_SIM.ctl"/>
 		<Item Name="SLEW_RATE_LIMITER.ctl" Type="VI" URL="../SLEW_RATE_LIMITER.ctl"/>
 		<Item Name="SPLINE.ctl" Type="VI" URL="../SPLINE.ctl"/>
 		<Item Name="SPLINE_CTRL_VECTOR.ctl" Type="VI" URL="../SPLINE_CTRL_VECTOR.ctl"/>
@@ -482,44 +484,79 @@
 			</Item>
 		</Item>
 		<Item Name="NEW_THINGS_DONT_USE" Type="Folder">
-			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Property Name="NI.SortType" Type="Int">0</Property>
+			<Item Name="Math" Type="Folder">
+				<Item Name="NumericalIntegration" Type="Folder">
+					<Item Name="NumIntegrate_Func_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Func_Ax_Bu_K.vi"/>
+					<Item Name="NumIntegrate_Func_Bs.vi" Type="VI" URL="../NumIntegrate_Func_Bs.vi"/>
+					<Item Name="NumIntegrate_Func_Ch.vi" Type="VI" URL="../NumIntegrate_Func_Ch.vi"/>
+					<Item Name="NumIntegrate_Func_Ct.vi" Type="VI" URL="../NumIntegrate_Func_Ct.vi"/>
+					<Item Name="NumIntegrate_Rk4_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_Dbl.vi"/>
+					<Item Name="NumIntegrate_Rk4_K_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_K_Dbl.vi"/>
+					<Item Name="NumIntegrate_Rkf45_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Rkf45_Ax_Bu_K.vi"/>
+					<Item Name="NumIntegrate_Rkf45impl_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Rkf45impl_Ax_Bu_K.vi"/>
+					<Item Name="NumIntegrate_Trap_Dbl.vi" Type="VI" URL="../NumIntegrate_Trap_Dbl.vi"/>
+					<Item Name="NumIntegrate_Trap_Mat.vi" Type="VI" URL="../NumIntegrate_Trap_Mat.vi"/>
+				</Item>
+				<Item Name="Riccati" Type="Folder">
+					<Item Name="Riccati_Check_Detectable.vi" Type="VI" URL="../Riccati_Check_Detectable.vi"/>
+					<Item Name="Riccati_Check_Stabilizable.vi" Type="VI" URL="../Riccati_Check_Stabilizable.vi"/>
+					<Item Name="Riccati_DARE.vi" Type="VI" URL="../Riccati_DARE.vi"/>
+					<Item Name="Riccati_DARE_Iterate.vi" Type="VI" URL="../Riccati_DARE_Iterate.vi"/>
+					<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
+				</Item>
+			</Item>
 			<Item Name="Simulation" Type="Folder">
-				<Item Name="FlywheelSim" Type="Folder">
-					<Item Name="FlyWheelSim_getAngularVelocityRadPerSec.vi" Type="VI" URL="../FlyWheelSim_getAngularVelocityRadPerSec.vi"/>
-					<Item Name="FlyWheelSim_New_MOI.vi" Type="VI" URL="../FlyWheelSim_New_MOI.vi"/>
-					<Item Name="FlyWheelSim_SetInput.vi" Type="VI" URL="../FlyWheelSim_SetInput.vi"/>
-					<Item Name="FlyWheelSim_Update.vi" Type="VI" URL="../FlyWheelSim_Update.vi"/>
-					<Item Name="FlyWheelSim_GetCurrentDrawAmps.vi" Type="VI" URL="../FlyWheelSim_GetCurrentDrawAmps.vi"/>
-					<Item Name="FlyWheelSim_getAngularVelocityRPM.vi" Type="VI" URL="../FlyWheelSim_getAngularVelocityRPM.vi"/>
-				</Item>
-				<Item Name="LinearSystemSim" Type="Folder">
-					<Item Name="LinearSystemSim_GetOutput.vi" Type="VI" URL="../LinearSystemSim_GetOutput.vi"/>
-					<Item Name="LinearSystemSim_GetOutput_Single.vi" Type="VI" URL="../LinearSystemSim_GetOutput_Single.vi"/>
-					<Item Name="LinearSystemSim_New.vi" Type="VI" URL="../LinearSystemSim_New.vi"/>
-					<Item Name="LinearSystemSim_SetInput_Single.vi" Type="VI" URL="../LinearSystemSim_SetInput_Single.vi"/>
-					<Item Name="LinearSystemSim_Update.vi" Type="VI" URL="../LinearSystemSim_Update.vi"/>
-					<Item Name="LinearSystemSim_UpdateX.vi" Type="VI" URL="../LinearSystemSim_UpdateX.vi"/>
-					<Item Name="LinearSystemSim_UpdateY.vi" Type="VI" URL="../LinearSystemSim_UpdateY.vi"/>
-					<Item Name="LinearSystemSim_setState.vi" Type="VI" URL="../LinearSystemSim_setState.vi"/>
-					<Item Name="LinearSystemSim_setInput.vi" Type="VI" URL="../LinearSystemSim_setInput.vi"/>
-					<Item Name="LinearSystemSim_SetInput_Array.vi" Type="VI" URL="../LinearSystemSim_SetInput_Array.vi"/>
-				</Item>
 				<Item Name="BatterySim" Type="Folder">
 					<Item Name="BatterySim_CalculateDefaultBatteryLoadedVoltage.vi" Type="VI" URL="../BatterySim_CalculateDefaultBatteryLoadedVoltage.vi"/>
 					<Item Name="BatterySim_CalculateLoadedBatteryVoltage.vi" Type="VI" URL="../BatterySim_CalculateLoadedBatteryVoltage.vi"/>
 				</Item>
 				<Item Name="ElevatorSim" Type="Folder">
-					<Item Name="ElevatorSim_New.vi" Type="VI" URL="../ElevatorSim_New.vi"/>
 					<Item Name="ElevatorSim_GetCurrentDraw.vi" Type="VI" URL="../ElevatorSim_GetCurrentDraw.vi"/>
 					<Item Name="ElevatorSim_GetPositionMeters.vi" Type="VI" URL="../ElevatorSim_GetPositionMeters.vi"/>
 					<Item Name="ElevatorSim_GetVelocityMetersPerSecond.vi" Type="VI" URL="../ElevatorSim_GetVelocityMetersPerSecond.vi"/>
+					<Item Name="ElevatorSim_HasHitLowerLimit.vi" Type="VI" URL="../ElevatorSim_HasHitLowerLimit.vi"/>
+					<Item Name="ElevatorSim_HasHitUpperLimit.vi" Type="VI" URL="../ElevatorSim_HasHitUpperLimit.vi"/>
+					<Item Name="ElevatorSim_New.vi" Type="VI" URL="../ElevatorSim_New.vi"/>
 					<Item Name="ElevatorSim_SetInputVoltage.vi" Type="VI" URL="../ElevatorSim_SetInputVoltage.vi"/>
+					<Item Name="ElevatorSim_Update.vi" Type="VI" URL="../ElevatorSim_Update.vi"/>
 					<Item Name="ElevatorSim_UpdateX.vi" Type="VI" URL="../ElevatorSim_UpdateX.vi"/>
 					<Item Name="ElevatorSim_WouldHitLowerLimit.vi" Type="VI" URL="../ElevatorSim_WouldHitLowerLimit.vi"/>
 					<Item Name="ElevatorSim_WouldHitUpperLimit.vi" Type="VI" URL="../ElevatorSim_WouldHitUpperLimit.vi"/>
-					<Item Name="ElevatorSim_Update.vi" Type="VI" URL="../ElevatorSim_Update.vi"/>
-					<Item Name="ElevatorSim_HasHitLowerLimit.vi" Type="VI" URL="../ElevatorSim_HasHitLowerLimit.vi"/>
-					<Item Name="ElevatorSim_HasHitUpperLimit.vi" Type="VI" URL="../ElevatorSim_HasHitUpperLimit.vi"/>
+				</Item>
+				<Item Name="FlywheelSim" Type="Folder">
+					<Item Name="FlyWheelSim_getAngularVelocityRadPerSec.vi" Type="VI" URL="../FlyWheelSim_getAngularVelocityRadPerSec.vi"/>
+					<Item Name="FlyWheelSim_getAngularVelocityRPM.vi" Type="VI" URL="../FlyWheelSim_getAngularVelocityRPM.vi"/>
+					<Item Name="FlyWheelSim_GetCurrentDrawAmps.vi" Type="VI" URL="../FlyWheelSim_GetCurrentDrawAmps.vi"/>
+					<Item Name="FlyWheelSim_New_MOI.vi" Type="VI" URL="../FlyWheelSim_New_MOI.vi"/>
+					<Item Name="FlyWheelSim_SetInput.vi" Type="VI" URL="../FlyWheelSim_SetInput.vi"/>
+					<Item Name="FlyWheelSim_Update.vi" Type="VI" URL="../FlyWheelSim_Update.vi"/>
+				</Item>
+				<Item Name="LinearSystemSim" Type="Folder">
+					<Item Name="LinearSystemSim_GetOutput.vi" Type="VI" URL="../LinearSystemSim_GetOutput.vi"/>
+					<Item Name="LinearSystemSim_GetOutput_Single.vi" Type="VI" URL="../LinearSystemSim_GetOutput_Single.vi"/>
+					<Item Name="LinearSystemSim_New.vi" Type="VI" URL="../LinearSystemSim_New.vi"/>
+					<Item Name="LinearSystemSim_setInput.vi" Type="VI" URL="../LinearSystemSim_setInput.vi"/>
+					<Item Name="LinearSystemSim_SetInput_Array.vi" Type="VI" URL="../LinearSystemSim_SetInput_Array.vi"/>
+					<Item Name="LinearSystemSim_SetInput_Single.vi" Type="VI" URL="../LinearSystemSim_SetInput_Single.vi"/>
+					<Item Name="LinearSystemSim_setState.vi" Type="VI" URL="../LinearSystemSim_setState.vi"/>
+					<Item Name="LinearSystemSim_Update.vi" Type="VI" URL="../LinearSystemSim_Update.vi"/>
+					<Item Name="LinearSystemSim_UpdateX.vi" Type="VI" URL="../LinearSystemSim_UpdateX.vi"/>
+					<Item Name="LinearSystemSim_UpdateY.vi" Type="VI" URL="../LinearSystemSim_UpdateY.vi"/>
+				</Item>
+				<Item Name="Single Joint Arm Sim" Type="Folder">
+					<Item Name="SngJntArmSim_EstimateMOI.vi" Type="VI" URL="../SngJntArmSim_EstimateMOI.vi"/>
+					<Item Name="SngJntArmSim_GetAngleRads.vi" Type="VI" URL="../SngJntArmSim_GetAngleRads.vi"/>
+					<Item Name="SngJntArmSim_GetCurrentDraw.vi" Type="VI" URL="../SngJntArmSim_GetCurrentDraw.vi"/>
+					<Item Name="SngJntArmSim_GetVelocityRadsPerSec.vi" Type="VI" URL="../SngJntArmSim_GetVelocityRadsPerSec.vi"/>
+					<Item Name="SngJntArmSim_HasHitLowerLimit.vi" Type="VI" URL="../SngJntArmSim_HasHitLowerLimit.vi"/>
+					<Item Name="SngJntArmSim_HasHitUpperLimit.vi" Type="VI" URL="../SngJntArmSim_HasHitUpperLimit.vi"/>
+					<Item Name="SngJntArmSim_New.vi" Type="VI" URL="../SngJntArmSim_New.vi"/>
+					<Item Name="SngJntArmSim_SetInputVoltage.vi" Type="VI" URL="../SngJntArmSim_SetInputVoltage.vi"/>
+					<Item Name="SngJntArmSim_Update.vi" Type="VI" URL="../SngJntArmSim_Update.vi"/>
+					<Item Name="SngJntArmSim_UpdateX.vi" Type="VI" URL="../SngJntArmSim_UpdateX.vi"/>
+					<Item Name="SngJntArmSim_WouldHitLowerLimit.vi" Type="VI" URL="../SngJntArmSim_WouldHitLowerLimit.vi"/>
+					<Item Name="SngJntArmSim_WouldHitUpperLimit.vi" Type="VI" URL="../SngJntArmSim_WouldHitUpperLimit.vi"/>
 				</Item>
 			</Item>
 			<Item Name="State Space Control" Type="Folder">
@@ -611,23 +648,8 @@
 					<Item Name="StateSpaceUtil_NormalizeInputVector.vi" Type="VI" URL="../StateSpaceUtil_NormalizeInputVector.vi"/>
 				</Item>
 			</Item>
-			<Item Name="State Space Utilities" Type="Folder">
-				<Property Name="NI.SortType" Type="Int">0</Property>
-				<Item Name="MatBuilder" Type="Folder">
-					<Item Name="MatBuilder_Create.vi" Type="VI" URL="../MatBuilder_Create.vi"/>
-					<Item Name="MatBuilder_Fill.vi" Type="VI" URL="../MatBuilder_Fill.vi"/>
-				</Item>
-				<Item Name="MatixHelper" Type="Folder">
-					<Item Name="MatrixHelper_CoerceSize.vi" Type="VI" URL="../MatrixHelper_CoerceSize.vi"/>
-					<Item Name="MatrixHelper_Zero.vi" Type="VI" URL="../MatrixHelper_Zero.vi"/>
-				</Item>
-				<Item Name="VecBuilder" Type="Folder">
-					<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
-					<Item Name="VecBuilder_2x1Fill.vi" Type="VI" URL="../VecBuilder_2x1Fill.vi"/>
-					<Item Name="VecBuilder_3x1Fill.vi" Type="VI" URL="../VecBuilder_3x1Fill.vi"/>
-					<Item Name="VecBuilder_4x1Fill.vi" Type="VI" URL="../VecBuilder_4x1Fill.vi"/>
-					<Item Name="VecBuilder_ArrayBy1Fill.vi" Type="VI" URL="../VecBuilder_ArrayBy1Fill.vi"/>
-				</Item>
+			<Item Name="State Space Estimator" Type="Folder">
+				<Item Name="Diff Drive Pose Estimator" Type="Folder"/>
 			</Item>
 			<Item Name="State Space Model" Type="Folder">
 				<Item Name="DCMotor" Type="Folder">
@@ -655,25 +677,22 @@
 					<Item Name="LinearSystemId_IdentifyVelocitySystem.vi" Type="VI" URL="../LinearSystemId_IdentifyVelocitySystem.vi"/>
 				</Item>
 			</Item>
-			<Item Name="Math" Type="Folder">
-				<Item Name="NumericalIntegration" Type="Folder">
-					<Item Name="NumIntegrate_Func_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Func_Ax_Bu_K.vi"/>
-					<Item Name="NumIntegrate_Func_Bs.vi" Type="VI" URL="../NumIntegrate_Func_Bs.vi"/>
-					<Item Name="NumIntegrate_Func_Ch.vi" Type="VI" URL="../NumIntegrate_Func_Ch.vi"/>
-					<Item Name="NumIntegrate_Func_Ct.vi" Type="VI" URL="../NumIntegrate_Func_Ct.vi"/>
-					<Item Name="NumIntegrate_Rk4_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_Dbl.vi"/>
-					<Item Name="NumIntegrate_Rk4_K_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_K_Dbl.vi"/>
-					<Item Name="NumIntegrate_Rkf45_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Rkf45_Ax_Bu_K.vi"/>
-					<Item Name="NumIntegrate_Rkf45impl_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Rkf45impl_Ax_Bu_K.vi"/>
-					<Item Name="NumIntegrate_Trap_Dbl.vi" Type="VI" URL="../NumIntegrate_Trap_Dbl.vi"/>
-					<Item Name="NumIntegrate_Trap_Mat.vi" Type="VI" URL="../NumIntegrate_Trap_Mat.vi"/>
+			<Item Name="State Space Utilities" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">0</Property>
+				<Item Name="MatBuilder" Type="Folder">
+					<Item Name="MatBuilder_Create.vi" Type="VI" URL="../MatBuilder_Create.vi"/>
+					<Item Name="MatBuilder_Fill.vi" Type="VI" URL="../MatBuilder_Fill.vi"/>
 				</Item>
-				<Item Name="Riccati" Type="Folder">
-					<Item Name="Riccati_Check_Detectable.vi" Type="VI" URL="../Riccati_Check_Detectable.vi"/>
-					<Item Name="Riccati_Check_Stabilizable.vi" Type="VI" URL="../Riccati_Check_Stabilizable.vi"/>
-					<Item Name="Riccati_DARE.vi" Type="VI" URL="../Riccati_DARE.vi"/>
-					<Item Name="Riccati_DARE_Iterate.vi" Type="VI" URL="../Riccati_DARE_Iterate.vi"/>
-					<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
+				<Item Name="MatixHelper" Type="Folder">
+					<Item Name="MatrixHelper_CoerceSize.vi" Type="VI" URL="../MatrixHelper_CoerceSize.vi"/>
+					<Item Name="MatrixHelper_Zero.vi" Type="VI" URL="../MatrixHelper_Zero.vi"/>
+				</Item>
+				<Item Name="VecBuilder" Type="Folder">
+					<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
+					<Item Name="VecBuilder_2x1Fill.vi" Type="VI" URL="../VecBuilder_2x1Fill.vi"/>
+					<Item Name="VecBuilder_3x1Fill.vi" Type="VI" URL="../VecBuilder_3x1Fill.vi"/>
+					<Item Name="VecBuilder_4x1Fill.vi" Type="VI" URL="../VecBuilder_4x1Fill.vi"/>
+					<Item Name="VecBuilder_ArrayBy1Fill.vi" Type="VI" URL="../VecBuilder_ArrayBy1Fill.vi"/>
 				</Item>
 			</Item>
 		</Item>
