@@ -122,6 +122,7 @@
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../MECA_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="MECA_WHEEL_SPEEDS.ctl" Type="VI" URL="../MECA_WHEEL_SPEEDS.ctl"/>
 		<Item Name="MEDIAN_FILTER.ctl" Type="VI" URL="../MEDIAN_FILTER.ctl"/>
+		<Item Name="NumIntegrate_RKF45_FUNC_TYPE.ctl" Type="VI" URL="../NumIntegrate_RKF45_FUNC_TYPE.ctl"/>
 		<Item Name="PARAM_STACK.ctl" Type="VI" URL="../PARAM_STACK.ctl"/>
 		<Item Name="PARAM_STACK_ITEM.ctl" Type="VI" URL="../PARAM_STACK_ITEM.ctl"/>
 		<Item Name="PID_ADV_LIMITS.ctl" Type="VI" URL="../PID_ADV_LIMITS.ctl"/>
@@ -498,7 +499,9 @@
 					<Item Name="NumIntegrate_Func_Ct.vi" Type="VI" URL="../NumIntegrate_Func_Ct.vi"/>
 					<Item Name="NumIntegrate_Rk4_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_Dbl.vi"/>
 					<Item Name="NumIntegrate_Rk4_K_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_K_Dbl.vi"/>
+					<Item Name="NumIntegrate_Rkf45.vi" Type="VI" URL="../NumIntegrate_Rkf45.vi"/>
 					<Item Name="NumIntegrate_Rkf45_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Rkf45_Ax_Bu_K.vi"/>
+					<Item Name="NumIntegrate_Rkf45impl.vi" Type="VI" URL="../NumIntegrate_Rkf45impl.vi"/>
 					<Item Name="NumIntegrate_Rkf45impl_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Rkf45impl_Ax_Bu_K.vi"/>
 					<Item Name="NumIntegrate_Trap_Dbl.vi" Type="VI" URL="../NumIntegrate_Trap_Dbl.vi"/>
 					<Item Name="NumIntegrate_Trap_Mat.vi" Type="VI" URL="../NumIntegrate_Trap_Mat.vi"/>
@@ -523,6 +526,7 @@
 					<Item Name="ElevatorSim_HasHitLowerLimit.vi" Type="VI" URL="../ElevatorSim_HasHitLowerLimit.vi"/>
 					<Item Name="ElevatorSim_HasHitUpperLimit.vi" Type="VI" URL="../ElevatorSim_HasHitUpperLimit.vi"/>
 					<Item Name="ElevatorSim_New.vi" Type="VI" URL="../ElevatorSim_New.vi"/>
+					<Item Name="ElevatorSim_Rkf45_Func.vi" Type="VI" URL="../ElevatorSim_Rkf45_Func.vi"/>
 					<Item Name="ElevatorSim_SetInputVoltage.vi" Type="VI" URL="../ElevatorSim_SetInputVoltage.vi"/>
 					<Item Name="ElevatorSim_Update.vi" Type="VI" URL="../ElevatorSim_Update.vi"/>
 					<Item Name="ElevatorSim_UpdateX.vi" Type="VI" URL="../ElevatorSim_UpdateX.vi"/>
@@ -557,6 +561,7 @@
 					<Item Name="SngJntArmSim_HasHitLowerLimit.vi" Type="VI" URL="../SngJntArmSim_HasHitLowerLimit.vi"/>
 					<Item Name="SngJntArmSim_HasHitUpperLimit.vi" Type="VI" URL="../SngJntArmSim_HasHitUpperLimit.vi"/>
 					<Item Name="SngJntArmSim_New.vi" Type="VI" URL="../SngJntArmSim_New.vi"/>
+					<Item Name="SngJntArmSim_Rkf45_Func.vi" Type="VI" URL="../SngJntArmSim_Rkf45_Func.vi"/>
 					<Item Name="SngJntArmSim_SetInputVoltage.vi" Type="VI" URL="../SngJntArmSim_SetInputVoltage.vi"/>
 					<Item Name="SngJntArmSim_Update.vi" Type="VI" URL="../SngJntArmSim_Update.vi"/>
 					<Item Name="SngJntArmSim_UpdateX.vi" Type="VI" URL="../SngJntArmSim_UpdateX.vi"/>
