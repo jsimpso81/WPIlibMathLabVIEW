@@ -9,6 +9,7 @@
 </Property>
 	<Item Name="_Menus" Type="Folder">
 		<Item Name="FRC_LV_CtrlLib_BatterySim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BatterySim.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_ControllerUtils.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ControllerUtils.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DC_Motor.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DC_Motor.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Discretization.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Discretization.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_ElevatorSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ElevatorSim.mnu"/>
@@ -22,7 +23,9 @@
 		<Item Name="FRC_LV_CtrlLib_LinPlntInvFF.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinPlntInvFF.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_LQR.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LQR.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_MatBuilder.mnu" Type="Document" URL="../FRC_LV_CtrlLib_MatBuilder.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Math.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Math.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Matrix_Helper.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Matrix_Helper.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_NumericalIntegration.mnu" Type="Document" URL="../FRC_LV_CtrlLib_NumericalIntegration.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Riccati.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Riccati.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Simulation.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Simulation.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_SingleJointedArmSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_SingleJointedArmSim.mnu"/>
@@ -31,6 +34,7 @@
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtil.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtil.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Timing.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Timing.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_UnitsConv.mnu" Type="Document" URL="../FRC_LV_CtrlLib_UnitsConv.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_VectorBuilder.mnu" Type="Document" URL="../FRC_LV_CtrlLib_VectorBuilder.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Arm_FF.mnu" Type="Document" URL="../FRC_LV_Trajectory_Arm_FF.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Base_WPILIB.mnu" Type="Document" URL="../FRC_LV_Trajectory_Base_WPILIB.mnu"/>
@@ -486,6 +490,7 @@
 		<Item Name="NEW_THINGS_DONT_USE" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="Math" Type="Folder">
+				<Item Name="MathUtil" Type="Folder"/>
 				<Item Name="NumericalIntegration" Type="Folder">
 					<Item Name="NumIntegrate_Func_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Func_Ax_Bu_K.vi"/>
 					<Item Name="NumIntegrate_Func_Bs.vi" Type="VI" URL="../NumIntegrate_Func_Bs.vi"/>
@@ -561,13 +566,6 @@
 			</Item>
 			<Item Name="State Space Control" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
-				<Item Name="Discretization" Type="Folder">
-					<Item Name="Discretization_DiscretizeA.vi" Type="VI" URL="../Discretization_DiscretizeA.vi"/>
-					<Item Name="Discretization_DiscretizeAB.vi" Type="VI" URL="../Discretization_DiscretizeAB.vi"/>
-					<Item Name="Discretization_DiscretizeABTaylor.vi" Type="VI" URL="../Discretization_DiscretizeABTaylor.vi"/>
-					<Item Name="Discretization_DiscretizeAQTaylor.vi" Type="VI" URL="../Discretization_DiscretizeAQTaylor.vi"/>
-					<Item Name="Discretization_DiscretizeR.vi" Type="VI" URL="../Discretization_DiscretizeR.vi"/>
-				</Item>
 				<Item Name="KalmanFilter" Type="Folder">
 					<Item Name="KalmanFilter_Correct.vi" Type="VI" URL="../KalmanFilter_Correct.vi"/>
 					<Item Name="KalmanFilter_GetK.vi" Type="VI" URL="../KalmanFilter_GetK.vi"/>
@@ -641,12 +639,6 @@
 					<Item Name="LinearSystemLoop_Reset.vi" Type="VI" URL="../LinearSystemLoop_Reset.vi"/>
 					<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
 				</Item>
-				<Item Name="StateSpaceUtil" Type="Folder">
-					<Item Name="StateSpaceUtil_ClampInputMaxMagnitude.vi" Type="VI" URL="../StateSpaceUtil_ClampInputMaxMagnitude.vi"/>
-					<Item Name="StateSpaceUtil_MakeCostMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCostMatrix.vi"/>
-					<Item Name="StateSpaceUtil_MakeCovarianceMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCovarianceMatrix.vi"/>
-					<Item Name="StateSpaceUtil_NormalizeInputVector.vi" Type="VI" URL="../StateSpaceUtil_NormalizeInputVector.vi"/>
-				</Item>
 			</Item>
 			<Item Name="State Space Estimator" Type="Folder">
 				<Item Name="Diff Drive Pose Estimator" Type="Folder"/>
@@ -679,6 +671,13 @@
 			</Item>
 			<Item Name="State Space Utilities" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
+				<Item Name="Discretization" Type="Folder">
+					<Item Name="Discretization_DiscretizeA.vi" Type="VI" URL="../Discretization_DiscretizeA.vi"/>
+					<Item Name="Discretization_DiscretizeAB.vi" Type="VI" URL="../Discretization_DiscretizeAB.vi"/>
+					<Item Name="Discretization_DiscretizeABTaylor.vi" Type="VI" URL="../Discretization_DiscretizeABTaylor.vi"/>
+					<Item Name="Discretization_DiscretizeAQTaylor.vi" Type="VI" URL="../Discretization_DiscretizeAQTaylor.vi"/>
+					<Item Name="Discretization_DiscretizeR.vi" Type="VI" URL="../Discretization_DiscretizeR.vi"/>
+				</Item>
 				<Item Name="MatBuilder" Type="Folder">
 					<Item Name="MatBuilder_Create.vi" Type="VI" URL="../MatBuilder_Create.vi"/>
 					<Item Name="MatBuilder_Fill.vi" Type="VI" URL="../MatBuilder_Fill.vi"/>
@@ -686,6 +685,16 @@
 				<Item Name="MatixHelper" Type="Folder">
 					<Item Name="MatrixHelper_CoerceSize.vi" Type="VI" URL="../MatrixHelper_CoerceSize.vi"/>
 					<Item Name="MatrixHelper_Zero.vi" Type="VI" URL="../MatrixHelper_Zero.vi"/>
+				</Item>
+				<Item Name="StateSpaceUtil" Type="Folder">
+					<Item Name="StateSpaceUtil_ClampInputMaxMagnitude.vi" Type="VI" URL="../StateSpaceUtil_ClampInputMaxMagnitude.vi"/>
+					<Item Name="StateSpaceUtil_MakeCostMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCostMatrix.vi"/>
+					<Item Name="StateSpaceUtil_MakeCovarianceMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCovarianceMatrix.vi"/>
+					<Item Name="StateSpaceUtil_MakeWhiteNoiseVector.vi" Type="VI" URL="../StateSpaceUtil_MakeWhiteNoiseVector.vi"/>
+					<Item Name="StateSpaceUtil_NormalizeInputVector.vi" Type="VI" URL="../StateSpaceUtil_NormalizeInputVector.vi"/>
+					<Item Name="StateSpaceUtil_PoseTo3dVector.vi" Type="VI" URL="../StateSpaceUtil_PoseTo3dVector.vi"/>
+					<Item Name="StateSpaceUtil_PoseTo4dVector.vi" Type="VI" URL="../StateSpaceUtil_PoseTo4dVector.vi"/>
+					<Item Name="StateSpaceUtil_PoseToVector.vi" Type="VI" URL="../StateSpaceUtil_PoseToVector.vi"/>
 				</Item>
 				<Item Name="VecBuilder" Type="Folder">
 					<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
