@@ -107,6 +107,10 @@
 		<Item Name="CONSTRAINED_STATE.ctl" Type="VI" URL="../CONSTRAINED_STATE.ctl"/>
 		<Item Name="DCMOTOR.CTL" Type="VI" URL="../DCMOTOR.CTL"/>
 		<Item Name="DIFF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../DIFF_DRIVE_KINEMATICS.ctl"/>
+		<Item Name="DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl"/>
+		<Item Name="DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl"/>
+		<Item Name="DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl"/>
+		<Item Name="DIFF_DRIVE_TRAIN_SIM.ctl" Type="VI" URL="../DIFF_DRIVE_TRAIN_SIM.ctl"/>
 		<Item Name="ELEV_FF.ctl" Type="VI" URL="../ELEV_FF.ctl"/>
 		<Item Name="ELEVATOR_SIM.ctl" Type="VI" URL="../ELEVATOR_SIM.ctl"/>
 		<Item Name="FLYWHEEL_SIM.ctl" Type="VI" URL="../FLYWHEEL_SIM.ctl"/>
@@ -357,9 +361,11 @@
 			<Item Name="Conv_GyroDegrees_Heading.vi" Type="VI" URL="../Conv_GyroDegrees_Heading.vi"/>
 			<Item Name="Conv_Heading_AngleRadians.vi" Type="VI" URL="../Conv_Heading_AngleRadians.vi"/>
 			<Item Name="Conv_Inches_Meters.vi" Type="VI" URL="../Conv_Inches_Meters.vi"/>
+			<Item Name="Conv_Killograms_Pounds.vi" Type="VI" URL="../Conv_Killograms_Pounds.vi"/>
 			<Item Name="Conv_Meters_Feet.vi" Type="VI" URL="../Conv_Meters_Feet.vi"/>
 			<Item Name="Conv_Meters_Inches.vi" Type="VI" URL="../Conv_Meters_Inches.vi"/>
 			<Item Name="Conv_POSE_SI_Eng.vi" Type="VI" URL="../Conv_POSE_SI_Eng.vi"/>
+			<Item Name="Conv_Pounds_Killograms.vi" Type="VI" URL="../Conv_Pounds_Killograms.vi"/>
 			<Item Name="Conv_Radians_Deg.vi" Type="VI" URL="../Conv_Radians_Deg.vi"/>
 			<Item Name="Conv_Yards_Meters.vi" Type="VI" URL="../Conv_Yards_Meters.vi"/>
 		</Item>
@@ -499,6 +505,8 @@
 					<Item Name="NumIntegrate_Func_Ct.vi" Type="VI" URL="../NumIntegrate_Func_Ct.vi"/>
 					<Item Name="NumIntegrate_Rk4_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_Dbl.vi"/>
 					<Item Name="NumIntegrate_Rk4_K_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_K_Dbl.vi"/>
+					<Item Name="NumIntegrate_Rk4_Mat_X.vi" Type="VI" URL="../NumIntegrate_Rk4_Mat_X.vi"/>
+					<Item Name="NumIntegrate_Rk4_Mat_X_U.vi" Type="VI" URL="../NumIntegrate_Rk4_Mat_X_U.vi"/>
 					<Item Name="NumIntegrate_Rkf45.vi" Type="VI" URL="../NumIntegrate_Rkf45.vi"/>
 					<Item Name="NumIntegrate_Rkf45_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Rkf45_Ax_Bu_K.vi"/>
 					<Item Name="NumIntegrate_Rkf45impl.vi" Type="VI" URL="../NumIntegrate_Rkf45impl.vi"/>
@@ -514,10 +522,61 @@
 					<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
 				</Item>
 			</Item>
+			<Item Name="MatrixUtilities" Type="Folder">
+				<Item Name="MatBuilder" Type="Folder">
+					<Item Name="MatBuilder_Create.vi" Type="VI" URL="../MatBuilder_Create.vi"/>
+					<Item Name="MatBuilder_Fill.vi" Type="VI" URL="../MatBuilder_Fill.vi"/>
+				</Item>
+				<Item Name="MatixHelper" Type="Folder">
+					<Item Name="MatrixHelper_CoerceSize.vi" Type="VI" URL="../MatrixHelper_CoerceSize.vi"/>
+					<Item Name="MatrixHelper_Zero.vi" Type="VI" URL="../MatrixHelper_Zero.vi"/>
+				</Item>
+				<Item Name="Matrix" Type="Folder">
+					<Item Name="Matrix_AssignBlock.vi" Type="VI" URL="../Matrix_AssignBlock.vi"/>
+					<Item Name="Matrix_Block.vi" Type="VI" URL="../Matrix_Block.vi"/>
+				</Item>
+				<Item Name="VecBuilder" Type="Folder">
+					<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
+					<Item Name="VecBuilder_2x1Fill.vi" Type="VI" URL="../VecBuilder_2x1Fill.vi"/>
+					<Item Name="VecBuilder_3x1Fill.vi" Type="VI" URL="../VecBuilder_3x1Fill.vi"/>
+					<Item Name="VecBuilder_4x1Fill.vi" Type="VI" URL="../VecBuilder_4x1Fill.vi"/>
+					<Item Name="VecBuilder_ArrayBy1Fill.vi" Type="VI" URL="../VecBuilder_ArrayBy1Fill.vi"/>
+				</Item>
+			</Item>
 			<Item Name="Simulation" Type="Folder">
 				<Item Name="BatterySim" Type="Folder">
 					<Item Name="BatterySim_CalculateDefaultBatteryLoadedVoltage.vi" Type="VI" URL="../BatterySim_CalculateDefaultBatteryLoadedVoltage.vi"/>
 					<Item Name="BatterySim_CalculateLoadedBatteryVoltage.vi" Type="VI" URL="../BatterySim_CalculateLoadedBatteryVoltage.vi"/>
+				</Item>
+				<Item Name="DiffDriveTrainSim" Type="Folder">
+					<Item Name="DiffDriveTrainSim_ClampInput.vi" Type="VI" URL="../DiffDriveTrainSim_ClampInput.vi"/>
+					<Item Name="DiffDriveTrainSim_CreateKitbotSim.vi" Type="VI" URL="../DiffDriveTrainSim_CreateKitbotSim.vi"/>
+					<Item Name="DiffDriveTrainSim_CreateKitbotSim_EstMass.vi" Type="VI" URL="../DiffDriveTrainSim_CreateKitbotSim_EstMass.vi"/>
+					<Item Name="DiffDriveTrainSim_CreateKitbotSim_EstMassMOI.vi" Type="VI" URL="../DiffDriveTrainSim_CreateKitbotSim_EstMassMOI.vi"/>
+					<Item Name="DiffDriveTrainSim_GetCurrentDrawAmps.vi" Type="VI" URL="../DiffDriveTrainSim_GetCurrentDrawAmps.vi"/>
+					<Item Name="DiffDriveTrainSim_GetCurrentGearing.vi" Type="VI" URL="../DiffDriveTrainSim_GetCurrentGearing.vi"/>
+					<Item Name="DiffDriveTrainSim_GetDynamics.vi" Type="VI" URL="../DiffDriveTrainSim_GetDynamics.vi"/>
+					<Item Name="DiffDriveTrainSim_GetHeading.vi" Type="VI" URL="../DiffDriveTrainSim_GetHeading.vi"/>
+					<Item Name="DiffDriveTrainSim_GetLeftCurrentDrawAmps.vi" Type="VI" URL="../DiffDriveTrainSim_GetLeftCurrentDrawAmps.vi"/>
+					<Item Name="DiffDriveTrainSim_GetLeftPositionMeters.vi" Type="VI" URL="../DiffDriveTrainSim_GetLeftPositionMeters.vi"/>
+					<Item Name="DiffDriveTrainSim_GetLeftVelocityMetersPerSecond.vi" Type="VI" URL="../DiffDriveTrainSim_GetLeftVelocityMetersPerSecond.vi"/>
+					<Item Name="DiffDriveTrainSim_GetOutput_Single.vi" Type="VI" URL="../DiffDriveTrainSim_GetOutput_Single.vi"/>
+					<Item Name="DiffDriveTrainSim_GetPose.vi" Type="VI" URL="../DiffDriveTrainSim_GetPose.vi"/>
+					<Item Name="DiffDriveTrainSim_GetRightCurrentDrawAmps.vi" Type="VI" URL="../DiffDriveTrainSim_GetRightCurrentDrawAmps.vi"/>
+					<Item Name="DiffDriveTrainSim_GetRightPositionMeters.vi" Type="VI" URL="../DiffDriveTrainSim_GetRightPositionMeters.vi"/>
+					<Item Name="DiffDriveTrainSim_GetRightVelocityMetersPerSecond.vi" Type="VI" URL="../DiffDriveTrainSim_GetRightVelocityMetersPerSecond.vi"/>
+					<Item Name="DiffDriveTrainSim_GetState.vi" Type="VI" URL="../DiffDriveTrainSim_GetState.vi"/>
+					<Item Name="DiffDriveTrainSim_GetState_Single.vi" Type="VI" URL="../DiffDriveTrainSim_GetState_Single.vi"/>
+					<Item Name="DiffDriveTrainSim_KitBotWheelSize.vi" Type="VI" URL="../DiffDriveTrainSim_KitBotWheelSize.vi"/>
+					<Item Name="DiffDriveTrainSim_New.vi" Type="VI" URL="../DiffDriveTrainSim_New.vi"/>
+					<Item Name="DiffDriveTrainSim_New_Mass_MOI.vi" Type="VI" URL="../DiffDriveTrainSim_New_Mass_MOI.vi"/>
+					<Item Name="DiffDriveTrainSim_SetCurrentGearing.vi" Type="VI" URL="../DiffDriveTrainSim_SetCurrentGearing.vi"/>
+					<Item Name="DiffDriveTrainSim_SetInputs.vi" Type="VI" URL="../DiffDriveTrainSim_SetInputs.vi"/>
+					<Item Name="DiffDriveTrainSim_SetPose.vi" Type="VI" URL="../DiffDriveTrainSim_SetPose.vi"/>
+					<Item Name="DiffDriveTrainSim_SetState.vi" Type="VI" URL="../DiffDriveTrainSim_SetState.vi"/>
+					<Item Name="DiffDriveTrainSim_ToughBoxMiniGearRatio.vi" Type="VI" URL="../DiffDriveTrainSim_ToughBoxMiniGearRatio.vi"/>
+					<Item Name="DiffDriveTrainSim_ToughBoxMiniMotor.vi" Type="VI" URL="../DiffDriveTrainSim_ToughBoxMiniMotor.vi"/>
+					<Item Name="DiffDriveTrainSim_Update.vi" Type="VI" URL="../DiffDriveTrainSim_Update.vi"/>
 				</Item>
 				<Item Name="ElevatorSim" Type="Folder">
 					<Item Name="ElevatorSim_GetCurrentDraw.vi" Type="VI" URL="../ElevatorSim_GetCurrentDraw.vi"/>
@@ -665,7 +724,7 @@
 					<Item Name="DCMotor_New.vi" Type="VI" URL="../DCMotor_New.vi"/>
 				</Item>
 				<Item Name="LinearsystemId" Type="Folder">
-					<Item Name="LinearSystemId_CreateDriveTrainSystem.vi" Type="VI" URL="../LinearSystemId_CreateDriveTrainSystem.vi"/>
+					<Item Name="LinearSystemId_CreateDriveTrainVelocitySystem.vi" Type="VI" URL="../LinearSystemId_CreateDriveTrainVelocitySystem.vi"/>
 					<Item Name="LinearSystemId_CreateElevatorSystem.vi" Type="VI" URL="../LinearSystemId_CreateElevatorSystem.vi"/>
 					<Item Name="LinearSystemId_CreateFlywheelSystem.vi" Type="VI" URL="../LinearSystemId_CreateFlywheelSystem.vi"/>
 					<Item Name="LinearSystemId_CreateSingleJointedArmSystem.vi" Type="VI" URL="../LinearSystemId_CreateSingleJointedArmSystem.vi"/>
@@ -683,14 +742,6 @@
 					<Item Name="Discretization_DiscretizeAQTaylor.vi" Type="VI" URL="../Discretization_DiscretizeAQTaylor.vi"/>
 					<Item Name="Discretization_DiscretizeR.vi" Type="VI" URL="../Discretization_DiscretizeR.vi"/>
 				</Item>
-				<Item Name="MatBuilder" Type="Folder">
-					<Item Name="MatBuilder_Create.vi" Type="VI" URL="../MatBuilder_Create.vi"/>
-					<Item Name="MatBuilder_Fill.vi" Type="VI" URL="../MatBuilder_Fill.vi"/>
-				</Item>
-				<Item Name="MatixHelper" Type="Folder">
-					<Item Name="MatrixHelper_CoerceSize.vi" Type="VI" URL="../MatrixHelper_CoerceSize.vi"/>
-					<Item Name="MatrixHelper_Zero.vi" Type="VI" URL="../MatrixHelper_Zero.vi"/>
-				</Item>
 				<Item Name="StateSpaceUtil" Type="Folder">
 					<Item Name="StateSpaceUtil_ClampInputMaxMagnitude.vi" Type="VI" URL="../StateSpaceUtil_ClampInputMaxMagnitude.vi"/>
 					<Item Name="StateSpaceUtil_MakeCostMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCostMatrix.vi"/>
@@ -700,13 +751,6 @@
 					<Item Name="StateSpaceUtil_PoseTo3dVector.vi" Type="VI" URL="../StateSpaceUtil_PoseTo3dVector.vi"/>
 					<Item Name="StateSpaceUtil_PoseTo4dVector.vi" Type="VI" URL="../StateSpaceUtil_PoseTo4dVector.vi"/>
 					<Item Name="StateSpaceUtil_PoseToVector.vi" Type="VI" URL="../StateSpaceUtil_PoseToVector.vi"/>
-				</Item>
-				<Item Name="VecBuilder" Type="Folder">
-					<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
-					<Item Name="VecBuilder_2x1Fill.vi" Type="VI" URL="../VecBuilder_2x1Fill.vi"/>
-					<Item Name="VecBuilder_3x1Fill.vi" Type="VI" URL="../VecBuilder_3x1Fill.vi"/>
-					<Item Name="VecBuilder_4x1Fill.vi" Type="VI" URL="../VecBuilder_4x1Fill.vi"/>
-					<Item Name="VecBuilder_ArrayBy1Fill.vi" Type="VI" URL="../VecBuilder_ArrayBy1Fill.vi"/>
 				</Item>
 			</Item>
 		</Item>
