@@ -108,6 +108,7 @@
 		<Item Name="DCMOTOR.CTL" Type="VI" URL="../DCMOTOR.CTL"/>
 		<Item Name="DIFF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../DIFF_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl"/>
+		<Item Name="DIFF_DRIVE_POSE_EST.ctl" Type="VI" URL="../DIFF_DRIVE_POSE_EST.ctl"/>
 		<Item Name="DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_TRAIN_SIM.ctl" Type="VI" URL="../DIFF_DRIVE_TRAIN_SIM.ctl"/>
@@ -126,6 +127,7 @@
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../MECA_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="MECA_WHEEL_SPEEDS.ctl" Type="VI" URL="../MECA_WHEEL_SPEEDS.ctl"/>
 		<Item Name="MEDIAN_FILTER.ctl" Type="VI" URL="../MEDIAN_FILTER.ctl"/>
+		<Item Name="MERWE_SCALED_SIGMA_PTS.ctl" Type="VI" URL="../MERWE_SCALED_SIGMA_PTS.ctl"/>
 		<Item Name="NumIntegrate_RKF45_FUNC_TYPE.ctl" Type="VI" URL="../NumIntegrate_RKF45_FUNC_TYPE.ctl"/>
 		<Item Name="PARAM_STACK.ctl" Type="VI" URL="../PARAM_STACK.ctl"/>
 		<Item Name="PARAM_STACK_ITEM.ctl" Type="VI" URL="../PARAM_STACK_ITEM.ctl"/>
@@ -165,6 +167,7 @@
 		<Item Name="TRAPEZOID_PROFILE_CONSTRAINT.ctl" Type="VI" URL="../TRAPEZOID_PROFILE_CONSTRAINT.ctl"/>
 		<Item Name="TRAPEZOID_PROFILE_STATE.ctl" Type="VI" URL="../TRAPEZOID_PROFILE_STATE.ctl"/>
 		<Item Name="TWIST2D.ctl" Type="VI" URL="../TWIST2D.ctl"/>
+		<Item Name="UNSCENTED_KALMAN_FILTER.ctl" Type="VI" URL="../UNSCENTED_KALMAN_FILTER.ctl"/>
 		<Item Name="UTIL_PATHFINDER_CONFIG.ctl" Type="VI" URL="../UTIL_PATHFINDER_CONFIG.ctl"/>
 		<Item Name="UTIL_WAYPOINT.ctl" Type="VI" URL="../UTIL_WAYPOINT.ctl"/>
 		<Item Name="UTIL_WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../UTIL_WEIGHTED_WAYPOINT.ctl"/>
@@ -498,6 +501,17 @@
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="Math" Type="Folder">
 				<Item Name="MathUtil" Type="Folder"/>
+				<Item Name="MerweScaledSigmaPts" Type="Folder">
+					<Item Name="MerweScSigPts_ComputeWeights.vi" Type="VI" URL="../MerweScSigPts_ComputeWeights.vi"/>
+					<Item Name="MerweScSigPts_GetNumSigmas.vi" Type="VI" URL="../MerweScSigPts_GetNumSigmas.vi"/>
+					<Item Name="MerweScSigPts_GetWc.vi" Type="VI" URL="../MerweScSigPts_GetWc.vi"/>
+					<Item Name="MerweScSigPts_GetWc_Single.vi" Type="VI" URL="../MerweScSigPts_GetWc_Single.vi"/>
+					<Item Name="MerweScSigPts_GetWm.vi" Type="VI" URL="../MerweScSigPts_GetWm.vi"/>
+					<Item Name="MerweScSigPts_GetWm_Single.vi" Type="VI" URL="../MerweScSigPts_GetWm_Single.vi"/>
+					<Item Name="MerweScSigPts_New.vi" Type="VI" URL="../MerweScSigPts_New.vi"/>
+					<Item Name="MerweScSigPts_New_Default.vi" Type="VI" URL="../MerweScSigPts_New_Default.vi"/>
+					<Item Name="MerweScSigPts_SigmaPoints.vi" Type="VI" URL="../MerweScSigPts_SigmaPoints.vi"/>
+				</Item>
 				<Item Name="NumericalIntegration" Type="Folder">
 					<Item Name="NumIntegrate_Func_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Func_Ax_Bu_K.vi"/>
 					<Item Name="NumIntegrate_Func_Bs.vi" Type="VI" URL="../NumIntegrate_Func_Bs.vi"/>
@@ -534,12 +548,20 @@
 				<Item Name="Matrix" Type="Folder">
 					<Item Name="Matrix_AssignBlock.vi" Type="VI" URL="../Matrix_AssignBlock.vi"/>
 					<Item Name="Matrix_Block.vi" Type="VI" URL="../Matrix_Block.vi"/>
+					<Item Name="Matrix_ExtractColumnVector.vi" Type="VI" URL="../Matrix_ExtractColumnVector.vi"/>
+					<Item Name="Matrix_Fill.vi" Type="VI" URL="../Matrix_Fill.vi"/>
+					<Item Name="Matrix_LltDecompose.vi" Type="VI" URL="../Matrix_LltDecompose.vi"/>
+					<Item Name="Matrix_SetColumn.vi" Type="VI" URL="../Matrix_SetColumn.vi"/>
 				</Item>
 				<Item Name="VecBuilder" Type="Folder">
 					<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
 					<Item Name="VecBuilder_2x1Fill.vi" Type="VI" URL="../VecBuilder_2x1Fill.vi"/>
 					<Item Name="VecBuilder_3x1Fill.vi" Type="VI" URL="../VecBuilder_3x1Fill.vi"/>
 					<Item Name="VecBuilder_4x1Fill.vi" Type="VI" URL="../VecBuilder_4x1Fill.vi"/>
+					<Item Name="VecBuilder_5x1Fill.vi" Type="VI" URL="../VecBuilder_5x1Fill.vi"/>
+					<Item Name="VecBuilder_6x1Fill.vi" Type="VI" URL="../VecBuilder_6x1Fill.vi"/>
+					<Item Name="VecBuilder_7x1Fill.vi" Type="VI" URL="../VecBuilder_7x1Fill.vi"/>
+					<Item Name="VecBuilder_8x1Fill.vi" Type="VI" URL="../VecBuilder_8x1Fill.vi"/>
 					<Item Name="VecBuilder_ArrayBy1Fill.vi" Type="VI" URL="../VecBuilder_ArrayBy1Fill.vi"/>
 				</Item>
 			</Item>
@@ -703,6 +725,7 @@
 					<Item Name="LinearSystemLoop_Reset.vi" Type="VI" URL="../LinearSystemLoop_Reset.vi"/>
 					<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
 				</Item>
+				<Item Name="UnscentedKalmanFilter" Type="Folder"/>
 			</Item>
 			<Item Name="State Space Estimator" Type="Folder">
 				<Item Name="Diff Drive Pose Estimator" Type="Folder"/>
