@@ -290,8 +290,8 @@
 				<Item Name="PIDController_Reset.vi" Type="VI" URL="../PIDController_Reset.vi"/>
 				<Item Name="PIDController_SetD.vi" Type="VI" URL="../PIDController_SetD.vi"/>
 				<Item Name="PIDController_SetDerivativeFilter.vi" Type="VI" URL="../PIDController_SetDerivativeFilter.vi"/>
-				<Item Name="PIDController_SetFeedForward.vi" Type="VI" URL="../PIDController_SetFeedForward.vi"/>
-				<Item Name="PIDController_SetFFGain.vi" Type="VI" URL="../PIDController_SetFFGain.vi"/>
+				<Item Name="PIDController_SetFeedForward_OBSOLSTE_DELETE.vi" Type="VI" URL="../PIDController_SetFeedForward_OBSOLSTE_DELETE.vi"/>
+				<Item Name="PIDController_SetFFGain_OBSOLETE_DELTE.vi" Type="VI" URL="../PIDController_SetFFGain_OBSOLETE_DELTE.vi"/>
 				<Item Name="PIDController_SetI.vi" Type="VI" URL="../PIDController_SetI.vi"/>
 				<Item Name="PIDController_SetIntegratorRange.vi" Type="VI" URL="../PIDController_SetIntegratorRange.vi"/>
 				<Item Name="PIDController_SetOutputLimits.vi" Type="VI" URL="../PIDController_SetOutputLimits.vi"/>
@@ -548,9 +548,11 @@
 				<Item Name="Matrix" Type="Folder">
 					<Item Name="Matrix_AssignBlock.vi" Type="VI" URL="../Matrix_AssignBlock.vi"/>
 					<Item Name="Matrix_Block.vi" Type="VI" URL="../Matrix_Block.vi"/>
+					<Item Name="Matrix_Exp.vi" Type="VI" URL="../Matrix_Exp.vi"/>
 					<Item Name="Matrix_ExtractColumnVector.vi" Type="VI" URL="../Matrix_ExtractColumnVector.vi"/>
 					<Item Name="Matrix_Fill.vi" Type="VI" URL="../Matrix_Fill.vi"/>
 					<Item Name="Matrix_LltDecompose.vi" Type="VI" URL="../Matrix_LltDecompose.vi"/>
+					<Item Name="Matrix_Pow.vi" Type="VI" URL="../Matrix_Pow.vi"/>
 					<Item Name="Matrix_SetColumn.vi" Type="VI" URL="../Matrix_SetColumn.vi"/>
 				</Item>
 				<Item Name="VecBuilder" Type="Folder">
@@ -623,6 +625,7 @@
 					<Item Name="FlyWheelSim_Update.vi" Type="VI" URL="../FlyWheelSim_Update.vi"/>
 				</Item>
 				<Item Name="LinearSystemSim" Type="Folder">
+					<Item Name="LinearSystemSim_ClampInput.vi" Type="VI" URL="../LinearSystemSim_ClampInput.vi"/>
 					<Item Name="LinearSystemSim_GetOutput.vi" Type="VI" URL="../LinearSystemSim_GetOutput.vi"/>
 					<Item Name="LinearSystemSim_GetOutput_Single.vi" Type="VI" URL="../LinearSystemSim_GetOutput_Single.vi"/>
 					<Item Name="LinearSystemSim_New.vi" Type="VI" URL="../LinearSystemSim_New.vi"/>
@@ -767,6 +770,7 @@
 				</Item>
 				<Item Name="StateSpaceUtil" Type="Folder">
 					<Item Name="StateSpaceUtil_ClampInputMaxMagnitude.vi" Type="VI" URL="../StateSpaceUtil_ClampInputMaxMagnitude.vi"/>
+					<Item Name="StateSpaceUtil_IsStabilizable.vi" Type="VI" URL="../StateSpaceUtil_IsStabilizable.vi"/>
 					<Item Name="StateSpaceUtil_MakeCostMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCostMatrix.vi"/>
 					<Item Name="StateSpaceUtil_MakeCovarianceMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCovarianceMatrix.vi"/>
 					<Item Name="StateSpaceUtil_MakeWhiteNoiseVector.vi" Type="VI" URL="../StateSpaceUtil_MakeWhiteNoiseVector.vi"/>
