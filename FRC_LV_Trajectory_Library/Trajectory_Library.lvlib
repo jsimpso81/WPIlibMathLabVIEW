@@ -728,7 +728,10 @@
 					<Item Name="LinearSystemLoop_Reset.vi" Type="VI" URL="../LinearSystemLoop_Reset.vi"/>
 					<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
 				</Item>
-				<Item Name="UnscentedKalmanFilter" Type="Folder"/>
+				<Item Name="UnscentedKalmanFilter" Type="Folder">
+					<Item Name="UnscentedKalmanFilter_New.vi" Type="VI" URL="../UnscentedKalmanFilter_New.vi"/>
+					<Item Name="UnscentedKalmanFilter_Reset.vi" Type="VI" URL="../UnscentedKalmanFilter_Reset.vi"/>
+				</Item>
 			</Item>
 			<Item Name="State Space Estimator" Type="Folder">
 				<Item Name="Diff Drive Pose Estimator" Type="Folder"/>
