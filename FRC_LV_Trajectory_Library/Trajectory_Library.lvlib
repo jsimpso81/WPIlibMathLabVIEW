@@ -103,6 +103,7 @@
 	</Item>
 	<Item Name="TypDef" Type="Folder">
 		<Item Name="ARM_FF.ctl" Type="VI" URL="../ARM_FF.ctl"/>
+		<Item Name="BiFunction_FUNC_TYPE.ctl" Type="VI" URL="../BiFunction_FUNC_TYPE.ctl"/>
 		<Item Name="CHASSIS_SPEEDS.ctl" Type="VI" URL="../CHASSIS_SPEEDS.ctl"/>
 		<Item Name="CONSTRAINED_STATE.ctl" Type="VI" URL="../CONSTRAINED_STATE.ctl"/>
 		<Item Name="DCMOTOR.CTL" Type="VI" URL="../DCMOTOR.CTL"/>
@@ -128,7 +129,6 @@
 		<Item Name="MECA_WHEEL_SPEEDS.ctl" Type="VI" URL="../MECA_WHEEL_SPEEDS.ctl"/>
 		<Item Name="MEDIAN_FILTER.ctl" Type="VI" URL="../MEDIAN_FILTER.ctl"/>
 		<Item Name="MERWE_SCALED_SIGMA_PTS.ctl" Type="VI" URL="../MERWE_SCALED_SIGMA_PTS.ctl"/>
-		<Item Name="NumIntegrate_RKF45_FUNC_TYPE.ctl" Type="VI" URL="../NumIntegrate_RKF45_FUNC_TYPE.ctl"/>
 		<Item Name="PARAM_STACK.ctl" Type="VI" URL="../PARAM_STACK.ctl"/>
 		<Item Name="PARAM_STACK_ITEM.ctl" Type="VI" URL="../PARAM_STACK_ITEM.ctl"/>
 		<Item Name="PID_ADV_LIMITS.ctl" Type="VI" URL="../PID_ADV_LIMITS.ctl"/>
@@ -729,8 +729,20 @@
 					<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
 				</Item>
 				<Item Name="UnscentedKalmanFilter" Type="Folder">
+					<Item Name="UnscentedKalmanFilter_Correct.vi" Type="VI" URL="../UnscentedKalmanFilter_Correct.vi"/>
+					<Item Name="UnscentedKalmanFilter_Correct_A.vi" Type="VI" URL="../UnscentedKalmanFilter_Correct_A.vi"/>
+					<Item Name="UnscentedKalmanFilter_Correct_B.vi" Type="VI" URL="../UnscentedKalmanFilter_Correct_B.vi"/>
+					<Item Name="UnscentedKalmanFilter_GetP.vi" Type="VI" URL="../UnscentedKalmanFilter_GetP.vi"/>
+					<Item Name="UnscentedKalmanFilter_GetP_Single.vi" Type="VI" URL="../UnscentedKalmanFilter_GetP_Single.vi"/>
+					<Item Name="UnscentedKalmanFilter_GetXHat.vi" Type="VI" URL="../UnscentedKalmanFilter_GetXHat.vi"/>
+					<Item Name="UnscentedKalmanFilter_GetXHat_Single.vi" Type="VI" URL="../UnscentedKalmanFilter_GetXHat_Single.vi"/>
 					<Item Name="UnscentedKalmanFilter_New.vi" Type="VI" URL="../UnscentedKalmanFilter_New.vi"/>
+					<Item Name="UnscentedKalmanFilter_Predict.vi" Type="VI" URL="../UnscentedKalmanFilter_Predict.vi"/>
 					<Item Name="UnscentedKalmanFilter_Reset.vi" Type="VI" URL="../UnscentedKalmanFilter_Reset.vi"/>
+					<Item Name="UnscentedKalmanFilter_SetP.vi" Type="VI" URL="../UnscentedKalmanFilter_SetP.vi"/>
+					<Item Name="UnscentedKalmanFilter_SetXHat.vi" Type="VI" URL="../UnscentedKalmanFilter_SetXHat.vi"/>
+					<Item Name="UnscentedKalmanFilter_SetXHat_Single.vi" Type="VI" URL="../UnscentedKalmanFilter_SetXHat_Single.vi"/>
+					<Item Name="UnscentedKalmanFilter_Transform.vi" Type="VI" URL="../UnscentedKalmanFilter_Transform.vi"/>
 				</Item>
 			</Item>
 			<Item Name="State Space Estimator" Type="Folder">
@@ -764,6 +776,10 @@
 			</Item>
 			<Item Name="State Space Utilities" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
+				<Item Name="BiFunction Helps" Type="Folder">
+					<Item Name="BiFuncHelp_MatrixMinus.vi" Type="VI" URL="../BiFuncHelp_MatrixMinus.vi"/>
+					<Item Name="BiFuncHelp_MatrixPlus.vi" Type="VI" URL="../BiFuncHelp_MatrixPlus.vi"/>
+				</Item>
 				<Item Name="Discretization" Type="Folder">
 					<Item Name="Discretization_DiscretizeA.vi" Type="VI" URL="../Discretization_DiscretizeA.vi"/>
 					<Item Name="Discretization_DiscretizeAB.vi" Type="VI" URL="../Discretization_DiscretizeAB.vi"/>
