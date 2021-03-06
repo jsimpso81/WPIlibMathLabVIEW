@@ -118,6 +118,7 @@
 		<Item Name="FLYWHEEL_SIM.ctl" Type="VI" URL="../FLYWHEEL_SIM.ctl"/>
 		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../HOLONOMIC_DRV_CTRL.ctl"/>
 		<Item Name="KALMAN_FILTER.ctl" Type="VI" URL="../KALMAN_FILTER.ctl"/>
+		<Item Name="KALMAN_FILTER_LATENCY_COMP.ctl" Type="VI" URL="../KALMAN_FILTER_LATENCY_COMP.ctl"/>
 		<Item Name="LINEAR_FILTER.ctl" Type="VI" URL="../LINEAR_FILTER.ctl"/>
 		<Item Name="LINEAR_PLANT_INV_FF.ctl" Type="VI" URL="../LINEAR_PLANT_INV_FF.ctl"/>
 		<Item Name="LINEAR_QUADRATIC_REGULATOR.ctl" Type="VI" URL="../LINEAR_QUADRATIC_REGULATOR.ctl"/>
@@ -129,6 +130,8 @@
 		<Item Name="MECA_WHEEL_SPEEDS.ctl" Type="VI" URL="../MECA_WHEEL_SPEEDS.ctl"/>
 		<Item Name="MEDIAN_FILTER.ctl" Type="VI" URL="../MEDIAN_FILTER.ctl"/>
 		<Item Name="MERWE_SCALED_SIGMA_PTS.ctl" Type="VI" URL="../MERWE_SCALED_SIGMA_PTS.ctl"/>
+		<Item Name="OBSERVER_SNAP_LIST_ITEM.ctl" Type="VI" URL="../OBSERVER_SNAP_LIST_ITEM.ctl"/>
+		<Item Name="OBSERVER_SNAPSHOT.ctl" Type="VI" URL="../OBSERVER_SNAPSHOT.ctl"/>
 		<Item Name="PARAM_STACK.ctl" Type="VI" URL="../PARAM_STACK.ctl"/>
 		<Item Name="PARAM_STACK_ITEM.ctl" Type="VI" URL="../PARAM_STACK_ITEM.ctl"/>
 		<Item Name="PID_ADV_LIMITS.ctl" Type="VI" URL="../PID_ADV_LIMITS.ctl"/>
@@ -502,7 +505,20 @@
 		<Item Name="NEW_THINGS_DONT_USE" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="Math" Type="Folder">
-				<Item Name="MathUtil" Type="Folder"/>
+				<Item Name="AngleStatistics" Type="Folder">
+					<Item Name="AngleStats_AngleAdd.vi" Type="VI" URL="../AngleStats_AngleAdd.vi"/>
+					<Item Name="AngleStats_AngleAdd_BiFunc.vi" Type="VI" URL="../AngleStats_AngleAdd_BiFunc.vi"/>
+					<Item Name="AngleStats_AngleMean.vi" Type="VI" URL="../AngleStats_AngleMean.vi"/>
+					<Item Name="AngleStats_AngleMean_BiFunc.vi" Type="VI" URL="../AngleStats_AngleMean_BiFunc.vi"/>
+					<Item Name="AngleStats_AngleResidual.vi" Type="VI" URL="../AngleStats_AngleResidual.vi"/>
+					<Item Name="AngleStats_AngleResidual_BiFunc.vi" Type="VI" URL="../AngleStats_AngleResidual_BiFunc.vi"/>
+				</Item>
+				<Item Name="MathUtil" Type="Folder">
+					<Item Name="MathUtil_AngleModulus.vi" Type="VI" URL="../MathUtil_AngleModulus.vi"/>
+					<Item Name="MathUtil_Clamp.vi" Type="VI" URL="../MathUtil_Clamp.vi"/>
+					<Item Name="MathUtil_Clamp_Int.vi" Type="VI" URL="../MathUtil_Clamp_Int.vi"/>
+					<Item Name="MathUtil_InputModulus.vi" Type="VI" URL="../MathUtil_InputModulus.vi"/>
+				</Item>
 				<Item Name="MerweScaledSigmaPts" Type="Folder">
 					<Item Name="MerweScSigPts_ComputeWeights.vi" Type="VI" URL="../MerweScSigPts_ComputeWeights.vi"/>
 					<Item Name="MerweScSigPts_GetNumSigmas.vi" Type="VI" URL="../MerweScSigPts_GetNumSigmas.vi"/>
@@ -551,8 +567,10 @@
 				<Item Name="Matrix" Type="Folder">
 					<Item Name="Matrix_AssignBlock.vi" Type="VI" URL="../Matrix_AssignBlock.vi"/>
 					<Item Name="Matrix_Block.vi" Type="VI" URL="../Matrix_Block.vi"/>
+					<Item Name="Matrix_ElementSum.vi" Type="VI" URL="../Matrix_ElementSum.vi"/>
 					<Item Name="Matrix_Exp.vi" Type="VI" URL="../Matrix_Exp.vi"/>
 					<Item Name="Matrix_ExtractColumnVector.vi" Type="VI" URL="../Matrix_ExtractColumnVector.vi"/>
+					<Item Name="Matrix_ExtractRowVector.vi" Type="VI" URL="../Matrix_ExtractRowVector.vi"/>
 					<Item Name="Matrix_Fill.vi" Type="VI" URL="../Matrix_Fill.vi"/>
 					<Item Name="Matrix_LltDecompose.vi" Type="VI" URL="../Matrix_LltDecompose.vi"/>
 					<Item Name="Matrix_Pow.vi" Type="VI" URL="../Matrix_Pow.vi"/>
@@ -658,18 +676,7 @@
 			</Item>
 			<Item Name="State Space Control" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
-				<Item Name="KalmanFilter" Type="Folder">
-					<Item Name="KalmanFilter_Correct.vi" Type="VI" URL="../KalmanFilter_Correct.vi"/>
-					<Item Name="KalmanFilter_GetK.vi" Type="VI" URL="../KalmanFilter_GetK.vi"/>
-					<Item Name="KalmanFilter_GetK_Single.vi" Type="VI" URL="../KalmanFilter_GetK_Single.vi"/>
-					<Item Name="KalmanFilter_GetXHat.vi" Type="VI" URL="../KalmanFilter_GetXHat.vi"/>
-					<Item Name="KalmanFilter_GetXHat_Single.vi" Type="VI" URL="../KalmanFilter_GetXHat_Single.vi"/>
-					<Item Name="KalmanFilter_New.vi" Type="VI" URL="../KalmanFilter_New.vi"/>
-					<Item Name="KalmanFilter_Predict.vi" Type="VI" URL="../KalmanFilter_Predict.vi"/>
-					<Item Name="KalmanFilter_Reset.vi" Type="VI" URL="../KalmanFilter_Reset.vi"/>
-					<Item Name="KalmanFilter_SetXHat.vi" Type="VI" URL="../KalmanFilter_SetXHat.vi"/>
-					<Item Name="KalmanFilter_SetXHat_Single.vi" Type="VI" URL="../KalmanFilter_SetXHat_Single.vi"/>
-				</Item>
+				<Item Name="ControlAffinePlantInversionFeedforward" Type="Folder"/>
 				<Item Name="LinearPlantInversionFeedforward" Type="Folder">
 					<Item Name="LinearPlntInvFF_Calculate.vi" Type="VI" URL="../LinearPlntInvFF_Calculate.vi"/>
 					<Item Name="LinearPlntInvFF_Calculate_NextR.vi" Type="VI" URL="../LinearPlntInvFF_Calculate_NextR.vi"/>
@@ -731,6 +738,34 @@
 					<Item Name="LinearSystemLoop_Reset.vi" Type="VI" URL="../LinearSystemLoop_Reset.vi"/>
 					<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
 				</Item>
+			</Item>
+			<Item Name="State Space Estimator" Type="Folder">
+				<Item Name="Diff Drive Pose Estimator" Type="Folder">
+					<Item Name="DiffDrivePoseEst_AddVisionMeasurement.vi" Type="VI" URL="../DiffDrivePoseEst_AddVisionMeasurement.vi"/>
+					<Item Name="DiffDrivePoseEst_BiFunc_F.vi" Type="VI" URL="../DiffDrivePoseEst_BiFunc_F.vi"/>
+					<Item Name="DiffDrivePoseEst_BiFunc_H.vi" Type="VI" URL="../DiffDrivePoseEst_BiFunc_H.vi"/>
+					<Item Name="DiffDrivePoseEst_FillStateVector.vi" Type="VI" URL="../DiffDrivePoseEst_FillStateVector.vi"/>
+					<Item Name="DiffDrivePoseEst_GetEstimatedPosition.vi" Type="VI" URL="../DiffDrivePoseEst_GetEstimatedPosition.vi"/>
+					<Item Name="DiffDrivePoseEst_New.vi" Type="VI" URL="../DiffDrivePoseEst_New.vi"/>
+					<Item Name="DiffDrivePoseEst_ResetPosition.vi" Type="VI" URL="../DiffDrivePoseEst_ResetPosition.vi"/>
+					<Item Name="DiffDrivePoseEst_SetVisionMeasurementStdDevs.vi" Type="VI" URL="../DiffDrivePoseEst_SetVisionMeasurementStdDevs.vi"/>
+					<Item Name="DiffDrivePoseEst_Update.vi" Type="VI" URL="../DiffDrivePoseEst_Update.vi"/>
+					<Item Name="DiffDrivePoseEst_UpdateWithTime.vi" Type="VI" URL="../DiffDrivePoseEst_UpdateWithTime.vi"/>
+				</Item>
+				<Item Name="ExtendedKalmanFilter" Type="Folder"/>
+				<Item Name="KalmanFilter" Type="Folder">
+					<Item Name="KalmanFilter_Correct.vi" Type="VI" URL="../KalmanFilter_Correct.vi"/>
+					<Item Name="KalmanFilter_GetK.vi" Type="VI" URL="../KalmanFilter_GetK.vi"/>
+					<Item Name="KalmanFilter_GetK_Single.vi" Type="VI" URL="../KalmanFilter_GetK_Single.vi"/>
+					<Item Name="KalmanFilter_GetXHat.vi" Type="VI" URL="../KalmanFilter_GetXHat.vi"/>
+					<Item Name="KalmanFilter_GetXHat_Single.vi" Type="VI" URL="../KalmanFilter_GetXHat_Single.vi"/>
+					<Item Name="KalmanFilter_New.vi" Type="VI" URL="../KalmanFilter_New.vi"/>
+					<Item Name="KalmanFilter_Predict.vi" Type="VI" URL="../KalmanFilter_Predict.vi"/>
+					<Item Name="KalmanFilter_Reset.vi" Type="VI" URL="../KalmanFilter_Reset.vi"/>
+					<Item Name="KalmanFilter_SetXHat.vi" Type="VI" URL="../KalmanFilter_SetXHat.vi"/>
+					<Item Name="KalmanFilter_SetXHat_Single.vi" Type="VI" URL="../KalmanFilter_SetXHat_Single.vi"/>
+				</Item>
+				<Item Name="KalmanFIlterLatencyCompensator" Type="Folder"/>
 				<Item Name="UnscentedKalmanFilter" Type="Folder">
 					<Item Name="UnscentedKalmanFilter_Correct.vi" Type="VI" URL="../UnscentedKalmanFilter_Correct.vi"/>
 					<Item Name="UnscentedKalmanFilter_Correct_FuncGroup.vi" Type="VI" URL="../UnscentedKalmanFilter_Correct_FuncGroup.vi"/>
@@ -749,9 +784,6 @@
 					<Item Name="UnscentedKalmanFilter_SetXHat_Single.vi" Type="VI" URL="../UnscentedKalmanFilter_SetXHat_Single.vi"/>
 					<Item Name="UnscentedKalmanFilter_Transform.vi" Type="VI" URL="../UnscentedKalmanFilter_Transform.vi"/>
 				</Item>
-			</Item>
-			<Item Name="State Space Estimator" Type="Folder">
-				<Item Name="Diff Drive Pose Estimator" Type="Folder"/>
 			</Item>
 			<Item Name="State Space Model" Type="Folder">
 				<Item Name="DCMotor" Type="Folder">
