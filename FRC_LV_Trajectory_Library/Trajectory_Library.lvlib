@@ -8,9 +8,13 @@
 
 </Property>
 	<Item Name="_Menus" Type="Folder">
+		<Item Name="FRC_LV_CtrlLib_AngleStatistics.mnu" Type="Document" URL="../FRC_LV_CtrlLib_AngleStatistics.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_BatterySim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BatterySim.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_BiFuncHelp.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BiFuncHelp.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_ControllerUtils.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ControllerUtils.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DC_Motor.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DC_Motor.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_DiffDriveTrainPoseEst.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveTrainPoseEst.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_DiffDriveTrainSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveTrainSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Discretization.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Discretization.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_ElevatorSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ElevatorSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Filter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Filter.mnu"/>
@@ -24,17 +28,24 @@
 		<Item Name="FRC_LV_CtrlLib_LQR.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LQR.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_MatBuilder.mnu" Type="Document" URL="../FRC_LV_CtrlLib_MatBuilder.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Math.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Math.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_MathUtils.mnu" Type="Document" URL="../FRC_LV_CtrlLib_MathUtils.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Matrix.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Matrix.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Matrix2.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Matrix2.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Matrix_Helper.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Matrix_Helper.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_MerweScaledSigmaPts.mnu" Type="Document" URL="../FRC_LV_CtrlLib_MerweScaledSigmaPts.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_NumericalIntegration.mnu" Type="Document" URL="../FRC_LV_CtrlLib_NumericalIntegration.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_NumericalJacobian.mnu" Type="Document" URL="../FRC_LV_CtrlLib_NumericalJacobian.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Riccati.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Riccati.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Simulation.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Simulation.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_SingleJointedArmSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_SingleJointedArmSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceCtrl.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceCtrl.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_StateSpaceEstimation.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceEstimation.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceModel.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceModel.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtil.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtil.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Timing.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Timing.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_UnitsConv.mnu" Type="Document" URL="../FRC_LV_CtrlLib_UnitsConv.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_UnscentedKalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_UnscentedKalmanFilter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_VectorBuilder.mnu" Type="Document" URL="../FRC_LV_CtrlLib_VectorBuilder.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Arm_FF.mnu" Type="Document" URL="../FRC_LV_Trajectory_Arm_FF.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Base_WPILIB.mnu" Type="Document" URL="../FRC_LV_Trajectory_Base_WPILIB.mnu"/>
