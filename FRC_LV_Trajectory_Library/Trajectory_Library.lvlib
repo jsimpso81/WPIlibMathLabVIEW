@@ -573,11 +573,13 @@
 				</Item>
 				<Item Name="MatixHelper" Type="Folder">
 					<Item Name="MatrixHelper_CoerceSize.vi" Type="VI" URL="../MatrixHelper_CoerceSize.vi"/>
+					<Item Name="MatrixHelper_MultCoerceBSize.vi" Type="VI" URL="../MatrixHelper_MultCoerceBSize.vi"/>
 					<Item Name="MatrixHelper_Zero.vi" Type="VI" URL="../MatrixHelper_Zero.vi"/>
 				</Item>
 				<Item Name="Matrix" Type="Folder">
 					<Item Name="Matrix_AssignBlock.vi" Type="VI" URL="../Matrix_AssignBlock.vi"/>
 					<Item Name="Matrix_Block.vi" Type="VI" URL="../Matrix_Block.vi"/>
+					<Item Name="Matrix_Diag.vi" Type="VI" URL="../Matrix_Diag.vi"/>
 					<Item Name="Matrix_ElementSum.vi" Type="VI" URL="../Matrix_ElementSum.vi"/>
 					<Item Name="Matrix_Exp.vi" Type="VI" URL="../Matrix_Exp.vi"/>
 					<Item Name="Matrix_ExtractColumnVector.vi" Type="VI" URL="../Matrix_ExtractColumnVector.vi"/>
@@ -787,6 +789,7 @@
 					<Item Name="UnscentedKalmanFilter_GetXHat.vi" Type="VI" URL="../UnscentedKalmanFilter_GetXHat.vi"/>
 					<Item Name="UnscentedKalmanFilter_GetXHat_Single.vi" Type="VI" URL="../UnscentedKalmanFilter_GetXHat_Single.vi"/>
 					<Item Name="UnscentedKalmanFilter_New.vi" Type="VI" URL="../UnscentedKalmanFilter_New.vi"/>
+					<Item Name="UnscentedKalmanFilter_New_Default.vi" Type="VI" URL="../UnscentedKalmanFilter_New_Default.vi"/>
 					<Item Name="UnscentedKalmanFilter_New_FuncGroup.vi" Type="VI" URL="../UnscentedKalmanFilter_New_FuncGroup.vi"/>
 					<Item Name="UnscentedKalmanFilter_Predict.vi" Type="VI" URL="../UnscentedKalmanFilter_Predict.vi"/>
 					<Item Name="UnscentedKalmanFilter_Reset.vi" Type="VI" URL="../UnscentedKalmanFilter_Reset.vi"/>
@@ -826,6 +829,8 @@
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="BiFunction Helps" Type="Folder">
 					<Item Name="BiFuncHelp_MatrixMinus.vi" Type="VI" URL="../BiFuncHelp_MatrixMinus.vi"/>
+					<Item Name="BiFuncHelp_MatrixMult.vi" Type="VI" URL="../BiFuncHelp_MatrixMult.vi"/>
+					<Item Name="BiFuncHelp_MatrixMult_CoerceSizeB.vi" Type="VI" URL="../BiFuncHelp_MatrixMult_CoerceSizeB.vi"/>
 					<Item Name="BiFuncHelp_MatrixPlus.vi" Type="VI" URL="../BiFuncHelp_MatrixPlus.vi"/>
 				</Item>
 				<Item Name="Discretization" Type="Folder">
