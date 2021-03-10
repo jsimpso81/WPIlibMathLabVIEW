@@ -114,7 +114,7 @@
 	</Item>
 	<Item Name="TypDef" Type="Folder">
 		<Item Name="ARM_FF.ctl" Type="VI" URL="../ARM_FF.ctl"/>
-		<Item Name="BiFunction_FUNC_TYPE.ctl" Type="VI" URL="../BiFunction_FUNC_TYPE.ctl"/>
+		<Item Name="BiFun_Matrix_FUNC_TYPE.ctl" Type="VI" URL="../BiFun_Matrix_FUNC_TYPE.ctl"/>
 		<Item Name="CHASSIS_SPEEDS.ctl" Type="VI" URL="../CHASSIS_SPEEDS.ctl"/>
 		<Item Name="CONSTRAINED_STATE.ctl" Type="VI" URL="../CONSTRAINED_STATE.ctl"/>
 		<Item Name="DCMOTOR.CTL" Type="VI" URL="../DCMOTOR.CTL"/>
@@ -579,15 +579,18 @@
 				<Item Name="Matrix" Type="Folder">
 					<Item Name="Matrix_AssignBlock.vi" Type="VI" URL="../Matrix_AssignBlock.vi"/>
 					<Item Name="Matrix_Block.vi" Type="VI" URL="../Matrix_Block.vi"/>
+					<Item Name="Matrix_Create.vi" Type="VI" URL="../Matrix_Create.vi"/>
 					<Item Name="Matrix_Diag.vi" Type="VI" URL="../Matrix_Diag.vi"/>
 					<Item Name="Matrix_ElementSum.vi" Type="VI" URL="../Matrix_ElementSum.vi"/>
 					<Item Name="Matrix_Exp.vi" Type="VI" URL="../Matrix_Exp.vi"/>
 					<Item Name="Matrix_ExtractColumnVector.vi" Type="VI" URL="../Matrix_ExtractColumnVector.vi"/>
+					<Item Name="Matrix_ExtractMatrix.vi" Type="VI" URL="../Matrix_ExtractMatrix.vi"/>
 					<Item Name="Matrix_ExtractRowVector.vi" Type="VI" URL="../Matrix_ExtractRowVector.vi"/>
 					<Item Name="Matrix_Fill.vi" Type="VI" URL="../Matrix_Fill.vi"/>
 					<Item Name="Matrix_LltDecompose.vi" Type="VI" URL="../Matrix_LltDecompose.vi"/>
 					<Item Name="Matrix_Pow.vi" Type="VI" URL="../Matrix_Pow.vi"/>
 					<Item Name="Matrix_SetColumn.vi" Type="VI" URL="../Matrix_SetColumn.vi"/>
+					<Item Name="Matrix_SetRow.vi" Type="VI" URL="../Matrix_SetRow.vi"/>
 				</Item>
 				<Item Name="VecBuilder" Type="Folder">
 					<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
@@ -755,6 +758,7 @@
 			<Item Name="State Space Estimator" Type="Folder">
 				<Item Name="Diff Drive Pose Estimator" Type="Folder">
 					<Item Name="DiffDrivePoseEst_AddVisionMeasurement.vi" Type="VI" URL="../DiffDrivePoseEst_AddVisionMeasurement.vi"/>
+					<Item Name="DiffDrivePoseEst_BiConsum_VisionCorrect.vi" Type="VI" URL="../DiffDrivePoseEst_BiConsum_VisionCorrect.vi"/>
 					<Item Name="DiffDrivePoseEst_BiFunc_F.vi" Type="VI" URL="../DiffDrivePoseEst_BiFunc_F.vi"/>
 					<Item Name="DiffDrivePoseEst_BiFunc_H.vi" Type="VI" URL="../DiffDrivePoseEst_BiFunc_H.vi"/>
 					<Item Name="DiffDrivePoseEst_FillStateVector.vi" Type="VI" URL="../DiffDrivePoseEst_FillStateVector.vi"/>
@@ -778,7 +782,12 @@
 					<Item Name="KalmanFilter_SetXHat.vi" Type="VI" URL="../KalmanFilter_SetXHat.vi"/>
 					<Item Name="KalmanFilter_SetXHat_Single.vi" Type="VI" URL="../KalmanFilter_SetXHat_Single.vi"/>
 				</Item>
-				<Item Name="KalmanFIlterLatencyCompensator" Type="Folder"/>
+				<Item Name="KalmanFIlterLatencyCompensator" Type="Folder">
+					<Item Name="KalmanFilterLatencyComp_AddObserverState.vi" Type="VI" URL="../KalmanFilterLatencyComp_AddObserverState.vi"/>
+					<Item Name="KalmanFilterLatencyComp_ApplyPastGlobalMeasurement_UKF.vi" Type="VI" URL="../KalmanFilterLatencyComp_ApplyPastGlobalMeasurement_UKF.vi"/>
+					<Item Name="KalmanFilterLatencyComp_FindClosestMeasurement.vi" Type="VI" URL="../KalmanFilterLatencyComp_FindClosestMeasurement.vi"/>
+					<Item Name="KalmanFilterLatencyComp_New.vi" Type="VI" URL="../KalmanFilterLatencyComp_New.vi"/>
+				</Item>
 				<Item Name="UnscentedKalmanFilter" Type="Folder">
 					<Item Name="UnscentedKalmanFilter_Correct.vi" Type="VI" URL="../UnscentedKalmanFilter_Correct.vi"/>
 					<Item Name="UnscentedKalmanFilter_Correct_FuncGroup.vi" Type="VI" URL="../UnscentedKalmanFilter_Correct_FuncGroup.vi"/>
