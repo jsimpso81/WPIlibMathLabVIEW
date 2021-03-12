@@ -126,6 +126,7 @@
 		<Item Name="DIFF_DRIVE_TRAIN_SIM.ctl" Type="VI" URL="../DIFF_DRIVE_TRAIN_SIM.ctl"/>
 		<Item Name="ELEV_FF.ctl" Type="VI" URL="../ELEV_FF.ctl"/>
 		<Item Name="ELEVATOR_SIM.ctl" Type="VI" URL="../ELEVATOR_SIM.ctl"/>
+		<Item Name="EXTENDED_KALMAN_FILTER.ctl" Type="VI" URL="../EXTENDED_KALMAN_FILTER.ctl"/>
 		<Item Name="FLYWHEEL_SIM.ctl" Type="VI" URL="../FLYWHEEL_SIM.ctl"/>
 		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../HOLONOMIC_DRV_CTRL.ctl"/>
 		<Item Name="KALMAN_FILTER.ctl" Type="VI" URL="../KALMAN_FILTER.ctl"/>
@@ -772,7 +773,20 @@
 					<Item Name="DiffDrivePoseEst_Update.vi" Type="VI" URL="../DiffDrivePoseEst_Update.vi"/>
 					<Item Name="DiffDrivePoseEst_UpdateWithTime.vi" Type="VI" URL="../DiffDrivePoseEst_UpdateWithTime.vi"/>
 				</Item>
-				<Item Name="ExtendedKalmanFilter" Type="Folder"/>
+				<Item Name="ExtendedKalmanFilter" Type="Folder">
+					<Item Name="ExtendedKalmanFilter_Correct.vi" Type="VI" URL="../ExtendedKalmanFilter_Correct.vi"/>
+					<Item Name="ExtendedKalmanFilter_Correct_OnlyUY.vi" Type="VI" URL="../ExtendedKalmanFilter_Correct_OnlyUY.vi"/>
+					<Item Name="ExtendedKalmanFilter_GetP.vi" Type="VI" URL="../ExtendedKalmanFilter_GetP.vi"/>
+					<Item Name="ExtendedKalmanFilter_GetP_Single.vi" Type="VI" URL="../ExtendedKalmanFilter_GetP_Single.vi"/>
+					<Item Name="ExtendedKalmanFilter_GetXHat.vi" Type="VI" URL="../ExtendedKalmanFilter_GetXHat.vi"/>
+					<Item Name="ExtendedKalmanFilter_GetXHat_Single.vi" Type="VI" URL="../ExtendedKalmanFilter_GetXHat_Single.vi"/>
+					<Item Name="ExtendedKalmanFilter_New.vi" Type="VI" URL="../ExtendedKalmanFilter_New.vi"/>
+					<Item Name="ExtendedKalmanFilter_Predict.vi" Type="VI" URL="../ExtendedKalmanFilter_Predict.vi"/>
+					<Item Name="ExtendedKalmanFilter_Reset.vi" Type="VI" URL="../ExtendedKalmanFilter_Reset.vi"/>
+					<Item Name="ExtendedKalmanFilter_SetP.vi" Type="VI" URL="../ExtendedKalmanFilter_SetP.vi"/>
+					<Item Name="ExtendedKalmanFilter_SetXHat.vi" Type="VI" URL="../ExtendedKalmanFilter_SetXHat.vi"/>
+					<Item Name="ExtendedKalmanFilter_SetXHat_Single.vi" Type="VI" URL="../ExtendedKalmanFilter_SetXHat_Single.vi"/>
+				</Item>
 				<Item Name="KalmanFilter" Type="Folder">
 					<Item Name="KalmanFilter_Correct.vi" Type="VI" URL="../KalmanFilter_Correct.vi"/>
 					<Item Name="KalmanFilter_GetK.vi" Type="VI" URL="../KalmanFilter_GetK.vi"/>
