@@ -588,6 +588,7 @@
 					<Item Name="Matrix_ExtractMatrix.vi" Type="VI" URL="../Matrix_ExtractMatrix.vi"/>
 					<Item Name="Matrix_ExtractRowVector.vi" Type="VI" URL="../Matrix_ExtractRowVector.vi"/>
 					<Item Name="Matrix_Fill.vi" Type="VI" URL="../Matrix_Fill.vi"/>
+					<Item Name="Matrix_Ident.vi" Type="VI" URL="../Matrix_Ident.vi"/>
 					<Item Name="Matrix_IsEqual.vi" Type="VI" URL="../Matrix_IsEqual.vi"/>
 					<Item Name="Matrix_LltDecompose.vi" Type="VI" URL="../Matrix_LltDecompose.vi"/>
 					<Item Name="Matrix_Pow.vi" Type="VI" URL="../Matrix_Pow.vi"/>
