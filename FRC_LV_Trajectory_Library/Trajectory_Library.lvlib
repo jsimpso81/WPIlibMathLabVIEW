@@ -12,11 +12,13 @@
 		<Item Name="FRC_LV_CtrlLib_BatterySim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BatterySim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_BiFuncHelp.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BiFuncHelp.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_ControllerUtils.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ControllerUtils.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_CtrlAffinePlntInvFF.mnu" Type="Document" URL="../FRC_LV_CtrlLib_CtrlAffinePlntInvFF.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DC_Motor.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DC_Motor.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DiffDriveTrainPoseEst.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveTrainPoseEst.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DiffDriveTrainSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveTrainSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Discretization.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Discretization.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_ElevatorSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ElevatorSim.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_ExtendedKalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ExtendedKalmanFilter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Filter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Filter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_FlyWheelSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_FlyWheelSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_KalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_KalmanFilter.mnu"/>
@@ -514,7 +516,7 @@
 				<Item Name="SwerveOdometry_UpdateX.vi" Type="VI" URL="../SwerveOdometry_UpdateX.vi"/>
 			</Item>
 		</Item>
-		<Item Name="NEW_THINGS_DONT_USE" Type="Folder">
+		<Item Name="NEW_THINGS_USE_WITH_CAUTION" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="Math" Type="Folder">
 				<Item Name="AngleStatistics" Type="Folder">
