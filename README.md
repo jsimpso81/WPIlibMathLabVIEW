@@ -1,8 +1,8 @@
-# FRC_LV_TrajLib
+# FRC_LV_TrajLib - FRC Control and Trajectory Library
 
 This library is an UNOFFICIAL port of the Java/C++ WPILIB routines that don't already exist in LabVIEW.  The library is used for the First FRC robotics competition.
 
-Originally this library was only a port of the Trajectory creation and execution routines.  However, over time, many other of the routines were ported into this library.
+Originally this library was only a port of the Trajectory creation and execution routines.  However, over time, many other of the routines were ported into this library.  As of version 2.x it also contains a majority of the State Space control and simulation routines found in the C++/Java WPILIB.
 
 A number of trajectory creation and transformation utility
 programs are installed along with the library.  These programs may be of use to FRC teams that use languages other than LabVIEW.
@@ -98,6 +98,36 @@ Here is a short list of the types of functions included in the library
   - Write and document trajectory CSV file 
 - Units Conversion
 
+Version 2 also includes (NOTE - THESE ARE STILL A WORK IN PROGRESS):
+- Math Utilities
+  - Angle Statistics
+  - Math Util
+  - Merwe Scaled Sigma Points
+  - Numerical Integration
+  - Numerical Jacobian
+  - Ricatti Equation
+- Matrix Utilities
+- Simulation (Physical system, not actuator and sensor)
+  - Battery Simulation
+  - Differential Drive Train Sim
+  - Elevator Sim
+  - Flywheel Sim
+  - Linear System Sim
+  - Single Joint Arm Sim
+- State Space Control
+  - Linear Plant Inversion Feedforward
+  - Linear Quadratic Regulator
+  - Linear System
+  - Linear System Loop
+- State Space Esimation
+  - Differential Drive Pose Estimator (Similar to Odometry)
+  - Extended Kalman Filter
+  - Kalman Filter
+  - Unscented Kalman Filter
+- State Space Model
+  - DC Motor
+  - Linear System ID
+- State Space Utilities
 
 ---
 ## Utility Program Summary
@@ -159,7 +189,7 @@ The installed library contains a number of utility programs.
 ---
 ## Special Notes
 
-Library routines in the library virtual directory *NEW_THINGS_DONT_USE* are a work in progress. These are not to be used or trusted.  As of this writing, this includes:  DCMotor, Discretization, LinearQuadraticRegulator, LinearSystem, LinearSystemID, StateSpaceUtil, VecBuilder.
+Library routines in the library virtual directory *NEW_THINGS_USE_WITH_CAUTION*, which includes are the version 2 routines, are a work in progress. These have not been thoroughly tested.  They have not been documented yet, however the FRC WPILIB C++/Java documentation should be able to be used.  There are also some test and sample programs in the samples repository.
 
 ---
 ## Reporting Issues
