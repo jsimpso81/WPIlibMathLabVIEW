@@ -13,9 +13,11 @@ These first steps create and populate the "build" directory from which the insta
 
 3)Run the "All Source Distribution".  This copies the library VI to the builds directory.
 
-4) If this is a release version, open the "JasJunkFrcTracLib" build specification properties.  Update the minor version number (3rd number from the left).  Run the "JAsJunkFrcTrajLib" build package.  This builds the package installer.  The package file can then be used to install the library..
+4) If this is a release version, open the "JasJunkFrcTracLib" build specification properties.  Update the minor version number (3rd number from the left).  
 
-5) If this is a version to be released, copy the install package file to the "InstallPackages" directory in the root of this github project.  Also create a new github release point.
+5) Run the "JAsJunkFrcTrajLib" build package.  This builds the package installer.  The package file can then be used to install the library..
+
+6) If this is a version to be released, copy the install package file to the "InstallPackages" directory in the root of this github project.  Also create a new github release point.
 
 This project does not create or build an install file for the sample programs.
 
