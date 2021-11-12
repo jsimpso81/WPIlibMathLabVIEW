@@ -55,7 +55,6 @@
 			<Item Name="The Secret Book of FRC LabVIEW V2.07.pdf" Type="Document" URL="../SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf"/>
 		</Item>
 		<Item Name="_Read_Me.txt" Type="Document" URL="../_Read_Me.txt"/>
-		<Item Name="BiCon_Matrix_FUNC_TYPE.ctl" Type="VI" URL="../../FRC_LV_Trajectory_Library/BiCon_Matrix_FUNC_TYPE.ctl"/>
 		<Item Name="Dummy_Func_VARXU.vi" Type="VI" URL="../Dummy_Func_VARXU.vi"/>
 		<Item Name="License.RTF" Type="Document" URL="../License.RTF"/>
 		<Item Name="Pathfinder.lvlib" Type="Library" URL="../../Pathfinder-Lib/Pathfinder.lvlib"/>

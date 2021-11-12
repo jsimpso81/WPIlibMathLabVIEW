@@ -116,6 +116,7 @@
 	</Item>
 	<Item Name="TypDef" Type="Folder">
 		<Item Name="ARM_FF.ctl" Type="VI" URL="../ARM_FF.ctl"/>
+		<Item Name="BiCon_Matrix_FUNC_TYPE.ctl" Type="VI" URL="../BiCon_Matrix_FUNC_TYPE.ctl"/>
 		<Item Name="BiFun_Matrix_FUNC_TYPE.ctl" Type="VI" URL="../BiFun_Matrix_FUNC_TYPE.ctl"/>
 		<Item Name="CHASSIS_SPEEDS.ctl" Type="VI" URL="../CHASSIS_SPEEDS.ctl"/>
 		<Item Name="CONSTRAINED_STATE.ctl" Type="VI" URL="../CONSTRAINED_STATE.ctl"/>
