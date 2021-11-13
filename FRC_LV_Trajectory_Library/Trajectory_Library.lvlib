@@ -809,6 +809,7 @@
 					<Item Name="KalmanFilterLatencyComp_FindClosestMeasurement.vi" Type="VI" URL="../KalmanFilterLatencyComp_FindClosestMeasurement.vi"/>
 					<Item Name="KalmanFilterLatencyComp_New.vi" Type="VI" URL="../KalmanFilterLatencyComp_New.vi"/>
 				</Item>
+				<Item Name="Swerve Drive Pose Estimator" Type="Folder"/>
 				<Item Name="UnscentedKalmanFilter" Type="Folder">
 					<Item Name="UnscentedKalmanFilter_Correct.vi" Type="VI" URL="../UnscentedKalmanFilter_Correct.vi"/>
 					<Item Name="UnscentedKalmanFilter_Correct_FuncGroup.vi" Type="VI" URL="../UnscentedKalmanFilter_Correct_FuncGroup.vi"/>
