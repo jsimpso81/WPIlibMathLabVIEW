@@ -111,6 +111,7 @@
 		<Item Name="FRC_LV_Trajectory_Trapezoid_Profile.mnu" Type="Document" URL="../FRC_LV_Trajectory_Trapezoid_Profile.mnu"/>
 	</Item>
 	<Item Name="_Miscelaneous" Type="Folder">
+		<Item Name="FRC_LabVIEW_Trajectory_Library_Routines.pdf" Type="Document" URL="../FRC_LabVIEW_Trajectory_Library_Routines.pdf"/>
 		<Item Name="FRC_LabVIEW_Trajectory_Library_Routines.xlsx" Type="Document" URL="../FRC_LabVIEW_Trajectory_Library_Routines.xlsx"/>
 		<Item Name="trajectory-library-functions.txt" Type="Document" URL="../trajectory-library-functions.txt"/>
 	</Item>
@@ -841,6 +842,7 @@
 					<Item Name="DCMotor_GetMiniCIM.vi" Type="VI" URL="../DCMotor_GetMiniCIM.vi"/>
 					<Item Name="DCMotor_GetNEO.vi" Type="VI" URL="../DCMotor_GetNEO.vi"/>
 					<Item Name="DCMotor_GetNEO550.vi" Type="VI" URL="../DCMotor_GetNEO550.vi"/>
+					<Item Name="DCMotor_GetRomiBuiltIn.vi" Type="VI" URL="../DCMotor_GetRomiBuiltIn.vi"/>
 					<Item Name="DCMotor_GetVex775Pro.vi" Type="VI" URL="../DCMotor_GetVex775Pro.vi"/>
 					<Item Name="DCMotor_New.vi" Type="VI" URL="../DCMotor_New.vi"/>
 				</Item>
