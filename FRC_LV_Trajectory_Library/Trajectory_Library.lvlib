@@ -169,6 +169,7 @@
 		<Item Name="SWERVE_DRIVE_KINEMATICS.ctl" Type="VI" URL="../SWERVE_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="SWERVE_DRIVE_MODULE_STATE.ctl" Type="VI" URL="../SWERVE_DRIVE_MODULE_STATE.ctl"/>
 		<Item Name="SWERVE_DRIVE_ODOMETRY.ctl" Type="VI" URL="../SWERVE_DRIVE_ODOMETRY.ctl"/>
+		<Item Name="SWERVE_DRIVE_POSE_EST.ctl" Type="VI" URL="../SWERVE_DRIVE_POSE_EST.ctl"/>
 		<Item Name="TIMER.ctl" Type="VI" URL="../TIMER.ctl"/>
 		<Item Name="TRAJ_CONFIG.ctl" Type="VI" URL="../TRAJ_CONFIG.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl"/>
@@ -461,6 +462,7 @@
 		<Item Name="kinematics" Type="Folder">
 			<Item Name="ChassisSpeeds" Type="Folder">
 				<Item Name="ChassisSpeeds_FromFieldRelativeSpeeds.vi" Type="VI" URL="../ChassisSpeeds_FromFieldRelativeSpeeds.vi"/>
+				<Item Name="ChassisSpeeds_GetXYOmega.vi" Type="VI" URL="../ChassisSpeeds_GetXYOmega.vi"/>
 				<Item Name="ChassisSpeeds_New.vi" Type="VI" URL="../ChassisSpeeds_New.vi"/>
 			</Item>
 			<Item Name="DiffKinematics" Type="Folder">
@@ -812,7 +814,18 @@
 					<Item Name="KalmanFilterLatencyComp_New.vi" Type="VI" URL="../KalmanFilterLatencyComp_New.vi"/>
 					<Item Name="KalmanFilterLatencyComp_Reset.vi" Type="VI" URL="../KalmanFilterLatencyComp_Reset.vi"/>
 				</Item>
-				<Item Name="Swerve Drive Pose Estimator" Type="Folder"/>
+				<Item Name="Swerve Drive Pose Estimator" Type="Folder">
+					<Item Name="SwerveDrivePoseEst_AddVisionMeasurement.vi" Type="VI" URL="../SwerveDrivePoseEst_AddVisionMeasurement.vi"/>
+					<Item Name="SwerveDrivePoseEst_BiConsum_VisionCorrect.vi" Type="VI" URL="../SwerveDrivePoseEst_BiConsum_VisionCorrect.vi"/>
+					<Item Name="SwerveDrivePoseEst_BiFunc_F.vi" Type="VI" URL="../SwerveDrivePoseEst_BiFunc_F.vi"/>
+					<Item Name="SwerveDrivePoseEst_BiFunc_H.vi" Type="VI" URL="../SwerveDrivePoseEst_BiFunc_H.vi"/>
+					<Item Name="SwerveDrivePoseEst_GetEstimatedPosition.vi" Type="VI" URL="../SwerveDrivePoseEst_GetEstimatedPosition.vi"/>
+					<Item Name="SwerveDrivePoseEst_New.vi" Type="VI" URL="../SwerveDrivePoseEst_New.vi"/>
+					<Item Name="SwerveDrivePoseEst_ResetPosition.vi" Type="VI" URL="../SwerveDrivePoseEst_ResetPosition.vi"/>
+					<Item Name="SwerveDrivePoseEst_SetVisionMeasurementStdDevs.vi" Type="VI" URL="../SwerveDrivePoseEst_SetVisionMeasurementStdDevs.vi"/>
+					<Item Name="SwerveDrivePoseEst_Update.vi" Type="VI" URL="../SwerveDrivePoseEst_Update.vi"/>
+					<Item Name="SwerveDrivePoseEst_UpdateWithTime.vi" Type="VI" URL="../SwerveDrivePoseEst_UpdateWithTime.vi"/>
+				</Item>
 				<Item Name="UnscentedKalmanFilter" Type="Folder">
 					<Item Name="UnscentedKalmanFilter_Correct.vi" Type="VI" URL="../UnscentedKalmanFilter_Correct.vi"/>
 					<Item Name="UnscentedKalmanFilter_Correct_FuncGroup.vi" Type="VI" URL="../UnscentedKalmanFilter_Correct_FuncGroup.vi"/>
