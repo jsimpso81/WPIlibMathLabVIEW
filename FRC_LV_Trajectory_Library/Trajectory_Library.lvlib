@@ -531,6 +531,7 @@
 				</Item>
 				<Item Name="MathUtil" Type="Folder">
 					<Item Name="MathUtil_AngleModulus.vi" Type="VI" URL="../MathUtil_AngleModulus.vi"/>
+					<Item Name="MathUtil_ApplyDeadband.vi" Type="VI" URL="../MathUtil_ApplyDeadband.vi"/>
 					<Item Name="MathUtil_Clamp.vi" Type="VI" URL="../MathUtil_Clamp.vi"/>
 					<Item Name="MathUtil_Clamp_Int.vi" Type="VI" URL="../MathUtil_Clamp_Int.vi"/>
 					<Item Name="MathUtil_InputModulus.vi" Type="VI" URL="../MathUtil_InputModulus.vi"/>
@@ -568,6 +569,7 @@
 					<Item Name="Riccati_Check_Stabilizable.vi" Type="VI" URL="../Riccati_Check_Stabilizable.vi"/>
 					<Item Name="Riccati_DARE.vi" Type="VI" URL="../Riccati_DARE.vi"/>
 					<Item Name="Riccati_DARE_Iterate.vi" Type="VI" URL="../Riccati_DARE_Iterate.vi"/>
+					<Item Name="Riccati_DARE_N.vi" Type="VI" URL="../Riccati_DARE_N.vi"/>
 					<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
 				</Item>
 			</Item>
@@ -808,6 +810,7 @@
 					<Item Name="KalmanFilterLatencyComp_ApplyPastGlobalMeasurement_UKF.vi" Type="VI" URL="../KalmanFilterLatencyComp_ApplyPastGlobalMeasurement_UKF.vi"/>
 					<Item Name="KalmanFilterLatencyComp_FindClosestMeasurement.vi" Type="VI" URL="../KalmanFilterLatencyComp_FindClosestMeasurement.vi"/>
 					<Item Name="KalmanFilterLatencyComp_New.vi" Type="VI" URL="../KalmanFilterLatencyComp_New.vi"/>
+					<Item Name="KalmanFilterLatencyComp_Reset.vi" Type="VI" URL="../KalmanFilterLatencyComp_Reset.vi"/>
 				</Item>
 				<Item Name="Swerve Drive Pose Estimator" Type="Folder"/>
 				<Item Name="UnscentedKalmanFilter" Type="Folder">
