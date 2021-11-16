@@ -781,6 +781,7 @@
 					<Item Name="DiffDrivePoseEst_Update.vi" Type="VI" URL="../DiffDrivePoseEst_Update.vi"/>
 					<Item Name="DiffDrivePoseEst_UpdateWithTime.vi" Type="VI" URL="../DiffDrivePoseEst_UpdateWithTime.vi"/>
 					<Item Name="DiffDrivePoseEst_VisionCorrect_Callback.vi" Type="VI" URL="../DiffDrivePoseEst_VisionCorrect_Callback.vi"/>
+					<Item Name="DiffDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi" Type="VI" URL="../DiffDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi"/>
 				</Item>
 				<Item Name="ExtendedKalmanFilter" Type="Folder">
 					<Item Name="ExtendedKalmanFilter_Correct.vi" Type="VI" URL="../ExtendedKalmanFilter_Correct.vi"/>
@@ -828,6 +829,7 @@
 					<Item Name="SwerveDrivePoseEst_Update.vi" Type="VI" URL="../SwerveDrivePoseEst_Update.vi"/>
 					<Item Name="SwerveDrivePoseEst_UpdateWithTime.vi" Type="VI" URL="../SwerveDrivePoseEst_UpdateWithTime.vi"/>
 					<Item Name="SwerveDrivePoseEst_VisionCorrect_Callback.vi" Type="VI" URL="../SwerveDrivePoseEst_VisionCorrect_Callback.vi"/>
+					<Item Name="SwerveDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi" Type="VI" URL="../SwerveDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi"/>
 				</Item>
 				<Item Name="UnscentedKalmanFilter" Type="Folder">
 					<Item Name="UnscentedKalmanFilter_Correct.vi" Type="VI" URL="../UnscentedKalmanFilter_Correct.vi"/>
