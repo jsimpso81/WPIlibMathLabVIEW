@@ -565,6 +565,7 @@
 					<Item Name="NumIntegrate_Trap_Mat.vi" Type="VI" URL="../NumIntegrate_Trap_Mat.vi"/>
 				</Item>
 				<Item Name="NumericalJacobiian" Type="Folder">
+					<Item Name="NumJacobian_U.vi" Type="VI" URL="../NumJacobian_U.vi"/>
 					<Item Name="NumJacobian_X.vi" Type="VI" URL="../NumJacobian_X.vi"/>
 				</Item>
 				<Item Name="Riccati" Type="Folder">
