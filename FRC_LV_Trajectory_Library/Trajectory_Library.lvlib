@@ -118,7 +118,7 @@
 	<Item Name="TypDef" Type="Folder">
 		<Item Name="ARM_FF.ctl" Type="VI" URL="../ARM_FF.ctl"/>
 		<Item Name="BiCon_Matrix_FUNC_TYPE.ctl" Type="VI" URL="../BiCon_Matrix_FUNC_TYPE.ctl"/>
-		<Item Name="BiFun_Matrix_FUNC_TYPE.ctl" Type="VI" URL="../BiFun_Matrix_FUNC_TYPE.ctl"/>
+		<Item Name="CALLBACK_FUNC_TYPE.ctl" Type="VI" URL="../CALLBACK_FUNC_TYPE.ctl"/>
 		<Item Name="CHASSIS_SPEEDS.ctl" Type="VI" URL="../CHASSIS_SPEEDS.ctl"/>
 		<Item Name="CONSTRAINED_STATE.ctl" Type="VI" URL="../CONSTRAINED_STATE.ctl"/>
 		<Item Name="DCMOTOR.CTL" Type="VI" URL="../DCMOTOR.CTL"/>
@@ -135,6 +135,7 @@
 		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../HOLONOMIC_DRV_CTRL.ctl"/>
 		<Item Name="KALMAN_FILTER.ctl" Type="VI" URL="../KALMAN_FILTER.ctl"/>
 		<Item Name="KALMAN_FILTER_LATENCY_COMP.ctl" Type="VI" URL="../KALMAN_FILTER_LATENCY_COMP.ctl"/>
+		<Item Name="KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP.ctl" Type="VI" URL="../KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP.ctl"/>
 		<Item Name="LINEAR_FILTER.ctl" Type="VI" URL="../LINEAR_FILTER.ctl"/>
 		<Item Name="LINEAR_PLANT_INV_FF.ctl" Type="VI" URL="../LINEAR_PLANT_INV_FF.ctl"/>
 		<Item Name="LINEAR_QUADRATIC_REGULATOR.ctl" Type="VI" URL="../LINEAR_QUADRATIC_REGULATOR.ctl"/>
@@ -525,11 +526,11 @@
 			<Item Name="Math" Type="Folder">
 				<Item Name="AngleStatistics" Type="Folder">
 					<Item Name="AngleStats_AngleAdd.vi" Type="VI" URL="../AngleStats_AngleAdd.vi"/>
-					<Item Name="AngleStats_AngleAdd_BiFunc.vi" Type="VI" URL="../AngleStats_AngleAdd_BiFunc.vi"/>
+					<Item Name="AngleStats_AngleAdd_CallbackHelp.vi" Type="VI" URL="../AngleStats_AngleAdd_CallbackHelp.vi"/>
 					<Item Name="AngleStats_AngleMean.vi" Type="VI" URL="../AngleStats_AngleMean.vi"/>
-					<Item Name="AngleStats_AngleMean_BiFunc.vi" Type="VI" URL="../AngleStats_AngleMean_BiFunc.vi"/>
+					<Item Name="AngleStats_AngleMean_CallbackHelp.vi" Type="VI" URL="../AngleStats_AngleMean_CallbackHelp.vi"/>
 					<Item Name="AngleStats_AngleResidual.vi" Type="VI" URL="../AngleStats_AngleResidual.vi"/>
-					<Item Name="AngleStats_AngleResidual_BiFunc.vi" Type="VI" URL="../AngleStats_AngleResidual_BiFunc.vi"/>
+					<Item Name="AngleStats_AngleResidual_CallbackHelp.vi" Type="VI" URL="../AngleStats_AngleResidual_CallbackHelp.vi"/>
 				</Item>
 				<Item Name="MathUtil" Type="Folder">
 					<Item Name="MathUtil_AngleModulus.vi" Type="VI" URL="../MathUtil_AngleModulus.vi"/>
@@ -770,16 +771,16 @@
 			<Item Name="State Space Estimator" Type="Folder">
 				<Item Name="Diff Drive Pose Estimator" Type="Folder">
 					<Item Name="DiffDrivePoseEst_AddVisionMeasurement.vi" Type="VI" URL="../DiffDrivePoseEst_AddVisionMeasurement.vi"/>
-					<Item Name="DiffDrivePoseEst_BiConsum_VisionCorrect.vi" Type="VI" URL="../DiffDrivePoseEst_BiConsum_VisionCorrect.vi"/>
-					<Item Name="DiffDrivePoseEst_BiFunc_F.vi" Type="VI" URL="../DiffDrivePoseEst_BiFunc_F.vi"/>
-					<Item Name="DiffDrivePoseEst_BiFunc_H.vi" Type="VI" URL="../DiffDrivePoseEst_BiFunc_H.vi"/>
 					<Item Name="DiffDrivePoseEst_FillStateVector.vi" Type="VI" URL="../DiffDrivePoseEst_FillStateVector.vi"/>
 					<Item Name="DiffDrivePoseEst_GetEstimatedPosition.vi" Type="VI" URL="../DiffDrivePoseEst_GetEstimatedPosition.vi"/>
+					<Item Name="DiffDrivePoseEst_Kalman_F_Callback.vi" Type="VI" URL="../DiffDrivePoseEst_Kalman_F_Callback.vi"/>
+					<Item Name="DiffDrivePoseEst_Kalman_H_Callback.vi" Type="VI" URL="../DiffDrivePoseEst_Kalman_H_Callback.vi"/>
 					<Item Name="DiffDrivePoseEst_New.vi" Type="VI" URL="../DiffDrivePoseEst_New.vi"/>
 					<Item Name="DiffDrivePoseEst_ResetPosition.vi" Type="VI" URL="../DiffDrivePoseEst_ResetPosition.vi"/>
 					<Item Name="DiffDrivePoseEst_SetVisionMeasurementStdDevs.vi" Type="VI" URL="../DiffDrivePoseEst_SetVisionMeasurementStdDevs.vi"/>
 					<Item Name="DiffDrivePoseEst_Update.vi" Type="VI" URL="../DiffDrivePoseEst_Update.vi"/>
 					<Item Name="DiffDrivePoseEst_UpdateWithTime.vi" Type="VI" URL="../DiffDrivePoseEst_UpdateWithTime.vi"/>
+					<Item Name="DiffDrivePoseEst_VisionCorrect_Callback.vi" Type="VI" URL="../DiffDrivePoseEst_VisionCorrect_Callback.vi"/>
 				</Item>
 				<Item Name="ExtendedKalmanFilter" Type="Folder">
 					<Item Name="ExtendedKalmanFilter_Correct.vi" Type="VI" URL="../ExtendedKalmanFilter_Correct.vi"/>
@@ -809,22 +810,24 @@
 				</Item>
 				<Item Name="KalmanFIlterLatencyCompensator" Type="Folder">
 					<Item Name="KalmanFilterLatencyComp_AddObserverState.vi" Type="VI" URL="../KalmanFilterLatencyComp_AddObserverState.vi"/>
+					<Item Name="KalmanFilterLatencyComp_ApplyPastGlobalMeas_FuncGroup.vi" Type="VI" URL="../KalmanFilterLatencyComp_ApplyPastGlobalMeas_FuncGroup.vi"/>
 					<Item Name="KalmanFilterLatencyComp_ApplyPastGlobalMeasurement_UKF.vi" Type="VI" URL="../KalmanFilterLatencyComp_ApplyPastGlobalMeasurement_UKF.vi"/>
 					<Item Name="KalmanFilterLatencyComp_FindClosestMeasurement.vi" Type="VI" URL="../KalmanFilterLatencyComp_FindClosestMeasurement.vi"/>
 					<Item Name="KalmanFilterLatencyComp_New.vi" Type="VI" URL="../KalmanFilterLatencyComp_New.vi"/>
+					<Item Name="KalmanFilterLatencyComp_Observer_New.vi" Type="VI" URL="../KalmanFilterLatencyComp_Observer_New.vi"/>
 					<Item Name="KalmanFilterLatencyComp_Reset.vi" Type="VI" URL="../KalmanFilterLatencyComp_Reset.vi"/>
 				</Item>
 				<Item Name="Swerve Drive Pose Estimator" Type="Folder">
 					<Item Name="SwerveDrivePoseEst_AddVisionMeasurement.vi" Type="VI" URL="../SwerveDrivePoseEst_AddVisionMeasurement.vi"/>
-					<Item Name="SwerveDrivePoseEst_BiConsum_VisionCorrect.vi" Type="VI" URL="../SwerveDrivePoseEst_BiConsum_VisionCorrect.vi"/>
-					<Item Name="SwerveDrivePoseEst_BiFunc_F.vi" Type="VI" URL="../SwerveDrivePoseEst_BiFunc_F.vi"/>
-					<Item Name="SwerveDrivePoseEst_BiFunc_H.vi" Type="VI" URL="../SwerveDrivePoseEst_BiFunc_H.vi"/>
 					<Item Name="SwerveDrivePoseEst_GetEstimatedPosition.vi" Type="VI" URL="../SwerveDrivePoseEst_GetEstimatedPosition.vi"/>
+					<Item Name="SwerveDrivePoseEst_Kalman_F_Callback.vi" Type="VI" URL="../SwerveDrivePoseEst_Kalman_F_Callback.vi"/>
+					<Item Name="SwerveDrivePoseEst_Kalman_H_Callback.vi" Type="VI" URL="../SwerveDrivePoseEst_Kalman_H_Callback.vi"/>
 					<Item Name="SwerveDrivePoseEst_New.vi" Type="VI" URL="../SwerveDrivePoseEst_New.vi"/>
 					<Item Name="SwerveDrivePoseEst_ResetPosition.vi" Type="VI" URL="../SwerveDrivePoseEst_ResetPosition.vi"/>
 					<Item Name="SwerveDrivePoseEst_SetVisionMeasurementStdDevs.vi" Type="VI" URL="../SwerveDrivePoseEst_SetVisionMeasurementStdDevs.vi"/>
 					<Item Name="SwerveDrivePoseEst_Update.vi" Type="VI" URL="../SwerveDrivePoseEst_Update.vi"/>
 					<Item Name="SwerveDrivePoseEst_UpdateWithTime.vi" Type="VI" URL="../SwerveDrivePoseEst_UpdateWithTime.vi"/>
+					<Item Name="SwerveDrivePoseEst_VisionCorrect_Callback.vi" Type="VI" URL="../SwerveDrivePoseEst_VisionCorrect_Callback.vi"/>
 				</Item>
 				<Item Name="UnscentedKalmanFilter" Type="Folder">
 					<Item Name="UnscentedKalmanFilter_Correct.vi" Type="VI" URL="../UnscentedKalmanFilter_Correct.vi"/>
@@ -875,11 +878,11 @@
 			</Item>
 			<Item Name="State Space Utilities" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
-				<Item Name="BiFunction Helps" Type="Folder">
-					<Item Name="BiFuncHelp_MatrixMinus.vi" Type="VI" URL="../BiFuncHelp_MatrixMinus.vi"/>
-					<Item Name="BiFuncHelp_MatrixMult.vi" Type="VI" URL="../BiFuncHelp_MatrixMult.vi"/>
-					<Item Name="BiFuncHelp_MatrixMult_CoerceSizeB.vi" Type="VI" URL="../BiFuncHelp_MatrixMult_CoerceSizeB.vi"/>
-					<Item Name="BiFuncHelp_MatrixPlus.vi" Type="VI" URL="../BiFuncHelp_MatrixPlus.vi"/>
+				<Item Name="Callback Helper Functions" Type="Folder">
+					<Item Name="CallbackHelp_MatrixMinus.vi" Type="VI" URL="../CallbackHelp_MatrixMinus.vi"/>
+					<Item Name="CallbackHelp_MatrixMult.vi" Type="VI" URL="../CallbackHelp_MatrixMult.vi"/>
+					<Item Name="CallbackHelp_MatrixMult_CoerceSizeB.vi" Type="VI" URL="../CallbackHelp_MatrixMult_CoerceSizeB.vi"/>
+					<Item Name="CallbackHelp_MatrixPlus.vi" Type="VI" URL="../CallbackHelp_MatrixPlus.vi"/>
 				</Item>
 				<Item Name="Discretization" Type="Folder">
 					<Item Name="Discretization_DiscretizeA.vi" Type="VI" URL="../Discretization_DiscretizeA.vi"/>
