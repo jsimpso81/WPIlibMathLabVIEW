@@ -22,6 +22,7 @@
 		<Item Name="FRC_LV_CtrlLib_Filter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Filter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_FlyWheelSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_FlyWheelSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_KalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_KalmanFilter.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_KalmanLatencyFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_KalmanLatencyFilter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_LinearSystem.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinearSystem.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_LinearSystemID.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinearSystemID.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_LinearSystemLoop.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinearSystemLoop.mnu"/>
@@ -45,6 +46,7 @@
 		<Item Name="FRC_LV_CtrlLib_StateSpaceModel.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceModel.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtil.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtil.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_SwervePoseEst.mnu" Type="Document" URL="../FRC_LV_CtrlLib_SwervePoseEst.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Timing.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Timing.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_UnitsConv.mnu" Type="Document" URL="../FRC_LV_CtrlLib_UnitsConv.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_UnscentedKalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_UnscentedKalmanFilter.mnu"/>
@@ -200,6 +202,17 @@
 	</Item>
 	<Item Name="VI" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
+		<Item Name="_MenuMacros" Type="Folder">
+			<Item Name="macro_vecBuilder1x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder1x1FIll.vi"/>
+			<Item Name="macro_vecBuilder2x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder2x1FIll.vi"/>
+			<Item Name="macro_vecBuilder3x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder3x1FIll.vi"/>
+			<Item Name="macro_vecBuilder4x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder4x1FIll.vi"/>
+			<Item Name="macro_vecBuilder5x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder5x1FIll.vi"/>
+			<Item Name="macro_vecBuilder6x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder6x1FIll.vi"/>
+			<Item Name="macro_vecBuilder7x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder7x1FIll.vi"/>
+			<Item Name="macro_vecBuilder8x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder8x1FIll.vi"/>
+			<Item Name="macro_vecBuilder_ArrayBy1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder_ArrayBy1FIll.vi"/>
+		</Item>
 		<Item Name="Base" Type="Folder">
 			<Item Name="LinearFilter" Type="Folder">
 				<Item Name="LinearFilter_Calculate.vi" Type="VI" URL="../LinearFilter_Calculate.vi"/>
