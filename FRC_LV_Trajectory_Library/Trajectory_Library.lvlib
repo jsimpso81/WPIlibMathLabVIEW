@@ -203,6 +203,22 @@
 	<Item Name="VI" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
 		<Item Name="_MenuMacros" Type="Folder">
+			<Item Name="macro_AngleStats_AngleAdd_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleAdd_CallbackHelp.vi"/>
+			<Item Name="macro_AngleStats_AngleMean_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleMean_CallbackHelp.vi"/>
+			<Item Name="macro_AngleStats_AngleResidual_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleResidual_CallbackHelp.vi"/>
+			<Item Name="macro_CallbackHelp_MatrixMinus.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMinus.vi"/>
+			<Item Name="macro_CallbackHelp_MatrixMult.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult.vi"/>
+			<Item Name="macro_CallbackHelp_MatrixMult_CoerceSizeB.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult_CoerceSizeB.vi"/>
+			<Item Name="macro_CallbackHelp_MatrixPlus.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixPlus.vi"/>
+			<Item Name="macro_LinearFilter_ExecuteAVG.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteAVG.vi"/>
+			<Item Name="macro_LinearFilter_ExecuteTC.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteTC.vi"/>
+			<Item Name="macro_MatBuilder_Create.vi" Type="VI" URL="../Macros/macro_MatBuilder_Create.vi"/>
+			<Item Name="macro_MatBuilder_Fill.vi" Type="VI" URL="../Macros/macro_MatBuilder_Fill.vi"/>
+			<Item Name="macro_MatrixHelper_CoerceSize.vi" Type="VI" URL="../Macros/macro_MatrixHelper_CoerceSize.vi"/>
+			<Item Name="macro_MedianFilter_Execute.vi" Type="VI" URL="../Macros/macro_MedianFilter_Execute.vi"/>
+			<Item Name="macro_PIDController_AdvExecute.vi" Type="VI" URL="../Macros/macro_PIDController_AdvExecute.vi"/>
+			<Item Name="macro_PIDController_Execute.vi" Type="VI" URL="../Macros/macro_PIDController_Execute.vi"/>
+			<Item Name="macro_SlewRateLimter_Execute.vi" Type="VI" URL="../Macros/macro_SlewRateLimter_Execute.vi"/>
 			<Item Name="macro_vecBuilder1x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder1x1FIll.vi"/>
 			<Item Name="macro_vecBuilder2x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder2x1FIll.vi"/>
 			<Item Name="macro_vecBuilder3x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder3x1FIll.vi"/>
