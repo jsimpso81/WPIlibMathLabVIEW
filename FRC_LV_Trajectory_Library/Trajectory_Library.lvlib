@@ -21,6 +21,8 @@
 		<Item Name="FRC_LV_CtrlLib_ExtendedKalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ExtendedKalmanFilter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Filter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Filter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_FlyWheelSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_FlyWheelSim.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_GeneralAnalogControl.mnu" Type="Document" URL="../FRC_LV_CtrlLib_GeneralAnalogControl.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_GeneralDigitalControls.mnu" Type="Document" URL="../FRC_LV_CtrlLib_GeneralDigitalControls.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_KalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_KalmanFilter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_KalmanLatencyFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_KalmanLatencyFilter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_LinearSystem.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinearSystem.mnu"/>
