@@ -217,6 +217,7 @@
 			<Item Name="macro_Digital_Not.vi" Type="VI" URL="../Macros/macro_Digital_Not.vi"/>
 			<Item Name="macro_Digital_Or.vi" Type="VI" URL="../Macros/macro_Digital_Or.vi"/>
 			<Item Name="macro_Digital_OrMany.vi" Type="VI" URL="../Macros/macro_Digital_OrMany.vi"/>
+			<Item Name="macro_HolDrvCtrl_New.vi" Type="VI" URL="../Macros/macro_HolDrvCtrl_New.vi"/>
 			<Item Name="macro_LinearFilter_ExecuteAVG.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteAVG.vi"/>
 			<Item Name="macro_LinearFilter_ExecuteTC.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteTC.vi"/>
 			<Item Name="macro_MatBuilder_Create.vi" Type="VI" URL="../Macros/macro_MatBuilder_Create.vi"/>
@@ -1122,6 +1123,7 @@
 		</Item>
 		<Item Name="Utility" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
+			<Item Name="Util_ApproxEquals.vi" Type="VI" URL="../Util_ApproxEquals.vi"/>
 			<Item Name="Util_Array_PoseWCurv_to_XY.vi" Type="VI" URL="../Util_Array_PoseWCurv_to_XY.vi"/>
 			<Item Name="Util_CalcDist.vi" Type="VI" URL="../Util_CalcDist.vi"/>
 			<Item Name="Util_GetLibraryVersion.vi" Type="VI" URL="../Util_GetLibraryVersion.vi"/>
