@@ -210,10 +210,16 @@
 			<Item Name="macro_CallbackHelp_MatrixMult.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixMult_CoerceSizeB.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult_CoerceSizeB.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixPlus.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixPlus.vi"/>
+			<Item Name="macro_Digital_And.vi" Type="VI" URL="../Macros/macro_Digital_And.vi"/>
+			<Item Name="macro_Digital_AndMany.vi" Type="VI" URL="../Macros/macro_Digital_AndMany.vi"/>
+			<Item Name="macro_Digital_Not.vi" Type="VI" URL="../Macros/macro_Digital_Not.vi"/>
+			<Item Name="macro_Digital_Or.vi" Type="VI" URL="../Macros/macro_Digital_Or.vi"/>
+			<Item Name="macro_Digital_OrMany.vi" Type="VI" URL="../Macros/macro_Digital_OrMany.vi"/>
 			<Item Name="macro_LinearFilter_ExecuteAVG.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteAVG.vi"/>
 			<Item Name="macro_LinearFilter_ExecuteTC.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteTC.vi"/>
 			<Item Name="macro_MatBuilder_Create.vi" Type="VI" URL="../Macros/macro_MatBuilder_Create.vi"/>
 			<Item Name="macro_MatBuilder_Fill.vi" Type="VI" URL="../Macros/macro_MatBuilder_Fill.vi"/>
+			<Item Name="macro_MathUtils_ClampInput.vi" Type="VI" URL="../Macros/macro_MathUtils_ClampInput.vi"/>
 			<Item Name="macro_MatrixHelper_CoerceSize.vi" Type="VI" URL="../Macros/macro_MatrixHelper_CoerceSize.vi"/>
 			<Item Name="macro_MedianFilter_Execute.vi" Type="VI" URL="../Macros/macro_MedianFilter_Execute.vi"/>
 			<Item Name="macro_PIDController_AdvExecute.vi" Type="VI" URL="../Macros/macro_PIDController_AdvExecute.vi"/>
@@ -551,35 +557,78 @@
 				<Item Name="SwerveOdometry_UpdateX.vi" Type="VI" URL="../SwerveOdometry_UpdateX.vi"/>
 			</Item>
 		</Item>
+		<Item Name="Math" Type="Folder">
+			<Item Name="AngleStatistics" Type="Folder">
+				<Item Name="AngleStats_AngleAdd.vi" Type="VI" URL="../AngleStats_AngleAdd.vi"/>
+				<Item Name="AngleStats_AngleAdd_CallbackHelp.vi" Type="VI" URL="../AngleStats_AngleAdd_CallbackHelp.vi"/>
+				<Item Name="AngleStats_AngleMean.vi" Type="VI" URL="../AngleStats_AngleMean.vi"/>
+				<Item Name="AngleStats_AngleMean_CallbackHelp.vi" Type="VI" URL="../AngleStats_AngleMean_CallbackHelp.vi"/>
+				<Item Name="AngleStats_AngleResidual.vi" Type="VI" URL="../AngleStats_AngleResidual.vi"/>
+				<Item Name="AngleStats_AngleResidual_CallbackHelp.vi" Type="VI" URL="../AngleStats_AngleResidual_CallbackHelp.vi"/>
+			</Item>
+			<Item Name="MathUtil" Type="Folder">
+				<Item Name="MathUtil_AngleModulus.vi" Type="VI" URL="../MathUtil_AngleModulus.vi"/>
+				<Item Name="MathUtil_ApplyDeadband.vi" Type="VI" URL="../MathUtil_ApplyDeadband.vi"/>
+				<Item Name="MathUtil_Clamp.vi" Type="VI" URL="../MathUtil_Clamp.vi"/>
+				<Item Name="MathUtil_Clamp_Int.vi" Type="VI" URL="../MathUtil_Clamp_Int.vi"/>
+				<Item Name="MathUtil_InputModulus.vi" Type="VI" URL="../MathUtil_InputModulus.vi"/>
+			</Item>
+			<Item Name="MerweScaledSigmaPts" Type="Folder">
+				<Item Name="MerweScSigPts_ComputeWeights.vi" Type="VI" URL="../MerweScSigPts_ComputeWeights.vi"/>
+				<Item Name="MerweScSigPts_GetNumSigmas.vi" Type="VI" URL="../MerweScSigPts_GetNumSigmas.vi"/>
+				<Item Name="MerweScSigPts_GetWc.vi" Type="VI" URL="../MerweScSigPts_GetWc.vi"/>
+				<Item Name="MerweScSigPts_GetWc_Single.vi" Type="VI" URL="../MerweScSigPts_GetWc_Single.vi"/>
+				<Item Name="MerweScSigPts_GetWm.vi" Type="VI" URL="../MerweScSigPts_GetWm.vi"/>
+				<Item Name="MerweScSigPts_GetWm_Single.vi" Type="VI" URL="../MerweScSigPts_GetWm_Single.vi"/>
+				<Item Name="MerweScSigPts_New.vi" Type="VI" URL="../MerweScSigPts_New.vi"/>
+				<Item Name="MerweScSigPts_New_Default.vi" Type="VI" URL="../MerweScSigPts_New_Default.vi"/>
+				<Item Name="MerweScSigPts_SigmaPoints.vi" Type="VI" URL="../MerweScSigPts_SigmaPoints.vi"/>
+			</Item>
+		</Item>
+		<Item Name="Matrix Utilities" Type="Folder">
+			<Item Name="MatBuilder" Type="Folder">
+				<Item Name="MatBuilder_Create.vi" Type="VI" URL="../MatBuilder_Create.vi"/>
+				<Item Name="MatBuilder_Fill.vi" Type="VI" URL="../MatBuilder_Fill.vi"/>
+			</Item>
+			<Item Name="MatixHelper" Type="Folder">
+				<Item Name="MatrixHelper_CoerceSize.vi" Type="VI" URL="../MatrixHelper_CoerceSize.vi"/>
+				<Item Name="MatrixHelper_MultCoerceBSize.vi" Type="VI" URL="../MatrixHelper_MultCoerceBSize.vi"/>
+				<Item Name="MatrixHelper_Zero.vi" Type="VI" URL="../MatrixHelper_Zero.vi"/>
+			</Item>
+			<Item Name="Matrix" Type="Folder">
+				<Item Name="Matrix_AssignBlock.vi" Type="VI" URL="../Matrix_AssignBlock.vi"/>
+				<Item Name="Matrix_Block.vi" Type="VI" URL="../Matrix_Block.vi"/>
+				<Item Name="Matrix_Create.vi" Type="VI" URL="../Matrix_Create.vi"/>
+				<Item Name="Matrix_Diag.vi" Type="VI" URL="../Matrix_Diag.vi"/>
+				<Item Name="Matrix_ElementSum.vi" Type="VI" URL="../Matrix_ElementSum.vi"/>
+				<Item Name="Matrix_Exp.vi" Type="VI" URL="../Matrix_Exp.vi"/>
+				<Item Name="Matrix_ExtractColumnVector.vi" Type="VI" URL="../Matrix_ExtractColumnVector.vi"/>
+				<Item Name="Matrix_ExtractFrom.vi" Type="VI" URL="../Matrix_ExtractFrom.vi"/>
+				<Item Name="Matrix_ExtractMatrix.vi" Type="VI" URL="../Matrix_ExtractMatrix.vi"/>
+				<Item Name="Matrix_ExtractRowVector.vi" Type="VI" URL="../Matrix_ExtractRowVector.vi"/>
+				<Item Name="Matrix_Fill.vi" Type="VI" URL="../Matrix_Fill.vi"/>
+				<Item Name="Matrix_Ident.vi" Type="VI" URL="../Matrix_Ident.vi"/>
+				<Item Name="Matrix_IsEqual.vi" Type="VI" URL="../Matrix_IsEqual.vi"/>
+				<Item Name="Matrix_LltDecompose.vi" Type="VI" URL="../Matrix_LltDecompose.vi"/>
+				<Item Name="Matrix_Pow.vi" Type="VI" URL="../Matrix_Pow.vi"/>
+				<Item Name="Matrix_SetColumn.vi" Type="VI" URL="../Matrix_SetColumn.vi"/>
+				<Item Name="Matrix_SetRow.vi" Type="VI" URL="../Matrix_SetRow.vi"/>
+			</Item>
+			<Item Name="VecBuilder" Type="Folder">
+				<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
+				<Item Name="VecBuilder_2x1Fill.vi" Type="VI" URL="../VecBuilder_2x1Fill.vi"/>
+				<Item Name="VecBuilder_3x1Fill.vi" Type="VI" URL="../VecBuilder_3x1Fill.vi"/>
+				<Item Name="VecBuilder_4x1Fill.vi" Type="VI" URL="../VecBuilder_4x1Fill.vi"/>
+				<Item Name="VecBuilder_5x1Fill.vi" Type="VI" URL="../VecBuilder_5x1Fill.vi"/>
+				<Item Name="VecBuilder_6x1Fill.vi" Type="VI" URL="../VecBuilder_6x1Fill.vi"/>
+				<Item Name="VecBuilder_7x1Fill.vi" Type="VI" URL="../VecBuilder_7x1Fill.vi"/>
+				<Item Name="VecBuilder_8x1Fill.vi" Type="VI" URL="../VecBuilder_8x1Fill.vi"/>
+				<Item Name="VecBuilder_ArrayBy1Fill.vi" Type="VI" URL="../VecBuilder_ArrayBy1Fill.vi"/>
+			</Item>
+		</Item>
 		<Item Name="NEW_THINGS_USE_WITH_CAUTION" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="Math" Type="Folder">
-				<Item Name="AngleStatistics" Type="Folder">
-					<Item Name="AngleStats_AngleAdd.vi" Type="VI" URL="../AngleStats_AngleAdd.vi"/>
-					<Item Name="AngleStats_AngleAdd_CallbackHelp.vi" Type="VI" URL="../AngleStats_AngleAdd_CallbackHelp.vi"/>
-					<Item Name="AngleStats_AngleMean.vi" Type="VI" URL="../AngleStats_AngleMean.vi"/>
-					<Item Name="AngleStats_AngleMean_CallbackHelp.vi" Type="VI" URL="../AngleStats_AngleMean_CallbackHelp.vi"/>
-					<Item Name="AngleStats_AngleResidual.vi" Type="VI" URL="../AngleStats_AngleResidual.vi"/>
-					<Item Name="AngleStats_AngleResidual_CallbackHelp.vi" Type="VI" URL="../AngleStats_AngleResidual_CallbackHelp.vi"/>
-				</Item>
-				<Item Name="MathUtil" Type="Folder">
-					<Item Name="MathUtil_AngleModulus.vi" Type="VI" URL="../MathUtil_AngleModulus.vi"/>
-					<Item Name="MathUtil_ApplyDeadband.vi" Type="VI" URL="../MathUtil_ApplyDeadband.vi"/>
-					<Item Name="MathUtil_Clamp.vi" Type="VI" URL="../MathUtil_Clamp.vi"/>
-					<Item Name="MathUtil_Clamp_Int.vi" Type="VI" URL="../MathUtil_Clamp_Int.vi"/>
-					<Item Name="MathUtil_InputModulus.vi" Type="VI" URL="../MathUtil_InputModulus.vi"/>
-				</Item>
-				<Item Name="MerweScaledSigmaPts" Type="Folder">
-					<Item Name="MerweScSigPts_ComputeWeights.vi" Type="VI" URL="../MerweScSigPts_ComputeWeights.vi"/>
-					<Item Name="MerweScSigPts_GetNumSigmas.vi" Type="VI" URL="../MerweScSigPts_GetNumSigmas.vi"/>
-					<Item Name="MerweScSigPts_GetWc.vi" Type="VI" URL="../MerweScSigPts_GetWc.vi"/>
-					<Item Name="MerweScSigPts_GetWc_Single.vi" Type="VI" URL="../MerweScSigPts_GetWc_Single.vi"/>
-					<Item Name="MerweScSigPts_GetWm.vi" Type="VI" URL="../MerweScSigPts_GetWm.vi"/>
-					<Item Name="MerweScSigPts_GetWm_Single.vi" Type="VI" URL="../MerweScSigPts_GetWm_Single.vi"/>
-					<Item Name="MerweScSigPts_New.vi" Type="VI" URL="../MerweScSigPts_New.vi"/>
-					<Item Name="MerweScSigPts_New_Default.vi" Type="VI" URL="../MerweScSigPts_New_Default.vi"/>
-					<Item Name="MerweScSigPts_SigmaPoints.vi" Type="VI" URL="../MerweScSigPts_SigmaPoints.vi"/>
-				</Item>
 				<Item Name="NumericalIntegration" Type="Folder">
 					<Item Name="NumIntegrate_Func_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Func_Ax_Bu_K.vi"/>
 					<Item Name="NumIntegrate_Func_Bs.vi" Type="VI" URL="../NumIntegrate_Func_Bs.vi"/>
@@ -605,47 +654,6 @@
 					<Item Name="Riccati_DARE_Iterate.vi" Type="VI" URL="../Riccati_DARE_Iterate.vi"/>
 					<Item Name="Riccati_DARE_N.vi" Type="VI" URL="../Riccati_DARE_N.vi"/>
 					<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
-				</Item>
-			</Item>
-			<Item Name="MatrixUtilities" Type="Folder">
-				<Item Name="MatBuilder" Type="Folder">
-					<Item Name="MatBuilder_Create.vi" Type="VI" URL="../MatBuilder_Create.vi"/>
-					<Item Name="MatBuilder_Fill.vi" Type="VI" URL="../MatBuilder_Fill.vi"/>
-				</Item>
-				<Item Name="MatixHelper" Type="Folder">
-					<Item Name="MatrixHelper_CoerceSize.vi" Type="VI" URL="../MatrixHelper_CoerceSize.vi"/>
-					<Item Name="MatrixHelper_MultCoerceBSize.vi" Type="VI" URL="../MatrixHelper_MultCoerceBSize.vi"/>
-					<Item Name="MatrixHelper_Zero.vi" Type="VI" URL="../MatrixHelper_Zero.vi"/>
-				</Item>
-				<Item Name="Matrix" Type="Folder">
-					<Item Name="Matrix_AssignBlock.vi" Type="VI" URL="../Matrix_AssignBlock.vi"/>
-					<Item Name="Matrix_Block.vi" Type="VI" URL="../Matrix_Block.vi"/>
-					<Item Name="Matrix_Create.vi" Type="VI" URL="../Matrix_Create.vi"/>
-					<Item Name="Matrix_Diag.vi" Type="VI" URL="../Matrix_Diag.vi"/>
-					<Item Name="Matrix_ElementSum.vi" Type="VI" URL="../Matrix_ElementSum.vi"/>
-					<Item Name="Matrix_Exp.vi" Type="VI" URL="../Matrix_Exp.vi"/>
-					<Item Name="Matrix_ExtractColumnVector.vi" Type="VI" URL="../Matrix_ExtractColumnVector.vi"/>
-					<Item Name="Matrix_ExtractFrom.vi" Type="VI" URL="../Matrix_ExtractFrom.vi"/>
-					<Item Name="Matrix_ExtractMatrix.vi" Type="VI" URL="../Matrix_ExtractMatrix.vi"/>
-					<Item Name="Matrix_ExtractRowVector.vi" Type="VI" URL="../Matrix_ExtractRowVector.vi"/>
-					<Item Name="Matrix_Fill.vi" Type="VI" URL="../Matrix_Fill.vi"/>
-					<Item Name="Matrix_Ident.vi" Type="VI" URL="../Matrix_Ident.vi"/>
-					<Item Name="Matrix_IsEqual.vi" Type="VI" URL="../Matrix_IsEqual.vi"/>
-					<Item Name="Matrix_LltDecompose.vi" Type="VI" URL="../Matrix_LltDecompose.vi"/>
-					<Item Name="Matrix_Pow.vi" Type="VI" URL="../Matrix_Pow.vi"/>
-					<Item Name="Matrix_SetColumn.vi" Type="VI" URL="../Matrix_SetColumn.vi"/>
-					<Item Name="Matrix_SetRow.vi" Type="VI" URL="../Matrix_SetRow.vi"/>
-				</Item>
-				<Item Name="VecBuilder" Type="Folder">
-					<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
-					<Item Name="VecBuilder_2x1Fill.vi" Type="VI" URL="../VecBuilder_2x1Fill.vi"/>
-					<Item Name="VecBuilder_3x1Fill.vi" Type="VI" URL="../VecBuilder_3x1Fill.vi"/>
-					<Item Name="VecBuilder_4x1Fill.vi" Type="VI" URL="../VecBuilder_4x1Fill.vi"/>
-					<Item Name="VecBuilder_5x1Fill.vi" Type="VI" URL="../VecBuilder_5x1Fill.vi"/>
-					<Item Name="VecBuilder_6x1Fill.vi" Type="VI" URL="../VecBuilder_6x1Fill.vi"/>
-					<Item Name="VecBuilder_7x1Fill.vi" Type="VI" URL="../VecBuilder_7x1Fill.vi"/>
-					<Item Name="VecBuilder_8x1Fill.vi" Type="VI" URL="../VecBuilder_8x1Fill.vi"/>
-					<Item Name="VecBuilder_ArrayBy1Fill.vi" Type="VI" URL="../VecBuilder_ArrayBy1Fill.vi"/>
 				</Item>
 			</Item>
 			<Item Name="Simulation" Type="Folder">
