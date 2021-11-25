@@ -110,6 +110,7 @@
 		<Item Name="FRC_LV_Trajectory_Trajectory_State.mnu" Type="Document" URL="../FRC_LV_Trajectory_Trajectory_State.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Trajectory_Trajectory.mnu" Type="Document" URL="../FRC_LV_Trajectory_Trajectory_Trajectory.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Trajectory_Utility.mnu" Type="Document" URL="../FRC_LV_Trajectory_Trajectory_Utility.mnu"/>
+		<Item Name="FRC_LV_Trajectory_Trajectory_Waypoint.mnu" Type="Document" URL="../FRC_LV_Trajectory_Trajectory_Waypoint.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Trap_Profile_Constraint.mnu" Type="Document" URL="../FRC_LV_Trajectory_Trap_Profile_Constraint.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Trap_Profile_State.mnu" Type="Document" URL="../FRC_LV_Trajectory_Trap_Profile_State.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Trapezoid_Profile.mnu" Type="Document" URL="../FRC_LV_Trajectory_Trapezoid_Profile.mnu"/>
@@ -1160,6 +1161,7 @@
 			<Item Name="Util_Waypoint_Eng_To_SI.vi" Type="VI" URL="../Util_Waypoint_Eng_To_SI.vi"/>
 			<Item Name="Util_Waypoint_To_CubicInput.vi" Type="VI" URL="../Util_Waypoint_To_CubicInput.vi"/>
 			<Item Name="Util_Waypoint_To_QuinticInput.vi" Type="VI" URL="../Util_Waypoint_To_QuinticInput.vi"/>
+			<Item Name="Util_WeightedWaypoint_Eng_To_WeightedWaypoint_SI.vi" Type="VI" URL="../Util_WeightedWaypoint_Eng_To_WeightedWaypoint_SI.vi"/>
 			<Item Name="Util_WeightedWaypoint_To_WeightedWayPoint.vi" Type="VI" URL="../Util_WeightedWaypoint_To_WeightedWayPoint.vi"/>
 		</Item>
 	</Item>
