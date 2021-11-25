@@ -166,6 +166,7 @@
 		<Item Name="POSEwCURVATURE.ctl" Type="VI" URL="../POSEwCURVATURE.ctl"/>
 		<Item Name="PROFILED_PID_CONTROLLER.ctl" Type="VI" URL="../PROFILED_PID_CONTROLLER.ctl"/>
 		<Item Name="RAMSETE.ctl" Type="VI" URL="../RAMSETE.ctl"/>
+		<Item Name="RAMSETE_EXE_TUNING.ctl" Type="VI" URL="../RAMSETE_EXE_TUNING.ctl"/>
 		<Item Name="ROTATION2D.ctl" Type="VI" URL="../ROTATION2D.ctl"/>
 		<Item Name="SIMPLE_MOTOR_FF.ctl" Type="VI" URL="../SIMPLE_MOTOR_FF.ctl"/>
 		<Item Name="SINGLE_JOINT_ARM_SIM.ctl" Type="VI" URL="../SINGLE_JOINT_ARM_SIM.ctl"/>
@@ -187,6 +188,7 @@
 		<Item Name="TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="TRAJ_STATE.ctl" Type="VI" URL="../TRAJ_STATE.ctl"/>
 		<Item Name="TRAJECTORY.ctl" Type="VI" URL="../TRAJECTORY.ctl"/>
+		<Item Name="TRAJECTORY_SPLINE_TYPE_ENUM.ctl" Type="VI" URL="../TRAJECTORY_SPLINE_TYPE_ENUM.ctl"/>
 		<Item Name="TRANSFORM2D.ctl" Type="VI" URL="../TRANSFORM2D.ctl"/>
 		<Item Name="TRANSLATION2D.ctl" Type="VI" URL="../TRANSLATION2D.ctl"/>
 		<Item Name="TRAPEZOID_PROFILE.ctl" Type="VI" URL="../TRAPEZOID_PROFILE.ctl"/>
@@ -227,7 +229,10 @@
 			<Item Name="macro_MedianFilter_Execute.vi" Type="VI" URL="../Macros/macro_MedianFilter_Execute.vi"/>
 			<Item Name="macro_PIDController_AdvExecute.vi" Type="VI" URL="../Macros/macro_PIDController_AdvExecute.vi"/>
 			<Item Name="macro_PIDController_Execute.vi" Type="VI" URL="../Macros/macro_PIDController_Execute.vi"/>
+			<Item Name="macro_Ramsete_Execute.vi" Type="VI" URL="../Macros/macro_Ramsete_Execute.vi"/>
+			<Item Name="macro_Ramsete_Execute_ENG.vi" Type="VI" URL="../Macros/macro_Ramsete_Execute_ENG.vi"/>
 			<Item Name="macro_SlewRateLimter_Execute.vi" Type="VI" URL="../Macros/macro_SlewRateLimter_Execute.vi"/>
+			<Item Name="macro_TrajectoryGenerate.vi" Type="VI" URL="../Macros/macro_TrajectoryGenerate.vi"/>
 			<Item Name="macro_vecBuilder1x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder1x1FIll.vi"/>
 			<Item Name="macro_vecBuilder2x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder2x1FIll.vi"/>
 			<Item Name="macro_vecBuilder3x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder3x1FIll.vi"/>
@@ -399,6 +404,10 @@
 				<Item Name="Ramsete_Calculate_Trajectory.vi" Type="VI" URL="../Ramsete_Calculate_Trajectory.vi"/>
 				<Item Name="Ramsete_Diff_DO_Eng.vi" Type="VI" URL="../Ramsete_Diff_DO_Eng.vi"/>
 				<Item Name="Ramsete_Diff_DO_SI.vi" Type="VI" URL="../Ramsete_Diff_DO_SI.vi"/>
+				<Item Name="Ramsete_Execute.vi" Type="VI" URL="../Ramsete_Execute.vi"/>
+				<Item Name="Ramsete_Execute_ENG.vi" Type="VI" URL="../Ramsete_Execute_ENG.vi"/>
+				<Item Name="Ramsete_Execute_PackTuning.vi" Type="VI" URL="../Ramsete_Execute_PackTuning.vi"/>
+				<Item Name="Ramsete_Execute_PackTuning_ENG.vi" Type="VI" URL="../Ramsete_Execute_PackTuning_ENG.vi"/>
 				<Item Name="Ramsete_New.vi" Type="VI" URL="../Ramsete_New.vi"/>
 				<Item Name="Ramsete_New_B_Z.vi" Type="VI" URL="../Ramsete_New_B_Z.vi"/>
 				<Item Name="Ramsete_SetEnabled.vi" Type="VI" URL="../Ramsete_SetEnabled.vi"/>
@@ -660,10 +669,6 @@
 				</Item>
 			</Item>
 			<Item Name="Simulation" Type="Folder">
-				<Item Name="BatterySim" Type="Folder">
-					<Item Name="BatterySim_CalculateDefaultBatteryLoadedVoltage.vi" Type="VI" URL="../BatterySim_CalculateDefaultBatteryLoadedVoltage.vi"/>
-					<Item Name="BatterySim_CalculateLoadedBatteryVoltage.vi" Type="VI" URL="../BatterySim_CalculateLoadedBatteryVoltage.vi"/>
-				</Item>
 				<Item Name="DiffDriveTrainSim" Type="Folder">
 					<Item Name="DiffDriveTrainSim_ClampInput.vi" Type="VI" URL="../DiffDriveTrainSim_ClampInput.vi"/>
 					<Item Name="DiffDriveTrainSim_CreateKitbotSim.vi" Type="VI" URL="../DiffDriveTrainSim_CreateKitbotSim.vi"/>
@@ -954,6 +959,12 @@
 			<Item Name="PathfinderUtil_ToTrajectory.vi" Type="VI" URL="../PathfinderUtil_ToTrajectory.vi"/>
 			<Item Name="PathfinderUtil_ToTrajectoryStates.vi" Type="VI" URL="../PathfinderUtil_ToTrajectoryStates.vi"/>
 		</Item>
+		<Item Name="Simulation" Type="Folder">
+			<Item Name="BatterySim" Type="Folder">
+				<Item Name="BatterySim_CalculateDefaultBatteryLoadedVoltage.vi" Type="VI" URL="../BatterySim_CalculateDefaultBatteryLoadedVoltage.vi"/>
+				<Item Name="BatterySim_CalculateLoadedBatteryVoltage.vi" Type="VI" URL="../BatterySim_CalculateLoadedBatteryVoltage.vi"/>
+			</Item>
+		</Item>
 		<Item Name="Spline" Type="Folder">
 			<Item Name="CubicHermiteSpline" Type="Folder">
 				<Item Name="CubicHermiteSpline_getControlVectorFromArrays.vi" Type="VI" URL="../CubicHermiteSpline_getControlVectorFromArrays.vi"/>
@@ -1072,6 +1083,7 @@
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="TrajectoryGenerate_Make_Cubic.vi" Type="VI" URL="../TrajectoryGenerate_Make_Cubic.vi"/>
 				<Item Name="TrajectoryGenerate_Make_Cubic_CtrlVect.vi" Type="VI" URL="../TrajectoryGenerate_Make_Cubic_CtrlVect.vi"/>
+				<Item Name="TrajectoryGenerate_Make_Generic.vi" Type="VI" URL="../TrajectoryGenerate_Make_Generic.vi"/>
 				<Item Name="TrajectoryGenerate_Make_Quintic.vi" Type="VI" URL="../TrajectoryGenerate_Make_Quintic.vi"/>
 				<Item Name="TrajectoryGenerate_Make_Quintic_CtrlVect.vi" Type="VI" URL="../TrajectoryGenerate_Make_Quintic_CtrlVect.vi"/>
 				<Item Name="TrajectoryGenerate_splinePointsFromSplines.vi" Type="VI" URL="../TrajectoryGenerate_splinePointsFromSplines.vi"/>
@@ -1090,6 +1102,8 @@
 			</Item>
 			<Item Name="TrajectoryUtil" Type="Folder">
 				<Item Name="TrajectoryUtil_fromPathWeaverJSON.vi" Type="VI" URL="../TrajectoryUtil_fromPathWeaverJSON.vi"/>
+				<Item Name="TrajectoryUtil_MakeWeightedWayPoint.vi" Type="VI" URL="../TrajectoryUtil_MakeWeightedWayPoint.vi"/>
+				<Item Name="TrajectoryUtil_MakeWeightedWayPoint_ENG.vi" Type="VI" URL="../TrajectoryUtil_MakeWeightedWayPoint_ENG.vi"/>
 				<Item Name="TrajectoryUtil_toPathWeaverJSON.vi" Type="VI" URL="../TrajectoryUtil_toPathWeaverJSON.vi"/>
 			</Item>
 			<Item Name="TrapezoidProfile" Type="Folder">
