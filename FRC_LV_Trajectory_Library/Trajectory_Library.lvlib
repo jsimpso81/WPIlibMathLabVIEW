@@ -419,6 +419,7 @@
 			</Item>
 			<Item Name="SimpleMotorFeedforward" Type="Folder">
 				<Item Name="SimpleMotorFF_Calculate.vi" Type="VI" URL="../SimpleMotorFF_Calculate.vi"/>
+				<Item Name="SimpleMotorFF_Calculate_NextV_Dt.vi" Type="VI" URL="../SimpleMotorFF_Calculate_NextV_Dt.vi"/>
 				<Item Name="SimpleMotorFF_CalculateVelocityOnly.vi" Type="VI" URL="../SimpleMotorFF_CalculateVelocityOnly.vi"/>
 				<Item Name="SimpleMotorFF_MaxAchieveAccel.vi" Type="VI" URL="../SimpleMotorFF_MaxAchieveAccel.vi"/>
 				<Item Name="SimpleMotorFF_MaxAchieveVel.vi" Type="VI" URL="../SimpleMotorFF_MaxAchieveVel.vi"/>
