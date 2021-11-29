@@ -1026,6 +1026,7 @@
 		<Item Name="Trajectory" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="Trajectory" Type="Folder">
+				<Item Name="Trajectory_Concatenate.vi" Type="VI" URL="../Trajectory_Concatenate.vi"/>
 				<Item Name="Trajectory_Equals.vi" Type="VI" URL="../Trajectory_Equals.vi"/>
 				<Item Name="Trajectory_lerp_double.vi" Type="VI" URL="../Trajectory_lerp_double.vi"/>
 				<Item Name="Trajectory_lerp_Pose.vi" Type="VI" URL="../Trajectory_lerp_Pose.vi"/>
