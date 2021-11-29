@@ -127,6 +127,7 @@
 		<Item Name="CHASSIS_SPEEDS.ctl" Type="VI" URL="../CHASSIS_SPEEDS.ctl"/>
 		<Item Name="CONSTRAINED_STATE.ctl" Type="VI" URL="../CONSTRAINED_STATE.ctl"/>
 		<Item Name="DCMOTOR.CTL" Type="VI" URL="../DCMOTOR.CTL"/>
+		<Item Name="DCMOTOR_TYPES_ENUM.ctl" Type="VI" URL="../DCMOTOR_TYPES_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../DIFF_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_POSE_EST.ctl" Type="VI" URL="../DIFF_DRIVE_POSE_EST.ctl"/>
@@ -710,6 +711,7 @@
 					<Item Name="ElevatorSim_New.vi" Type="VI" URL="../ElevatorSim_New.vi"/>
 					<Item Name="ElevatorSim_Rkf45_Func.vi" Type="VI" URL="../ElevatorSim_Rkf45_Func.vi"/>
 					<Item Name="ElevatorSim_SetInputVoltage.vi" Type="VI" URL="../ElevatorSim_SetInputVoltage.vi"/>
+					<Item Name="ElevatorSim_SetState.vi" Type="VI" URL="../ElevatorSim_SetState.vi"/>
 					<Item Name="ElevatorSim_Update.vi" Type="VI" URL="../ElevatorSim_Update.vi"/>
 					<Item Name="ElevatorSim_UpdateX.vi" Type="VI" URL="../ElevatorSim_UpdateX.vi"/>
 					<Item Name="ElevatorSim_WouldHitLowerLimit.vi" Type="VI" URL="../ElevatorSim_WouldHitLowerLimit.vi"/>
@@ -916,6 +918,7 @@
 					<Item Name="DCMotor_GetRomiBuiltIn.vi" Type="VI" URL="../DCMotor_GetRomiBuiltIn.vi"/>
 					<Item Name="DCMotor_GetVex775Pro.vi" Type="VI" URL="../DCMotor_GetVex775Pro.vi"/>
 					<Item Name="DCMotor_New.vi" Type="VI" URL="../DCMotor_New.vi"/>
+					<Item Name="DCMotor_PickMotor.vi" Type="VI" URL="../DCMotor_PickMotor.vi"/>
 				</Item>
 				<Item Name="LinearsystemId" Type="Folder">
 					<Item Name="LinearSystemId_CreateDriveTrainVelocitySystem.vi" Type="VI" URL="../LinearSystemId_CreateDriveTrainVelocitySystem.vi"/>
