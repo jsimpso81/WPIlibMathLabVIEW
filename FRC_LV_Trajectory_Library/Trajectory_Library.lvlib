@@ -216,6 +216,7 @@
 			<Item Name="macro_CallbackHelp_MatrixMult.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixMult_CoerceSizeB.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult_CoerceSizeB.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixPlus.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixPlus.vi"/>
+			<Item Name="macro_DiffDriveKineNew.vi" Type="VI" URL="../Macros/macro_DiffDriveKineNew.vi"/>
 			<Item Name="macro_Digital_And.vi" Type="VI" URL="../Macros/macro_Digital_And.vi"/>
 			<Item Name="macro_Digital_AndMany.vi" Type="VI" URL="../Macros/macro_Digital_AndMany.vi"/>
 			<Item Name="macro_Digital_Not.vi" Type="VI" URL="../Macros/macro_Digital_Not.vi"/>
@@ -228,12 +229,15 @@
 			<Item Name="macro_MatBuilder_Fill.vi" Type="VI" URL="../Macros/macro_MatBuilder_Fill.vi"/>
 			<Item Name="macro_MathUtils_ClampInput.vi" Type="VI" URL="../Macros/macro_MathUtils_ClampInput.vi"/>
 			<Item Name="macro_MatrixHelper_CoerceSize.vi" Type="VI" URL="../Macros/macro_MatrixHelper_CoerceSize.vi"/>
+			<Item Name="macro_MecaDriveKineNew.vi" Type="VI" URL="../Macros/macro_MecaDriveKineNew.vi"/>
 			<Item Name="macro_MedianFilter_Execute.vi" Type="VI" URL="../Macros/macro_MedianFilter_Execute.vi"/>
 			<Item Name="macro_PIDController_AdvExecute.vi" Type="VI" URL="../Macros/macro_PIDController_AdvExecute.vi"/>
 			<Item Name="macro_PIDController_Execute.vi" Type="VI" URL="../Macros/macro_PIDController_Execute.vi"/>
 			<Item Name="macro_Ramsete_Execute.vi" Type="VI" URL="../Macros/macro_Ramsete_Execute.vi"/>
 			<Item Name="macro_Ramsete_Execute_ENG.vi" Type="VI" URL="../Macros/macro_Ramsete_Execute_ENG.vi"/>
 			<Item Name="macro_SlewRateLimter_Execute.vi" Type="VI" URL="../Macros/macro_SlewRateLimter_Execute.vi"/>
+			<Item Name="macro_SwerveDriveKineNew4.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNew4.vi"/>
+			<Item Name="macro_SwerveDriveKineNewX.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNewX.vi"/>
 			<Item Name="macro_TrajectoryGenerate.vi" Type="VI" URL="../Macros/macro_TrajectoryGenerate.vi"/>
 			<Item Name="macro_vecBuilder1x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder1x1FIll.vi"/>
 			<Item Name="macro_vecBuilder2x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder2x1FIll.vi"/>
@@ -511,7 +515,7 @@
 				<Item Name="Twist_GetAll.vi" Type="VI" URL="../Twist_GetAll.vi"/>
 			</Item>
 		</Item>
-		<Item Name="kinematics" Type="Folder">
+		<Item Name="KinematicsOdometry" Type="Folder">
 			<Item Name="ChassisSpeeds" Type="Folder">
 				<Item Name="ChassisSpeeds_FromFieldRelativeSpeeds.vi" Type="VI" URL="../ChassisSpeeds_FromFieldRelativeSpeeds.vi"/>
 				<Item Name="ChassisSpeeds_GetXYOmega.vi" Type="VI" URL="../ChassisSpeeds_GetXYOmega.vi"/>
@@ -723,6 +727,7 @@
 					<Item Name="FlyWheelSim_GetCurrentDrawAmps.vi" Type="VI" URL="../FlyWheelSim_GetCurrentDrawAmps.vi"/>
 					<Item Name="FlyWheelSim_New_MOI.vi" Type="VI" URL="../FlyWheelSim_New_MOI.vi"/>
 					<Item Name="FlyWheelSim_SetInput.vi" Type="VI" URL="../FlyWheelSim_SetInput.vi"/>
+					<Item Name="FlyWheelSim_SetState.vi" Type="VI" URL="../FlyWheelSim_SetState.vi"/>
 					<Item Name="FlyWheelSim_Update.vi" Type="VI" URL="../FlyWheelSim_Update.vi"/>
 				</Item>
 				<Item Name="LinearSystemSim" Type="Folder">
@@ -748,6 +753,7 @@
 					<Item Name="SngJntArmSim_New.vi" Type="VI" URL="../SngJntArmSim_New.vi"/>
 					<Item Name="SngJntArmSim_Rkf45_Func.vi" Type="VI" URL="../SngJntArmSim_Rkf45_Func.vi"/>
 					<Item Name="SngJntArmSim_SetInputVoltage.vi" Type="VI" URL="../SngJntArmSim_SetInputVoltage.vi"/>
+					<Item Name="SngJntArmSim_SetState.vi" Type="VI" URL="../SngJntArmSim_SetState.vi"/>
 					<Item Name="SngJntArmSim_Update.vi" Type="VI" URL="../SngJntArmSim_Update.vi"/>
 					<Item Name="SngJntArmSim_UpdateX.vi" Type="VI" URL="../SngJntArmSim_UpdateX.vi"/>
 					<Item Name="SngJntArmSim_WouldHitLowerLimit.vi" Type="VI" URL="../SngJntArmSim_WouldHitLowerLimit.vi"/>
