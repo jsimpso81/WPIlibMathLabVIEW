@@ -134,6 +134,7 @@
 		<Item Name="DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_TRAIN_SIM.ctl" Type="VI" URL="../DIFF_DRIVE_TRAIN_SIM.ctl"/>
+		<Item Name="DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl"/>
 		<Item Name="ELEV_FF.ctl" Type="VI" URL="../ELEV_FF.ctl"/>
 		<Item Name="ELEVATOR_SIM.ctl" Type="VI" URL="../ELEVATOR_SIM.ctl"/>
 		<Item Name="EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl" Type="VI" URL="../EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl"/>
