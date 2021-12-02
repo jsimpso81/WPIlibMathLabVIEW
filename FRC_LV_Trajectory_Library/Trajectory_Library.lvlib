@@ -217,12 +217,15 @@
 			<Item Name="macro_CallbackHelp_MatrixMult.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixMult_CoerceSizeB.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult_CoerceSizeB.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixPlus.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixPlus.vi"/>
+			<Item Name="macro_DCMotor_Pick.vi" Type="VI" URL="../Macros/macro_DCMotor_Pick.vi"/>
 			<Item Name="macro_DiffDriveKineNew.vi" Type="VI" URL="../Macros/macro_DiffDriveKineNew.vi"/>
 			<Item Name="macro_Digital_And.vi" Type="VI" URL="../Macros/macro_Digital_And.vi"/>
 			<Item Name="macro_Digital_AndMany.vi" Type="VI" URL="../Macros/macro_Digital_AndMany.vi"/>
 			<Item Name="macro_Digital_Not.vi" Type="VI" URL="../Macros/macro_Digital_Not.vi"/>
 			<Item Name="macro_Digital_Or.vi" Type="VI" URL="../Macros/macro_Digital_Or.vi"/>
 			<Item Name="macro_Digital_OrMany.vi" Type="VI" URL="../Macros/macro_Digital_OrMany.vi"/>
+			<Item Name="macro_FiniteStateMachine_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_Template.vi"/>
+			<Item Name="macro_FiniteStateMachine_w_Timer_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_w_Timer_Template.vi"/>
 			<Item Name="macro_HolDrvCtrl_New.vi" Type="VI" URL="../Macros/macro_HolDrvCtrl_New.vi"/>
 			<Item Name="macro_LinearFilter_ExecuteAVG.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteAVG.vi"/>
 			<Item Name="macro_LinearFilter_ExecuteTC.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteTC.vi"/>
@@ -239,6 +242,7 @@
 			<Item Name="macro_SlewRateLimter_Execute.vi" Type="VI" URL="../Macros/macro_SlewRateLimter_Execute.vi"/>
 			<Item Name="macro_SwerveDriveKineNew4.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNew4.vi"/>
 			<Item Name="macro_SwerveDriveKineNewX.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNewX.vi"/>
+			<Item Name="macro_Trajectory_FGV_Template.vi" Type="VI" URL="../Macros/macro_Trajectory_FGV_Template.vi"/>
 			<Item Name="macro_TrajectoryGenerate.vi" Type="VI" URL="../Macros/macro_TrajectoryGenerate.vi"/>
 			<Item Name="macro_vecBuilder1x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder1x1FIll.vi"/>
 			<Item Name="macro_vecBuilder2x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder2x1FIll.vi"/>
@@ -1035,6 +1039,8 @@
 			<Item Name="Trajectory" Type="Folder">
 				<Item Name="Trajectory_Concatenate.vi" Type="VI" URL="../Trajectory_Concatenate.vi"/>
 				<Item Name="Trajectory_Equals.vi" Type="VI" URL="../Trajectory_Equals.vi"/>
+				<Item Name="Trajectory_GetStates.vi" Type="VI" URL="../Trajectory_GetStates.vi"/>
+				<Item Name="Trajectory_GetTotalTime.vi" Type="VI" URL="../Trajectory_GetTotalTime.vi"/>
 				<Item Name="Trajectory_lerp_double.vi" Type="VI" URL="../Trajectory_lerp_double.vi"/>
 				<Item Name="Trajectory_lerp_Pose.vi" Type="VI" URL="../Trajectory_lerp_Pose.vi"/>
 				<Item Name="Trajectory_New.vi" Type="VI" URL="../Trajectory_New.vi"/>
