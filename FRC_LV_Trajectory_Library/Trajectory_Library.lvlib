@@ -567,6 +567,7 @@
 			</Item>
 			<Item Name="SwerveModuleState" Type="Folder">
 				<Item Name="SwerveModuleState_CompareTo.vi" Type="VI" URL="../SwerveModuleState_CompareTo.vi"/>
+				<Item Name="SwerveModuleState_Get.vi" Type="VI" URL="../SwerveModuleState_Get.vi"/>
 				<Item Name="SwerveModuleState_New.vi" Type="VI" URL="../SwerveModuleState_New.vi"/>
 				<Item Name="SwerveModuleState_Optimize.vi" Type="VI" URL="../SwerveModuleState_Optimize.vi"/>
 			</Item>
