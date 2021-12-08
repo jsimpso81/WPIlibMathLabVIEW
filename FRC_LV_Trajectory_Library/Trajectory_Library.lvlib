@@ -9,6 +9,7 @@
 </Property>
 	<Item Name="_Menus" Type="Folder">
 		<Item Name="FRC_LV_CtrlLib_AngleStatistics.mnu" Type="Document" URL="../FRC_LV_CtrlLib_AngleStatistics.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_BangBang.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BangBang.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_BatterySim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BatterySim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_BiFuncHelp.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BiFuncHelp.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_ControllerUtils.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ControllerUtils.mnu"/>
@@ -121,6 +122,7 @@
 	</Item>
 	<Item Name="TypDef" Type="Folder">
 		<Item Name="ARM_FF.ctl" Type="VI" URL="../ARM_FF.ctl"/>
+		<Item Name="BANG_BANG.ctl" Type="VI" URL="../BANG_BANG.ctl"/>
 		<Item Name="BiCon_Matrix_FUNC_TYPE.ctl" Type="VI" URL="../BiCon_Matrix_FUNC_TYPE.ctl"/>
 		<Item Name="CALLBACK_FUNC_TYPE.ctl" Type="VI" URL="../CALLBACK_FUNC_TYPE.ctl"/>
 		<Item Name="CHASSIS_SPEEDS.ctl" Type="VI" URL="../CHASSIS_SPEEDS.ctl"/>
@@ -318,6 +320,16 @@
 				<Item Name="ArmFF_MinAchieveVelocity.vi" Type="VI" URL="../ArmFF_MinAchieveVelocity.vi"/>
 				<Item Name="ArmFF_New.vi" Type="VI" URL="../ArmFF_New.vi"/>
 				<Item Name="ArmFF_New_ZeroGravity.vi" Type="VI" URL="../ArmFF_New_ZeroGravity.vi"/>
+			</Item>
+			<Item Name="BangBang" Type="Folder">
+				<Item Name="BangBang_AtSetpoint.vi" Type="VI" URL="../BangBang_AtSetpoint.vi"/>
+				<Item Name="BangBang_Calculate_PV.vi" Type="VI" URL="../BangBang_Calculate_PV.vi"/>
+				<Item Name="BangBang_Calculate_SP_PV.vi" Type="VI" URL="../BangBang_Calculate_SP_PV.vi"/>
+				<Item Name="BangBang_GetAll.vi" Type="VI" URL="../BangBang_GetAll.vi"/>
+				<Item Name="BangBang_GetError.vi" Type="VI" URL="../BangBang_GetError.vi"/>
+				<Item Name="BangBang_New.vi" Type="VI" URL="../BangBang_New.vi"/>
+				<Item Name="BangBang_SetSetpoint.vi" Type="VI" URL="../BangBang_SetSetpoint.vi"/>
+				<Item Name="BangBang_SetTolerance.vi" Type="VI" URL="../BangBang_SetTolerance.vi"/>
 			</Item>
 			<Item Name="ControllerUtil" Type="Folder">
 				<Item Name="ControllerUtil_GetModulusError.vi" Type="VI" URL="../ControllerUtil_GetModulusError.vi"/>
@@ -642,6 +654,7 @@
 				<Item Name="Matrix_Pow.vi" Type="VI" URL="../Matrix_Pow.vi"/>
 				<Item Name="Matrix_SetColumn.vi" Type="VI" URL="../Matrix_SetColumn.vi"/>
 				<Item Name="Matrix_SetRow.vi" Type="VI" URL="../Matrix_SetRow.vi"/>
+				<Item Name="Matrix_Transpose.vi" Type="VI" URL="../Matrix_Transpose.vi"/>
 			</Item>
 			<Item Name="VecBuilder" Type="Folder">
 				<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
@@ -655,7 +668,7 @@
 				<Item Name="VecBuilder_ArrayBy1Fill.vi" Type="VI" URL="../VecBuilder_ArrayBy1Fill.vi"/>
 			</Item>
 		</Item>
-		<Item Name="Model" Type="Folder">
+		<Item Name="Model " Type="Folder">
 			<Item Name="DCMotor" Type="Folder">
 				<Item Name="DCMotor_GetAndymark9015.vi" Type="VI" URL="../DCMotor_GetAndymark9015.vi"/>
 				<Item Name="DCMotor_GetAndymarkRs775_125.vi" Type="VI" URL="../DCMotor_GetAndymarkRs775_125.vi"/>
@@ -672,6 +685,15 @@
 				<Item Name="DCMotor_GetVex775Pro.vi" Type="VI" URL="../DCMotor_GetVex775Pro.vi"/>
 				<Item Name="DCMotor_New.vi" Type="VI" URL="../DCMotor_New.vi"/>
 				<Item Name="DCMotor_PickMotor.vi" Type="VI" URL="../DCMotor_PickMotor.vi"/>
+			</Item>
+			<Item Name="LinearsystemId" Type="Folder">
+				<Item Name="LinearSystemId_CreateDriveTrainVelocitySystem.vi" Type="VI" URL="../LinearSystemId_CreateDriveTrainVelocitySystem.vi"/>
+				<Item Name="LinearSystemId_CreateElevatorSystem.vi" Type="VI" URL="../LinearSystemId_CreateElevatorSystem.vi"/>
+				<Item Name="LinearSystemId_CreateFlywheelSystem.vi" Type="VI" URL="../LinearSystemId_CreateFlywheelSystem.vi"/>
+				<Item Name="LinearSystemId_CreateSingleJointedArmSystem.vi" Type="VI" URL="../LinearSystemId_CreateSingleJointedArmSystem.vi"/>
+				<Item Name="LinearSystemId_IdentifyDriveTrainSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyDriveTrainSystem.vi"/>
+				<Item Name="LinearSystemId_IdentifyPositionSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyPositionSystem.vi"/>
+				<Item Name="LinearSystemId_IdentifyVelocitySystem.vi" Type="VI" URL="../LinearSystemId_IdentifyVelocitySystem.vi"/>
 			</Item>
 		</Item>
 		<Item Name="NEW_THINGS_USE_WITH_CAUTION" Type="Folder">
@@ -700,17 +722,6 @@
 					<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
 				</Item>
 			</Item>
-			<Item Name="Model" Type="Folder">
-				<Item Name="LinearsystemId" Type="Folder">
-					<Item Name="LinearSystemId_CreateDriveTrainVelocitySystem.vi" Type="VI" URL="../LinearSystemId_CreateDriveTrainVelocitySystem.vi"/>
-					<Item Name="LinearSystemId_CreateElevatorSystem.vi" Type="VI" URL="../LinearSystemId_CreateElevatorSystem.vi"/>
-					<Item Name="LinearSystemId_CreateFlywheelSystem.vi" Type="VI" URL="../LinearSystemId_CreateFlywheelSystem.vi"/>
-					<Item Name="LinearSystemId_CreateSingleJointedArmSystem.vi" Type="VI" URL="../LinearSystemId_CreateSingleJointedArmSystem.vi"/>
-					<Item Name="LinearSystemId_IdentifyDriveTrainSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyDriveTrainSystem.vi"/>
-					<Item Name="LinearSystemId_IdentifyPositionSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyPositionSystem.vi"/>
-					<Item Name="LinearSystemId_IdentifyVelocitySystem.vi" Type="VI" URL="../LinearSystemId_IdentifyVelocitySystem.vi"/>
-				</Item>
-			</Item>
 			<Item Name="Simulation" Type="Folder">
 				<Item Name="LinearSystemSim" Type="Folder">
 					<Item Name="LinearSystemSim_ClampInput.vi" Type="VI" URL="../LinearSystemSim_ClampInput.vi"/>
@@ -729,27 +740,6 @@
 			<Item Name="State Space Control" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="ControlAffinePlantInversionFeedforward" Type="Folder"/>
-				<Item Name="LinearSystemLoop" Type="Folder">
-					<Property Name="NI.SortType" Type="Int">0</Property>
-					<Item Name="LinearSystemLoop_ClampInput.vi" Type="VI" URL="../LinearSystemLoop_ClampInput.vi"/>
-					<Item Name="LinearSystemLoop_Correct.vi" Type="VI" URL="../LinearSystemLoop_Correct.vi"/>
-					<Item Name="LinearSystemLoop_GetController.vi" Type="VI" URL="../LinearSystemLoop_GetController.vi"/>
-					<Item Name="LinearSystemLoop_GetError.vi" Type="VI" URL="../LinearSystemLoop_GetError.vi"/>
-					<Item Name="LinearSystemLoop_GetError_Single.vi" Type="VI" URL="../LinearSystemLoop_GetError_Single.vi"/>
-					<Item Name="LinearSystemLoop_GetFeedForward.vi" Type="VI" URL="../LinearSystemLoop_GetFeedForward.vi"/>
-					<Item Name="LinearSystemLoop_GetNextR.vi" Type="VI" URL="../LinearSystemLoop_GetNextR.vi"/>
-					<Item Name="LinearSystemLoop_GetNextR_Single.vi" Type="VI" URL="../LinearSystemLoop_GetNextR_Single.vi"/>
-					<Item Name="LinearSystemLoop_GetObserver.vi" Type="VI" URL="../LinearSystemLoop_GetObserver.vi"/>
-					<Item Name="LinearSystemLoop_GetU.vi" Type="VI" URL="../LinearSystemLoop_GetU.vi"/>
-					<Item Name="LinearSystemLoop_GetU_Row.vi" Type="VI" URL="../LinearSystemLoop_GetU_Row.vi"/>
-					<Item Name="LinearSystemLoop_GetXHat.vi" Type="VI" URL="../LinearSystemLoop_GetXHat.vi"/>
-					<Item Name="LinearSystemLoop_GetXHat_Single.vi" Type="VI" URL="../LinearSystemLoop_GetXHat_Single.vi"/>
-					<Item Name="LinearSystemLoop_New.vi" Type="VI" URL="../LinearSystemLoop_New.vi"/>
-					<Item Name="LinearSystemLoop_New_LinearSystem_ClampVal.vi" Type="VI" URL="../LinearSystemLoop_New_LinearSystem_ClampVal.vi"/>
-					<Item Name="LinearSystemLoop_Predict.vi" Type="VI" URL="../LinearSystemLoop_Predict.vi"/>
-					<Item Name="LinearSystemLoop_Reset.vi" Type="VI" URL="../LinearSystemLoop_Reset.vi"/>
-					<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
-				</Item>
 			</Item>
 			<Item Name="State Space Estimator" Type="Folder">
 				<Item Name="ExtendedKalmanFilter" Type="Folder">
@@ -970,6 +960,27 @@
 				<Item Name="LinearSystem_GetD.vi" Type="VI" URL="../LinearSystem_GetD.vi"/>
 				<Item Name="LinearSystem_GetDElement.vi" Type="VI" URL="../LinearSystem_GetDElement.vi"/>
 				<Item Name="LinearSystem_New.vi" Type="VI" URL="../LinearSystem_New.vi"/>
+			</Item>
+			<Item Name="LinearSystemLoop" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">0</Property>
+				<Item Name="LinearSystemLoop_ClampInput.vi" Type="VI" URL="../LinearSystemLoop_ClampInput.vi"/>
+				<Item Name="LinearSystemLoop_Correct.vi" Type="VI" URL="../LinearSystemLoop_Correct.vi"/>
+				<Item Name="LinearSystemLoop_GetController.vi" Type="VI" URL="../LinearSystemLoop_GetController.vi"/>
+				<Item Name="LinearSystemLoop_GetError.vi" Type="VI" URL="../LinearSystemLoop_GetError.vi"/>
+				<Item Name="LinearSystemLoop_GetError_Single.vi" Type="VI" URL="../LinearSystemLoop_GetError_Single.vi"/>
+				<Item Name="LinearSystemLoop_GetFeedForward.vi" Type="VI" URL="../LinearSystemLoop_GetFeedForward.vi"/>
+				<Item Name="LinearSystemLoop_GetNextR.vi" Type="VI" URL="../LinearSystemLoop_GetNextR.vi"/>
+				<Item Name="LinearSystemLoop_GetNextR_Single.vi" Type="VI" URL="../LinearSystemLoop_GetNextR_Single.vi"/>
+				<Item Name="LinearSystemLoop_GetObserver.vi" Type="VI" URL="../LinearSystemLoop_GetObserver.vi"/>
+				<Item Name="LinearSystemLoop_GetU.vi" Type="VI" URL="../LinearSystemLoop_GetU.vi"/>
+				<Item Name="LinearSystemLoop_GetU_Row.vi" Type="VI" URL="../LinearSystemLoop_GetU_Row.vi"/>
+				<Item Name="LinearSystemLoop_GetXHat.vi" Type="VI" URL="../LinearSystemLoop_GetXHat.vi"/>
+				<Item Name="LinearSystemLoop_GetXHat_Single.vi" Type="VI" URL="../LinearSystemLoop_GetXHat_Single.vi"/>
+				<Item Name="LinearSystemLoop_New.vi" Type="VI" URL="../LinearSystemLoop_New.vi"/>
+				<Item Name="LinearSystemLoop_New_LinearSystem_ClampVal.vi" Type="VI" URL="../LinearSystemLoop_New_LinearSystem_ClampVal.vi"/>
+				<Item Name="LinearSystemLoop_Predict.vi" Type="VI" URL="../LinearSystemLoop_Predict.vi"/>
+				<Item Name="LinearSystemLoop_Reset.vi" Type="VI" URL="../LinearSystemLoop_Reset.vi"/>
+				<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
 			</Item>
 		</Item>
 		<Item Name="State Space Estimator" Type="Folder">
