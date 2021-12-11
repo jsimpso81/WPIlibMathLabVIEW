@@ -240,6 +240,9 @@
 			<Item Name="macro_PIDController_Execute.vi" Type="VI" URL="../Macros/macro_PIDController_Execute.vi"/>
 			<Item Name="macro_Ramsete_Execute.vi" Type="VI" URL="../Macros/macro_Ramsete_Execute.vi"/>
 			<Item Name="macro_Ramsete_Execute_ENG.vi" Type="VI" URL="../Macros/macro_Ramsete_Execute_ENG.vi"/>
+			<Item Name="macro_SimpleMotorFF_Calc_NextV.vi" Type="VI" URL="../Macros/macro_SimpleMotorFF_Calc_NextV.vi"/>
+			<Item Name="macro_SimpleMotorFF_Calculate.vi" Type="VI" URL="../Macros/macro_SimpleMotorFF_Calculate.vi"/>
+			<Item Name="macro_SimpleMotorFF_Calculate_CalcAccel.vi" Type="VI" URL="../Macros/macro_SimpleMotorFF_Calculate_CalcAccel.vi"/>
 			<Item Name="macro_SlewRateLimter_Execute.vi" Type="VI" URL="../Macros/macro_SlewRateLimter_Execute.vi"/>
 			<Item Name="macro_SwerveDriveKineNew4.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNew4.vi"/>
 			<Item Name="macro_SwerveDriveKineNewX.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNewX.vi"/>
@@ -440,6 +443,7 @@
 			</Item>
 			<Item Name="SimpleMotorFeedforward" Type="Folder">
 				<Item Name="SimpleMotorFF_Calculate.vi" Type="VI" URL="../SimpleMotorFF_Calculate.vi"/>
+				<Item Name="SimpleMotorFF_Calculate_CalcAccel.vi" Type="VI" URL="../SimpleMotorFF_Calculate_CalcAccel.vi"/>
 				<Item Name="SimpleMotorFF_Calculate_NextV_Dt.vi" Type="VI" URL="../SimpleMotorFF_Calculate_NextV_Dt.vi"/>
 				<Item Name="SimpleMotorFF_CalculateVelocityOnly.vi" Type="VI" URL="../SimpleMotorFF_CalculateVelocityOnly.vi"/>
 				<Item Name="SimpleMotorFF_MaxAchieveAccel.vi" Type="VI" URL="../SimpleMotorFF_MaxAchieveAccel.vi"/>
