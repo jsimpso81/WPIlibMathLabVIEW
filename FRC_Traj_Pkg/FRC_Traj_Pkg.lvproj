@@ -241,7 +241,7 @@
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">206</Property>
+				<Property Name="Bld_version.build" Type="Int">208</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -409,7 +409,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.4-33_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.4-35_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -418,7 +418,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">34</Property>
+				<Property Name="PKG_buildNumber" Type="Int">36</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLib</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -550,7 +550,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlibutils_2.0.0-34_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlibutils_2.0.4-36_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library Utility Programs</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -558,7 +558,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">35</Property>
+				<Property Name="PKG_buildNumber" Type="Int">37</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLib_UtilsOnly</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -677,7 +677,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/Book</Property>
 				<Property Name="PKG_sources[2].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">FRC_LV_Trajectory_Package_Utility_Only</Property>
-				<Property Name="PKG_version" Type="Str">2.0.0</Property>
+				<Property Name="PKG_version" Type="Str">2.0.4</Property>
 			</Item>
 			<Item Name="UtilExe" Type="Source Distribution">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
@@ -701,7 +701,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E685BE58-8AC4-40ED-B368-C46CA560D1D1}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/UtilExe_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">44</Property>
+				<Property Name="Bld_version.build" Type="Int">46</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">4</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>

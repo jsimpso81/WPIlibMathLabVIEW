@@ -136,6 +136,8 @@
 		<Item Name="DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_TRAIN_SIM.ctl" Type="VI" URL="../DIFF_DRIVE_TRAIN_SIM.ctl"/>
 		<Item Name="DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl"/>
+		<Item Name="DISPLAY_WAYPOINT.ctl" Type="VI" URL="../DISPLAY_WAYPOINT.ctl"/>
+		<Item Name="DISPLAY_WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../DISPLAY_WEIGHTED_WAYPOINT.ctl"/>
 		<Item Name="ELEV_FF.ctl" Type="VI" URL="../ELEV_FF.ctl"/>
 		<Item Name="ELEVATOR_SIM.ctl" Type="VI" URL="../ELEVATOR_SIM.ctl"/>
 		<Item Name="EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl" Type="VI" URL="../EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl"/>
@@ -203,8 +205,6 @@
 		<Item Name="UNSCENTED_KALMAN_FILTER.ctl" Type="VI" URL="../UNSCENTED_KALMAN_FILTER.ctl"/>
 		<Item Name="UNSCENTED_KALMAN_NEW_FUNC_GROUP.ctl" Type="VI" URL="../UNSCENTED_KALMAN_NEW_FUNC_GROUP.ctl"/>
 		<Item Name="UTIL_PATHFINDER_CONFIG.ctl" Type="VI" URL="../UTIL_PATHFINDER_CONFIG.ctl"/>
-		<Item Name="UTIL_WAYPOINT.ctl" Type="VI" URL="../UTIL_WAYPOINT.ctl"/>
-		<Item Name="UTIL_WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../UTIL_WEIGHTED_WAYPOINT.ctl"/>
 		<Item Name="WAYPOINTS_README.txt" Type="Document" URL="../WAYPOINTS_README.txt"/>
 		<Item Name="WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../WEIGHTED_WAYPOINT.ctl"/>
 	</Item>
