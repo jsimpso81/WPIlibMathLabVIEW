@@ -235,100 +235,102 @@
 				<Property Name="Bld_excludedDirectory[5].pathType" Type="Str">relativeToAppDir</Property>
 				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/WPI/ThirdParty</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/vi.lib</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{28B4C50E-6258-47A4-9812-E82EA2A09295}</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">212</Property>
+				<Property Name="Bld_version.build" Type="Int">217</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/WPI/ThirdParty</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/vi.lib</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/WPI/ThirdParty/JAS_Junk</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/vi.lib/Rock Robotics/WPI/ThirdParty/JAS_Junk</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[2].destName" Type="Str">TrajLib</Property>
-				<Property Name="Destination[2].path" Type="Path">../builds/WPI/ThirdParty/JAS_Junk/TrajLib</Property>
+				<Property Name="Destination[2].path" Type="Path">../builds/vi.lib/Rock Robotics/WPI/ThirdParty/JAS_Junk/TrajLib</Property>
 				<Property Name="Destination[2].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[3].destName" Type="Str">JaciPathFinderLib</Property>
-				<Property Name="Destination[3].path" Type="Path">../builds/WPI/ThirdParty/JAS_Junk/JaciPathFinderLib</Property>
+				<Property Name="Destination[3].path" Type="Path">../builds/vi.lib/Rock Robotics/WPI/ThirdParty/JAS_Junk/JaciPathFinderLib</Property>
 				<Property Name="Destination[3].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[3].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[4].destName" Type="Str">TopLevelMenu</Property>
-				<Property Name="Destination[4].path" Type="Path">../builds/WPI/ThirdParty/TopLevel/JAS_Junk</Property>
+				<Property Name="Destination[4].path" Type="Path">../builds/vi.lib/Rock Robotics/WPI/ThirdParty/TopLevel/JAS_Junk</Property>
 				<Property Name="Destination[4].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[4].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="DestinationCount" Type="Int">5</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E8F7309D-5677-40B6-91E2-FF62D1620A19}</Property>
+				<Property Name="Destination[5].destName" Type="Str">JaciPathFinderLibSO</Property>
+				<Property Name="Destination[5].path" Type="Path">../builds/vi.lib/addons/FRC_Thirdparty/lib</Property>
+				<Property Name="Destination[5].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[5].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="DestinationCount" Type="Int">6</Property>
+				<Property Name="Source[0].itemID" Type="Str">{FB6F2DFA-F4BE-4CF2-9E70-668EDB84B338}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">2</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib</Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
-				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Libs/libpathfinder.so</Property>
+				<Property Name="Source[10].destinationIndex" Type="Int">3</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Libs/pathfinder.dll</Property>
 				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Libs/pathfinder.dll</Property>
+				<Property Name="Source[11].destinationIndex" Type="Int">3</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Libs/pathfinder.lib</Property>
 				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[12].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[12].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Libs/pathfinder.lib</Property>
+				<Property Name="Source[12].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Private/pathfinder generate.vi</Property>
 				<Property Name="Source[12].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[12].type" Type="Str">VI</Property>
 				<Property Name="Source[13].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[13].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Private/pathfinder generate.vi</Property>
+				<Property Name="Source[13].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Private/pathfinder prepare.vi</Property>
 				<Property Name="Source[13].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[13].type" Type="Str">VI</Property>
 				<Property Name="Source[14].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[14].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Private/pathfinder prepare.vi</Property>
+				<Property Name="Source[14].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Public/Generate Path.vi</Property>
 				<Property Name="Source[14].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[14].type" Type="Str">VI</Property>
 				<Property Name="Source[15].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[15].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Public/Generate Path.vi</Property>
+				<Property Name="Source[15].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Public/Modify Swerve.vi</Property>
 				<Property Name="Source[15].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[15].type" Type="Str">VI</Property>
 				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[16].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Public/Modify Swerve.vi</Property>
+				<Property Name="Source[16].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Public/Modify Tank.vi</Property>
 				<Property Name="Source[16].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[16].type" Type="Str">VI</Property>
-				<Property Name="Source[17].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[17].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Public/Modify Tank.vi</Property>
+				<Property Name="Source[17].destinationIndex" Type="Int">3</Property>
+				<Property Name="Source[17].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Typedef/Segment.ctl</Property>
 				<Property Name="Source[17].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[17].type" Type="Str">VI</Property>
 				<Property Name="Source[18].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[18].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Typedef/Segment.ctl</Property>
-				<Property Name="Source[18].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[18].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Typedef/Waypoint.ctl</Property>
 				<Property Name="Source[18].type" Type="Str">VI</Property>
+				<Property Name="Source[19].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[19].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[19].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[19].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Typedef/Waypoint.ctl</Property>
-				<Property Name="Source[19].type" Type="Str">VI</Property>
+				<Property Name="Source[19].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Typedef</Property>
+				<Property Name="Source[19].type" Type="Str">Container</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">3</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Pathfinder.lvlib</Property>
 				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">Library</Property>
 				<Property Name="Source[20].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[20].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[20].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[20].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[20].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Typedef</Property>
+				<Property Name="Source[20].destinationIndex" Type="Int">4</Property>
+				<Property Name="Source[20].itemID" Type="Ref">/My Computer/JAS_Junk</Property>
+				<Property Name="Source[20].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[20].type" Type="Str">Container</Property>
-				<Property Name="Source[21].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[21].Container.applyInclusion" Type="Bool">true</Property>
-				<Property Name="Source[21].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[21].destinationIndex" Type="Int">4</Property>
-				<Property Name="Source[21].itemID" Type="Ref">/My Computer/JAS_Junk</Property>
+				<Property Name="Source[21].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[21].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/License.rtf</Property>
 				<Property Name="Source[21].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[21].type" Type="Str">Container</Property>
-				<Property Name="Source[22].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[22].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/License.rtf</Property>
+				<Property Name="Source[22].destinationIndex" Type="Int">1</Property>
+				<Property Name="Source[22].itemID" Type="Ref">/My Computer/License.RTF</Property>
 				<Property Name="Source[22].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[23].destinationIndex" Type="Int">1</Property>
-				<Property Name="Source[23].itemID" Type="Ref">/My Computer/License.RTF</Property>
-				<Property Name="Source[23].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">3</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/LICENSE.txt</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
@@ -344,19 +346,17 @@
 				<Property Name="Source[7].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[7].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Libs</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Private</Property>
 				<Property Name="Source[7].type" Type="Str">Container</Property>
 				<Property Name="Source[8].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[8].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Private</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Public</Property>
 				<Property Name="Source[8].type" Type="Str">Container</Property>
-				<Property Name="Source[9].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[9].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[9].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Public</Property>
-				<Property Name="Source[9].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">24</Property>
+				<Property Name="Source[9].destinationIndex" Type="Int">5</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Libs/libpathfinder.so</Property>
+				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">23</Property>
 			</Item>
 			<Item Name="Book" Type="Source Distribution">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
@@ -409,7 +409,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.4-40_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.4-44_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -418,7 +418,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">41</Property>
+				<Property Name="PKG_buildNumber" Type="Int">45</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLib</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -444,7 +444,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[1].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC Trajectory Library (port of WPILIB calls)</Property>
-				<Property Name="PKG_destinations.Count" Type="Int">8</Property>
+				<Property Name="PKG_destinations.Count" Type="Int">11</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">TrajLib</Property>
 				<Property Name="PKG_destinations[0].Subdir.Parent" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
@@ -453,6 +453,10 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_destinations[1].Subdir.Directory" Type="Str">vi.lib</Property>
 				<Property Name="PKG_destinations[1].Subdir.Parent" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
 				<Property Name="PKG_destinations[1].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[10].ID" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
+				<Property Name="PKG_destinations[10].Subdir.Directory" Type="Str">National Instruments</Property>
+				<Property Name="PKG_destinations[10].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[10].Type" Type="Str">Subdir</Property>
 				<Property Name="PKG_destinations[2].ID" Type="Str">{0F066F2A-972E-433B-AEE8-A1CB56CA5B94}</Property>
 				<Property Name="PKG_destinations[2].Subdir.Directory" Type="Str">WPI</Property>
 				<Property Name="PKG_destinations[2].Subdir.Parent" Type="Str">{36B48E19-EB5A-4ABB-8B6B-2BB1FC0B801D}</Property>
@@ -465,18 +469,26 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_destinations[4].Subdir.Directory" Type="Str">ThirdParty</Property>
 				<Property Name="PKG_destinations[4].Subdir.Parent" Type="Str">{0F066F2A-972E-433B-AEE8-A1CB56CA5B94}</Property>
 				<Property Name="PKG_destinations[4].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[5].ID" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_destinations[5].Subdir.Directory" Type="Str">JASJunk</Property>
-				<Property Name="PKG_destinations[5].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[5].ID" Type="Str">{65D737A7-565F-4847-9A64-B6550E7F408A}</Property>
+				<Property Name="PKG_destinations[5].Subdir.Directory" Type="Str">FRC_ThirdParty</Property>
+				<Property Name="PKG_destinations[5].Subdir.Parent" Type="Str">{D305BE77-C29F-4713-9014-81E585D6CE7A}</Property>
 				<Property Name="PKG_destinations[5].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[6].ID" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
-				<Property Name="PKG_destinations[6].Subdir.Directory" Type="Str">LabVIEW 2019</Property>
-				<Property Name="PKG_destinations[6].Subdir.Parent" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
+				<Property Name="PKG_destinations[6].ID" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_destinations[6].Subdir.Directory" Type="Str">JASJunk</Property>
+				<Property Name="PKG_destinations[6].Subdir.Parent" Type="Str">root_5</Property>
 				<Property Name="PKG_destinations[6].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[7].ID" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
-				<Property Name="PKG_destinations[7].Subdir.Directory" Type="Str">National Instruments</Property>
-				<Property Name="PKG_destinations[7].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[7].ID" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
+				<Property Name="PKG_destinations[7].Subdir.Directory" Type="Str">LabVIEW 2019</Property>
+				<Property Name="PKG_destinations[7].Subdir.Parent" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
 				<Property Name="PKG_destinations[7].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[8].ID" Type="Str">{B397E28B-00A7-4582-BE82-40209FD67894}</Property>
+				<Property Name="PKG_destinations[8].Subdir.Directory" Type="Str">lib</Property>
+				<Property Name="PKG_destinations[8].Subdir.Parent" Type="Str">{65D737A7-565F-4847-9A64-B6550E7F408A}</Property>
+				<Property Name="PKG_destinations[8].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[9].ID" Type="Str">{D305BE77-C29F-4713-9014-81E585D6CE7A}</Property>
+				<Property Name="PKG_destinations[9].Subdir.Directory" Type="Str">addons</Property>
+				<Property Name="PKG_destinations[9].Subdir.Parent" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
+				<Property Name="PKG_destinations[9].Type" Type="Str">Subdir</Property>
 				<Property Name="PKG_displayName" Type="Str">JAS_Junk_FRC_TrajLib</Property>
 				<Property Name="PKG_displayVersion" Type="Str"></Property>
 				<Property Name="PKG_feedDescription" Type="Str"></Property>
@@ -527,14 +539,14 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
 				<Property Name="PKG_shortcuts[4].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_sources.Count" Type="Int">3</Property>
-				<Property Name="PKG_sources[0].Destination" Type="Str">{5456162E-D653-4986-87C3-8C7318A905D8}</Property>
-				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
+				<Property Name="PKG_sources[0].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
-				<Property Name="PKG_sources[1].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_sources[1].Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/Book</Property>
 				<Property Name="PKG_sources[1].Type" Type="Str">Build</Property>
-				<Property Name="PKG_sources[2].Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_sources[2].Destination" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
+				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
 				<Property Name="PKG_sources[2].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">FRC_LV_Trajectory_Package</Property>
 				<Property Name="PKG_version" Type="Str">2.0.4</Property>
@@ -680,6 +692,8 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_version" Type="Str">2.0.4</Property>
 			</Item>
 			<Item Name="JASJunkFrcTrajLibLv2020" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
+				<Property Name="AB_Class_Path" Type="Path">/C/Program Files/National Instruments/LabVIEW 2019/resource/Framework/Providers/Builds/Package/NIPKG/NIPKG/NIPKG.lvclass</Property>
+				<Property Name="AB_UIClass_Path" Type="Path">/C/Program Files/National Instruments/LabVIEW 2019/resource/Framework/Providers/Builds/Package/Common/UI/PackageUI.lvclass</Property>
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
 				<Property Name="NIPKG_certificates" Type="Bool">false</Property>
 				<Property Name="NIPKG_createInstaller" Type="Bool">false</Property>
@@ -690,7 +704,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2020_2.0.4-40_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2020_2.0.4-44_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -699,7 +713,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">41</Property>
+				<Property Name="PKG_buildNumber" Type="Int">45</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLibLv2020</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -725,7 +739,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[1].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC Trajectory Library (port of WPILIB calls)</Property>
-				<Property Name="PKG_destinations.Count" Type="Int">8</Property>
+				<Property Name="PKG_destinations.Count" Type="Int">11</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">TrajLib</Property>
 				<Property Name="PKG_destinations[0].Subdir.Parent" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
@@ -734,6 +748,10 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_destinations[1].Subdir.Directory" Type="Str">vi.lib</Property>
 				<Property Name="PKG_destinations[1].Subdir.Parent" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
 				<Property Name="PKG_destinations[1].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[10].ID" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
+				<Property Name="PKG_destinations[10].Subdir.Directory" Type="Str">National Instruments</Property>
+				<Property Name="PKG_destinations[10].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[10].Type" Type="Str">Subdir</Property>
 				<Property Name="PKG_destinations[2].ID" Type="Str">{0F066F2A-972E-433B-AEE8-A1CB56CA5B94}</Property>
 				<Property Name="PKG_destinations[2].Subdir.Directory" Type="Str">WPI</Property>
 				<Property Name="PKG_destinations[2].Subdir.Parent" Type="Str">{36B48E19-EB5A-4ABB-8B6B-2BB1FC0B801D}</Property>
@@ -746,19 +764,27 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_destinations[4].Subdir.Directory" Type="Str">ThirdParty</Property>
 				<Property Name="PKG_destinations[4].Subdir.Parent" Type="Str">{0F066F2A-972E-433B-AEE8-A1CB56CA5B94}</Property>
 				<Property Name="PKG_destinations[4].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[5].ID" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_destinations[5].Subdir.Directory" Type="Str">JASJunk</Property>
-				<Property Name="PKG_destinations[5].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[5].ID" Type="Str">{65D737A7-565F-4847-9A64-B6550E7F408A}</Property>
+				<Property Name="PKG_destinations[5].Subdir.Directory" Type="Str">FRC_ThirdParty</Property>
+				<Property Name="PKG_destinations[5].Subdir.Parent" Type="Str">{D305BE77-C29F-4713-9014-81E585D6CE7A}</Property>
 				<Property Name="PKG_destinations[5].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[6].ID" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
-				<Property Name="PKG_destinations[6].Subdir.Directory" Type="Str">LabVIEW 2020</Property>
-				<Property Name="PKG_destinations[6].Subdir.Parent" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
+				<Property Name="PKG_destinations[6].ID" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_destinations[6].Subdir.Directory" Type="Str">JASJunk</Property>
+				<Property Name="PKG_destinations[6].Subdir.Parent" Type="Str">root_5</Property>
 				<Property Name="PKG_destinations[6].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[7].ID" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
-				<Property Name="PKG_destinations[7].Subdir.Directory" Type="Str">National Instruments</Property>
-				<Property Name="PKG_destinations[7].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[7].ID" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
+				<Property Name="PKG_destinations[7].Subdir.Directory" Type="Str">LabVIEW 2020</Property>
+				<Property Name="PKG_destinations[7].Subdir.Parent" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
 				<Property Name="PKG_destinations[7].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_displayName" Type="Str">JAS_Junk_FRC_TrajLib LV2020</Property>
+				<Property Name="PKG_destinations[8].ID" Type="Str">{B397E28B-00A7-4582-BE82-40209FD67894}</Property>
+				<Property Name="PKG_destinations[8].Subdir.Directory" Type="Str">lib</Property>
+				<Property Name="PKG_destinations[8].Subdir.Parent" Type="Str">{65D737A7-565F-4847-9A64-B6550E7F408A}</Property>
+				<Property Name="PKG_destinations[8].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[9].ID" Type="Str">{D305BE77-C29F-4713-9014-81E585D6CE7A}</Property>
+				<Property Name="PKG_destinations[9].Subdir.Directory" Type="Str">addons</Property>
+				<Property Name="PKG_destinations[9].Subdir.Parent" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
+				<Property Name="PKG_destinations[9].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_displayName" Type="Str">JAS_Junk_FRC_TrajLib</Property>
 				<Property Name="PKG_displayVersion" Type="Str"></Property>
 				<Property Name="PKG_feedDescription" Type="Str"></Property>
 				<Property Name="PKG_feedName" Type="Str"></Property>
@@ -808,16 +834,16 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
 				<Property Name="PKG_shortcuts[4].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_sources.Count" Type="Int">3</Property>
-				<Property Name="PKG_sources[0].Destination" Type="Str">{5456162E-D653-4986-87C3-8C7318A905D8}</Property>
-				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
+				<Property Name="PKG_sources[0].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
-				<Property Name="PKG_sources[1].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_sources[1].Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/Book</Property>
 				<Property Name="PKG_sources[1].Type" Type="Str">Build</Property>
-				<Property Name="PKG_sources[2].Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_sources[2].Destination" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
+				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
 				<Property Name="PKG_sources[2].Type" Type="Str">Build</Property>
-				<Property Name="PKG_synopsis" Type="Str">FRC_LV_Trajectory_Package LV2020</Property>
+				<Property Name="PKG_synopsis" Type="Str">FRC_LV_Trajectory_Package</Property>
 				<Property Name="PKG_version" Type="Str">2.0.4</Property>
 			</Item>
 			<Item Name="UtilExe" Type="Source Distribution">
