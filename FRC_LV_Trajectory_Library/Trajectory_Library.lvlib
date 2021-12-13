@@ -215,6 +215,7 @@
 			<Item Name="macro_AngleStats_AngleAdd_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleAdd_CallbackHelp.vi"/>
 			<Item Name="macro_AngleStats_AngleMean_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleMean_CallbackHelp.vi"/>
 			<Item Name="macro_AngleStats_AngleResidual_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleResidual_CallbackHelp.vi"/>
+			<Item Name="macro_ArmFF_Calculate.vi" Type="VI" URL="../Macros/macro_ArmFF_Calculate.vi"/>
 			<Item Name="macro_BangBang_Execute.vi" Type="VI" URL="../Macros/macro_BangBang_Execute.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixMinus.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMinus.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixMult.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult.vi"/>
@@ -227,6 +228,7 @@
 			<Item Name="macro_Digital_Not.vi" Type="VI" URL="../Macros/macro_Digital_Not.vi"/>
 			<Item Name="macro_Digital_Or.vi" Type="VI" URL="../Macros/macro_Digital_Or.vi"/>
 			<Item Name="macro_Digital_OrMany.vi" Type="VI" URL="../Macros/macro_Digital_OrMany.vi"/>
+			<Item Name="macro_ElevatorFF_Calculate.vi" Type="VI" URL="../Macros/macro_ElevatorFF_Calculate.vi"/>
 			<Item Name="macro_FiniteStateMachine_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_Template.vi"/>
 			<Item Name="macro_FiniteStateMachine_w_Timer_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_w_Timer_Template.vi"/>
 			<Item Name="macro_HolDrvCtrl_New.vi" Type="VI" URL="../Macros/macro_HolDrvCtrl_New.vi"/>
