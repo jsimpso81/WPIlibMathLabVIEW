@@ -24,6 +24,7 @@
 		<Item Name="FRC_LV_CtrlLib_FlyWheelSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_FlyWheelSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_GeneralAnalogControl.mnu" Type="Document" URL="../FRC_LV_CtrlLib_GeneralAnalogControl.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_GeneralDigitalControls.mnu" Type="Document" URL="../FRC_LV_CtrlLib_GeneralDigitalControls.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_GeneralTrajectory.mnu" Type="Document" URL="../FRC_LV_CtrlLib_GeneralTrajectory.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_KalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_KalmanFilter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_KalmanLatencyFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_KalmanLatencyFilter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_LinearSystem.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinearSystem.mnu"/>
@@ -214,6 +215,7 @@
 			<Item Name="macro_AngleStats_AngleAdd_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleAdd_CallbackHelp.vi"/>
 			<Item Name="macro_AngleStats_AngleMean_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleMean_CallbackHelp.vi"/>
 			<Item Name="macro_AngleStats_AngleResidual_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleResidual_CallbackHelp.vi"/>
+			<Item Name="macro_BangBang_Execute.vi" Type="VI" URL="../Macros/macro_BangBang_Execute.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixMinus.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMinus.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixMult.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixMult_CoerceSizeB.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult_CoerceSizeB.vi"/>
@@ -248,6 +250,7 @@
 			<Item Name="macro_SwerveDriveKineNewX.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNewX.vi"/>
 			<Item Name="macro_Trajectory_FGV_Template.vi" Type="VI" URL="../Macros/macro_Trajectory_FGV_Template.vi"/>
 			<Item Name="macro_TrajectoryGenerate.vi" Type="VI" URL="../Macros/macro_TrajectoryGenerate.vi"/>
+			<Item Name="macro_TrajectoryReadFile.vi" Type="VI" URL="../Macros/macro_TrajectoryReadFile.vi"/>
 			<Item Name="macro_vecBuilder1x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder1x1FIll.vi"/>
 			<Item Name="macro_vecBuilder2x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder2x1FIll.vi"/>
 			<Item Name="macro_vecBuilder3x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder3x1FIll.vi"/>
@@ -328,6 +331,7 @@
 				<Item Name="BangBang_AtSetpoint.vi" Type="VI" URL="../BangBang_AtSetpoint.vi"/>
 				<Item Name="BangBang_Calculate_PV.vi" Type="VI" URL="../BangBang_Calculate_PV.vi"/>
 				<Item Name="BangBang_Calculate_SP_PV.vi" Type="VI" URL="../BangBang_Calculate_SP_PV.vi"/>
+				<Item Name="BangBang_Execute.vi" Type="VI" URL="../BangBang_Execute.vi"/>
 				<Item Name="BangBang_GetAll.vi" Type="VI" URL="../BangBang_GetAll.vi"/>
 				<Item Name="BangBang_GetError.vi" Type="VI" URL="../BangBang_GetError.vi"/>
 				<Item Name="BangBang_New.vi" Type="VI" URL="../BangBang_New.vi"/>
@@ -649,7 +653,6 @@
 				<Item Name="Matrix_Exp.vi" Type="VI" URL="../Matrix_Exp.vi"/>
 				<Item Name="Matrix_ExtractColumnVector.vi" Type="VI" URL="../Matrix_ExtractColumnVector.vi"/>
 				<Item Name="Matrix_ExtractFrom.vi" Type="VI" URL="../Matrix_ExtractFrom.vi"/>
-				<Item Name="Matrix_ExtractMatrix.vi" Type="VI" URL="../Matrix_ExtractMatrix.vi"/>
 				<Item Name="Matrix_ExtractRowVector.vi" Type="VI" URL="../Matrix_ExtractRowVector.vi"/>
 				<Item Name="Matrix_Fill.vi" Type="VI" URL="../Matrix_Fill.vi"/>
 				<Item Name="Matrix_Ident.vi" Type="VI" URL="../Matrix_Ident.vi"/>
@@ -659,6 +662,9 @@
 				<Item Name="Matrix_SetColumn.vi" Type="VI" URL="../Matrix_SetColumn.vi"/>
 				<Item Name="Matrix_SetRow.vi" Type="VI" URL="../Matrix_SetRow.vi"/>
 				<Item Name="Matrix_Transpose.vi" Type="VI" URL="../Matrix_Transpose.vi"/>
+			</Item>
+			<Item Name="SimpleMatrix" Type="Folder">
+				<Item Name="SimpleMatrix_ExtractMatrix.vi" Type="VI" URL="../SimpleMatrix_ExtractMatrix.vi"/>
 			</Item>
 			<Item Name="VecBuilder" Type="Folder">
 				<Item Name="VecBuilder_1x1Fill.vi" Type="VI" URL="../VecBuilder_1x1Fill.vi"/>
@@ -713,7 +719,7 @@
 					<Item Name="NumIntegrate_Rk4_Mat_X.vi" Type="VI" URL="../NumIntegrate_Rk4_Mat_X.vi"/>
 					<Item Name="NumIntegrate_Rk4_Mat_X_U.vi" Type="VI" URL="../NumIntegrate_Rk4_Mat_X_U.vi"/>
 					<Item Name="NumIntegrate_Rkf45.vi" Type="VI" URL="../NumIntegrate_Rkf45.vi"/>
-					<Item Name="NumIntegrate_Rkf45impl.vi" Type="VI" URL="../NumIntegrate_Rkf45impl.vi"/>
+					<Item Name="NumIntegrate_Rkf45_impl.vi" Type="VI" URL="../NumIntegrate_Rkf45_impl.vi"/>
 					<Item Name="NumIntegrate_Trap_Dbl.vi" Type="VI" URL="../NumIntegrate_Trap_Dbl.vi"/>
 					<Item Name="NumIntegrate_Trap_Mat.vi" Type="VI" URL="../NumIntegrate_Trap_Mat.vi"/>
 				</Item>
