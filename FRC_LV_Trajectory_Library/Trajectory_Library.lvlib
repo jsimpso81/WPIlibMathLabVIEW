@@ -253,6 +253,7 @@
 			<Item Name="macro_Trajectory_FGV_Template.vi" Type="VI" URL="../Macros/macro_Trajectory_FGV_Template.vi"/>
 			<Item Name="macro_TrajectoryGenerate.vi" Type="VI" URL="../Macros/macro_TrajectoryGenerate.vi"/>
 			<Item Name="macro_TrajectoryReadFile.vi" Type="VI" URL="../Macros/macro_TrajectoryReadFile.vi"/>
+			<Item Name="macro_TrapezoidProfile_Execute.vi" Type="VI" URL="../Macros/macro_TrapezoidProfile_Execute.vi"/>
 			<Item Name="macro_vecBuilder1x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder1x1FIll.vi"/>
 			<Item Name="macro_vecBuilder2x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder2x1FIll.vi"/>
 			<Item Name="macro_vecBuilder3x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder3x1FIll.vi"/>
@@ -1166,6 +1167,7 @@
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
 				<Item Name="TrapProfile_Execute.vi" Type="VI" URL="../TrapProfile_Execute.vi"/>
+				<Item Name="TrapProfile_Execute_AtGoal.vi" Type="VI" URL="../TrapProfile_Execute_AtGoal.vi"/>
 				<Item Name="TrapProfile_IsFinished.vi" Type="VI" URL="../TrapProfile_IsFinished.vi"/>
 				<Item Name="TrapProfile_New.vi" Type="VI" URL="../TrapProfile_New.vi"/>
 				<Item Name="TrapProfile_New_DefInitial.vi" Type="VI" URL="../TrapProfile_New_DefInitial.vi"/>
