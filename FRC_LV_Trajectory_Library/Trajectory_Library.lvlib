@@ -714,15 +714,16 @@
 			<Item Name="Math" Type="Folder">
 				<Item Name="NumericalIntegration" Type="Folder">
 					<Item Name="NumIntegrate_Func_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Func_Ax_Bu_K.vi"/>
-					<Item Name="NumIntegrate_Func_Bs.vi" Type="VI" URL="../NumIntegrate_Func_Bs.vi"/>
-					<Item Name="NumIntegrate_Func_Ch.vi" Type="VI" URL="../NumIntegrate_Func_Ch.vi"/>
-					<Item Name="NumIntegrate_Func_Ct.vi" Type="VI" URL="../NumIntegrate_Func_Ct.vi"/>
-					<Item Name="NumIntegrate_Rk4_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_Dbl.vi"/>
-					<Item Name="NumIntegrate_Rk4_K_Dbl.vi" Type="VI" URL="../NumIntegrate_Rk4_K_Dbl.vi"/>
+					<Item Name="NumIntegrate_Rk4_Dbl_X.vi" Type="VI" URL="../NumIntegrate_Rk4_Dbl_X.vi"/>
+					<Item Name="NumIntegrate_Rk4_Dbl_X_U.vi" Type="VI" URL="../NumIntegrate_Rk4_Dbl_X_U.vi"/>
 					<Item Name="NumIntegrate_Rk4_Mat_X.vi" Type="VI" URL="../NumIntegrate_Rk4_Mat_X.vi"/>
 					<Item Name="NumIntegrate_Rk4_Mat_X_U.vi" Type="VI" URL="../NumIntegrate_Rk4_Mat_X_U.vi"/>
-					<Item Name="NumIntegrate_Rkf45.vi" Type="VI" URL="../NumIntegrate_Rkf45.vi"/>
+					<Item Name="NumIntegrate_Rkdp_Mat_X_U.vi" Type="VI" URL="../NumIntegrate_Rkdp_Mat_X_U.vi"/>
+					<Item Name="NumIntegrate_RKf45_Func_Bs.vi" Type="VI" URL="../NumIntegrate_RKf45_Func_Bs.vi"/>
+					<Item Name="NumIntegrate_RKf45_Func_Ch.vi" Type="VI" URL="../NumIntegrate_RKf45_Func_Ch.vi"/>
+					<Item Name="NumIntegrate_RKf45_Func_Ct.vi" Type="VI" URL="../NumIntegrate_RKf45_Func_Ct.vi"/>
 					<Item Name="NumIntegrate_Rkf45_impl.vi" Type="VI" URL="../NumIntegrate_Rkf45_impl.vi"/>
+					<Item Name="NumIntegrate_Rkf45_Mat_X_U.vi" Type="VI" URL="../NumIntegrate_Rkf45_Mat_X_U.vi"/>
 					<Item Name="NumIntegrate_Trap_Dbl.vi" Type="VI" URL="../NumIntegrate_Trap_Dbl.vi"/>
 					<Item Name="NumIntegrate_Trap_Mat.vi" Type="VI" URL="../NumIntegrate_Trap_Mat.vi"/>
 				</Item>
