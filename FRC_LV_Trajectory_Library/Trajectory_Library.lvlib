@@ -477,6 +477,12 @@
 			<Item Name="Conv_Radians_Deg.vi" Type="VI" URL="../Conv_Radians_Deg.vi"/>
 			<Item Name="Conv_Yards_Meters.vi" Type="VI" URL="../Conv_Yards_Meters.vi"/>
 		</Item>
+		<Item Name="DigSeqLogic" Type="Folder">
+			<Item Name="DigSeqLogic_Off_Delay.vi" Type="VI" URL="../DigSeqLogic_Off_Delay.vi"/>
+			<Item Name="DigSeqLogic_On_Delay.vi" Type="VI" URL="../DigSeqLogic_On_Delay.vi"/>
+			<Item Name="DigSeqLogic_One_Shot.vi" Type="VI" URL="../DigSeqLogic_One_Shot.vi"/>
+			<Item Name="DigSeqLogic_SR_FlipFlop.vi" Type="VI" URL="../DigSeqLogic_SR_FlipFlop.vi"/>
+		</Item>
 		<Item Name="Geometry" Type="Folder">
 			<Item Name="Pose" Type="Folder">
 				<Item Name="Pose_Equals.vi" Type="VI" URL="../Pose_Equals.vi"/>
@@ -724,6 +730,7 @@
 					<Item Name="NumIntegrate_RKf45_Func_Ct.vi" Type="VI" URL="../NumIntegrate_RKf45_Func_Ct.vi"/>
 					<Item Name="NumIntegrate_Rkf45_impl.vi" Type="VI" URL="../NumIntegrate_Rkf45_impl.vi"/>
 					<Item Name="NumIntegrate_Rkf45_Mat_X_U.vi" Type="VI" URL="../NumIntegrate_Rkf45_Mat_X_U.vi"/>
+					<Item Name="NumIntegrate_Rkf45_NEW.vi" Type="VI" URL="../NumIntegrate_Rkf45_NEW.vi"/>
 					<Item Name="NumIntegrate_Trap_Dbl.vi" Type="VI" URL="../NumIntegrate_Trap_Dbl.vi"/>
 					<Item Name="NumIntegrate_Trap_Mat.vi" Type="VI" URL="../NumIntegrate_Trap_Mat.vi"/>
 				</Item>
@@ -734,6 +741,9 @@
 					<Item Name="Riccati_DARE_Iterate.vi" Type="VI" URL="../Riccati_DARE_Iterate.vi"/>
 					<Item Name="Riccati_DARE_N.vi" Type="VI" URL="../Riccati_DARE_N.vi"/>
 					<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
+				</Item>
+				<Item Name="RungeKuttaTimeVarying" Type="Folder">
+					<Item Name="RungeKuttaTimeVarying_Rk4_Mat_T_Y.vi" Type="VI" URL="../RungeKuttaTimeVarying_Rk4_Mat_T_Y.vi"/>
 				</Item>
 			</Item>
 			<Item Name="Simulation" Type="Folder">
