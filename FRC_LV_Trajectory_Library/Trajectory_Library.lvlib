@@ -667,6 +667,7 @@
 				<Item Name="Matrix_Ident.vi" Type="VI" URL="../Matrix_Ident.vi"/>
 				<Item Name="Matrix_IsEqual.vi" Type="VI" URL="../Matrix_IsEqual.vi"/>
 				<Item Name="Matrix_LltDecompose.vi" Type="VI" URL="../Matrix_LltDecompose.vi"/>
+				<Item Name="Matrix_NormF.vi" Type="VI" URL="../Matrix_NormF.vi"/>
 				<Item Name="Matrix_Pow.vi" Type="VI" URL="../Matrix_Pow.vi"/>
 				<Item Name="Matrix_SetColumn.vi" Type="VI" URL="../Matrix_SetColumn.vi"/>
 				<Item Name="Matrix_SetRow.vi" Type="VI" URL="../Matrix_SetRow.vi"/>
@@ -793,6 +794,7 @@
 					<Item Name="Discretization_DiscretizeA.vi" Type="VI" URL="../Discretization_DiscretizeA.vi"/>
 					<Item Name="Discretization_DiscretizeAB.vi" Type="VI" URL="../Discretization_DiscretizeAB.vi"/>
 					<Item Name="Discretization_DiscretizeABTaylor.vi" Type="VI" URL="../Discretization_DiscretizeABTaylor.vi"/>
+					<Item Name="Discretization_DiscretizeAQ.vi" Type="VI" URL="../Discretization_DiscretizeAQ.vi"/>
 					<Item Name="Discretization_DiscretizeAQTaylor.vi" Type="VI" URL="../Discretization_DiscretizeAQTaylor.vi"/>
 					<Item Name="Discretization_DiscretizeR.vi" Type="VI" URL="../Discretization_DiscretizeR.vi"/>
 				</Item>

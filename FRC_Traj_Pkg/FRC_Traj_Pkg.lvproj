@@ -245,7 +245,7 @@
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">232</Property>
+				<Property Name="Bld_version.build" Type="Int">233</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -413,7 +413,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.5-59_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.5-60_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -422,7 +422,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">60</Property>
+				<Property Name="PKG_buildNumber" Type="Int">61</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLib</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -430,10 +430,10 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
-				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-compactrio-runtime</Property>
-				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Drivers</Property>
-				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
+				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
+				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
 				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_dependencies[1].Enhanced" Type="Bool">false</Property>
@@ -441,12 +441,12 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_dependencies[1].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[1].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[1].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
-				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[1].Package.Section" Type="Str"></Property>
-				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str"></Property>
+				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
+				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-compactrio-runtime</Property>
+				<Property Name="PKG_dependencies[1].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
 				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[1].Type" Type="Str">Package</Property>
+				<Property Name="PKG_dependencies[1].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC Trajectory Library (port of WPILIB calls)</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">11</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
@@ -566,7 +566,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlibutils_2.0.5-59_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlibutils_2.0.5-60_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library Utility Programs</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -574,7 +574,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">60</Property>
+				<Property Name="PKG_buildNumber" Type="Int">61</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLib_UtilsOnly</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -706,7 +706,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2020_2.0.5-59_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2020_2.0.5-60_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -715,7 +715,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">60</Property>
+				<Property Name="PKG_buildNumber" Type="Int">61</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLibLv2020</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -723,10 +723,10 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
-				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-compactrio-runtime</Property>
-				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Drivers</Property>
-				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
+				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
+				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
 				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_dependencies[1].Enhanced" Type="Bool">false</Property>
@@ -734,12 +734,12 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_dependencies[1].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[1].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[1].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
-				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[1].Package.Section" Type="Str"></Property>
-				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str"></Property>
+				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
+				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-compactrio-runtime</Property>
+				<Property Name="PKG_dependencies[1].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
 				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[1].Type" Type="Str">Package</Property>
+				<Property Name="PKG_dependencies[1].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC Trajectory Library (port of WPILIB calls)</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">11</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
