@@ -443,10 +443,10 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_dependencies[1].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
 				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[1].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[1].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[1].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[1].Type" Type="Str">Package</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC Trajectory Library (port of WPILIB calls)</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">11</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
@@ -736,10 +736,10 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_dependencies[1].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
 				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[1].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[1].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[1].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[1].Type" Type="Str">Package</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC Trajectory Library (port of WPILIB calls)</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">11</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
