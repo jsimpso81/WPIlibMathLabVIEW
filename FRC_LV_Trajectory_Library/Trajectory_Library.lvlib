@@ -790,14 +790,6 @@
 					<Item Name="CallbackHelp_MatrixMult_CoerceSizeB.vi" Type="VI" URL="../CallbackHelp_MatrixMult_CoerceSizeB.vi"/>
 					<Item Name="CallbackHelp_MatrixPlus.vi" Type="VI" URL="../CallbackHelp_MatrixPlus.vi"/>
 				</Item>
-				<Item Name="Discretization" Type="Folder">
-					<Item Name="Discretization_DiscretizeA.vi" Type="VI" URL="../Discretization_DiscretizeA.vi"/>
-					<Item Name="Discretization_DiscretizeAB.vi" Type="VI" URL="../Discretization_DiscretizeAB.vi"/>
-					<Item Name="Discretization_DiscretizeABTaylor.vi" Type="VI" URL="../Discretization_DiscretizeABTaylor.vi"/>
-					<Item Name="Discretization_DiscretizeAQ.vi" Type="VI" URL="../Discretization_DiscretizeAQ.vi"/>
-					<Item Name="Discretization_DiscretizeAQTaylor.vi" Type="VI" URL="../Discretization_DiscretizeAQTaylor.vi"/>
-					<Item Name="Discretization_DiscretizeR.vi" Type="VI" URL="../Discretization_DiscretizeR.vi"/>
-				</Item>
 				<Item Name="StateSpaceUtil" Type="Folder">
 					<Item Name="StateSpaceUtil_ClampInputMaxMagnitude.vi" Type="VI" URL="../StateSpaceUtil_ClampInputMaxMagnitude.vi"/>
 					<Item Name="StateSpaceUtil_IsStabilizable.vi" Type="VI" URL="../StateSpaceUtil_IsStabilizable.vi"/>
@@ -1076,6 +1068,16 @@
 				<Item Name="UnscentedKalmanFilter_SetXHat.vi" Type="VI" URL="../UnscentedKalmanFilter_SetXHat.vi"/>
 				<Item Name="UnscentedKalmanFilter_SetXHat_Single.vi" Type="VI" URL="../UnscentedKalmanFilter_SetXHat_Single.vi"/>
 				<Item Name="UnscentedKalmanFilter_Transform.vi" Type="VI" URL="../UnscentedKalmanFilter_Transform.vi"/>
+			</Item>
+		</Item>
+		<Item Name="State Space Utilities" Type="Folder">
+			<Item Name="Discretization" Type="Folder">
+				<Item Name="Discretization_DiscretizeA.vi" Type="VI" URL="../Discretization_DiscretizeA.vi"/>
+				<Item Name="Discretization_DiscretizeAB.vi" Type="VI" URL="../Discretization_DiscretizeAB.vi"/>
+				<Item Name="Discretization_DiscretizeABTaylor.vi" Type="VI" URL="../Discretization_DiscretizeABTaylor.vi"/>
+				<Item Name="Discretization_DiscretizeAQ.vi" Type="VI" URL="../Discretization_DiscretizeAQ.vi"/>
+				<Item Name="Discretization_DiscretizeAQTaylor.vi" Type="VI" URL="../Discretization_DiscretizeAQTaylor.vi"/>
+				<Item Name="Discretization_DiscretizeR.vi" Type="VI" URL="../Discretization_DiscretizeR.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Trajectory" Type="Folder">
