@@ -642,6 +642,9 @@
 				<Item Name="NumJacobian_U.vi" Type="VI" URL="../NumJacobian_U.vi"/>
 				<Item Name="NumJacobian_X.vi" Type="VI" URL="../NumJacobian_X.vi"/>
 			</Item>
+			<Item Name="RungeKuttaTimeVarying" Type="Folder">
+				<Item Name="RungeKuttaTimeVarying_Rk4_Mat_T_Y.vi" Type="VI" URL="../RungeKuttaTimeVarying_Rk4_Mat_T_Y.vi"/>
+			</Item>
 		</Item>
 		<Item Name="Matrix Utilities" Type="Folder">
 			<Item Name="MatBuilder" Type="Folder">
@@ -743,25 +746,8 @@
 					<Item Name="Riccati_DARE_N.vi" Type="VI" URL="../Riccati_DARE_N.vi"/>
 					<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
 				</Item>
-				<Item Name="RungeKuttaTimeVarying" Type="Folder">
-					<Item Name="RungeKuttaTimeVarying_Rk4_Mat_T_Y.vi" Type="VI" URL="../RungeKuttaTimeVarying_Rk4_Mat_T_Y.vi"/>
-				</Item>
 			</Item>
-			<Item Name="Simulation" Type="Folder">
-				<Item Name="LinearSystemSim" Type="Folder">
-					<Item Name="LinearSystemSim_ClampInput.vi" Type="VI" URL="../LinearSystemSim_ClampInput.vi"/>
-					<Item Name="LinearSystemSim_GetOutput.vi" Type="VI" URL="../LinearSystemSim_GetOutput.vi"/>
-					<Item Name="LinearSystemSim_GetOutput_Single.vi" Type="VI" URL="../LinearSystemSim_GetOutput_Single.vi"/>
-					<Item Name="LinearSystemSim_New.vi" Type="VI" URL="../LinearSystemSim_New.vi"/>
-					<Item Name="LinearSystemSim_setInput.vi" Type="VI" URL="../LinearSystemSim_setInput.vi"/>
-					<Item Name="LinearSystemSim_SetInput_Array.vi" Type="VI" URL="../LinearSystemSim_SetInput_Array.vi"/>
-					<Item Name="LinearSystemSim_SetInput_Single.vi" Type="VI" URL="../LinearSystemSim_SetInput_Single.vi"/>
-					<Item Name="LinearSystemSim_setState.vi" Type="VI" URL="../LinearSystemSim_setState.vi"/>
-					<Item Name="LinearSystemSim_Update.vi" Type="VI" URL="../LinearSystemSim_Update.vi"/>
-					<Item Name="LinearSystemSim_UpdateX.vi" Type="VI" URL="../LinearSystemSim_UpdateX.vi"/>
-					<Item Name="LinearSystemSim_UpdateY.vi" Type="VI" URL="../LinearSystemSim_UpdateY.vi"/>
-				</Item>
-			</Item>
+			<Item Name="Simulation" Type="Folder"/>
 			<Item Name="State Space Control" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="ControlAffinePlantInversionFeedforward" Type="Folder"/>
@@ -792,6 +778,7 @@
 				</Item>
 				<Item Name="StateSpaceUtil" Type="Folder">
 					<Item Name="StateSpaceUtil_ClampInputMaxMagnitude.vi" Type="VI" URL="../StateSpaceUtil_ClampInputMaxMagnitude.vi"/>
+					<Item Name="StateSpaceUtil_IsDetectable.vi" Type="VI" URL="../StateSpaceUtil_IsDetectable.vi"/>
 					<Item Name="StateSpaceUtil_IsStabilizable.vi" Type="VI" URL="../StateSpaceUtil_IsStabilizable.vi"/>
 					<Item Name="StateSpaceUtil_MakeCostMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCostMatrix.vi"/>
 					<Item Name="StateSpaceUtil_MakeCovarianceMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCovarianceMatrix.vi"/>
@@ -867,6 +854,19 @@
 				<Item Name="FlyWheelSim_SetInput.vi" Type="VI" URL="../FlyWheelSim_SetInput.vi"/>
 				<Item Name="FlyWheelSim_SetState.vi" Type="VI" URL="../FlyWheelSim_SetState.vi"/>
 				<Item Name="FlyWheelSim_Update.vi" Type="VI" URL="../FlyWheelSim_Update.vi"/>
+			</Item>
+			<Item Name="LinearSystemSim" Type="Folder">
+				<Item Name="LinearSystemSim_ClampInput.vi" Type="VI" URL="../LinearSystemSim_ClampInput.vi"/>
+				<Item Name="LinearSystemSim_GetOutput.vi" Type="VI" URL="../LinearSystemSim_GetOutput.vi"/>
+				<Item Name="LinearSystemSim_GetOutput_Single.vi" Type="VI" URL="../LinearSystemSim_GetOutput_Single.vi"/>
+				<Item Name="LinearSystemSim_New.vi" Type="VI" URL="../LinearSystemSim_New.vi"/>
+				<Item Name="LinearSystemSim_setInput.vi" Type="VI" URL="../LinearSystemSim_setInput.vi"/>
+				<Item Name="LinearSystemSim_SetInput_Array.vi" Type="VI" URL="../LinearSystemSim_SetInput_Array.vi"/>
+				<Item Name="LinearSystemSim_SetInput_Single.vi" Type="VI" URL="../LinearSystemSim_SetInput_Single.vi"/>
+				<Item Name="LinearSystemSim_setState.vi" Type="VI" URL="../LinearSystemSim_setState.vi"/>
+				<Item Name="LinearSystemSim_Update.vi" Type="VI" URL="../LinearSystemSim_Update.vi"/>
+				<Item Name="LinearSystemSim_UpdateX.vi" Type="VI" URL="../LinearSystemSim_UpdateX.vi"/>
+				<Item Name="LinearSystemSim_UpdateY.vi" Type="VI" URL="../LinearSystemSim_UpdateY.vi"/>
 			</Item>
 			<Item Name="Single Joint Arm Sim" Type="Folder">
 				<Item Name="SngJntArmSim_EstimateMOI.vi" Type="VI" URL="../SngJntArmSim_EstimateMOI.vi"/>
