@@ -266,9 +266,13 @@
 		</Item>
 		<Item Name="Base" Type="Folder">
 			<Item Name="LinearFilter" Type="Folder">
+				<Item Name="LinearFilter_BackwardFiniteDifference.vi" Type="VI" URL="../LinearFilter_BackwardFiniteDifference.vi"/>
 				<Item Name="LinearFilter_Calculate.vi" Type="VI" URL="../LinearFilter_Calculate.vi"/>
 				<Item Name="LinearFilter_CutoffFrequency.vi" Type="VI" URL="../LinearFilter_CutoffFrequency.vi"/>
 				<Item Name="LinearFilter_Execute.vi" Type="VI" URL="../LinearFilter_Execute.vi"/>
+				<Item Name="LinearFilter_Factorial.vi" Type="VI" URL="../LinearFilter_Factorial.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
 				<Item Name="LinearFilter_HighPass.vi" Type="VI" URL="../LinearFilter_HighPass.vi"/>
 				<Item Name="LinearFilter_HighPassBW1.vi" Type="VI" URL="../LinearFilter_HighPassBW1.vi"/>
 				<Item Name="LinearFilter_HighPassBW2.vi" Type="VI" URL="../LinearFilter_HighPassBW2.vi"/>
