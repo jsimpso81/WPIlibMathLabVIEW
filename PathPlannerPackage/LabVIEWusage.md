@@ -7,7 +7,21 @@ The LabVIEW version of PathPlannerLib can function as a drop-in replacement of t
 
 ## Load a Path
 
-![load a path](PathPlannerPackage/images/PathPlanner_Load.png)
+![load a path](images/PathPlanner_Load.png)
+
+# Menu
+After installation, a Path Planner function palette is added to the WPILIB Third Party menu.
+
+![Third Party Palette](images/menu_thirdParty.PNG)
+
+Path Planner top palette
+
+![Third Party Palette](images/menu_PathPlannerTop.PNG)
+
+Path Planner sub palette containing menus for all routines
+
+![Third Party Palette](images/menu_PathPlannerAll.PNG)
+
 
 # Documentation
 
@@ -18,7 +32,7 @@ This class contains methods for easily loading and generating path files from th
 
 Load and create a PathPlannerTrajectory from a path file containing PathPlanner Waypoints.
 
-![load a path](PathPlannerPackage/images/doc_PathPlanner_LoadPath.PNG)
+![load a path](images/doc_PathPlanner_LoadPath.PNG)
 
 ---
 
@@ -26,7 +40,7 @@ Load and create a PathPlannerTrajectory from a path file containing PathPlanner 
 
 Create  a PathPlannerTrajectory from the passed array of PathPlanner Waypoints.  (This is a LabVIEW version extension.)
 
-![create a path](PathPlannerPackage/images/doc_PathPlanner_CreatePath.PNG)
+![create a path](images/doc_PathPlanner_CreatePath.PNG)
 
 ---
 
@@ -36,13 +50,13 @@ Create  a PathPlannerTrajectory from the passed array of PathPlanner Waypoints. 
 
 Extract the Trajectory Library Trajectory from a PathPlanner Trajectory.  (This is a LabVIEW version extension.)
 
-![extract Trajectory](PathPlannerPackage/images/doc_PathPlanner_Trajectory_GetTrajectory.PNG)
+![extract Trajectory](images/doc_PathPlanner_Trajectory_GetTrajectory.PNG)
 
 ---
 
 **PathPlannerTrajectory_sample**
 
-![extract Trajectory](PathPlannerPackage/images/doc_PathPlanner_Trajectory_Sample.PNG)
+![extract Trajectory](images/doc_PathPlanner_Trajectory_Sample.PNG)
 
 ---
 
@@ -50,7 +64,7 @@ Extract the Trajectory Library Trajectory from a PathPlanner Trajectory.  (This 
 
 Get the initial state of the path
 
-![extract Trajectory](PathPlannerPackage/images/doc_PathPlanner_Trajectory_GetInitialState.PNG)
+![extract Trajectory](images/doc_PathPlanner_Trajectory_GetInitialState.PNG)
 
 ---
 
@@ -58,7 +72,7 @@ Get the initial state of the path
 
 Get the end state of the path
 
-![extract Trajectory](PathPlannerPackage/images/doc_PathPlanner_Trajectory_GetEndState.PNG)
+![extract Trajectory](images/doc_PathPlanner_Trajectory_GetEndState.PNG)
 
 ---
 
@@ -67,7 +81,7 @@ Get the end state of the path
 Get a state in the path based on its index.  
 In most cases, using sample() is a better method.
 
-![extract Trajectory](PathPlannerPackage/images/doc_PathPlanner_Trajectory_GetState.PNG)
+![extract Trajectory](images/doc_PathPlanner_Trajectory_GetState.PNG)
 
 ---
 
@@ -75,7 +89,7 @@ In most cases, using sample() is a better method.
 
 Get an array of all of the states in the path.
 
-![extract Trajectory](PathPlannerPackage/images/doc_PathPlanner_Trajectory_GetStates.PNG)
+![extract Trajectory](mages/doc_PathPlanner_Trajectory_GetStates.PNG)
 
 ---
 
@@ -91,7 +105,7 @@ NO LABVIEW EQUIVALENT.  CAN USE LABVIEW ARRAY SIZE TO GET THIS.
 
 Get the total runtime of the path
 
-![extract Trajectory](PathPlannerPackage/images/doc_PathPlanner_Trajectory_GetTotalTime.PNG)
+![extract Trajectory](images/doc_PathPlanner_Trajectory_GetTotalTime.PNG)
 
 ---
 
@@ -101,14 +115,14 @@ Get the total runtime of the path
 
 Create a new waypoint from its parts
 
-![create waypoint](PathPlannerPackage/images/doc_PathPlanner_TrajectoryWaypoint_New.PNG)
+![create waypoint](images/doc_PathPlanner_TrajectoryWaypoint_New.PNG)
 
 ---
 
 
 ## PathPlannerState
 
-![PathPlannerState](PathPlannerPackage/images/PathPlanner_State.PNG)
+![PathPlannerState](images/PathPlanner_State.PNG)
 
  * `time` **units::second_t** — The time elapsed since the beginning of the path
 * `position` **units::meter_t** — The distance traveled at this point in the path. Forward robot motion will add to this value and reversed motion will subtract from it. Think of this as what the robot's encoder position would be.
@@ -122,6 +136,6 @@ Create a new waypoint from its parts
 
 ## PathPlanner_TrajectoryWaypoint
 
-![PathPlannerWaypoint](PathPlannerPackage/images/PathPlanner_Waypoint.PNG)
+![PathPlannerWaypoint](images/PathPlanner_Waypoint.PNG)
 
 
