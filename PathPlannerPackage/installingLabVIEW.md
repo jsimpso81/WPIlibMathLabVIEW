@@ -15,5 +15,5 @@ Download the packages required for the version of LabVIEW being used.  The LabVI
 4. Close and re-open LabVIEW.  This will load the new Third Pary Library menus.
 
 ## Usage
-* [LabVIEW Usage](/PathPlannerPackage/LabVIEW-Usage.md)
+* [LabVIEW Usage](/PathPlannerPackage/LabVIEWusage.md)
 
