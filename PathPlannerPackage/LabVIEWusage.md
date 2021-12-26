@@ -89,7 +89,7 @@ In most cases, using sample() is a better method.
 
 Get an array of all of the states in the path.
 
-![extract Trajectory](mages/doc_PathPlanner_Trajectory_GetStates.PNG)
+![extract Trajectory](images/doc_PathPlanner_Trajectory_GetStates.PNG)
 
 ---
 
