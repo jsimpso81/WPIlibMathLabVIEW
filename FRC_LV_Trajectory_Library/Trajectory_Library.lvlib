@@ -118,6 +118,7 @@
 		<Item Name="FRC_LV_Trajectory_Trapezoid_Profile.mnu" Type="Document" URL="../FRC_LV_Trajectory_Trapezoid_Profile.mnu"/>
 	</Item>
 	<Item Name="_Miscelaneous" Type="Folder">
+		<Item Name="FRC_LabVIEW_Trajectory_Control_Library_CustomErrors.xlsx" Type="Document" URL="../FRC_LabVIEW_Trajectory_Control_Library_CustomErrors.xlsx"/>
 		<Item Name="FRC_LabVIEW_Trajectory_Library_Routines.pdf" Type="Document" URL="../FRC_LabVIEW_Trajectory_Library_Routines.pdf"/>
 		<Item Name="FRC_LabVIEW_Trajectory_Library_Routines.xlsx" Type="Document" URL="../FRC_LabVIEW_Trajectory_Library_Routines.xlsx"/>
 	</Item>
@@ -781,6 +782,7 @@
 					<Item Name="CallbackHelp_MatrixPlus.vi" Type="VI" URL="../CallbackHelp_MatrixPlus.vi"/>
 				</Item>
 				<Item Name="StateSpaceUtil" Type="Folder">
+					<Item Name="StateSpaceUtil_Check_Stabilizable.vi" Type="VI" URL="../StateSpaceUtil_Check_Stabilizable.vi"/>
 					<Item Name="StateSpaceUtil_ClampInputMaxMagnitude.vi" Type="VI" URL="../StateSpaceUtil_ClampInputMaxMagnitude.vi"/>
 					<Item Name="StateSpaceUtil_IsDetectable.vi" Type="VI" URL="../StateSpaceUtil_IsDetectable.vi"/>
 					<Item Name="StateSpaceUtil_IsStabilizable.vi" Type="VI" URL="../StateSpaceUtil_IsStabilizable.vi"/>
