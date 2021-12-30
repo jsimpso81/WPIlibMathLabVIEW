@@ -554,7 +554,7 @@
 				<Item Name="Twist_GetAll.vi" Type="VI" URL="../Twist_GetAll.vi"/>
 			</Item>
 		</Item>
-		<Item Name="KinematicsOdometry" Type="Folder">
+		<Item Name="Kinematics_Odometry" Type="Folder">
 			<Item Name="ChassisSpeeds" Type="Folder">
 				<Item Name="ChassisSpeeds_FromFieldRelativeSpeeds.vi" Type="VI" URL="../ChassisSpeeds_FromFieldRelativeSpeeds.vi"/>
 				<Item Name="ChassisSpeeds_GetXYOmega.vi" Type="VI" URL="../ChassisSpeeds_GetXYOmega.vi"/>
@@ -643,9 +643,33 @@
 				<Item Name="MerweScSigPts_New_Default.vi" Type="VI" URL="../MerweScSigPts_New_Default.vi"/>
 				<Item Name="MerweScSigPts_SigmaPoints.vi" Type="VI" URL="../MerweScSigPts_SigmaPoints.vi"/>
 			</Item>
+			<Item Name="NumericalIntegration" Type="Folder">
+				<Item Name="NumIntegrate_Func_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Func_Ax_Bu_K.vi"/>
+				<Item Name="NumIntegrate_Rk4_Dbl_X.vi" Type="VI" URL="../NumIntegrate_Rk4_Dbl_X.vi"/>
+				<Item Name="NumIntegrate_Rk4_Dbl_X_U.vi" Type="VI" URL="../NumIntegrate_Rk4_Dbl_X_U.vi"/>
+				<Item Name="NumIntegrate_Rk4_Mat_X.vi" Type="VI" URL="../NumIntegrate_Rk4_Mat_X.vi"/>
+				<Item Name="NumIntegrate_Rk4_Mat_X_U.vi" Type="VI" URL="../NumIntegrate_Rk4_Mat_X_U.vi"/>
+				<Item Name="NumIntegrate_Rkdp_Mat_X_U.vi" Type="VI" URL="../NumIntegrate_Rkdp_Mat_X_U.vi"/>
+				<Item Name="NumIntegrate_RKf45_Func_Bs.vi" Type="VI" URL="../NumIntegrate_RKf45_Func_Bs.vi"/>
+				<Item Name="NumIntegrate_RKf45_Func_Ch.vi" Type="VI" URL="../NumIntegrate_RKf45_Func_Ch.vi"/>
+				<Item Name="NumIntegrate_RKf45_Func_Ct.vi" Type="VI" URL="../NumIntegrate_RKf45_Func_Ct.vi"/>
+				<Item Name="NumIntegrate_Rkf45_impl.vi" Type="VI" URL="../NumIntegrate_Rkf45_impl.vi"/>
+				<Item Name="NumIntegrate_Rkf45_Mat_X_U.vi" Type="VI" URL="../NumIntegrate_Rkf45_Mat_X_U.vi"/>
+				<Item Name="NumIntegrate_Rkf45_NEW.vi" Type="VI" URL="../NumIntegrate_Rkf45_NEW.vi"/>
+				<Item Name="NumIntegrate_Trap_Dbl.vi" Type="VI" URL="../NumIntegrate_Trap_Dbl.vi"/>
+				<Item Name="NumIntegrate_Trap_Mat.vi" Type="VI" URL="../NumIntegrate_Trap_Mat.vi"/>
+			</Item>
 			<Item Name="NumericalJacobiian" Type="Folder">
 				<Item Name="NumJacobian_U.vi" Type="VI" URL="../NumJacobian_U.vi"/>
 				<Item Name="NumJacobian_X.vi" Type="VI" URL="../NumJacobian_X.vi"/>
+			</Item>
+			<Item Name="Riccati" Type="Folder">
+				<Item Name="Riccati_Check_Detectable.vi" Type="VI" URL="../Riccati_Check_Detectable.vi"/>
+				<Item Name="Riccati_Check_Stabilizable.vi" Type="VI" URL="../Riccati_Check_Stabilizable.vi"/>
+				<Item Name="Riccati_DARE.vi" Type="VI" URL="../Riccati_DARE.vi"/>
+				<Item Name="Riccati_DARE_Iterate.vi" Type="VI" URL="../Riccati_DARE_Iterate.vi"/>
+				<Item Name="Riccati_DARE_N.vi" Type="VI" URL="../Riccati_DARE_N.vi"/>
+				<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
 			</Item>
 			<Item Name="RungeKuttaTimeVarying" Type="Folder">
 				<Item Name="RungeKuttaTimeVarying_Rk4_Mat_T_Y.vi" Type="VI" URL="../RungeKuttaTimeVarying_Rk4_Mat_T_Y.vi"/>
@@ -728,33 +752,6 @@
 		</Item>
 		<Item Name="NEW_THINGS_USE_WITH_CAUTION" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
-			<Item Name="Math" Type="Folder">
-				<Item Name="NumericalIntegration" Type="Folder">
-					<Item Name="NumIntegrate_Func_Ax_Bu_K.vi" Type="VI" URL="../NumIntegrate_Func_Ax_Bu_K.vi"/>
-					<Item Name="NumIntegrate_Rk4_Dbl_X.vi" Type="VI" URL="../NumIntegrate_Rk4_Dbl_X.vi"/>
-					<Item Name="NumIntegrate_Rk4_Dbl_X_U.vi" Type="VI" URL="../NumIntegrate_Rk4_Dbl_X_U.vi"/>
-					<Item Name="NumIntegrate_Rk4_Mat_X.vi" Type="VI" URL="../NumIntegrate_Rk4_Mat_X.vi"/>
-					<Item Name="NumIntegrate_Rk4_Mat_X_U.vi" Type="VI" URL="../NumIntegrate_Rk4_Mat_X_U.vi"/>
-					<Item Name="NumIntegrate_Rkdp_Mat_X_U.vi" Type="VI" URL="../NumIntegrate_Rkdp_Mat_X_U.vi"/>
-					<Item Name="NumIntegrate_RKf45_Func_Bs.vi" Type="VI" URL="../NumIntegrate_RKf45_Func_Bs.vi"/>
-					<Item Name="NumIntegrate_RKf45_Func_Ch.vi" Type="VI" URL="../NumIntegrate_RKf45_Func_Ch.vi"/>
-					<Item Name="NumIntegrate_RKf45_Func_Ct.vi" Type="VI" URL="../NumIntegrate_RKf45_Func_Ct.vi"/>
-					<Item Name="NumIntegrate_Rkf45_impl.vi" Type="VI" URL="../NumIntegrate_Rkf45_impl.vi"/>
-					<Item Name="NumIntegrate_Rkf45_Mat_X_U.vi" Type="VI" URL="../NumIntegrate_Rkf45_Mat_X_U.vi"/>
-					<Item Name="NumIntegrate_Rkf45_NEW.vi" Type="VI" URL="../NumIntegrate_Rkf45_NEW.vi"/>
-					<Item Name="NumIntegrate_Trap_Dbl.vi" Type="VI" URL="../NumIntegrate_Trap_Dbl.vi"/>
-					<Item Name="NumIntegrate_Trap_Mat.vi" Type="VI" URL="../NumIntegrate_Trap_Mat.vi"/>
-				</Item>
-				<Item Name="Riccati" Type="Folder">
-					<Item Name="Riccati_Check_Detectable.vi" Type="VI" URL="../Riccati_Check_Detectable.vi"/>
-					<Item Name="Riccati_Check_Stabilizable.vi" Type="VI" URL="../Riccati_Check_Stabilizable.vi"/>
-					<Item Name="Riccati_DARE.vi" Type="VI" URL="../Riccati_DARE.vi"/>
-					<Item Name="Riccati_DARE_Iterate.vi" Type="VI" URL="../Riccati_DARE_Iterate.vi"/>
-					<Item Name="Riccati_DARE_N.vi" Type="VI" URL="../Riccati_DARE_N.vi"/>
-					<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
-				</Item>
-			</Item>
-			<Item Name="Simulation" Type="Folder"/>
 			<Item Name="State Space Control" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="ControlAffinePlantInversionFeedforward" Type="Folder"/>
@@ -773,28 +770,6 @@
 					<Item Name="ExtendedKalmanFilter_SetP.vi" Type="VI" URL="../ExtendedKalmanFilter_SetP.vi"/>
 					<Item Name="ExtendedKalmanFilter_SetXHat.vi" Type="VI" URL="../ExtendedKalmanFilter_SetXHat.vi"/>
 					<Item Name="ExtendedKalmanFilter_SetXHat_Single.vi" Type="VI" URL="../ExtendedKalmanFilter_SetXHat_Single.vi"/>
-				</Item>
-			</Item>
-			<Item Name="State Space Utilities" Type="Folder">
-				<Property Name="NI.SortType" Type="Int">0</Property>
-				<Item Name="Callback Helper Functions" Type="Folder">
-					<Item Name="CallbackHelp_MatrixMinus.vi" Type="VI" URL="../CallbackHelp_MatrixMinus.vi"/>
-					<Item Name="CallbackHelp_MatrixMult.vi" Type="VI" URL="../CallbackHelp_MatrixMult.vi"/>
-					<Item Name="CallbackHelp_MatrixMult_CoerceSizeB.vi" Type="VI" URL="../CallbackHelp_MatrixMult_CoerceSizeB.vi"/>
-					<Item Name="CallbackHelp_MatrixPlus.vi" Type="VI" URL="../CallbackHelp_MatrixPlus.vi"/>
-				</Item>
-				<Item Name="StateSpaceUtil" Type="Folder">
-					<Item Name="StateSpaceUtil_Check_Stabilizable.vi" Type="VI" URL="../StateSpaceUtil_Check_Stabilizable.vi"/>
-					<Item Name="StateSpaceUtil_ClampInputMaxMagnitude.vi" Type="VI" URL="../StateSpaceUtil_ClampInputMaxMagnitude.vi"/>
-					<Item Name="StateSpaceUtil_IsDetectable.vi" Type="VI" URL="../StateSpaceUtil_IsDetectable.vi"/>
-					<Item Name="StateSpaceUtil_IsStabilizable.vi" Type="VI" URL="../StateSpaceUtil_IsStabilizable.vi"/>
-					<Item Name="StateSpaceUtil_MakeCostMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCostMatrix.vi"/>
-					<Item Name="StateSpaceUtil_MakeCovarianceMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCovarianceMatrix.vi"/>
-					<Item Name="StateSpaceUtil_MakeWhiteNoiseVector.vi" Type="VI" URL="../StateSpaceUtil_MakeWhiteNoiseVector.vi"/>
-					<Item Name="StateSpaceUtil_NormalizeInputVector.vi" Type="VI" URL="../StateSpaceUtil_NormalizeInputVector.vi"/>
-					<Item Name="StateSpaceUtil_PoseTo3dVector.vi" Type="VI" URL="../StateSpaceUtil_PoseTo3dVector.vi"/>
-					<Item Name="StateSpaceUtil_PoseTo4dVector.vi" Type="VI" URL="../StateSpaceUtil_PoseTo4dVector.vi"/>
-					<Item Name="StateSpaceUtil_PoseToVector.vi" Type="VI" URL="../StateSpaceUtil_PoseToVector.vi"/>
 				</Item>
 			</Item>
 		</Item>
@@ -1079,6 +1054,12 @@
 			</Item>
 		</Item>
 		<Item Name="State Space Utilities" Type="Folder">
+			<Item Name="Callback Helper Functions" Type="Folder">
+				<Item Name="CallbackHelp_MatrixMinus.vi" Type="VI" URL="../CallbackHelp_MatrixMinus.vi"/>
+				<Item Name="CallbackHelp_MatrixMult.vi" Type="VI" URL="../CallbackHelp_MatrixMult.vi"/>
+				<Item Name="CallbackHelp_MatrixMult_CoerceSizeB.vi" Type="VI" URL="../CallbackHelp_MatrixMult_CoerceSizeB.vi"/>
+				<Item Name="CallbackHelp_MatrixPlus.vi" Type="VI" URL="../CallbackHelp_MatrixPlus.vi"/>
+			</Item>
 			<Item Name="Discretization" Type="Folder">
 				<Item Name="Discretization_DiscretizeA.vi" Type="VI" URL="../Discretization_DiscretizeA.vi"/>
 				<Item Name="Discretization_DiscretizeAB.vi" Type="VI" URL="../Discretization_DiscretizeAB.vi"/>
@@ -1086,6 +1067,19 @@
 				<Item Name="Discretization_DiscretizeAQ.vi" Type="VI" URL="../Discretization_DiscretizeAQ.vi"/>
 				<Item Name="Discretization_DiscretizeAQTaylor.vi" Type="VI" URL="../Discretization_DiscretizeAQTaylor.vi"/>
 				<Item Name="Discretization_DiscretizeR.vi" Type="VI" URL="../Discretization_DiscretizeR.vi"/>
+			</Item>
+			<Item Name="StateSpaceUtil" Type="Folder">
+				<Item Name="StateSpaceUtil_Check_Stabilizable.vi" Type="VI" URL="../StateSpaceUtil_Check_Stabilizable.vi"/>
+				<Item Name="StateSpaceUtil_ClampInputMaxMagnitude.vi" Type="VI" URL="../StateSpaceUtil_ClampInputMaxMagnitude.vi"/>
+				<Item Name="StateSpaceUtil_IsDetectable.vi" Type="VI" URL="../StateSpaceUtil_IsDetectable.vi"/>
+				<Item Name="StateSpaceUtil_IsStabilizable.vi" Type="VI" URL="../StateSpaceUtil_IsStabilizable.vi"/>
+				<Item Name="StateSpaceUtil_MakeCostMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCostMatrix.vi"/>
+				<Item Name="StateSpaceUtil_MakeCovarianceMatrix.vi" Type="VI" URL="../StateSpaceUtil_MakeCovarianceMatrix.vi"/>
+				<Item Name="StateSpaceUtil_MakeWhiteNoiseVector.vi" Type="VI" URL="../StateSpaceUtil_MakeWhiteNoiseVector.vi"/>
+				<Item Name="StateSpaceUtil_NormalizeInputVector.vi" Type="VI" URL="../StateSpaceUtil_NormalizeInputVector.vi"/>
+				<Item Name="StateSpaceUtil_PoseTo3dVector.vi" Type="VI" URL="../StateSpaceUtil_PoseTo3dVector.vi"/>
+				<Item Name="StateSpaceUtil_PoseTo4dVector.vi" Type="VI" URL="../StateSpaceUtil_PoseTo4dVector.vi"/>
+				<Item Name="StateSpaceUtil_PoseToVector.vi" Type="VI" URL="../StateSpaceUtil_PoseToVector.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Trajectory" Type="Folder">
