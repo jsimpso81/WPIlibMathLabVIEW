@@ -946,6 +946,7 @@
 				<Item Name="LinearQuadraticRegulator_LatencyCompensate.vi" Type="VI" URL="../LinearQuadraticRegulator_LatencyCompensate.vi"/>
 				<Item Name="LinearQuadraticRegulator_New.vi" Type="VI" URL="../LinearQuadraticRegulator_New.vi"/>
 				<Item Name="LinearQuadraticRegulator_New_ELMS.vi" Type="VI" URL="../LinearQuadraticRegulator_New_ELMS.vi"/>
+				<Item Name="LinearQuadraticRegulator_New_N.vi" Type="VI" URL="../LinearQuadraticRegulator_New_N.vi"/>
 				<Item Name="LinearQuadraticRegulator_New_SystemELMS.vi" Type="VI" URL="../LinearQuadraticRegulator_New_SystemELMS.vi"/>
 				<Item Name="LinearQuadraticRegulator_Reset.vi" Type="VI" URL="../LinearQuadraticRegulator_Reset.vi"/>
 			</Item>
