@@ -243,6 +243,7 @@
 			<Item Name="macro_MedianFilter_Execute.vi" Type="VI" URL="../Macros/macro_MedianFilter_Execute.vi"/>
 			<Item Name="macro_PIDController_AdvExecute.vi" Type="VI" URL="../Macros/macro_PIDController_AdvExecute.vi"/>
 			<Item Name="macro_PIDController_Execute.vi" Type="VI" URL="../Macros/macro_PIDController_Execute.vi"/>
+			<Item Name="macro_ProfiledPIDController_Execute.vi" Type="VI" URL="../Macros/macro_ProfiledPIDController_Execute.vi"/>
 			<Item Name="macro_Ramsete_Execute.vi" Type="VI" URL="../Macros/macro_Ramsete_Execute.vi"/>
 			<Item Name="macro_Ramsete_Execute_ENG.vi" Type="VI" URL="../Macros/macro_Ramsete_Execute_ENG.vi"/>
 			<Item Name="macro_SimpleMotorFF_Calc_NextV.vi" Type="VI" URL="../Macros/macro_SimpleMotorFF_Calc_NextV.vi"/>
@@ -416,6 +417,7 @@
 				<Item Name="ProfiledPIDController_Calculate_Meas_StateGoal_TrapCnsrt.vi" Type="VI" URL="../ProfiledPIDController_Calculate_Meas_StateGoal_TrapCnsrt.vi"/>
 				<Item Name="ProfiledPIDController_DisableContInput.vi" Type="VI" URL="../ProfiledPIDController_DisableContInput.vi"/>
 				<Item Name="ProfiledPIDController_EnableContInput.vi" Type="VI" URL="../ProfiledPIDController_EnableContInput.vi"/>
+				<Item Name="ProfiledPIDController_Execute.vi" Type="VI" URL="../ProfiledPIDController_Execute.vi"/>
 				<Item Name="ProfiledPIDController_GetGoal.vi" Type="VI" URL="../ProfiledPIDController_GetGoal.vi"/>
 				<Item Name="ProfiledPIDController_GetPeriod.vi" Type="VI" URL="../ProfiledPIDController_GetPeriod.vi"/>
 				<Item Name="ProfiledPIDController_GetPID.vi" Type="VI" URL="../ProfiledPIDController_GetPID.vi"/>
