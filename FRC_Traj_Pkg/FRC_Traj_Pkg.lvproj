@@ -249,7 +249,7 @@
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_version.build" Type="Int">257</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
-				<Property Name="Bld_version.patch" Type="Int">6</Property>
+				<Property Name="Bld_version.patch" Type="Int">7</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/vi.lib</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -274,7 +274,7 @@
 				<Property Name="Destination[5].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[5].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">6</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2B3A0AF6-C4B7-454C-B944-11B553193F11}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5FFC0383-D55C-409A-A052-EE11A38BEB52}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">2</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib</Property>
@@ -434,10 +434,10 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
 				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[0].Type" Type="Str">Package</Property>
 				<Property Name="PKG_dependencies[1].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[1].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[1].MaxVersionInclusive" Type="Bool">false</Property>
@@ -555,7 +555,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
 				<Property Name="PKG_sources[2].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">FRC_LV_Trajectory_Package</Property>
-				<Property Name="PKG_version" Type="Str">2.0.6</Property>
+				<Property Name="PKG_version" Type="Str">2.0.7</Property>
 			</Item>
 			<Item Name="JASJunkFrcTrajLib_UtilsOnly" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
@@ -586,10 +586,10 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
 				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[0].Type" Type="Str">Package</Property>
 				<Property Name="PKG_dependencies[1].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[1].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[1].MaxVersionInclusive" Type="Bool">false</Property>
@@ -695,7 +695,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/Book</Property>
 				<Property Name="PKG_sources[2].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">FRC_LV_Trajectory_Package_Utility_Only</Property>
-				<Property Name="PKG_version" Type="Str">2.0.6</Property>
+				<Property Name="PKG_version" Type="Str">2.0.7</Property>
 			</Item>
 			<Item Name="JASJunkFrcTrajLibLv2020" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
@@ -727,10 +727,10 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
 				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[0].Type" Type="Str">Package</Property>
 				<Property Name="PKG_dependencies[1].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[1].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[1].MaxVersionInclusive" Type="Bool">false</Property>
@@ -848,7 +848,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
 				<Property Name="PKG_sources[2].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">FRC_LV_Trajectory_Package</Property>
-				<Property Name="PKG_version" Type="Str">2.0.6</Property>
+				<Property Name="PKG_version" Type="Str">2.0.7</Property>
 			</Item>
 			<Item Name="UtilExe" Type="Source Distribution">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>

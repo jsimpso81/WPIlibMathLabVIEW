@@ -131,6 +131,8 @@
 		<Item Name="CONSTRAINED_STATE.ctl" Type="VI" URL="../CONSTRAINED_STATE.ctl"/>
 		<Item Name="DCMOTOR.CTL" Type="VI" URL="../DCMOTOR.CTL"/>
 		<Item Name="DCMOTOR_TYPES_ENUM.ctl" Type="VI" URL="../DCMOTOR_TYPES_ENUM.ctl"/>
+		<Item Name="DEBOUNCER.ctl" Type="VI" URL="../DEBOUNCER.ctl"/>
+		<Item Name="DEBOUNCER_TYPE_ENUM.ctl" Type="VI" URL="../DEBOUNCER_TYPE_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../DIFF_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_POSE_EST.ctl" Type="VI" URL="../DIFF_DRIVE_POSE_EST.ctl"/>
@@ -485,6 +487,13 @@
 			<Item Name="Conv_Yards_Meters.vi" Type="VI" URL="../Conv_Yards_Meters.vi"/>
 		</Item>
 		<Item Name="DigSeqLogic" Type="Folder">
+			<Item Name="Debouncer" Type="Folder">
+				<Item Name="Debouncer_Calculate.vi" Type="VI" URL="../Debouncer_Calculate.vi"/>
+				<Item Name="Debouncer_Execute.vi" Type="VI" URL="../Debouncer_Execute.vi"/>
+				<Item Name="Debouncer_HasElapsed.vi" Type="VI" URL="../Debouncer_HasElapsed.vi"/>
+				<Item Name="Debouncer_New.vi" Type="VI" URL="../Debouncer_New.vi"/>
+				<Item Name="Debouncer_Reset.vi" Type="VI" URL="../Debouncer_Reset.vi"/>
+			</Item>
 			<Item Name="DigSeqLogic_Off_Delay.vi" Type="VI" URL="../DigSeqLogic_Off_Delay.vi"/>
 			<Item Name="DigSeqLogic_On_Delay.vi" Type="VI" URL="../DigSeqLogic_On_Delay.vi"/>
 			<Item Name="DigSeqLogic_One_Shot.vi" Type="VI" URL="../DigSeqLogic_One_Shot.vi"/>
