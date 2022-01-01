@@ -15,6 +15,7 @@
 		<Item Name="FRC_LV_CtrlLib_ControllerUtils.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ControllerUtils.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_CtrlAffinePlntInvFF.mnu" Type="Document" URL="../FRC_LV_CtrlLib_CtrlAffinePlntInvFF.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DC_Motor.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DC_Motor.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Debouncer.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Debouncer.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DiffDriveTrainPoseEst.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveTrainPoseEst.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DiffDriveTrainSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveTrainSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Discretization.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Discretization.mnu"/>
@@ -225,6 +226,7 @@
 			<Item Name="macro_CallbackHelp_MatrixMult_CoerceSizeB.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult_CoerceSizeB.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixPlus.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixPlus.vi"/>
 			<Item Name="macro_DCMotor_Pick.vi" Type="VI" URL="../Macros/macro_DCMotor_Pick.vi"/>
+			<Item Name="macro_Debouncer_Execute.vi" Type="VI" URL="../Macros/macro_Debouncer_Execute.vi"/>
 			<Item Name="macro_DiffDriveKineNew.vi" Type="VI" URL="../Macros/macro_DiffDriveKineNew.vi"/>
 			<Item Name="macro_Digital_And.vi" Type="VI" URL="../Macros/macro_Digital_And.vi"/>
 			<Item Name="macro_Digital_AndMany.vi" Type="VI" URL="../Macros/macro_Digital_AndMany.vi"/>

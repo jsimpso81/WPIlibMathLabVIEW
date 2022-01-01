@@ -247,7 +247,7 @@
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">258</Property>
+				<Property Name="Bld_version.build" Type="Int">259</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">7</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -262,7 +262,7 @@
 				<Property Name="Destination[2].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[3].destName" Type="Str">JaciPathFinderLib</Property>
-				<Property Name="Destination[3].path" Type="Path">../builds/vi.lib/Rock Robotics/WPI/ThirdParty/JAS_Junk/JaciPathFinderLib</Property>
+				<Property Name="Destination[3].path" Type="Path">../builds/vi.lib/Rock Robotics/WPI/ThirdParty/JBRUN/PathFinder</Property>
 				<Property Name="Destination[3].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[3].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[4].destName" Type="Str">TopLevelMenu</Property>
@@ -274,7 +274,7 @@
 				<Property Name="Destination[5].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[5].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">6</Property>
-				<Property Name="Source[0].itemID" Type="Str">{5FFC0383-D55C-409A-A052-EE11A38BEB52}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F347C301-7578-4F88-B9DB-F02BEDBDF1E2}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">2</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib</Property>
@@ -415,7 +415,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.7-81_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.7-82_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -424,7 +424,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">82</Property>
+				<Property Name="PKG_buildNumber" Type="Int">83</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLib</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -568,7 +568,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlibutils_2.0.7-81_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlibutils_2.0.7-82_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library Utility Programs</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -576,7 +576,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">82</Property>
+				<Property Name="PKG_buildNumber" Type="Int">83</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLib_UtilsOnly</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -708,7 +708,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2020_2.0.7-81_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2020_2.0.7-82_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -717,7 +717,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">82</Property>
+				<Property Name="PKG_buildNumber" Type="Int">83</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLibLv2020</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
