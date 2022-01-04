@@ -509,6 +509,7 @@
 				<Item Name="Pose_getTranslation.vi" Type="VI" URL="../Pose_getTranslation.vi"/>
 				<Item Name="Pose_getXY.vi" Type="VI" URL="../Pose_getXY.vi"/>
 				<Item Name="Pose_getXYAngle.vi" Type="VI" URL="../Pose_getXYAngle.vi"/>
+				<Item Name="Pose_Interpolate.vi" Type="VI" URL="../Pose_Interpolate.vi"/>
 				<Item Name="Pose_Log.vi" Type="VI" URL="../Pose_Log.vi"/>
 				<Item Name="Pose_Minus.vi" Type="VI" URL="../Pose_Minus.vi"/>
 				<Item Name="Pose_New.vi" Type="VI" URL="../Pose_New.vi"/>
@@ -528,6 +529,7 @@
 				<Item Name="Rotation_GetRadians.vi" Type="VI" URL="../Rotation_GetRadians.vi"/>
 				<Item Name="Rotation_GetSin.vi" Type="VI" URL="../Rotation_GetSin.vi"/>
 				<Item Name="Rotation_GetTan.vi" Type="VI" URL="../Rotation_GetTan.vi"/>
+				<Item Name="Rotation_Interpolate.vi" Type="VI" URL="../Rotation_Interpolate.vi"/>
 				<Item Name="Rotation_Minus.vi" Type="VI" URL="../Rotation_Minus.vi"/>
 				<Item Name="Rotation_Plus.vi" Type="VI" URL="../Rotation_Plus.vi"/>
 				<Item Name="Rotation_RotateBy.vi" Type="VI" URL="../Rotation_RotateBy.vi"/>
@@ -555,6 +557,7 @@
 				<Item Name="Translation_GetX.vi" Type="VI" URL="../Translation_GetX.vi"/>
 				<Item Name="Translation_GetXY.vi" Type="VI" URL="../Translation_GetXY.vi"/>
 				<Item Name="Translation_GetY.vi" Type="VI" URL="../Translation_GetY.vi"/>
+				<Item Name="Translation_Interpolate.vi" Type="VI" URL="../Translation_Interpolate.vi"/>
 				<Item Name="Translation_Minus.vi" Type="VI" URL="../Translation_Minus.vi"/>
 				<Item Name="Translation_Plus.vi" Type="VI" URL="../Translation_Plus.vi"/>
 				<Item Name="Translation_RotateBy.vi" Type="VI" URL="../Translation_RotateBy.vi"/>
@@ -644,6 +647,7 @@
 				<Item Name="MathUtil_Clamp.vi" Type="VI" URL="../MathUtil_Clamp.vi"/>
 				<Item Name="MathUtil_Clamp_Int.vi" Type="VI" URL="../MathUtil_Clamp_Int.vi"/>
 				<Item Name="MathUtil_InputModulus.vi" Type="VI" URL="../MathUtil_InputModulus.vi"/>
+				<Item Name="MathUtil_Interpolate.vi" Type="VI" URL="../MathUtil_Interpolate.vi"/>
 			</Item>
 			<Item Name="MerweScaledSigmaPts" Type="Folder">
 				<Item Name="MerweScSigPts_ComputeWeights.vi" Type="VI" URL="../MerweScSigPts_ComputeWeights.vi"/>
