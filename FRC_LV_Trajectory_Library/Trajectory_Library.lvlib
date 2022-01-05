@@ -672,12 +672,12 @@
 				<Item Name="NumIntegrate_Rkdp_Func_B2.vi" Type="VI" URL="../NumIntegrate_Rkdp_Func_B2.vi"/>
 				<Item Name="NumIntegrate_Rkdp_impl.vi" Type="VI" URL="../NumIntegrate_Rkdp_impl.vi"/>
 				<Item Name="NumIntegrate_Rkdp_Mat_X_U.vi" Type="VI" URL="../NumIntegrate_Rkdp_Mat_X_U.vi"/>
-				<Item Name="NumIntegrate_RKf45_Func_Bs.vi" Type="VI" URL="../NumIntegrate_RKf45_Func_Bs.vi"/>
-				<Item Name="NumIntegrate_RKf45_Func_Ch.vi" Type="VI" URL="../NumIntegrate_RKf45_Func_Ch.vi"/>
-				<Item Name="NumIntegrate_RKf45_Func_Ct.vi" Type="VI" URL="../NumIntegrate_RKf45_Func_Ct.vi"/>
+				<Item Name="NumIntegrate_Rkf45_Func_A.vi" Type="VI" URL="../NumIntegrate_Rkf45_Func_A.vi"/>
+				<Item Name="NumIntegrate_Rkf45_Func_B1.vi" Type="VI" URL="../NumIntegrate_Rkf45_Func_B1.vi"/>
+				<Item Name="NumIntegrate_Rkf45_Func_B1B2.vi" Type="VI" URL="../NumIntegrate_Rkf45_Func_B1B2.vi"/>
+				<Item Name="NumIntegrate_Rkf45_Func_B2.vi" Type="VI" URL="../NumIntegrate_Rkf45_Func_B2.vi"/>
 				<Item Name="NumIntegrate_Rkf45_impl.vi" Type="VI" URL="../NumIntegrate_Rkf45_impl.vi"/>
 				<Item Name="NumIntegrate_Rkf45_Mat_X_U.vi" Type="VI" URL="../NumIntegrate_Rkf45_Mat_X_U.vi"/>
-				<Item Name="NumIntegrate_Rkf45_NEW.vi" Type="VI" URL="../NumIntegrate_Rkf45_NEW.vi"/>
 				<Item Name="NumIntegrate_Trap_Dbl.vi" Type="VI" URL="../NumIntegrate_Trap_Dbl.vi"/>
 				<Item Name="NumIntegrate_Trap_Mat.vi" Type="VI" URL="../NumIntegrate_Trap_Mat.vi"/>
 			</Item>
