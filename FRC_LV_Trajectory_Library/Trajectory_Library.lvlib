@@ -216,15 +216,18 @@
 	<Item Name="VI" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
 		<Item Name="_MenuMacros" Type="Folder">
+			<Item Name="macro_Angle_Modulus.vi" Type="VI" URL="../Macros/macro_Angle_Modulus.vi"/>
 			<Item Name="macro_AngleStats_AngleAdd_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleAdd_CallbackHelp.vi"/>
 			<Item Name="macro_AngleStats_AngleMean_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleMean_CallbackHelp.vi"/>
 			<Item Name="macro_AngleStats_AngleResidual_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleResidual_CallbackHelp.vi"/>
+			<Item Name="macro_Apply_Deadband.vi" Type="VI" URL="../Macros/macro_Apply_Deadband.vi"/>
 			<Item Name="macro_ArmFF_Calculate.vi" Type="VI" URL="../Macros/macro_ArmFF_Calculate.vi"/>
 			<Item Name="macro_BangBang_Execute.vi" Type="VI" URL="../Macros/macro_BangBang_Execute.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixMinus.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMinus.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixMult.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixMult_CoerceSizeB.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult_CoerceSizeB.vi"/>
 			<Item Name="macro_CallbackHelp_MatrixPlus.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixPlus.vi"/>
+			<Item Name="macro_Clamp.vi" Type="VI" URL="../Macros/macro_Clamp.vi"/>
 			<Item Name="macro_DCMotor_Pick.vi" Type="VI" URL="../Macros/macro_DCMotor_Pick.vi"/>
 			<Item Name="macro_Debouncer_Execute.vi" Type="VI" URL="../Macros/macro_Debouncer_Execute.vi"/>
 			<Item Name="macro_DiffDriveKineNew.vi" Type="VI" URL="../Macros/macro_DiffDriveKineNew.vi"/>
@@ -237,6 +240,7 @@
 			<Item Name="macro_FiniteStateMachine_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_Template.vi"/>
 			<Item Name="macro_FiniteStateMachine_w_Timer_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_w_Timer_Template.vi"/>
 			<Item Name="macro_HolDrvCtrl_New.vi" Type="VI" URL="../Macros/macro_HolDrvCtrl_New.vi"/>
+			<Item Name="macro_Input_Modulus.vi" Type="VI" URL="../Macros/macro_Input_Modulus.vi"/>
 			<Item Name="macro_LinearFilter_ExecuteAVG.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteAVG.vi"/>
 			<Item Name="macro_LinearFilter_ExecuteTC.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteTC.vi"/>
 			<Item Name="macro_MatBuilder_Create.vi" Type="VI" URL="../Macros/macro_MatBuilder_Create.vi"/>
