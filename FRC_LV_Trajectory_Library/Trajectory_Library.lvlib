@@ -912,7 +912,9 @@
 				<Item Name="Spline_getPoint.vi" Type="VI" URL="../Spline_getPoint.vi"/>
 			</Item>
 			<Item Name="SplineHelper" Type="Folder">
-				<Item Name="SplineHelp_GetCubicCtrlVector.vi" Type="VI" URL="../SplineHelp_GetCubicCtrlVector.vi"/>
+				<Item Name="SplineHelp_GetCubicCtrlVector.vi" Type="VI" URL="../SplineHelp_GetCubicCtrlVector.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
 				<Item Name="SplineHelp_GetCubicCtrlVectorsFromWayPts.vi" Type="VI" URL="../SplineHelp_GetCubicCtrlVectorsFromWayPts.vi"/>
 				<Item Name="SplineHelp_GetCubicCtrlVectorsFromWeightedWayPts.vi" Type="VI" URL="../SplineHelp_GetCubicCtrlVectorsFromWeightedWayPts.vi"/>
 				<Item Name="SplineHelp_GetCubicSpline_Calc1.vi" Type="VI" URL="../SplineHelp_GetCubicSpline_Calc1.vi">
@@ -925,10 +927,12 @@
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
 				<Item Name="SplineHelp_getCubicSplinesFromControlVectors.vi" Type="VI" URL="../SplineHelp_getCubicSplinesFromControlVectors.vi"/>
-				<Item Name="SplineHelp_GetQuinticCtrlVector.vi" Type="VI" URL="../SplineHelp_GetQuinticCtrlVector.vi"/>
-				<Item Name="SplineHelp_GetQuinticCtrlVectorsFromWayPts.vi" Type="VI" URL="../SplineHelp_GetQuinticCtrlVectorsFromWayPts.vi"/>
-				<Item Name="SplineHelp_GetQuinticCtrlVectorsFromWeightedWayPts.vi" Type="VI" URL="../SplineHelp_GetQuinticCtrlVectorsFromWeightedWayPts.vi"/>
+				<Item Name="SplineHelp_GetQuinticCtrlVector.vi" Type="VI" URL="../SplineHelp_GetQuinticCtrlVector.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
 				<Item Name="SplineHelp_getQuinticSplinesFromControlVectors.vi" Type="VI" URL="../SplineHelp_getQuinticSplinesFromControlVectors.vi"/>
+				<Item Name="SplineHelp_GetQuinticSplinesFromWayPts.vi" Type="VI" URL="../SplineHelp_GetQuinticSplinesFromWayPts.vi"/>
+				<Item Name="SplineHelp_GetQuinticSplinesFromWeightedWayPts.vi" Type="VI" URL="../SplineHelp_GetQuinticSplinesFromWeightedWayPts.vi"/>
 				<Item Name="SplineHelp_ThomasAlgorithm.vi" Type="VI" URL="../SplineHelp_ThomasAlgorithm.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
@@ -1177,6 +1181,7 @@
 				<Item Name="TrajectoryGenerate_Make_Generic.vi" Type="VI" URL="../TrajectoryGenerate_Make_Generic.vi"/>
 				<Item Name="TrajectoryGenerate_Make_Quintic.vi" Type="VI" URL="../TrajectoryGenerate_Make_Quintic.vi"/>
 				<Item Name="TrajectoryGenerate_Make_Quintic_CtrlVect.vi" Type="VI" URL="../TrajectoryGenerate_Make_Quintic_CtrlVect.vi"/>
+				<Item Name="TrajectoryGenerate_Make_Quintic_Weighted.vi" Type="VI" URL="../TrajectoryGenerate_Make_Quintic_Weighted.vi"/>
 				<Item Name="TrajectoryGenerate_splinePointsFromSplines.vi" Type="VI" URL="../TrajectoryGenerate_splinePointsFromSplines.vi"/>
 			</Item>
 			<Item Name="TrajectoryParameterizer" Type="Folder">
