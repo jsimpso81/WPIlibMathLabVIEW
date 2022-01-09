@@ -23,11 +23,15 @@
 				<Item Name="2021-galacticsearcha.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-galacticsearcha.png"/>
 				<Item Name="2021-galacticsearchb.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-galacticsearchb.png"/>
 				<Item Name="2021-slalom.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-slalom.png"/>
+				<Item Name="2022-field-capture-cropped.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2022-field-capture-cropped.png"/>
 				<Item Name="field_info.ini" Type="Document" URL="../UtilExe/bin/FieldInfo/field_info.ini"/>
 			</Item>
 			<Item Name="Samples" Type="Folder">
 				<Item Name="PathWeaverTestPathOne.wpilib.json" Type="Document" URL="../UtilExe/bin/Samples/PathWeaverTestPathOne.wpilib.json"/>
 				<Item Name="PathWeaverTestPathTwo.wpilib.json" Type="Document" URL="../UtilExe/bin/Samples/PathWeaverTestPathTwo.wpilib.json"/>
+				<Item Name="RapidReact2022Sample.csv" Type="Document" URL="../UtilExe/bin/Samples/RapidReact2022Sample.csv"/>
+				<Item Name="RapidReact2022Sample.json" Type="Document" URL="../UtilExe/bin/Samples/RapidReact2022Sample.json"/>
+				<Item Name="RapidReact2022Sample.xml" Type="Document" URL="../UtilExe/bin/Samples/RapidReact2022Sample.xml"/>
 				<Item Name="Sample-JSON-to-Trajectory-Conversion.csv" Type="Document" URL="../UtilExe/bin/Samples/Sample-JSON-to-Trajectory-Conversion.csv"/>
 				<Item Name="Sample-Robot-2-Trajectory-Pathfinder.csv" Type="Document" URL="../UtilExe/bin/Samples/Sample-Robot-2-Trajectory-Pathfinder.csv"/>
 				<Item Name="Sample-Robot-2-Trajectory-TrajLibrary.csv" Type="Document" URL="../UtilExe/bin/Samples/Sample-Robot-2-Trajectory-TrajLibrary.csv"/>
@@ -250,7 +254,7 @@
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">274</Property>
+				<Property Name="Bld_version.build" Type="Int">277</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">7</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -429,7 +433,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.7-96_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.7-98_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -438,7 +442,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">97</Property>
+				<Property Name="PKG_buildNumber" Type="Int">99</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLib</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -582,7 +586,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlibutils_2.0.7-96_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlibutils_2.0.7-98_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library Utility Programs</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -590,7 +594,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">97</Property>
+				<Property Name="PKG_buildNumber" Type="Int">99</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLib_UtilsOnly</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -722,7 +726,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2020_2.0.7-96_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2020_2.0.7-98_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -731,7 +735,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">97</Property>
+				<Property Name="PKG_buildNumber" Type="Int">99</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASJunkFrcTrajLibLv2020</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -886,7 +890,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E685BE58-8AC4-40ED-B368-C46CA560D1D1}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/UtilExe_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">48</Property>
+				<Property Name="Bld_version.build" Type="Int">50</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">4</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -897,7 +901,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/UtilExe/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{3FB7EC71-77E8-4F7A-A242-2854711AAE3C}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E28DE2FF-1D86-4C91-A43F-F4D83268ED9C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
