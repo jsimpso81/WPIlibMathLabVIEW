@@ -24,6 +24,7 @@
 				<Item Name="2021-galacticsearchb.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-galacticsearchb.png"/>
 				<Item Name="2021-slalom.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-slalom.png"/>
 				<Item Name="2022-field-capture-cropped.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2022-field-capture-cropped.png"/>
+				<Item Name="2022-field.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2022-field.png"/>
 				<Item Name="field_info.ini" Type="Document" URL="../UtilExe/bin/FieldInfo/field_info.ini"/>
 			</Item>
 			<Item Name="Samples" Type="Folder">
@@ -890,7 +891,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E685BE58-8AC4-40ED-B368-C46CA560D1D1}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/UtilExe_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">50</Property>
+				<Property Name="Bld_version.build" Type="Int">51</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">4</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -901,7 +902,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/UtilExe/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E28DE2FF-1D86-4C91-A43F-F4D83268ED9C}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7625E695-5E51-4BBB-AE80-0CE89218B8ED}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
