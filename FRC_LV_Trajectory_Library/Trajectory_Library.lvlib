@@ -240,6 +240,7 @@
 			<Item Name="macro_FiniteStateMachine_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_Template.vi"/>
 			<Item Name="macro_FiniteStateMachine_w_Timer_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_w_Timer_Template.vi"/>
 			<Item Name="macro_HolDrvController_Execute.vi" Type="VI" URL="../Macros/macro_HolDrvController_Execute.vi"/>
+			<Item Name="macro_HolDrvController_ExecuteSP.vi" Type="VI" URL="../Macros/macro_HolDrvController_ExecuteSP.vi"/>
 			<Item Name="macro_HolDrvCtrl_New.vi" Type="VI" URL="../Macros/macro_HolDrvCtrl_New.vi"/>
 			<Item Name="macro_Input_Modulus.vi" Type="VI" URL="../Macros/macro_Input_Modulus.vi"/>
 			<Item Name="macro_LinearFilter_ExecuteAVG.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteAVG.vi"/>
@@ -375,8 +376,10 @@
 				<Item Name="HolDrvCtrl_AtReference.vi" Type="VI" URL="../HolDrvCtrl_AtReference.vi"/>
 				<Item Name="HolDrvCtrl_Calculate.vi" Type="VI" URL="../HolDrvCtrl_Calculate.vi"/>
 				<Item Name="HolDrvCtrl_Calculate_Trajectory.vi" Type="VI" URL="../HolDrvCtrl_Calculate_Trajectory.vi"/>
+				<Item Name="HolDrvCtrl_Execute.vi" Type="VI" URL="../HolDrvCtrl_Execute.vi"/>
 				<Item Name="HolDrvCtrl_Execute_Trajectory.vi" Type="VI" URL="../HolDrvCtrl_Execute_Trajectory.vi"/>
 				<Item Name="HolDrvCtrl_New.vi" Type="VI" URL="../HolDrvCtrl_New.vi"/>
+				<Item Name="HolDrvCtrl_PackExecuteSP.vi" Type="VI" URL="../HolDrvCtrl_PackExecuteSP.vi"/>
 				<Item Name="HolDrvCtrl_PackPID.vi" Type="VI" URL="../HolDrvCtrl_PackPID.vi"/>
 				<Item Name="HolDrvCtrl_PackProfPID.vi" Type="VI" URL="../HolDrvCtrl_PackProfPID.vi"/>
 				<Item Name="HolDrvCtrl_SetEnabled.vi" Type="VI" URL="../HolDrvCtrl_SetEnabled.vi"/>
