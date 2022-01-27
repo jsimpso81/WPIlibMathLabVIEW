@@ -131,6 +131,7 @@
 		<Item Name="CHASSIS_SPEEDS.ctl" Type="VI" URL="../CHASSIS_SPEEDS.ctl"/>
 		<Item Name="CONSTRAINED_STATE.ctl" Type="VI" URL="../CONSTRAINED_STATE.ctl"/>
 		<Item Name="DCMOTOR.CTL" Type="VI" URL="../DCMOTOR.CTL"/>
+		<Item Name="DCMOTOR_SIM.ctl" Type="VI" URL="../DCMOTOR_SIM.ctl"/>
 		<Item Name="DCMOTOR_TYPES_ENUM.ctl" Type="VI" URL="../DCMOTOR_TYPES_ENUM.ctl"/>
 		<Item Name="DEBOUNCER.ctl" Type="VI" URL="../DEBOUNCER.ctl"/>
 		<Item Name="DEBOUNCER_TYPE_ENUM.ctl" Type="VI" URL="../DEBOUNCER_TYPE_ENUM.ctl"/>
@@ -776,6 +777,7 @@
 				<Item Name="DCMotor_PickMotor.vi" Type="VI" URL="../DCMotor_PickMotor.vi"/>
 			</Item>
 			<Item Name="LinearsystemId" Type="Folder">
+				<Item Name="LinearSystemId_CreateDCMotorSystem.vi" Type="VI" URL="../LinearSystemId_CreateDCMotorSystem.vi"/>
 				<Item Name="LinearSystemId_CreateDriveTrainVelocitySystem.vi" Type="VI" URL="../LinearSystemId_CreateDriveTrainVelocitySystem.vi"/>
 				<Item Name="LinearSystemId_CreateElevatorSystem.vi" Type="VI" URL="../LinearSystemId_CreateElevatorSystem.vi"/>
 				<Item Name="LinearSystemId_CreateFlywheelSystem.vi" Type="VI" URL="../LinearSystemId_CreateFlywheelSystem.vi"/>
@@ -818,6 +820,16 @@
 			<Item Name="BatterySim" Type="Folder">
 				<Item Name="BatterySim_CalculateDefaultBatteryLoadedVoltage.vi" Type="VI" URL="../BatterySim_CalculateDefaultBatteryLoadedVoltage.vi"/>
 				<Item Name="BatterySim_CalculateLoadedBatteryVoltage.vi" Type="VI" URL="../BatterySim_CalculateLoadedBatteryVoltage.vi"/>
+			</Item>
+			<Item Name="DCMotrSim" Type="Folder">
+				<Item Name="DCMotorSim_getAngularPositionRad.vi" Type="VI" URL="../DCMotorSim_getAngularPositionRad.vi"/>
+				<Item Name="DCMotorSim_getAngularPositionRotations.vi" Type="VI" URL="../DCMotorSim_getAngularPositionRotations.vi"/>
+				<Item Name="DCMotorSim_getAngularVelocityRadPerSec.vi" Type="VI" URL="../DCMotorSim_getAngularVelocityRadPerSec.vi"/>
+				<Item Name="DCMotorSim_getAngularVelocityRPM.vi" Type="VI" URL="../DCMotorSim_getAngularVelocityRPM.vi"/>
+				<Item Name="DCMotorSim_GetCurrentDrawAmps.vi" Type="VI" URL="../DCMotorSim_GetCurrentDrawAmps.vi"/>
+				<Item Name="DCMotorSim_New_MOI.vi" Type="VI" URL="../DCMotorSim_New_MOI.vi"/>
+				<Item Name="DCMotorSim_SetInputVoltage.vi" Type="VI" URL="../DCMotorSim_SetInputVoltage.vi"/>
+				<Item Name="DCMotorSim_Update.vi" Type="VI" URL="../DCMotorSim_Update.vi"/>
 			</Item>
 			<Item Name="DiffDriveTrainSim" Type="Folder">
 				<Item Name="DiffDriveTrainSim_ClampInput.vi" Type="VI" URL="../DiffDriveTrainSim_ClampInput.vi"/>
