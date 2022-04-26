@@ -15,6 +15,7 @@
 		<Item Name="FRC_LV_CtrlLib_ControllerUtils.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ControllerUtils.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_CtrlAffinePlntInvFF.mnu" Type="Document" URL="../FRC_LV_CtrlLib_CtrlAffinePlntInvFF.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DC_Motor.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DC_Motor.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_DC_Motor_SIM.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DC_Motor_SIM.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Debouncer.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Debouncer.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DiffDriveTrainPoseEst.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveTrainPoseEst.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DiffDriveTrainSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveTrainSim.mnu"/>
@@ -821,13 +822,14 @@
 				<Item Name="BatterySim_CalculateDefaultBatteryLoadedVoltage.vi" Type="VI" URL="../BatterySim_CalculateDefaultBatteryLoadedVoltage.vi"/>
 				<Item Name="BatterySim_CalculateLoadedBatteryVoltage.vi" Type="VI" URL="../BatterySim_CalculateLoadedBatteryVoltage.vi"/>
 			</Item>
-			<Item Name="DCMotrSim" Type="Folder">
+			<Item Name="DC Motor Sim" Type="Folder">
 				<Item Name="DCMotorSim_getAngularPositionRad.vi" Type="VI" URL="../DCMotorSim_getAngularPositionRad.vi"/>
 				<Item Name="DCMotorSim_getAngularPositionRotations.vi" Type="VI" URL="../DCMotorSim_getAngularPositionRotations.vi"/>
 				<Item Name="DCMotorSim_getAngularVelocityRadPerSec.vi" Type="VI" URL="../DCMotorSim_getAngularVelocityRadPerSec.vi"/>
 				<Item Name="DCMotorSim_getAngularVelocityRPM.vi" Type="VI" URL="../DCMotorSim_getAngularVelocityRPM.vi"/>
 				<Item Name="DCMotorSim_GetCurrentDrawAmps.vi" Type="VI" URL="../DCMotorSim_GetCurrentDrawAmps.vi"/>
 				<Item Name="DCMotorSim_New_MOI.vi" Type="VI" URL="../DCMotorSim_New_MOI.vi"/>
+				<Item Name="DCMotorSim_New_Plant.vi" Type="VI" URL="../DCMotorSim_New_Plant.vi"/>
 				<Item Name="DCMotorSim_SetInputVoltage.vi" Type="VI" URL="../DCMotorSim_SetInputVoltage.vi"/>
 				<Item Name="DCMotorSim_Update.vi" Type="VI" URL="../DCMotorSim_Update.vi"/>
 			</Item>
