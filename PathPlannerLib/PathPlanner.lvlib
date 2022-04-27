@@ -34,6 +34,7 @@
 		<Item Name="PathPlanner_PathPlanner_Resolution.vi" Type="VI" URL="../PathPlanner_PathPlanner_Resolution.vi"/>
 	</Item>
 	<Item Name="Trajectory" Type="Folder">
+		<Item Name="PathPlanner_Trajectory_asWPILibTrajectory.vi" Type="VI" URL="../PathPlanner_Trajectory_asWPILibTrajectory.vi"/>
 		<Item Name="PathPlanner_Trajectory_CalculateMaxVel.vi" Type="VI" URL="../PathPlanner_Trajectory_CalculateMaxVel.vi"/>
 		<Item Name="PathPlanner_Trajectory_CalculateRadius.vi" Type="VI" URL="../PathPlanner_Trajectory_CalculateRadius.vi"/>
 		<Item Name="PathPlanner_Trajectory_CalculateVelocity.vi" Type="VI" URL="../PathPlanner_Trajectory_CalculateVelocity.vi"/>
