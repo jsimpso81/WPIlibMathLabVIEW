@@ -387,6 +387,7 @@
 				<Item Name="HolDrvCtrl_SetEnabled.vi" Type="VI" URL="../HolDrvCtrl_SetEnabled.vi"/>
 				<Item Name="HolDrvCtrl_SetTolerance.vi" Type="VI" URL="../HolDrvCtrl_SetTolerance.vi"/>
 			</Item>
+			<Item Name="ImplicitModelFollower" Type="Folder"/>
 			<Item Name="PIDController" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="PIDController_AdvCalculate_FF_Sp_Pv.vi" Type="VI" URL="../PIDController_AdvCalculate_FF_Sp_Pv.vi"/>
@@ -1291,6 +1292,15 @@
 			<Item Name="Util_Waypoint_To_QuinticInput.vi" Type="VI" URL="../Util_Waypoint_To_QuinticInput.vi"/>
 			<Item Name="Util_WeightedWaypoint_Eng_To_WeightedWaypoint_SI.vi" Type="VI" URL="../Util_WeightedWaypoint_Eng_To_WeightedWaypoint_SI.vi"/>
 			<Item Name="Util_WeightedWaypoint_To_WeightedWayPoint.vi" Type="VI" URL="../Util_WeightedWaypoint_To_WeightedWayPoint.vi"/>
+		</Item>
+		<Item Name="Vision" Type="Folder">
+			<Item Name="ComputerVisionUtil" Type="Folder">
+				<Item Name="CompVisionUtil_CalculateDistanceToTarget.vi" Type="VI" URL="../CompVisionUtil_CalculateDistanceToTarget.vi"/>
+				<Item Name="CompVisionUtil_EstimateCameraToTarget.vi" Type="VI" URL="../CompVisionUtil_EstimateCameraToTarget.vi"/>
+				<Item Name="CompVisionUtil_EstimateFieldToCamera.vi" Type="VI" URL="../CompVisionUtil_EstimateFieldToCamera.vi"/>
+				<Item Name="CompVisionUtil_EstimateFieldToRobot.vi" Type="VI" URL="../CompVisionUtil_EstimateFieldToRobot.vi"/>
+				<Item Name="CompVisionUtil_EstimateFieldToRobot_Alt.vi" Type="VI" URL="../CompVisionUtil_EstimateFieldToRobot_Alt.vi"/>
+			</Item>
 		</Item>
 	</Item>
 	<Item Name="License.rtf" Type="Document" URL="../License.rtf"/>
