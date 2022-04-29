@@ -57,6 +57,8 @@
 		<Item Name="FRC_LV_CtrlLib_UnitsConv.mnu" Type="Document" URL="../FRC_LV_CtrlLib_UnitsConv.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_UnscentedKalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_UnscentedKalmanFilter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_VectorBuilder.mnu" Type="Document" URL="../FRC_LV_CtrlLib_VectorBuilder.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Vision.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Vision.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_VisionUtility.mnu" Type="Document" URL="../FRC_LV_CtrlLib_VisionUtility.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Arm_FF.mnu" Type="Document" URL="../FRC_LV_Trajectory_Arm_FF.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Base_WPILIB.mnu" Type="Document" URL="../FRC_LV_Trajectory_Base_WPILIB.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Controller.mnu" Type="Document" URL="../FRC_LV_Trajectory_Controller.mnu"/>
