@@ -398,6 +398,9 @@
 				<Item Name="PIDController_AtSetpoint.vi" Type="VI" URL="../PIDController_AtSetpoint.vi"/>
 				<Item Name="PIDController_Calculate_PV.vi" Type="VI" URL="../PIDController_Calculate_PV.vi"/>
 				<Item Name="PIDController_Calculate_SP_PV.vi" Type="VI" URL="../PIDController_Calculate_SP_PV.vi"/>
+				<Item Name="PIDController_CalculateError_Internal.vi" Type="VI" URL="../PIDController_CalculateError_Internal.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
 				<Item Name="PIDController_DisableContinousInput.vi" Type="VI" URL="../PIDController_DisableContinousInput.vi"/>
 				<Item Name="PIDController_EnableContinousInput.vi" Type="VI" URL="../PIDController_EnableContinousInput.vi"/>
 				<Item Name="PIDController_Execute.vi" Type="VI" URL="../PIDController_Execute.vi"/>
