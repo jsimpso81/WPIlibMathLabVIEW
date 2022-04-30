@@ -546,12 +546,14 @@
 			<Item Name="Rotation" Type="Folder">
 				<Item Name="Rotation_CreateAngle.vi" Type="VI" URL="../Rotation_CreateAngle.vi"/>
 				<Item Name="Rotation_CreateAngleDegrees.vi" Type="VI" URL="../Rotation_CreateAngleDegrees.vi"/>
+				<Item Name="Rotation_CreateAngleRotations.vi" Type="VI" URL="../Rotation_CreateAngleRotations.vi"/>
 				<Item Name="Rotation_CreateXY.vi" Type="VI" URL="../Rotation_CreateXY.vi"/>
 				<Item Name="Rotation_Equals.vi" Type="VI" URL="../Rotation_Equals.vi"/>
 				<Item Name="Rotation_GetAngleCosSin.vi" Type="VI" URL="../Rotation_GetAngleCosSin.vi"/>
 				<Item Name="Rotation_GetCos.vi" Type="VI" URL="../Rotation_GetCos.vi"/>
 				<Item Name="Rotation_GetDegrees.vi" Type="VI" URL="../Rotation_GetDegrees.vi"/>
 				<Item Name="Rotation_GetRadians.vi" Type="VI" URL="../Rotation_GetRadians.vi"/>
+				<Item Name="Rotation_GetRotations.vi" Type="VI" URL="../Rotation_GetRotations.vi"/>
 				<Item Name="Rotation_GetSin.vi" Type="VI" URL="../Rotation_GetSin.vi"/>
 				<Item Name="Rotation_GetTan.vi" Type="VI" URL="../Rotation_GetTan.vi"/>
 				<Item Name="Rotation_Interpolate.vi" Type="VI" URL="../Rotation_Interpolate.vi"/>
