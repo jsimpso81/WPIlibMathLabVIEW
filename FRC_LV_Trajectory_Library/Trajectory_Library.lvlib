@@ -138,6 +138,7 @@
 		<Item Name="DCMOTOR_TYPES_ENUM.ctl" Type="VI" URL="../DCMOTOR_TYPES_ENUM.ctl"/>
 		<Item Name="DEBOUNCER.ctl" Type="VI" URL="../DEBOUNCER.ctl"/>
 		<Item Name="DEBOUNCER_TYPE_ENUM.ctl" Type="VI" URL="../DEBOUNCER_TYPE_ENUM.ctl"/>
+		<Item Name="DIFF_DRIVE_ACCEL_LIMIT.ctl" Type="VI" URL="../DIFF_DRIVE_ACCEL_LIMIT.ctl"/>
 		<Item Name="DIFF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../DIFF_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_POSE_EST.ctl" Type="VI" URL="../DIFF_DRIVE_POSE_EST.ctl"/>
@@ -802,6 +803,10 @@
 		</Item>
 		<Item Name="NEW_THINGS_USE_WITH_CAUTION" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
+			<Item Name="DifferentialDriveAccelerationLimiter" Type="Folder">
+				<Item Name="DiffDrvAccelLimit_Calculate.vi" Type="VI" URL="../DiffDrvAccelLimit_Calculate.vi"/>
+				<Item Name="DiffDrvAccelLimit_New.vi" Type="VI" URL="../DiffDrvAccelLimit_New.vi"/>
+			</Item>
 			<Item Name="State Space Control" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="ControlAffinePlantInversionFeedforward" Type="Folder"/>
