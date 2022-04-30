@@ -497,6 +497,7 @@
 			<Item Name="Conv_AngleRadians_Heading.vi" Type="VI" URL="../Conv_AngleRadians_Heading.vi"/>
 			<Item Name="Conv_Centimeters_Meters.vi" Type="VI" URL="../Conv_Centimeters_Meters.vi"/>
 			<Item Name="Conv_Deg_Radians.vi" Type="VI" URL="../Conv_Deg_Radians.vi"/>
+			<Item Name="Conv_Deg_Rotations.vi" Type="VI" URL="../Conv_Deg_Rotations.vi"/>
 			<Item Name="Conv_Feet_Meters.vi" Type="VI" URL="../Conv_Feet_Meters.vi"/>
 			<Item Name="Conv_GyroDegrees_Heading.vi" Type="VI" URL="../Conv_GyroDegrees_Heading.vi"/>
 			<Item Name="Conv_Heading_AngleRadians.vi" Type="VI" URL="../Conv_Heading_AngleRadians.vi"/>
@@ -507,6 +508,9 @@
 			<Item Name="Conv_POSE_SI_Eng.vi" Type="VI" URL="../Conv_POSE_SI_Eng.vi"/>
 			<Item Name="Conv_Pounds_Killograms.vi" Type="VI" URL="../Conv_Pounds_Killograms.vi"/>
 			<Item Name="Conv_Radians_Deg.vi" Type="VI" URL="../Conv_Radians_Deg.vi"/>
+			<Item Name="Conv_Radians_Rotations.vi" Type="VI" URL="../Conv_Radians_Rotations.vi"/>
+			<Item Name="Conv_Rotations_Degrees.vi" Type="VI" URL="../Conv_Rotations_Degrees.vi"/>
+			<Item Name="Conv_Rotations_Radians.vi" Type="VI" URL="../Conv_Rotations_Radians.vi"/>
 			<Item Name="Conv_Yards_Meters.vi" Type="VI" URL="../Conv_Yards_Meters.vi"/>
 		</Item>
 		<Item Name="DigSeqLogic" Type="Folder">
@@ -1260,6 +1264,7 @@
 		</Item>
 		<Item Name="Units" Type="Folder">
 			<Item Name="Units_DegreesToRadians.vi" Type="VI" URL="../Units_DegreesToRadians.vi"/>
+			<Item Name="Units_DegreesToRotations.vi" Type="VI" URL="../Units_DegreesToRotations.vi"/>
 			<Item Name="Units_FeetToMeters.vi" Type="VI" URL="../Units_FeetToMeters.vi"/>
 			<Item Name="Units_InchesToMeters.vi" Type="VI" URL="../Units_InchesToMeters.vi"/>
 			<Item Name="Units_MetersToFeet.vi" Type="VI" URL="../Units_MetersToFeet.vi"/>
@@ -1267,7 +1272,10 @@
 			<Item Name="Units_MillisecondsToSeconds.vi" Type="VI" URL="../Units_MillisecondsToSeconds.vi"/>
 			<Item Name="Units_RadiansPerSecondToRotationsPerMinute.vi" Type="VI" URL="../Units_RadiansPerSecondToRotationsPerMinute.vi"/>
 			<Item Name="Units_RadiansToDegrees.vi" Type="VI" URL="../Units_RadiansToDegrees.vi"/>
+			<Item Name="Units_RadiansToRotations.vi" Type="VI" URL="../Units_RadiansToRotations.vi"/>
 			<Item Name="Units_RotationsPerMinuteToRadiansPerSecond.vi" Type="VI" URL="../Units_RotationsPerMinuteToRadiansPerSecond.vi"/>
+			<Item Name="Units_RotationsToDegrees.vi" Type="VI" URL="../Units_RotationsToDegrees.vi"/>
+			<Item Name="Units_RotationsToRadians.vi" Type="VI" URL="../Units_RotationsToRadians.vi"/>
 			<Item Name="Units_SecondsToMilliseconds.vi" Type="VI" URL="../Units_SecondsToMilliseconds.vi"/>
 		</Item>
 		<Item Name="Utility" Type="Folder">
