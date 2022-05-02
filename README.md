@@ -45,6 +45,7 @@ The library includes a large collection of subVIs that can be used in robot prog
 
 Here is a short list of the types of functions included in the library
 
+|                                                            |                                                            |
 |------------------------------------------------------------|------------------------------------------------------------|
 |**Control Functions / Math Functions**                      |**Model (State Space)**                                     |
 |-- angle modulus                                            |-- dc motor                                                 |
