@@ -17,6 +17,7 @@
 		<Item Name="FRC_LV_CtrlLib_DC_Motor.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DC_Motor.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DC_Motor_SIM.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DC_Motor_SIM.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Debouncer.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Debouncer.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_DiffDriveAccelLimiter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveAccelLimiter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DiffDriveTrainPoseEst.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveTrainPoseEst.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DiffDriveTrainSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveTrainSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Discretization.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Discretization.mnu"/>
