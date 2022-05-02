@@ -115,6 +115,15 @@ Each VI includes help that can be accessed using the standard LabVIEW help toggl
 
 ![sample help!](images/SampleViHelp.png)
 
+### LabVIEW Style Functions (Execute)
+
+While the VIs in the library are architected to match the original WPILIB implementation, additional "execute" functions are provided
+that encapsulate what otherwise would be series of VIs to create, set values, calculate, get results into a single VI for that function.
+Menu macros that paste VI snippets ease adding these functions to the program.  Here is a sample for the Advanced PID.
+
+![advanced PID execute!](images/Advanced_PID_Execute.png)
+
+
 ---
 ## Trajectory Creation
 
