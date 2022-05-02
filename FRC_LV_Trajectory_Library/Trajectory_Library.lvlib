@@ -25,6 +25,7 @@
 		<Item Name="FRC_LV_CtrlLib_ExtendedKalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ExtendedKalmanFilter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Filter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Filter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_FlyWheelSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_FlyWheelSim.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_FunctionGenerator.mnu" Type="Document" URL="../FRC_LV_CtrlLib_FunctionGenerator.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_GeneralAnalogControl.mnu" Type="Document" URL="../FRC_LV_CtrlLib_GeneralAnalogControl.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_GeneralDigitalControls.mnu" Type="Document" URL="../FRC_LV_CtrlLib_GeneralDigitalControls.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_GeneralTrajectory.mnu" Type="Document" URL="../FRC_LV_CtrlLib_GeneralTrajectory.mnu"/>
@@ -247,6 +248,7 @@
 			<Item Name="macro_ElevatorFF_Calculate.vi" Type="VI" URL="../Macros/macro_ElevatorFF_Calculate.vi"/>
 			<Item Name="macro_FiniteStateMachine_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_Template.vi"/>
 			<Item Name="macro_FiniteStateMachine_w_Timer_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_w_Timer_Template.vi"/>
+			<Item Name="macro_Function_Generator.vi" Type="VI" URL="../Macros/macro_Function_Generator.vi"/>
 			<Item Name="macro_HolDrvController_Execute.vi" Type="VI" URL="../Macros/macro_HolDrvController_Execute.vi"/>
 			<Item Name="macro_HolDrvController_ExecuteSP.vi" Type="VI" URL="../Macros/macro_HolDrvController_ExecuteSP.vi"/>
 			<Item Name="macro_HolDrvCtrl_New.vi" Type="VI" URL="../Macros/macro_HolDrvCtrl_New.vi"/>
@@ -285,6 +287,14 @@
 			<Item Name="macro_vecBuilder_ArrayBy1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder_ArrayBy1FIll.vi"/>
 		</Item>
 		<Item Name="Base" Type="Folder">
+			<Item Name="Function Generator" Type="Folder">
+				<Item Name="FunctionGenerator_Add_Value.vi" Type="VI" URL="../FunctionGenerator_Add_Value.vi"/>
+				<Item Name="FunctionGenerator_Add_XY.vi" Type="VI" URL="../FunctionGenerator_Add_XY.vi"/>
+				<Item Name="FunctionGenerator_Calculate.vi" Type="VI" URL="../FunctionGenerator_Calculate.vi"/>
+				<Item Name="FunctionGenerator_Clear.vi" Type="VI" URL="../FunctionGenerator_Clear.vi"/>
+				<Item Name="FunctionGenerator_Execute.vi" Type="VI" URL="../FunctionGenerator_Execute.vi"/>
+				<Item Name="FunctionGenerator_New.vi" Type="VI" URL="../FunctionGenerator_New.vi"/>
+			</Item>
 			<Item Name="LinearFilter" Type="Folder">
 				<Item Name="LinearFilter_BackwardFiniteDifference.vi" Type="VI" URL="../LinearFilter_BackwardFiniteDifference.vi"/>
 				<Item Name="LinearFilter_Calculate.vi" Type="VI" URL="../LinearFilter_Calculate.vi"/>
@@ -806,18 +816,6 @@
 		</Item>
 		<Item Name="NEW_THINGS_USE_WITH_CAUTION" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
-			<Item Name="Differential Drive Acceleration Limiter" Type="Folder">
-				<Item Name="DiffDrvAccelLimit_Calculate.vi" Type="VI" URL="../DiffDrvAccelLimit_Calculate.vi"/>
-				<Item Name="DiffDrvAccelLimit_New.vi" Type="VI" URL="../DiffDrvAccelLimit_New.vi"/>
-			</Item>
-			<Item Name="Function Generator" Type="Folder">
-				<Item Name="FunctionGenerator_Add_Value.vi" Type="VI" URL="../FunctionGenerator_Add_Value.vi"/>
-				<Item Name="FunctionGenerator_Add_XY.vi" Type="VI" URL="../FunctionGenerator_Add_XY.vi"/>
-				<Item Name="FunctionGenerator_Calculate.vi" Type="VI" URL="../FunctionGenerator_Calculate.vi"/>
-				<Item Name="FunctionGenerator_Clear.vi" Type="VI" URL="../FunctionGenerator_Clear.vi"/>
-				<Item Name="FunctionGenerator_Execute.vi" Type="VI" URL="../FunctionGenerator_Execute.vi"/>
-				<Item Name="FunctionGenerator_New.vi" Type="VI" URL="../FunctionGenerator_New.vi"/>
-			</Item>
 			<Item Name="Implicit Model Follower" Type="Folder"/>
 			<Item Name="Interpolated Tree Map" Type="Folder"/>
 			<Item Name="State Space Control" Type="Folder">
@@ -1005,6 +1003,10 @@
 			</Item>
 		</Item>
 		<Item Name="State Space Control" Type="Folder">
+			<Item Name="Differential Drive Acceleration Limiter" Type="Folder">
+				<Item Name="DiffDrvAccelLimit_Calculate.vi" Type="VI" URL="../DiffDrvAccelLimit_Calculate.vi"/>
+				<Item Name="DiffDrvAccelLimit_New.vi" Type="VI" URL="../DiffDrvAccelLimit_New.vi"/>
+			</Item>
 			<Item Name="LinearPlantInversionFeedforward" Type="Folder">
 				<Item Name="LinearPlntInvFF_Calculate.vi" Type="VI" URL="../LinearPlntInvFF_Calculate.vi"/>
 				<Item Name="LinearPlntInvFF_Calculate_NextR.vi" Type="VI" URL="../LinearPlntInvFF_Calculate_NextR.vi"/>
