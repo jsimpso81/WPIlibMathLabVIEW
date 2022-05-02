@@ -78,24 +78,24 @@ Here is a short list of the types of functions included in the library
 |-- profiled pid                                             |-- generate                                                 |
 |-- ramsete                                                  |-- sample (forward and reverse)                             |
 |-- simple motor feedforward                                 |                                                            |
-|                                                            |**Pathfinder Utilities**                                    |
-|**Controllers (State Space)**                               |-- convert to trajectory                                    |
-|-- implicit model follower                                  |                                                            |
-|-- linear plant inversion feedforward                       |**Computer Vision Utilities**                               |
-|-- linear quadratic regulator                               |                                                            |
-|-- linear system                                            |**Units Conversion**                                        |
-|-- linear system loop                                       |                                                            |
-|                                                            |**Math Utilities**                                          |
-|**Timer**                                                   |-- angle statistics                                         |
-|-- timer functions                                          |-- merwe scaled sigma points                                |
-|                                                            |-- numerical integration                                    |
-|**Digital Logic**                                           |-- numerical jacobian                                       |
-|-- debounce                                                 |-- ricatti equation                                         |
-|-- off delay                                                |                                                            |
-|-- on delay                                                 |**Matrix Utilities**                                        |
-|-- one shot                                                 |                                                            |
-|-- set reset flip flop                                      |**State Space Utilities**                                   |
-|                                                            |                                                            |
+|-- trapezoid profile                                        |**Pathfinder Utilities**                                    |
+|                                                            |-- convert to trajectory                                    |
+|**Controllers (State Space)**                               |                                                            |
+|-- implicit model follower                                  |**Computer Vision Utilities**                               |
+|-- linear plant inversion feedforward                       |                                                            |
+|-- linear quadratic regulator                               |**Units Conversion**                                        |
+|-- linear system                                            |                                                            |
+|-- linear system loop                                       |**Math Utilities**                                          |
+|                                                            |-- angle statistics                                         |
+|**Timer**                                                   |-- merwe scaled sigma points                                |
+|-- timer functions                                          |-- numerical integration                                    |
+|                                                            |-- numerical jacobian                                       |
+|**Digital Logic**                                           |-- ricatti equation                                         |
+|-- debounce                                                 |                                                            |
+|-- off delay                                                |**Matrix Utilities**                                        |
+|-- on delay                                                 |                                                            |
+|-- one shot                                                 |**State Space Utilities**                                   |
+|-- set reset flip flop                                      |                                                            |
 |                                                            |**Utilities**                                               |
 |                                                            |-- read fpga TIME(with rollover protection)                 |
 |                                                            |-- library use and version information                      |
