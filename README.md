@@ -1,8 +1,8 @@
-# FRC_LV_TrajLib - FRC Control and Trajectory Library
+# FRC Control and Trajectory Library
 
 This library is an UNOFFICIAL port of the Java/C++ WPILIB routines that don't already exist in LabVIEW.  The library is used for the First FRC robotics competition.
 
-Originally this library was only a port of the Trajectory creation and execution routines.  However, over time, many other of the routines were ported into this library.  As of version 2.x it also contains a majority of the State Space control and simulation routines found in the C++/Java WPILIB.
+Originally this library was only a port of the Trajectory creation and execution routines.  However, over time, most of the other "math" routines have also been ported.  As of version 2.x it also contains a majority of the State Space control and simulation routines found in the C++/Java WPILIB.
 
 A number of trajectory creation and transformation utility
 programs are installed along with the library.  These programs may be of use to FRC teams that use languages other than LabVIEW.
