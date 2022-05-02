@@ -810,7 +810,10 @@
 				<Item Name="DiffDrvAccelLimit_New.vi" Type="VI" URL="../DiffDrvAccelLimit_New.vi"/>
 			</Item>
 			<Item Name="Function Generator" Type="Folder">
+				<Item Name="FunctionGenerator_Add_Value.vi" Type="VI" URL="../FunctionGenerator_Add_Value.vi"/>
+				<Item Name="FunctionGenerator_Add_XY.vi" Type="VI" URL="../FunctionGenerator_Add_XY.vi"/>
 				<Item Name="FunctionGenerator_Calculate.vi" Type="VI" URL="../FunctionGenerator_Calculate.vi"/>
+				<Item Name="FunctionGenerator_Clear.vi" Type="VI" URL="../FunctionGenerator_Clear.vi"/>
 				<Item Name="FunctionGenerator_Execute.vi" Type="VI" URL="../FunctionGenerator_Execute.vi"/>
 				<Item Name="FunctionGenerator_New.vi" Type="VI" URL="../FunctionGenerator_New.vi"/>
 			</Item>
