@@ -45,91 +45,53 @@ The library includes a large collection of subVIs that can be used in robot prog
 
 Here is a short list of the types of functions included in the library
 
-- Control Functions / Math Functions
-  - Angle Modulus
-  - Apply Deadband
-  - Clamp
-  - Get Modulus Error
-  - Function Generator
-  - Input Modulus
-  - Interpolate
-  - *Slew* Rate Limiter
-- Filters (Classical)
-  - Linear Filter (including 1st, 2nd order low/high pass butterworth)
-  - Median Filter
-  - Moving Average Filter
-- Filters / Estimators (State Space)
-  - Differential Drive Pose Estimator (Similar to Odometry)
-  - Kalman Filter
-  - Kalman Filter Latency Compensator
-  - Swerve Drive Pose Estimator
-  - Unscented Kalman Filter
-- Controllers (Classical)
-  - Arm Feedforward
-  - Bang Bang
-  - Elevator Feedforward
-  - Holonomic Drive
-  - PID / Advanced PID
-  - Profiled PID
-  - Ramsete
-  - Simple Motor Feedforward
-- Controllers (State Space)
-  - Implicit Model Follower
-  - Linear Plant Inversion Feedforward
-  - Linear Quadratic Regulator
-  - Linear System
-  - Linear System Loop
-- Timer
-  - Timer functions
-- Digital Logic
-  - Debounce
-  - Off Delay
-  - On Delay
-  - One Shot
-  - Set Reset Flip Flop
-- Model (State Space)
-  - DC Motor
-  - Linear System ID
-- Simulation (Physical system, not actuator and sensor)
-  - Battery Simulation
-  - Differential Drive Train Simulation
-  - Elevator Simulation
-  - Flywheel Simulation
-  - Linear System Simulation
-  - Single Joint Arm Simulation
-- Geometry
-  - Pose
-  - Rotation
-  - Transform
-  - Translation
-  - Twist
-- Kinematics / Odometry 
-  - Chassis Speeds
-  - Differential drive (tank/arcade)
-  - Mecanum drive
-  - Swerve drive
-- Spline / Trajectory
-  - Cubic, Quintic Splines
-  - Configure, with constraints
-  - Generate
-  - Sample (forward and reverse)
-- Pathfinder Utilities
-  - Convert to trajectory
-- Computer Vision Utilities
-- Units Conversion
-- Math Utilities
-  - Angle Statistics
-  - Merwe Scaled Sigma Points
-  - Numerical Integration
-  - Numerical Jacobian
-  - Ricatti Equation
-- Matrix Utilities
-- State Space Utilities
-- Utilities
-  - Read FPGA time (with rollover protection)
-  - Library use and version information
-  - Read trajectory CSV file
-  - Write and document trajectory CSV file 
+|                                                              |                                                              |
+|--------------------------------------------------------------|--------------------------------------------------------------|
+|- Control Functions / Math Functions                          |- Model (State Space)                                         |
+|  - Angle Modulus                                             |  - DC Motor                                                  |
+|  - Apply Deadband                                            |  - Linear System ID                                          |
+|  - Clamp                                                     |- Simulation (Physical system, not actuator and sensor)       |
+|  - Get Modulus Error                                         |  - Battery Simulation                                        |
+|  - Function Generator                                        |  - Differential Drive Train Simulation                       |
+|  - Input Modulus                                             |  - Elevator Simulation                                       |
+|  - Interpolate                                               |  - Flywheel Simulation                                       |
+|  - *Slew* Rate Limiter                                       |  - Linear System Simulation                                  |
+|- Filters (Classical)                                         |  - Single Joint Arm Simulation                               |
+|  - Linear Filter (including 1st, 2nd order low/high pass)    |- Geometry                                                    |
+|  - Median Filter                                             |  - Pose                                                      |
+|  - Moving Average Filter                                     |  - Rotation                                                  |
+|- Filters / Estimators (State Space)                          |  - Transform                                                 |
+|  - Differential Drive Pose Estimator (Similar to Odometry)   |  - Translation                                               |
+|  - Kalman Filter                                             |  - Twist                                                     |
+|  - Kalman Filter Latency Compensator                         |- Kinematics / Odometry                                       |
+|  - Swerve Drive Pose Estimator                               |  - Chassis Speeds                                            |
+|  - Unscented Kalman Filter                                   |  - Differential drive (tank/arcade)                          |
+|- Controllers (Classical)                                     |  - Mecanum drive                                             |
+|  - Arm Feedforward                                           |  - Swerve drive                                              |
+|  - Bang Bang                                                 |- Spline / Trajectory                                         |
+|  - Elevator Feedforward                                      |  - Cubic, Quintic Splines                                    |
+|  - Holonomic Drive                                           |  - Configure, with constraints                               |
+|  - PID / Advanced PID                                        |  - Generate                                                  |
+|  - Profiled PID                                              |  - Sample (forward and reverse)                              |
+|  - Ramsete                                                   |- Pathfinder Utilities                                        |
+|  - Simple Motor Feedforward                                  |  - Convert to trajectory                                     |
+|- Controllers (State Space)                                   |- Computer Vision Utilities                                   |
+|  - Implicit Model Follower                                   |- Units Conversion                                            |
+|  - Linear Plant Inversion Feedforward                        |- Math Utilities                                              |
+|  - Linear Quadratic Regulator                                |  - Angle Statistics                                          |
+|  - Linear System                                             |  - Merwe Scaled Sigma Points                                 |
+|  - Linear System Loop                                        |  - Numerical Integration                                     |
+|- Timer                                                       |  - Numerical Jacobian                                        |
+|  - Timer functions                                           |  - Ricatti Equation                                          |
+|- Digital Logic                                               |- Matrix Utilities                                            |
+|  - Debounce                                                  |- State Space Utilities                                       |
+|  - Off Delay                                                 |- Utilities                                                   |
+|  - On Delay                                                  |  - Read FPGA time (with rollover protection)                 |
+|  - One Shot                                                  |  - Library use and version information                       |
+|  - Set Reset Flip Flop                                       |  - Read trajectory CSV file                                  |
+|                                                              |  - Write and document trajectory CSV file                    |
+|--------------------------------------------------------------|--------------------------------------------------------------|
+
 
 ### Menus
  
