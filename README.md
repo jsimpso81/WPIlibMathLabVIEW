@@ -51,7 +51,7 @@ Here is a short list of the types of functions included in the library
 |-- angle modulus                                            |-- dc motor                                                 |
 |-- apply deadband                                           |-- linear system id                                         |
 |-- clamp                                                    |                                                            |
-|-- get modulus error                                        |**Simulation (Physical system, not actuator and sensor)**   |
+|-- get modulus error                                        |**Simulation (Physical system, not actuator/sensor)**       |
 |-- function generator                                       |-- battery simulation                                       |
 |-- input modulus                                            |-- differential drive train simulation                      |
 |-- interpolate                                              |-- elevator simulation                                      |
@@ -96,12 +96,11 @@ Here is a short list of the types of functions included in the library
 |-- one shot                                                 |                                                            |
 |-- set reset flip flop                                      |**State Space Utilities**                                   |
 |                                                            |                                                            |
-|                                                            |*Utilities*                                                 |
+|                                                            |**Utilities**                                               |
 |                                                            |-- read fpga TIME(with rollover protection)                 |
 |                                                            |-- library use and version information                      |
 |                                                            |-- read trajectory csv file                                 |
 |                                                            |-- write and document trajectory csv file                   |
-|------------------------------------------------------------|------------------------------------------------------------|
 
 ### Menus
  
