@@ -39,95 +39,118 @@ To uninstall, open NI Package Manager.  Select the *Installed* tab.  Find and hi
 ---
 ## Library Summary
 
-The library includes a large collection of subVIs that can be used in robot programs. 
-Menu items for all the subVI's are included as part of the standard LabVIEW WPI Robotics Library menu
+The library includes a large collection of subVIs that can be used in robot programs.
 
-![sample VI menu!](images/SampleLabViewMenu.png)
-
-Each VI includes help that can be accessed using the standard LabVIEW help toggle (Ctrl H).
-
-![sample help!](images/SampleViHelp.png)
-
-Robot trajectories can be created a number of different ways.  The following chart shows some (maybe most) of the different ways of creating a trajectory for robot execution.
-
-![sample traj!](images/TrajFlowChart.png)
+### Function Summary
 
 Here is a short list of the types of functions included in the library
 
-- Filters
-  - Linear Filter
+- Control Functions / Math Functions
+  - Angle Modulus
+  - Apply Deadband
+  - Clamp
+  - Get Modulus Error
+  - Function Generator
+  - Input Modulus
+  - Interpolate
+  - *Slew* Rate Limiter
+- Filters (Classical)
+  - Linear Filter (including 1st, 2nd order low/high pass butterworth)
   - Median Filter
-- *Slew* Rate Limiter
-- Timer
-- Controllers
-  - PID
-  - Advanced PID
+  - Moving Average Filter
+- Filters / Estimators (State Space)
+  - Differential Drive Pose Estimator (Similar to Odometry)
+  - Kalman Filter
+  - Kalman Filter Latency Compensator
+  - Swerve Drive Pose Estimator
+  - Unscented Kalman Filter
+- Controllers (Classical)
+  - Arm Feedforward
+  - Bang Bang
+  - Elevator Feedforward
+  - Holonomic Drive
+  - PID / Advanced PID
   - Profiled PID
   - Ramsete
-  - Holonomic Drive
   - Simple Motor Feedforward
-  - Arm Feedforward
-  - Elevator Feedforward
+- Controllers (State Space)
+  - Implicit Model Follower
+  - Linear Plant Inversion Feedforward
+  - Linear Quadratic Regulator
+  - Linear System
+  - Linear System Loop
+- Timer
+  - Timer functions
+- Digital Logic
+  - Debounce
+  - Off Delay
+  - On Delay
+  - One Shot
+  - Set Reset Flip Flop
+- Model (State Space)
+  - DC Motor
+  - Linear System ID
+- Simulation (Physical system, not actuator and sensor)
+  - Battery Simulation
+  - Differential Drive Train Simulation
+  - Elevator Simulation
+  - Flywheel Simulation
+  - Linear System Simulation
+  - Single Joint Arm Simulation
 - Geometry
   - Pose
   - Rotation
   - Transform
   - Translation
   - Twist
-- Kinematics 
+- Kinematics / Odometry 
+  - Chassis Speeds
   - Differential drive (tank/arcade)
   - Mecanum drive
   - Swerve drive
-- Odometry 
-  - Differential drive (tank/arcade)
-  - Mecanum drive
-  - Swerve drive
-- Spline (Used by trajectory creation routines) 
-  - Cubic
-  - Quintic
-- Trajectory
+- Spline / Trajectory
+  - Cubic, Quintic Splines
   - Configure, with constraints
   - Generate
   - Sample (forward and reverse)
 - Pathfinder Utilities
   - Convert to trajectory
-- Utilities
-  - Read FPGA time (with rollover protection)
-  - Library use and version information
-  - Read trajectory CSV file
-  - Write and document trajectory CSV file 
+- Computer Vision Utilities
 - Units Conversion
-
-Version 2 also includes (NOTE - THESE ARE STILL A WORK IN PROGRESS):
 - Math Utilities
   - Angle Statistics
-  - Math Util
   - Merwe Scaled Sigma Points
   - Numerical Integration
   - Numerical Jacobian
   - Ricatti Equation
 - Matrix Utilities
-- Simulation (Physical system, not actuator and sensor)
-  - Battery Simulation
-  - Differential Drive Train Sim
-  - Elevator Sim
-  - Flywheel Sim
-  - Linear System Sim
-  - Single Joint Arm Sim
-- State Space Control
-  - Linear Plant Inversion Feedforward
-  - Linear Quadratic Regulator
-  - Linear System
-  - Linear System Loop
-- State Space Esimation
-  - Differential Drive Pose Estimator (Similar to Odometry)
-  - Extended Kalman Filter
-  - Kalman Filter
-  - Unscented Kalman Filter
-- State Space Model
-  - DC Motor
-  - Linear System ID
 - State Space Utilities
+- Utilities
+  - Read FPGA time (with rollover protection)
+  - Library use and version information
+  - Read trajectory CSV file
+  - Write and document trajectory CSV file 
+
+### Menus
+ 
+Menu items for all the subVI's are included as part of the standard LabVIEW WPI Robotics Library menu
+
+![sample VI menu!](images/SampleLabViewMenu.png)
+
+
+### Help
+
+Each VI includes help that can be accessed using the standard LabVIEW help toggle (Ctrl H).
+
+![sample help!](images/SampleViHelp.png)
+
+---
+## Trajectory Creation
+
+Robot trajectories can be created a number of different ways.  The following chart shows some (maybe most) of the different ways of creating a trajectory for robot execution.
+
+![sample traj!](images/TrajFlowChart.png)
+
 
 ---
 ## Utility Program Summary
@@ -215,4 +238,4 @@ should be written solely by FRC student members, with confirmation from a mentor
 See ![Contributing.md!](Contributing.md) for additional details.
 
 ---
-File last updated: 1/26/2021
+File last updated: 5/02/2022
