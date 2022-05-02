@@ -29,6 +29,7 @@
 		<Item Name="FRC_LV_CtrlLib_GeneralAnalogControl.mnu" Type="Document" URL="../FRC_LV_CtrlLib_GeneralAnalogControl.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_GeneralDigitalControls.mnu" Type="Document" URL="../FRC_LV_CtrlLib_GeneralDigitalControls.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_GeneralTrajectory.mnu" Type="Document" URL="../FRC_LV_CtrlLib_GeneralTrajectory.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_ImplicitModelFollower.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ImplicitModelFollower.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_KalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_KalmanFilter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_KalmanLatencyFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_KalmanLatencyFilter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_LinearSystem.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinearSystem.mnu"/>
@@ -157,6 +158,7 @@
 		<Item Name="FLYWHEEL_SIM.ctl" Type="VI" URL="../FLYWHEEL_SIM.ctl"/>
 		<Item Name="FUNCTION_GENERATOR.ctl" Type="VI" URL="../FUNCTION_GENERATOR.ctl"/>
 		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../HOLONOMIC_DRV_CTRL.ctl"/>
+		<Item Name="IMPLICIT_MODEL_FOLLOWER.ctl" Type="VI" URL="../IMPLICIT_MODEL_FOLLOWER.ctl"/>
 		<Item Name="KALMAN_FILTER.ctl" Type="VI" URL="../KALMAN_FILTER.ctl"/>
 		<Item Name="KALMAN_FILTER_LATENCY_COMP.ctl" Type="VI" URL="../KALMAN_FILTER_LATENCY_COMP.ctl"/>
 		<Item Name="KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP.ctl" Type="VI" URL="../KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP.ctl"/>
@@ -816,7 +818,14 @@
 		</Item>
 		<Item Name="NEW_THINGS_USE_WITH_CAUTION" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
-			<Item Name="Implicit Model Follower" Type="Folder"/>
+			<Item Name="Implicit Model Follower" Type="Folder">
+				<Item Name="ImplModelFollow_Calculate.vi" Type="VI" URL="../ImplModelFollow_Calculate.vi"/>
+				<Item Name="ImplModelFollow_GetU.vi" Type="VI" URL="../ImplModelFollow_GetU.vi"/>
+				<Item Name="ImplModelFollow_GetU_Single.vi" Type="VI" URL="../ImplModelFollow_GetU_Single.vi"/>
+				<Item Name="ImplModelFollow_New.vi" Type="VI" URL="../ImplModelFollow_New.vi"/>
+				<Item Name="ImplModelFollow_New_Plant.vi" Type="VI" URL="../ImplModelFollow_New_Plant.vi"/>
+				<Item Name="ImplModelFollow_Reset.vi" Type="VI" URL="../ImplModelFollow_Reset.vi"/>
+			</Item>
 			<Item Name="Interpolated Tree Map" Type="Folder"/>
 			<Item Name="State Space Control" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
