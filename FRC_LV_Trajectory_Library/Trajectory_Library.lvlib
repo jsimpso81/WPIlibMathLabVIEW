@@ -56,6 +56,8 @@
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtil.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtil.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_SwervePoseEst.mnu" Type="Document" URL="../FRC_LV_CtrlLib_SwervePoseEst.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_TimeInterp_Pose.mnu" Type="Document" URL="../FRC_LV_CtrlLib_TimeInterp_Pose.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_TimeInterpolatable.mnu" Type="Document" URL="../FRC_LV_CtrlLib_TimeInterpolatable.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Timing.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Timing.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_UnitsConv.mnu" Type="Document" URL="../FRC_LV_CtrlLib_UnitsConv.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_UnscentedKalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_UnscentedKalmanFilter.mnu"/>
