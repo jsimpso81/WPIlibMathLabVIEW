@@ -405,7 +405,6 @@
 				<Item Name="HolDrvCtrl_SetEnabled.vi" Type="VI" URL="../HolDrvCtrl_SetEnabled.vi"/>
 				<Item Name="HolDrvCtrl_SetTolerance.vi" Type="VI" URL="../HolDrvCtrl_SetTolerance.vi"/>
 			</Item>
-			<Item Name="ImplicitModelFollower" Type="Folder"/>
 			<Item Name="PIDController" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="PIDController_AdvCalculate_FF_Sp_Pv.vi" Type="VI" URL="../PIDController_AdvCalculate_FF_Sp_Pv.vi"/>
