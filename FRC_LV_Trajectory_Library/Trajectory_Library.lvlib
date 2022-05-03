@@ -198,6 +198,7 @@
 		<Item Name="SWERVE_DRIVE_MODULE_STATE.ctl" Type="VI" URL="../SWERVE_DRIVE_MODULE_STATE.ctl"/>
 		<Item Name="SWERVE_DRIVE_ODOMETRY.ctl" Type="VI" URL="../SWERVE_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="SWERVE_DRIVE_POSE_EST.ctl" Type="VI" URL="../SWERVE_DRIVE_POSE_EST.ctl"/>
+		<Item Name="TIME_INTERPOLATABLE_POSE.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_POSE.ctl"/>
 		<Item Name="TIMER.ctl" Type="VI" URL="../TIMER.ctl"/>
 		<Item Name="TRAJ_CONFIG.ctl" Type="VI" URL="../TRAJ_CONFIG.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl"/>
@@ -1174,6 +1175,15 @@
 				<Item Name="StateSpaceUtil_PoseTo3dVector.vi" Type="VI" URL="../StateSpaceUtil_PoseTo3dVector.vi"/>
 				<Item Name="StateSpaceUtil_PoseTo4dVector.vi" Type="VI" URL="../StateSpaceUtil_PoseTo4dVector.vi"/>
 				<Item Name="StateSpaceUtil_PoseToVector.vi" Type="VI" URL="../StateSpaceUtil_PoseToVector.vi"/>
+			</Item>
+		</Item>
+		<Item Name="TimeInterpolatableBuffer" Type="Folder">
+			<Item Name="TimeInterpolatablePose" Type="Folder">
+				<Item Name="TimeInterpPose_AddSample.vi" Type="VI" URL="../TimeInterpPose_AddSample.vi"/>
+				<Item Name="TimeInterpPose_CleanUp.vi" Type="VI" URL="../TimeInterpPose_CleanUp.vi"/>
+				<Item Name="TimeInterpPose_Clear.vi" Type="VI" URL="../TimeInterpPose_Clear.vi"/>
+				<Item Name="TimeInterpPose_GetSample.vi" Type="VI" URL="../TimeInterpPose_GetSample.vi"/>
+				<Item Name="TimeInterpPose_New.vi" Type="VI" URL="../TimeInterpPose_New.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Trajectory" Type="Folder">
