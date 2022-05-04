@@ -132,6 +132,7 @@
 		<Item Name="FRC_LabVIEW_Trajectory_Library_Routines.xlsx" Type="Document" URL="../FRC_LabVIEW_Trajectory_Library_Routines.xlsx"/>
 	</Item>
 	<Item Name="TypDef" Type="Folder">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Item Name="ARM_FF.ctl" Type="VI" URL="../ARM_FF.ctl"/>
 		<Item Name="BANG_BANG.ctl" Type="VI" URL="../BANG_BANG.ctl"/>
 		<Item Name="BiCon_Matrix_FUNC_TYPE.ctl" Type="VI" URL="../BiCon_Matrix_FUNC_TYPE.ctl"/>
@@ -150,10 +151,10 @@
 		<Item Name="DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_TRAIN_SIM.ctl" Type="VI" URL="../DIFF_DRIVE_TRAIN_SIM.ctl"/>
-		<Item Name="DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl"/>
 		<Item Name="DISPLAY_WAYPOINT.ctl" Type="VI" URL="../DISPLAY_WAYPOINT.ctl"/>
 		<Item Name="DISPLAY_WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../DISPLAY_WEIGHTED_WAYPOINT.ctl"/>
 		<Item Name="ELEV_FF.ctl" Type="VI" URL="../ELEV_FF.ctl"/>
+		<Item Name="DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl"/>
 		<Item Name="ELEVATOR_SIM.ctl" Type="VI" URL="../ELEVATOR_SIM.ctl"/>
 		<Item Name="EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl" Type="VI" URL="../EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl"/>
 		<Item Name="EXTENDED_KALMAN_FILTER.ctl" Type="VI" URL="../EXTENDED_KALMAN_FILTER.ctl"/>
@@ -170,6 +171,9 @@
 		<Item Name="LINEAR_SYSTEM.ctl" Type="VI" URL="../LINEAR_SYSTEM.ctl"/>
 		<Item Name="LINEAR_SYSTEM_LOOP.ctl" Type="VI" URL="../LINEAR_SYSTEM_LOOP.ctl"/>
 		<Item Name="LINEAR_SYSTEM_SIM.ctl" Type="VI" URL="../LINEAR_SYSTEM_SIM.ctl"/>
+		<Item Name="LTV_UNICYCLE_CONTROLLER.ctl" Type="VI" URL="../LTV_UNICYCLE_CONTROLLER.ctl"/>
+		<Item Name="LTV_UNICYCLE_CONTROLLER_INPUT_ENUM.ctl" Type="VI" URL="../LTV_UNICYCLE_CONTROLLER_INPUT_ENUM.ctl"/>
+		<Item Name="LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl" Type="VI" URL="../LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl"/>
 		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../MECA_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="MECA_WHEEL_SPEEDS.ctl" Type="VI" URL="../MECA_WHEEL_SPEEDS.ctl"/>
@@ -826,6 +830,14 @@
 			<Item Name="State Space Control" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="ControlAffinePlantInversionFeedforward" Type="Folder"/>
+				<Item Name="LTV Unicycle Controller" Type="Folder">
+					<Item Name="LTVUnicycleCtrl_AtReference.vi" Type="VI" URL="../LTVUnicycleCtrl_AtReference.vi"/>
+					<Item Name="LTVUnicycleCtrl_Calculate.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate.vi"/>
+					<Item Name="LTVUnicycleCtrl_Calculate_TrajState.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate_TrajState.vi"/>
+					<Item Name="LTVUnicycleCtrl_New.vi" Type="VI" URL="../LTVUnicycleCtrl_New.vi"/>
+					<Item Name="LTVUnicycleCtrl_SetEnabled.vi" Type="VI" URL="../LTVUnicycleCtrl_SetEnabled.vi"/>
+					<Item Name="LTVUnicycleCtrl_SetTolerance.vi" Type="VI" URL="../LTVUnicycleCtrl_SetTolerance.vi"/>
+				</Item>
 			</Item>
 			<Item Name="State Space Estimator" Type="Folder">
 				<Item Name="ExtendedKalmanFilter" Type="Folder">
