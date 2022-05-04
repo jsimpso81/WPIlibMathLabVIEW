@@ -130,6 +130,7 @@
 		<Item Name="FRC_LabVIEW_Trajectory_Control_Library_CustomErrors.xlsx" Type="Document" URL="../FRC_LabVIEW_Trajectory_Control_Library_CustomErrors.xlsx"/>
 		<Item Name="FRC_LabVIEW_Trajectory_Library_Routines.pdf" Type="Document" URL="../FRC_LabVIEW_Trajectory_Library_Routines.pdf"/>
 		<Item Name="FRC_LabVIEW_Trajectory_Library_Routines.xlsx" Type="Document" URL="../FRC_LabVIEW_Trajectory_Library_Routines.xlsx"/>
+		<Item Name="WAYPOINTS_README.txt" Type="Document" URL="../WAYPOINTS_README.txt"/>
 	</Item>
 	<Item Name="TypDef" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>
@@ -230,7 +231,6 @@
 		<Item Name="UNSCENTED_KALMAN_FILTER.ctl" Type="VI" URL="../UNSCENTED_KALMAN_FILTER.ctl"/>
 		<Item Name="UNSCENTED_KALMAN_NEW_FUNC_GROUP.ctl" Type="VI" URL="../UNSCENTED_KALMAN_NEW_FUNC_GROUP.ctl"/>
 		<Item Name="UTIL_PATHFINDER_CONFIG.ctl" Type="VI" URL="../UTIL_PATHFINDER_CONFIG.ctl"/>
-		<Item Name="WAYPOINTS_README.txt" Type="Document" URL="../WAYPOINTS_README.txt"/>
 		<Item Name="WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../WEIGHTED_WAYPOINT.ctl"/>
 		<Item Name="X_Y_PAIR.ctl" Type="VI" URL="../X_Y_PAIR.ctl"/>
 	</Item>
