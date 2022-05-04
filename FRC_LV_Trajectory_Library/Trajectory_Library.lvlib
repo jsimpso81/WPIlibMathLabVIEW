@@ -200,7 +200,10 @@
 		<Item Name="SWERVE_DRIVE_MODULE_STATE.ctl" Type="VI" URL="../SWERVE_DRIVE_MODULE_STATE.ctl"/>
 		<Item Name="SWERVE_DRIVE_ODOMETRY.ctl" Type="VI" URL="../SWERVE_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="SWERVE_DRIVE_POSE_EST.ctl" Type="VI" URL="../SWERVE_DRIVE_POSE_EST.ctl"/>
+		<Item Name="TIME_INTERPOLATABLE_BOOLEAN.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_BOOLEAN.ctl"/>
+		<Item Name="TIME_INTERPOLATABLE_DOUBLE.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_DOUBLE.ctl"/>
 		<Item Name="TIME_INTERPOLATABLE_POSE.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_POSE.ctl"/>
+		<Item Name="TIME_INTERPOLATABLE_ROTATION.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_ROTATION.ctl"/>
 		<Item Name="TIMER.ctl" Type="VI" URL="../TIMER.ctl"/>
 		<Item Name="TRAJ_CONFIG.ctl" Type="VI" URL="../TRAJ_CONFIG.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl"/>
@@ -820,15 +823,6 @@
 		</Item>
 		<Item Name="NEW_THINGS_USE_WITH_CAUTION" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
-			<Item Name="Implicit Model Follower" Type="Folder">
-				<Item Name="ImplModelFollow_Calculate.vi" Type="VI" URL="../ImplModelFollow_Calculate.vi"/>
-				<Item Name="ImplModelFollow_GetU.vi" Type="VI" URL="../ImplModelFollow_GetU.vi"/>
-				<Item Name="ImplModelFollow_GetU_Single.vi" Type="VI" URL="../ImplModelFollow_GetU_Single.vi"/>
-				<Item Name="ImplModelFollow_New.vi" Type="VI" URL="../ImplModelFollow_New.vi"/>
-				<Item Name="ImplModelFollow_New_Plant.vi" Type="VI" URL="../ImplModelFollow_New_Plant.vi"/>
-				<Item Name="ImplModelFollow_Reset.vi" Type="VI" URL="../ImplModelFollow_Reset.vi"/>
-			</Item>
-			<Item Name="Interpolated Tree Map" Type="Folder"/>
 			<Item Name="State Space Control" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="ControlAffinePlantInversionFeedforward" Type="Folder"/>
@@ -1018,6 +1012,14 @@
 				<Item Name="DiffDrvAccelLimit_Calculate.vi" Type="VI" URL="../DiffDrvAccelLimit_Calculate.vi"/>
 				<Item Name="DiffDrvAccelLimit_New.vi" Type="VI" URL="../DiffDrvAccelLimit_New.vi"/>
 			</Item>
+			<Item Name="Implicit Model Follower" Type="Folder">
+				<Item Name="ImplModelFollow_Calculate.vi" Type="VI" URL="../ImplModelFollow_Calculate.vi"/>
+				<Item Name="ImplModelFollow_GetU.vi" Type="VI" URL="../ImplModelFollow_GetU.vi"/>
+				<Item Name="ImplModelFollow_GetU_Single.vi" Type="VI" URL="../ImplModelFollow_GetU_Single.vi"/>
+				<Item Name="ImplModelFollow_New.vi" Type="VI" URL="../ImplModelFollow_New.vi"/>
+				<Item Name="ImplModelFollow_New_Plant.vi" Type="VI" URL="../ImplModelFollow_New_Plant.vi"/>
+				<Item Name="ImplModelFollow_Reset.vi" Type="VI" URL="../ImplModelFollow_Reset.vi"/>
+			</Item>
 			<Item Name="LinearPlantInversionFeedforward" Type="Folder">
 				<Item Name="LinearPlntInvFF_Calculate.vi" Type="VI" URL="../LinearPlntInvFF_Calculate.vi"/>
 				<Item Name="LinearPlntInvFF_Calculate_NextR.vi" Type="VI" URL="../LinearPlntInvFF_Calculate_NextR.vi"/>
@@ -1180,12 +1182,33 @@
 			</Item>
 		</Item>
 		<Item Name="TimeInterpolatableBuffer" Type="Folder">
+			<Item Name="TimeInterpolatableBoolean" Type="Folder">
+				<Item Name="TimeInterpBoolean_AddSample.vi" Type="VI" URL="../TimeInterpBoolean_AddSample.vi"/>
+				<Item Name="TimeInterpBoolean_CleanUp.vi" Type="VI" URL="../TimeInterpBoolean_CleanUp.vi"/>
+				<Item Name="TimeInterpBoolean_Clear.vi" Type="VI" URL="../TimeInterpBoolean_Clear.vi"/>
+				<Item Name="TimeInterpBoolean_GetSample.vi" Type="VI" URL="../TimeInterpBoolean_GetSample.vi"/>
+				<Item Name="TimeInterpBoolean_New.vi" Type="VI" URL="../TimeInterpBoolean_New.vi"/>
+			</Item>
+			<Item Name="TimeInterpolatableDouble" Type="Folder">
+				<Item Name="TimeInterpDouble_AddSample.vi" Type="VI" URL="../TimeInterpDouble_AddSample.vi"/>
+				<Item Name="TimeInterpDouble_CleanUp.vi" Type="VI" URL="../TimeInterpDouble_CleanUp.vi"/>
+				<Item Name="TimeInterpDouble_Clear.vi" Type="VI" URL="../TimeInterpDouble_Clear.vi"/>
+				<Item Name="TimeInterpDouble_GetSample.vi" Type="VI" URL="../TimeInterpDouble_GetSample.vi"/>
+				<Item Name="TimeInterpDouble_New.vi" Type="VI" URL="../TimeInterpDouble_New.vi"/>
+			</Item>
 			<Item Name="TimeInterpolatablePose" Type="Folder">
 				<Item Name="TimeInterpPose_AddSample.vi" Type="VI" URL="../TimeInterpPose_AddSample.vi"/>
 				<Item Name="TimeInterpPose_CleanUp.vi" Type="VI" URL="../TimeInterpPose_CleanUp.vi"/>
 				<Item Name="TimeInterpPose_Clear.vi" Type="VI" URL="../TimeInterpPose_Clear.vi"/>
 				<Item Name="TimeInterpPose_GetSample.vi" Type="VI" URL="../TimeInterpPose_GetSample.vi"/>
 				<Item Name="TimeInterpPose_New.vi" Type="VI" URL="../TimeInterpPose_New.vi"/>
+			</Item>
+			<Item Name="TimeInterpolatableRotation" Type="Folder">
+				<Item Name="TimeInterpRotation_AddSample.vi" Type="VI" URL="../TimeInterpRotation_AddSample.vi"/>
+				<Item Name="TimeInterpRotation_CleanUp.vi" Type="VI" URL="../TimeInterpRotation_CleanUp.vi"/>
+				<Item Name="TimeInterpRotation_Clear.vi" Type="VI" URL="../TimeInterpRotation_Clear.vi"/>
+				<Item Name="TimeInterpRotation_GetSample.vi" Type="VI" URL="../TimeInterpRotation_GetSample.vi"/>
+				<Item Name="TimeInterpRotation_New.vi" Type="VI" URL="../TimeInterpRotation_New.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Trajectory" Type="Folder">
