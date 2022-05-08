@@ -746,6 +746,7 @@
 				<Item Name="Riccati_DARE.vi" Type="VI" URL="../Riccati_DARE.vi"/>
 				<Item Name="Riccati_DARE_Iterate.vi" Type="VI" URL="../Riccati_DARE_Iterate.vi"/>
 				<Item Name="Riccati_DARE_N.vi" Type="VI" URL="../Riccati_DARE_N.vi"/>
+				<Item Name="Riccati_DARE_StructDoubling.vi" Type="VI" URL="../Riccati_DARE_StructDoubling.vi"/>
 				<Item Name="Riccati_Input_Check.vi" Type="VI" URL="../Riccati_Input_Check.vi"/>
 			</Item>
 			<Item Name="RungeKuttaTimeVarying" Type="Folder">
@@ -783,6 +784,7 @@
 				<Item Name="Matrix_SetColumn.vi" Type="VI" URL="../Matrix_SetColumn.vi"/>
 				<Item Name="Matrix_SetRow.vi" Type="VI" URL="../Matrix_SetRow.vi"/>
 				<Item Name="Matrix_Transpose.vi" Type="VI" URL="../Matrix_Transpose.vi"/>
+				<Item Name="Matrix_WithinTolerance.vi" Type="VI" URL="../Matrix_WithinTolerance.vi"/>
 			</Item>
 			<Item Name="SimpleMatrix" Type="Folder">
 				<Item Name="SimpleMatrix_ExtractMatrix.vi" Type="VI" URL="../SimpleMatrix_ExtractMatrix.vi"/>
@@ -848,7 +850,9 @@
 				<Item Name="LTV Unicycle Controller" Type="Folder">
 					<Item Name="LTVUnicycleCtrl_AtReference.vi" Type="VI" URL="../LTVUnicycleCtrl_AtReference.vi"/>
 					<Item Name="LTVUnicycleCtrl_Calculate.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate.vi"/>
+					<Item Name="LTVUnicycleCtrl_Calculate_ALT.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate_ALT.vi"/>
 					<Item Name="LTVUnicycleCtrl_Calculate_TrajState.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate_TrajState.vi"/>
+					<Item Name="LTVUnicycleCtrl_Calculate_TrajState_ALT.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate_TrajState_ALT.vi"/>
 					<Item Name="LTVUnicycleCtrl_New.vi" Type="VI" URL="../LTVUnicycleCtrl_New.vi"/>
 					<Item Name="LTVUnicycleCtrl_SetEnabled.vi" Type="VI" URL="../LTVUnicycleCtrl_SetEnabled.vi"/>
 					<Item Name="LTVUnicycleCtrl_SetTolerance.vi" Type="VI" URL="../LTVUnicycleCtrl_SetTolerance.vi"/>
