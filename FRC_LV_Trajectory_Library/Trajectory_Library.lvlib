@@ -533,7 +533,7 @@
 			<Item Name="Conv_Killograms_Pounds.vi" Type="VI" URL="../Conv_Killograms_Pounds.vi"/>
 			<Item Name="Conv_Meters_Feet.vi" Type="VI" URL="../Conv_Meters_Feet.vi"/>
 			<Item Name="Conv_Meters_Inches.vi" Type="VI" URL="../Conv_Meters_Inches.vi"/>
-			<Item Name="Conv_POSE_SI_Eng.vi" Type="VI" URL="../Conv_POSE_SI_Eng.vi"/>
+			<Item Name="Conv_POSE2D_SI_Eng.vi" Type="VI" URL="../Conv_POSE2D_SI_Eng.vi"/>
 			<Item Name="Conv_Pounds_Killograms.vi" Type="VI" URL="../Conv_Pounds_Killograms.vi"/>
 			<Item Name="Conv_Radians_Deg.vi" Type="VI" URL="../Conv_Radians_Deg.vi"/>
 			<Item Name="Conv_Radians_Rotations.vi" Type="VI" URL="../Conv_Radians_Rotations.vi"/>
@@ -555,74 +555,74 @@
 			<Item Name="DigSeqLogic_SR_FlipFlop.vi" Type="VI" URL="../DigSeqLogic_SR_FlipFlop.vi"/>
 		</Item>
 		<Item Name="Geometry" Type="Folder">
-			<Item Name="Pose" Type="Folder">
-				<Item Name="Pose_Equals.vi" Type="VI" URL="../Pose_Equals.vi"/>
-				<Item Name="Pose_Exp.vi" Type="VI" URL="../Pose_Exp.vi"/>
-				<Item Name="Pose_getRotation.vi" Type="VI" URL="../Pose_getRotation.vi"/>
-				<Item Name="Pose_getTranslation.vi" Type="VI" URL="../Pose_getTranslation.vi"/>
-				<Item Name="Pose_getXY.vi" Type="VI" URL="../Pose_getXY.vi"/>
-				<Item Name="Pose_getXYAngle.vi" Type="VI" URL="../Pose_getXYAngle.vi"/>
-				<Item Name="Pose_Interpolate.vi" Type="VI" URL="../Pose_Interpolate.vi"/>
-				<Item Name="Pose_Log.vi" Type="VI" URL="../Pose_Log.vi"/>
-				<Item Name="Pose_Minus.vi" Type="VI" URL="../Pose_Minus.vi"/>
-				<Item Name="Pose_New.vi" Type="VI" URL="../Pose_New.vi"/>
-				<Item Name="Pose_New_TRRO.vi" Type="VI" URL="../Pose_New_TRRO.vi"/>
-				<Item Name="Pose_Plus.vi" Type="VI" URL="../Pose_Plus.vi"/>
-				<Item Name="Pose_RelativeTo.vi" Type="VI" URL="../Pose_RelativeTo.vi"/>
-				<Item Name="Pose_TransformBy.vi" Type="VI" URL="../Pose_TransformBy.vi"/>
+			<Item Name="Pose2d" Type="Folder">
+				<Item Name="Pose2d_Equals.vi" Type="VI" URL="../Pose2d_Equals.vi"/>
+				<Item Name="Pose2d_Exp.vi" Type="VI" URL="../Pose2d_Exp.vi"/>
+				<Item Name="Pose2d_getRotation.vi" Type="VI" URL="../Pose2d_getRotation.vi"/>
+				<Item Name="Pose2d_getTranslation.vi" Type="VI" URL="../Pose2d_getTranslation.vi"/>
+				<Item Name="Pose2d_getXY.vi" Type="VI" URL="../Pose2d_getXY.vi"/>
+				<Item Name="Pose2d_getXYAngle.vi" Type="VI" URL="../Pose2d_getXYAngle.vi"/>
+				<Item Name="Pose2d_Interpolate.vi" Type="VI" URL="../Pose2d_Interpolate.vi"/>
+				<Item Name="Pose2d_Log.vi" Type="VI" URL="../Pose2d_Log.vi"/>
+				<Item Name="Pose2d_Minus.vi" Type="VI" URL="../Pose2d_Minus.vi"/>
+				<Item Name="Pose2d_New.vi" Type="VI" URL="../Pose2d_New.vi"/>
+				<Item Name="Pose2d_New_TRRO.vi" Type="VI" URL="../Pose2d_New_TRRO.vi"/>
+				<Item Name="Pose2d_Plus.vi" Type="VI" URL="../Pose2d_Plus.vi"/>
+				<Item Name="Pose2d_RelativeTo.vi" Type="VI" URL="../Pose2d_RelativeTo.vi"/>
+				<Item Name="Pose2d_TransformBy.vi" Type="VI" URL="../Pose2d_TransformBy.vi"/>
 			</Item>
-			<Item Name="Rotation" Type="Folder">
-				<Item Name="Rotation_CreateAngle.vi" Type="VI" URL="../Rotation_CreateAngle.vi"/>
-				<Item Name="Rotation_CreateAngleDegrees.vi" Type="VI" URL="../Rotation_CreateAngleDegrees.vi"/>
-				<Item Name="Rotation_CreateAngleRotations.vi" Type="VI" URL="../Rotation_CreateAngleRotations.vi"/>
-				<Item Name="Rotation_CreateXY.vi" Type="VI" URL="../Rotation_CreateXY.vi"/>
-				<Item Name="Rotation_Equals.vi" Type="VI" URL="../Rotation_Equals.vi"/>
-				<Item Name="Rotation_GetAngleCosSin.vi" Type="VI" URL="../Rotation_GetAngleCosSin.vi"/>
-				<Item Name="Rotation_GetCos.vi" Type="VI" URL="../Rotation_GetCos.vi"/>
-				<Item Name="Rotation_GetDegrees.vi" Type="VI" URL="../Rotation_GetDegrees.vi"/>
-				<Item Name="Rotation_GetRadians.vi" Type="VI" URL="../Rotation_GetRadians.vi"/>
-				<Item Name="Rotation_GetRotations.vi" Type="VI" URL="../Rotation_GetRotations.vi"/>
-				<Item Name="Rotation_GetSin.vi" Type="VI" URL="../Rotation_GetSin.vi"/>
-				<Item Name="Rotation_GetTan.vi" Type="VI" URL="../Rotation_GetTan.vi"/>
-				<Item Name="Rotation_Interpolate.vi" Type="VI" URL="../Rotation_Interpolate.vi"/>
-				<Item Name="Rotation_Minus.vi" Type="VI" URL="../Rotation_Minus.vi"/>
-				<Item Name="Rotation_Plus.vi" Type="VI" URL="../Rotation_Plus.vi"/>
-				<Item Name="Rotation_RotateBy.vi" Type="VI" URL="../Rotation_RotateBy.vi"/>
-				<Item Name="Rotation_Times.vi" Type="VI" URL="../Rotation_Times.vi"/>
-				<Item Name="Rotation_UnaryMinus.vi" Type="VI" URL="../Rotation_UnaryMinus.vi"/>
+			<Item Name="Rotation2d" Type="Folder">
+				<Item Name="Rotation2d_CreateAngle.vi" Type="VI" URL="../Rotation2d_CreateAngle.vi"/>
+				<Item Name="Rotation2d_CreateAngleDegrees.vi" Type="VI" URL="../Rotation2d_CreateAngleDegrees.vi"/>
+				<Item Name="Rotation2d_CreateAngleRotations.vi" Type="VI" URL="../Rotation2d_CreateAngleRotations.vi"/>
+				<Item Name="Rotation2d_CreateXY.vi" Type="VI" URL="../Rotation2d_CreateXY.vi"/>
+				<Item Name="Rotation2d_Equals.vi" Type="VI" URL="../Rotation2d_Equals.vi"/>
+				<Item Name="Rotation2d_GetAngleCosSin.vi" Type="VI" URL="../Rotation2d_GetAngleCosSin.vi"/>
+				<Item Name="Rotation2d_GetCos.vi" Type="VI" URL="../Rotation2d_GetCos.vi"/>
+				<Item Name="Rotation2d_GetDegrees.vi" Type="VI" URL="../Rotation2d_GetDegrees.vi"/>
+				<Item Name="Rotation2d_GetRadians.vi" Type="VI" URL="../Rotation2d_GetRadians.vi"/>
+				<Item Name="Rotation2d_GetRotations.vi" Type="VI" URL="../Rotation2d_GetRotations.vi"/>
+				<Item Name="Rotation2d_GetSin.vi" Type="VI" URL="../Rotation2d_GetSin.vi"/>
+				<Item Name="Rotation2d_GetTan.vi" Type="VI" URL="../Rotation2d_GetTan.vi"/>
+				<Item Name="Rotation2d_Interpolate.vi" Type="VI" URL="../Rotation2d_Interpolate.vi"/>
+				<Item Name="Rotation2d_Minus.vi" Type="VI" URL="../Rotation2d_Minus.vi"/>
+				<Item Name="Rotation2d_Plus.vi" Type="VI" URL="../Rotation2d_Plus.vi"/>
+				<Item Name="Rotation2d_RotateBy.vi" Type="VI" URL="../Rotation2d_RotateBy.vi"/>
+				<Item Name="Rotation2d_Times.vi" Type="VI" URL="../Rotation2d_Times.vi"/>
+				<Item Name="Rotation2d_UnaryMinus.vi" Type="VI" URL="../Rotation2d_UnaryMinus.vi"/>
 			</Item>
-			<Item Name="Transform" Type="Folder">
-				<Item Name="Transform_Create_PosePose.vi" Type="VI" URL="../Transform_Create_PosePose.vi"/>
-				<Item Name="Transform_Create_TransRot.vi" Type="VI" URL="../Transform_Create_TransRot.vi"/>
-				<Item Name="Transform_Equals.vi" Type="VI" URL="../Transform_Equals.vi"/>
-				<Item Name="Transform_GetRotation.vi" Type="VI" URL="../Transform_GetRotation.vi"/>
-				<Item Name="Transform_GetTranslation.vi" Type="VI" URL="../Transform_GetTranslation.vi"/>
-				<Item Name="Transform_GetXY.vi" Type="VI" URL="../Transform_GetXY.vi"/>
-				<Item Name="Transform_GetXYAngle.vi" Type="VI" URL="../Transform_GetXYAngle.vi"/>
-				<Item Name="Transform_Inverse.vi" Type="VI" URL="../Transform_Inverse.vi"/>
-				<Item Name="Transform_Plus.vi" Type="VI" URL="../Transform_Plus.vi"/>
-				<Item Name="Transform_Times.vi" Type="VI" URL="../Transform_Times.vi"/>
+			<Item Name="Transform2d" Type="Folder">
+				<Item Name="Transform2d_Create_PosePose.vi" Type="VI" URL="../Transform2d_Create_PosePose.vi"/>
+				<Item Name="Transform2d_Create_TransRot.vi" Type="VI" URL="../Transform2d_Create_TransRot.vi"/>
+				<Item Name="Transform2d_Equals.vi" Type="VI" URL="../Transform2d_Equals.vi"/>
+				<Item Name="Transform2d_GetRotation.vi" Type="VI" URL="../Transform2d_GetRotation.vi"/>
+				<Item Name="Transform2d_GetTranslation.vi" Type="VI" URL="../Transform2d_GetTranslation.vi"/>
+				<Item Name="Transform2d_GetXY.vi" Type="VI" URL="../Transform2d_GetXY.vi"/>
+				<Item Name="Transform2d_GetXYAngle.vi" Type="VI" URL="../Transform2d_GetXYAngle.vi"/>
+				<Item Name="Transform2d_Inverse.vi" Type="VI" URL="../Transform2d_Inverse.vi"/>
+				<Item Name="Transform2d_Plus.vi" Type="VI" URL="../Transform2d_Plus.vi"/>
+				<Item Name="Transform2d_Times.vi" Type="VI" URL="../Transform2d_Times.vi"/>
 			</Item>
-			<Item Name="Translation" Type="Folder">
-				<Item Name="Translation_Create.vi" Type="VI" URL="../Translation_Create.vi"/>
-				<Item Name="Translation_Create_DistAng.vi" Type="VI" URL="../Translation_Create_DistAng.vi"/>
-				<Item Name="Translation_Equals.vi" Type="VI" URL="../Translation_Equals.vi"/>
-				<Item Name="Translation_GetDistance.vi" Type="VI" URL="../Translation_GetDistance.vi"/>
-				<Item Name="Translation_GetNorm.vi" Type="VI" URL="../Translation_GetNorm.vi"/>
-				<Item Name="Translation_GetX.vi" Type="VI" URL="../Translation_GetX.vi"/>
-				<Item Name="Translation_GetXY.vi" Type="VI" URL="../Translation_GetXY.vi"/>
-				<Item Name="Translation_GetY.vi" Type="VI" URL="../Translation_GetY.vi"/>
-				<Item Name="Translation_Interpolate.vi" Type="VI" URL="../Translation_Interpolate.vi"/>
-				<Item Name="Translation_Minus.vi" Type="VI" URL="../Translation_Minus.vi"/>
-				<Item Name="Translation_Plus.vi" Type="VI" URL="../Translation_Plus.vi"/>
-				<Item Name="Translation_RotateBy.vi" Type="VI" URL="../Translation_RotateBy.vi"/>
-				<Item Name="Translation_Times.vi" Type="VI" URL="../Translation_Times.vi"/>
-				<Item Name="Translation_UnaryMinus.vi" Type="VI" URL="../Translation_UnaryMinus.vi"/>
+			<Item Name="Translation2d" Type="Folder">
+				<Item Name="Translation2d_Create.vi" Type="VI" URL="../Translation2d_Create.vi"/>
+				<Item Name="Translation2d_Create_DistAng.vi" Type="VI" URL="../Translation2d_Create_DistAng.vi"/>
+				<Item Name="Translation2d_Equals.vi" Type="VI" URL="../Translation2d_Equals.vi"/>
+				<Item Name="Translation2d_GetDistance.vi" Type="VI" URL="../Translation2d_GetDistance.vi"/>
+				<Item Name="Translation2d_GetNorm.vi" Type="VI" URL="../Translation2d_GetNorm.vi"/>
+				<Item Name="Translation2d_GetX.vi" Type="VI" URL="../Translation2d_GetX.vi"/>
+				<Item Name="Translation2d_GetXY.vi" Type="VI" URL="../Translation2d_GetXY.vi"/>
+				<Item Name="Translation2d_GetY.vi" Type="VI" URL="../Translation2d_GetY.vi"/>
+				<Item Name="Translation2d_Interpolate.vi" Type="VI" URL="../Translation2d_Interpolate.vi"/>
+				<Item Name="Translation2d_Minus.vi" Type="VI" URL="../Translation2d_Minus.vi"/>
+				<Item Name="Translation2d_Plus.vi" Type="VI" URL="../Translation2d_Plus.vi"/>
+				<Item Name="Translation2d_RotateBy.vi" Type="VI" URL="../Translation2d_RotateBy.vi"/>
+				<Item Name="Translation2d_Times.vi" Type="VI" URL="../Translation2d_Times.vi"/>
+				<Item Name="Translation2d_UnaryMinus.vi" Type="VI" URL="../Translation2d_UnaryMinus.vi"/>
 			</Item>
-			<Item Name="Twist" Type="Folder">
-				<Item Name="Twist_Create.vi" Type="VI" URL="../Twist_Create.vi"/>
-				<Item Name="Twist_Equals.vi" Type="VI" URL="../Twist_Equals.vi"/>
-				<Item Name="Twist_GetAll.vi" Type="VI" URL="../Twist_GetAll.vi"/>
+			<Item Name="Twist2d" Type="Folder">
+				<Item Name="Twist2d_Create.vi" Type="VI" URL="../Twist2d_Create.vi"/>
+				<Item Name="Twist2d_Equals.vi" Type="VI" URL="../Twist2d_Equals.vi"/>
+				<Item Name="Twist2d_GetAll.vi" Type="VI" URL="../Twist2d_GetAll.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Kinematics_Odometry" Type="Folder">
@@ -1227,19 +1227,19 @@
 				<Item Name="TimeInterpDouble_GetSample.vi" Type="VI" URL="../TimeInterpDouble_GetSample.vi"/>
 				<Item Name="TimeInterpDouble_New.vi" Type="VI" URL="../TimeInterpDouble_New.vi"/>
 			</Item>
-			<Item Name="TimeInterpolatablePose" Type="Folder">
-				<Item Name="TimeInterpPose_AddSample.vi" Type="VI" URL="../TimeInterpPose_AddSample.vi"/>
-				<Item Name="TimeInterpPose_CleanUp.vi" Type="VI" URL="../TimeInterpPose_CleanUp.vi"/>
-				<Item Name="TimeInterpPose_Clear.vi" Type="VI" URL="../TimeInterpPose_Clear.vi"/>
-				<Item Name="TimeInterpPose_GetSample.vi" Type="VI" URL="../TimeInterpPose_GetSample.vi"/>
-				<Item Name="TimeInterpPose_New.vi" Type="VI" URL="../TimeInterpPose_New.vi"/>
+			<Item Name="TimeInterpolatablePose2d" Type="Folder">
+				<Item Name="TimeInterpPose2d_AddSample.vi" Type="VI" URL="../TimeInterpPose2d_AddSample.vi"/>
+				<Item Name="TimeInterpPose2d_CleanUp.vi" Type="VI" URL="../TimeInterpPose2d_CleanUp.vi"/>
+				<Item Name="TimeInterpPose2d_Clear.vi" Type="VI" URL="../TimeInterpPose2d_Clear.vi"/>
+				<Item Name="TimeInterpPose2d_GetSample.vi" Type="VI" URL="../TimeInterpPose2d_GetSample.vi"/>
+				<Item Name="TimeInterpPose2d_New.vi" Type="VI" URL="../TimeInterpPose2d_New.vi"/>
 			</Item>
-			<Item Name="TimeInterpolatableRotation" Type="Folder">
-				<Item Name="TimeInterpRotation_AddSample.vi" Type="VI" URL="../TimeInterpRotation_AddSample.vi"/>
-				<Item Name="TimeInterpRotation_CleanUp.vi" Type="VI" URL="../TimeInterpRotation_CleanUp.vi"/>
-				<Item Name="TimeInterpRotation_Clear.vi" Type="VI" URL="../TimeInterpRotation_Clear.vi"/>
-				<Item Name="TimeInterpRotation_GetSample.vi" Type="VI" URL="../TimeInterpRotation_GetSample.vi"/>
-				<Item Name="TimeInterpRotation_New.vi" Type="VI" URL="../TimeInterpRotation_New.vi"/>
+			<Item Name="TimeInterpolatableRotation2d" Type="Folder">
+				<Item Name="TimeInterpRotation2d_AddSample.vi" Type="VI" URL="../TimeInterpRotation2d_AddSample.vi"/>
+				<Item Name="TimeInterpRotation2d_CleanUp.vi" Type="VI" URL="../TimeInterpRotation2d_CleanUp.vi"/>
+				<Item Name="TimeInterpRotation2d_Clear.vi" Type="VI" URL="../TimeInterpRotation2d_Clear.vi"/>
+				<Item Name="TimeInterpRotation2d_GetSample.vi" Type="VI" URL="../TimeInterpRotation2d_GetSample.vi"/>
+				<Item Name="TimeInterpRotation2d_New.vi" Type="VI" URL="../TimeInterpRotation2d_New.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Trajectory" Type="Folder">
@@ -1377,8 +1377,13 @@
 		<Item Name="Utility" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="Util_ApproxEquals.vi" Type="VI" URL="../Util_ApproxEquals.vi"/>
-			<Item Name="Util_Array_PoseWCurv_to_XY.vi" Type="VI" URL="../Util_Array_PoseWCurv_to_XY.vi"/>
+			<Item Name="Util_Array_PoseWCurv2d_to_XY.vi" Type="VI" URL="../Util_Array_PoseWCurv2d_to_XY.vi"/>
 			<Item Name="Util_CalcDist.vi" Type="VI" URL="../Util_CalcDist.vi"/>
+			<Item Name="Util_DispWaypoint_Eng_To_SI.vi" Type="VI" URL="../Util_DispWaypoint_Eng_To_SI.vi"/>
+			<Item Name="Util_DispWaypoint_To_CubicInput.vi" Type="VI" URL="../Util_DispWaypoint_To_CubicInput.vi"/>
+			<Item Name="Util_DispWaypoint_To_QuinticInput.vi" Type="VI" URL="../Util_DispWaypoint_To_QuinticInput.vi"/>
+			<Item Name="Util_DispWeightedWaypoint_Eng_To_WeightedWaypoint_SI.vi" Type="VI" URL="../Util_DispWeightedWaypoint_Eng_To_WeightedWaypoint_SI.vi"/>
+			<Item Name="Util_DispWeightedWaypoint_To_WeightedWayPoint.vi" Type="VI" URL="../Util_DispWeightedWaypoint_To_WeightedWayPoint.vi"/>
 			<Item Name="Util_GetLibraryVersion.vi" Type="VI" URL="../Util_GetLibraryVersion.vi"/>
 			<Item Name="Util_GetLibUsage.vi" Type="VI" URL="../Util_GetLibUsage.vi"/>
 			<Item Name="Util_GetTime.vi" Type="VI" URL="../Util_GetTime.vi"/>
@@ -1396,11 +1401,6 @@
 			<Item Name="Util_Trajectory_WriteFile_WayPoints.vi" Type="VI" URL="../Util_Trajectory_WriteFile_WayPoints.vi"/>
 			<Item Name="Util_TrajectoryState_Meters_To_Inches.vi" Type="VI" URL="../Util_TrajectoryState_Meters_To_Inches.vi"/>
 			<Item Name="Util_TrajState_to_DiffDrive_WheelPos.vi" Type="VI" URL="../Util_TrajState_to_DiffDrive_WheelPos.vi"/>
-			<Item Name="Util_Waypoint_Eng_To_SI.vi" Type="VI" URL="../Util_Waypoint_Eng_To_SI.vi"/>
-			<Item Name="Util_Waypoint_To_CubicInput.vi" Type="VI" URL="../Util_Waypoint_To_CubicInput.vi"/>
-			<Item Name="Util_Waypoint_To_QuinticInput.vi" Type="VI" URL="../Util_Waypoint_To_QuinticInput.vi"/>
-			<Item Name="Util_WeightedWaypoint_Eng_To_WeightedWaypoint_SI.vi" Type="VI" URL="../Util_WeightedWaypoint_Eng_To_WeightedWaypoint_SI.vi"/>
-			<Item Name="Util_WeightedWaypoint_To_WeightedWayPoint.vi" Type="VI" URL="../Util_WeightedWaypoint_To_WeightedWayPoint.vi"/>
 		</Item>
 		<Item Name="Vision" Type="Folder">
 			<Item Name="ComputerVisionUtil" Type="Folder">
