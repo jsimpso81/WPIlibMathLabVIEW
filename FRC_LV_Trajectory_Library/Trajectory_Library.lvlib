@@ -26,6 +26,7 @@
 		<Item Name="FRC_LV_CtrlLib_Filter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Filter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_FlyWheelSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_FlyWheelSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_FunctionGenerator.mnu" Type="Document" URL="../FRC_LV_CtrlLib_FunctionGenerator.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_FunctionGenerator_Matrix.mnu" Type="Document" URL="../FRC_LV_CtrlLib_FunctionGenerator_Matrix.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_GeneralAnalogControl.mnu" Type="Document" URL="../FRC_LV_CtrlLib_GeneralAnalogControl.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_GeneralDigitalControls.mnu" Type="Document" URL="../FRC_LV_CtrlLib_GeneralDigitalControls.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_GeneralTrajectory.mnu" Type="Document" URL="../FRC_LV_CtrlLib_GeneralTrajectory.mnu"/>
@@ -38,6 +39,8 @@
 		<Item Name="FRC_LV_CtrlLib_LinearSystemSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinearSystemSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_LinPlntInvFF.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LinPlntInvFF.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_LQR.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LQR.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_LTV_Diff_Drive_Ctrl.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LTV_Diff_Drive_Ctrl.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_LTV_Unicycle_Ctrl.mnu" Type="Document" URL="../FRC_LV_CtrlLib_LTV_Unicycle_Ctrl.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_MatBuilder.mnu" Type="Document" URL="../FRC_LV_CtrlLib_MatBuilder.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Math.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Math.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_MathUtils.mnu" Type="Document" URL="../FRC_LV_CtrlLib_MathUtils.mnu"/>
@@ -56,7 +59,10 @@
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtil.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtil.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_SwervePoseEst.mnu" Type="Document" URL="../FRC_LV_CtrlLib_SwervePoseEst.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_TimeInterp_Boolean.mnu" Type="Document" URL="../FRC_LV_CtrlLib_TimeInterp_Boolean.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_TimeInterp_Double.mnu" Type="Document" URL="../FRC_LV_CtrlLib_TimeInterp_Double.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_TimeInterp_Pose.mnu" Type="Document" URL="../FRC_LV_CtrlLib_TimeInterp_Pose.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_TimeInterp_Rotation2d.mnu" Type="Document" URL="../FRC_LV_CtrlLib_TimeInterp_Rotation2d.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_TimeInterpolatable.mnu" Type="Document" URL="../FRC_LV_CtrlLib_TimeInterpolatable.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Timing.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Timing.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_UnitsConv.mnu" Type="Document" URL="../FRC_LV_CtrlLib_UnitsConv.mnu"/>
@@ -309,6 +315,11 @@
 				<Item Name="FunctionGenerator_Clear.vi" Type="VI" URL="../FunctionGenerator_Clear.vi"/>
 				<Item Name="FunctionGenerator_Execute.vi" Type="VI" URL="../FunctionGenerator_Execute.vi"/>
 				<Item Name="FunctionGenerator_New.vi" Type="VI" URL="../FunctionGenerator_New.vi"/>
+			</Item>
+			<Item Name="Function Generator Matrix" Type="Folder">
+				<Item Name="FunctionGeneratorMatrix_Add_Value.vi" Type="VI" URL="../FunctionGeneratorMatrix_Add_Value.vi"/>
+				<Item Name="FunctionGeneratorMatrix_Calculate.vi" Type="VI" URL="../FunctionGeneratorMatrix_Calculate.vi"/>
+				<Item Name="FunctionGeneratorMatrix_New.vi" Type="VI" URL="../FunctionGeneratorMatrix_New.vi"/>
 			</Item>
 			<Item Name="LinearFilter" Type="Folder">
 				<Item Name="LinearFilter_BackwardFiniteDifference.vi" Type="VI" URL="../LinearFilter_BackwardFiniteDifference.vi"/>
@@ -832,31 +843,9 @@
 		</Item>
 		<Item Name="NEW_THINGS_USE_WITH_CAUTION" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
-			<Item Name="InterpolatableMatrix" Type="Folder">
-				<Item Name="FunctionGeneratorMatrix_Add_Value.vi" Type="VI" URL="../FunctionGeneratorMatrix_Add_Value.vi"/>
-				<Item Name="FunctionGeneratorMatrix_Calculate.vi" Type="VI" URL="../FunctionGeneratorMatrix_Calculate.vi"/>
-				<Item Name="FunctionGeneratorMatrix_New.vi" Type="VI" URL="../FunctionGeneratorMatrix_New.vi"/>
-			</Item>
 			<Item Name="State Space Control" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="ControlAffinePlantInversionFeedforward" Type="Folder"/>
-				<Item Name="LTV Differential Drive Controller" Type="Folder">
-					<Item Name="LTVDiffDriveCtrl_AtReference.vi" Type="VI" URL="../LTVDiffDriveCtrl_AtReference.vi"/>
-					<Item Name="LTVDiffDriveCtrl_Calculate.vi" Type="VI" URL="../LTVDiffDriveCtrl_Calculate.vi"/>
-					<Item Name="LTVDiffDriveCtrl_Calculate_TrajState.vi" Type="VI" URL="../LTVDiffDriveCtrl_Calculate_TrajState.vi"/>
-					<Item Name="LTVDiffDriveCtrl_New.vi" Type="VI" URL="../LTVDiffDriveCtrl_New.vi"/>
-					<Item Name="LTVDiffDriveCtrl_SetTolerance.vi" Type="VI" URL="../LTVDiffDriveCtrl_SetTolerance.vi"/>
-				</Item>
-				<Item Name="LTV Unicycle Controller" Type="Folder">
-					<Item Name="LTVUnicycleCtrl_AtReference.vi" Type="VI" URL="../LTVUnicycleCtrl_AtReference.vi"/>
-					<Item Name="LTVUnicycleCtrl_Calculate.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate.vi"/>
-					<Item Name="LTVUnicycleCtrl_Calculate_ALT.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate_ALT.vi"/>
-					<Item Name="LTVUnicycleCtrl_Calculate_TrajState.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate_TrajState.vi"/>
-					<Item Name="LTVUnicycleCtrl_Calculate_TrajState_ALT.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate_TrajState_ALT.vi"/>
-					<Item Name="LTVUnicycleCtrl_New.vi" Type="VI" URL="../LTVUnicycleCtrl_New.vi"/>
-					<Item Name="LTVUnicycleCtrl_SetEnabled.vi" Type="VI" URL="../LTVUnicycleCtrl_SetEnabled.vi"/>
-					<Item Name="LTVUnicycleCtrl_SetTolerance.vi" Type="VI" URL="../LTVUnicycleCtrl_SetTolerance.vi"/>
-				</Item>
 			</Item>
 			<Item Name="State Space Estimator" Type="Folder">
 				<Item Name="ExtendedKalmanFilter" Type="Folder">
@@ -1112,6 +1101,23 @@
 				<Item Name="LinearSystemLoop_Predict.vi" Type="VI" URL="../LinearSystemLoop_Predict.vi"/>
 				<Item Name="LinearSystemLoop_Reset.vi" Type="VI" URL="../LinearSystemLoop_Reset.vi"/>
 				<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
+			</Item>
+			<Item Name="LTV Differential Drive Controller" Type="Folder">
+				<Item Name="LTVDiffDriveCtrl_AtReference.vi" Type="VI" URL="../LTVDiffDriveCtrl_AtReference.vi"/>
+				<Item Name="LTVDiffDriveCtrl_Calculate.vi" Type="VI" URL="../LTVDiffDriveCtrl_Calculate.vi"/>
+				<Item Name="LTVDiffDriveCtrl_Calculate_TrajState.vi" Type="VI" URL="../LTVDiffDriveCtrl_Calculate_TrajState.vi"/>
+				<Item Name="LTVDiffDriveCtrl_New.vi" Type="VI" URL="../LTVDiffDriveCtrl_New.vi"/>
+				<Item Name="LTVDiffDriveCtrl_SetTolerance.vi" Type="VI" URL="../LTVDiffDriveCtrl_SetTolerance.vi"/>
+			</Item>
+			<Item Name="LTV Unicycle Controller" Type="Folder">
+				<Item Name="LTVUnicycleCtrl_AtReference.vi" Type="VI" URL="../LTVUnicycleCtrl_AtReference.vi"/>
+				<Item Name="LTVUnicycleCtrl_Calculate.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate.vi"/>
+				<Item Name="LTVUnicycleCtrl_Calculate_ORIG.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate_ORIG.vi"/>
+				<Item Name="LTVUnicycleCtrl_Calculate_TrajState.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate_TrajState.vi"/>
+				<Item Name="LTVUnicycleCtrl_Calculate_TrajState_ORIG.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate_TrajState_ORIG.vi"/>
+				<Item Name="LTVUnicycleCtrl_New.vi" Type="VI" URL="../LTVUnicycleCtrl_New.vi"/>
+				<Item Name="LTVUnicycleCtrl_SetEnabled.vi" Type="VI" URL="../LTVUnicycleCtrl_SetEnabled.vi"/>
+				<Item Name="LTVUnicycleCtrl_SetTolerance.vi" Type="VI" URL="../LTVUnicycleCtrl_SetTolerance.vi"/>
 			</Item>
 		</Item>
 		<Item Name="State Space Estimator" Type="Folder">
