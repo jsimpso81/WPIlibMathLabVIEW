@@ -202,9 +202,11 @@
 		<Item Name="POSE2D.ctl" Type="VI" URL="../POSE2D.ctl"/>
 		<Item Name="POSEwCURVATURE.ctl" Type="VI" URL="../POSEwCURVATURE.ctl"/>
 		<Item Name="PROFILED_PID_CONTROLLER.ctl" Type="VI" URL="../PROFILED_PID_CONTROLLER.ctl"/>
+		<Item Name="QUATERNION.ctl" Type="VI" URL="../QUATERNION.ctl"/>
 		<Item Name="RAMSETE.ctl" Type="VI" URL="../RAMSETE.ctl"/>
 		<Item Name="RAMSETE_EXE_TUNING.ctl" Type="VI" URL="../RAMSETE_EXE_TUNING.ctl"/>
 		<Item Name="ROTATION2D.ctl" Type="VI" URL="../ROTATION2D.ctl"/>
+		<Item Name="ROTATION3D.ctl" Type="VI" URL="../ROTATION3D.ctl"/>
 		<Item Name="SIMPLE_MOTOR_FF.ctl" Type="VI" URL="../SIMPLE_MOTOR_FF.ctl"/>
 		<Item Name="SINGLE_JOINT_ARM_SIM.ctl" Type="VI" URL="../SINGLE_JOINT_ARM_SIM.ctl"/>
 		<Item Name="SLEW_RATE_LIMITER.ctl" Type="VI" URL="../SLEW_RATE_LIMITER.ctl"/>
@@ -232,6 +234,7 @@
 		<Item Name="TRAJECTORY_SPLINE_TYPE_ENUM.ctl" Type="VI" URL="../TRAJECTORY_SPLINE_TYPE_ENUM.ctl"/>
 		<Item Name="TRANSFORM2D.ctl" Type="VI" URL="../TRANSFORM2D.ctl"/>
 		<Item Name="TRANSLATION2D.ctl" Type="VI" URL="../TRANSLATION2D.ctl"/>
+		<Item Name="TRANSLATION3D.ctl" Type="VI" URL="../TRANSLATION3D.ctl"/>
 		<Item Name="TRAPEZOID_PROFILE.ctl" Type="VI" URL="../TRAPEZOID_PROFILE.ctl"/>
 		<Item Name="TRAPEZOID_PROFILE_CONSTRAINT.ctl" Type="VI" URL="../TRAPEZOID_PROFILE_CONSTRAINT.ctl"/>
 		<Item Name="TRAPEZOID_PROFILE_STATE.ctl" Type="VI" URL="../TRAPEZOID_PROFILE_STATE.ctl"/>
@@ -582,6 +585,19 @@
 				<Item Name="Pose2d_RelativeTo.vi" Type="VI" URL="../Pose2d_RelativeTo.vi"/>
 				<Item Name="Pose2d_TransformBy.vi" Type="VI" URL="../Pose2d_TransformBy.vi"/>
 			</Item>
+			<Item Name="Quaternion" Type="Folder">
+				<Item Name="Quaternion_Equals.vi" Type="VI" URL="../Quaternion_Equals.vi"/>
+				<Item Name="Quaternion_GetLAll.vi" Type="VI" URL="../Quaternion_GetLAll.vi"/>
+				<Item Name="Quaternion_GetLVQuat.vi" Type="VI" URL="../Quaternion_GetLVQuat.vi"/>
+				<Item Name="Quaternion_Inverse.vi" Type="VI" URL="../Quaternion_Inverse.vi"/>
+				<Item Name="Quaternion_New.vi" Type="VI" URL="../Quaternion_New.vi"/>
+				<Item Name="Quaternion_New_Default.vi" Type="VI" URL="../Quaternion_New_Default.vi"/>
+				<Item Name="Quaternion_New_LVQuat.vi" Type="VI" URL="../Quaternion_New_LVQuat.vi"/>
+				<Item Name="Quaternion_Normalize.vi" Type="VI" URL="../Quaternion_Normalize.vi"/>
+				<Item Name="Quaternion_Plus.vi" Type="VI" URL="../Quaternion_Plus.vi"/>
+				<Item Name="Quaternion_Times.vi" Type="VI" URL="../Quaternion_Times.vi"/>
+				<Item Name="Quaternion_ToRotationVector.vi" Type="VI" URL="../Quaternion_ToRotationVector.vi"/>
+			</Item>
 			<Item Name="Rotation2d" Type="Folder">
 				<Item Name="Rotation2d_CreateAngle.vi" Type="VI" URL="../Rotation2d_CreateAngle.vi"/>
 				<Item Name="Rotation2d_CreateAngleDegrees.vi" Type="VI" URL="../Rotation2d_CreateAngleDegrees.vi"/>
@@ -601,6 +617,9 @@
 				<Item Name="Rotation2d_RotateBy.vi" Type="VI" URL="../Rotation2d_RotateBy.vi"/>
 				<Item Name="Rotation2d_Times.vi" Type="VI" URL="../Rotation2d_Times.vi"/>
 				<Item Name="Rotation2d_UnaryMinus.vi" Type="VI" URL="../Rotation2d_UnaryMinus.vi"/>
+			</Item>
+			<Item Name="Rotation3d" Type="Folder">
+				<Item Name="Rotation3d_GetQuaterion.vi" Type="VI" URL="../Rotation3d_GetQuaterion.vi"/>
 			</Item>
 			<Item Name="Transform2d" Type="Folder">
 				<Item Name="Transform2d_Create_PosePose.vi" Type="VI" URL="../Transform2d_Create_PosePose.vi"/>
@@ -629,6 +648,22 @@
 				<Item Name="Translation2d_RotateBy.vi" Type="VI" URL="../Translation2d_RotateBy.vi"/>
 				<Item Name="Translation2d_Times.vi" Type="VI" URL="../Translation2d_Times.vi"/>
 				<Item Name="Translation2d_UnaryMinus.vi" Type="VI" URL="../Translation2d_UnaryMinus.vi"/>
+			</Item>
+			<Item Name="Translation3d" Type="Folder">
+				<Item Name="Translation3d_Create.vi" Type="VI" URL="../Translation3d_Create.vi"/>
+				<Item Name="Translation3d_Create_Default.vi" Type="VI" URL="../Translation3d_Create_Default.vi"/>
+				<Item Name="Translation3d_Create_DistAng.vi" Type="VI" URL="../Translation3d_Create_DistAng.vi"/>
+				<Item Name="Translation3d_Div.vi" Type="VI" URL="../Translation3d_Div.vi"/>
+				<Item Name="Translation3d_Equals.vi" Type="VI" URL="../Translation3d_Equals.vi"/>
+				<Item Name="Translation3d_GetDistance.vi" Type="VI" URL="../Translation3d_GetDistance.vi"/>
+				<Item Name="Translation3d_GetNorm.vi" Type="VI" URL="../Translation3d_GetNorm.vi"/>
+				<Item Name="Translation3d_GetXYZ.vi" Type="VI" URL="../Translation3d_GetXYZ.vi"/>
+				<Item Name="Translation3d_Interpolate.vi" Type="VI" URL="../Translation3d_Interpolate.vi"/>
+				<Item Name="Translation3d_Minus.vi" Type="VI" URL="../Translation3d_Minus.vi"/>
+				<Item Name="Translation3d_Plus.vi" Type="VI" URL="../Translation3d_Plus.vi"/>
+				<Item Name="Translation3d_RotateBy.vi" Type="VI" URL="../Translation3d_RotateBy.vi"/>
+				<Item Name="Translation3d_Times.vi" Type="VI" URL="../Translation3d_Times.vi"/>
+				<Item Name="Translation3d_UnaryMinus.vi" Type="VI" URL="../Translation3d_UnaryMinus.vi"/>
 			</Item>
 			<Item Name="Twist2d" Type="Folder">
 				<Item Name="Twist2d_Create.vi" Type="VI" URL="../Twist2d_Create.vi"/>
