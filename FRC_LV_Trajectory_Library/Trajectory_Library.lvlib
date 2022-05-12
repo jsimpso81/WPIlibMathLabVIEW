@@ -619,7 +619,15 @@
 				<Item Name="Rotation2d_UnaryMinus.vi" Type="VI" URL="../Rotation2d_UnaryMinus.vi"/>
 			</Item>
 			<Item Name="Rotation3d" Type="Folder">
+				<Item Name="Rotation3d_Create_AxisAngle.vi" Type="VI" URL="../Rotation3d_Create_AxisAngle.vi"/>
+				<Item Name="Rotation3d_Create_Default.vi" Type="VI" URL="../Rotation3d_Create_Default.vi"/>
+				<Item Name="Rotation3d_Create_Quaternion.vi" Type="VI" URL="../Rotation3d_Create_Quaternion.vi"/>
+				<Item Name="Rotation3d_Create_RollPitchYaw.vi" Type="VI" URL="../Rotation3d_Create_RollPitchYaw.vi"/>
 				<Item Name="Rotation3d_GetQuaterion.vi" Type="VI" URL="../Rotation3d_GetQuaterion.vi"/>
+				<Item Name="Rotation3d_Minus.vi" Type="VI" URL="../Rotation3d_Minus.vi"/>
+				<Item Name="Rotation3d_Plus.vi" Type="VI" URL="../Rotation3d_Plus.vi"/>
+				<Item Name="Rotation3d_RotateBy.vi" Type="VI" URL="../Rotation3d_RotateBy.vi"/>
+				<Item Name="Rotation3d_UnaryMinus.vi" Type="VI" URL="../Rotation3d_UnaryMinus.vi"/>
 			</Item>
 			<Item Name="Transform2d" Type="Folder">
 				<Item Name="Transform2d_Create_PosePose.vi" Type="VI" URL="../Transform2d_Create_PosePose.vi"/>
@@ -663,6 +671,7 @@
 				<Item Name="Translation3d_Plus.vi" Type="VI" URL="../Translation3d_Plus.vi"/>
 				<Item Name="Translation3d_RotateBy.vi" Type="VI" URL="../Translation3d_RotateBy.vi"/>
 				<Item Name="Translation3d_Times.vi" Type="VI" URL="../Translation3d_Times.vi"/>
+				<Item Name="Translation3d_ToTranslation2d.vi" Type="VI" URL="../Translation3d_ToTranslation2d.vi"/>
 				<Item Name="Translation3d_UnaryMinus.vi" Type="VI" URL="../Translation3d_UnaryMinus.vi"/>
 			</Item>
 			<Item Name="Twist2d" Type="Folder">
