@@ -587,8 +587,10 @@
 			</Item>
 			<Item Name="Quaternion" Type="Folder">
 				<Item Name="Quaternion_Equals.vi" Type="VI" URL="../Quaternion_Equals.vi"/>
-				<Item Name="Quaternion_GetLAll.vi" Type="VI" URL="../Quaternion_GetLAll.vi"/>
-				<Item Name="Quaternion_GetLVQuat.vi" Type="VI" URL="../Quaternion_GetLVQuat.vi"/>
+				<Item Name="Quaternion_Get_All.vi" Type="VI" URL="../Quaternion_Get_All.vi"/>
+				<Item Name="Quaternion_Get_LVQuat.vi" Type="VI" URL="../Quaternion_Get_LVQuat.vi"/>
+				<Item Name="Quaternion_Get_Vect.vi" Type="VI" URL="../Quaternion_Get_Vect.vi"/>
+				<Item Name="Quaternion_Get_W.vi" Type="VI" URL="../Quaternion_Get_W.vi"/>
 				<Item Name="Quaternion_Inverse.vi" Type="VI" URL="../Quaternion_Inverse.vi"/>
 				<Item Name="Quaternion_New.vi" Type="VI" URL="../Quaternion_New.vi"/>
 				<Item Name="Quaternion_New_Default.vi" Type="VI" URL="../Quaternion_New_Default.vi"/>
@@ -623,10 +625,16 @@
 				<Item Name="Rotation3d_Create_Default.vi" Type="VI" URL="../Rotation3d_Create_Default.vi"/>
 				<Item Name="Rotation3d_Create_Quaternion.vi" Type="VI" URL="../Rotation3d_Create_Quaternion.vi"/>
 				<Item Name="Rotation3d_Create_RollPitchYaw.vi" Type="VI" URL="../Rotation3d_Create_RollPitchYaw.vi"/>
+				<Item Name="Rotation3d_Equals.vi" Type="VI" URL="../Rotation3d_Equals.vi"/>
+				<Item Name="Rotation3d_GetAxisAngle.vi" Type="VI" URL="../Rotation3d_GetAxisAngle.vi"/>
 				<Item Name="Rotation3d_GetQuaterion.vi" Type="VI" URL="../Rotation3d_GetQuaterion.vi"/>
+				<Item Name="Rotation3d_GetXYZ.vi" Type="VI" URL="../Rotation3d_GetXYZ.vi"/>
+				<Item Name="Rotation3d_Interpolate.vi" Type="VI" URL="../Rotation3d_Interpolate.vi"/>
 				<Item Name="Rotation3d_Minus.vi" Type="VI" URL="../Rotation3d_Minus.vi"/>
 				<Item Name="Rotation3d_Plus.vi" Type="VI" URL="../Rotation3d_Plus.vi"/>
 				<Item Name="Rotation3d_RotateBy.vi" Type="VI" URL="../Rotation3d_RotateBy.vi"/>
+				<Item Name="Rotation3d_Times.vi" Type="VI" URL="../Rotation3d_Times.vi"/>
+				<Item Name="Rotation3d_ToRotation2d.vi" Type="VI" URL="../Rotation3d_ToRotation2d.vi"/>
 				<Item Name="Rotation3d_UnaryMinus.vi" Type="VI" URL="../Rotation3d_UnaryMinus.vi"/>
 			</Item>
 			<Item Name="Transform2d" Type="Folder">

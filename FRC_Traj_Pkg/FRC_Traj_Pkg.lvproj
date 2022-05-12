@@ -115,6 +115,8 @@
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Quaternion_GetLAll.vi" Type="VI" URL="../../FRC_LV_Trajectory_Library/Quaternion_GetLAll.vi"/>
+			<Item Name="Quaternion_GetLVQuat.vi" Type="VI" URL="../../FRC_LV_Trajectory_Library/Quaternion_GetLVQuat.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="_Obsolete_PathFInderLibOnly_SourceDistribution" Type="Source Distribution">
