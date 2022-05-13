@@ -200,6 +200,7 @@
 		<Item Name="PID_INPUT_LIMITS.ctl" Type="VI" URL="../PID_INPUT_LIMITS.ctl"/>
 		<Item Name="PID_TUNING.ctl" Type="VI" URL="../PID_TUNING.ctl"/>
 		<Item Name="POSE2D.ctl" Type="VI" URL="../POSE2D.ctl"/>
+		<Item Name="POSE3D.ctl" Type="VI" URL="../POSE3D.ctl"/>
 		<Item Name="POSEwCURVATURE.ctl" Type="VI" URL="../POSEwCURVATURE.ctl"/>
 		<Item Name="PROFILED_PID_CONTROLLER.ctl" Type="VI" URL="../PROFILED_PID_CONTROLLER.ctl"/>
 		<Item Name="QUATERNION.ctl" Type="VI" URL="../QUATERNION.ctl"/>
@@ -233,12 +234,14 @@
 		<Item Name="TRAJECTORY.ctl" Type="VI" URL="../TRAJECTORY.ctl"/>
 		<Item Name="TRAJECTORY_SPLINE_TYPE_ENUM.ctl" Type="VI" URL="../TRAJECTORY_SPLINE_TYPE_ENUM.ctl"/>
 		<Item Name="TRANSFORM2D.ctl" Type="VI" URL="../TRANSFORM2D.ctl"/>
+		<Item Name="TRANSFORM3D.ctl" Type="VI" URL="../TRANSFORM3D.ctl"/>
 		<Item Name="TRANSLATION2D.ctl" Type="VI" URL="../TRANSLATION2D.ctl"/>
 		<Item Name="TRANSLATION3D.ctl" Type="VI" URL="../TRANSLATION3D.ctl"/>
 		<Item Name="TRAPEZOID_PROFILE.ctl" Type="VI" URL="../TRAPEZOID_PROFILE.ctl"/>
 		<Item Name="TRAPEZOID_PROFILE_CONSTRAINT.ctl" Type="VI" URL="../TRAPEZOID_PROFILE_CONSTRAINT.ctl"/>
 		<Item Name="TRAPEZOID_PROFILE_STATE.ctl" Type="VI" URL="../TRAPEZOID_PROFILE_STATE.ctl"/>
 		<Item Name="TWIST2D.ctl" Type="VI" URL="../TWIST2D.ctl"/>
+		<Item Name="TWIST3D.ctl" Type="VI" URL="../TWIST3D.ctl"/>
 		<Item Name="UNSCENTED_KALMAN_CORRECT_FUNC_GROUP.ctl" Type="VI" URL="../UNSCENTED_KALMAN_CORRECT_FUNC_GROUP.ctl"/>
 		<Item Name="UNSCENTED_KALMAN_FILTER.ctl" Type="VI" URL="../UNSCENTED_KALMAN_FILTER.ctl"/>
 		<Item Name="UNSCENTED_KALMAN_NEW_FUNC_GROUP.ctl" Type="VI" URL="../UNSCENTED_KALMAN_NEW_FUNC_GROUP.ctl"/>
@@ -585,6 +588,26 @@
 				<Item Name="Pose2d_RelativeTo.vi" Type="VI" URL="../Pose2d_RelativeTo.vi"/>
 				<Item Name="Pose2d_TransformBy.vi" Type="VI" URL="../Pose2d_TransformBy.vi"/>
 			</Item>
+			<Item Name="Pose3d" Type="Folder">
+				<Item Name="Pose3d_Equals.vi" Type="VI" URL="../Pose3d_Equals.vi"/>
+				<Item Name="Pose3d_Exp.vi" Type="VI" URL="../Pose3d_Exp.vi"/>
+				<Item Name="Pose3d_getRotation3d.vi" Type="VI" URL="../Pose3d_getRotation3d.vi"/>
+				<Item Name="Pose3d_getTranslation3d.vi" Type="VI" URL="../Pose3d_getTranslation3d.vi"/>
+				<Item Name="Pose3d_getXYZ.vi" Type="VI" URL="../Pose3d_getXYZ.vi"/>
+				<Item Name="Pose3d_Interpolate.vi" Type="VI" URL="../Pose3d_Interpolate.vi"/>
+				<Item Name="Pose3d_Log.vi" Type="VI" URL="../Pose3d_Log.vi"/>
+				<Item Name="Pose3d_Minus.vi" Type="VI" URL="../Pose3d_Minus.vi"/>
+				<Item Name="Pose3d_New.vi" Type="VI" URL="../Pose3d_New.vi"/>
+				<Item Name="Pose3d_New_Default.vi" Type="VI" URL="../Pose3d_New_Default.vi"/>
+				<Item Name="Pose3d_New_Trans3dRot3d.vi" Type="VI" URL="../Pose3d_New_Trans3dRot3d.vi"/>
+				<Item Name="Pose3d_Plus.vi" Type="VI" URL="../Pose3d_Plus.vi"/>
+				<Item Name="Pose3d_RelativeTo.vi" Type="VI" URL="../Pose3d_RelativeTo.vi"/>
+				<Item Name="Pose3d_RotationVectorToMatrix.vi" Type="VI" URL="../Pose3d_RotationVectorToMatrix.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+				<Item Name="Pose3d_ToPose2d.vi" Type="VI" URL="../Pose3d_ToPose2d.vi"/>
+				<Item Name="Pose3d_TransformBy.vi" Type="VI" URL="../Pose3d_TransformBy.vi"/>
+			</Item>
 			<Item Name="Quaternion" Type="Folder">
 				<Item Name="Quaternion_Equals.vi" Type="VI" URL="../Quaternion_Equals.vi"/>
 				<Item Name="Quaternion_Get_All.vi" Type="VI" URL="../Quaternion_Get_All.vi"/>
@@ -649,6 +672,18 @@
 				<Item Name="Transform2d_Plus.vi" Type="VI" URL="../Transform2d_Plus.vi"/>
 				<Item Name="Transform2d_Times.vi" Type="VI" URL="../Transform2d_Times.vi"/>
 			</Item>
+			<Item Name="Transform3d" Type="Folder">
+				<Item Name="Transform3d_Create_Default.vi" Type="VI" URL="../Transform3d_Create_Default.vi"/>
+				<Item Name="Transform3d_Create_Pose3dPose3d.vi" Type="VI" URL="../Transform3d_Create_Pose3dPose3d.vi"/>
+				<Item Name="Transform3d_Create_Trans3dRot3d.vi" Type="VI" URL="../Transform3d_Create_Trans3dRot3d.vi"/>
+				<Item Name="Transform3d_Equals.vi" Type="VI" URL="../Transform3d_Equals.vi"/>
+				<Item Name="Transform3d_GetRotation3d.vi" Type="VI" URL="../Transform3d_GetRotation3d.vi"/>
+				<Item Name="Transform3d_GetTranslation3d.vi" Type="VI" URL="../Transform3d_GetTranslation3d.vi"/>
+				<Item Name="Transform3d_GetXYZ.vi" Type="VI" URL="../Transform3d_GetXYZ.vi"/>
+				<Item Name="Transform3d_Inverse.vi" Type="VI" URL="../Transform3d_Inverse.vi"/>
+				<Item Name="Transform3d_Plus.vi" Type="VI" URL="../Transform3d_Plus.vi"/>
+				<Item Name="Transform3d_Times.vi" Type="VI" URL="../Transform3d_Times.vi"/>
+			</Item>
 			<Item Name="Translation2d" Type="Folder">
 				<Item Name="Translation2d_Create.vi" Type="VI" URL="../Translation2d_Create.vi"/>
 				<Item Name="Translation2d_Create_DistAng.vi" Type="VI" URL="../Translation2d_Create_DistAng.vi"/>
@@ -686,6 +721,11 @@
 				<Item Name="Twist2d_Create.vi" Type="VI" URL="../Twist2d_Create.vi"/>
 				<Item Name="Twist2d_Equals.vi" Type="VI" URL="../Twist2d_Equals.vi"/>
 				<Item Name="Twist2d_GetAll.vi" Type="VI" URL="../Twist2d_GetAll.vi"/>
+			</Item>
+			<Item Name="Twist3d" Type="Folder">
+				<Item Name="Twist3d_Create.vi" Type="VI" URL="../Twist3d_Create.vi"/>
+				<Item Name="Twist3d_Equals.vi" Type="VI" URL="../Twist3d_Equals.vi"/>
+				<Item Name="Twist3d_GetAll.vi" Type="VI" URL="../Twist3d_GetAll.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Kinematics_Odometry" Type="Folder">
