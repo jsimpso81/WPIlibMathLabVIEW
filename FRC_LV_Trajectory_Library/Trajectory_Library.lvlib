@@ -688,6 +688,7 @@
 				<Item Name="Translation2d_Create.vi" Type="VI" URL="../Translation2d_Create.vi"/>
 				<Item Name="Translation2d_Create_DistAng.vi" Type="VI" URL="../Translation2d_Create_DistAng.vi"/>
 				<Item Name="Translation2d_Equals.vi" Type="VI" URL="../Translation2d_Equals.vi"/>
+				<Item Name="Translation2d_GetAngle.vi" Type="VI" URL="../Translation2d_GetAngle.vi"/>
 				<Item Name="Translation2d_GetDistance.vi" Type="VI" URL="../Translation2d_GetDistance.vi"/>
 				<Item Name="Translation2d_GetNorm.vi" Type="VI" URL="../Translation2d_GetNorm.vi"/>
 				<Item Name="Translation2d_GetX.vi" Type="VI" URL="../Translation2d_GetX.vi"/>
