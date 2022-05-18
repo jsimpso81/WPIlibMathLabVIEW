@@ -1,5 +1,9 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Library LVVersion="19008000">
+	<Property Name="NI.Lib.Description" Type="Str">FRC Control / Trajectory Library
+
+This implements the math section (and some other routines) contained in FRC WPILIB.</Property>
+	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!,%!!!*Q(C=T:7^&lt;2N"%)8@C1&lt;MD'$IC!)LM$%./'!,T"6.\)SBDV,#&amp;K9&amp;NM$E#JA7#-A.%!I&gt;'+;`/SX`DL1%!T;A81X*?W^W^LP&gt;R5LKWA@JH8;PN?&lt;1&gt;+7&gt;_.@M%``3;\7^@W6I*R&lt;`K/W@SN?T@RRTHF2]H@N^0LXM[W6@@_8X%XL_25,@\W&gt;=_HK4`H%8LP)D\D0/\)/`,^)\+MW:@YH3(/N@N:M$XX8\[&amp;]E0--=XL^`BJO?PS`2H.GHPE\?LLHG^WP`S7`/`&amp;=;_@7L3@_Z367\UTMCC3#=M'\X&gt;YG?[)G?[)G?[)%?[)%?[)%?[)\O[)\O[)\O[):O[):O[):O[&amp;V(&amp;\L1B=[K**-H%S6&amp;EQ**-CB+0B+?B#@B38BY6-+4]#1]#5`#1YI3HI1HY5FY%B['+?&amp;*?"+?B#@BI62(EFV(BS@BI&lt;Q#HI!HY!FY!B[G6-!4!!34"97$)G!I-)-@!5`!%`$Q5Q&amp;0Q"0Q"$Q"$\9#HI!HY!FY!B['&gt;+M3(5X&lt;U?'BD"Q?B]@B=8A=(EL,Y8&amp;Y("[(R_&amp;B/DE]$I]$Y5TI&amp;!&gt;"TC!HQ8FQ?"Q?PO4Q/$Q/D]0D]'"V/_4&gt;SL1U&lt;5?(R_!R?!Q?A]@AI91-(I0(Y$&amp;Y$"\+SO!R?!Q?A]@A93I:0!;0Q7/!'*-SP9RCRE!DS2!-(P[[UW,&gt;,E6(9FW8SO&amp;6/:1KBUXF%+E=$J6.6^F-F5V378S6266:,*6&amp;5(EZ&amp;7A6'*6*6!;XC&gt;LSO3(7R)J9%H.C2ES*#4&amp;KB`\DR/VWK]VGI`6[L&gt;6KJ?6SK@F]LNFMJOFUKMFEIN&amp;I&gt;,CZ&lt;OH0L4L=3Y_K_"^=\7J^`#6^`DFY_P\D:LRYOF(V3$2%X=;!;,POC.O,7$2XV=08,^8^M"H=3_]@J/&amp;#'C^K@;M@N;M`,8&lt;V?-!U1W*=\K7X=$@K2LO4;ZYV_AWKQJ20!!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">419463168</Property>
 	<Property Name="NI.Lib.Version" Type="Str">2.0.5.0</Property>
@@ -13,6 +17,8 @@
 		<Item Name="FRC_LV_CtrlLib_BatterySim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BatterySim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_BiFuncHelp.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BiFuncHelp.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_ControllerUtils.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ControllerUtils.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_CoordAxis.mnu" Type="Document" URL="../FRC_LV_CtrlLib_CoordAxis.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_CoordSystem.mnu" Type="Document" URL="../FRC_LV_CtrlLib_CoordSystem.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_CtrlAffinePlntInvFF.mnu" Type="Document" URL="../FRC_LV_CtrlLib_CtrlAffinePlntInvFF.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DC_Motor.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DC_Motor.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DC_Motor_SIM.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DC_Motor_SIM.mnu"/>
@@ -50,7 +56,10 @@
 		<Item Name="FRC_LV_CtrlLib_MerweScaledSigmaPts.mnu" Type="Document" URL="../FRC_LV_CtrlLib_MerweScaledSigmaPts.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_NumericalIntegration.mnu" Type="Document" URL="../FRC_LV_CtrlLib_NumericalIntegration.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_NumericalJacobian.mnu" Type="Document" URL="../FRC_LV_CtrlLib_NumericalJacobian.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Pose3d.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Pose3d.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Quaternion.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Quaternion.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Riccati.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Riccati.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Rotation3d.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Rotation3d.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Simulation.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Simulation.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_SingleJointedArmSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_SingleJointedArmSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceCtrl.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceCtrl.mnu"/>
@@ -65,6 +74,9 @@
 		<Item Name="FRC_LV_CtrlLib_TimeInterp_Rotation2d.mnu" Type="Document" URL="../FRC_LV_CtrlLib_TimeInterp_Rotation2d.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_TimeInterpolatable.mnu" Type="Document" URL="../FRC_LV_CtrlLib_TimeInterpolatable.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Timing.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Timing.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Transform3d.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Transform3d.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Translation3d.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Translation3d.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Twist3d.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Twist3d.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_UnitsConv.mnu" Type="Document" URL="../FRC_LV_CtrlLib_UnitsConv.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_UnscentedKalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_UnscentedKalmanFilter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_VectorBuilder.mnu" Type="Document" URL="../FRC_LV_CtrlLib_VectorBuilder.mnu"/>
@@ -146,6 +158,8 @@
 		<Item Name="CALLBACK_FUNC_TYPE.ctl" Type="VI" URL="../CALLBACK_FUNC_TYPE.ctl"/>
 		<Item Name="CHASSIS_SPEEDS.ctl" Type="VI" URL="../CHASSIS_SPEEDS.ctl"/>
 		<Item Name="CONSTRAINED_STATE.ctl" Type="VI" URL="../CONSTRAINED_STATE.ctl"/>
+		<Item Name="COORDINATE_AXIS.ctl" Type="VI" URL="../COORDINATE_AXIS.ctl"/>
+		<Item Name="COORDINATE_SYSTEM.ctl" Type="VI" URL="../COORDINATE_SYSTEM.ctl"/>
 		<Item Name="DCMOTOR.CTL" Type="VI" URL="../DCMOTOR.CTL"/>
 		<Item Name="DCMOTOR_SIM.ctl" Type="VI" URL="../DCMOTOR_SIM.ctl"/>
 		<Item Name="DCMOTOR_TYPES_ENUM.ctl" Type="VI" URL="../DCMOTOR_TYPES_ENUM.ctl"/>
@@ -572,6 +586,18 @@
 			<Item Name="DigSeqLogic_SR_FlipFlop.vi" Type="VI" URL="../DigSeqLogic_SR_FlipFlop.vi"/>
 		</Item>
 		<Item Name="Geometry" Type="Folder">
+			<Item Name="CoordinateAxis" Type="Folder">
+				<Item Name="CoordAxis_D.vi" Type="VI" URL="../CoordAxis_D.vi"/>
+				<Item Name="CoordAxis_E.vi" Type="VI" URL="../CoordAxis_E.vi"/>
+				<Item Name="CoordAxis_N.vi" Type="VI" URL="../CoordAxis_N.vi"/>
+				<Item Name="CoordAxis_New.vi" Type="VI" URL="../CoordAxis_New.vi"/>
+				<Item Name="CoordAxis_S.vi" Type="VI" URL="../CoordAxis_S.vi"/>
+				<Item Name="CoordAxis_U.vi" Type="VI" URL="../CoordAxis_U.vi"/>
+				<Item Name="CoordAxis_W.vi" Type="VI" URL="../CoordAxis_W.vi"/>
+			</Item>
+			<Item Name="CoordinateSystem" Type="Folder">
+				<Item Name="CoordSystem_New.vi" Type="VI" URL="../CoordSystem_New.vi"/>
+			</Item>
 			<Item Name="Pose2d" Type="Folder">
 				<Item Name="Pose2d_Equals.vi" Type="VI" URL="../Pose2d_Equals.vi"/>
 				<Item Name="Pose2d_Exp.vi" Type="VI" URL="../Pose2d_Exp.vi"/>
