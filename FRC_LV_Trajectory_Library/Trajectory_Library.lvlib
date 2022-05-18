@@ -304,9 +304,22 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="macro_MedianFilter_Execute.vi" Type="VI" URL="../Macros/macro_MedianFilter_Execute.vi"/>
 			<Item Name="macro_PIDController_AdvExecute.vi" Type="VI" URL="../Macros/macro_PIDController_AdvExecute.vi"/>
 			<Item Name="macro_PIDController_Execute.vi" Type="VI" URL="../Macros/macro_PIDController_Execute.vi"/>
+			<Item Name="macro_Pose2d_XYAngleDeg.vi" Type="VI" URL="../Macros/macro_Pose2d_XYAngleDeg.vi"/>
+			<Item Name="macro_Pose2d_XYAngleRad.vi" Type="VI" URL="../Macros/macro_Pose2d_XYAngleRad.vi"/>
+			<Item Name="macro_Pose3d_XYZ_Axis_AngleDeg.vi" Type="VI" URL="../Macros/macro_Pose3d_XYZ_Axis_AngleDeg.vi"/>
+			<Item Name="macro_Pose3d_XYZ_Axis_AngleRad.vi" Type="VI" URL="../Macros/macro_Pose3d_XYZ_Axis_AngleRad.vi"/>
+			<Item Name="macro_Pose3d_XYZ_RollPitchYaw_Deg.vi" Type="VI" URL="../Macros/macro_Pose3d_XYZ_RollPitchYaw_Deg.vi"/>
+			<Item Name="macro_Pose3d_XYZ_RollPitchYaw_Rad.vi" Type="VI" URL="../Macros/macro_Pose3d_XYZ_RollPitchYaw_Rad.vi"/>
 			<Item Name="macro_ProfiledPIDController_Execute.vi" Type="VI" URL="../Macros/macro_ProfiledPIDController_Execute.vi"/>
 			<Item Name="macro_Ramsete_Execute.vi" Type="VI" URL="../Macros/macro_Ramsete_Execute.vi"/>
 			<Item Name="macro_Ramsete_Execute_ENG.vi" Type="VI" URL="../Macros/macro_Ramsete_Execute_ENG.vi"/>
+			<Item Name="macro_Rotation2d_AngleDeg.vi" Type="VI" URL="../Macros/macro_Rotation2d_AngleDeg.vi"/>
+			<Item Name="macro_Rotation2d_AngleRad.vi" Type="VI" URL="../Macros/macro_Rotation2d_AngleRad.vi"/>
+			<Item Name="macro_Rotation2d_X_Y.vi" Type="VI" URL="../Macros/macro_Rotation2d_X_Y.vi"/>
+			<Item Name="macro_Rotation3d_Axis_AngleDeg.vi" Type="VI" URL="../Macros/macro_Rotation3d_Axis_AngleDeg.vi"/>
+			<Item Name="macro_Rotation3d_Axis_AngleRad.vi" Type="VI" URL="../Macros/macro_Rotation3d_Axis_AngleRad.vi"/>
+			<Item Name="macro_Rotation3d_RollPitchYaw_Deg.vi" Type="VI" URL="../Macros/macro_Rotation3d_RollPitchYaw_Deg.vi"/>
+			<Item Name="macro_Rotation3d_RollPitchYaw_Rad.vi" Type="VI" URL="../Macros/macro_Rotation3d_RollPitchYaw_Rad.vi"/>
 			<Item Name="macro_SimpleMotorFF_Calc_NextV.vi" Type="VI" URL="../Macros/macro_SimpleMotorFF_Calc_NextV.vi"/>
 			<Item Name="macro_SimpleMotorFF_Calculate.vi" Type="VI" URL="../Macros/macro_SimpleMotorFF_Calculate.vi"/>
 			<Item Name="macro_SimpleMotorFF_Calculate_CalcAccel.vi" Type="VI" URL="../Macros/macro_SimpleMotorFF_Calculate_CalcAccel.vi"/>
@@ -316,6 +329,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="macro_Trajectory_FGV_Template.vi" Type="VI" URL="../Macros/macro_Trajectory_FGV_Template.vi"/>
 			<Item Name="macro_TrajectoryGenerate.vi" Type="VI" URL="../Macros/macro_TrajectoryGenerate.vi"/>
 			<Item Name="macro_TrajectoryReadFile.vi" Type="VI" URL="../Macros/macro_TrajectoryReadFile.vi"/>
+			<Item Name="macro_Translation2d_Dist_AngleDeg.vi" Type="VI" URL="../Macros/macro_Translation2d_Dist_AngleDeg.vi"/>
+			<Item Name="macro_Translation2d_Dist_AngleRad.vi" Type="VI" URL="../Macros/macro_Translation2d_Dist_AngleRad.vi"/>
+			<Item Name="macro_Translation2d_X_Y.vi" Type="VI" URL="../Macros/macro_Translation2d_X_Y.vi"/>
+			<Item Name="macro_Translation3d_X_Y_Z.vi" Type="VI" URL="../Macros/macro_Translation3d_X_Y_Z.vi"/>
 			<Item Name="macro_TrapezoidProfile_Execute.vi" Type="VI" URL="../Macros/macro_TrapezoidProfile_Execute.vi"/>
 			<Item Name="macro_vecBuilder1x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder1x1FIll.vi"/>
 			<Item Name="macro_vecBuilder2x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder2x1FIll.vi"/>
