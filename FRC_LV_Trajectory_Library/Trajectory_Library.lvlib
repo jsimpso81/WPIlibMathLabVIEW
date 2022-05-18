@@ -596,7 +596,11 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="CoordAxis_W.vi" Type="VI" URL="../CoordAxis_W.vi"/>
 			</Item>
 			<Item Name="CoordinateSystem" Type="Folder">
+				<Item Name="CoordSystem_Convert.vi" Type="VI" URL="../CoordSystem_Convert.vi"/>
+				<Item Name="CoordSystem_EDN.vi" Type="VI" URL="../CoordSystem_EDN.vi"/>
+				<Item Name="CoordSystem_NED.vi" Type="VI" URL="../CoordSystem_NED.vi"/>
 				<Item Name="CoordSystem_New.vi" Type="VI" URL="../CoordSystem_New.vi"/>
+				<Item Name="CoordSystem_NWU.vi" Type="VI" URL="../CoordSystem_NWU.vi"/>
 			</Item>
 			<Item Name="Pose2d" Type="Folder">
 				<Item Name="Pose2d_Equals.vi" Type="VI" URL="../Pose2d_Equals.vi"/>
