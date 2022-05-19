@@ -801,6 +801,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="MecaKinematics_ToWheelSpeedsZeroCenter.vi" Type="VI" URL="../MecaKinematics_ToWheelSpeedsZeroCenter.vi"/>
 			</Item>
 			<Item Name="MecaOdometry" Type="Folder">
+				<Item Name="MecaOdometry_GetKinematics.vi" Type="VI" URL="../MecaOdometry_GetKinematics.vi"/>
 				<Item Name="MecaOdometry_GetPose.vi" Type="VI" URL="../MecaOdometry_GetPose.vi"/>
 				<Item Name="MecaOdometry_New.vi" Type="VI" URL="../MecaOdometry_New.vi"/>
 				<Item Name="MecaOdometry_NewDefaultPose.vi" Type="VI" URL="../MecaOdometry_NewDefaultPose.vi"/>
@@ -809,6 +810,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="MecaOdometry_UpdateWithTime.vi" Type="VI" URL="../MecaOdometry_UpdateWithTime.vi"/>
 			</Item>
 			<Item Name="MecaWheelSpeeds" Type="Folder">
+				<Item Name="MecaWheel_GetAll.vi" Type="VI" URL="../MecaWheel_GetAll.vi"/>
 				<Item Name="MecaWheel_New.vi" Type="VI" URL="../MecaWheel_New.vi"/>
 				<Item Name="MecaWheel_normalize.vi" Type="VI" URL="../MecaWheel_normalize.vi"/>
 			</Item>
