@@ -200,6 +200,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl" Type="VI" URL="../LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl"/>
 		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../MECA_DRIVE_ODOMETRY.ctl"/>
+		<Item Name="MECA_DRIVE_POSE_EST.ctl" Type="VI" URL="../MECA_DRIVE_POSE_EST.ctl"/>
 		<Item Name="MECA_WHEEL_SPEEDS.ctl" Type="VI" URL="../MECA_WHEEL_SPEEDS.ctl"/>
 		<Item Name="MEDIAN_FILTER.ctl" Type="VI" URL="../MEDIAN_FILTER.ctl"/>
 		<Item Name="MERWE_SCALED_SIGMA_PTS.ctl" Type="VI" URL="../MERWE_SCALED_SIGMA_PTS.ctl"/>
@@ -613,7 +614,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="CoordAxis_W.vi" Type="VI" URL="../CoordAxis_W.vi"/>
 			</Item>
 			<Item Name="CoordinateSystem" Type="Folder">
-				<Item Name="CoordSystem_Convert.vi" Type="VI" URL="../CoordSystem_Convert.vi"/>
+				<Item Name="CoordSystem_Convert_Pose3d.vi" Type="VI" URL="../CoordSystem_Convert_Pose3d.vi"/>
+				<Item Name="CoordSystem_Convert_Rotation3d.vi" Type="VI" URL="../CoordSystem_Convert_Rotation3d.vi"/>
+				<Item Name="CoordSystem_Convert_Translation3d.vi" Type="VI" URL="../CoordSystem_Convert_Translation3d.vi"/>
 				<Item Name="CoordSystem_EDN.vi" Type="VI" URL="../CoordSystem_EDN.vi"/>
 				<Item Name="CoordSystem_NED.vi" Type="VI" URL="../CoordSystem_NED.vi"/>
 				<Item Name="CoordSystem_New.vi" Type="VI" URL="../CoordSystem_New.vi"/>
@@ -1297,6 +1300,19 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="KalmanFilterLatencyComp_New.vi" Type="VI" URL="../KalmanFilterLatencyComp_New.vi"/>
 				<Item Name="KalmanFilterLatencyComp_Observer_New.vi" Type="VI" URL="../KalmanFilterLatencyComp_Observer_New.vi"/>
 				<Item Name="KalmanFilterLatencyComp_Reset.vi" Type="VI" URL="../KalmanFilterLatencyComp_Reset.vi"/>
+			</Item>
+			<Item Name="Mecanum Drive Pose Estimator" Type="Folder">
+				<Item Name="MecaDrivePoseEst_AddVisionMeasurement.vi" Type="VI" URL="../MecaDrivePoseEst_AddVisionMeasurement.vi"/>
+				<Item Name="MecaDrivePoseEst_GetEstimatedPosition.vi" Type="VI" URL="../MecaDrivePoseEst_GetEstimatedPosition.vi"/>
+				<Item Name="MecaDrivePoseEst_Kalman_F_Callback.vi" Type="VI" URL="../MecaDrivePoseEst_Kalman_F_Callback.vi"/>
+				<Item Name="MecaDrivePoseEst_Kalman_H_Callback.vi" Type="VI" URL="../MecaDrivePoseEst_Kalman_H_Callback.vi"/>
+				<Item Name="MecaDrivePoseEst_New.vi" Type="VI" URL="../MecaDrivePoseEst_New.vi"/>
+				<Item Name="MecaDrivePoseEst_ResetPosition.vi" Type="VI" URL="../MecaDrivePoseEst_ResetPosition.vi"/>
+				<Item Name="MecaDrivePoseEst_SetVisionMeasurementStdDevs.vi" Type="VI" URL="../MecaDrivePoseEst_SetVisionMeasurementStdDevs.vi"/>
+				<Item Name="MecaDrivePoseEst_Update.vi" Type="VI" URL="../MecaDrivePoseEst_Update.vi"/>
+				<Item Name="MecaDrivePoseEst_UpdateWithTime.vi" Type="VI" URL="../MecaDrivePoseEst_UpdateWithTime.vi"/>
+				<Item Name="MecaDrivePoseEst_VisionCorrect_Callback.vi" Type="VI" URL="../MecaDrivePoseEst_VisionCorrect_Callback.vi"/>
+				<Item Name="MecaDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi" Type="VI" URL="../MecaDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi"/>
 			</Item>
 			<Item Name="Swerve Drive Pose Estimator" Type="Folder">
 				<Item Name="SwerveDrivePoseEst_AddVisionMeasurement.vi" Type="VI" URL="../SwerveDrivePoseEst_AddVisionMeasurement.vi"/>
