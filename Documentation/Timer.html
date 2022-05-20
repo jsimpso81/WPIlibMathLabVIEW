@@ -1,0 +1,1035 @@
+<HTML>
+<HEAD>
+<TITLE>Timer_Close.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Timer_Close.vi"></A><H2>Timer_Close.vi</H2>
+<P>  </P>
+<P>Releases resources used by a Timer data cluster.  Specifically the semaphore is deleted.</P>
+<P></P>
+<P>Inputs:</P>
+<P>  - Timer  --  The Timer data cluster</P>
+<P> </P>
+<P><IMG SRC="Trajectory__Library_lvlib_Timer__Closec.png" ALT="Timer_Close.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>TIMER</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdlrn.png" ALT="cdlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="Timer_Get.vi"></A><H2>Timer_Get.vi</H2>
+<P> </P>
+<P>Get the current time from the timer. If the clock is running it is derived from the current system clock the start time stored in the timer class. If the clock is not running, then return the time when it was last stopped.</P>
+<P></P>
+<P>Inputs:</P>
+<P>  - Timer  --  The Timer data cluster</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  CurrentTimer  --  Current time value for this timer in seconds</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Timer__Getc.png" ALT="Timer_Get.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>TIMER</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdlrn.png" ALT="cdlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Pass_Through_Time</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>CurrentTImer</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Timer_GetAndReset.vi"></A><H2>Timer_GetAndReset.vi</H2>
+<P> </P>
+<P>Synchronized call to get and reset the timer.  Get the current time from the timer. If the clock is running it is derived from the current system clock the start time stored in the timer class. If the clock is not running, then return the time when it was last stopped.  Also reset the timer by setting the time to 0. Make the timer startTime the current time so new requests will be relative now.</P>
+<P></P>
+<P>Inputs:</P>
+<P>  - Timer  --  The Timer data cluster</P>
+<P></P>
+<P>Outputs:</P>
+<P>  - Timer  --  The modified Timer data cluster</P>
+<P>  -  CurrentTimer  --  Current time value for this timer in seconds</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Timer__GetAndResetc.png" ALT="Timer_GetAndReset.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>In Timer</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdlrn.png" ALT="cdlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Pass_Through_Time</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>CurrentTImer</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>out TIMER</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idlrn.png" ALT="idlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="Timer_HasPeriodPassed.vi"></A><H2>Timer_HasPeriodPassed.vi</H2>
+<P> </P>
+<P>Check if the period specified has passed and if it has, advance the start time by that period. This is useful to decide if it's time to do periodic work without drifting later by the time it took to get around to checking.</P>
+<P></P>
+<P>Inputs:</P>
+<P>  -  Timer  --  The Timer data cluster</P>
+<P>  -  period  --  The period to check for (in seconds).</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  Timer  --  The modified Timer data cluster</P>
+<P>  -  CurrentTimer  --  Current time value for this timer in seconds</P>
+<P>  -  Expired  --  True if the period has passed.</P>
+<P> </P>
+<P><IMG SRC="Trajectory__Library_lvlib_Timer__HasPeriodPassedc.png" ALT="Timer_HasPeriodPassed.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Timer</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdlrn.png" ALT="cdlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Period</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Pass_Through_Time</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>out Timer</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idlrn.png" ALT="idlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Expired</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>CurrentTImer</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Timer_HasPeriodPassedOnce.vi"></A><H2>Timer_HasPeriodPassedOnce.vi</H2>
+<P> </P>
+<P>Check if the period specified has passed and if it has, the timer is stopped and reset. This is useful for timers that have to be timers that have to be specifically re-started after they have expired.</P>
+<P></P>
+<P>Inputs:</P>
+<P>  -  Timer  --  The Timer data cluster</P>
+<P>  -  period  --  The period to check for (in seconds).</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  Timer  --  The modified Timer data cluster</P>
+<P>  -  CurrentTimer  --  Current time value for this timer in seconds</P>
+<P>  -  Expired  --  True if the period has passed.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Timer__HasPeriodPassedOncec.png" ALT="Timer_HasPeriodPassedOnce.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Timer</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdlrn.png" ALT="cdlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Period</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Pass_Through_Time</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>out Timer</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idlrn.png" ALT="idlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Expired</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>CurrentTImer</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Timer_New.vi"></A><H2>Timer_New.vi</H2>
+<P>Creates and initializes a Timer data cluster.</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  Timer  --  The initialized Timer data cluster</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Timer__Newc.png" ALT="Timer_New.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Pass_Through_Time</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>TIMER</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idlrn.png" ALT="idlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="Timer_Reset.vi"></A><H2>Timer_Reset.vi</H2>
+<P> </P>
+<P>Reset the timer by setting the time to 0. Make the timer startTime the current time so new requests will be relative now</P>
+<P></P>
+<P>Inputs:</P>
+<P>  - Timer  --  The Timer data cluster</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  Timer  --  The modified Timer data cluster</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Timer__Resetc.png" ALT="Timer_Reset.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in TIMER</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdlrn.png" ALT="cdlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Pass_Through_Time</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>out TIMER</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idlrn.png" ALT="idlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="Timer_Start.vi"></A><H2>Timer_Start.vi</H2>
+<P> </P>
+<P>Start the timer running. Just set the running flag to true indicating that all time requests should be relative to the system clock.</P>
+<P></P>
+<P>Inputs:</P>
+<P>  - Timer  --  The Timer data cluster</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  Timer  --  The modified Timer data cluster</P>
+<P> </P>
+<P><IMG SRC="Trajectory__Library_lvlib_Timer__Startc.png" ALT="Timer_Start.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Timer</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdlrn.png" ALT="cdlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Pass_Through_Time</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>out Timer</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idlrn.png" ALT="idlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="Timer_Stop.vi"></A><H2>Timer_Stop.vi</H2>
+<P> </P>
+<P>Stop the timer. This computes the time as of now and clears the running flag, causing all subsequent time requests to be read from the accumulated time rather than looking at the system clock.</P>
+<P></P>
+<P>Inputs:</P>
+<P>  - Timer  --  The Timer data cluster</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  Timer  --  The modified Timer data cluster</P>
+<P> </P>
+<P><IMG SRC="Trajectory__Library_lvlib_Timer__Stopc.png" ALT="Timer_Stop.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Timer</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdlrn.png" ALT="cdlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Pass_Through_Time</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>out Timer</B> <P>Timer data  cluster typedef</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>StartTime</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Accumulated TIme</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Running</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idlrn.png" ALT="idlrn"></P>
+</TD>
+<TD>
+<B>semaphore</B> <P><B>semaphore</B> is a reference to an existing or newly created semaphore.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

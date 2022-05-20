@@ -1,0 +1,262 @@
+<HTML>
+<HEAD>
+<TITLE>Trajectory_Library.lvlib:DigSeqLogic_Off_Delay.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Trajectory_Library.lvlib:DigSeqLogic_Off_Delay.vi"></A><H2>Trajectory_Library.lvlib:DigSeqLogic_Off_Delay.vi</H2>
+<P>This VI implements a digital &quot;off delay&quot;.  The output becomes TRUE when the input goes TRUE.  The output remains TRUE for a specified time after the input goes FALSE.</P>
+<P></P>
+<P>Inputs:</P>
+<P>   -  Input  --  Boolean input value</P>
+<P>   - Delay  -- Off delay time in seconds.</P>
+<P>   - Time  --  Continously counting system time, Seconds.  If not wired the FPGA time will be used.</P>
+<P></P>
+<P>Outputs:</P>
+<P>   - Output  --  Boolean output value with the off delay applied</P>
+<P>   - Remain  --  Time remaining for this value to be on, seconds.  Value will be 0 to Delay input value.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_DigSeqLogic__Off__Delayc.png" ALT="Trajectory_Library.lvlib:DigSeqLogic_Off_Delay.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Delay</B> <P>Delay in seconds.  Default is 1.0.  Once the delay has started, this value cannot be changed.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Time</B> <P>Optional clock input representing elapsed seconds.  If this parameter is not specified, this routine reads the system clock or FGPA clock to obtain the  time.  For best sequencing use of an external time is suggested.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Input</B> <P>required boolean input to generate off delay from</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Remain</B> <P>Remaining time, seconds, to delay before the output becomes true.  When the input is false, this value is zero.  </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Output</B> <P>Digital Output</P>
+</TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:DigSeqLogic_On_Delay.vi"></A><H2>Trajectory_Library.lvlib:DigSeqLogic_On_Delay.vi</H2>
+<P>This VI implements a digital &quot;on delay&quot;.  When input is zero, output is zero.  When output is true, input goes true after the designated time delay.  Once the delay counter has started, the time delay value cannot be changed.</P>
+<P></P>
+<P>Inputs:</P>
+<P>   -  Input  --  Boolean input value</P>
+<P>   - Delay  -- On delay time in seconds.</P>
+<P>   - Time  --  Continously counting system time, Seconds.  If not wired the FPGA time will be used.</P>
+<P></P>
+<P>Outputs:</P>
+<P>   - Output  --  Boolean output value with the on delay applied</P>
+<P>   - Remain  --  Time remaining for this value to be off in, seconds.  Value will be 0 to Delay input value.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_DigSeqLogic__On__Delayc.png" ALT="Trajectory_Library.lvlib:DigSeqLogic_On_Delay.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Delay</B> <P>On Delay time in Seconds</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Time</B> <P>Optional clock input representing elapsed seconds.  If this parameter is not specified, this routine reads the system clock or FGPA clock to obtain the  time.  For best sequencing use of an external time is suggested.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Input</B> <P>Digital Input</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Remain</B> <P>Remaining time for the output to be TRUE</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Output</B> <P>Digital Output</P>
+</TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:DigSeqLogic_One_Shot.vi"></A><H2>Trajectory_Library.lvlib:DigSeqLogic_One_Shot.vi</H2>
+<P>This VI implements a digital &quot;one shot&quot;.  The output is true for a specific period of time after the input transitions from FALSE to TRUE.</P>
+<P></P>
+<P>Inputs:</P>
+<P>   - Input  --  Boolean input to use for one shot output</P>
+<P>   - OneShot  -- Length of one shot output in seconds.</P>
+<P>   - Time  --  Current system time.  If not wired, FPGA time is used. </P>
+<P></P>
+<P>Output:</P>
+<P>   - Output  --  Boolean output one-shot </P>
+<P>   - Remain --  Number of seconds remaining in one-shot.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_DigSeqLogic__One__Shotc.png" ALT="Trajectory_Library.lvlib:DigSeqLogic_One_Shot.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>OneShot</B> <P>One Shot TIme in Seconds.  </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Time</B> <P>Optional elapsed time counter.  If not specified the VI uses an internal call to obtain the time.  For best sequencing use of an external time is suggested.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Input</B> <P>Digital Input that starts the &quot;One Shot&quot;</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Remain</B> <P>Remaining Time the output will be TRUE (Seconds)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Output</B> <P>Output digital value</P>
+</TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:DigSeqLogic_SR_FlipFlop.vi"></A><H2>Trajectory_Library.lvlib:DigSeqLogic_SR_FlipFlop.vi</H2>
+<P>This VI implements a standard Set-Reset (SR) Flip Flop.    A flip flop is sometimes called &quot;digital memory&quot; because when both inputs are off, it remembers the state of the last input.</P>
+<P></P>
+<P>Reset takes precedence over Set.  The initial state is Reset.  </P>
+<P></P>
+<P>Inputs:</P>
+<P>   - Set  --  Boolean, when TRUE indicates the flip-flop should be SET.</P>
+<P>   - Reset  --  Boolean, when TRUE indicates the flip-flop should be RESET.   (Reset overrides set.)</P>
+<P>   - InitialValue  --  Value of the flip-flop during the first execution.   TRUE = SET, FALSE = RESET.   (Defaul:  False)</P>
+<P></P>
+<P>Output:</P>
+<P>   - Output  --  Output state of the flip-flop</P>
+<P>   - Inverse Output  --  Inverse (NOT) output of the flip-flop.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_DigSeqLogic__SR__FlipFlopc.png" ALT="Trajectory_Library.lvlib:DigSeqLogic_SR_FlipFlop.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Reset</B> <P>Reset input.  The output is set to FALSE when this input is TRUE.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Set</B> <P>Set input.  The output is set TRUE when this is on AND the Reset input is FALSE.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Initial Value</B> <P>Initial Output Value.  This is optional.  The default is FALSE.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Output</B> <P>Output Value</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Inverse Output</B> <P>Inverse Output Value.  The NOT of the Output Value</P>
+</TD>
+</TR>
+</Table>
+</BODY>
+</HTML>

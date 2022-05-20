@@ -1,0 +1,716 @@
+<HTML>
+<HEAD>
+<TITLE>SlewRateLimiter_Calculate.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="SlewRateLimiter_Calculate.vi"></A><H2>SlewRateLimiter_Calculate.vi</H2>
+<P>  </P>
+<P>Filters the input to limit its slew rate.</P>
+<P> </P>
+<P>Inputs: </P>
+<P>  -  in Slew Rate Limiter  --  The Slew Rate Limiter data cluster</P>
+<P>  -  input  --  The input value whose slew rate is to be limited.</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  out Slew Rate Limiter  --  The modified Slew Rate Limiter data cluster</P>
+<P>  -  output  --  The filtered value, which will not change faster than the slew rate.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SlewRateLimiter__Calculatec.png" ALT="SlewRateLimiter_Calculate.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>in SLEW_RATE_LIMITER</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>RateLimit</B> <P>The rate limit (units/second)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PrevValue</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PrevTime</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Input</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Time</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>out SLEW_RATE_LIMITER</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>RateLimit</B> <P>The rate limit (units/second)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>PrevValue</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>PrevTime</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Output</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="SlewRateLimiter_Close.vi"></A><H2>SlewRateLimiter_Close.vi</H2>
+<P>  </P>
+<P>Releases resources used by a SlewRateLimiter data cluster.  </P>
+<P></P>
+<P>(Since the Timer was removed, this no longer needs to be called.  This is now a do nothing function.)</P>
+<P></P>
+<P></P>
+<P>Inputs:</P>
+<P>  -  in Slew Rate Limiter  --  The Slew Rate Limiter data cluster</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SlewRateLimiter__Closec.png" ALT="SlewRateLimiter_Close.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>out SLEW_RATE_LIMITER</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>RateLimit</B> <P>The rate limit (units/second)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PrevValue</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PrevTime</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="SlewRateLimiter_Execute.vi"></A><H2>SlewRateLimiter_Execute.vi</H2>
+<P></P>
+<P>Convience, single call, LabVIEW function.  Creates and calculates the slew rate limiter function to filter the input to limit its slew rate.  The optional enable parameter bypasses the filter calculation when &quot;enabled&quot; is false.  When enabled is &quot;false&quot; the input is passed directly to the output and the internal buffer is continually filled with the current input value.</P>
+<P></P>
+<P></P>
+<P>This limits the rate of change of an input value.  Useful for implementing voltage, setpoint, and/or output ramps.  A slew-rate limit is most appropriate when the quantity being controlled is a velocity or a voltage; when controlling a position, consider using a postion control algoritmn or trapezoid profile instead.</P>
+<P></P>
+<P>Inputs:</P>
+<P>  -  input  --  The input value whose slew rate is to be limited.</P>
+<P>  -  rate  --  The new rate limit in units/second.</P>
+<P>  -  enable  --  Perform the rate limit calcuation when True.  When False, output the input value unchanged.  (Default=True)</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  out Slew Rate Limiter  --  The modified Slew Rate Limiter data cluster</P>
+<P>  -  output  --  The filtered value, which will not change faster than the slew rate.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SlewRateLimiter__Executec.png" ALT="SlewRateLimiter_Execute.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Input</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Enable</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Rate</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Time</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>out SLEW_RATE_LIMITER</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>RateLimit</B> <P>The rate limit (units/second)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>PrevValue</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>PrevTime</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Output</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="SlewRateLimiter_GetRate.vi"></A><H2>SlewRateLimiter_GetRate.vi</H2>
+<P>  </P>
+<P>Gets the current rate limit value.</P>
+<P></P>
+<P>Inputs:</P>
+<P>  -  in Slew Rate Limiter  --  The Slew Rate Limiter data cluster</P>
+<P> </P>
+<P>Outputs:</P>
+<P>  -  rate  --  The current rate limit in units/second.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SlewRateLimiter__GetRatec.png" ALT="SlewRateLimiter_GetRate.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>in SLEW_RATE_LIMITER</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>RateLimit</B> <P>The rate limit (units/second)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PrevValue</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PrevTime</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Rate</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="SlewRateLimiter_New.vi"></A><H2>SlewRateLimiter_New.vi</H2>
+<P>  </P>
+<P>Creates a new SlewRateLimiter data cluster with the given rate limit and initial value.</P>
+<P></P>
+<P>This set of functions limits the rate of change of an input value.  Useful for implementing voltage, setpoint, and/or output ramps.  A slew-rate limit is most appropriate when the quantity being controlled is a velocity or a voltage; when controlling a position, consider using a postion control algoritmn or trapezoid profile instead.</P>
+<P></P>
+<P>Inputs:</P>
+<P>  -  rateLimit  --  The rate-of-change limit, in units per second.</P>
+<P>  -  initialValue  --  The initial value of the input.</P>
+<P> </P>
+<P>Outputs:</P>
+<P>  -  out Slew Rate Limiter  --  The initialized Slew Rate Limiter data cluster</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SlewRateLimiter__Newc.png" ALT="SlewRateLimiter_New.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>RateLimit</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>InitialValue</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Time</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>out SLEW_RATE_LIMITER</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>RateLimit</B> <P>The rate limit (units/second)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>PrevValue</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>PrevTime</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="SlewRateLimiter_NewInitialZero.vi"></A><H2>SlewRateLimiter_NewInitialZero.vi</H2>
+<P>  </P>
+<P>Creates a new SlewRateLimiter data cluster with the given rate limit.  The initial value is set to zero.</P>
+<P></P>
+<P>This set of functions limits the rate of change of an input value.  Useful for implementing voltage, setpoint, and/or output ramps.  A slew-rate limit is most appropriate when the quantity being controlled is a velocity or a voltage; when controlling a position, consider using a postion control algoritmn or trapezoid profile instead.</P>
+<P></P>
+<P>Inputs:</P>
+<P>  -  rateLimit  --  The rate-of-change limit, in units per second.</P>
+<P> </P>
+<P>Outputs:</P>
+<P>  -  out Slew Rate Limiter  --  The initialized Slew Rate Limiter data cluster</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SlewRateLimiter__NewInitialZeroc.png" ALT="SlewRateLimiter_NewInitialZero.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>RateLimit</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Time</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>out SLEW_RATE_LIMITER</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>RateLimit</B> <P>The rate limit (units/second)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>PrevValue</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>PrevTime</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="SlewRateLimiter_Reset.vi"></A><H2>SlewRateLimiter_Reset.vi</H2>
+<P>  </P>
+<P>Resets the slew rate limiter to the specified value; ignores the rate limit when doing so.</P>
+<P> </P>
+<P>Inputs: </P>
+<P>  -  in Slew Rate Limiter  --  The Slew Rate Limiter data cluster</P>
+<P>  -  ResetValue  --  The value to reset to.</P>
+<P>  </P>
+<P> </P>
+<P>Outputs:</P>
+<P>  -  out Slew Rate Limiter  --  The modified Slew Rate Limiter data cluster</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SlewRateLimiter__Resetc.png" ALT="SlewRateLimiter_Reset.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>in SLEW_RATE_LIMITER</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>RateLimit</B> <P>The rate limit (units/second)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PrevValue</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PrevTime</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>ResetValue</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Time</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>out SLEW_RATE_LIMITER</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>RateLimit</B> <P>The rate limit (units/second)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>PrevValue</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>PrevTime</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="SlewRateLimiter_SetRate.vi"></A><H2>SlewRateLimiter_SetRate.vi</H2>
+<P>  </P>
+<P>Sets the current rate value.</P>
+<P></P>
+<P>Inputs:</P>
+<P>  -  in Slew Rate Limiter  --  The Slew Rate Limiter data cluster</P>
+<P>  -  rate  --  The new rate limit in units/second.</P>
+<P> </P>
+<P>Outputs:</P>
+<P>  -  out Slew Rate Limiter  --  The modified Slew Rate Limiter data cluster</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SlewRateLimiter__SetRatec.png" ALT="SlewRateLimiter_SetRate.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>in SLEW_RATE_LIMITER</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>RateLimit</B> <P>The rate limit (units/second)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PrevValue</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PrevTime</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Rate</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>out SLEW_RATE_LIMITER</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>RateLimit</B> <P>The rate limit (units/second)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>PrevValue</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>PrevTime</B> <P>Save ot previous output</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

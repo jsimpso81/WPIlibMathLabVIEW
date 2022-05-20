@@ -1,0 +1,753 @@
+<HTML>
+<HEAD>
+<TITLE>Trajectory_Library.lvlib:ElevFF_Calculate.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Trajectory_Library.lvlib:ElevFF_Calculate.vi"></A><H2>Trajectory_Library.lvlib:ElevFF_Calculate.vi</H2>
+<P>  </P>
+<P>Calculates the feedforward from the gains and setpoints.</P>
+<P>   </P>
+<P>Inputs:   </P>
+<P>  -  ElevFF  --  The ElevFF data cluster</P>
+<P>  -  velocity  --  The velocity setpoint.</P>
+<P>  -  acceleration  --  The acceleration setpoint.</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  feedforward  --  The computed feedforward.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_ElevFF__Calculatec.png" ALT="Trajectory_Library.lvlib:ElevFF_Calculate.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Velocity</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Accel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>in ELEV_FF</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ks</B> <P>The static gain</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kv</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ka</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kg</B> <P>The gravity gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>FeedForward</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:ElevFF_CalculateVelocityOnly.vi"></A><H2>Trajectory_Library.lvlib:ElevFF_CalculateVelocityOnly.vi</H2>
+<P>  </P>
+<P>Calculates the feedforward from the gains and velocity setpoint (acceleration is assumed to be zero).</P>
+<P>   </P>
+<P>Inputs:   </P>
+<P>  -  ElevFF  --  The ElevFF data cluster</P>
+<P>  -  velocity  --  The velocity setpoint.</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  feedforward  --  The computed feedforward.</P>
+<P>  </P>
+<P><IMG SRC="Trajectory__Library_lvlib_ElevFF__CalculateVelocityOnlyc.png" ALT="Trajectory_Library.lvlib:ElevFF_CalculateVelocityOnly.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Velocity</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>in ELEV_FF</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ks</B> <P>The static gain</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kv</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ka</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kg</B> <P>The gravity gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>FeedForward</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:ElevFF_MaxAchieveAccel.vi"></A><H2>Trajectory_Library.lvlib:ElevFF_MaxAchieveAccel.vi</H2>
+<P>  </P>
+<P>Calculates the maximum achievable acceleration given a maximum voltage supply and a velocity. Useful for ensuring that velocity and acceleration constraints for a trapezoidal profile are simultaneously achievable - enter the velocity constraint, and this will give you a simultaneously-achievable acceleration constraint.</P>
+<P>   </P>
+<P>Inputs:   </P>
+<P>  -  ElevFF  --  The ElevFF data cluster</P>
+<P>  -  maxVoltage  --  The maximum voltage that can be supplied to the elevator.</P>
+<P>  -  velocity  --  The velocity of the elevator.</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  MaxAccel  --  The maximum possible acceleration at the given velocity.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_ElevFF__MaxAchieveAccelc.png" ALT="Trajectory_Library.lvlib:ElevFF_MaxAchieveAccel.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>MaxVoltage</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Velocity</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>in ELEV_FF</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ks</B> <P>The static gain</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kv</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ka</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kg</B> <P>The gravity gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>MaxAccel</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:ElevFF_MaxAchieveVelocity.vi"></A><H2>Trajectory_Library.lvlib:ElevFF_MaxAchieveVelocity.vi</H2>
+<P>  </P>
+<P>Calculates the maximum achievable velocity given a maximum voltage supply and an acceleration.  Useful for ensuring that velocity and acceleration constraints for a trapezoidal profile are simultaneously achievable - enter the acceleration constraint, and this will give you a simultaneously-achievable velocity constraint.</P>
+<P>   </P>
+<P>Inputs:   </P>
+<P>  -  ElevFF  --  The ElevFF data cluster</P>
+<P>  -  maxVoltage  --  The maximum voltage that can be supplied to the elevator.</P>
+<P>  -  acceleration  --  The acceleration of the elevator.</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  MaxVelocity  --  The maximum possible velocity at the given acceleration.</P>
+<P>  </P>
+<P><IMG SRC="Trajectory__Library_lvlib_ElevFF__MaxAchieveVelocityc.png" ALT="Trajectory_Library.lvlib:ElevFF_MaxAchieveVelocity.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>MaxVoltage</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Acceleration</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>in ELEV_FF</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ks</B> <P>The static gain</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kv</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ka</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kg</B> <P>The gravity gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>MaxVelocity</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:ElevFF_MinAchieveAccel.vi"></A><H2>Trajectory_Library.lvlib:ElevFF_MinAchieveAccel.vi</H2>
+<P>  </P>
+<P>Calculates the minimum achievable acceleration given a maximum voltage supply and a velocity. Useful for ensuring that velocity and acceleration constraints for a trapezoidal profile are simultaneously achievable - enter the velocity constraint, and this will give you a simultaneously-achievable acceleration constraint.</P>
+<P>   </P>
+<P>Inputs:   </P>
+<P>  -  ElevFF  --  The ElevFF data cluster</P>
+<P>  -  maxVoltage  --  The maximum voltage that can be supplied to the elevator.</P>
+<P>  -  velocity  --  The velocity of the elevator.</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  MinAccel  --  The minimum possible acceleration at the given velocity.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_ElevFF__MinAchieveAccelc.png" ALT="Trajectory_Library.lvlib:ElevFF_MinAchieveAccel.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>MaxVoltage</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Velocity</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>in ELEV_FF</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ks</B> <P>The static gain</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kv</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ka</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kg</B> <P>The gravity gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>MinAccel</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:ElevFF_MinAchieveVelocity.vi"></A><H2>Trajectory_Library.lvlib:ElevFF_MinAchieveVelocity.vi</H2>
+<P>  </P>
+<P>Calculates the minimum achievable velocity given a maximum voltage supply and an acceleration.  Useful for ensuring that velocity and acceleration constraints for a trapezoidal profile are simultaneously achievable - enter the acceleration constraint, and this will give you a simultaneously-achievable velocity constraint.</P>
+<P>   </P>
+<P>Inputs:   </P>
+<P>  -  ElevFF  --  The ElevFF data cluster</P>
+<P>  -  maxVoltage  --  The maximum voltage that can be supplied to the elevator.</P>
+<P>  -  acceleration  --  The acceleration of the elevator.</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  MinVelocity  --  The minimum possible velocity at the given acceleration.</P>
+<P>  </P>
+<P><IMG SRC="Trajectory__Library_lvlib_ElevFF__MinAchieveVelocityc.png" ALT="Trajectory_Library.lvlib:ElevFF_MinAchieveVelocity.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>MaxVoltage</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Acceleration</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>in ELEV_FF</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ks</B> <P>The static gain</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kv</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ka</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kg</B> <P>The gravity gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>MinVelocity</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:ElevFF_New.vi"></A><H2>Trajectory_Library.lvlib:ElevFF_New.vi</H2>
+<P>  </P>
+<P>Creates a new ElevatorFeedforward data cluster with the specified gains.  Units of the gain values will dictate units of the computed feedforward.</P>
+<P></P>
+<P>This is a helper set of subVIs that computes feedforward outputs for a simple elevator (modeled as a motor acting against the force of gravity).</P>
+<P></P>
+<P>Inputs:   </P>
+<P>  -  ks  --  The static gain.</P>
+<P>  -  kg  --  The gravity gain.</P>
+<P>  -  kv  --  The velocity gain.</P>
+<P>  -  ka  --  The acceleration gain.</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  ElevFF  --  The initialized ElevFF data cluster</P>
+<P>  </P>
+<P><IMG SRC="Trajectory__Library_lvlib_ElevFF__Newc.png" ALT="Trajectory_Library.lvlib:ElevFF_New.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ks</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kv</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ka</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kg</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>ELEV_FF</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Ks</B> <P>The static gain</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Kv</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Ka</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Kg</B> <P>The gravity gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:ElevFF_New_ZeroAccel.vi"></A><H2>Trajectory_Library.lvlib:ElevFF_New_ZeroAccel.vi</H2>
+<P>  </P>
+<P>Creates a new ElevatorFeedforward data cluster with the specified gains.  Acceleration gain is defaulted to zero.  Units of the gain values will dictate units of the computed feedforward.</P>
+<P></P>
+<P>This is a helper set of subVIs that computes feedforward outputs for a simple elevator (modeled as a motor acting against the force of gravity).</P>
+<P>   </P>
+<P>Inputs:   </P>
+<P>  -  ks  --  The static gain.</P>
+<P>  -  kg  --  The gravity gain.</P>
+<P>  -  kv  --  The velocity gain.</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  ElevFF  --  The initialized ElevFF data cluster</P>
+<P>  </P>
+<P><IMG SRC="Trajectory__Library_lvlib_ElevFF__New__ZeroAccelc.png" ALT="Trajectory_Library.lvlib:ElevFF_New_ZeroAccel.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Ks</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kv</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Kg</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>ELEV_FF</B> <P>Todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Ks</B> <P>The static gain</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Kv</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Ka</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Kg</B> <P>The gravity gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

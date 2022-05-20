@@ -1,0 +1,840 @@
+<HTML>
+<HEAD>
+<TITLE>Trajectory_Library.lvlib:BangBang_AtSetpoint.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Trajectory_Library.lvlib:BangBang_AtSetpoint.vi"></A><H2>Trajectory_Library.lvlib:BangBang_AtSetpoint.vi</H2>
+<P>Returns true if the error is within the tolerance of the setpoint.</P>
+<P></P>
+<P>Input:</P>
+<P>   - BangBang  -- Data cluster</P>
+<P></P>
+<P>Output</P>
+<P>   - AtSetpoint  -- Returns TRUE if within error tolerance.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_BangBang__AtSetpointc.png" ALT="Trajectory_Library.lvlib:BangBang_AtSetpoint.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>BANG_BANG</B> <P>ArmFeedforward data cluster.  Units of the gain values will dictate units of the computed feedforward.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> <P>The static gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>AtSetpoint</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:BangBang_Calculate_PV.vi"></A><H2>Trajectory_Library.lvlib:BangBang_Calculate_PV.vi</H2>
+<P>Returns the calculated control output.</P>
+<P>  </P>
+<P>Always ensure that your motor controllers are set to &quot;coast&quot; before attempting to control them with a bang-bang controller.</P>
+<P>  </P>
+<P>Input:</P>
+<P>   - BangBang  -- Data cluster</P>
+<P>   - measurement  --  The most recent measurement of the process variable.</P>
+<P>    - setpoint  --  The setpoint for the process variable.</P>
+<P></P>
+<P>Output</P>
+<P>   - outBangBang  -- Updated data  cluster</P>
+<P>   - ControlOutput  --  The calculated motor output (0 or 1).</P>
+<P><IMG SRC="Trajectory__Library_lvlib_BangBang__Calculate__PVc.png" ALT="Trajectory_Library.lvlib:BangBang_Calculate_PV.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>BANG_BANG</B> <P>ArmFeedforward data cluster.  Units of the gain values will dictate units of the computed feedforward.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> <P>The static gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>out BANG_BANG</B> <P>ArmFeedforward data cluster.  Units of the gain values will dictate units of the computed feedforward.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> <P>The static gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>ControlOutput</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:BangBang_Calculate_SP_PV.vi"></A><H2>Trajectory_Library.lvlib:BangBang_Calculate_SP_PV.vi</H2>
+<P>Returns the calculated control output.</P>
+<P>  </P>
+<P>Always ensure that your motor controllers are set to &quot;coast&quot; before attempting to control them with a bang-bang controller.</P>
+<P>  </P>
+<P>Input:</P>
+<P>   - BangBang  -- Data cluster</P>
+<P>   - measurement  --  The most recent measurement of the process variable.</P>
+<P>    - setpoint  --  The setpoint for the process variable.</P>
+<P></P>
+<P>Output</P>
+<P>   - outBangBang  -- Updated data  cluster</P>
+<P>   - ControlOutput  --  The calculated motor output (0 or 1).</P>
+<P><IMG SRC="Trajectory__Library_lvlib_BangBang__Calculate__SP__PVc.png" ALT="Trajectory_Library.lvlib:BangBang_Calculate_SP_PV.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>BANG_BANG</B> <P>ArmFeedforward data cluster.  Units of the gain values will dictate units of the computed feedforward.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> <P>The static gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>out BANG_BANG</B> <P>ArmFeedforward data cluster.  Units of the gain values will dictate units of the computed feedforward.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> <P>The static gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>ControlOutput</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:BangBang_Execute.vi"></A><H2>Trajectory_Library.lvlib:BangBang_Execute.vi</H2>
+<P>Implements and executes bang-bang controller, which outputs either 0 or 1 depending on whether the measurement is less than the setpoint. This maximally-aggressive control approach works very well for velocity control of high-inertia mechanisms, and poorly on most other things.  </P>
+<P> </P>
+<P>Note that this is an *asymmetric* bang-bang controller - it will not exert any control effort in the reverse direction (e.g. it won't try to slow down an over-speeding shooter wheel). This asymmetry is *extremely important.* Bang-bang control is extremely simple, but also potentially hazardous. Always ensure that your motor controllers are set to &quot;coast&quot; before attempting to</P>
+<P>control them with a bang-bang controller.</P>
+<P></P>
+<P>Always ensure that your motor controllers are set to &quot;coast&quot; before attempting to control</P>
+<P>them with a bang-bang controller.</P>
+<P></P>
+<P>Inputs:</P>
+<P>   - Tolerance --  Tolerance for &quot;at setpoint&quot;</P>
+<P>   - measurement  --  The most recent measurement of the process variable.</P>
+<P>   - setpoint  --  The setpoint for the process variable.</P>
+<P></P>
+<P>Outputs:</P>
+<P>   - ControlOutput  --  The calculated motor output (0 or 1).</P>
+<P>   - AtSetpoint  -- Returns TRUE if within error tolerance.  </P>
+<P>   - BangBang  -- Data clusterReturns the calculated control output.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_BangBang__Executec.png" ALT="Trajectory_Library.lvlib:BangBang_Execute.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>out BANG_BANG</B> <P>ArmFeedforward data cluster.  Units of the gain values will dictate units of the computed feedforward.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> <P>The static gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>ControlOutput</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>AtSetpoint</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:BangBang_GetAll.vi"></A><H2>Trajectory_Library.lvlib:BangBang_GetAll.vi</H2>
+<P>Gets elements of the internal data cluster</P>
+<P></P>
+<P>Input:</P>
+<P>   - BangBang  -- Data cluster</P>
+<P></P>
+<P>Output</P>
+<P>   - Setpoint  -- Current stored setpoint (SP)</P>
+<P>   - Measurement  --  Current stored process variable (PV)</P>
+<P>   - Tolerance  --  Current stored tolerance.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_BangBang__GetAllc.png" ALT="Trajectory_Library.lvlib:BangBang_GetAll.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>BANG_BANG</B> <P>ArmFeedforward data cluster.  Units of the gain values will dictate units of the computed feedforward.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> <P>The static gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:BangBang_GetError.vi"></A><H2>Trajectory_Library.lvlib:BangBang_GetError.vi</H2>
+<P>Returns current error, which is Setpoint - Process Variable</P>
+<P></P>
+<P>Input:</P>
+<P>   - BangBang  -- Data cluster</P>
+<P></P>
+<P>Output:</P>
+<P>   - Error  -- Current error value.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_BangBang__GetErrorc.png" ALT="Trajectory_Library.lvlib:BangBang_GetError.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>BANG_BANG</B> <P>ArmFeedforward data cluster.  Units of the gain values will dictate units of the computed feedforward.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> <P>The static gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Error</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:BangBang_New.vi"></A><H2>Trajectory_Library.lvlib:BangBang_New.vi</H2>
+<P>Implements a bang-bang controller, which outputs either 0 or 1 depending on whether the measurement is less than the setpoint. This maximally-aggressive control approach works very well for velocity control of high-inertia mechanisms, and poorly on most other things.  </P>
+<P> </P>
+<P>Note that this is an *asymmetric* bang-bang controller - it will not exert any control effort in the reverse direction (e.g. it won't try to slow down an over-speeding shooter wheel). This asymmetry is *extremely important.* Bang-bang control is extremely simple, but also potentially hazardous. Always ensure that your motor controllers are set to &quot;coast&quot; before attempting to</P>
+<P>control them with a bang-bang controller.</P>
+<P></P>
+<P>Creates a new bang-bang controller.</P>
+<P>  </P>
+<P>Always ensure that your motor controllers are set to &quot;coast&quot; before attempting to control</P>
+<P>them with a bang-bang controller.</P>
+<P></P>
+<P>Inputs:</P>
+<P>   - Tolerance --  Tolerance for &quot;at setpoint&quot;</P>
+<P></P>
+<P>Outputs:</P>
+<P>   - BangBang  -- Data cluster</P>
+<P><IMG SRC="Trajectory__Library_lvlib_BangBang__Newc.png" ALT="Trajectory_Library.lvlib:BangBang_New.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>BANG_BANG</B> <P>ArmFeedforward data cluster.  Units of the gain values will dictate units of the computed feedforward.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> <P>The static gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:BangBang_SetSetpoint.vi"></A><H2>Trajectory_Library.lvlib:BangBang_SetSetpoint.vi</H2>
+<P>Sets the setpoint for the bang-bang controller.</P>
+<P>  </P>
+<P>  </P>
+<P>Input:</P>
+<P>   - BangBang  -- Data cluster</P>
+<P>    - Setpoint  --  The desired setpoint.</P>
+<P></P>
+<P>Output</P>
+<P>   - outBangBang  -- Updated data  cluster</P>
+<P><IMG SRC="Trajectory__Library_lvlib_BangBang__SetSetpointc.png" ALT="Trajectory_Library.lvlib:BangBang_SetSetpoint.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>BANG_BANG</B> <P>ArmFeedforward data cluster.  Units of the gain values will dictate units of the computed feedforward.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> <P>The static gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>out BANG_BANG</B> <P>ArmFeedforward data cluster.  Units of the gain values will dictate units of the computed feedforward.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> <P>The static gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:BangBang_SetTolerance.vi"></A><H2>Trajectory_Library.lvlib:BangBang_SetTolerance.vi</H2>
+<P>Sets the error within which atSetpoint will return true.</P>
+<P>  </P>
+<P>  </P>
+<P>Input:</P>
+<P>   - BangBang  -- Data cluster</P>
+<P>    - tolerance  --  Position error which is tolerable.</P>
+<P></P>
+<P>Output</P>
+<P>   - outBangBang  -- Updated data  cluster</P>
+<P><IMG SRC="Trajectory__Library_lvlib_BangBang__SetTolerancec.png" ALT="Trajectory_Library.lvlib:BangBang_SetTolerance.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>BANG_BANG</B> <P>ArmFeedforward data cluster.  Units of the gain values will dictate units of the computed feedforward.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> <P>The static gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>out BANG_BANG</B> <P>ArmFeedforward data cluster.  Units of the gain values will dictate units of the computed feedforward.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Tolerance</B> <P>The static gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Setpoint</B> <P>The velocity gain.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Measurment</B> <P>The acceleration gain.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

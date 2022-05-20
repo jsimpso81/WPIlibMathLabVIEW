@@ -1,0 +1,604 @@
+<HTML>
+<HEAD>
+<TITLE>Trajectory_Library.lvlib:Conv_AngleDegrees_Heading.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Trajectory_Library.lvlib:Conv_AngleDegrees_Heading.vi"></A><H2>Trajectory_Library.lvlib:Conv_AngleDegrees_Heading.vi</H2>
+<P>Convert angle (degrees) to heading (+/- 180) (degrees)</P>
+<P>NOTE: increases counter clockwise</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__AngleDegrees__Headingc.png" ALT="Trajectory_Library.lvlib:Conv_AngleDegrees_Heading.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Degrees</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Heading Degrees</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_AngleRadians_Heading.vi"></A><H2>Trajectory_Library.lvlib:Conv_AngleRadians_Heading.vi</H2>
+<P>Convert angle (radians) to heading (+/- PI ) (radians)</P>
+<P>NOTE: increases counter clockwise</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__AngleRadians__Headingc.png" ALT="Trajectory_Library.lvlib:Conv_AngleRadians_Heading.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Radians</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Heading</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Centimeters_Meters.vi"></A><H2>Trajectory_Library.lvlib:Conv_Centimeters_Meters.vi</H2>
+<P>Convert Centimeters to Meters</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Centimeters__Metersc.png" ALT="Trajectory_Library.lvlib:Conv_Centimeters_Meters.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Centimeter</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Meters</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Deg_Radians.vi"></A><H2>Trajectory_Library.lvlib:Conv_Deg_Radians.vi</H2>
+<P>Convert Degrees to Radians</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Deg__Radiansc.png" ALT="Trajectory_Library.lvlib:Conv_Deg_Radians.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Degress</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Radians</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Deg_Rotations.vi"></A><H2>Trajectory_Library.lvlib:Conv_Deg_Rotations.vi</H2>
+<P>Convert Degrees to Rotations</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Deg__Rotationsc.png" ALT="Trajectory_Library.lvlib:Conv_Deg_Rotations.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Degrees</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Rotations</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Feet_Meters.vi"></A><H2>Trajectory_Library.lvlib:Conv_Feet_Meters.vi</H2>
+<P>Convert Feet to Meters</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Feet__Metersc.png" ALT="Trajectory_Library.lvlib:Conv_Feet_Meters.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Feet</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Meters</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_GyroDegrees_Heading.vi"></A><H2>Trajectory_Library.lvlib:Conv_GyroDegrees_Heading.vi</H2>
+<P>Convert angle (radians) to heading (+/- PI ) (radians)</P>
+<P></P>
+<P>NOTE:  gyro increments clockwise.  Headings increment counterclockwise.   (NOTE: Be careful to check the rotation of your gyro before using this routine to adjust it.)</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__GyroDegrees__Headingc.png" ALT="Trajectory_Library.lvlib:Conv_GyroDegrees_Heading.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>GyroDegrees</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>HeadingDegrees</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Heading_AngleRadians.vi"></A><H2>Trajectory_Library.lvlib:Conv_Heading_AngleRadians.vi</H2>
+<P>This routine does nothing!</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Heading__AngleRadiansc.png" ALT="Trajectory_Library.lvlib:Conv_Heading_AngleRadians.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Heading</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>AngleRadians</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Inches_Meters.vi"></A><H2>Trajectory_Library.lvlib:Conv_Inches_Meters.vi</H2>
+<P>Convert Inches to Meters</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Inches__Metersc.png" ALT="Trajectory_Library.lvlib:Conv_Inches_Meters.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>INCH</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Meters</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Killograms_Pounds.vi"></A><H2>Trajectory_Library.lvlib:Conv_Killograms_Pounds.vi</H2>
+<P>Convert mass in kilograms to pounds.</P>
+<P></P>
+<P>Input:</P>
+<P>   -  kilograms  --  mass in kilograms</P>
+<P></P>
+<P>Outputs:</P>
+<P>   -  pounds  --  mass in pounds</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Killograms__Poundsc.png" ALT="Trajectory_Library.lvlib:Conv_Killograms_Pounds.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Pounds</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Killograms</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Meters_Feet.vi"></A><H2>Trajectory_Library.lvlib:Conv_Meters_Feet.vi</H2>
+<P>Convert Meters to Feet</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Meters__Feetc.png" ALT="Trajectory_Library.lvlib:Conv_Meters_Feet.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Meters</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Feet</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Meters_Inches.vi"></A><H2>Trajectory_Library.lvlib:Conv_Meters_Inches.vi</H2>
+<P>Convert Meters to Inches</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Meters__Inchesc.png" ALT="Trajectory_Library.lvlib:Conv_Meters_Inches.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Meters</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Inches</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_POSE2D_SI_Eng.vi"></A><H2>Trajectory_Library.lvlib:Conv_POSE2D_SI_Eng.vi</H2>
+<P>Convert POSE from Meters, Radians to Feet, Degrees.  (This is really only for external use.  All the internal routines use meters and radians.)</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__POSE2D__SI__Engc.png" ALT="Trajectory_Library.lvlib:Conv_POSE2D_SI_Eng.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Err Pose in SI</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>TRANSLATION</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>ROTATION</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Err Pose out ENG</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>TRANSLATION</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>ROTATION</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Pounds_Killograms.vi"></A><H2>Trajectory_Library.lvlib:Conv_Pounds_Killograms.vi</H2>
+<P>Convert mass in pounds to kilograms</P>
+<P></P>
+<P>Input:</P>
+<P>   -  pounds  --  mass in pounds</P>
+<P></P>
+<P>Output:</P>
+<P>   -  kilograms  --  mass in kilograms</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Pounds__Killogramsc.png" ALT="Trajectory_Library.lvlib:Conv_Pounds_Killograms.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Pounds</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Killograms</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Radians_Deg.vi"></A><H2>Trajectory_Library.lvlib:Conv_Radians_Deg.vi</H2>
+<P>Convert Radians to Degrees</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Radians__Degc.png" ALT="Trajectory_Library.lvlib:Conv_Radians_Deg.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Radians</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Degrees</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Radians_Rotations.vi"></A><H2>Trajectory_Library.lvlib:Conv_Radians_Rotations.vi</H2>
+<P>Convert Radians to Rotations</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Radians__Rotationsc.png" ALT="Trajectory_Library.lvlib:Conv_Radians_Rotations.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Radians</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Rotations</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Rotations_Degrees.vi"></A><H2>Trajectory_Library.lvlib:Conv_Rotations_Degrees.vi</H2>
+<P>Convert Rotations to Degrees</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Rotations__Degreesc.png" ALT="Trajectory_Library.lvlib:Conv_Rotations_Degrees.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Rotations</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Degrees</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Rotations_Radians.vi"></A><H2>Trajectory_Library.lvlib:Conv_Rotations_Radians.vi</H2>
+<P>Convert Rotations to Radians</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Rotations__Radiansc.png" ALT="Trajectory_Library.lvlib:Conv_Rotations_Radians.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Rotations</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Radians</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Conv_Yards_Meters.vi"></A><H2>Trajectory_Library.lvlib:Conv_Yards_Meters.vi</H2>
+<P>Convert Yards to Meters</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Conv__Yards__Metersc.png" ALT="Trajectory_Library.lvlib:Conv_Yards_Meters.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Yards</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Meters</B> </TD>
+</TR>
+</Table>
+</BODY>
+</HTML>
