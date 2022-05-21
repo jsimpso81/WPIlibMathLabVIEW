@@ -1390,6 +1390,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="TimeInterpBoolean_Clear.vi" Type="VI" URL="../TimeInterpBoolean_Clear.vi"/>
 				<Item Name="TimeInterpBoolean_GetSample.vi" Type="VI" URL="../TimeInterpBoolean_GetSample.vi"/>
 				<Item Name="TimeInterpBoolean_New.vi" Type="VI" URL="../TimeInterpBoolean_New.vi"/>
+				<Item Name="TimeInterpBoolean_SetMaxTime.vi" Type="VI" URL="../TimeInterpBoolean_SetMaxTime.vi"/>
 			</Item>
 			<Item Name="TimeInterpolatableDouble" Type="Folder">
 				<Item Name="TimeInterpDouble_AddSample.vi" Type="VI" URL="../TimeInterpDouble_AddSample.vi"/>
@@ -1399,6 +1400,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="TimeInterpDouble_Clear.vi" Type="VI" URL="../TimeInterpDouble_Clear.vi"/>
 				<Item Name="TimeInterpDouble_GetSample.vi" Type="VI" URL="../TimeInterpDouble_GetSample.vi"/>
 				<Item Name="TimeInterpDouble_New.vi" Type="VI" URL="../TimeInterpDouble_New.vi"/>
+				<Item Name="TimeInterpDouble_SetMaxTime.vi" Type="VI" URL="../TimeInterpDouble_SetMaxTime.vi"/>
 			</Item>
 			<Item Name="TimeInterpolatablePose2d" Type="Folder">
 				<Item Name="TimeInterpPose2d_AddSample.vi" Type="VI" URL="../TimeInterpPose2d_AddSample.vi"/>
@@ -1408,6 +1410,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="TimeInterpPose2d_Clear.vi" Type="VI" URL="../TimeInterpPose2d_Clear.vi"/>
 				<Item Name="TimeInterpPose2d_GetSample.vi" Type="VI" URL="../TimeInterpPose2d_GetSample.vi"/>
 				<Item Name="TimeInterpPose2d_New.vi" Type="VI" URL="../TimeInterpPose2d_New.vi"/>
+				<Item Name="TimeInterpPose2d_SetMaxTime.vi" Type="VI" URL="../TimeInterpPose2d_SetMaxTime.vi"/>
 			</Item>
 			<Item Name="TimeInterpolatableRotation2d" Type="Folder">
 				<Item Name="TimeInterpRotation2d_AddSample.vi" Type="VI" URL="../TimeInterpRotation2d_AddSample.vi"/>
@@ -1417,6 +1420,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="TimeInterpRotation2d_Clear.vi" Type="VI" URL="../TimeInterpRotation2d_Clear.vi"/>
 				<Item Name="TimeInterpRotation2d_GetSample.vi" Type="VI" URL="../TimeInterpRotation2d_GetSample.vi"/>
 				<Item Name="TimeInterpRotation2d_New.vi" Type="VI" URL="../TimeInterpRotation2d_New.vi"/>
+				<Item Name="TimeInterpRotation2d_SetMaxTime.vi" Type="VI" URL="../TimeInterpRotation2d_SetMaxTime.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Trajectory" Type="Folder">
