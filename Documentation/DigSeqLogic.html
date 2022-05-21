@@ -1,10 +1,72 @@
 <HTML>
 <HEAD>
-<TITLE>Trajectory_Library.lvlib:DigSeqLogic_Off_Delay.vi</TITLE>
+<TITLE>Trajectory_Library.lvlib:DigSeqLogic_Delay.vi</TITLE>
 <META NAME="Author" CONTENT="">
 <META NAME="GENERATOR" CONTENT="G Development Environment">
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
+<A NAME="Trajectory_Library.lvlib:DigSeqLogic_Delay.vi"></A><H2>Trajectory_Library.lvlib:DigSeqLogic_Delay.vi</H2>
+<P>This VI implements a digital &quot;time delay&quot;.  The output is the input delayed by &quot;Delay&quot; seconds.  If the &quot;Delay&quot; time does not exactly match the sample period, the boolean value prior to the delay time is returned.</P>
+<P></P>
+<P>Inputs:</P>
+<P>   -  Input  --  Boolean input value</P>
+<P>   - Delay Time  -- Time (seconds) to delay the otuput value.    If time delay is increaed, then the buffer is re-created.  FALSE will be returned until the buffer has sufficient data to return a delayed value.</P>
+<P>   - Time  --  Continously counting system time, Seconds.  If not wired the FPGA time will be used.</P>
+<P></P>
+<P>Outputs:</P>
+<P>   - Output  --  Boolean output value with delay applied</P>
+<P>   - IsPresent  -- Set to TRUE if the buffer has enough data to return a delayed value.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_DigSeqLogic__Delayc.png" ALT="Trajectory_Library.lvlib:DigSeqLogic_Delay.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Delay Time</B> <P>Delay in seconds.  Default is 1.0.  Once the delay has started, this value cannot be changed.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Time</B> <P>Optional clock input representing elapsed seconds.  If this parameter is not specified, this routine reads the system clock or FGPA clock to obtain the  time.  For best sequencing use of an external time is suggested.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Input</B> <P>required boolean input to generate off delay from</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Output</B> <P>Digital Output</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>IsPresent</B> </TD>
+</TR>
+</Table>
+<HR>
 <A NAME="Trajectory_Library.lvlib:DigSeqLogic_Off_Delay.vi"></A><H2>Trajectory_Library.lvlib:DigSeqLogic_Off_Delay.vi</H2>
 <P>This VI implements a digital &quot;off delay&quot;.  The output becomes TRUE when the input goes TRUE.  The output remains TRUE for a specified time after the input goes FALSE.</P>
 <P></P>
