@@ -235,8 +235,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="SWERVE_DRIVE_POSE_EST.ctl" Type="VI" URL="../SWERVE_DRIVE_POSE_EST.ctl"/>
 		<Item Name="TIME_INTERPOLATABLE_BOOLEAN.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_BOOLEAN.ctl"/>
 		<Item Name="TIME_INTERPOLATABLE_DOUBLE.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_DOUBLE.ctl"/>
-		<Item Name="TIME_INTERPOLATABLE_POSE.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_POSE.ctl"/>
-		<Item Name="TIME_INTERPOLATABLE_ROTATION.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_ROTATION.ctl"/>
+		<Item Name="TIME_INTERPOLATABLE_POSE2D.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_POSE2D.ctl"/>
+		<Item Name="TIME_INTERPOLATABLE_ROTATION2D.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_ROTATION2D.ctl"/>
 		<Item Name="TIMER.ctl" Type="VI" URL="../TIMER.ctl"/>
 		<Item Name="TRAJ_CONFIG.ctl" Type="VI" URL="../TRAJ_CONFIG.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl"/>
@@ -347,6 +347,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="macro_vecBuilder_ArrayBy1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder_ArrayBy1FIll.vi"/>
 		</Item>
 		<Item Name="Base" Type="Folder">
+			<Item Name="AnalotDelay" Type="Folder">
+				<Item Name="Analog_Delay.vi" Type="VI" URL="../Analog_Delay.vi"/>
+			</Item>
 			<Item Name="Function Generator" Type="Folder">
 				<Item Name="FunctionGenerator_Add_Value.vi" Type="VI" URL="../FunctionGenerator_Add_Value.vi"/>
 				<Item Name="FunctionGenerator_Add_XY.vi" Type="VI" URL="../FunctionGenerator_Add_XY.vi"/>
@@ -599,6 +602,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Debouncer_New.vi" Type="VI" URL="../Debouncer_New.vi"/>
 				<Item Name="Debouncer_Reset.vi" Type="VI" URL="../Debouncer_Reset.vi"/>
 			</Item>
+			<Item Name="DigSeqLogic_Delay.vi" Type="VI" URL="../DigSeqLogic_Delay.vi"/>
 			<Item Name="DigSeqLogic_Off_Delay.vi" Type="VI" URL="../DigSeqLogic_Off_Delay.vi"/>
 			<Item Name="DigSeqLogic_On_Delay.vi" Type="VI" URL="../DigSeqLogic_On_Delay.vi"/>
 			<Item Name="DigSeqLogic_One_Shot.vi" Type="VI" URL="../DigSeqLogic_One_Shot.vi"/>
@@ -1380,28 +1384,36 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="TimeInterpolatableBuffer" Type="Folder">
 			<Item Name="TimeInterpolatableBoolean" Type="Folder">
 				<Item Name="TimeInterpBoolean_AddSample.vi" Type="VI" URL="../TimeInterpBoolean_AddSample.vi"/>
-				<Item Name="TimeInterpBoolean_CleanUp.vi" Type="VI" URL="../TimeInterpBoolean_CleanUp.vi"/>
+				<Item Name="TimeInterpBoolean_CleanUp.vi" Type="VI" URL="../TimeInterpBoolean_CleanUp.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
 				<Item Name="TimeInterpBoolean_Clear.vi" Type="VI" URL="../TimeInterpBoolean_Clear.vi"/>
 				<Item Name="TimeInterpBoolean_GetSample.vi" Type="VI" URL="../TimeInterpBoolean_GetSample.vi"/>
 				<Item Name="TimeInterpBoolean_New.vi" Type="VI" URL="../TimeInterpBoolean_New.vi"/>
 			</Item>
 			<Item Name="TimeInterpolatableDouble" Type="Folder">
 				<Item Name="TimeInterpDouble_AddSample.vi" Type="VI" URL="../TimeInterpDouble_AddSample.vi"/>
-				<Item Name="TimeInterpDouble_CleanUp.vi" Type="VI" URL="../TimeInterpDouble_CleanUp.vi"/>
+				<Item Name="TimeInterpDouble_CleanUp.vi" Type="VI" URL="../TimeInterpDouble_CleanUp.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
 				<Item Name="TimeInterpDouble_Clear.vi" Type="VI" URL="../TimeInterpDouble_Clear.vi"/>
 				<Item Name="TimeInterpDouble_GetSample.vi" Type="VI" URL="../TimeInterpDouble_GetSample.vi"/>
 				<Item Name="TimeInterpDouble_New.vi" Type="VI" URL="../TimeInterpDouble_New.vi"/>
 			</Item>
 			<Item Name="TimeInterpolatablePose2d" Type="Folder">
 				<Item Name="TimeInterpPose2d_AddSample.vi" Type="VI" URL="../TimeInterpPose2d_AddSample.vi"/>
-				<Item Name="TimeInterpPose2d_CleanUp.vi" Type="VI" URL="../TimeInterpPose2d_CleanUp.vi"/>
+				<Item Name="TimeInterpPose2d_CleanUp.vi" Type="VI" URL="../TimeInterpPose2d_CleanUp.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
 				<Item Name="TimeInterpPose2d_Clear.vi" Type="VI" URL="../TimeInterpPose2d_Clear.vi"/>
 				<Item Name="TimeInterpPose2d_GetSample.vi" Type="VI" URL="../TimeInterpPose2d_GetSample.vi"/>
 				<Item Name="TimeInterpPose2d_New.vi" Type="VI" URL="../TimeInterpPose2d_New.vi"/>
 			</Item>
 			<Item Name="TimeInterpolatableRotation2d" Type="Folder">
 				<Item Name="TimeInterpRotation2d_AddSample.vi" Type="VI" URL="../TimeInterpRotation2d_AddSample.vi"/>
-				<Item Name="TimeInterpRotation2d_CleanUp.vi" Type="VI" URL="../TimeInterpRotation2d_CleanUp.vi"/>
+				<Item Name="TimeInterpRotation2d_CleanUp.vi" Type="VI" URL="../TimeInterpRotation2d_CleanUp.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
 				<Item Name="TimeInterpRotation2d_Clear.vi" Type="VI" URL="../TimeInterpRotation2d_Clear.vi"/>
 				<Item Name="TimeInterpRotation2d_GetSample.vi" Type="VI" URL="../TimeInterpRotation2d_GetSample.vi"/>
 				<Item Name="TimeInterpRotation2d_New.vi" Type="VI" URL="../TimeInterpRotation2d_New.vi"/>
