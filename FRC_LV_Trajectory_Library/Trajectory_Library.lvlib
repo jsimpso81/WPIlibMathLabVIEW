@@ -27,6 +27,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="FRC_LV_CtrlLib_DiffDriveAccelLimiter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveAccelLimiter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DiffDriveTrainPoseEst.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveTrainPoseEst.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DiffDriveTrainSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveTrainSim.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_DigSeqLogic.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DigSeqLogic.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Discretization.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Discretization.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_ElevatorSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ElevatorSim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_ExtendedKalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_ExtendedKalmanFilter.mnu"/>
@@ -269,6 +270,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 	<Item Name="VI" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
 		<Item Name="_MenuMacros" Type="Folder">
+			<Item Name="macro_Analog_Delay.vi" Type="VI" URL="../Macros/macro_Analog_Delay.vi"/>
 			<Item Name="macro_Angle_Modulus.vi" Type="VI" URL="../Macros/macro_Angle_Modulus.vi"/>
 			<Item Name="macro_AngleStats_AngleAdd_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleAdd_CallbackHelp.vi"/>
 			<Item Name="macro_AngleStats_AngleMean_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleMean_CallbackHelp.vi"/>
@@ -289,6 +291,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="macro_Digital_Not.vi" Type="VI" URL="../Macros/macro_Digital_Not.vi"/>
 			<Item Name="macro_Digital_Or.vi" Type="VI" URL="../Macros/macro_Digital_Or.vi"/>
 			<Item Name="macro_Digital_OrMany.vi" Type="VI" URL="../Macros/macro_Digital_OrMany.vi"/>
+			<Item Name="macro_DigSeqLogic_Delay.vi" Type="VI" URL="../Macros/macro_DigSeqLogic_Delay.vi"/>
+			<Item Name="macro_DigSeqLogic_Off_Delay.vi" Type="VI" URL="../Macros/macro_DigSeqLogic_Off_Delay.vi"/>
+			<Item Name="macro_DigSeqLogic_On_Delay.vi" Type="VI" URL="../Macros/macro_DigSeqLogic_On_Delay.vi"/>
+			<Item Name="macro_DigSeqLogic_OneShot.vi" Type="VI" URL="../Macros/macro_DigSeqLogic_OneShot.vi"/>
 			<Item Name="macro_ElevatorFF_Calculate.vi" Type="VI" URL="../Macros/macro_ElevatorFF_Calculate.vi"/>
 			<Item Name="macro_FiniteStateMachine_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_Template.vi"/>
 			<Item Name="macro_FiniteStateMachine_w_Timer_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_w_Timer_Template.vi"/>
