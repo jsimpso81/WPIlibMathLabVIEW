@@ -378,6 +378,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="LinearFilter_Factorial.vi" Type="VI" URL="../LinearFilter_Factorial.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
+				<Item Name="LinearFilter_FiniteDifference.vi" Type="VI" URL="../LinearFilter_FiniteDifference.vi"/>
 				<Item Name="LinearFilter_HighPass.vi" Type="VI" URL="../LinearFilter_HighPass.vi"/>
 				<Item Name="LinearFilter_HighPassBW1.vi" Type="VI" URL="../LinearFilter_HighPassBW1.vi"/>
 				<Item Name="LinearFilter_HighPassBW2.vi" Type="VI" URL="../LinearFilter_HighPassBW2.vi"/>
