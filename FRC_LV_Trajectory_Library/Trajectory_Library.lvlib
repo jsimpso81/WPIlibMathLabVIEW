@@ -85,6 +85,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="FRC_LV_CtrlLib_VectorBuilder.mnu" Type="Document" URL="../FRC_LV_CtrlLib_VectorBuilder.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Vision.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Vision.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_VisionUtility.mnu" Type="Document" URL="../FRC_LV_CtrlLib_VisionUtility.mnu"/>
+		<Item Name="FRC_LV_Traj_Constraint_Elliptical_Region.mnu" Type="Document" URL="../Menu/FRC_LV_Traj_Constraint_Elliptical_Region.mnu"/>
+		<Item Name="FRC_LV_Traj_Max_Velocity_Constraint.mnu" Type="Document" URL="../Menu/FRC_LV_Traj_Max_Velocity_Constraint.mnu"/>
+		<Item Name="FRC_LV_Traj_Rect_Region_Constraint.mnu" Type="Document" URL="../Menu/FRC_LV_Traj_Rect_Region_Constraint.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Arm_FF.mnu" Type="Document" URL="../FRC_LV_Trajectory_Arm_FF.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Base_WPILIB.mnu" Type="Document" URL="../FRC_LV_Trajectory_Base_WPILIB.mnu"/>
 		<Item Name="FRC_LV_Trajectory_Controller.mnu" Type="Document" URL="../FRC_LV_Trajectory_Controller.mnu"/>
@@ -152,6 +155,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="FRC_LabVIEW_Trajectory_Library_Routines.pdf" Type="Document" URL="../Misc/FRC_LabVIEW_Trajectory_Library_Routines.pdf"/>
 		<Item Name="FRC_LabVIEW_Trajectory_Library_Routines.xlsx" Type="Document" URL="../Misc/FRC_LabVIEW_Trajectory_Library_Routines.xlsx"/>
 		<Item Name="WAYPOINTS_README.txt" Type="Document" URL="../Misc/WAYPOINTS_README.txt"/>
+	</Item>
+	<Item Name="Enum" Type="Folder">
+		<Item Name="TRAJ_CONSTRAINT_TYPES_ENUM.ctl" Type="VI" URL="../Enum/TRAJ_CONSTRAINT_TYPES_ENUM.ctl"/>
 	</Item>
 	<Item Name="TypDef" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
@@ -246,11 +252,11 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_ELLIP_REGION.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_ELLIP_REGION.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_JERK.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_JERK.ctl"/>
+		<Item Name="TRAJ_CONSTRAINT_MAX_VELOCITY.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_MAX_VELOCITY.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_MINMAX.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_MINMAX.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_RECT_REGION.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_RECT_REGION.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS.ctl"/>
-		<Item Name="TRAJ_CONSTRAINT_TYPES_ENUM.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_TYPES_ENUM.ctl"/>
 		<Item Name="TRAJ_STATE.ctl" Type="VI" URL="../TRAJ_STATE.ctl"/>
 		<Item Name="TRAJECTORY.ctl" Type="VI" URL="../TRAJECTORY.ctl"/>
 		<Item Name="TRAJECTORY_SPLINE_TYPE_ENUM.ctl" Type="VI" URL="../TRAJECTORY_SPLINE_TYPE_ENUM.ctl"/>
@@ -1496,7 +1502,11 @@ This implements the math section (and some other routines) contained in FRC WPIL
 					<Item Name="JerkConstraint_getMinMaxAccel.vi" Type="VI" URL="../JerkConstraint_getMinMaxAccel.vi"/>
 					<Item Name="JerkConstraint_New.vi" Type="VI" URL="../JerkConstraint_New.vi"/>
 				</Item>
-				<Item Name="MaxVelocityConstraint" Type="Folder"/>
+				<Item Name="MaxVelocityConstraint" Type="Folder">
+					<Item Name="MaxVelocityConstraint_getMaxVelocity.vi" Type="VI" URL="../VI/MaxVelocityConstraint_getMaxVelocity.vi"/>
+					<Item Name="MaxVelocityConstraint_getMinMaxAccel.vi" Type="VI" URL="../VI/MaxVelocityConstraint_getMinMaxAccel.vi"/>
+					<Item Name="MaxVelocityConstraint_New.vi" Type="VI" URL="../VI/MaxVelocityConstraint_New.vi"/>
+				</Item>
 				<Item Name="MecaDriveKinematicsConstraint" Type="Folder">
 					<Item Name="MecaDriveKinematicsConstraint_getMaxVelocity.vi" Type="VI" URL="../MecaDriveKinematicsConstraint_getMaxVelocity.vi"/>
 					<Item Name="MecaDriveKinematicsConstraint_getMinMaxAccel.vi" Type="VI" URL="../MecaDriveKinematicsConstraint_getMinMaxAccel.vi"/>
