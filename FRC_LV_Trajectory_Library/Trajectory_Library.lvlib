@@ -148,10 +148,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="FRC_LV_Trajectory_Trapezoid_Profile.mnu" Type="Document" URL="../FRC_LV_Trajectory_Trapezoid_Profile.mnu"/>
 	</Item>
 	<Item Name="_Miscelaneous" Type="Folder">
-		<Item Name="FRC_LabVIEW_Trajectory_Control_Library_CustomErrors.xlsx" Type="Document" URL="../FRC_LabVIEW_Trajectory_Control_Library_CustomErrors.xlsx"/>
-		<Item Name="FRC_LabVIEW_Trajectory_Library_Routines.pdf" Type="Document" URL="../FRC_LabVIEW_Trajectory_Library_Routines.pdf"/>
-		<Item Name="FRC_LabVIEW_Trajectory_Library_Routines.xlsx" Type="Document" URL="../FRC_LabVIEW_Trajectory_Library_Routines.xlsx"/>
-		<Item Name="WAYPOINTS_README.txt" Type="Document" URL="../WAYPOINTS_README.txt"/>
+		<Item Name="FRC_LabVIEW_Trajectory_Control_Library_CustomErrors.xlsx" Type="Document" URL="../Misc/FRC_LabVIEW_Trajectory_Control_Library_CustomErrors.xlsx"/>
+		<Item Name="FRC_LabVIEW_Trajectory_Library_Routines.pdf" Type="Document" URL="../Misc/FRC_LabVIEW_Trajectory_Library_Routines.pdf"/>
+		<Item Name="FRC_LabVIEW_Trajectory_Library_Routines.xlsx" Type="Document" URL="../Misc/FRC_LabVIEW_Trajectory_Library_Routines.xlsx"/>
+		<Item Name="WAYPOINTS_README.txt" Type="Document" URL="../Misc/WAYPOINTS_README.txt"/>
 	</Item>
 	<Item Name="TypDef" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
@@ -161,14 +161,14 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="CALLBACK_FUNC_TYPE.ctl" Type="VI" URL="../CALLBACK_FUNC_TYPE.ctl"/>
 		<Item Name="CHASSIS_SPEEDS.ctl" Type="VI" URL="../CHASSIS_SPEEDS.ctl"/>
 		<Item Name="CONSTRAINED_STATE.ctl" Type="VI" URL="../CONSTRAINED_STATE.ctl"/>
-		<Item Name="COORDINATE_AXIS.ctl" Type="VI" URL="../COORDINATE_AXIS.ctl"/>
-		<Item Name="COORDINATE_SYSTEM.ctl" Type="VI" URL="../COORDINATE_SYSTEM.ctl"/>
+		<Item Name="COORDINATE_AXIS.ctl" Type="VI" URL="../TypeDef/COORDINATE_AXIS.ctl"/>
+		<Item Name="COORDINATE_SYSTEM.ctl" Type="VI" URL="../TypeDef/COORDINATE_SYSTEM.ctl"/>
 		<Item Name="DCMOTOR.CTL" Type="VI" URL="../DCMOTOR.CTL"/>
 		<Item Name="DCMOTOR_SIM.ctl" Type="VI" URL="../DCMOTOR_SIM.ctl"/>
 		<Item Name="DCMOTOR_TYPES_ENUM.ctl" Type="VI" URL="../DCMOTOR_TYPES_ENUM.ctl"/>
 		<Item Name="DEBOUNCER.ctl" Type="VI" URL="../DEBOUNCER.ctl"/>
 		<Item Name="DEBOUNCER_TYPE_ENUM.ctl" Type="VI" URL="../DEBOUNCER_TYPE_ENUM.ctl"/>
-		<Item Name="DIFF_DRIVE_ACCEL_LIMIT.ctl" Type="VI" URL="../DIFF_DRIVE_ACCEL_LIMIT.ctl"/>
+		<Item Name="DIFF_DRIVE_ACCEL_LIMIT.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_ACCEL_LIMIT.ctl"/>
 		<Item Name="DIFF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../DIFF_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_POSE_EST.ctl" Type="VI" URL="../DIFF_DRIVE_POSE_EST.ctl"/>
@@ -180,13 +180,13 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="DISPLAY_WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../DISPLAY_WEIGHTED_WAYPOINT.ctl"/>
 		<Item Name="ELEV_FF.ctl" Type="VI" URL="../ELEV_FF.ctl"/>
 		<Item Name="ELEVATOR_SIM.ctl" Type="VI" URL="../ELEVATOR_SIM.ctl"/>
-		<Item Name="EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl" Type="VI" URL="../EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl"/>
-		<Item Name="EXTENDED_KALMAN_FILTER.ctl" Type="VI" URL="../EXTENDED_KALMAN_FILTER.ctl"/>
+		<Item Name="EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl" Type="VI" URL="../TypeDef/EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl"/>
+		<Item Name="EXTENDED_KALMAN_FILTER.ctl" Type="VI" URL="../TypeDef/EXTENDED_KALMAN_FILTER.ctl"/>
 		<Item Name="FLYWHEEL_SIM.ctl" Type="VI" URL="../FLYWHEEL_SIM.ctl"/>
-		<Item Name="FUNCTION_GENERATOR.ctl" Type="VI" URL="../FUNCTION_GENERATOR.ctl"/>
-		<Item Name="FUNCTION_GENERATOR_MATRIX.ctl" Type="VI" URL="../FUNCTION_GENERATOR_MATRIX.ctl"/>
+		<Item Name="FUNCTION_GENERATOR.ctl" Type="VI" URL="../TypeDef/FUNCTION_GENERATOR.ctl"/>
+		<Item Name="FUNCTION_GENERATOR_MATRIX.ctl" Type="VI" URL="../TypeDef/FUNCTION_GENERATOR_MATRIX.ctl"/>
 		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../HOLONOMIC_DRV_CTRL.ctl"/>
-		<Item Name="IMPLICIT_MODEL_FOLLOWER.ctl" Type="VI" URL="../IMPLICIT_MODEL_FOLLOWER.ctl"/>
+		<Item Name="IMPLICIT_MODEL_FOLLOWER.ctl" Type="VI" URL="../TypeDef/IMPLICIT_MODEL_FOLLOWER.ctl"/>
 		<Item Name="KALMAN_FILTER.ctl" Type="VI" URL="../KALMAN_FILTER.ctl"/>
 		<Item Name="KALMAN_FILTER_LATENCY_COMP.ctl" Type="VI" URL="../KALMAN_FILTER_LATENCY_COMP.ctl"/>
 		<Item Name="KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP.ctl" Type="VI" URL="../KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP.ctl"/>
@@ -196,11 +196,11 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="LINEAR_SYSTEM.ctl" Type="VI" URL="../LINEAR_SYSTEM.ctl"/>
 		<Item Name="LINEAR_SYSTEM_LOOP.ctl" Type="VI" URL="../LINEAR_SYSTEM_LOOP.ctl"/>
 		<Item Name="LINEAR_SYSTEM_SIM.ctl" Type="VI" URL="../LINEAR_SYSTEM_SIM.ctl"/>
-		<Item Name="LTV_DIFF_DRIVE_CTRL.ctl" Type="VI" URL="../LTV_DIFF_DRIVE_CTRL.ctl"/>
-		<Item Name="LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl" Type="VI" URL="../LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl"/>
-		<Item Name="LTV_UNICYCLE_CONTROLLER.ctl" Type="VI" URL="../LTV_UNICYCLE_CONTROLLER.ctl"/>
-		<Item Name="LTV_UNICYCLE_CONTROLLER_INPUT_ENUM.ctl" Type="VI" URL="../LTV_UNICYCLE_CONTROLLER_INPUT_ENUM.ctl"/>
-		<Item Name="LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl" Type="VI" URL="../LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl"/>
+		<Item Name="LTV_DIFF_DRIVE_CTRL.ctl" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL.ctl"/>
+		<Item Name="LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl"/>
+		<Item Name="LTV_UNICYCLE_CONTROLLER.ctl" Type="VI" URL="../TypeDef/LTV_UNICYCLE_CONTROLLER.ctl"/>
+		<Item Name="LTV_UNICYCLE_CONTROLLER_INPUT_ENUM.ctl" Type="VI" URL="../TypeDef/LTV_UNICYCLE_CONTROLLER_INPUT_ENUM.ctl"/>
+		<Item Name="LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl" Type="VI" URL="../TypeDef/LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl"/>
 		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../MECA_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="MECA_DRIVE_POSE_EST.ctl" Type="VI" URL="../MECA_DRIVE_POSE_EST.ctl"/>
@@ -221,11 +221,11 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="POSE3D.ctl" Type="VI" URL="../POSE3D.ctl"/>
 		<Item Name="POSEwCURVATURE.ctl" Type="VI" URL="../POSEwCURVATURE.ctl"/>
 		<Item Name="PROFILED_PID_CONTROLLER.ctl" Type="VI" URL="../PROFILED_PID_CONTROLLER.ctl"/>
-		<Item Name="QUATERNION.ctl" Type="VI" URL="../QUATERNION.ctl"/>
+		<Item Name="QUATERNION.ctl" Type="VI" URL="../TypeDef/QUATERNION.ctl"/>
 		<Item Name="RAMSETE.ctl" Type="VI" URL="../RAMSETE.ctl"/>
 		<Item Name="RAMSETE_EXE_TUNING.ctl" Type="VI" URL="../RAMSETE_EXE_TUNING.ctl"/>
 		<Item Name="ROTATION2D.ctl" Type="VI" URL="../ROTATION2D.ctl"/>
-		<Item Name="ROTATION3D.ctl" Type="VI" URL="../ROTATION3D.ctl"/>
+		<Item Name="ROTATION3D.ctl" Type="VI" URL="../TypeDef/ROTATION3D.ctl"/>
 		<Item Name="SIMPLE_MOTOR_FF.ctl" Type="VI" URL="../SIMPLE_MOTOR_FF.ctl"/>
 		<Item Name="SINGLE_JOINT_ARM_SIM.ctl" Type="VI" URL="../SINGLE_JOINT_ARM_SIM.ctl"/>
 		<Item Name="SLEW_RATE_LIMITER.ctl" Type="VI" URL="../SLEW_RATE_LIMITER.ctl"/>
@@ -235,31 +235,34 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="SWERVE_DRIVE_MODULE_STATE.ctl" Type="VI" URL="../SWERVE_DRIVE_MODULE_STATE.ctl"/>
 		<Item Name="SWERVE_DRIVE_ODOMETRY.ctl" Type="VI" URL="../SWERVE_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="SWERVE_DRIVE_POSE_EST.ctl" Type="VI" URL="../SWERVE_DRIVE_POSE_EST.ctl"/>
-		<Item Name="TIME_INTERPOLATABLE_BOOLEAN.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_BOOLEAN.ctl"/>
-		<Item Name="TIME_INTERPOLATABLE_DOUBLE.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_DOUBLE.ctl"/>
-		<Item Name="TIME_INTERPOLATABLE_POSE2D.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_POSE2D.ctl"/>
-		<Item Name="TIME_INTERPOLATABLE_ROTATION2D.ctl" Type="VI" URL="../TIME_INTERPOLATABLE_ROTATION2D.ctl"/>
+		<Item Name="TIME_INTERPOLATABLE_BOOLEAN.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_BOOLEAN.ctl"/>
+		<Item Name="TIME_INTERPOLATABLE_DOUBLE.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_DOUBLE.ctl"/>
+		<Item Name="TIME_INTERPOLATABLE_POSE2D.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_POSE2D.ctl"/>
+		<Item Name="TIME_INTERPOLATABLE_ROTATION2D.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_ROTATION2D.ctl"/>
 		<Item Name="TIMER.ctl" Type="VI" URL="../TIMER.ctl"/>
 		<Item Name="TRAJ_CONFIG.ctl" Type="VI" URL="../TRAJ_CONFIG.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_DIIF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_DIIF_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE.ctl"/>
+		<Item Name="TRAJ_CONSTRAINT_ELLIP_REGION.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_ELLIP_REGION.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_JERK.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_JERK.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_MINMAX.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_MINMAX.ctl"/>
+		<Item Name="TRAJ_CONSTRAINT_RECT_REGION.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_RECT_REGION.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS.ctl"/>
+		<Item Name="TRAJ_CONSTRAINT_TYPES_ENUM.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_TYPES_ENUM.ctl"/>
 		<Item Name="TRAJ_STATE.ctl" Type="VI" URL="../TRAJ_STATE.ctl"/>
 		<Item Name="TRAJECTORY.ctl" Type="VI" URL="../TRAJECTORY.ctl"/>
 		<Item Name="TRAJECTORY_SPLINE_TYPE_ENUM.ctl" Type="VI" URL="../TRAJECTORY_SPLINE_TYPE_ENUM.ctl"/>
 		<Item Name="TRANSFORM2D.ctl" Type="VI" URL="../TRANSFORM2D.ctl"/>
-		<Item Name="TRANSFORM3D.ctl" Type="VI" URL="../TRANSFORM3D.ctl"/>
+		<Item Name="TRANSFORM3D.ctl" Type="VI" URL="../TypeDef/TRANSFORM3D.ctl"/>
 		<Item Name="TRANSLATION2D.ctl" Type="VI" URL="../TRANSLATION2D.ctl"/>
-		<Item Name="TRANSLATION3D.ctl" Type="VI" URL="../TRANSLATION3D.ctl"/>
+		<Item Name="TRANSLATION3D.ctl" Type="VI" URL="../TypeDef/TRANSLATION3D.ctl"/>
 		<Item Name="TRAPEZOID_PROFILE.ctl" Type="VI" URL="../TRAPEZOID_PROFILE.ctl"/>
 		<Item Name="TRAPEZOID_PROFILE_CONSTRAINT.ctl" Type="VI" URL="../TRAPEZOID_PROFILE_CONSTRAINT.ctl"/>
 		<Item Name="TRAPEZOID_PROFILE_STATE.ctl" Type="VI" URL="../TRAPEZOID_PROFILE_STATE.ctl"/>
 		<Item Name="TWIST2D.ctl" Type="VI" URL="../TWIST2D.ctl"/>
-		<Item Name="TWIST3D.ctl" Type="VI" URL="../TWIST3D.ctl"/>
+		<Item Name="TWIST3D.ctl" Type="VI" URL="../TypeDef/TWIST3D.ctl"/>
 		<Item Name="UNSCENTED_KALMAN_CORRECT_FUNC_GROUP.ctl" Type="VI" URL="../UNSCENTED_KALMAN_CORRECT_FUNC_GROUP.ctl"/>
 		<Item Name="UNSCENTED_KALMAN_FILTER.ctl" Type="VI" URL="../UNSCENTED_KALMAN_FILTER.ctl"/>
 		<Item Name="UNSCENTED_KALMAN_NEW_FUNC_GROUP.ctl" Type="VI" URL="../UNSCENTED_KALMAN_NEW_FUNC_GROUP.ctl"/>
@@ -355,20 +358,20 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		</Item>
 		<Item Name="Base" Type="Folder">
 			<Item Name="AnalotDelay" Type="Folder">
-				<Item Name="Analog_Delay.vi" Type="VI" URL="../Analog_Delay.vi"/>
+				<Item Name="Analog_Delay.vi" Type="VI" URL="../VI/Analog_Delay.vi"/>
 			</Item>
 			<Item Name="Function Generator" Type="Folder">
-				<Item Name="FunctionGenerator_Add_Value.vi" Type="VI" URL="../FunctionGenerator_Add_Value.vi"/>
-				<Item Name="FunctionGenerator_Add_XY.vi" Type="VI" URL="../FunctionGenerator_Add_XY.vi"/>
-				<Item Name="FunctionGenerator_Calculate.vi" Type="VI" URL="../FunctionGenerator_Calculate.vi"/>
-				<Item Name="FunctionGenerator_Clear.vi" Type="VI" URL="../FunctionGenerator_Clear.vi"/>
-				<Item Name="FunctionGenerator_Execute.vi" Type="VI" URL="../FunctionGenerator_Execute.vi"/>
-				<Item Name="FunctionGenerator_New.vi" Type="VI" URL="../FunctionGenerator_New.vi"/>
+				<Item Name="FunctionGenerator_Add_Value.vi" Type="VI" URL="../VI/FunctionGenerator_Add_Value.vi"/>
+				<Item Name="FunctionGenerator_Add_XY.vi" Type="VI" URL="../VI/FunctionGenerator_Add_XY.vi"/>
+				<Item Name="FunctionGenerator_Calculate.vi" Type="VI" URL="../VI/FunctionGenerator_Calculate.vi"/>
+				<Item Name="FunctionGenerator_Clear.vi" Type="VI" URL="../VI/FunctionGenerator_Clear.vi"/>
+				<Item Name="FunctionGenerator_Execute.vi" Type="VI" URL="../VI/FunctionGenerator_Execute.vi"/>
+				<Item Name="FunctionGenerator_New.vi" Type="VI" URL="../VI/FunctionGenerator_New.vi"/>
 			</Item>
 			<Item Name="Function Generator Matrix" Type="Folder">
-				<Item Name="FunctionGeneratorMatrix_Add_Value.vi" Type="VI" URL="../FunctionGeneratorMatrix_Add_Value.vi"/>
-				<Item Name="FunctionGeneratorMatrix_Calculate.vi" Type="VI" URL="../FunctionGeneratorMatrix_Calculate.vi"/>
-				<Item Name="FunctionGeneratorMatrix_New.vi" Type="VI" URL="../FunctionGeneratorMatrix_New.vi"/>
+				<Item Name="FunctionGeneratorMatrix_Add_Value.vi" Type="VI" URL="../VI/FunctionGeneratorMatrix_Add_Value.vi"/>
+				<Item Name="FunctionGeneratorMatrix_Calculate.vi" Type="VI" URL="../VI/FunctionGeneratorMatrix_Calculate.vi"/>
+				<Item Name="FunctionGeneratorMatrix_New.vi" Type="VI" URL="../VI/FunctionGeneratorMatrix_New.vi"/>
 			</Item>
 			<Item Name="LinearFilter" Type="Folder">
 				<Item Name="LinearFilter_BackwardFiniteDifference.vi" Type="VI" URL="../LinearFilter_BackwardFiniteDifference.vi"/>
@@ -586,7 +589,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="Conv_AngleRadians_Heading.vi" Type="VI" URL="../Conv_AngleRadians_Heading.vi"/>
 			<Item Name="Conv_Centimeters_Meters.vi" Type="VI" URL="../Conv_Centimeters_Meters.vi"/>
 			<Item Name="Conv_Deg_Radians.vi" Type="VI" URL="../Conv_Deg_Radians.vi"/>
-			<Item Name="Conv_Deg_Rotations.vi" Type="VI" URL="../Conv_Deg_Rotations.vi"/>
+			<Item Name="Conv_Deg_Rotations.vi" Type="VI" URL="../VI/Conv_Deg_Rotations.vi"/>
 			<Item Name="Conv_Feet_Meters.vi" Type="VI" URL="../Conv_Feet_Meters.vi"/>
 			<Item Name="Conv_GyroDegrees_Heading.vi" Type="VI" URL="../Conv_GyroDegrees_Heading.vi"/>
 			<Item Name="Conv_Heading_AngleRadians.vi" Type="VI" URL="../Conv_Heading_AngleRadians.vi"/>
@@ -597,9 +600,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="Conv_POSE2D_SI_Eng.vi" Type="VI" URL="../Conv_POSE2D_SI_Eng.vi"/>
 			<Item Name="Conv_Pounds_Killograms.vi" Type="VI" URL="../Conv_Pounds_Killograms.vi"/>
 			<Item Name="Conv_Radians_Deg.vi" Type="VI" URL="../Conv_Radians_Deg.vi"/>
-			<Item Name="Conv_Radians_Rotations.vi" Type="VI" URL="../Conv_Radians_Rotations.vi"/>
-			<Item Name="Conv_Rotations_Degrees.vi" Type="VI" URL="../Conv_Rotations_Degrees.vi"/>
-			<Item Name="Conv_Rotations_Radians.vi" Type="VI" URL="../Conv_Rotations_Radians.vi"/>
+			<Item Name="Conv_Radians_Rotations.vi" Type="VI" URL="../VI/Conv_Radians_Rotations.vi"/>
+			<Item Name="Conv_Rotations_Degrees.vi" Type="VI" URL="../VI/Conv_Rotations_Degrees.vi"/>
+			<Item Name="Conv_Rotations_Radians.vi" Type="VI" URL="../VI/Conv_Rotations_Radians.vi"/>
 			<Item Name="Conv_Yards_Meters.vi" Type="VI" URL="../Conv_Yards_Meters.vi"/>
 		</Item>
 		<Item Name="DigSeqLogic" Type="Folder">
@@ -610,7 +613,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Debouncer_New.vi" Type="VI" URL="../Debouncer_New.vi"/>
 				<Item Name="Debouncer_Reset.vi" Type="VI" URL="../Debouncer_Reset.vi"/>
 			</Item>
-			<Item Name="DigSeqLogic_Delay.vi" Type="VI" URL="../DigSeqLogic_Delay.vi"/>
+			<Item Name="DigSeqLogic_Delay.vi" Type="VI" URL="../VI/DigSeqLogic_Delay.vi"/>
 			<Item Name="DigSeqLogic_Off_Delay.vi" Type="VI" URL="../DigSeqLogic_Off_Delay.vi"/>
 			<Item Name="DigSeqLogic_On_Delay.vi" Type="VI" URL="../DigSeqLogic_On_Delay.vi"/>
 			<Item Name="DigSeqLogic_One_Shot.vi" Type="VI" URL="../DigSeqLogic_One_Shot.vi"/>
@@ -618,22 +621,22 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		</Item>
 		<Item Name="Geometry" Type="Folder">
 			<Item Name="CoordinateAxis" Type="Folder">
-				<Item Name="CoordAxis_D.vi" Type="VI" URL="../CoordAxis_D.vi"/>
-				<Item Name="CoordAxis_E.vi" Type="VI" URL="../CoordAxis_E.vi"/>
-				<Item Name="CoordAxis_N.vi" Type="VI" URL="../CoordAxis_N.vi"/>
-				<Item Name="CoordAxis_New.vi" Type="VI" URL="../CoordAxis_New.vi"/>
-				<Item Name="CoordAxis_S.vi" Type="VI" URL="../CoordAxis_S.vi"/>
-				<Item Name="CoordAxis_U.vi" Type="VI" URL="../CoordAxis_U.vi"/>
-				<Item Name="CoordAxis_W.vi" Type="VI" URL="../CoordAxis_W.vi"/>
+				<Item Name="CoordAxis_D.vi" Type="VI" URL="../VI/CoordAxis_D.vi"/>
+				<Item Name="CoordAxis_E.vi" Type="VI" URL="../VI/CoordAxis_E.vi"/>
+				<Item Name="CoordAxis_N.vi" Type="VI" URL="../VI/CoordAxis_N.vi"/>
+				<Item Name="CoordAxis_New.vi" Type="VI" URL="../VI/CoordAxis_New.vi"/>
+				<Item Name="CoordAxis_S.vi" Type="VI" URL="../VI/CoordAxis_S.vi"/>
+				<Item Name="CoordAxis_U.vi" Type="VI" URL="../VI/CoordAxis_U.vi"/>
+				<Item Name="CoordAxis_W.vi" Type="VI" URL="../VI/CoordAxis_W.vi"/>
 			</Item>
 			<Item Name="CoordinateSystem" Type="Folder">
-				<Item Name="CoordSystem_Convert_Pose3d.vi" Type="VI" URL="../CoordSystem_Convert_Pose3d.vi"/>
-				<Item Name="CoordSystem_Convert_Rotation3d.vi" Type="VI" URL="../CoordSystem_Convert_Rotation3d.vi"/>
-				<Item Name="CoordSystem_Convert_Translation3d.vi" Type="VI" URL="../CoordSystem_Convert_Translation3d.vi"/>
-				<Item Name="CoordSystem_EDN.vi" Type="VI" URL="../CoordSystem_EDN.vi"/>
-				<Item Name="CoordSystem_NED.vi" Type="VI" URL="../CoordSystem_NED.vi"/>
-				<Item Name="CoordSystem_New.vi" Type="VI" URL="../CoordSystem_New.vi"/>
-				<Item Name="CoordSystem_NWU.vi" Type="VI" URL="../CoordSystem_NWU.vi"/>
+				<Item Name="CoordSystem_Convert_Pose3d.vi" Type="VI" URL="../VI/CoordSystem_Convert_Pose3d.vi"/>
+				<Item Name="CoordSystem_Convert_Rotation3d.vi" Type="VI" URL="../VI/CoordSystem_Convert_Rotation3d.vi"/>
+				<Item Name="CoordSystem_Convert_Translation3d.vi" Type="VI" URL="../VI/CoordSystem_Convert_Translation3d.vi"/>
+				<Item Name="CoordSystem_EDN.vi" Type="VI" URL="../VI/CoordSystem_EDN.vi"/>
+				<Item Name="CoordSystem_NED.vi" Type="VI" URL="../VI/CoordSystem_NED.vi"/>
+				<Item Name="CoordSystem_New.vi" Type="VI" URL="../VI/CoordSystem_New.vi"/>
+				<Item Name="CoordSystem_NWU.vi" Type="VI" URL="../VI/CoordSystem_NWU.vi"/>
 			</Item>
 			<Item Name="Pose2d" Type="Folder">
 				<Item Name="Pose2d_Equals.vi" Type="VI" URL="../Pose2d_Equals.vi"/>
@@ -652,39 +655,39 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Pose2d_TransformBy.vi" Type="VI" URL="../Pose2d_TransformBy.vi"/>
 			</Item>
 			<Item Name="Pose3d" Type="Folder">
-				<Item Name="Pose3d_Equals.vi" Type="VI" URL="../Pose3d_Equals.vi"/>
-				<Item Name="Pose3d_Exp.vi" Type="VI" URL="../Pose3d_Exp.vi"/>
-				<Item Name="Pose3d_getRotation3d.vi" Type="VI" URL="../Pose3d_getRotation3d.vi"/>
-				<Item Name="Pose3d_getTranslation3d.vi" Type="VI" URL="../Pose3d_getTranslation3d.vi"/>
-				<Item Name="Pose3d_getXYZ.vi" Type="VI" URL="../Pose3d_getXYZ.vi"/>
-				<Item Name="Pose3d_Interpolate.vi" Type="VI" URL="../Pose3d_Interpolate.vi"/>
-				<Item Name="Pose3d_Log.vi" Type="VI" URL="../Pose3d_Log.vi"/>
-				<Item Name="Pose3d_Minus.vi" Type="VI" URL="../Pose3d_Minus.vi"/>
-				<Item Name="Pose3d_New.vi" Type="VI" URL="../Pose3d_New.vi"/>
-				<Item Name="Pose3d_New_Default.vi" Type="VI" URL="../Pose3d_New_Default.vi"/>
-				<Item Name="Pose3d_New_Trans3dRot3d.vi" Type="VI" URL="../Pose3d_New_Trans3dRot3d.vi"/>
-				<Item Name="Pose3d_Plus.vi" Type="VI" URL="../Pose3d_Plus.vi"/>
-				<Item Name="Pose3d_RelativeTo.vi" Type="VI" URL="../Pose3d_RelativeTo.vi"/>
-				<Item Name="Pose3d_RotationVectorToMatrix.vi" Type="VI" URL="../Pose3d_RotationVectorToMatrix.vi">
+				<Item Name="Pose3d_Equals.vi" Type="VI" URL="../VI/Pose3d_Equals.vi"/>
+				<Item Name="Pose3d_Exp.vi" Type="VI" URL="../VI/Pose3d_Exp.vi"/>
+				<Item Name="Pose3d_getRotation3d.vi" Type="VI" URL="../VI/Pose3d_getRotation3d.vi"/>
+				<Item Name="Pose3d_getTranslation3d.vi" Type="VI" URL="../VI/Pose3d_getTranslation3d.vi"/>
+				<Item Name="Pose3d_getXYZ.vi" Type="VI" URL="../VI/Pose3d_getXYZ.vi"/>
+				<Item Name="Pose3d_Interpolate.vi" Type="VI" URL="../VI/Pose3d_Interpolate.vi"/>
+				<Item Name="Pose3d_Log.vi" Type="VI" URL="../VI/Pose3d_Log.vi"/>
+				<Item Name="Pose3d_Minus.vi" Type="VI" URL="../VI/Pose3d_Minus.vi"/>
+				<Item Name="Pose3d_New.vi" Type="VI" URL="../VI/Pose3d_New.vi"/>
+				<Item Name="Pose3d_New_Default.vi" Type="VI" URL="../VI/Pose3d_New_Default.vi"/>
+				<Item Name="Pose3d_New_Trans3dRot3d.vi" Type="VI" URL="../VI/Pose3d_New_Trans3dRot3d.vi"/>
+				<Item Name="Pose3d_Plus.vi" Type="VI" URL="../VI/Pose3d_Plus.vi"/>
+				<Item Name="Pose3d_RelativeTo.vi" Type="VI" URL="../VI/Pose3d_RelativeTo.vi"/>
+				<Item Name="Pose3d_RotationVectorToMatrix.vi" Type="VI" URL="../VI/Pose3d_RotationVectorToMatrix.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
-				<Item Name="Pose3d_ToPose2d.vi" Type="VI" URL="../Pose3d_ToPose2d.vi"/>
-				<Item Name="Pose3d_TransformBy.vi" Type="VI" URL="../Pose3d_TransformBy.vi"/>
+				<Item Name="Pose3d_ToPose2d.vi" Type="VI" URL="../VI/Pose3d_ToPose2d.vi"/>
+				<Item Name="Pose3d_TransformBy.vi" Type="VI" URL="../VI/Pose3d_TransformBy.vi"/>
 			</Item>
 			<Item Name="Quaternion" Type="Folder">
-				<Item Name="Quaternion_Equals.vi" Type="VI" URL="../Quaternion_Equals.vi"/>
-				<Item Name="Quaternion_Get_All.vi" Type="VI" URL="../Quaternion_Get_All.vi"/>
-				<Item Name="Quaternion_Get_LVQuat.vi" Type="VI" URL="../Quaternion_Get_LVQuat.vi"/>
-				<Item Name="Quaternion_Get_Vect.vi" Type="VI" URL="../Quaternion_Get_Vect.vi"/>
-				<Item Name="Quaternion_Get_W.vi" Type="VI" URL="../Quaternion_Get_W.vi"/>
-				<Item Name="Quaternion_Inverse.vi" Type="VI" URL="../Quaternion_Inverse.vi"/>
-				<Item Name="Quaternion_New.vi" Type="VI" URL="../Quaternion_New.vi"/>
-				<Item Name="Quaternion_New_Default.vi" Type="VI" URL="../Quaternion_New_Default.vi"/>
-				<Item Name="Quaternion_New_LVQuat.vi" Type="VI" URL="../Quaternion_New_LVQuat.vi"/>
-				<Item Name="Quaternion_Normalize.vi" Type="VI" URL="../Quaternion_Normalize.vi"/>
-				<Item Name="Quaternion_Plus.vi" Type="VI" URL="../Quaternion_Plus.vi"/>
-				<Item Name="Quaternion_Times.vi" Type="VI" URL="../Quaternion_Times.vi"/>
-				<Item Name="Quaternion_ToRotationVector.vi" Type="VI" URL="../Quaternion_ToRotationVector.vi"/>
+				<Item Name="Quaternion_Equals.vi" Type="VI" URL="../VI/Quaternion_Equals.vi"/>
+				<Item Name="Quaternion_Get_All.vi" Type="VI" URL="../VI/Quaternion_Get_All.vi"/>
+				<Item Name="Quaternion_Get_LVQuat.vi" Type="VI" URL="../VI/Quaternion_Get_LVQuat.vi"/>
+				<Item Name="Quaternion_Get_Vect.vi" Type="VI" URL="../VI/Quaternion_Get_Vect.vi"/>
+				<Item Name="Quaternion_Get_W.vi" Type="VI" URL="../VI/Quaternion_Get_W.vi"/>
+				<Item Name="Quaternion_Inverse.vi" Type="VI" URL="../VI/Quaternion_Inverse.vi"/>
+				<Item Name="Quaternion_New.vi" Type="VI" URL="../VI/Quaternion_New.vi"/>
+				<Item Name="Quaternion_New_Default.vi" Type="VI" URL="../VI/Quaternion_New_Default.vi"/>
+				<Item Name="Quaternion_New_LVQuat.vi" Type="VI" URL="../VI/Quaternion_New_LVQuat.vi"/>
+				<Item Name="Quaternion_Normalize.vi" Type="VI" URL="../VI/Quaternion_Normalize.vi"/>
+				<Item Name="Quaternion_Plus.vi" Type="VI" URL="../VI/Quaternion_Plus.vi"/>
+				<Item Name="Quaternion_Times.vi" Type="VI" URL="../VI/Quaternion_Times.vi"/>
+				<Item Name="Quaternion_ToRotationVector.vi" Type="VI" URL="../VI/Quaternion_ToRotationVector.vi"/>
 			</Item>
 			<Item Name="Rotation2d" Type="Folder">
 				<Item Name="Rotation2d_CreateAngle.vi" Type="VI" URL="../Rotation2d_CreateAngle.vi"/>
@@ -707,21 +710,21 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Rotation2d_UnaryMinus.vi" Type="VI" URL="../Rotation2d_UnaryMinus.vi"/>
 			</Item>
 			<Item Name="Rotation3d" Type="Folder">
-				<Item Name="Rotation3d_Create_AxisAngle.vi" Type="VI" URL="../Rotation3d_Create_AxisAngle.vi"/>
-				<Item Name="Rotation3d_Create_Default.vi" Type="VI" URL="../Rotation3d_Create_Default.vi"/>
-				<Item Name="Rotation3d_Create_Quaternion.vi" Type="VI" URL="../Rotation3d_Create_Quaternion.vi"/>
-				<Item Name="Rotation3d_Create_RollPitchYaw.vi" Type="VI" URL="../Rotation3d_Create_RollPitchYaw.vi"/>
-				<Item Name="Rotation3d_Equals.vi" Type="VI" URL="../Rotation3d_Equals.vi"/>
-				<Item Name="Rotation3d_GetAxisAngle.vi" Type="VI" URL="../Rotation3d_GetAxisAngle.vi"/>
-				<Item Name="Rotation3d_GetQuaterion.vi" Type="VI" URL="../Rotation3d_GetQuaterion.vi"/>
-				<Item Name="Rotation3d_GetXYZ.vi" Type="VI" URL="../Rotation3d_GetXYZ.vi"/>
-				<Item Name="Rotation3d_Interpolate.vi" Type="VI" URL="../Rotation3d_Interpolate.vi"/>
-				<Item Name="Rotation3d_Minus.vi" Type="VI" URL="../Rotation3d_Minus.vi"/>
-				<Item Name="Rotation3d_Plus.vi" Type="VI" URL="../Rotation3d_Plus.vi"/>
-				<Item Name="Rotation3d_RotateBy.vi" Type="VI" URL="../Rotation3d_RotateBy.vi"/>
-				<Item Name="Rotation3d_Times.vi" Type="VI" URL="../Rotation3d_Times.vi"/>
-				<Item Name="Rotation3d_ToRotation2d.vi" Type="VI" URL="../Rotation3d_ToRotation2d.vi"/>
-				<Item Name="Rotation3d_UnaryMinus.vi" Type="VI" URL="../Rotation3d_UnaryMinus.vi"/>
+				<Item Name="Rotation3d_Create_AxisAngle.vi" Type="VI" URL="../VI/Rotation3d_Create_AxisAngle.vi"/>
+				<Item Name="Rotation3d_Create_Default.vi" Type="VI" URL="../VI/Rotation3d_Create_Default.vi"/>
+				<Item Name="Rotation3d_Create_Quaternion.vi" Type="VI" URL="../VI/Rotation3d_Create_Quaternion.vi"/>
+				<Item Name="Rotation3d_Create_RollPitchYaw.vi" Type="VI" URL="../VI/Rotation3d_Create_RollPitchYaw.vi"/>
+				<Item Name="Rotation3d_Equals.vi" Type="VI" URL="../VI/Rotation3d_Equals.vi"/>
+				<Item Name="Rotation3d_GetAxisAngle.vi" Type="VI" URL="../VI/Rotation3d_GetAxisAngle.vi"/>
+				<Item Name="Rotation3d_GetQuaterion.vi" Type="VI" URL="../VI/Rotation3d_GetQuaterion.vi"/>
+				<Item Name="Rotation3d_GetXYZ.vi" Type="VI" URL="../VI/Rotation3d_GetXYZ.vi"/>
+				<Item Name="Rotation3d_Interpolate.vi" Type="VI" URL="../VI/Rotation3d_Interpolate.vi"/>
+				<Item Name="Rotation3d_Minus.vi" Type="VI" URL="../VI/Rotation3d_Minus.vi"/>
+				<Item Name="Rotation3d_Plus.vi" Type="VI" URL="../VI/Rotation3d_Plus.vi"/>
+				<Item Name="Rotation3d_RotateBy.vi" Type="VI" URL="../VI/Rotation3d_RotateBy.vi"/>
+				<Item Name="Rotation3d_Times.vi" Type="VI" URL="../VI/Rotation3d_Times.vi"/>
+				<Item Name="Rotation3d_ToRotation2d.vi" Type="VI" URL="../VI/Rotation3d_ToRotation2d.vi"/>
+				<Item Name="Rotation3d_UnaryMinus.vi" Type="VI" URL="../VI/Rotation3d_UnaryMinus.vi"/>
 			</Item>
 			<Item Name="Transform2d" Type="Folder">
 				<Item Name="Transform2d_Create_PosePose.vi" Type="VI" URL="../Transform2d_Create_PosePose.vi"/>
@@ -736,16 +739,16 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Transform2d_Times.vi" Type="VI" URL="../Transform2d_Times.vi"/>
 			</Item>
 			<Item Name="Transform3d" Type="Folder">
-				<Item Name="Transform3d_Create_Default.vi" Type="VI" URL="../Transform3d_Create_Default.vi"/>
-				<Item Name="Transform3d_Create_Pose3dPose3d.vi" Type="VI" URL="../Transform3d_Create_Pose3dPose3d.vi"/>
-				<Item Name="Transform3d_Create_Trans3dRot3d.vi" Type="VI" URL="../Transform3d_Create_Trans3dRot3d.vi"/>
-				<Item Name="Transform3d_Equals.vi" Type="VI" URL="../Transform3d_Equals.vi"/>
-				<Item Name="Transform3d_GetRotation3d.vi" Type="VI" URL="../Transform3d_GetRotation3d.vi"/>
-				<Item Name="Transform3d_GetTranslation3d.vi" Type="VI" URL="../Transform3d_GetTranslation3d.vi"/>
-				<Item Name="Transform3d_GetXYZ.vi" Type="VI" URL="../Transform3d_GetXYZ.vi"/>
-				<Item Name="Transform3d_Inverse.vi" Type="VI" URL="../Transform3d_Inverse.vi"/>
-				<Item Name="Transform3d_Plus.vi" Type="VI" URL="../Transform3d_Plus.vi"/>
-				<Item Name="Transform3d_Times.vi" Type="VI" URL="../Transform3d_Times.vi"/>
+				<Item Name="Transform3d_Create_Default.vi" Type="VI" URL="../VI/Transform3d_Create_Default.vi"/>
+				<Item Name="Transform3d_Create_Pose3dPose3d.vi" Type="VI" URL="../VI/Transform3d_Create_Pose3dPose3d.vi"/>
+				<Item Name="Transform3d_Create_Trans3dRot3d.vi" Type="VI" URL="../VI/Transform3d_Create_Trans3dRot3d.vi"/>
+				<Item Name="Transform3d_Equals.vi" Type="VI" URL="../VI/Transform3d_Equals.vi"/>
+				<Item Name="Transform3d_GetRotation3d.vi" Type="VI" URL="../VI/Transform3d_GetRotation3d.vi"/>
+				<Item Name="Transform3d_GetTranslation3d.vi" Type="VI" URL="../VI/Transform3d_GetTranslation3d.vi"/>
+				<Item Name="Transform3d_GetXYZ.vi" Type="VI" URL="../VI/Transform3d_GetXYZ.vi"/>
+				<Item Name="Transform3d_Inverse.vi" Type="VI" URL="../VI/Transform3d_Inverse.vi"/>
+				<Item Name="Transform3d_Plus.vi" Type="VI" URL="../VI/Transform3d_Plus.vi"/>
+				<Item Name="Transform3d_Times.vi" Type="VI" URL="../VI/Transform3d_Times.vi"/>
 			</Item>
 			<Item Name="Translation2d" Type="Folder">
 				<Item Name="Translation2d_Create.vi" Type="VI" URL="../Translation2d_Create.vi"/>
@@ -765,21 +768,21 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Translation2d_UnaryMinus.vi" Type="VI" URL="../Translation2d_UnaryMinus.vi"/>
 			</Item>
 			<Item Name="Translation3d" Type="Folder">
-				<Item Name="Translation3d_Create.vi" Type="VI" URL="../Translation3d_Create.vi"/>
-				<Item Name="Translation3d_Create_Default.vi" Type="VI" URL="../Translation3d_Create_Default.vi"/>
-				<Item Name="Translation3d_Create_DistAng.vi" Type="VI" URL="../Translation3d_Create_DistAng.vi"/>
-				<Item Name="Translation3d_Div.vi" Type="VI" URL="../Translation3d_Div.vi"/>
-				<Item Name="Translation3d_Equals.vi" Type="VI" URL="../Translation3d_Equals.vi"/>
-				<Item Name="Translation3d_GetDistance.vi" Type="VI" URL="../Translation3d_GetDistance.vi"/>
-				<Item Name="Translation3d_GetNorm.vi" Type="VI" URL="../Translation3d_GetNorm.vi"/>
-				<Item Name="Translation3d_GetXYZ.vi" Type="VI" URL="../Translation3d_GetXYZ.vi"/>
-				<Item Name="Translation3d_Interpolate.vi" Type="VI" URL="../Translation3d_Interpolate.vi"/>
-				<Item Name="Translation3d_Minus.vi" Type="VI" URL="../Translation3d_Minus.vi"/>
-				<Item Name="Translation3d_Plus.vi" Type="VI" URL="../Translation3d_Plus.vi"/>
-				<Item Name="Translation3d_RotateBy.vi" Type="VI" URL="../Translation3d_RotateBy.vi"/>
-				<Item Name="Translation3d_Times.vi" Type="VI" URL="../Translation3d_Times.vi"/>
-				<Item Name="Translation3d_ToTranslation2d.vi" Type="VI" URL="../Translation3d_ToTranslation2d.vi"/>
-				<Item Name="Translation3d_UnaryMinus.vi" Type="VI" URL="../Translation3d_UnaryMinus.vi"/>
+				<Item Name="Translation3d_Create.vi" Type="VI" URL="../VI/Translation3d_Create.vi"/>
+				<Item Name="Translation3d_Create_Default.vi" Type="VI" URL="../VI/Translation3d_Create_Default.vi"/>
+				<Item Name="Translation3d_Create_DistAng.vi" Type="VI" URL="../VI/Translation3d_Create_DistAng.vi"/>
+				<Item Name="Translation3d_Div.vi" Type="VI" URL="../VI/Translation3d_Div.vi"/>
+				<Item Name="Translation3d_Equals.vi" Type="VI" URL="../VI/Translation3d_Equals.vi"/>
+				<Item Name="Translation3d_GetDistance.vi" Type="VI" URL="../VI/Translation3d_GetDistance.vi"/>
+				<Item Name="Translation3d_GetNorm.vi" Type="VI" URL="../VI/Translation3d_GetNorm.vi"/>
+				<Item Name="Translation3d_GetXYZ.vi" Type="VI" URL="../VI/Translation3d_GetXYZ.vi"/>
+				<Item Name="Translation3d_Interpolate.vi" Type="VI" URL="../VI/Translation3d_Interpolate.vi"/>
+				<Item Name="Translation3d_Minus.vi" Type="VI" URL="../VI/Translation3d_Minus.vi"/>
+				<Item Name="Translation3d_Plus.vi" Type="VI" URL="../VI/Translation3d_Plus.vi"/>
+				<Item Name="Translation3d_RotateBy.vi" Type="VI" URL="../VI/Translation3d_RotateBy.vi"/>
+				<Item Name="Translation3d_Times.vi" Type="VI" URL="../VI/Translation3d_Times.vi"/>
+				<Item Name="Translation3d_ToTranslation2d.vi" Type="VI" URL="../VI/Translation3d_ToTranslation2d.vi"/>
+				<Item Name="Translation3d_UnaryMinus.vi" Type="VI" URL="../VI/Translation3d_UnaryMinus.vi"/>
 			</Item>
 			<Item Name="Twist2d" Type="Folder">
 				<Item Name="Twist2d_Create.vi" Type="VI" URL="../Twist2d_Create.vi"/>
@@ -787,9 +790,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Twist2d_GetAll.vi" Type="VI" URL="../Twist2d_GetAll.vi"/>
 			</Item>
 			<Item Name="Twist3d" Type="Folder">
-				<Item Name="Twist3d_Create.vi" Type="VI" URL="../Twist3d_Create.vi"/>
-				<Item Name="Twist3d_Equals.vi" Type="VI" URL="../Twist3d_Equals.vi"/>
-				<Item Name="Twist3d_GetAll.vi" Type="VI" URL="../Twist3d_GetAll.vi"/>
+				<Item Name="Twist3d_Create.vi" Type="VI" URL="../VI/Twist3d_Create.vi"/>
+				<Item Name="Twist3d_Equals.vi" Type="VI" URL="../VI/Twist3d_Equals.vi"/>
+				<Item Name="Twist3d_GetAll.vi" Type="VI" URL="../VI/Twist3d_GetAll.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Kinematics_Odometry" Type="Folder">
@@ -1007,18 +1010,18 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			</Item>
 			<Item Name="State Space Estimator" Type="Folder">
 				<Item Name="ExtendedKalmanFilter" Type="Folder">
-					<Item Name="ExtendedKalmanFilter_Correct.vi" Type="VI" URL="../ExtendedKalmanFilter_Correct.vi"/>
-					<Item Name="ExtendedKalmanFilter_Correct_OnlyUY.vi" Type="VI" URL="../ExtendedKalmanFilter_Correct_OnlyUY.vi"/>
-					<Item Name="ExtendedKalmanFilter_GetP.vi" Type="VI" URL="../ExtendedKalmanFilter_GetP.vi"/>
-					<Item Name="ExtendedKalmanFilter_GetP_Single.vi" Type="VI" URL="../ExtendedKalmanFilter_GetP_Single.vi"/>
-					<Item Name="ExtendedKalmanFilter_GetXHat.vi" Type="VI" URL="../ExtendedKalmanFilter_GetXHat.vi"/>
-					<Item Name="ExtendedKalmanFilter_GetXHat_Single.vi" Type="VI" URL="../ExtendedKalmanFilter_GetXHat_Single.vi"/>
-					<Item Name="ExtendedKalmanFilter_New.vi" Type="VI" URL="../ExtendedKalmanFilter_New.vi"/>
-					<Item Name="ExtendedKalmanFilter_Predict.vi" Type="VI" URL="../ExtendedKalmanFilter_Predict.vi"/>
-					<Item Name="ExtendedKalmanFilter_Reset.vi" Type="VI" URL="../ExtendedKalmanFilter_Reset.vi"/>
-					<Item Name="ExtendedKalmanFilter_SetP.vi" Type="VI" URL="../ExtendedKalmanFilter_SetP.vi"/>
-					<Item Name="ExtendedKalmanFilter_SetXHat.vi" Type="VI" URL="../ExtendedKalmanFilter_SetXHat.vi"/>
-					<Item Name="ExtendedKalmanFilter_SetXHat_Single.vi" Type="VI" URL="../ExtendedKalmanFilter_SetXHat_Single.vi"/>
+					<Item Name="ExtendedKalmanFilter_Correct.vi" Type="VI" URL="../VI/ExtendedKalmanFilter_Correct.vi"/>
+					<Item Name="ExtendedKalmanFilter_Correct_OnlyUY.vi" Type="VI" URL="../VI/ExtendedKalmanFilter_Correct_OnlyUY.vi"/>
+					<Item Name="ExtendedKalmanFilter_GetP.vi" Type="VI" URL="../VI/ExtendedKalmanFilter_GetP.vi"/>
+					<Item Name="ExtendedKalmanFilter_GetP_Single.vi" Type="VI" URL="../VI/ExtendedKalmanFilter_GetP_Single.vi"/>
+					<Item Name="ExtendedKalmanFilter_GetXHat.vi" Type="VI" URL="../VI/ExtendedKalmanFilter_GetXHat.vi"/>
+					<Item Name="ExtendedKalmanFilter_GetXHat_Single.vi" Type="VI" URL="../VI/ExtendedKalmanFilter_GetXHat_Single.vi"/>
+					<Item Name="ExtendedKalmanFilter_New.vi" Type="VI" URL="../VI/ExtendedKalmanFilter_New.vi"/>
+					<Item Name="ExtendedKalmanFilter_Predict.vi" Type="VI" URL="../VI/ExtendedKalmanFilter_Predict.vi"/>
+					<Item Name="ExtendedKalmanFilter_Reset.vi" Type="VI" URL="../VI/ExtendedKalmanFilter_Reset.vi"/>
+					<Item Name="ExtendedKalmanFilter_SetP.vi" Type="VI" URL="../VI/ExtendedKalmanFilter_SetP.vi"/>
+					<Item Name="ExtendedKalmanFilter_SetXHat.vi" Type="VI" URL="../VI/ExtendedKalmanFilter_SetXHat.vi"/>
+					<Item Name="ExtendedKalmanFilter_SetXHat_Single.vi" Type="VI" URL="../VI/ExtendedKalmanFilter_SetXHat_Single.vi"/>
 				</Item>
 			</Item>
 		</Item>
@@ -1187,16 +1190,16 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		</Item>
 		<Item Name="State Space Control" Type="Folder">
 			<Item Name="Differential Drive Acceleration Limiter" Type="Folder">
-				<Item Name="DiffDrvAccelLimit_Calculate.vi" Type="VI" URL="../DiffDrvAccelLimit_Calculate.vi"/>
-				<Item Name="DiffDrvAccelLimit_New.vi" Type="VI" URL="../DiffDrvAccelLimit_New.vi"/>
+				<Item Name="DiffDrvAccelLimit_Calculate.vi" Type="VI" URL="../VI/DiffDrvAccelLimit_Calculate.vi"/>
+				<Item Name="DiffDrvAccelLimit_New.vi" Type="VI" URL="../VI/DiffDrvAccelLimit_New.vi"/>
 			</Item>
 			<Item Name="Implicit Model Follower" Type="Folder">
-				<Item Name="ImplModelFollow_Calculate.vi" Type="VI" URL="../ImplModelFollow_Calculate.vi"/>
-				<Item Name="ImplModelFollow_GetU.vi" Type="VI" URL="../ImplModelFollow_GetU.vi"/>
-				<Item Name="ImplModelFollow_GetU_Single.vi" Type="VI" URL="../ImplModelFollow_GetU_Single.vi"/>
-				<Item Name="ImplModelFollow_New.vi" Type="VI" URL="../ImplModelFollow_New.vi"/>
-				<Item Name="ImplModelFollow_New_Plant.vi" Type="VI" URL="../ImplModelFollow_New_Plant.vi"/>
-				<Item Name="ImplModelFollow_Reset.vi" Type="VI" URL="../ImplModelFollow_Reset.vi"/>
+				<Item Name="ImplModelFollow_Calculate.vi" Type="VI" URL="../VI/ImplModelFollow_Calculate.vi"/>
+				<Item Name="ImplModelFollow_GetU.vi" Type="VI" URL="../VI/ImplModelFollow_GetU.vi"/>
+				<Item Name="ImplModelFollow_GetU_Single.vi" Type="VI" URL="../VI/ImplModelFollow_GetU_Single.vi"/>
+				<Item Name="ImplModelFollow_New.vi" Type="VI" URL="../VI/ImplModelFollow_New.vi"/>
+				<Item Name="ImplModelFollow_New_Plant.vi" Type="VI" URL="../VI/ImplModelFollow_New_Plant.vi"/>
+				<Item Name="ImplModelFollow_Reset.vi" Type="VI" URL="../VI/ImplModelFollow_Reset.vi"/>
 			</Item>
 			<Item Name="LinearPlantInversionFeedforward" Type="Folder">
 				<Item Name="LinearPlntInvFF_Calculate.vi" Type="VI" URL="../LinearPlntInvFF_Calculate.vi"/>
@@ -1261,21 +1264,21 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
 			</Item>
 			<Item Name="LTV Differential Drive Controller" Type="Folder">
-				<Item Name="LTVDiffDriveCtrl_AtReference.vi" Type="VI" URL="../LTVDiffDriveCtrl_AtReference.vi"/>
-				<Item Name="LTVDiffDriveCtrl_Calculate.vi" Type="VI" URL="../LTVDiffDriveCtrl_Calculate.vi"/>
-				<Item Name="LTVDiffDriveCtrl_Calculate_TrajState.vi" Type="VI" URL="../LTVDiffDriveCtrl_Calculate_TrajState.vi"/>
-				<Item Name="LTVDiffDriveCtrl_New.vi" Type="VI" URL="../LTVDiffDriveCtrl_New.vi"/>
-				<Item Name="LTVDiffDriveCtrl_SetTolerance.vi" Type="VI" URL="../LTVDiffDriveCtrl_SetTolerance.vi"/>
+				<Item Name="LTVDiffDriveCtrl_AtReference.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_AtReference.vi"/>
+				<Item Name="LTVDiffDriveCtrl_Calculate.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_Calculate.vi"/>
+				<Item Name="LTVDiffDriveCtrl_Calculate_TrajState.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_Calculate_TrajState.vi"/>
+				<Item Name="LTVDiffDriveCtrl_New.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_New.vi"/>
+				<Item Name="LTVDiffDriveCtrl_SetTolerance.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_SetTolerance.vi"/>
 			</Item>
 			<Item Name="LTV Unicycle Controller" Type="Folder">
-				<Item Name="LTVUnicycleCtrl_AtReference.vi" Type="VI" URL="../LTVUnicycleCtrl_AtReference.vi"/>
-				<Item Name="LTVUnicycleCtrl_Calculate.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate.vi"/>
-				<Item Name="LTVUnicycleCtrl_Calculate_ORIG.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate_ORIG.vi"/>
-				<Item Name="LTVUnicycleCtrl_Calculate_TrajState.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate_TrajState.vi"/>
-				<Item Name="LTVUnicycleCtrl_Calculate_TrajState_ORIG.vi" Type="VI" URL="../LTVUnicycleCtrl_Calculate_TrajState_ORIG.vi"/>
-				<Item Name="LTVUnicycleCtrl_New.vi" Type="VI" URL="../LTVUnicycleCtrl_New.vi"/>
-				<Item Name="LTVUnicycleCtrl_SetEnabled.vi" Type="VI" URL="../LTVUnicycleCtrl_SetEnabled.vi"/>
-				<Item Name="LTVUnicycleCtrl_SetTolerance.vi" Type="VI" URL="../LTVUnicycleCtrl_SetTolerance.vi"/>
+				<Item Name="LTVUnicycleCtrl_AtReference.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_AtReference.vi"/>
+				<Item Name="LTVUnicycleCtrl_Calculate.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Calculate.vi"/>
+				<Item Name="LTVUnicycleCtrl_Calculate_ORIG.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Calculate_ORIG.vi"/>
+				<Item Name="LTVUnicycleCtrl_Calculate_TrajState.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Calculate_TrajState.vi"/>
+				<Item Name="LTVUnicycleCtrl_Calculate_TrajState_ORIG.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Calculate_TrajState_ORIG.vi"/>
+				<Item Name="LTVUnicycleCtrl_New.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_New.vi"/>
+				<Item Name="LTVUnicycleCtrl_SetEnabled.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_SetEnabled.vi"/>
+				<Item Name="LTVUnicycleCtrl_SetTolerance.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_SetTolerance.vi"/>
 			</Item>
 		</Item>
 		<Item Name="State Space Estimator" Type="Folder">
@@ -1315,17 +1318,17 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="KalmanFilterLatencyComp_Reset.vi" Type="VI" URL="../KalmanFilterLatencyComp_Reset.vi"/>
 			</Item>
 			<Item Name="Mecanum Drive Pose Estimator" Type="Folder">
-				<Item Name="MecaDrivePoseEst_AddVisionMeasurement.vi" Type="VI" URL="../MecaDrivePoseEst_AddVisionMeasurement.vi"/>
-				<Item Name="MecaDrivePoseEst_GetEstimatedPosition.vi" Type="VI" URL="../MecaDrivePoseEst_GetEstimatedPosition.vi"/>
-				<Item Name="MecaDrivePoseEst_Kalman_F_Callback.vi" Type="VI" URL="../MecaDrivePoseEst_Kalman_F_Callback.vi"/>
-				<Item Name="MecaDrivePoseEst_Kalman_H_Callback.vi" Type="VI" URL="../MecaDrivePoseEst_Kalman_H_Callback.vi"/>
-				<Item Name="MecaDrivePoseEst_New.vi" Type="VI" URL="../MecaDrivePoseEst_New.vi"/>
-				<Item Name="MecaDrivePoseEst_ResetPosition.vi" Type="VI" URL="../MecaDrivePoseEst_ResetPosition.vi"/>
-				<Item Name="MecaDrivePoseEst_SetVisionMeasurementStdDevs.vi" Type="VI" URL="../MecaDrivePoseEst_SetVisionMeasurementStdDevs.vi"/>
-				<Item Name="MecaDrivePoseEst_Update.vi" Type="VI" URL="../MecaDrivePoseEst_Update.vi"/>
-				<Item Name="MecaDrivePoseEst_UpdateWithTime.vi" Type="VI" URL="../MecaDrivePoseEst_UpdateWithTime.vi"/>
-				<Item Name="MecaDrivePoseEst_VisionCorrect_Callback.vi" Type="VI" URL="../MecaDrivePoseEst_VisionCorrect_Callback.vi"/>
-				<Item Name="MecaDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi" Type="VI" URL="../MecaDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi"/>
+				<Item Name="MecaDrivePoseEst_AddVisionMeasurement.vi" Type="VI" URL="../VI/MecaDrivePoseEst_AddVisionMeasurement.vi"/>
+				<Item Name="MecaDrivePoseEst_GetEstimatedPosition.vi" Type="VI" URL="../VI/MecaDrivePoseEst_GetEstimatedPosition.vi"/>
+				<Item Name="MecaDrivePoseEst_Kalman_F_Callback.vi" Type="VI" URL="../VI/MecaDrivePoseEst_Kalman_F_Callback.vi"/>
+				<Item Name="MecaDrivePoseEst_Kalman_H_Callback.vi" Type="VI" URL="../VI/MecaDrivePoseEst_Kalman_H_Callback.vi"/>
+				<Item Name="MecaDrivePoseEst_New.vi" Type="VI" URL="../VI/MecaDrivePoseEst_New.vi"/>
+				<Item Name="MecaDrivePoseEst_ResetPosition.vi" Type="VI" URL="../VI/MecaDrivePoseEst_ResetPosition.vi"/>
+				<Item Name="MecaDrivePoseEst_SetVisionMeasurementStdDevs.vi" Type="VI" URL="../VI/MecaDrivePoseEst_SetVisionMeasurementStdDevs.vi"/>
+				<Item Name="MecaDrivePoseEst_Update.vi" Type="VI" URL="../VI/MecaDrivePoseEst_Update.vi"/>
+				<Item Name="MecaDrivePoseEst_UpdateWithTime.vi" Type="VI" URL="../VI/MecaDrivePoseEst_UpdateWithTime.vi"/>
+				<Item Name="MecaDrivePoseEst_VisionCorrect_Callback.vi" Type="VI" URL="../VI/MecaDrivePoseEst_VisionCorrect_Callback.vi"/>
+				<Item Name="MecaDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi" Type="VI" URL="../VI/MecaDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi"/>
 			</Item>
 			<Item Name="Swerve Drive Pose Estimator" Type="Folder">
 				<Item Name="SwerveDrivePoseEst_AddVisionMeasurement.vi" Type="VI" URL="../SwerveDrivePoseEst_AddVisionMeasurement.vi"/>
@@ -1391,44 +1394,44 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		</Item>
 		<Item Name="TimeInterpolatableBuffer" Type="Folder">
 			<Item Name="TimeInterpolatableBoolean" Type="Folder">
-				<Item Name="TimeInterpBoolean_AddSample.vi" Type="VI" URL="../TimeInterpBoolean_AddSample.vi"/>
-				<Item Name="TimeInterpBoolean_CleanUp.vi" Type="VI" URL="../TimeInterpBoolean_CleanUp.vi">
+				<Item Name="TimeInterpBoolean_AddSample.vi" Type="VI" URL="../VI/TimeInterpBoolean_AddSample.vi"/>
+				<Item Name="TimeInterpBoolean_CleanUp.vi" Type="VI" URL="../VI/TimeInterpBoolean_CleanUp.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
-				<Item Name="TimeInterpBoolean_Clear.vi" Type="VI" URL="../TimeInterpBoolean_Clear.vi"/>
-				<Item Name="TimeInterpBoolean_GetSample.vi" Type="VI" URL="../TimeInterpBoolean_GetSample.vi"/>
-				<Item Name="TimeInterpBoolean_New.vi" Type="VI" URL="../TimeInterpBoolean_New.vi"/>
-				<Item Name="TimeInterpBoolean_SetMaxTime.vi" Type="VI" URL="../TimeInterpBoolean_SetMaxTime.vi"/>
+				<Item Name="TimeInterpBoolean_Clear.vi" Type="VI" URL="../VI/TimeInterpBoolean_Clear.vi"/>
+				<Item Name="TimeInterpBoolean_GetSample.vi" Type="VI" URL="../VI/TimeInterpBoolean_GetSample.vi"/>
+				<Item Name="TimeInterpBoolean_New.vi" Type="VI" URL="../VI/TimeInterpBoolean_New.vi"/>
+				<Item Name="TimeInterpBoolean_SetMaxTime.vi" Type="VI" URL="../VI/TimeInterpBoolean_SetMaxTime.vi"/>
 			</Item>
 			<Item Name="TimeInterpolatableDouble" Type="Folder">
-				<Item Name="TimeInterpDouble_AddSample.vi" Type="VI" URL="../TimeInterpDouble_AddSample.vi"/>
-				<Item Name="TimeInterpDouble_CleanUp.vi" Type="VI" URL="../TimeInterpDouble_CleanUp.vi">
+				<Item Name="TimeInterpDouble_AddSample.vi" Type="VI" URL="../VI/TimeInterpDouble_AddSample.vi"/>
+				<Item Name="TimeInterpDouble_CleanUp.vi" Type="VI" URL="../VI/TimeInterpDouble_CleanUp.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
-				<Item Name="TimeInterpDouble_Clear.vi" Type="VI" URL="../TimeInterpDouble_Clear.vi"/>
-				<Item Name="TimeInterpDouble_GetSample.vi" Type="VI" URL="../TimeInterpDouble_GetSample.vi"/>
-				<Item Name="TimeInterpDouble_New.vi" Type="VI" URL="../TimeInterpDouble_New.vi"/>
-				<Item Name="TimeInterpDouble_SetMaxTime.vi" Type="VI" URL="../TimeInterpDouble_SetMaxTime.vi"/>
+				<Item Name="TimeInterpDouble_Clear.vi" Type="VI" URL="../VI/TimeInterpDouble_Clear.vi"/>
+				<Item Name="TimeInterpDouble_GetSample.vi" Type="VI" URL="../VI/TimeInterpDouble_GetSample.vi"/>
+				<Item Name="TimeInterpDouble_New.vi" Type="VI" URL="../VI/TimeInterpDouble_New.vi"/>
+				<Item Name="TimeInterpDouble_SetMaxTime.vi" Type="VI" URL="../VI/TimeInterpDouble_SetMaxTime.vi"/>
 			</Item>
 			<Item Name="TimeInterpolatablePose2d" Type="Folder">
-				<Item Name="TimeInterpPose2d_AddSample.vi" Type="VI" URL="../TimeInterpPose2d_AddSample.vi"/>
-				<Item Name="TimeInterpPose2d_CleanUp.vi" Type="VI" URL="../TimeInterpPose2d_CleanUp.vi">
+				<Item Name="TimeInterpPose2d_AddSample.vi" Type="VI" URL="../VI/TimeInterpPose2d_AddSample.vi"/>
+				<Item Name="TimeInterpPose2d_CleanUp.vi" Type="VI" URL="../VI/TimeInterpPose2d_CleanUp.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
-				<Item Name="TimeInterpPose2d_Clear.vi" Type="VI" URL="../TimeInterpPose2d_Clear.vi"/>
-				<Item Name="TimeInterpPose2d_GetSample.vi" Type="VI" URL="../TimeInterpPose2d_GetSample.vi"/>
-				<Item Name="TimeInterpPose2d_New.vi" Type="VI" URL="../TimeInterpPose2d_New.vi"/>
-				<Item Name="TimeInterpPose2d_SetMaxTime.vi" Type="VI" URL="../TimeInterpPose2d_SetMaxTime.vi"/>
+				<Item Name="TimeInterpPose2d_Clear.vi" Type="VI" URL="../VI/TimeInterpPose2d_Clear.vi"/>
+				<Item Name="TimeInterpPose2d_GetSample.vi" Type="VI" URL="../VI/TimeInterpPose2d_GetSample.vi"/>
+				<Item Name="TimeInterpPose2d_New.vi" Type="VI" URL="../VI/TimeInterpPose2d_New.vi"/>
+				<Item Name="TimeInterpPose2d_SetMaxTime.vi" Type="VI" URL="../VI/TimeInterpPose2d_SetMaxTime.vi"/>
 			</Item>
 			<Item Name="TimeInterpolatableRotation2d" Type="Folder">
-				<Item Name="TimeInterpRotation2d_AddSample.vi" Type="VI" URL="../TimeInterpRotation2d_AddSample.vi"/>
-				<Item Name="TimeInterpRotation2d_CleanUp.vi" Type="VI" URL="../TimeInterpRotation2d_CleanUp.vi">
+				<Item Name="TimeInterpRotation2d_AddSample.vi" Type="VI" URL="../VI/TimeInterpRotation2d_AddSample.vi"/>
+				<Item Name="TimeInterpRotation2d_CleanUp.vi" Type="VI" URL="../VI/TimeInterpRotation2d_CleanUp.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
-				<Item Name="TimeInterpRotation2d_Clear.vi" Type="VI" URL="../TimeInterpRotation2d_Clear.vi"/>
-				<Item Name="TimeInterpRotation2d_GetSample.vi" Type="VI" URL="../TimeInterpRotation2d_GetSample.vi"/>
-				<Item Name="TimeInterpRotation2d_New.vi" Type="VI" URL="../TimeInterpRotation2d_New.vi"/>
-				<Item Name="TimeInterpRotation2d_SetMaxTime.vi" Type="VI" URL="../TimeInterpRotation2d_SetMaxTime.vi"/>
+				<Item Name="TimeInterpRotation2d_Clear.vi" Type="VI" URL="../VI/TimeInterpRotation2d_Clear.vi"/>
+				<Item Name="TimeInterpRotation2d_GetSample.vi" Type="VI" URL="../VI/TimeInterpRotation2d_GetSample.vi"/>
+				<Item Name="TimeInterpRotation2d_New.vi" Type="VI" URL="../VI/TimeInterpRotation2d_New.vi"/>
+				<Item Name="TimeInterpRotation2d_SetMaxTime.vi" Type="VI" URL="../VI/TimeInterpRotation2d_SetMaxTime.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Trajectory" Type="Folder">
@@ -1448,7 +1451,13 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Trajectory_TransformBy.vi" Type="VI" URL="../Trajectory_TransformBy.vi"/>
 			</Item>
 			<Item Name="TrajectoryConfig" Type="Folder">
+				<Item Name="TrajectoryConfig_AddConstraint.vi" Type="VI" URL="../TrajectoryConfig_AddConstraint.vi"/>
 				<Item Name="TrajectoryConfig_Create.vi" Type="VI" URL="../TrajectoryConfig_Create.vi"/>
+				<Item Name="TrajectoryConfig_GetCentripetalAccelConstraint.vi" Type="VI" URL="../VI/TrajectoryConfig_GetCentripetalAccelConstraint.vi"/>
+				<Item Name="TrajectoryConfig_GetKinematicsDiffDriveContraint.vi" Type="VI" URL="../VI/TrajectoryConfig_GetKinematicsDiffDriveContraint.vi"/>
+				<Item Name="TrajectoryConfig_GetKinematicsMecanumDriveConstraint.vi" Type="VI" URL="../VI/TrajectoryConfig_GetKinematicsMecanumDriveConstraint.vi"/>
+				<Item Name="TrajectoryConfig_GetKinematicsSwerveDriveConstraint.vi" Type="VI" URL="../VI/TrajectoryConfig_GetKinematicsSwerveDriveConstraint.vi"/>
+				<Item Name="TrajectoryConfig_GetVoltageDiffDriveConstraint.vi" Type="VI" URL="../VI/TrajectoryConfig_GetVoltageDiffDriveConstraint.vi"/>
 				<Item Name="TrajectoryConfig_setCentripetalAccel.vi" Type="VI" URL="../TrajectoryConfig_setCentripetalAccel.vi"/>
 				<Item Name="TrajectoryConfig_setKinematicsDiffDrive.vi" Type="VI" URL="../TrajectoryConfig_setKinematicsDiffDrive.vi"/>
 				<Item Name="TrajectoryConfig_setKinematicsMecanumDrive.vi" Type="VI" URL="../TrajectoryConfig_setKinematicsMecanumDrive.vi"/>
@@ -1476,21 +1485,37 @@ This implements the math section (and some other routines) contained in FRC WPIL
 					<Item Name="DiffDriveVoltageConstraint_getMinMaxAccel.vi" Type="VI" URL="../DiffDriveVoltageConstraint_getMinMaxAccel.vi"/>
 					<Item Name="DiffDriveVoltageConstraint_New.vi" Type="VI" URL="../DiffDriveVoltageConstraint_New.vi"/>
 				</Item>
+				<Item Name="EllipticalRegionConstraint" Type="Folder">
+					<Item Name="EllipRegionConstraint_getMaxVelocity.vi" Type="VI" URL="../VI/EllipRegionConstraint_getMaxVelocity.vi"/>
+					<Item Name="EllipRegionConstraint_getMinMaxAccel.vi" Type="VI" URL="../VI/EllipRegionConstraint_getMinMaxAccel.vi"/>
+					<Item Name="EllipRegionConstraint_IsPoseInRegion.vi" Type="VI" URL="../VI/EllipRegionConstraint_IsPoseInRegion.vi"/>
+					<Item Name="EllipRegionConstraint_New.vi" Type="VI" URL="../VI/EllipRegionConstraint_New.vi"/>
+				</Item>
 				<Item Name="JerkConstraint" Type="Folder">
 					<Item Name="JerkConstraint_getMaxVelocity.vi" Type="VI" URL="../JerkConstraint_getMaxVelocity.vi"/>
 					<Item Name="JerkConstraint_getMinMaxAccel.vi" Type="VI" URL="../JerkConstraint_getMinMaxAccel.vi"/>
 					<Item Name="JerkConstraint_New.vi" Type="VI" URL="../JerkConstraint_New.vi"/>
 				</Item>
+				<Item Name="MaxVelocityConstraint" Type="Folder"/>
 				<Item Name="MecaDriveKinematicsConstraint" Type="Folder">
 					<Item Name="MecaDriveKinematicsConstraint_getMaxVelocity.vi" Type="VI" URL="../MecaDriveKinematicsConstraint_getMaxVelocity.vi"/>
 					<Item Name="MecaDriveKinematicsConstraint_getMinMaxAccel.vi" Type="VI" URL="../MecaDriveKinematicsConstraint_getMinMaxAccel.vi"/>
 					<Item Name="MecaDriveKinematicsConstraint_New.vi" Type="VI" URL="../MecaDriveKinematicsConstraint_New.vi"/>
+				</Item>
+				<Item Name="RectangularRegionConstraint" Type="Folder">
+					<Item Name="RectRegionConstraint_getMaxVelocity.vi" Type="VI" URL="../VI/RectRegionConstraint_getMaxVelocity.vi"/>
+					<Item Name="RectRegionConstraint_getMinMaxAccel.vi" Type="VI" URL="../VI/RectRegionConstraint_getMinMaxAccel.vi"/>
+					<Item Name="RectRegionConstraint_IsPoseInRegion.vi" Type="VI" URL="../VI/RectRegionConstraint_IsPoseInRegion.vi"/>
+					<Item Name="RectRegionConstraint_New.vi" Type="VI" URL="../VI/RectRegionConstraint_New.vi"/>
 				</Item>
 				<Item Name="SwerveDriveKinematicsConstraint" Type="Folder">
 					<Item Name="SwerveDriveKinematicsConstraint_getMaxVelocity.vi" Type="VI" URL="../SwerveDriveKinematicsConstraint_getMaxVelocity.vi"/>
 					<Item Name="SwerveDriveKinematicsConstraint_getMinMaxAccel.vi" Type="VI" URL="../SwerveDriveKinematicsConstraint_getMinMaxAccel.vi"/>
 					<Item Name="SwerveDriveKinematicsConstraint_New.vi" Type="VI" URL="../SwerveDriveKinematicsConstraint_New.vi"/>
 				</Item>
+				<Item Name="TrajConstraint_GetMaxVelocity.vi" Type="VI" URL="../VI/TrajConstraint_GetMaxVelocity.vi"/>
+				<Item Name="TrajConstraint_GetMinMaxAccel.vi" Type="VI" URL="../VI/TrajConstraint_GetMinMaxAccel.vi"/>
+				<Item Name="TrajConstraint_GetType.vi" Type="VI" URL="../VI/TrajConstraint_GetType.vi"/>
 			</Item>
 			<Item Name="TrajectoryGenerate" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
@@ -1549,18 +1574,18 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		</Item>
 		<Item Name="Units" Type="Folder">
 			<Item Name="Units_DegreesToRadians.vi" Type="VI" URL="../Units_DegreesToRadians.vi"/>
-			<Item Name="Units_DegreesToRotations.vi" Type="VI" URL="../Units_DegreesToRotations.vi"/>
+			<Item Name="Units_DegreesToRotations.vi" Type="VI" URL="../VI/Units_DegreesToRotations.vi"/>
 			<Item Name="Units_FeetToMeters.vi" Type="VI" URL="../Units_FeetToMeters.vi"/>
 			<Item Name="Units_InchesToMeters.vi" Type="VI" URL="../Units_InchesToMeters.vi"/>
 			<Item Name="Units_MetersToFeet.vi" Type="VI" URL="../Units_MetersToFeet.vi"/>
 			<Item Name="Units_MetersToInches.vi" Type="VI" URL="../Units_MetersToInches.vi"/>
 			<Item Name="Units_MillisecondsToSeconds.vi" Type="VI" URL="../Units_MillisecondsToSeconds.vi"/>
-			<Item Name="Units_RadiansPerSecondToRotationsPerMinute.vi" Type="VI" URL="../Units_RadiansPerSecondToRotationsPerMinute.vi"/>
+			<Item Name="Units_RadiansPerSecondToRotationsPerMinute.vi" Type="VI" URL="../VI/Units_RadiansPerSecondToRotationsPerMinute.vi"/>
 			<Item Name="Units_RadiansToDegrees.vi" Type="VI" URL="../Units_RadiansToDegrees.vi"/>
-			<Item Name="Units_RadiansToRotations.vi" Type="VI" URL="../Units_RadiansToRotations.vi"/>
-			<Item Name="Units_RotationsPerMinuteToRadiansPerSecond.vi" Type="VI" URL="../Units_RotationsPerMinuteToRadiansPerSecond.vi"/>
-			<Item Name="Units_RotationsToDegrees.vi" Type="VI" URL="../Units_RotationsToDegrees.vi"/>
-			<Item Name="Units_RotationsToRadians.vi" Type="VI" URL="../Units_RotationsToRadians.vi"/>
+			<Item Name="Units_RadiansToRotations.vi" Type="VI" URL="../VI/Units_RadiansToRotations.vi"/>
+			<Item Name="Units_RotationsPerMinuteToRadiansPerSecond.vi" Type="VI" URL="../VI/Units_RotationsPerMinuteToRadiansPerSecond.vi"/>
+			<Item Name="Units_RotationsToDegrees.vi" Type="VI" URL="../VI/Units_RotationsToDegrees.vi"/>
+			<Item Name="Units_RotationsToRadians.vi" Type="VI" URL="../VI/Units_RotationsToRadians.vi"/>
 			<Item Name="Units_SecondsToMilliseconds.vi" Type="VI" URL="../Units_SecondsToMilliseconds.vi"/>
 		</Item>
 		<Item Name="Utility" Type="Folder">
@@ -1593,11 +1618,11 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		</Item>
 		<Item Name="Vision" Type="Folder">
 			<Item Name="ComputerVisionUtil" Type="Folder">
-				<Item Name="CompVisionUtil_CalculateDistanceToTarget.vi" Type="VI" URL="../CompVisionUtil_CalculateDistanceToTarget.vi"/>
-				<Item Name="CompVisionUtil_EstimateCameraToTarget.vi" Type="VI" URL="../CompVisionUtil_EstimateCameraToTarget.vi"/>
-				<Item Name="CompVisionUtil_EstimateFieldToCamera.vi" Type="VI" URL="../CompVisionUtil_EstimateFieldToCamera.vi"/>
-				<Item Name="CompVisionUtil_EstimateFieldToRobot.vi" Type="VI" URL="../CompVisionUtil_EstimateFieldToRobot.vi"/>
-				<Item Name="CompVisionUtil_EstimateFieldToRobot_Alt.vi" Type="VI" URL="../CompVisionUtil_EstimateFieldToRobot_Alt.vi"/>
+				<Item Name="CompVisionUtil_CalculateDistanceToTarget.vi" Type="VI" URL="../VI/CompVisionUtil_CalculateDistanceToTarget.vi"/>
+				<Item Name="CompVisionUtil_EstimateCameraToTarget.vi" Type="VI" URL="../VI/CompVisionUtil_EstimateCameraToTarget.vi"/>
+				<Item Name="CompVisionUtil_EstimateFieldToCamera.vi" Type="VI" URL="../VI/CompVisionUtil_EstimateFieldToCamera.vi"/>
+				<Item Name="CompVisionUtil_EstimateFieldToRobot.vi" Type="VI" URL="../VI/CompVisionUtil_EstimateFieldToRobot.vi"/>
+				<Item Name="CompVisionUtil_EstimateFieldToRobot_Alt.vi" Type="VI" URL="../VI/CompVisionUtil_EstimateFieldToRobot_Alt.vi"/>
 			</Item>
 		</Item>
 	</Item>
