@@ -345,7 +345,16 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="macro_SwerveDriveKineNew4.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNew4.vi"/>
 			<Item Name="macro_SwerveDriveKineNewX.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNewX.vi"/>
 			<Item Name="macro_Trajectory_FGV_Template.vi" Type="VI" URL="../Macros/macro_Trajectory_FGV_Template.vi"/>
+			<Item Name="macro_TrajectoryConstraint_CentripAccel.vi" Type="VI" URL="../Macros/macro_TrajectoryConstraint_CentripAccel.vi"/>
+			<Item Name="macro_TrajectoryConstraint_DiffKine.vi" Type="VI" URL="../Macros/macro_TrajectoryConstraint_DiffKine.vi"/>
+			<Item Name="macro_TrajectoryConstraint_DiffVolt.vi" Type="VI" URL="../Macros/macro_TrajectoryConstraint_DiffVolt.vi"/>
+			<Item Name="macro_TrajectoryConstraint_EllipRegion.vi" Type="VI" URL="../Macros/macro_TrajectoryConstraint_EllipRegion.vi"/>
+			<Item Name="macro_TrajectoryConstraint_MaxVel.vi" Type="VI" URL="../Macros/macro_TrajectoryConstraint_MaxVel.vi"/>
+			<Item Name="macro_TrajectoryConstraint_MecaKine.vi" Type="VI" URL="../Macros/macro_TrajectoryConstraint_MecaKine.vi"/>
+			<Item Name="macro_TrajectoryConstraint_RectRegion.vi" Type="VI" URL="../Macros/macro_TrajectoryConstraint_RectRegion.vi"/>
+			<Item Name="macro_TrajectoryConstraint_SwerveKine.vi" Type="VI" URL="../Macros/macro_TrajectoryConstraint_SwerveKine.vi"/>
 			<Item Name="macro_TrajectoryGenerate.vi" Type="VI" URL="../Macros/macro_TrajectoryGenerate.vi"/>
+			<Item Name="macro_TrajectoryGenerateENG.vi" Type="VI" URL="../Macros/macro_TrajectoryGenerateENG.vi"/>
 			<Item Name="macro_TrajectoryReadFile.vi" Type="VI" URL="../Macros/macro_TrajectoryReadFile.vi"/>
 			<Item Name="macro_Translation2d_Dist_AngleDeg.vi" Type="VI" URL="../Macros/macro_Translation2d_Dist_AngleDeg.vi"/>
 			<Item Name="macro_Translation2d_Dist_AngleRad.vi" Type="VI" URL="../Macros/macro_Translation2d_Dist_AngleRad.vi"/>
