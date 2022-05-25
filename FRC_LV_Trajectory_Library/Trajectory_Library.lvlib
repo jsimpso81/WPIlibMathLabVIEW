@@ -157,124 +157,124 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="WAYPOINTS_README.txt" Type="Document" URL="../Misc/WAYPOINTS_README.txt"/>
 	</Item>
 	<Item Name="Enum" Type="Folder">
+		<Item Name="DCMOTOR_TYPES_ENUM.ctl" Type="VI" URL="../Enum/DCMOTOR_TYPES_ENUM.ctl"/>
+		<Item Name="DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl"/>
+		<Item Name="DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl"/>
+		<Item Name="DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl"/>
+		<Item Name="DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl"/>
+		<Item Name="LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_TYPES_ENUM.ctl" Type="VI" URL="../Enum/TRAJ_CONSTRAINT_TYPES_ENUM.ctl"/>
+		<Item Name="TRAJECTORY_SPLINE_TYPE_ENUM.ctl" Type="VI" URL="../Enum/TRAJECTORY_SPLINE_TYPE_ENUM.ctl"/>
 	</Item>
 	<Item Name="TypDef" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
-		<Item Name="ARM_FF.ctl" Type="VI" URL="../ARM_FF.ctl"/>
-		<Item Name="BANG_BANG.ctl" Type="VI" URL="../BANG_BANG.ctl"/>
-		<Item Name="BiCon_Matrix_FUNC_TYPE.ctl" Type="VI" URL="../BiCon_Matrix_FUNC_TYPE.ctl"/>
-		<Item Name="CALLBACK_FUNC_TYPE.ctl" Type="VI" URL="../CALLBACK_FUNC_TYPE.ctl"/>
-		<Item Name="CHASSIS_SPEEDS.ctl" Type="VI" URL="../CHASSIS_SPEEDS.ctl"/>
-		<Item Name="CONSTRAINED_STATE.ctl" Type="VI" URL="../CONSTRAINED_STATE.ctl"/>
+		<Item Name="ARM_FF.ctl" Type="VI" URL="../TypeDef/ARM_FF.ctl"/>
+		<Item Name="BANG_BANG.ctl" Type="VI" URL="../TypeDef/BANG_BANG.ctl"/>
+		<Item Name="BiCon_Matrix_FUNC_TYPE.ctl" Type="VI" URL="../TypeDef/BiCon_Matrix_FUNC_TYPE.ctl"/>
+		<Item Name="CALLBACK_FUNC_TYPE.ctl" Type="VI" URL="../TypeDef/CALLBACK_FUNC_TYPE.ctl"/>
+		<Item Name="CHASSIS_SPEEDS.ctl" Type="VI" URL="../TypeDef/CHASSIS_SPEEDS.ctl"/>
+		<Item Name="CONSTRAINED_STATE.ctl" Type="VI" URL="../TypeDef/CONSTRAINED_STATE.ctl"/>
 		<Item Name="COORDINATE_AXIS.ctl" Type="VI" URL="../TypeDef/COORDINATE_AXIS.ctl"/>
 		<Item Name="COORDINATE_SYSTEM.ctl" Type="VI" URL="../TypeDef/COORDINATE_SYSTEM.ctl"/>
-		<Item Name="DCMOTOR.CTL" Type="VI" URL="../DCMOTOR.CTL"/>
-		<Item Name="DCMOTOR_SIM.ctl" Type="VI" URL="../DCMOTOR_SIM.ctl"/>
-		<Item Name="DCMOTOR_TYPES_ENUM.ctl" Type="VI" URL="../DCMOTOR_TYPES_ENUM.ctl"/>
-		<Item Name="DEBOUNCER.ctl" Type="VI" URL="../DEBOUNCER.ctl"/>
-		<Item Name="DEBOUNCER_TYPE_ENUM.ctl" Type="VI" URL="../DEBOUNCER_TYPE_ENUM.ctl"/>
+		<Item Name="DCMOTOR.CTL" Type="VI" URL="../TypeDef/DCMOTOR.CTL"/>
+		<Item Name="DCMOTOR_SIM.ctl" Type="VI" URL="../TypeDef/DCMOTOR_SIM.ctl"/>
+		<Item Name="DEBOUNCER.ctl" Type="VI" URL="../TypeDef/DEBOUNCER.ctl"/>
+		<Item Name="DEBOUNCER_TYPE_ENUM.ctl" Type="VI" URL="../Enum/DEBOUNCER_TYPE_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_ACCEL_LIMIT.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_ACCEL_LIMIT.ctl"/>
-		<Item Name="DIFF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../DIFF_DRIVE_KINEMATICS.ctl"/>
-		<Item Name="DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl"/>
-		<Item Name="DIFF_DRIVE_POSE_EST.ctl" Type="VI" URL="../DIFF_DRIVE_POSE_EST.ctl"/>
-		<Item Name="DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl"/>
-		<Item Name="DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl"/>
-		<Item Name="DIFF_DRIVE_TRAIN_SIM.ctl" Type="VI" URL="../DIFF_DRIVE_TRAIN_SIM.ctl"/>
-		<Item Name="DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl" Type="VI" URL="../DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl"/>
-		<Item Name="DISPLAY_WAYPOINT.ctl" Type="VI" URL="../DISPLAY_WAYPOINT.ctl"/>
-		<Item Name="DISPLAY_WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../DISPLAY_WEIGHTED_WAYPOINT.ctl"/>
-		<Item Name="ELEV_FF.ctl" Type="VI" URL="../ELEV_FF.ctl"/>
-		<Item Name="ELEVATOR_SIM.ctl" Type="VI" URL="../ELEVATOR_SIM.ctl"/>
+		<Item Name="DIFF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_KINEMATICS.ctl"/>
+		<Item Name="DIFF_DRIVE_POSE_EST.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_POSE_EST.ctl"/>
+		<Item Name="DIFF_DRIVE_TRAIN_SIM.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_TRAIN_SIM.ctl"/>
+		<Item Name="DISPLAY_WAYPOINT.ctl" Type="VI" URL="../TypeDef/DISPLAY_WAYPOINT.ctl"/>
+		<Item Name="DISPLAY_WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../TypeDef/DISPLAY_WEIGHTED_WAYPOINT.ctl"/>
+		<Item Name="ELEV_FF.ctl" Type="VI" URL="../TypeDef/ELEV_FF.ctl"/>
+		<Item Name="ELEVATOR_SIM.ctl" Type="VI" URL="../TypeDef/ELEVATOR_SIM.ctl"/>
 		<Item Name="EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl" Type="VI" URL="../TypeDef/EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl"/>
 		<Item Name="EXTENDED_KALMAN_FILTER.ctl" Type="VI" URL="../TypeDef/EXTENDED_KALMAN_FILTER.ctl"/>
-		<Item Name="FLYWHEEL_SIM.ctl" Type="VI" URL="../FLYWHEEL_SIM.ctl"/>
+		<Item Name="FLYWHEEL_SIM.ctl" Type="VI" URL="../TypeDef/FLYWHEEL_SIM.ctl"/>
 		<Item Name="FUNCTION_GENERATOR.ctl" Type="VI" URL="../TypeDef/FUNCTION_GENERATOR.ctl"/>
 		<Item Name="FUNCTION_GENERATOR_MATRIX.ctl" Type="VI" URL="../TypeDef/FUNCTION_GENERATOR_MATRIX.ctl"/>
-		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../HOLONOMIC_DRV_CTRL.ctl"/>
+		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../TypeDef/HOLONOMIC_DRV_CTRL.ctl"/>
 		<Item Name="IMPLICIT_MODEL_FOLLOWER.ctl" Type="VI" URL="../TypeDef/IMPLICIT_MODEL_FOLLOWER.ctl"/>
-		<Item Name="KALMAN_FILTER.ctl" Type="VI" URL="../KALMAN_FILTER.ctl"/>
-		<Item Name="KALMAN_FILTER_LATENCY_COMP.ctl" Type="VI" URL="../KALMAN_FILTER_LATENCY_COMP.ctl"/>
-		<Item Name="KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP.ctl" Type="VI" URL="../KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP.ctl"/>
-		<Item Name="LINEAR_FILTER.ctl" Type="VI" URL="../LINEAR_FILTER.ctl"/>
-		<Item Name="LINEAR_PLANT_INV_FF.ctl" Type="VI" URL="../LINEAR_PLANT_INV_FF.ctl"/>
-		<Item Name="LINEAR_QUADRATIC_REGULATOR.ctl" Type="VI" URL="../LINEAR_QUADRATIC_REGULATOR.ctl"/>
-		<Item Name="LINEAR_SYSTEM.ctl" Type="VI" URL="../LINEAR_SYSTEM.ctl"/>
-		<Item Name="LINEAR_SYSTEM_LOOP.ctl" Type="VI" URL="../LINEAR_SYSTEM_LOOP.ctl"/>
-		<Item Name="LINEAR_SYSTEM_SIM.ctl" Type="VI" URL="../LINEAR_SYSTEM_SIM.ctl"/>
+		<Item Name="KALMAN_FILTER.ctl" Type="VI" URL="../TypeDef/KALMAN_FILTER.ctl"/>
+		<Item Name="KALMAN_FILTER_LATENCY_COMP.ctl" Type="VI" URL="../TypeDef/KALMAN_FILTER_LATENCY_COMP.ctl"/>
+		<Item Name="KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP.ctl" Type="VI" URL="../TypeDef/KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP.ctl"/>
+		<Item Name="LINEAR_FILTER.ctl" Type="VI" URL="../TypeDef/LINEAR_FILTER.ctl"/>
+		<Item Name="LINEAR_PLANT_INV_FF.ctl" Type="VI" URL="../TypeDef/LINEAR_PLANT_INV_FF.ctl"/>
+		<Item Name="LINEAR_QUADRATIC_REGULATOR.ctl" Type="VI" URL="../TypeDef/LINEAR_QUADRATIC_REGULATOR.ctl"/>
+		<Item Name="LINEAR_SYSTEM.ctl" Type="VI" URL="../TypeDef/LINEAR_SYSTEM.ctl"/>
+		<Item Name="LINEAR_SYSTEM_LOOP.ctl" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_LOOP.ctl"/>
+		<Item Name="LINEAR_SYSTEM_SIM.ctl" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_SIM.ctl"/>
 		<Item Name="LTV_DIFF_DRIVE_CTRL.ctl" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL.ctl"/>
-		<Item Name="LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl"/>
 		<Item Name="LTV_UNICYCLE_CONTROLLER.ctl" Type="VI" URL="../TypeDef/LTV_UNICYCLE_CONTROLLER.ctl"/>
 		<Item Name="LTV_UNICYCLE_CONTROLLER_INPUT_ENUM.ctl" Type="VI" URL="../TypeDef/LTV_UNICYCLE_CONTROLLER_INPUT_ENUM.ctl"/>
 		<Item Name="LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl" Type="VI" URL="../TypeDef/LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl"/>
-		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../MECA_DRIVE_KINEMATICS.ctl"/>
-		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../MECA_DRIVE_ODOMETRY.ctl"/>
-		<Item Name="MECA_DRIVE_POSE_EST.ctl" Type="VI" URL="../MECA_DRIVE_POSE_EST.ctl"/>
-		<Item Name="MECA_WHEEL_SPEEDS.ctl" Type="VI" URL="../MECA_WHEEL_SPEEDS.ctl"/>
-		<Item Name="MEDIAN_FILTER.ctl" Type="VI" URL="../MEDIAN_FILTER.ctl"/>
-		<Item Name="MERWE_SCALED_SIGMA_PTS.ctl" Type="VI" URL="../MERWE_SCALED_SIGMA_PTS.ctl"/>
-		<Item Name="OBSERVER_SNAP_LIST_ITEM.ctl" Type="VI" URL="../OBSERVER_SNAP_LIST_ITEM.ctl"/>
-		<Item Name="OBSERVER_SNAPSHOT.ctl" Type="VI" URL="../OBSERVER_SNAPSHOT.ctl"/>
-		<Item Name="PARAM_STACK.ctl" Type="VI" URL="../PARAM_STACK.ctl"/>
-		<Item Name="PARAM_STACK_ITEM.ctl" Type="VI" URL="../PARAM_STACK_ITEM.ctl"/>
-		<Item Name="PID_ADV_LIMITS.ctl" Type="VI" URL="../PID_ADV_LIMITS.ctl"/>
-		<Item Name="PID_ADV_TUNING.ctl" Type="VI" URL="../PID_ADV_TUNING.ctl"/>
-		<Item Name="PID_CONTROLLER.ctl" Type="VI" URL="../PID_CONTROLLER.ctl"/>
-		<Item Name="PID_ERROR_TOLERANCE.ctl" Type="VI" URL="../PID_ERROR_TOLERANCE.ctl"/>
-		<Item Name="PID_INPUT_LIMITS.ctl" Type="VI" URL="../PID_INPUT_LIMITS.ctl"/>
-		<Item Name="PID_TUNING.ctl" Type="VI" URL="../PID_TUNING.ctl"/>
-		<Item Name="POSE2D.ctl" Type="VI" URL="../POSE2D.ctl"/>
-		<Item Name="POSE3D.ctl" Type="VI" URL="../POSE3D.ctl"/>
-		<Item Name="POSEwCURVATURE.ctl" Type="VI" URL="../POSEwCURVATURE.ctl"/>
-		<Item Name="PROFILED_PID_CONTROLLER.ctl" Type="VI" URL="../PROFILED_PID_CONTROLLER.ctl"/>
+		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_KINEMATICS.ctl"/>
+		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_ODOMETRY.ctl"/>
+		<Item Name="MECA_DRIVE_POSE_EST.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_POSE_EST.ctl"/>
+		<Item Name="MECA_WHEEL_SPEEDS.ctl" Type="VI" URL="../TypeDef/MECA_WHEEL_SPEEDS.ctl"/>
+		<Item Name="MEDIAN_FILTER.ctl" Type="VI" URL="../TypeDef/MEDIAN_FILTER.ctl"/>
+		<Item Name="MERWE_SCALED_SIGMA_PTS.ctl" Type="VI" URL="../TypeDef/MERWE_SCALED_SIGMA_PTS.ctl"/>
+		<Item Name="OBSERVER_SNAP_LIST_ITEM.ctl" Type="VI" URL="../TypeDef/OBSERVER_SNAP_LIST_ITEM.ctl"/>
+		<Item Name="OBSERVER_SNAPSHOT.ctl" Type="VI" URL="../TypeDef/OBSERVER_SNAPSHOT.ctl"/>
+		<Item Name="PARAM_STACK.ctl" Type="VI" URL="../TypeDef/PARAM_STACK.ctl"/>
+		<Item Name="PARAM_STACK_ITEM.ctl" Type="VI" URL="../TypeDef/PARAM_STACK_ITEM.ctl"/>
+		<Item Name="PID_ADV_LIMITS.ctl" Type="VI" URL="../TypeDef/PID_ADV_LIMITS.ctl"/>
+		<Item Name="PID_ADV_TUNING.ctl" Type="VI" URL="../TypeDef/PID_ADV_TUNING.ctl"/>
+		<Item Name="PID_CONTROLLER.ctl" Type="VI" URL="../TypeDef/PID_CONTROLLER.ctl"/>
+		<Item Name="PID_ERROR_TOLERANCE.ctl" Type="VI" URL="../TypeDef/PID_ERROR_TOLERANCE.ctl"/>
+		<Item Name="PID_INPUT_LIMITS.ctl" Type="VI" URL="../TypeDef/PID_INPUT_LIMITS.ctl"/>
+		<Item Name="PID_TUNING.ctl" Type="VI" URL="../TypeDef/PID_TUNING.ctl"/>
+		<Item Name="POSE2D.ctl" Type="VI" URL="../TypeDef/POSE2D.ctl"/>
+		<Item Name="POSE3D.ctl" Type="VI" URL="../TypeDef/POSE3D.ctl"/>
+		<Item Name="POSEwCURVATURE.ctl" Type="VI" URL="../TypeDef/POSEwCURVATURE.ctl"/>
+		<Item Name="PROFILED_PID_CONTROLLER.ctl" Type="VI" URL="../TypeDef/PROFILED_PID_CONTROLLER.ctl"/>
 		<Item Name="QUATERNION.ctl" Type="VI" URL="../TypeDef/QUATERNION.ctl"/>
-		<Item Name="RAMSETE.ctl" Type="VI" URL="../RAMSETE.ctl"/>
-		<Item Name="RAMSETE_EXE_TUNING.ctl" Type="VI" URL="../RAMSETE_EXE_TUNING.ctl"/>
-		<Item Name="ROTATION2D.ctl" Type="VI" URL="../ROTATION2D.ctl"/>
+		<Item Name="RAMSETE.ctl" Type="VI" URL="../TypeDef/RAMSETE.ctl"/>
+		<Item Name="RAMSETE_EXE_TUNING.ctl" Type="VI" URL="../TypeDef/RAMSETE_EXE_TUNING.ctl"/>
+		<Item Name="ROTATION2D.ctl" Type="VI" URL="../TypeDef/ROTATION2D.ctl"/>
 		<Item Name="ROTATION3D.ctl" Type="VI" URL="../TypeDef/ROTATION3D.ctl"/>
-		<Item Name="SIMPLE_MOTOR_FF.ctl" Type="VI" URL="../SIMPLE_MOTOR_FF.ctl"/>
-		<Item Name="SINGLE_JOINT_ARM_SIM.ctl" Type="VI" URL="../SINGLE_JOINT_ARM_SIM.ctl"/>
-		<Item Name="SLEW_RATE_LIMITER.ctl" Type="VI" URL="../SLEW_RATE_LIMITER.ctl"/>
-		<Item Name="SPLINE.ctl" Type="VI" URL="../SPLINE.ctl"/>
-		<Item Name="SPLINE_CTRL_VECTOR.ctl" Type="VI" URL="../SPLINE_CTRL_VECTOR.ctl"/>
-		<Item Name="SWERVE_DRIVE_KINEMATICS.ctl" Type="VI" URL="../SWERVE_DRIVE_KINEMATICS.ctl"/>
-		<Item Name="SWERVE_DRIVE_MODULE_STATE.ctl" Type="VI" URL="../SWERVE_DRIVE_MODULE_STATE.ctl"/>
-		<Item Name="SWERVE_DRIVE_ODOMETRY.ctl" Type="VI" URL="../SWERVE_DRIVE_ODOMETRY.ctl"/>
-		<Item Name="SWERVE_DRIVE_POSE_EST.ctl" Type="VI" URL="../SWERVE_DRIVE_POSE_EST.ctl"/>
+		<Item Name="SIMPLE_MOTOR_FF.ctl" Type="VI" URL="../TypeDef/SIMPLE_MOTOR_FF.ctl"/>
+		<Item Name="SINGLE_JOINT_ARM_SIM.ctl" Type="VI" URL="../TypeDef/SINGLE_JOINT_ARM_SIM.ctl"/>
+		<Item Name="SLEW_RATE_LIMITER.ctl" Type="VI" URL="../TypeDef/SLEW_RATE_LIMITER.ctl"/>
+		<Item Name="SPLINE.ctl" Type="VI" URL="../TypeDef/SPLINE.ctl"/>
+		<Item Name="SPLINE_CTRL_VECTOR.ctl" Type="VI" URL="../TypeDef/SPLINE_CTRL_VECTOR.ctl"/>
+		<Item Name="SWERVE_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_KINEMATICS.ctl"/>
+		<Item Name="SWERVE_DRIVE_MODULE_STATE.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_MODULE_STATE.ctl"/>
+		<Item Name="SWERVE_DRIVE_ODOMETRY.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_ODOMETRY.ctl"/>
+		<Item Name="SWERVE_DRIVE_POSE_EST.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_POSE_EST.ctl"/>
 		<Item Name="TIME_INTERPOLATABLE_BOOLEAN.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_BOOLEAN.ctl"/>
 		<Item Name="TIME_INTERPOLATABLE_DOUBLE.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_DOUBLE.ctl"/>
 		<Item Name="TIME_INTERPOLATABLE_POSE2D.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_POSE2D.ctl"/>
 		<Item Name="TIME_INTERPOLATABLE_ROTATION2D.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_ROTATION2D.ctl"/>
-		<Item Name="TIMER.ctl" Type="VI" URL="../TIMER.ctl"/>
-		<Item Name="TRAJ_CONFIG.ctl" Type="VI" URL="../TRAJ_CONFIG.ctl"/>
-		<Item Name="TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl"/>
-		<Item Name="TRAJ_CONSTRAINT_DIIF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_DIIF_DRIVE_KINEMATICS.ctl"/>
-		<Item Name="TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE.ctl"/>
+		<Item Name="TIMER.ctl" Type="VI" URL="../TypeDef/TIMER.ctl"/>
+		<Item Name="TRAJ_CONFIG.ctl" Type="VI" URL="../TypeDef/TRAJ_CONFIG.ctl"/>
+		<Item Name="TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl"/>
+		<Item Name="TRAJ_CONSTRAINT_DIIF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_DIIF_DRIVE_KINEMATICS.ctl"/>
+		<Item Name="TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_ELLIP_REGION.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_ELLIP_REGION.ctl"/>
-		<Item Name="TRAJ_CONSTRAINT_JERK.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_JERK.ctl"/>
+		<Item Name="TRAJ_CONSTRAINT_JERK.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_JERK.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_MAX_VELOCITY.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_MAX_VELOCITY.ctl"/>
-		<Item Name="TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS.ctl"/>
-		<Item Name="TRAJ_CONSTRAINT_MINMAX.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_MINMAX.ctl"/>
+		<Item Name="TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS.ctl"/>
+		<Item Name="TRAJ_CONSTRAINT_MINMAX.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_MINMAX.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_RECT_REGION.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_RECT_REGION.ctl"/>
-		<Item Name="TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS.ctl"/>
-		<Item Name="TRAJ_STATE.ctl" Type="VI" URL="../TRAJ_STATE.ctl"/>
-		<Item Name="TRAJECTORY.ctl" Type="VI" URL="../TRAJECTORY.ctl"/>
-		<Item Name="TRAJECTORY_SPLINE_TYPE_ENUM.ctl" Type="VI" URL="../TRAJECTORY_SPLINE_TYPE_ENUM.ctl"/>
-		<Item Name="TRANSFORM2D.ctl" Type="VI" URL="../TRANSFORM2D.ctl"/>
+		<Item Name="TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS.ctl"/>
+		<Item Name="TRAJ_STATE.ctl" Type="VI" URL="../TypeDef/TRAJ_STATE.ctl"/>
+		<Item Name="TRAJECTORY.ctl" Type="VI" URL="../TypeDef/TRAJECTORY.ctl"/>
+		<Item Name="TRANSFORM2D.ctl" Type="VI" URL="../TypeDef/TRANSFORM2D.ctl"/>
 		<Item Name="TRANSFORM3D.ctl" Type="VI" URL="../TypeDef/TRANSFORM3D.ctl"/>
-		<Item Name="TRANSLATION2D.ctl" Type="VI" URL="../TRANSLATION2D.ctl"/>
+		<Item Name="TRANSLATION2D.ctl" Type="VI" URL="../TypeDef/TRANSLATION2D.ctl"/>
 		<Item Name="TRANSLATION3D.ctl" Type="VI" URL="../TypeDef/TRANSLATION3D.ctl"/>
-		<Item Name="TRAPEZOID_PROFILE.ctl" Type="VI" URL="../TRAPEZOID_PROFILE.ctl"/>
-		<Item Name="TRAPEZOID_PROFILE_CONSTRAINT.ctl" Type="VI" URL="../TRAPEZOID_PROFILE_CONSTRAINT.ctl"/>
-		<Item Name="TRAPEZOID_PROFILE_STATE.ctl" Type="VI" URL="../TRAPEZOID_PROFILE_STATE.ctl"/>
-		<Item Name="TWIST2D.ctl" Type="VI" URL="../TWIST2D.ctl"/>
+		<Item Name="TRAPEZOID_PROFILE.ctl" Type="VI" URL="../TypeDef/TRAPEZOID_PROFILE.ctl"/>
+		<Item Name="TRAPEZOID_PROFILE_CONSTRAINT.ctl" Type="VI" URL="../TypeDef/TRAPEZOID_PROFILE_CONSTRAINT.ctl"/>
+		<Item Name="TRAPEZOID_PROFILE_STATE.ctl" Type="VI" URL="../TypeDef/TRAPEZOID_PROFILE_STATE.ctl"/>
+		<Item Name="TWIST2D.ctl" Type="VI" URL="../TypeDef/TWIST2D.ctl"/>
 		<Item Name="TWIST3D.ctl" Type="VI" URL="../TypeDef/TWIST3D.ctl"/>
-		<Item Name="UNSCENTED_KALMAN_CORRECT_FUNC_GROUP.ctl" Type="VI" URL="../UNSCENTED_KALMAN_CORRECT_FUNC_GROUP.ctl"/>
-		<Item Name="UNSCENTED_KALMAN_FILTER.ctl" Type="VI" URL="../UNSCENTED_KALMAN_FILTER.ctl"/>
-		<Item Name="UNSCENTED_KALMAN_NEW_FUNC_GROUP.ctl" Type="VI" URL="../UNSCENTED_KALMAN_NEW_FUNC_GROUP.ctl"/>
-		<Item Name="UTIL_PATHFINDER_CONFIG.ctl" Type="VI" URL="../UTIL_PATHFINDER_CONFIG.ctl"/>
-		<Item Name="WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../WEIGHTED_WAYPOINT.ctl"/>
-		<Item Name="X_Y_PAIR.ctl" Type="VI" URL="../X_Y_PAIR.ctl"/>
+		<Item Name="UNSCENTED_KALMAN_CORRECT_FUNC_GROUP.ctl" Type="VI" URL="../TypeDef/UNSCENTED_KALMAN_CORRECT_FUNC_GROUP.ctl"/>
+		<Item Name="UNSCENTED_KALMAN_FILTER.ctl" Type="VI" URL="../TypeDef/UNSCENTED_KALMAN_FILTER.ctl"/>
+		<Item Name="UNSCENTED_KALMAN_NEW_FUNC_GROUP.ctl" Type="VI" URL="../TypeDef/UNSCENTED_KALMAN_NEW_FUNC_GROUP.ctl"/>
+		<Item Name="UTIL_PATHFINDER_CONFIG.ctl" Type="VI" URL="../TypeDef/UTIL_PATHFINDER_CONFIG.ctl"/>
+		<Item Name="WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../TypeDef/WEIGHTED_WAYPOINT.ctl"/>
+		<Item Name="X_Y_PAIR.ctl" Type="VI" URL="../TypeDef/X_Y_PAIR.ctl"/>
 	</Item>
 	<Item Name="VI" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
@@ -1467,17 +1467,25 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			</Item>
 			<Item Name="TrajectoryConfig" Type="Folder">
 				<Item Name="TrajectoryConfig_AddConstraint.vi" Type="VI" URL="../TrajectoryConfig_AddConstraint.vi"/>
+				<Item Name="TrajectoryConfig_AddConstraints.vi" Type="VI" URL="../TrajectoryConfig_AddConstraints.vi"/>
 				<Item Name="TrajectoryConfig_Create.vi" Type="VI" URL="../TrajectoryConfig_Create.vi"/>
 				<Item Name="TrajectoryConfig_GetCentripetalAccelConstraint.vi" Type="VI" URL="../VI/TrajectoryConfig_GetCentripetalAccelConstraint.vi"/>
+				<Item Name="TrajectoryConfig_GetConstraints.vi" Type="VI" URL="../TrajectoryConfig_GetConstraints.vi"/>
+				<Item Name="TrajectoryConfig_GetEndVelocity.vi" Type="VI" URL="../TrajectoryConfig_GetEndVelocity.vi"/>
 				<Item Name="TrajectoryConfig_GetKinematicsDiffDriveContraint.vi" Type="VI" URL="../VI/TrajectoryConfig_GetKinematicsDiffDriveContraint.vi"/>
 				<Item Name="TrajectoryConfig_GetKinematicsMecanumDriveConstraint.vi" Type="VI" URL="../VI/TrajectoryConfig_GetKinematicsMecanumDriveConstraint.vi"/>
 				<Item Name="TrajectoryConfig_GetKinematicsSwerveDriveConstraint.vi" Type="VI" URL="../VI/TrajectoryConfig_GetKinematicsSwerveDriveConstraint.vi"/>
+				<Item Name="TrajectoryConfig_GetMaxVelAccel.vi" Type="VI" URL="../TrajectoryConfig_GetMaxVelAccel.vi"/>
+				<Item Name="TrajectoryConfig_GetStartVelocity.vi" Type="VI" URL="../TrajectoryConfig_GetStartVelocity.vi"/>
 				<Item Name="TrajectoryConfig_GetVoltageDiffDriveConstraint.vi" Type="VI" URL="../VI/TrajectoryConfig_GetVoltageDiffDriveConstraint.vi"/>
+				<Item Name="TrajectoryConfig_IsReversed.vi" Type="VI" URL="../TrajectoryConfig_IsReversed.vi"/>
 				<Item Name="TrajectoryConfig_setCentripetalAccel.vi" Type="VI" URL="../TrajectoryConfig_setCentripetalAccel.vi"/>
+				<Item Name="TrajectoryConfig_SetEndVelocity.vi" Type="VI" URL="../TrajectoryConfig_SetEndVelocity.vi"/>
 				<Item Name="TrajectoryConfig_setKinematicsDiffDrive.vi" Type="VI" URL="../TrajectoryConfig_setKinematicsDiffDrive.vi"/>
 				<Item Name="TrajectoryConfig_setKinematicsMecanumDrive.vi" Type="VI" URL="../TrajectoryConfig_setKinematicsMecanumDrive.vi"/>
 				<Item Name="TrajectoryConfig_setKinematicsSwerveDrive.vi" Type="VI" URL="../TrajectoryConfig_setKinematicsSwerveDrive.vi"/>
 				<Item Name="TrajectoryConfig_setReversed.vi" Type="VI" URL="../TrajectoryConfig_setReversed.vi"/>
+				<Item Name="TrajectoryConfig_SetStartVelocity.vi" Type="VI" URL="../TrajectoryConfig_SetStartVelocity.vi"/>
 				<Item Name="TrajectoryConfig_setVoltageDiffDrive.vi" Type="VI" URL="../TrajectoryConfig_setVoltageDiffDrive.vi"/>
 			</Item>
 			<Item Name="TrajectoryConstraint" Type="Folder">
