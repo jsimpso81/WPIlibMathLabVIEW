@@ -163,6 +163,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl"/>
 		<Item Name="LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl"/>
+		<Item Name="LTV_UNICYCLE_CONTROLLER_INPUT_ENUM.ctl" Type="VI" URL="../Enum/LTV_UNICYCLE_CONTROLLER_INPUT_ENUM.ctl"/>
+		<Item Name="LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl" Type="VI" URL="../Enum/LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_TYPES_ENUM.ctl" Type="VI" URL="../Enum/TRAJ_CONSTRAINT_TYPES_ENUM.ctl"/>
 		<Item Name="TRAJECTORY_SPLINE_TYPE_ENUM.ctl" Type="VI" URL="../Enum/TRAJECTORY_SPLINE_TYPE_ENUM.ctl"/>
 	</Item>
@@ -299,8 +301,6 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="LINEAR_SYSTEM_SIM.ctl" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_SIM.ctl"/>
 		<Item Name="LTV_DIFF_DRIVE_CTRL.ctl" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL.ctl"/>
 		<Item Name="LTV_UNICYCLE_CONTROLLER.ctl" Type="VI" URL="../TypeDef/LTV_UNICYCLE_CONTROLLER.ctl"/>
-		<Item Name="LTV_UNICYCLE_CONTROLLER_INPUT_ENUM.ctl" Type="VI" URL="../TypeDef/LTV_UNICYCLE_CONTROLLER_INPUT_ENUM.ctl"/>
-		<Item Name="LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl" Type="VI" URL="../TypeDef/LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl"/>
 		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="MECA_DRIVE_POSE_EST.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_POSE_EST.ctl"/>
@@ -931,6 +931,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Riccati_Check_Detectable.vi" Type="VI" URL="../Riccati_Check_Detectable.vi"/>
 				<Item Name="Riccati_Check_Stabilizable.vi" Type="VI" URL="../Riccati_Check_Stabilizable.vi"/>
 				<Item Name="Riccati_DARE.vi" Type="VI" URL="../Riccati_DARE.vi"/>
+				<Item Name="Riccati_DARE_Choose.vi" Type="VI" URL="../Riccati_DARE_Choose.vi"/>
 				<Item Name="Riccati_DARE_Iterate.vi" Type="VI" URL="../Riccati_DARE_Iterate.vi"/>
 				<Item Name="Riccati_DARE_N.vi" Type="VI" URL="../Riccati_DARE_N.vi"/>
 				<Item Name="Riccati_DARE_StructDoubling.vi" Type="VI" URL="../Riccati_DARE_StructDoubling.vi"/>
@@ -1288,9 +1289,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="LTV Unicycle Controller" Type="Folder">
 				<Item Name="LTVUnicycleCtrl_AtReference.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_AtReference.vi"/>
 				<Item Name="LTVUnicycleCtrl_Calculate.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Calculate.vi"/>
-				<Item Name="LTVUnicycleCtrl_Calculate_ORIG.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Calculate_ORIG.vi"/>
 				<Item Name="LTVUnicycleCtrl_Calculate_TrajState.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Calculate_TrajState.vi"/>
-				<Item Name="LTVUnicycleCtrl_Calculate_TrajState_ORIG.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Calculate_TrajState_ORIG.vi"/>
 				<Item Name="LTVUnicycleCtrl_New.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_New.vi"/>
 				<Item Name="LTVUnicycleCtrl_SetEnabled.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_SetEnabled.vi"/>
 				<Item Name="LTVUnicycleCtrl_SetTolerance.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_SetTolerance.vi"/>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Introduction">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="General Control Algorithms">
+		</OBJECT>
+	<OBJECT type="text/sitemap">
+		<param name="Merge" value="..\Documentation\Analog_Delay.html">
+
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Analog Delay">
+			<param name="Local" value="..\Documentation\Analog_Delay.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Single Jointed Arm Feedforward">
+			<param name="Local" value="..\Documentation\ArmFF.html">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>
