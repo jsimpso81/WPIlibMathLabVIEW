@@ -1,0 +1,850 @@
+<HTML>
+<HEAD>
+<TITLE>PathPlanner.lvlib:PathPlannerState.ctl</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="PathPlanner.lvlib:PathPlannerState.ctl"></A><H2>PathPlanner.lvlib:PathPlannerState.ctl</H2>
+<P></P>
+<P><IMG SRC="PathPlanner_lvlib_PathPlannerStatectlp.png" ALT="PathPlanner.lvlib:PathPlannerState.ctl"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PathPlannerState</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>AngularAcceleration</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PositionMeters</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>TrajectoryState</B> <P>Represents a time-parameterized trajectory. The trajectory contains of various States that represent the pose, curvature, time elapsed, velocity, and acceleration at that point.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>TimeSeconds</B> <P>The time elapsed since the beginning of the trajectory. (seconds)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Velocity</B> <P>The speed at that point of the trajectory. (meters/sec)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Acceleration</B> <P>The acceleration at that point of the trajectory.  (meters/Sec^2)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>POSE</B> <P>The pose at that point of the trajectory.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>TRANSLATION</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>ROTATION</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Curvature</B> <P>The curvature at that point of the trajectory. (Radians/Meter)</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>AngularVelocity</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>HolonomicRotation</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>CurveRadius</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>DeltaPos</B> </TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="PathPlanner.lvlib:PathPlannerTrajectory.ctl"></A><H2>PathPlanner.lvlib:PathPlannerTrajectory.ctl</H2>
+<P></P>
+<P><IMG SRC="PathPlanner_lvlib_PathPlannerTrajectoryctlp.png" ALT="PathPlanner.lvlib:PathPlannerTrajectory.ctl"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PathPlannerTrajectory</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>TotalTimeSeconds</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1dcclst.png" ALT="c1dcclst"></P>
+</TD>
+<TD>
+<B>States</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PathPlannerState</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>AngularAcceleration</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PositionMeters</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>TrajectoryState</B> <P>Represents a time-parameterized trajectory. The trajectory contains of various States that represent the pose, curvature, time elapsed, velocity, and acceleration at that point.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>TimeSeconds</B> <P>The time elapsed since the beginning of the trajectory. (seconds)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Velocity</B> <P>The speed at that point of the trajectory. (meters/sec)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Acceleration</B> <P>The acceleration at that point of the trajectory.  (meters/Sec^2)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>POSE</B> <P>The pose at that point of the trajectory.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>TRANSLATION</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>ROTATION</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Curvature</B> <P>The curvature at that point of the trajectory. (Radians/Meter)</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>AngularVelocity</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>HolonomicRotation</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>CurveRadius</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>DeltaPos</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<HR>
+<A NAME="PathPlanner.lvlib:PathPlannerWaypoint.ctl"></A><H2>PathPlanner.lvlib:PathPlannerWaypoint.ctl</H2>
+<P></P>
+<P><IMG SRC="PathPlanner_lvlib_PathPlannerWaypointctlp.png" ALT="PathPlanner.lvlib:PathPlannerWaypoint.ctl"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PathPlannerWaypoint</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>AnchorPoint</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>PrevControl</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>NextControl</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>HolonomicRotation</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VelOverride</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>isReversal</B> </TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

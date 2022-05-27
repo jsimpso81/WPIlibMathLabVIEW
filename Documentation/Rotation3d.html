@@ -1,0 +1,1883 @@
+<HTML>
+<HEAD>
+<TITLE>Trajectory_Library.lvlib:Rotation3d_Create_AxisAngle.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Trajectory_Library.lvlib:Rotation3d_Create_AxisAngle.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_Create_AxisAngle.vi</H2>
+<P>Constructs a Rotation3d with the given axis-angle representation. The axis doesn't have to be normalized.</P>
+<P></P>
+<P>Parmeters:</P>
+<P>  -  Axis  --  The rotation axis.</P>
+<P>  -  Angle  --  The rotation around the axis in radians.</P>
+<P></P>
+<P>Returns</P>
+<P>  -- Rotation3d  --  The resulting rotation3d data cluster.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__Create__AxisAnglec.png" ALT="Trajectory_Library.lvlib:Rotation3d_Create_AxisAngle.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Angle</B> <P>Angle in radians</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>Axis Vector</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Rotation3d_Create_Default.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_Create_Default.vi</H2>
+<P> Constructs a Rotation2d with the given radian value.  The x and y don't have to be normalized.</P>
+<P></P>
+<P>Parmeters:</P>
+<P> - value - The value of the angle in radians.</P>
+<P></P>
+<P>Returns</P>
+<P> - rotation data structure</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__Create__Defaultc.png" ALT="Trajectory_Library.lvlib:Rotation3d_Create_Default.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>ROTATION3D</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Rotation3d_Create_Quaternion.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_Create_Quaternion.vi</H2>
+<P>Constructs a Rotation3d from a quaternion.</P>
+<P></P>
+<P>Parmeters:</P>
+<P> -Quaternion - The quaternion to convert to Rotation3d.</P>
+<P></P>
+<P>Returns</P>
+<P> - Rotation3d  --  Rotation3d data structure</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__Create__Quaternionc.png" ALT="Trajectory_Library.lvlib:Rotation3d_Create_Quaternion.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Rotation3d_Create_RollPitchYaw.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_Create_RollPitchYaw.vi</H2>
+<P>Constructs a Rotation3d from extrinsic roll, pitch, and yaw.</P>
+<P>   </P>
+<P>Extrinsic rotations occur in that order around the axes in the fixed global frame rather  than the body frame.</P>
+<P>   </P>
+<P>Parmeters:</P>
+<P>  -  Roll  --  The counterclockwise rotation angle around the X axis (roll) in radians.</P>
+<P>  -  Pitch  --  The counterclockwise rotation angle around the Y axis (pitch) in radians.</P>
+<P>  - Yaw  --  The counterclockwise rotation angle around the Z axis (yaw) in radians.</P>
+<P></P>
+<P>Returns</P>
+<P>  - Rotation3d  --  The resulting rotation3d data cluster</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__Create__RollPitchYawc.png" ALT="Trajectory_Library.lvlib:Rotation3d_Create_RollPitchYaw.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Roll</B> <P>Angle in radians</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Pitch</B> <P>Angle in radians</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Yaw</B> <P>Angle in radians</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Rotation3d_Equals.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_Equals.vi</H2>
+<P>Checks equality between this Rotation3d and another object.</P>
+<P></P>
+<P>Parameters:</P>
+<P></P>
+<P> - IN ROTATION3D  --  This rotation3d data structure</P>
+<P> - OTHER ROTATION3D  --  The rotation3d to compare.</P>
+<P></P>
+<P>Returns:</P>
+<P>  -  Equals  -- Returns TRUE if the two rotation3ds are equals.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__Equalsc.png" ALT="Trajectory_Library.lvlib:Rotation3d_Equals.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>other Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Equals</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Rotation3d_GetAxisAngle.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_GetAxisAngle.vi</H2>
+<P>Returns the axis in the axis-angle representation of this rotation and the angle in radians in the axis-angle representation of this rotation.</P>
+<P></P>
+<P>Parameters:</P>
+<P> - in ROTATION3D - This ROTATION3D data structure</P>
+<P></P>
+<P>Returns:</P>
+<P>  -  Axis  --   The axis in the axis-angle representation.</P>
+<P>  -  Angle  --  The angle in radians in the axis-angle representation of this rotation</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__GetAxisAnglec.png" ALT="Trajectory_Library.lvlib:Rotation3d_GetAxisAngle.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>Axis Vector</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Angle</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Rotation3d_GetQuaterion.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_GetQuaterion.vi</H2>
+<P>Returns the quaternion representation of the Rotation3d.</P>
+<P></P>
+<P>Parameters:</P>
+<P> - in ROTATION3D - This ROTATION3D data structure</P>
+<P></P>
+<P>Returns:</P>
+<P> - out Quaternion  --  The quaternion representation of the Rotation3d.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__GetQuaterionc.png" ALT="Trajectory_Library.lvlib:Rotation3d_GetQuaterion.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>out Quaterion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Rotation3d_GetXYZ.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_GetXYZ.vi</H2>
+<P>Returns the counterclockwise rotation angle around the X axis (roll) in radians and the counterclockwise rotation angle around the Y axis (pitch) in radians and the counterclockwise rotation angle around the Z axis (yaw) in radians.</P>
+<P></P>
+<P>Parameters:</P>
+<P> - in ROTATION3D  -  This ROTATION3D data structure</P>
+<P></P>
+<P>Returns:</P>
+<P>  -  X  --  The counterclockwise rotation angle around the X axis (roll) in radians.</P>
+<P>  -  Y  --  The counterclockwise rotation angle around the Y axis (pitch) in radians.</P>
+<P>  - Z  --  The counterclockwise rotation angle around the Z axis (yaw) in radians.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__GetXYZc.png" ALT="Trajectory_Library.lvlib:Rotation3d_GetXYZ.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>X</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Z</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Y</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Rotation3d_Interpolate.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_Interpolate.vi</H2>
+<P>Interpolates between 2 Rotation3d.</P>
+<P></P>
+<P>Parameters:</P>
+<P>  -  IN ROTATION3D  --  This rotation3d data structure</P>
+<P>  -  End Value ROTATION3D  --  The  end rotation3d</P>
+<P>  -  T  --  Interpolation value between 0 and 1.</P>
+<P></P>
+<P>Returns:</P>
+<P>- Interpolated Rotation3d  --  The Rotation3d interpolated betwee the 2 provided interpolations.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__Interpolatec.png" ALT="Trajectory_Library.lvlib:Rotation3d_Interpolate.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>EndValue Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>T</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Interpolated Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Rotation3d_Minus.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_Minus.vi</H2>
+<P>Subtracts the new rotation from the current rotation and returns the new rotation.</P>
+<P></P>
+<P>Parameters:</P>
+<P>- in ROTATION3D - This rotation data structure</P>
+<P> - other ROTATION3D - The rotation to subtract.</P>
+<P></P>
+<P>Returns:</P>
+<P>  - out ROTATION3D - The difference between the two rotations.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__Minusc.png" ALT="Trajectory_Library.lvlib:Rotation3d_Minus.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>other Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>out Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Rotation3d_Plus.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_Plus.vi</H2>
+<P>Adds two rotations together.</P>
+<P></P>
+<P>This function is the same as RotateBy.</P>
+<P></P>
+<P>Parameters:</P>
+<P></P>
+<P> - IN ROTATION3D - This rotation data structure</P>
+<P> - OTHER ROTATION3D - The rotation to add.</P>
+<P></P>
+<P>Returns:</P>
+<P>- OUT ROTATION3D - The sum of the two rotations.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__Plusc.png" ALT="Trajectory_Library.lvlib:Rotation3d_Plus.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>other Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>out Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Rotation3d_RotateBy.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_RotateBy.vi</H2>
+<P>Adds the new rotation to the current rotation.</P>
+<P></P>
+<P>This is the same as Plus.</P>
+<P></P>
+<P>Parameters:</P>
+<P>  - IN ROTATION3D  -  This ROTATION data structure</P>
+<P>  - OTHER ROTATION3D  -  The rotation to rotate by</P>
+<P></P>
+<P>Returns:</P>
+<P>   - OUT ROTATION3D  -  The new rotated Rotation3d.</P>
+<P>  </P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__RotateByc.png" ALT="Trajectory_Library.lvlib:Rotation3d_RotateBy.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>other Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>out Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Rotation3d_Times.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_Times.vi</H2>
+<P>Multiplies the current rotation by a scalar.</P>
+<P></P>
+<P>Parameters: </P>
+<P>- IN ROTATION3D - This ROTATION3D data structure</P>
+<P>- SCALAR - The value to multiiply the rotation by.</P>
+<P></P>
+<P>Returns:</P>
+<P> - OUT ROTATION3D - THe new ROTATION3D data structure.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__Timesc.png" ALT="Trajectory_Library.lvlib:Rotation3d_Times.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Scalar</B> <P>Scalar alue to multiply ROTATION by.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>out Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Rotation3d_ToRotation2d.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_ToRotation2d.vi</H2>
+<P>Returns a Rotation2d representing this Rotation3d projected into the X-Y plane</P>
+<P></P>
+<P>Parameters:</P>
+<P> - IN ROTATION3D  --  This ROTATION3D data structure</P>
+<P></P>
+<P>Results:</P>
+<P>  -- out Rotation2d  --  A Rotation2d representing this Rotation3d projected into the X-Y plane.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__ToRotation2dc.png" ALT="Trajectory_Library.lvlib:Rotation3d_ToRotation2d.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>out Rotation2d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:Rotation3d_UnaryMinus.vi"></A><H2>Trajectory_Library.lvlib:Rotation3d_UnaryMinus.vi</H2>
+<P>Takes the inverse of the current rotation.</P>
+<P></P>
+<P>Parameters:</P>
+<P> - IN ROTATION3D - This ROTATION3D data structure</P>
+<P></P>
+<P>Results:</P>
+<P> - OUT ROTATION3D  - The negated ROTATION3D data structure.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_Rotation3d__UnaryMinusc.png" ALT="Trajectory_Library.lvlib:Rotation3d_UnaryMinus.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1ddbl.png" ALT="c1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>out Rotation3d</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Q_quaternion</B> <P>Pose2d data cluster typedef.  Represents a 2d pose containing translational and rotational elements.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>R</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>V</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Numeric</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+</BODY>
+</HTML>

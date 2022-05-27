@@ -1,0 +1,684 @@
+<HTML>
+<HEAD>
+<TITLE>PathPlanner.lvlib:PathPlanner_GeomUtil_CoerceHeadingDegrees.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="PathPlanner.lvlib:PathPlanner_GeomUtil_CoerceHeadingDegrees.vi"></A><H2>PathPlanner.lvlib:PathPlanner_GeomUtil_CoerceHeadingDegrees.vi</H2>
+<P></P>
+<P><IMG SRC="PathPlanner_lvlib_PathPlanner__GeomUtil__CoerceHeadingDegreesc.png" ALT="PathPlanner.lvlib:PathPlanner_GeomUtil_CoerceHeadingDegrees.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>in Degrees</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>out Degrees</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="PathPlanner.lvlib:PathPlanner_GeomUtil_CoerceHeadingRadians.vi"></A><H2>PathPlanner.lvlib:PathPlanner_GeomUtil_CoerceHeadingRadians.vi</H2>
+<P></P>
+<P><IMG SRC="PathPlanner_lvlib_PathPlanner__GeomUtil__CoerceHeadingRadiansc.png" ALT="PathPlanner.lvlib:PathPlanner_GeomUtil_CoerceHeadingRadians.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>in Radians</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>out Radians</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="PathPlanner.lvlib:PathPlanner_GeomUtil_CubicLerp.vi"></A><H2>PathPlanner.lvlib:PathPlanner_GeomUtil_CubicLerp.vi</H2>
+<P></P>
+<P><IMG SRC="PathPlanner_lvlib_PathPlanner__GeomUtil__CubicLerpc.png" ALT="PathPlanner.lvlib:PathPlanner_GeomUtil_CubicLerp.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>A</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>B</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>T</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>C</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>D</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>Lerp</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="PathPlanner.lvlib:PathPlanner_GeomUtil_DoubleLerp.vi"></A><H2>PathPlanner.lvlib:PathPlanner_GeomUtil_DoubleLerp.vi</H2>
+<P></P>
+<P><IMG SRC="PathPlanner_lvlib_PathPlanner__GeomUtil__DoubleLerpc.png" ALT="PathPlanner.lvlib:PathPlanner_GeomUtil_DoubleLerp.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>StartVal</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>EndVal</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>T</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Lerp</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="PathPlanner.lvlib:PathPlanner_GeomUtil_QuadraticLerp.vi"></A><H2>PathPlanner.lvlib:PathPlanner_GeomUtil_QuadraticLerp.vi</H2>
+<P></P>
+<P><IMG SRC="PathPlanner_lvlib_PathPlanner__GeomUtil__QuadraticLerpc.png" ALT="PathPlanner.lvlib:PathPlanner_GeomUtil_QuadraticLerp.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>A</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>B</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>T</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>C</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>Lerp</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="PathPlanner.lvlib:PathPlanner_GeomUtil_RotationLerp.vi"></A><H2>PathPlanner.lvlib:PathPlanner_GeomUtil_RotationLerp.vi</H2>
+<P></P>
+<P><IMG SRC="PathPlanner_lvlib_PathPlanner__GeomUtil__RotationLerpc.png" ALT="PathPlanner.lvlib:PathPlanner_GeomUtil_RotationLerp.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>StartVal</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>EndVal</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>T</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>Lerp</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="PathPlanner.lvlib:PathPlanner_GeomUtil_TranslationLerp.vi"></A><H2>PathPlanner.lvlib:PathPlanner_GeomUtil_TranslationLerp.vi</H2>
+<P></P>
+<P><IMG SRC="PathPlanner_lvlib_PathPlanner__GeomUtil__TranslationLerpc.png" ALT="PathPlanner.lvlib:PathPlanner_GeomUtil_TranslationLerp.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>StartVal</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>EndVal</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>T</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>Lerp</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

@@ -1,0 +1,310 @@
+<HTML>
+<HEAD>
+<TITLE>Trajectory_Library.lvlib:ChassisSpeeds_FromFieldRelativeSpeeds.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Trajectory_Library.lvlib:ChassisSpeeds_FromFieldRelativeSpeeds.vi"></A><H2>Trajectory_Library.lvlib:ChassisSpeeds_FromFieldRelativeSpeeds.vi</H2>
+<P>Converts a user provided field-relative set of speeds into a robot-relative ChassisSpeeds object.</P>
+<P></P>
+<P>Parameters:   </P>
+<P>   - VX  -     The component of speed in the x direction relative to the field.  Positive x is away from your alliance wall.  (Meters/sec)</P>
+<P>   - VY -     The component of speed in the y direction relative to the field.  Positive y is to your left when standing behind the alliance wall. (Meters/sec)</P>
+<P>   -omega - The angular rate of the robot.  (Radians/Sec)</P>
+<P>   -robotAngle  -  The angle of the robot as measured by a gyroscope. The robot's angle is considered to be zero when it is facing directly away from your alliance station wall. Remember that this should be CCW positive. (radians)</P>
+<P></P>
+<P>Returns:</P>
+<P>   - ChassisSpeeds - Data structure representing the speeds in the robot's frame of reference.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_ChassisSpeeds__FromFieldRelativeSpeedsc.png" ALT="Trajectory_Library.lvlib:ChassisSpeeds_FromFieldRelativeSpeeds.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>vX</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>vY</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Omega</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>RobotAngle</B> <P>Rotation2d data cluster typedef.  A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</P>
+<P></P>
+<P>Default values are set for 0 degrees (0 radians).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>CHASSIS</B> <P>Chassis Speed data cluster typedef.  Represents the speed of a robot chassis. Although this struct contains similar members compared to a Twist2d, they do NOT represent the same thing.  Whereas a Twist2d represents a change in pose w.r.t to the robot frame of reference, this ChassisSpeeds struct represents a velocity w.r.t to the robot frame of</P>
+<P>reference.</P>
+<P></P>
+<P>A strictly non-holonomic drivetrain, such as a differential drive, should never have a dy component because it can never move sideways. Holonomic drivetrains such as swerve and mecanum will often have all three components.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vX</B> <P>Represents forward velocity w.r.t the robot frame of reference. (Fwd is +)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vY</B> <P>Represents sideways velocity w.r.t the robot frame of reference. (Left is +)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vOmega</B> <P>The rotational component of the pose.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:ChassisSpeeds_GetXYOmega.vi"></A><H2>Trajectory_Library.lvlib:ChassisSpeeds_GetXYOmega.vi</H2>
+<P>Retrieve indiviual components from a Chassis data cluster </P>
+<P></P>
+<P>Parameters:</P>
+<P> - Chassis - CHASSIS_SPEEDS Data structure</P>
+<P></P>
+<P>Returns:</P>
+<P> - vx - Forward velocity. (Meters/Second)</P>
+<P> - vy - Sideways velocity. (Meters/Second)</P>
+<P> - omega -  Angular velocity. (Radians/Second)</P>
+<P><IMG SRC="Trajectory__Library_lvlib_ChassisSpeeds__GetXYOmegac.png" ALT="Trajectory_Library.lvlib:ChassisSpeeds_GetXYOmega.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>CHASSIS</B> <P>Chassis Speed data cluster typedef.  Represents the speed of a robot chassis. Although this struct contains similar members compared to a Twist2d, they do NOT represent the same thing.  Whereas a Twist2d represents a change in pose w.r.t to the robot frame of reference, this ChassisSpeeds struct represents a velocity w.r.t to the robot frame of</P>
+<P>reference.</P>
+<P></P>
+<P>A strictly non-holonomic drivetrain, such as a differential drive, should never have a dy component because it can never move sideways. Holonomic drivetrains such as swerve and mecanum will often have all three components.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>vX</B> <P>Represents forward velocity w.r.t the robot frame of reference. (Fwd is +)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>vY</B> <P>Represents sideways velocity w.r.t the robot frame of reference. (Left is +)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>vOmega</B> <P>The rotational component of the pose.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vX</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vY</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vAngular</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:ChassisSpeeds_New.vi"></A><H2>Trajectory_Library.lvlib:ChassisSpeeds_New.vi</H2>
+<P>Constructs a ChassisSpeeds object.</P>
+<P></P>
+<P>Represents the speed of a robot chassis. Although this struct contains similar members compared to a Twist2d, they do NOT represent the same thing.  Whereas a Twist2d represents a change in pose w.r.t to the robot frame of reference, this ChassisSpeeds struct represents a velocity w.r.t to the robot frame of</P>
+<P>reference.</P>
+<P></P>
+<P>A strictly non-holonomic drivetrain, such as a differential drive, should never have a dy component because it can never move sideways. Holonomic drivetrains such as swerve and mecanum will often have all three components.</P>
+<P></P>
+<P>Parameters:</P>
+<P> - vx - Forward velocity. (Meters/Second)</P>
+<P> - vy - Sideways velocity. (Meters/Second)</P>
+<P> - omega -  Angular velocity. (Radians/Second)</P>
+<P></P>
+<P>Returns:</P>
+<P> - Chassis - CHASSIS_SPEEDS Data structure</P>
+<P><IMG SRC="Trajectory__Library_lvlib_ChassisSpeeds__Newc.png" ALT="Trajectory_Library.lvlib:ChassisSpeeds_New.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>vX</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>vY</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>vAngular</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>CHASSIS</B> <P>Chassis Speed data cluster typedef.  Represents the speed of a robot chassis. Although this struct contains similar members compared to a Twist2d, they do NOT represent the same thing.  Whereas a Twist2d represents a change in pose w.r.t to the robot frame of reference, this ChassisSpeeds struct represents a velocity w.r.t to the robot frame of</P>
+<P>reference.</P>
+<P></P>
+<P>A strictly non-holonomic drivetrain, such as a differential drive, should never have a dy component because it can never move sideways. Holonomic drivetrains such as swerve and mecanum will often have all three components.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vX</B> <P>Represents forward velocity w.r.t the robot frame of reference. (Fwd is +)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vY</B> <P>Represents sideways velocity w.r.t the robot frame of reference. (Left is +)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vOmega</B> <P>The rotational component of the pose.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

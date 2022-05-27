@@ -1,12 +1,19 @@
 <HTML>
 <HEAD>
-<TITLE>LinearFilter_BackwardFiniteDifference.vi</TITLE>
+<TITLE>Trajectory_Library.lvlib:LinearFilter_BackwardFiniteDifference.vi</TITLE>
 <META NAME="Author" CONTENT="">
 <META NAME="GENERATOR" CONTENT="G Development Environment">
 </HEAD>
 <BODY BGCOLOR="#FFFFFF">
-<A NAME="LinearFilter_BackwardFiniteDifference.vi"></A><H2>LinearFilter_BackwardFiniteDifference.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_BackwardFiniteDifference.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_BackwardFiniteDifference.vi</H2>
 <P>Creates a backward finite difference filter that computes the nth derivative of the input given the specified number of samples.</P>
+<P>   </P>
+<P>For example, a first derivative filter that uses two samples and a sample period of 20 ms would be</P>
+<P>   </P>
+<P>     LinearFilter_BackwardFiniteDifference(</P>
+<P>                                        1, </P>
+<P>                                        2, </P>
+<P>                                        0.02);</P>
 <P></P>
 <P>For additional information see:</P>
 <P>      https://en.wikipedia.org/wiki/Finite_difference_coefficient#Arbitrary_stencil_points</P>
@@ -16,18 +23,15 @@
 <P>     [s1°   ?  s?° ][a1]      [ d0,d ]</P>
 <P>     [ ?    ?  ?   ][? ] = d! [  ?   ]</P>
 <P>     [s1n?¹ ? s?n?¹][a?]      [d??1,d]</P>
-<P>    </P>
-<P>    </P>
-<P>    where d?,? are the Kronecker delta. For backward finite difference,</P>
-<P>    the stencil points are the range [-n + 1, 0]. The FIR gains are the</P>
-<P>    elements of the vector a in reverse order divided by h?.</P>
+<P>        </P>
+<P>    where d?,? are the Kronecker delta. The FIR gains are the elements of the</P>
+<P>    vector a in reverse order divided by h?.</P>
 <P>    </P>
 <P>    The order of accuracy of the approximation is of the form O(hn??).</P>
 <P></P>
 <P>Inputs: </P>
 <P>   - derivative  --  The order of the derivative to compute.</P>
-<P>   - samples  --  The number of samples to use to compute the given derivative. </P>
-<P>	This must be one more than the order of derivative or higher.</P>
+<P>   - samples  --  The number of samples to use to compute the given derivative. This must be one more than the order of derivative or higher.</P>
 <P>   - period  --  The period in seconds between samples taken by the user.</P>
 <P></P>
 <P>Outputs:</P>
@@ -38,7 +42,8 @@
 <P>              - Outputs - Array of the last n saved outputs</P>
 <P>              -  InGainCount - Number of input gain terms</P>
 <P>              -  OutGainCount - number of output gain terms</P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__BackwardFiniteDifferencec.png" ALT="LinearFilter_BackwardFiniteDifference.vi"></P>
+<P>   -  Error  -- Returns TRUE if an error occured.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__BackwardFiniteDifferencec.png" ALT="Trajectory_Library.lvlib:LinearFilter_BackwardFiniteDifference.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>
@@ -226,7 +231,7 @@
 </TR>
 </Table>
 <HR>
-<A NAME="LinearFilter_Calculate.vi"></A><H2>LinearFilter_Calculate.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_Calculate.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_Calculate.vi</H2>
 <P>Calculates the next value of the filter.  To work correctly this must be called periodically</P>
 <P></P>
 <P>Inputs:</P>
@@ -237,7 +242,7 @@
 <P>  - outLinearfilter - Updated linear filter data structurea</P>
 <P>  - output - The filtered value at this step</P>
 <P> </P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__Calculatec.png" ALT="LinearFilter_Calculate.vi"></P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__Calculatec.png" ALT="Trajectory_Library.lvlib:LinearFilter_Calculate.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>
@@ -559,7 +564,7 @@
 </TR>
 </Table>
 <HR>
-<A NAME="LinearFilter_CutoffFrequency.vi"></A><H2>LinearFilter_CutoffFrequency.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_CutoffFrequency.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_CutoffFrequency.vi</H2>
 <P>Calculate the cutoff frequency from the time constant.</P>
 <P></P>
 <P>Inputs:</P>
@@ -567,7 +572,7 @@
 <P></P>
 <P>Outputs:</P>
 <P>  - cutoff Frequency - hertz</P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__CutoffFrequencyc.png" ALT="LinearFilter_CutoffFrequency.vi"></P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__CutoffFrequencyc.png" ALT="Trajectory_Library.lvlib:LinearFilter_CutoffFrequency.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>
@@ -589,7 +594,7 @@
 </TR>
 </Table>
 <HR>
-<A NAME="LinearFilter_Execute.vi"></A><H2>LinearFilter_Execute.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_Execute.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_Execute.vi</H2>
 <P>This is a LabVIEW &quot;convience&quot; function that combines the various subVI for a linear filter into a single subVI.  This subVI creates and executes the linear filter.  The filter can be dynamically enabled and disabled.  When the filter is disabled, the input is transfered directly to the output.  Bumpless transfer is provided when enabling the filter.  Bumpless transfer is NOT provided when disabling the filter.  The output value jumps directly to the current input value.  The filter type and filter constants can also be changed dynamically.  When the filter contstants are changed, the output may jump to the current input value when the internal buffers are reset to the current input value.</P>
 <P></P>
 <P>Inputs:</P>
@@ -611,7 +616,7 @@
 <P>  - OutLinearFilter  -  Current value of the LinearFilter data structure.</P>
 <P>  - Output  -  Current output value.</P>
 <P> </P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__Executec.png" ALT="LinearFilter_Execute.vi"></P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__Executec.png" ALT="Trajectory_Library.lvlib:LinearFilter_Execute.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>
@@ -831,7 +836,278 @@
 </TR>
 </Table>
 <HR>
-<A NAME="LinearFilter_HighPass.vi"></A><H2>LinearFilter_HighPass.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_Factorial.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_Factorial.vi</H2>
+<P>Computes the factorial of &quot;n&quot;.   This is an internal function.</P>
+<P></P>
+<P></P>
+<P>Inputs:    </P>
+<P>  - n - Integer value &gt;= 1.</P>
+<P></P>
+<P>Outputs:</P>
+<P>  - factorial - The calculated factorial value, as an integer.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__Factorialc.png" ALT="Trajectory_Library.lvlib:LinearFilter_Factorial.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>N</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Factorial</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_FiniteDifference.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_FiniteDifference.vi</H2>
+<P>Creates a finite difference filter that computes the nth derivative of the input given the specified stencil points.</P>
+<P>   </P>
+<P>Stencil points are the indices of the samples to use in the finite difference. 0 is the current sample, -1 is the previous sample, -2 is the sample before that, etc. Don't use positive stencil points (samples from the future) if the LinearFilter will be used for stream-based online filtering.</P>
+<P></P>
+<P>For additional information see:</P>
+<P>      https://en.wikipedia.org/wiki/Finite_difference_coefficient#Arbitrary_stencil_points</P>
+<P>    </P>
+<P>For a given list of stencil points s of length n and the order of derivative d &lt; n, the finite difference coefficients can be obtained by solving the following linear system for the vector a.</P>
+<P></P>
+<P>     [s1°   ?  s?° ][a1]      [ d0,d ]</P>
+<P>     [ ?    ?  ?   ][? ] = d! [  ?   ]</P>
+<P>     [s1n?¹ ? s?n?¹][a?]      [d??1,d]</P>
+<P>        </P>
+<P>    where d?,? are the Kronecker delta. The FIR gains are the elements of the</P>
+<P>    vector a in reverse order divided by h?.</P>
+<P>    </P>
+<P>    The order of accuracy of the approximation is of the form O(hn??).</P>
+<P></P>
+<P>Inputs: </P>
+<P>   - derivative  --  The order of the derivative to compute.</P>
+<P>   - samples  --  The number of samples to use to compute the given derivative. This must be one more than the order of derivative or higher.</P>
+<P>   - stencil  --  Lisst of stencil points</P>
+<P>   - period  --  The period in seconds between samples taken by the user.</P>
+<P></P>
+<P>Outputs:</P>
+<P>    - LINEAR FILTER - cluster containing:</P>
+<P>             - InputGains - Array of “feedforward” or FIR gain factors (bx)</P>
+<P>              - OutputGains - Array of “feedback” or IIR gain factors for feedback terms (ax)</P>
+<P>              - Inputs - Array of the last n saved inputs</P>
+<P>              - Outputs - Array of the last n saved outputs</P>
+<P>              -  InGainCount - Number of input gain terms</P>
+<P>              -  OutGainCount - number of output gain terms</P>
+<P>   -  Error  -- Returns TRUE if an error occured.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__FiniteDifferencec.png" ALT="Trajectory_Library.lvlib:LinearFilter_FiniteDifference.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Derivative</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Samples</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Period</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1di32.png" ALT="c1di32"></P>
+</TD>
+<TD>
+<B>Stencil</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Stencil Pt</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>LINEAR_FILTER</B> <P>This cluster stores the data for a set of Vis that implement a linear, digital filter. All types of FIR and IIR filters are supported.  A set of VIs are provided to create commonly used types of filters.</P>
+<P> </P>
+<P>Filters are of the form: </P>
+<P>	y[n] = (b0*x[n] + b1*x[n-1] + ... + bP*x[n-P]) - (a0*y[n-1] + a2*y[n-2] + ... + aQ*y[n-Q])</P>
+<P> </P>
+<P>Where: </P>
+<P>  -  y[n] is the output at time &quot;n&quot; </P>
+<P>  -  x[n] is the input at time &quot;n&quot; </P>
+<P>  -  y[n-1] is the output from the LAST time step (&quot;n-1&quot;) </P>
+<P>  -  x[n-1] is the input from the LAST time step (&quot;n-1&quot;) </P>
+<P>  -  b0...bP are the &quot;feedforward&quot; (FIR) gains </P>
+<P>  -  a0...aQ are the &quot;feedback&quot; (IIR) gains </P>
+<P></P>
+<P>IMPORTANT! Note the &quot;-&quot; sign in front of the feedback term! This is a common convention in signal processing.</P>
+<P></P>
+<P>What can linear filters do? Basically, they can filter, or diminish, the effects of undesirable input frequencies. High frequencies, or rapid changes, can be indicative of sensor noise or be otherwise undesirable. A &quot;low pass&quot; filter smooths out the signal, reducing the impact of these high frequency components.  Likewise, a &quot;high pass&quot; filter gets rid of slow-moving signal components, letting you detect large changes more easily.</P>
+<P> </P>
+<P>Example FRC applications of filters: </P>
+<P>  - Getting rid of noise from an analog sensor input (note: the roboRIO's FPGA can do this faster in hardware)</P>
+<P>  - Smoothing out joystick input to prevent the wheels from slipping or the robot from tipping</P>
+<P>  - Smoothing motor commands so that unnecessary strain isn't put on electrical or mechanical components</P>
+<P>  - If you use clever gains, you can make a PID controller out of this class! (Use the PID set of VI’s instead...)</P>
+<P> </P>
+<P>For more on filters, we highly recommend the following articles:</P>
+<P>	https://en.wikipedia.org/wiki/Linear_filter</P>
+<P>	https://en.wikipedia.org/wiki/Iir_filter</P>
+<P>	https://en.wikipedia.org/wiki/Fir_filter</P>
+<P> </P>
+<P>Note 1: calculate() should be called by the user on a known, regular period. You can use code in a periodic function.</P>
+<P> </P>
+<P>Note 2: For ALL filters, gains are necessarily a function of frequency. If you make a filter that works well for you at, say, 100Hz, (executing every 10 milliseconds ), you will most definitely need to adjust the gains if you then want to run it at 200Hz, (executing every 5 milliseconds)! Combining this with Note 1, the impetus is on YOU as a developer to make sure calculate() gets called at the desired, constant frequency!</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>InputGains</B> <P>Array of “feedforward” or FIR gain factors (bx)</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>InputGain</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>OutputGains</B> <P>Array of “feedback” or IIR gain factors  (ax)</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>OutputGain</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>Inputs</B> <P>Array of the last n saved inputs</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Input</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>Outputs</B> <P>Array of the last n saved outputs</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Output</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>InGainCount</B> <P>Number of input gain terms</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>OutGainCount</B> <P>number of output gain terms</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Error</B> </TD>
+</TR>
+</Table>
+<HR>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_HighPass.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_HighPass.vi</H2>
 <P> </P>
 <P>Creates a first-order high-pass filter of the form: </P>
 <P></P>
@@ -850,7 +1126,7 @@
 <P>   </P>
 <P>Outputs:</P>
 <P>  - Linearfilter - Created datat structure</P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__HighPassc.png" ALT="LinearFilter_HighPass.vi"></P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__HighPassc.png" ALT="Trajectory_Library.lvlib:LinearFilter_HighPass.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>
@@ -1022,7 +1298,7 @@
 </Table>
 </UL>
 <HR>
-<A NAME="LinearFilter_HighPassBW1.vi"></A><H2>LinearFilter_HighPassBW1.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_HighPassBW1.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_HighPassBW1.vi</H2>
 <P>Creates a 1st order Butterworth high pass filter.</P>
 <P></P>
 <P>More information on this type of filter can be found at:</P>
@@ -1035,7 +1311,7 @@
 <P></P>
 <P>Outputs:</P>
 <P>  - Linearfilter - Created datat structure</P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__HighPassBW1c.png" ALT="LinearFilter_HighPassBW1.vi"></P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__HighPassBW1c.png" ALT="Trajectory_Library.lvlib:LinearFilter_HighPassBW1.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>
@@ -1207,7 +1483,7 @@
 </Table>
 </UL>
 <HR>
-<A NAME="LinearFilter_HighPassBW2.vi"></A><H2>LinearFilter_HighPassBW2.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_HighPassBW2.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_HighPassBW2.vi</H2>
 <P>Creates a 2nd order Butterworth high pass filter.</P>
 <P></P>
 <P>A 2nd order filter provides more filtering, however it also has a larger phase shift (time delay).</P>
@@ -1222,7 +1498,7 @@
 <P></P>
 <P>Outputs:</P>
 <P>  - Linearfilter - Created datat structure</P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__HighPassBW2c.png" ALT="LinearFilter_HighPassBW2.vi"></P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__HighPassBW2c.png" ALT="Trajectory_Library.lvlib:LinearFilter_HighPassBW2.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>
@@ -1394,7 +1670,7 @@
 </Table>
 </UL>
 <HR>
-<A NAME="LinearFilter_LowPassBW1.vi"></A><H2>LinearFilter_LowPassBW1.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_LowPassBW1.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_LowPassBW1.vi</H2>
 <P>Creates a 1st order Butterworth low pass filter.</P>
 <P></P>
 <P>More information on this type of filter can be found at:</P>
@@ -1407,7 +1683,7 @@
 <P></P>
 <P>Outputs:</P>
 <P>  - LinearFilter - Created datat structure</P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__LowPassBW1c.png" ALT="LinearFilter_LowPassBW1.vi"></P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__LowPassBW1c.png" ALT="Trajectory_Library.lvlib:LinearFilter_LowPassBW1.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>
@@ -1579,7 +1855,7 @@
 </Table>
 </UL>
 <HR>
-<A NAME="LinearFilter_LowPassBW2.vi"></A><H2>LinearFilter_LowPassBW2.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_LowPassBW2.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_LowPassBW2.vi</H2>
 <P>Creates a 2nd order Butterworth low pass filter.</P>
 <P></P>
 <P>A 2nd order filter provides more filtering, however it also has a larger phase shift (time delay).</P>
@@ -1594,7 +1870,7 @@
 <P></P>
 <P>Outputs:</P>
 <P>  - Linearfilter - Created datat structure</P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__LowPassBW2c.png" ALT="LinearFilter_LowPassBW2.vi"></P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__LowPassBW2c.png" ALT="Trajectory_Library.lvlib:LinearFilter_LowPassBW2.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>
@@ -1766,7 +2042,7 @@
 </Table>
 </UL>
 <HR>
-<A NAME="LinearFilter_MovingAverage.vi"></A><H2>LinearFilter_MovingAverage.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_MovingAverage.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_MovingAverage.vi</H2>
 <P>Creates a K-tap FIR moving average filter of the form: </P>
 <P></P>
 <P>    y[n] = 1/k * (x[k] + x[k-1] + ... + x[0]).</P>
@@ -1780,7 +2056,7 @@
 <P>Outputs:</P>
 <P>  - Linearfilter - Created datat structure</P>
 <P>  - Error  --  If TRUE, an error occured.</P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__MovingAveragec.png" ALT="LinearFilter_MovingAverage.vi"></P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__MovingAveragec.png" ALT="Trajectory_Library.lvlib:LinearFilter_MovingAverage.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>
@@ -1951,7 +2227,7 @@
 </TR>
 </Table>
 <HR>
-<A NAME="LinearFilter_New.vi"></A><H2>LinearFilter_New.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_New.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_New.vi</H2>
 <P>This VI creates a new data structure (cluster) that stores the data for a set of Vis that implement a linear, digital filter. All types of FIR and IIR filters are supported.  A set of VIs are provided to create commonly used types of filters.</P>
 <P> </P>
 <P>Filters are of the form: </P>
@@ -1997,7 +2273,7 @@
 <P>              - Outputs - Array of the last n saved outputs</P>
 <P>              -  InGainCount - Number of input gain terms</P>
 <P>              -  OutGainCount - number of output gain terms</P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__Newc.png" ALT="LinearFilter_New.vi"></P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__Newc.png" ALT="Trajectory_Library.lvlib:LinearFilter_New.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>
@@ -2191,7 +2467,7 @@
 </Table>
 </UL>
 <HR>
-<A NAME="LinearFilter_Reset.vi"></A><H2>LinearFilter_Reset.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_Reset.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_Reset.vi</H2>
 <P>Reset the filter state.  Sets the saved inputs and outputs to zero.</P>
 <P></P>
 <P></P>
@@ -2200,7 +2476,7 @@
 <P></P>
 <P>Outputs:</P>
 <P>  - outLinearfilter - Updated linear filter data structure</P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__Resetc.png" ALT="LinearFilter_Reset.vi"></P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__Resetc.png" ALT="Trajectory_Library.lvlib:LinearFilter_Reset.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>
@@ -2502,7 +2778,7 @@
 </Table>
 </UL>
 <HR>
-<A NAME="LinearFilter_ResetToValue.vi"></A><H2>LinearFilter_ResetToValue.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_ResetToValue.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_ResetToValue.vi</H2>
 <P>Reset the filter state.  Sets the saved inputs and outputs to &quot;InputValue:&quot;</P>
 <P></P>
 <P></P>
@@ -2512,7 +2788,7 @@
 <P></P>
 <P>Outputs:</P>
 <P>  - outLinearfilter - Updated linear filter data structurea</P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__ResetToValuec.png" ALT="LinearFilter_ResetToValue.vi"></P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__ResetToValuec.png" ALT="Trajectory_Library.lvlib:LinearFilter_ResetToValue.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>
@@ -2823,7 +3099,7 @@
 </Table>
 </UL>
 <HR>
-<A NAME="LinearFilter_SinglePoleIIR.vi"></A><H2>LinearFilter_SinglePoleIIR.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_SinglePoleIIR.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_SinglePoleIIR.vi</H2>
 <P>Creates a one-pole IIR low-pass filter of the form: </P>
 <P></P>
 <P>    y[n] = (1-gain)*x[n] + gain*y[n-1] </P>
@@ -2841,7 +3117,7 @@
 <P>Outputs:</P>
 <P>  - Linearfilter - Created datat structure</P>
 <P>  - Cutoff Frequency - Frequency (Hz)</P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__SinglePoleIIRc.png" ALT="LinearFilter_SinglePoleIIR.vi"></P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__SinglePoleIIRc.png" ALT="Trajectory_Library.lvlib:LinearFilter_SinglePoleIIR.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>
@@ -3023,7 +3299,7 @@
 </TR>
 </Table>
 <HR>
-<A NAME="LinearFilter_TimeConst.vi"></A><H2>LinearFilter_TimeConst.vi</H2>
+<A NAME="Trajectory_Library.lvlib:LinearFilter_TimeConst.vi"></A><H2>Trajectory_Library.lvlib:LinearFilter_TimeConst.vi</H2>
 <P>Calculate the time constant from the cutoff frequency</P>
 <P></P>
 <P>Inputs:</P>
@@ -3031,7 +3307,7 @@
 <P></P>
 <P>Outputs:</P>
 <P>  - time Constant - seconds</P>
-<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__TimeConstc.png" ALT="LinearFilter_TimeConst.vi"></P>
+<P><IMG SRC="Trajectory__Library_lvlib_LinearFilter__TimeConstc.png" ALT="Trajectory_Library.lvlib:LinearFilter_TimeConst.vi"></P>
 <Table>
 <TR valign=TOP>
 <TD>

@@ -19139,6 +19139,28 @@
 <HR>
 <A NAME="Trajectory_Library.lvlib:HolDrvCtrl_PackProfPID.vi"></A><H2>Trajectory_Library.lvlib:HolDrvCtrl_PackProfPID.vi</H2>
 <P></P>
+<P>Convience, single call, LabVIEW function.  Packs the tuning parameters of the Theta Profiled PID controller used by the Holonomic Controller.  </P>
+<P></P>
+<P>NOTE -- This version does NOT support dynamic tuning.  The constants are read only used during the first execution cycle.</P>
+<P> </P>
+<P>Inputs:</P>
+<P>  -  PID Tuning  -- PID Tuning parameters containing:</P>
+<P>          -  Kp  --  The proportional coefficient.</P>
+<P>          -  Ki  --  The integral coefficient.</P>
+<P>          -  Kd  --  The derivative coefficient.</P>
+<P>          -  Maximum Integral  --  The maximum value of the integrator.</P>
+<P>          -  Minimum Integral  --  The minimum value of the integrator.</P>
+<P>  -  PID Input Limits  --  Cluster containing:</P>
+<P>         -  MaxInput  --  (Default: 0)</P>
+<P>         -  MinInput  --  (Default: 0)</P>
+<P>         -  Continous  --  When True indicates that the input is continuous.  (Default: False)</P>
+<P>   - Max_Speed  --  Maximum speed robot rotation</P>
+<P>   - Max_Accel  -- Maximum acceleration of robot rotation.</P>
+<P>  -  Period  --  Period of repeated calls in seconds.  (Default: 0.020)</P>
+<P></P>
+<P>Outputs:</P>
+<P>  -  Theta Profiled_PID_Controller  --  Created Theta Profiled PID_Controller data cluster</P>
+<P>  </P>
 <P><IMG SRC="Trajectory__Library_lvlib_HolDrvCtrl__PackProfPIDc.png" ALT="Trajectory_Library.lvlib:HolDrvCtrl_PackProfPID.vi"></P>
 <Table>
 <TR valign=TOP>

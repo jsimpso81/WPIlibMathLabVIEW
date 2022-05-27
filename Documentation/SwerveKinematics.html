@@ -1,0 +1,2365 @@
+<HTML>
+<HEAD>
+<TITLE>Trajectory_Library.lvlib:SwerveKinematics_New4.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Trajectory_Library.lvlib:SwerveKinematics_New4.vi"></A><H2>Trajectory_Library.lvlib:SwerveKinematics_New4.vi</H2>
+<P>Constructs a swerve drive kinematics object. This takes in a variable number of wheel locations as Translation2ds. The order in which you pass in the wheel locations is the same order that you will recieve the module states when performing inverse kinematics. It is also expected that you pass in the module states in the same order when calling the forward kinematics methods.  This subVI is customized for 4 wheel modules.</P>
+<P></P>
+<P>This is a helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual module states (speed and angle).</P>
+<P> </P>
+<P>The inverse kinematics (converting from a desired chassis velocity to individual module states) uses the relative locations of the modules with respect to the center of rotation. The center of rotation for inverse kinematics is also variable. This means that you can set your set your center of rotation in a corner of the robot to perform special evasion manuevers.</P>
+<P> </P>
+<P>Forward kinematics (converting an array of module states into the overall chassis motion) is performs the exact opposite of what inverse kinematics does. Since this is an overdetermined system (more equations than variables), we use a least-squares approximation.</P>
+<P> </P>
+<P>The inverse kinematics: [moduleStates] = [moduleLocations][chassisSpeeds] We take the Moore-Penrose pseudoinverse of [moduleLocations] and then multiply by [moduleStates] to get our chassis speeds.</P>
+<P> </P>
+<P>Forward kinematics is also used for odometry -- determining the position of the robot on the field using encoders and a gyro.</P>
+<P></P>
+<P>Parameters: </P>
+<P>  - wheel 0 - Translation data structures indicating the location of a wheel relative to the physical center of the robot.</P>
+<P>  - wheel 1 - Translation data structures indicating the location of a wheel relative to the physical center of the robot. (Meters)</P>
+<P>  - wheel 2 - Translation data structures indicating the location of a wheel relative to the physical center of the robot. (Meters)</P>
+<P>  - wheel 3 - Translation data structures indicating the location of a wheel relative to the physical center of the robot. (Meters)</P>
+<P></P>
+<P>Returns:</P>
+<P>  - SwerveDriveKinematics - The initialized data structure</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SwerveKinematics__New4c.png" ALT="Trajectory_Library.lvlib:SwerveKinematics_New4.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>wheel 0</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>wheel 1</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>wheel 2</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>wheel 3</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>SWERVE_DRIVE_KINEMATICS</B> <P>Swerve drive data cluster typedef contains data that converts a chassis velocity (dx, dy, and dtheta components) into individual module states (speed and angle).</P>
+<P> </P>
+<P>The inverse kinematics (converting from a desired chassis velocity to individual module states) uses the relative locations of the modules with respect to the center of rotation. The center of rotation for inverse kinematics is also variable. This means that you can set your set your center of rotation in a corner of the robot to perform special evasion manuevers.</P>
+<P> </P>
+<P>Forward kinematics (converting an array of module states into the overall chassis motion) is performs the exact opposite of what inverse kinematics does. Since this is an overdetermined system (more equations than variables), we use a least-squares approximation.</P>
+<P> </P>
+<P>The inverse kinematics: [moduleStates] = [moduleLocations][chassisSpeeds] We take the Moore-Penrose pseudoinverse of [moduleLocations] and then multiply by [moduleStates] to get our chassis speeds.</P>
+<P> </P>
+<P>Forward kinematics is also used for odometry -- determining the position of the robot on the field using encoders and a gyro.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>NumModules</B> <P>toto</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i2ddbl.png" ALT="i2ddbl"></P>
+</TD>
+<TD>
+<B>InverseKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i2ddbl.png" ALT="i2ddbl"></P>
+</TD>
+<TD>
+<B>ForwardKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1dnclst.png" ALT="i1dnclst"></P>
+</TD>
+<TD>
+<B>Modules</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>TRANSLATION</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>PrevCoR</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:SwerveKinematics_NewX.vi"></A><H2>Trajectory_Library.lvlib:SwerveKinematics_NewX.vi</H2>
+<P>Constructs a swerve drive kinematics object. This takes in a variable number of wheel locations as Translation2ds. The order in which you pass in the wheel locations is the same order that you will recieve the module states when performing inverse kinematics. It is also expected that you pass in the module states in the same order when calling the forward kinematics methods.</P>
+<P></P>
+<P>This is a helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual module states (speed and angle).</P>
+<P> </P>
+<P>The inverse kinematics (converting from a desired chassis velocity to individual module states) uses the relative locations of the modules with respect to the center of rotation. The center of rotation for inverse kinematics is also variable. This means that you can set your set your center of rotation in a corner of the robot to perform special evasion manuevers.</P>
+<P> </P>
+<P>Forward kinematics (converting an array of module states into the overall chassis motion) is performs the exact opposite of what inverse kinematics does. Since this is an overdetermined system (more equations than variables), we use a least-squares approximation.</P>
+<P> </P>
+<P>The inverse kinematics: [moduleStates] = [moduleLocations][chassisSpeeds] We take the Moore-Penrose pseudoinverse of [moduleLocations] and then multiply by [moduleStates] to get our chassis speeds.</P>
+<P> </P>
+<P>Forward kinematics is also used for odometry -- determining the position of the robot on the field using encoders and a gyro.</P>
+<P></P>
+<P>Parameters: </P>
+<P>  - wheels - Array of Translation data structures indicating the locations of the wheels relative to the physical center of the robot.  (Meters)</P>
+<P></P>
+<P>Returns:</P>
+<P>  - SwerveDriveKinematics - The initialized data structure</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SwerveKinematics__NewXc.png" ALT="Trajectory_Library.lvlib:SwerveKinematics_NewX.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>Wheels</B> <P>Wheel locations relative to center of robot</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>wheel 3</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>SWERVE_DRIVE_KINEMATICS</B> <P>Swerve drive data cluster typedef contains data that converts a chassis velocity (dx, dy, and dtheta components) into individual module states (speed and angle).</P>
+<P> </P>
+<P>The inverse kinematics (converting from a desired chassis velocity to individual module states) uses the relative locations of the modules with respect to the center of rotation. The center of rotation for inverse kinematics is also variable. This means that you can set your set your center of rotation in a corner of the robot to perform special evasion manuevers.</P>
+<P> </P>
+<P>Forward kinematics (converting an array of module states into the overall chassis motion) is performs the exact opposite of what inverse kinematics does. Since this is an overdetermined system (more equations than variables), we use a least-squares approximation.</P>
+<P> </P>
+<P>The inverse kinematics: [moduleStates] = [moduleLocations][chassisSpeeds] We take the Moore-Penrose pseudoinverse of [moduleLocations] and then multiply by [moduleStates] to get our chassis speeds.</P>
+<P> </P>
+<P>Forward kinematics is also used for odometry -- determining the position of the robot on the field using encoders and a gyro.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>NumModules</B> <P>toto</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i2ddbl.png" ALT="i2ddbl"></P>
+</TD>
+<TD>
+<B>InverseKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i2ddbl.png" ALT="i2ddbl"></P>
+</TD>
+<TD>
+<B>ForwardKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1dnclst.png" ALT="i1dnclst"></P>
+</TD>
+<TD>
+<B>Modules</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>TRANSLATION</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>PrevCoR</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:SwerveKinematics_NormalizeWheelSpeedsX.vi"></A><H2>Trajectory_Library.lvlib:SwerveKinematics_NormalizeWheelSpeedsX.vi</H2>
+<P>Normalizes the wheel speeds using some max attainable speed. Sometimes, after inverse kinematics, the requested speed from a/several modules may be above the max attainable speed for the driving motor on that module. To fix this issue, one can &quot;normalize&quot; all the wheel speeds to make sure that all requested module speeds are below the absolute threshold, while maintaining the ratio of speeds between modules.</P>
+<P>   </P>
+<P>Parameters:</P>
+<P>  - moduleStates  - Array of module states. </P>
+<P>  - attainableMaxSpeed - The absolute max speed that a module can reach. (Meters/Sec)</P>
+<P>   </P>
+<P></P>
+<P>Returns:</P>
+<P>  - out Wheel States -- Array of normalzied Wheel States</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SwerveKinematics__NormalizeWheelSpeedsXc.png" ALT="Trajectory_Library.lvlib:SwerveKinematics_NormalizeWheelSpeedsX.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1dcclst.png" ALT="c1dcclst"></P>
+</TD>
+<TD>
+<B>in WheelStates</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>SWERVE_DRIVE_MODULE_STATE</B> <P>Swerve Drive Module state data cluster typedef.  Represents the state of one swerve module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Speed</B> <P>Speed of the wheel of the module.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Angle</B> <P>Angle of the module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>AttainableMaxSpeed</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1dcclst.png" ALT="i1dcclst"></P>
+</TD>
+<TD>
+<B>out WheelStates</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>SWERVE_DRIVE_MODULE_STATE</B> <P>Swerve Drive Module state data cluster typedef.  Represents the state of one swerve module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Speed</B> <P>Speed of the wheel of the module.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>Angle</B> <P>Angle of the module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:SwerveKinematics_ToChassisSpeeds4.vi"></A><H2>Trajectory_Library.lvlib:SwerveKinematics_ToChassisSpeeds4.vi</H2>
+<P>Performs forward kinematics to return the resulting chassis state from the given module states. This method is often used for odometry -- determining the robot's position on the field using data from the real-world speed and angle of each module on the robot.  This subVI is customized for 4 individual wheel states.</P>
+<P></P>
+<P>Parameters:   </P>
+<P>  - in Swerve Drive Kinematics - Swerve drive kinematics data structure</P>
+<P>  - wheelState 0 - The state of a module (as a SwerveModuleState type) as measured from respective encoders and gyros. The order of the swerve module states should be same as passed into the constructor of this class.</P>
+<P>  - wheelState 1 - Another wheel state </P>
+<P>  - wheelState 2 - Another wheel state</P>
+<P>  - wheelState 3 -  Another wheel state</P>
+<P></P>
+<P>Returns:</P>
+<P>  - The resulting chassis speed.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SwerveKinematics__ToChassisSpeeds4c.png" ALT="Trajectory_Library.lvlib:SwerveKinematics_ToChassisSpeeds4.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in SWERVE_DRIVE_KINEMATICS</B> <P>Swerve drive data cluster typedef contains data that converts a chassis velocity (dx, dy, and dtheta components) into individual module states (speed and angle).</P>
+<P> </P>
+<P>The inverse kinematics (converting from a desired chassis velocity to individual module states) uses the relative locations of the modules with respect to the center of rotation. The center of rotation for inverse kinematics is also variable. This means that you can set your set your center of rotation in a corner of the robot to perform special evasion manuevers.</P>
+<P> </P>
+<P>Forward kinematics (converting an array of module states into the overall chassis motion) is performs the exact opposite of what inverse kinematics does. Since this is an overdetermined system (more equations than variables), we use a least-squares approximation.</P>
+<P> </P>
+<P>The inverse kinematics: [moduleStates] = [moduleLocations][chassisSpeeds] We take the Moore-Penrose pseudoinverse of [moduleLocations] and then multiply by [moduleStates] to get our chassis speeds.</P>
+<P> </P>
+<P>Forward kinematics is also used for odometry -- determining the position of the robot on the field using encoders and a gyro.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>NumModules</B> <P>toto</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c2ddbl.png" ALT="c2ddbl"></P>
+</TD>
+<TD>
+<B>InverseKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c2ddbl.png" ALT="c2ddbl"></P>
+</TD>
+<TD>
+<B>ForwardKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>Modules</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>TRANSLATION</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>PrevCoR</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Wheel State 0</B> <P>Swerve Drive Module state data cluster typedef.  Represents the state of one swerve module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Speed</B> <P>Speed of the wheel of the module.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Angle</B> <P>Angle of the module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Wheel State 1</B> <P>Swerve Drive Module state data cluster typedef.  Represents the state of one swerve module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Speed</B> <P>Speed of the wheel of the module.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Angle</B> <P>Angle of the module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Wheel State 2</B> <P>Swerve Drive Module state data cluster typedef.  Represents the state of one swerve module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Speed</B> <P>Speed of the wheel of the module.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Angle</B> <P>Angle of the module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Wheel State 3</B> <P>Swerve Drive Module state data cluster typedef.  Represents the state of one swerve module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Speed</B> <P>Speed of the wheel of the module.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Angle</B> <P>Angle of the module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>Chassis Speed</B> <P>Chassis Speed data cluster typedef.  Represents the speed of a robot chassis. Although this struct contains similar members compared to a Twist2d, they do NOT represent the same thing.  Whereas a Twist2d represents a change in pose w.r.t to the robot frame of reference, this ChassisSpeeds struct represents a velocity w.r.t to the robot frame of</P>
+<P>reference.</P>
+<P></P>
+<P>A strictly non-holonomic drivetrain, such as a differential drive, should never have a dy component because it can never move sideways. Holonomic drivetrains such as swerve and mecanum will often have all three components.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vX</B> <P>Represents forward velocity w.r.t the robot frame of reference. (Fwd is +)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vY</B> <P>Represents sideways velocity w.r.t the robot frame of reference. (Left is +)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vOmega</B> <P>The rotational component of the pose.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:SwerveKinematics_ToChassisSpeedsX.vi"></A><H2>Trajectory_Library.lvlib:SwerveKinematics_ToChassisSpeedsX.vi</H2>
+<P>Performs forward kinematics to return the resulting chassis state from the given module states. This method is often used for odometry -- determining the robot's position on the field using data from the real-world speed and angle of each module on the robot.</P>
+<P></P>
+<P>Parameters:   </P>
+<P>  - in Swerve Drive Kinematics - Swerve drive kinematics data structure</P>
+<P>  - wheelStates - The state of the modules (as a SwerveModuleState type) as measured from respective encoders and gyros. The order of the swerve module states should be same as passed into the constructor of this class.</P>
+<P></P>
+<P>Returns:</P>
+<P>  - The resulting chassis speed.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SwerveKinematics__ToChassisSpeedsXc.png" ALT="Trajectory_Library.lvlib:SwerveKinematics_ToChassisSpeedsX.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in SWERVE_DRIVE_KINEMATICS</B> <P>Swerve drive data cluster typedef contains data that converts a chassis velocity (dx, dy, and dtheta components) into individual module states (speed and angle).</P>
+<P> </P>
+<P>The inverse kinematics (converting from a desired chassis velocity to individual module states) uses the relative locations of the modules with respect to the center of rotation. The center of rotation for inverse kinematics is also variable. This means that you can set your set your center of rotation in a corner of the robot to perform special evasion manuevers.</P>
+<P> </P>
+<P>Forward kinematics (converting an array of module states into the overall chassis motion) is performs the exact opposite of what inverse kinematics does. Since this is an overdetermined system (more equations than variables), we use a least-squares approximation.</P>
+<P> </P>
+<P>The inverse kinematics: [moduleStates] = [moduleLocations][chassisSpeeds] We take the Moore-Penrose pseudoinverse of [moduleLocations] and then multiply by [moduleStates] to get our chassis speeds.</P>
+<P> </P>
+<P>Forward kinematics is also used for odometry -- determining the position of the robot on the field using encoders and a gyro.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>NumModules</B> <P>toto</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c2ddbl.png" ALT="c2ddbl"></P>
+</TD>
+<TD>
+<B>InverseKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c2ddbl.png" ALT="c2ddbl"></P>
+</TD>
+<TD>
+<B>ForwardKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>Modules</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>TRANSLATION</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>PrevCoR</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1dcclst.png" ALT="c1dcclst"></P>
+</TD>
+<TD>
+<B>WheelStates</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>SWERVE_DRIVE_MODULE_STATE</B> <P>Swerve Drive Module state data cluster typedef.  Represents the state of one swerve module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Speed</B> <P>Speed of the wheel of the module.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Angle</B> <P>Angle of the module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>Chassis Speed</B> <P>Chassis Speed data cluster typedef.  Represents the speed of a robot chassis. Although this struct contains similar members compared to a Twist2d, they do NOT represent the same thing.  Whereas a Twist2d represents a change in pose w.r.t to the robot frame of reference, this ChassisSpeeds struct represents a velocity w.r.t to the robot frame of</P>
+<P>reference.</P>
+<P></P>
+<P>A strictly non-holonomic drivetrain, such as a differential drive, should never have a dy component because it can never move sideways. Holonomic drivetrains such as swerve and mecanum will often have all three components.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vX</B> <P>Represents forward velocity w.r.t the robot frame of reference. (Fwd is +)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vY</B> <P>Represents sideways velocity w.r.t the robot frame of reference. (Left is +)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>vOmega</B> <P>The rotational component of the pose.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:SwerveKinematics_ToSwerveModuleStates.vi"></A><H2>Trajectory_Library.lvlib:SwerveKinematics_ToSwerveModuleStates.vi</H2>
+<P>Performs inverse kinematics to return the module states from a desired chassis velocity. This method is often used to convert joystick values into module speeds and angles.</P>
+<P>   </P>
+<P>This function also supports variable centers of rotation. During normal operations, the center of rotation is usually the same as the physical center of the robot; therefore, the argument is defaulted to that use case.  However, if you wish to change the center of rotation for evasive manuevers, vision alignment, or for any other use case, you can do so.</P>
+<P>   </P>
+<P>Parameters:</P>
+<P>  -  chassisSpeeds  -- The desired chassis speed.</P>
+<P>  -  centerOfRotation  -- The center of rotation. For example, if you set the center of rotation at one corner of the robot and provide a chassis speed that only has a dtheta component, the robot will rotate around that corner. (Meters)</P>
+<P></P>
+<P>Returns:</P>
+<P>  -  ModuleStates - An array of data structures containing the module states. Use caution because these module states are not normalized. Sometimes, a user input may cause one of the module speeds to go above the attainable max velocity. Use the {@link #normalizeWheelSpeeds(SwerveModuleState[], double) normalizeWheelSpeeds} function to rectify this issue.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SwerveKinematics__ToSwerveModuleStatesc.png" ALT="Trajectory_Library.lvlib:SwerveKinematics_ToSwerveModuleStates.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>ChassisSpeeds</B> <P>Chassis Speed data cluster typedef.  Represents the speed of a robot chassis. Although this struct contains similar members compared to a Twist2d, they do NOT represent the same thing.  Whereas a Twist2d represents a change in pose w.r.t to the robot frame of reference, this ChassisSpeeds struct represents a velocity w.r.t to the robot frame of</P>
+<P>reference.</P>
+<P></P>
+<P>A strictly non-holonomic drivetrain, such as a differential drive, should never have a dy component because it can never move sideways. Holonomic drivetrains such as swerve and mecanum will often have all three components.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>vX</B> <P>Represents forward velocity w.r.t the robot frame of reference. (Fwd is +)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>vY</B> <P>Represents sideways velocity w.r.t the robot frame of reference. (Left is +)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>vOmega</B> <P>The rotational component of the pose.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in SWERVE_DRIVE_KINEMATICS</B> <P>Swerve drive data cluster typedef contains data that converts a chassis velocity (dx, dy, and dtheta components) into individual module states (speed and angle).</P>
+<P> </P>
+<P>The inverse kinematics (converting from a desired chassis velocity to individual module states) uses the relative locations of the modules with respect to the center of rotation. The center of rotation for inverse kinematics is also variable. This means that you can set your set your center of rotation in a corner of the robot to perform special evasion manuevers.</P>
+<P> </P>
+<P>Forward kinematics (converting an array of module states into the overall chassis motion) is performs the exact opposite of what inverse kinematics does. Since this is an overdetermined system (more equations than variables), we use a least-squares approximation.</P>
+<P> </P>
+<P>The inverse kinematics: [moduleStates] = [moduleLocations][chassisSpeeds] We take the Moore-Penrose pseudoinverse of [moduleLocations] and then multiply by [moduleStates] to get our chassis speeds.</P>
+<P> </P>
+<P>Forward kinematics is also used for odometry -- determining the position of the robot on the field using encoders and a gyro.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>NumModules</B> <P>toto</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c2ddbl.png" ALT="c2ddbl"></P>
+</TD>
+<TD>
+<B>InverseKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c2ddbl.png" ALT="c2ddbl"></P>
+</TD>
+<TD>
+<B>ForwardKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>Modules</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>TRANSLATION</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>PrevCoR</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>CenterOfRotation</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>out SWERVE_DRIVE_KINEMATICS</B> <P>Swerve drive data cluster typedef contains data that converts a chassis velocity (dx, dy, and dtheta components) into individual module states (speed and angle).</P>
+<P> </P>
+<P>The inverse kinematics (converting from a desired chassis velocity to individual module states) uses the relative locations of the modules with respect to the center of rotation. The center of rotation for inverse kinematics is also variable. This means that you can set your set your center of rotation in a corner of the robot to perform special evasion manuevers.</P>
+<P> </P>
+<P>Forward kinematics (converting an array of module states into the overall chassis motion) is performs the exact opposite of what inverse kinematics does. Since this is an overdetermined system (more equations than variables), we use a least-squares approximation.</P>
+<P> </P>
+<P>The inverse kinematics: [moduleStates] = [moduleLocations][chassisSpeeds] We take the Moore-Penrose pseudoinverse of [moduleLocations] and then multiply by [moduleStates] to get our chassis speeds.</P>
+<P> </P>
+<P>Forward kinematics is also used for odometry -- determining the position of the robot on the field using encoders and a gyro.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>NumModules</B> <P>toto</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i2ddbl.png" ALT="i2ddbl"></P>
+</TD>
+<TD>
+<B>InverseKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i2ddbl.png" ALT="i2ddbl"></P>
+</TD>
+<TD>
+<B>ForwardKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1dnclst.png" ALT="i1dnclst"></P>
+</TD>
+<TD>
+<B>Modules</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>TRANSLATION</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>PrevCoR</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1dcclst.png" ALT="i1dcclst"></P>
+</TD>
+<TD>
+<B>ModuleStates</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>SWERVE_DRIVE_MODULE_STATE</B> <P>Swerve Drive Module state data cluster typedef.  Represents the state of one swerve module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Speed</B> <P>Speed of the wheel of the module.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>Angle</B> <P>Angle of the module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<HR>
+<A NAME="Trajectory_Library.lvlib:SwerveKinematics_ToSwerveModuleStatesZeroCenter.vi"></A><H2>Trajectory_Library.lvlib:SwerveKinematics_ToSwerveModuleStatesZeroCenter.vi</H2>
+<P>Performs inverse kinematics to return the module states from a desired chassis velocity. This method is often used to convert joystick values into module speeds and angles.</P>
+<P>   </P>
+<P>This uses the robot center as the center of rotation. During normal operations, the center of rotation is usually the same as the physical center of the robot; therefore, the argument is defaulted to that use case.  However, if you wish to change the center of rotation for evasive manuevers, vision alignment, or for any other use case, you can do so.</P>
+<P>   </P>
+<P>Parameters:</P>
+<P>  -  chassisSpeeds  -- The desired chassis speed.</P>
+<P></P>
+<P>Returns:</P>
+<P>  -  ModuleStates - An array of data structures containing the module states. Use caution because these module states are not normalized. Sometimes, a user input may cause one of the module speeds to go above the attainable max velocity. Use the {@link #normalizeWheelSpeeds(SwerveModuleState[], double) normalizeWheelSpeeds} function to rectify this issue.</P>
+<P><IMG SRC="Trajectory__Library_lvlib_SwerveKinematics__ToSwerveModuleStatesZeroCenterc.png" ALT="Trajectory_Library.lvlib:SwerveKinematics_ToSwerveModuleStatesZeroCenter.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>ChassisSpeeds</B> <P>Chassis Speed data cluster typedef.  Represents the speed of a robot chassis. Although this struct contains similar members compared to a Twist2d, they do NOT represent the same thing.  Whereas a Twist2d represents a change in pose w.r.t to the robot frame of reference, this ChassisSpeeds struct represents a velocity w.r.t to the robot frame of</P>
+<P>reference.</P>
+<P></P>
+<P>A strictly non-holonomic drivetrain, such as a differential drive, should never have a dy component because it can never move sideways. Holonomic drivetrains such as swerve and mecanum will often have all three components.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>vX</B> <P>Represents forward velocity w.r.t the robot frame of reference. (Fwd is +)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>vY</B> <P>Represents sideways velocity w.r.t the robot frame of reference. (Left is +)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>vOmega</B> <P>The rotational component of the pose.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>in SWERVE_DRIVE_KINEMATICS</B> <P>Swerve drive data cluster typedef contains data that converts a chassis velocity (dx, dy, and dtheta components) into individual module states (speed and angle).</P>
+<P> </P>
+<P>The inverse kinematics (converting from a desired chassis velocity to individual module states) uses the relative locations of the modules with respect to the center of rotation. The center of rotation for inverse kinematics is also variable. This means that you can set your set your center of rotation in a corner of the robot to perform special evasion manuevers.</P>
+<P> </P>
+<P>Forward kinematics (converting an array of module states into the overall chassis motion) is performs the exact opposite of what inverse kinematics does. Since this is an overdetermined system (more equations than variables), we use a least-squares approximation.</P>
+<P> </P>
+<P>The inverse kinematics: [moduleStates] = [moduleLocations][chassisSpeeds] We take the Moore-Penrose pseudoinverse of [moduleLocations] and then multiply by [moduleStates] to get our chassis speeds.</P>
+<P> </P>
+<P>Forward kinematics is also used for odometry -- determining the position of the robot on the field using encoders and a gyro.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>NumModules</B> <P>toto</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c2ddbl.png" ALT="c2ddbl"></P>
+</TD>
+<TD>
+<B>InverseKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c2ddbl.png" ALT="c2ddbl"></P>
+</TD>
+<TD>
+<B>ForwardKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>Modules</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>TRANSLATION</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>PrevCoR</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>out SWERVE_DRIVE_KINEMATICS</B> <P>Swerve drive data cluster typedef contains data that converts a chassis velocity (dx, dy, and dtheta components) into individual module states (speed and angle).</P>
+<P> </P>
+<P>The inverse kinematics (converting from a desired chassis velocity to individual module states) uses the relative locations of the modules with respect to the center of rotation. The center of rotation for inverse kinematics is also variable. This means that you can set your set your center of rotation in a corner of the robot to perform special evasion manuevers.</P>
+<P> </P>
+<P>Forward kinematics (converting an array of module states into the overall chassis motion) is performs the exact opposite of what inverse kinematics does. Since this is an overdetermined system (more equations than variables), we use a least-squares approximation.</P>
+<P> </P>
+<P>The inverse kinematics: [moduleStates] = [moduleLocations][chassisSpeeds] We take the Moore-Penrose pseudoinverse of [moduleLocations] and then multiply by [moduleStates] to get our chassis speeds.</P>
+<P> </P>
+<P>Forward kinematics is also used for odometry -- determining the position of the robot on the field using encoders and a gyro.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>NumModules</B> <P>toto</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i2ddbl.png" ALT="i2ddbl"></P>
+</TD>
+<TD>
+<B>InverseKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i2ddbl.png" ALT="i2ddbl"></P>
+</TD>
+<TD>
+<B>ForwardKinematics</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Real Matrix Element</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1dnclst.png" ALT="i1dnclst"></P>
+</TD>
+<TD>
+<B>Modules</B> <P>todo</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>TRANSLATION</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>PrevCoR</B> <P>Translation2D data cluster typedef.  Represents a translation in 2d space.  This can be used to represent a point or a vector.</P>
+<P></P>
+<P>This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>X</B> <P> The X component of the translation </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Y</B> <P> The Y component of the translation</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1dcclst.png" ALT="i1dcclst"></P>
+</TD>
+<TD>
+<B>ModuleStates</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>SWERVE_DRIVE_MODULE_STATE</B> <P>Swerve Drive Module state data cluster typedef.  Represents the state of one swerve module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Speed</B> <P>Speed of the wheel of the module.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>Angle</B> <P>Angle of the module.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>VALUE</B> <P>The rotation angle (Radians)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>COS</B> <P>The cosine of the rotation angle</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>SIN</B> <P>The sine of the rotation angle.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+</BODY>
+</HTML>
