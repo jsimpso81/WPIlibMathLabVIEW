@@ -164,7 +164,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{3324FE1F-4132-4D8A-AF7F-C111F7E60D6A}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib</Property>
+				<Property Name="Source[1].itemID" Type="Ref"></Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
 				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
@@ -213,11 +213,11 @@
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/LICENSE.txt</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/LICENSE.txt</Property>
+				<Property Name="Source[4].itemID" Type="Ref"></Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/ThirdPartyNotices.txt</Property>
+				<Property Name="Source[5].itemID" Type="Ref"></Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/VERSION.txt</Property>
+				<Property Name="Source[6].itemID" Type="Ref"></Property>
 				<Property Name="Source[7].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[7].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">3</Property>
@@ -292,7 +292,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{A01AFDAF-6767-42AC-8B1B-562B0B398ABA}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib</Property>
+				<Property Name="Source[1].itemID" Type="Ref"></Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
@@ -347,7 +347,7 @@
 				<Property Name="Source[20].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[20].type" Type="Str">Container</Property>
 				<Property Name="Source[21].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[21].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/License.rtf</Property>
+				<Property Name="Source[21].itemID" Type="Ref"></Property>
 				<Property Name="Source[21].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[22].destinationIndex" Type="Int">1</Property>
 				<Property Name="Source[22].itemID" Type="Ref">/My Computer/License.RTF</Property>
@@ -363,13 +363,13 @@
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/LICENSE.txt</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/LICENSE.txt</Property>
+				<Property Name="Source[4].itemID" Type="Ref"></Property>
 				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/ThirdPartyNotices.txt</Property>
+				<Property Name="Source[5].itemID" Type="Ref"></Property>
 				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Trajectory_Library.lvlib/VERSION.txt</Property>
+				<Property Name="Source[6].itemID" Type="Ref"></Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[7].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[7].Container.depDestIndex" Type="Int">0</Property>
