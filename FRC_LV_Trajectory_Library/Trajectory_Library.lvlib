@@ -523,8 +523,11 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="HolDrvCtrl_SetTolerance.vi" Type="VI" URL="../HolDrvCtrl_SetTolerance.vi"/>
 			</Item>
 			<Item Name="PIDAutoTune" Type="Folder">
+				<Item Name="PIDAutoTune_ClosedLoopStep.vi" Type="VI" URL="../VI/PIDAutoTune_ClosedLoopStep.vi"/>
 				<Item Name="PIDAutoTune_Convert_Academic_To_NonInteracting.vi" Type="VI" URL="../VI/PIDAutoTune_Convert_Academic_To_NonInteracting.vi"/>
-				<Item Name="PIDAutoTune_OpenLoop_ChooseMethod.vi" Type="VI" URL="../VI/PIDAutoTune_OpenLoop_ChooseMethod.vi"/>
+				<Item Name="PIDAutoTune_OpenLoopStep.vi" Type="VI" URL="../VI/PIDAutoTune_OpenLoopStep.vi"/>
+				<Item Name="PIDAutoTune_SetTuningArguments.vi" Type="VI" URL="../VI/PIDAutoTune_SetTuningArguments.vi"/>
+				<Item Name="PIDAutoTune_Step.vi" Type="VI" URL="../VI/PIDAutoTune_Step.vi"/>
 			</Item>
 			<Item Name="PIDController" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
