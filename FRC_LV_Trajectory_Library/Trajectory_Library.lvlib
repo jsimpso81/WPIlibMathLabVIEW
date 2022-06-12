@@ -59,6 +59,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="FRC_LV_CtrlLib_MerweScaledSigmaPts.mnu" Type="Document" URL="../FRC_LV_CtrlLib_MerweScaledSigmaPts.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_NumericalIntegration.mnu" Type="Document" URL="../FRC_LV_CtrlLib_NumericalIntegration.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_NumericalJacobian.mnu" Type="Document" URL="../FRC_LV_CtrlLib_NumericalJacobian.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_PIDAutoTune.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_PIDAutoTune.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Pose3d.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Pose3d.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Quaternion.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Quaternion.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Riccati.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Riccati.mnu"/>
@@ -177,6 +178,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_Apply_Deadband.vi" Type="VI" URL="../Macros/macro_Apply_Deadband.vi"/>
 		<Item Name="macro_ArmFF_Calculate.vi" Type="VI" URL="../Macros/macro_ArmFF_Calculate.vi"/>
 		<Item Name="macro_BangBang_Execute.vi" Type="VI" URL="../Macros/macro_BangBang_Execute.vi"/>
+		<Item Name="macro_BumplessTransfer.vi" Type="VI" URL="../Macros/macro_BumplessTransfer.vi"/>
 		<Item Name="macro_CallbackHelp_MatrixMinus.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMinus.vi"/>
 		<Item Name="macro_CallbackHelp_MatrixMult.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult.vi"/>
 		<Item Name="macro_CallbackHelp_MatrixMult_CoerceSizeB.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult_CoerceSizeB.vi"/>
@@ -202,6 +204,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_HolDrvController_ExecuteSP.vi" Type="VI" URL="../Macros/macro_HolDrvController_ExecuteSP.vi"/>
 		<Item Name="macro_HolDrvCtrl_New.vi" Type="VI" URL="../Macros/macro_HolDrvCtrl_New.vi"/>
 		<Item Name="macro_Input_Modulus.vi" Type="VI" URL="../Macros/macro_Input_Modulus.vi"/>
+		<Item Name="macro_LeadLag.vi" Type="VI" URL="../Macros/macro_LeadLag.vi"/>
 		<Item Name="macro_LinearFilter_ExecuteAVG.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteAVG.vi"/>
 		<Item Name="macro_LinearFilter_ExecuteTC.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteTC.vi"/>
 		<Item Name="macro_MatBuilder_Create.vi" Type="VI" URL="../Macros/macro_MatBuilder_Create.vi"/>
@@ -210,6 +213,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_MatrixHelper_CoerceSize.vi" Type="VI" URL="../Macros/macro_MatrixHelper_CoerceSize.vi"/>
 		<Item Name="macro_MecaDriveKineNew.vi" Type="VI" URL="../Macros/macro_MecaDriveKineNew.vi"/>
 		<Item Name="macro_MedianFilter_Execute.vi" Type="VI" URL="../Macros/macro_MedianFilter_Execute.vi"/>
+		<Item Name="macro_PIDAutoTune.vi" Type="VI" URL="../Macros/macro_PIDAutoTune.vi"/>
 		<Item Name="macro_PIDController_AdvExecute.vi" Type="VI" URL="../Macros/macro_PIDController_AdvExecute.vi"/>
 		<Item Name="macro_PIDController_Execute.vi" Type="VI" URL="../Macros/macro_PIDController_Execute.vi"/>
 		<Item Name="macro_Pose2d_XYAngleDeg.vi" Type="VI" URL="../Macros/macro_Pose2d_XYAngleDeg.vi"/>
@@ -260,6 +264,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_vecBuilder7x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder7x1FIll.vi"/>
 		<Item Name="macro_vecBuilder8x1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder8x1FIll.vi"/>
 		<Item Name="macro_vecBuilder_ArrayBy1FIll.vi" Type="VI" URL="../Macros/macro_vecBuilder_ArrayBy1FIll.vi"/>
+		<Item Name="macro_WaitAdjust.vi" Type="VI" URL="../Macros/macro_WaitAdjust.vi"/>
 	</Item>
 	<Item Name="TypDef" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
