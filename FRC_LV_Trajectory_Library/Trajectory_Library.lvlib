@@ -163,9 +163,12 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_ToughBoxMini_MotorChoice_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_TRAIN_SIM_STATE_ENUM.ctl"/>
-		<Item Name="LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl"/>
-		<Item Name="LTV_UNICYCLE_CONTROLLER_INPUT_ENUM.ctl" Type="VI" URL="../Enum/LTV_UNICYCLE_CONTROLLER_INPUT_ENUM.ctl"/>
-		<Item Name="LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl" Type="VI" URL="../Enum/LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl"/>
+		<Item Name="LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		</Item>
+		<Item Name="LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl" Type="VI" URL="../Enum/LTV_UNICYCLE_CONTROLLER_STATE_ENUM.ctl">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		</Item>
 		<Item Name="TRAJ_CONSTRAINT_TYPES_ENUM.ctl" Type="VI" URL="../Enum/TRAJ_CONSTRAINT_TYPES_ENUM.ctl"/>
 		<Item Name="TRAJECTORY_SPLINE_TYPE_ENUM.ctl" Type="VI" URL="../Enum/TRAJECTORY_SPLINE_TYPE_ENUM.ctl"/>
 	</Item>
