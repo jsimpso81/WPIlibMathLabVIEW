@@ -967,7 +967,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="RungeKuttaTimeVarying_Rk4_Mat_T_Y.vi" Type="VI" URL="../RungeKuttaTimeVarying_Rk4_Mat_T_Y.vi"/>
 			</Item>
 		</Item>
-		<Item Name="Matrix Utilities" Type="Folder">
+		<Item Name="Matrix and Vector" Type="Folder">
 			<Item Name="MatBuilder" Type="Folder">
 				<Item Name="MatBuilder_Create.vi" Type="VI" URL="../MatBuilder_Create.vi"/>
 				<Item Name="MatBuilder_Fill.vi" Type="VI" URL="../MatBuilder_Fill.vi"/>
@@ -1013,6 +1013,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="VecBuilder_7x1Fill.vi" Type="VI" URL="../VecBuilder_7x1Fill.vi"/>
 				<Item Name="VecBuilder_8x1Fill.vi" Type="VI" URL="../VecBuilder_8x1Fill.vi"/>
 				<Item Name="VecBuilder_ArrayBy1Fill.vi" Type="VI" URL="../VecBuilder_ArrayBy1Fill.vi"/>
+			</Item>
+			<Item Name="Vector" Type="Folder">
+				<Item Name="Vector_Dot.vi" Type="VI" URL="../VI/Vector_Dot.vi"/>
+				<Item Name="Vector_Norm.vi" Type="VI" URL="../VI/Vector_Norm.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Model " Type="Folder">
