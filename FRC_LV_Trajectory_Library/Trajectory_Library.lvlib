@@ -673,6 +673,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="CoordinateSystem" Type="Folder">
 				<Item Name="CoordSystem_Convert_Pose3d.vi" Type="VI" URL="../VI/CoordSystem_Convert_Pose3d.vi"/>
 				<Item Name="CoordSystem_Convert_Rotation3d.vi" Type="VI" URL="../VI/CoordSystem_Convert_Rotation3d.vi"/>
+				<Item Name="CoordSystem_Convert_Transform3d.vi" Type="VI" URL="../VI/CoordSystem_Convert_Transform3d.vi"/>
 				<Item Name="CoordSystem_Convert_Translation3d.vi" Type="VI" URL="../VI/CoordSystem_Convert_Translation3d.vi"/>
 				<Item Name="CoordSystem_EDN.vi" Type="VI" URL="../VI/CoordSystem_EDN.vi"/>
 				<Item Name="CoordSystem_NED.vi" Type="VI" URL="../VI/CoordSystem_NED.vi"/>
