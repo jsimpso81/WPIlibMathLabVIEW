@@ -83,6 +83,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="FRC_LV_CtrlLib_Twist3d.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Twist3d.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_UnitsConv.mnu" Type="Document" URL="../FRC_LV_CtrlLib_UnitsConv.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_UnscentedKalmanFilter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_UnscentedKalmanFilter.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Vector.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_Vector.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_VectorBuilder.mnu" Type="Document" URL="../FRC_LV_CtrlLib_VectorBuilder.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Vision.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Vision.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_VisionUtility.mnu" Type="Document" URL="../FRC_LV_CtrlLib_VisionUtility.mnu"/>
