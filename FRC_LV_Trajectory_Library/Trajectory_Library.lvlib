@@ -740,6 +740,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Rotation2d_CreateAngleDegrees.vi" Type="VI" URL="../Rotation2d_CreateAngleDegrees.vi"/>
 				<Item Name="Rotation2d_CreateAngleRotations.vi" Type="VI" URL="../Rotation2d_CreateAngleRotations.vi"/>
 				<Item Name="Rotation2d_CreateXY.vi" Type="VI" URL="../Rotation2d_CreateXY.vi"/>
+				<Item Name="Rotation2d_Div.vi" Type="VI" URL="../VI/Rotation2d_Div.vi"/>
 				<Item Name="Rotation2d_Equals.vi" Type="VI" URL="../Rotation2d_Equals.vi"/>
 				<Item Name="Rotation2d_GetAngleCosSin.vi" Type="VI" URL="../Rotation2d_GetAngleCosSin.vi"/>
 				<Item Name="Rotation2d_GetCos.vi" Type="VI" URL="../Rotation2d_GetCos.vi"/>
@@ -762,6 +763,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Rotation3d_Create_Quaternion.vi" Type="VI" URL="../VI/Rotation3d_Create_Quaternion.vi"/>
 				<Item Name="Rotation3d_Create_RollPitchYaw.vi" Type="VI" URL="../VI/Rotation3d_Create_RollPitchYaw.vi"/>
 				<Item Name="Rotation3D_Create_RotMatrix.vi" Type="VI" URL="../VI/Rotation3D_Create_RotMatrix.vi"/>
+				<Item Name="Rotation3d_Div.vi" Type="VI" URL="../VI/Rotation3d_Div.vi"/>
 				<Item Name="Rotation3d_Equals.vi" Type="VI" URL="../VI/Rotation3d_Equals.vi"/>
 				<Item Name="Rotation3d_GetAxisAngle.vi" Type="VI" URL="../VI/Rotation3d_GetAxisAngle.vi"/>
 				<Item Name="Rotation3d_GetQuaterion.vi" Type="VI" URL="../VI/Rotation3d_GetQuaterion.vi"/>
@@ -777,6 +779,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="Transform2d" Type="Folder">
 				<Item Name="Transform2d_Create_PosePose.vi" Type="VI" URL="../Transform2d_Create_PosePose.vi"/>
 				<Item Name="Transform2d_Create_TransRot.vi" Type="VI" URL="../Transform2d_Create_TransRot.vi"/>
+				<Item Name="Transform2d_Div.vi" Type="VI" URL="../VI/Transform2d_Div.vi"/>
 				<Item Name="Transform2d_Equals.vi" Type="VI" URL="../Transform2d_Equals.vi"/>
 				<Item Name="Transform2d_GetRotation.vi" Type="VI" URL="../Transform2d_GetRotation.vi"/>
 				<Item Name="Transform2d_GetTranslation.vi" Type="VI" URL="../Transform2d_GetTranslation.vi"/>
@@ -790,6 +793,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Transform3d_Create_Default.vi" Type="VI" URL="../VI/Transform3d_Create_Default.vi"/>
 				<Item Name="Transform3d_Create_Pose3dPose3d.vi" Type="VI" URL="../VI/Transform3d_Create_Pose3dPose3d.vi"/>
 				<Item Name="Transform3d_Create_Trans3dRot3d.vi" Type="VI" URL="../VI/Transform3d_Create_Trans3dRot3d.vi"/>
+				<Item Name="Transform3d_Div.vi" Type="VI" URL="../VI/Transform3d_Div.vi"/>
 				<Item Name="Transform3d_Equals.vi" Type="VI" URL="../VI/Transform3d_Equals.vi"/>
 				<Item Name="Transform3d_GetRotation3d.vi" Type="VI" URL="../VI/Transform3d_GetRotation3d.vi"/>
 				<Item Name="Transform3d_GetTranslation3d.vi" Type="VI" URL="../VI/Transform3d_GetTranslation3d.vi"/>
@@ -801,6 +805,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="Translation2d" Type="Folder">
 				<Item Name="Translation2d_Create.vi" Type="VI" URL="../Translation2d_Create.vi"/>
 				<Item Name="Translation2d_Create_DistAng.vi" Type="VI" URL="../Translation2d_Create_DistAng.vi"/>
+				<Item Name="Translation2d_Div.vi" Type="VI" URL="../VI/Translation2d_Div.vi"/>
 				<Item Name="Translation2d_Equals.vi" Type="VI" URL="../Translation2d_Equals.vi"/>
 				<Item Name="Translation2d_GetAngle.vi" Type="VI" URL="../Translation2d_GetAngle.vi"/>
 				<Item Name="Translation2d_GetDistance.vi" Type="VI" URL="../Translation2d_GetDistance.vi"/>
