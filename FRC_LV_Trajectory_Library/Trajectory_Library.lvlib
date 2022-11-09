@@ -556,6 +556,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="PIDController_GetPID.vi" Type="VI" URL="../PIDController_GetPID.vi"/>
 				<Item Name="PIDController_GetPositionError.vi" Type="VI" URL="../PIDController_GetPositionError.vi"/>
 				<Item Name="PIDController_GetSetpoint.vi" Type="VI" URL="../PIDController_GetSetpoint.vi"/>
+				<Item Name="PIDController_GetTolerance.vi" Type="VI" URL="../PIDController_GetTolerance.vi"/>
 				<Item Name="PIDController_GetVelocityError.vi" Type="VI" URL="../PIDController_GetVelocityError.vi"/>
 				<Item Name="PIDController_IsContinousInputEnabled.vi" Type="VI" URL="../PIDController_IsContinousInputEnabled.vi"/>
 				<Item Name="PIDController_New.vi" Type="VI" URL="../PIDController_New.vi"/>
@@ -596,6 +597,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="ProfiledPIDController_GetPID.vi" Type="VI" URL="../ProfiledPIDController_GetPID.vi"/>
 				<Item Name="ProfiledPIDController_GetPositionError.vi" Type="VI" URL="../ProfiledPIDController_GetPositionError.vi"/>
 				<Item Name="ProfiledPIDController_GetSetpoint.vi" Type="VI" URL="../ProfiledPIDController_GetSetpoint.vi"/>
+				<Item Name="ProfiledPIDController_GetTolerance.vi" Type="VI" URL="../ProfiledPIDController_GetTolerance.vi"/>
 				<Item Name="ProfiledPIDController_GetVelocityError.vi" Type="VI" URL="../ProfiledPIDController_GetVelocityError.vi"/>
 				<Item Name="ProfiledPIDController_New.vi" Type="VI" URL="../ProfiledPIDController_New.vi"/>
 				<Item Name="ProfiledPIDController_NewPeriod.vi" Type="VI" URL="../ProfiledPIDController_NewPeriod.vi"/>
