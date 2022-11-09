@@ -684,6 +684,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="CoordSystem_NWU.vi" Type="VI" URL="../VI/CoordSystem_NWU.vi"/>
 			</Item>
 			<Item Name="Pose2d" Type="Folder">
+				<Item Name="Pose2d_Div.vi" Type="VI" URL="../VI/Pose2d_Div.vi"/>
 				<Item Name="Pose2d_Equals.vi" Type="VI" URL="../Pose2d_Equals.vi"/>
 				<Item Name="Pose2d_Exp.vi" Type="VI" URL="../Pose2d_Exp.vi"/>
 				<Item Name="Pose2d_getRotation.vi" Type="VI" URL="../Pose2d_getRotation.vi"/>
@@ -697,9 +698,11 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Pose2d_New_TRRO.vi" Type="VI" URL="../Pose2d_New_TRRO.vi"/>
 				<Item Name="Pose2d_Plus.vi" Type="VI" URL="../Pose2d_Plus.vi"/>
 				<Item Name="Pose2d_RelativeTo.vi" Type="VI" URL="../Pose2d_RelativeTo.vi"/>
+				<Item Name="Pose2d_Times.vi" Type="VI" URL="../VI/Pose2d_Times.vi"/>
 				<Item Name="Pose2d_TransformBy.vi" Type="VI" URL="../Pose2d_TransformBy.vi"/>
 			</Item>
 			<Item Name="Pose3d" Type="Folder">
+				<Item Name="Pose3d_Div.vi" Type="VI" URL="../VI/Pose3d_Div.vi"/>
 				<Item Name="Pose3d_Equals.vi" Type="VI" URL="../VI/Pose3d_Equals.vi"/>
 				<Item Name="Pose3d_Exp.vi" Type="VI" URL="../VI/Pose3d_Exp.vi"/>
 				<Item Name="Pose3d_getRotation3d.vi" Type="VI" URL="../VI/Pose3d_getRotation3d.vi"/>
@@ -717,6 +720,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Pose3d_RotationVectorToMatrix.vi" Type="VI" URL="../VI/Pose3d_RotationVectorToMatrix.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
+				<Item Name="Pose3d_Times.vi" Type="VI" URL="../VI/Pose3d_Times.vi"/>
 				<Item Name="Pose3d_ToPose2d.vi" Type="VI" URL="../VI/Pose3d_ToPose2d.vi"/>
 				<Item Name="Pose3d_TransformBy.vi" Type="VI" URL="../VI/Pose3d_TransformBy.vi"/>
 			</Item>
