@@ -708,6 +708,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Pose3d_Minus.vi" Type="VI" URL="../VI/Pose3d_Minus.vi"/>
 				<Item Name="Pose3d_New.vi" Type="VI" URL="../VI/Pose3d_New.vi"/>
 				<Item Name="Pose3d_New_Default.vi" Type="VI" URL="../VI/Pose3d_New_Default.vi"/>
+				<Item Name="Pose3d_New_Pose2d.vi" Type="VI" URL="../VI/Pose3d_New_Pose2d.vi"/>
 				<Item Name="Pose3d_New_Trans3dRot3d.vi" Type="VI" URL="../VI/Pose3d_New_Trans3dRot3d.vi"/>
 				<Item Name="Pose3d_Plus.vi" Type="VI" URL="../VI/Pose3d_Plus.vi"/>
 				<Item Name="Pose3d_RelativeTo.vi" Type="VI" URL="../VI/Pose3d_RelativeTo.vi"/>
@@ -842,6 +843,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		</Item>
 		<Item Name="Kinematics_Odometry" Type="Folder">
 			<Item Name="ChassisSpeeds" Type="Folder">
+				<Item Name="ChassisSpeeds_FromFieldRelativeChassisSpeeds.vi" Type="VI" URL="../ChassisSpeeds_FromFieldRelativeChassisSpeeds.vi"/>
 				<Item Name="ChassisSpeeds_FromFieldRelativeSpeeds.vi" Type="VI" URL="../ChassisSpeeds_FromFieldRelativeSpeeds.vi"/>
 				<Item Name="ChassisSpeeds_GetXYOmega.vi" Type="VI" URL="../ChassisSpeeds_GetXYOmega.vi"/>
 				<Item Name="ChassisSpeeds_New.vi" Type="VI" URL="../ChassisSpeeds_New.vi"/>
