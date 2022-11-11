@@ -342,6 +342,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="SPLINE.ctl" Type="VI" URL="../TypeDef/SPLINE.ctl"/>
 		<Item Name="SPLINE_CTRL_VECTOR.ctl" Type="VI" URL="../TypeDef/SPLINE_CTRL_VECTOR.ctl"/>
 		<Item Name="SWERVE_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_KINEMATICS.ctl"/>
+		<Item Name="SWERVE_DRIVE_MODULE_POSITION.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_MODULE_POSITION.ctl"/>
 		<Item Name="SWERVE_DRIVE_MODULE_STATE.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_MODULE_STATE.ctl"/>
 		<Item Name="SWERVE_DRIVE_ODOMETRY.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="SWERVE_DRIVE_POSE_EST.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_POSE_EST.ctl"/>
@@ -885,10 +886,12 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="MecaOdometry_New.vi" Type="VI" URL="../MecaOdometry_New.vi"/>
 				<Item Name="MecaOdometry_NewDefaultPose.vi" Type="VI" URL="../MecaOdometry_NewDefaultPose.vi"/>
 				<Item Name="MecaOdometry_Reset.vi" Type="VI" URL="../MecaOdometry_Reset.vi"/>
-				<Item Name="MecaOdometry_UpdateWithTime.vi" Type="VI" URL="../MecaOdometry_UpdateWithTime.vi"/>
+				<Item Name="MecaOdometry_Update.vi" Type="VI" URL="../MecaOdometry_Update.vi"/>
 			</Item>
 			<Item Name="MecaWheelPositions" Type="Folder">
+				<Item Name="MecaWheelPos_Get.vi" Type="VI" URL="../VI/MecaWheelPos_Get.vi"/>
 				<Item Name="MecaWheelPos_New.vi" Type="VI" URL="../VI/MecaWheelPos_New.vi"/>
+				<Item Name="MecaWheelPos_Sub.vi" Type="VI" URL="../VI/MecaWheelPos_Sub.vi"/>
 			</Item>
 			<Item Name="MecaWheelSpeeds" Type="Folder">
 				<Item Name="MecaWheel_GetAll.vi" Type="VI" URL="../MecaWheel_GetAll.vi"/>
@@ -903,6 +906,13 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="SwerveKinematics_ToChassisSpeedsX.vi" Type="VI" URL="../SwerveKinematics_ToChassisSpeedsX.vi"/>
 				<Item Name="SwerveKinematics_ToSwerveModuleStates.vi" Type="VI" URL="../SwerveKinematics_ToSwerveModuleStates.vi"/>
 				<Item Name="SwerveKinematics_ToSwerveModuleStatesZeroCenter.vi" Type="VI" URL="../SwerveKinematics_ToSwerveModuleStatesZeroCenter.vi"/>
+				<Item Name="SwerveKinematics_ToTwist2dX.vi" Type="VI" URL="../VI/SwerveKinematics_ToTwist2dX.vi"/>
+				<Item Name="SwerveKinematics_ToTwst2d4.vi" Type="VI" URL="../VI/SwerveKinematics_ToTwst2d4.vi"/>
+			</Item>
+			<Item Name="SwerveModulePositions" Type="Folder">
+				<Item Name="SwerveModulePosition_CompareTo.vi" Type="VI" URL="../VI/SwerveModulePosition_CompareTo.vi"/>
+				<Item Name="SwerveModulePosition_Get.vi" Type="VI" URL="../VI/SwerveModulePosition_Get.vi"/>
+				<Item Name="SwerveModulePosition_New.vi" Type="VI" URL="../VI/SwerveModulePosition_New.vi"/>
 			</Item>
 			<Item Name="SwerveModuleState" Type="Folder">
 				<Item Name="SwerveModuleState_CompareTo.vi" Type="VI" URL="../SwerveModuleState_CompareTo.vi"/>
@@ -916,8 +926,6 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="SwerveOdometry_NewZeroCenter.vi" Type="VI" URL="../SwerveOdometry_NewZeroCenter.vi"/>
 				<Item Name="SwerveOdometry_ResetPosition.vi" Type="VI" URL="../SwerveOdometry_ResetPosition.vi"/>
 				<Item Name="SwerveOdometry_Update4.vi" Type="VI" URL="../SwerveOdometry_Update4.vi"/>
-				<Item Name="SwerveOdometry_UpdateWithTime4.vi" Type="VI" URL="../SwerveOdometry_UpdateWithTime4.vi"/>
-				<Item Name="SwerveOdometry_UpdateWithTimeX.vi" Type="VI" URL="../SwerveOdometry_UpdateWithTimeX.vi"/>
 				<Item Name="SwerveOdometry_UpdateX.vi" Type="VI" URL="../SwerveOdometry_UpdateX.vi"/>
 			</Item>
 		</Item>
