@@ -313,6 +313,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="MECA_DRIVE_POSE_EST.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_POSE_EST.ctl"/>
+		<Item Name="MECA_WHEEL_POSITIONS.ctl" Type="VI" URL="../TypeDef/MECA_WHEEL_POSITIONS.ctl"/>
 		<Item Name="MECA_WHEEL_SPEEDS.ctl" Type="VI" URL="../TypeDef/MECA_WHEEL_SPEEDS.ctl"/>
 		<Item Name="MEDIAN_FILTER.ctl" Type="VI" URL="../TypeDef/MEDIAN_FILTER.ctl"/>
 		<Item Name="MERWE_SCALED_SIGMA_PTS.ctl" Type="VI" URL="../TypeDef/MERWE_SCALED_SIGMA_PTS.ctl"/>
@@ -874,6 +875,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="MecaKinematics_New.vi" Type="VI" URL="../MecaKinematics_New.vi"/>
 				<Item Name="MecaKinematics_SetInverseKinematics.vi" Type="VI" URL="../MecaKinematics_SetInverseKinematics.vi"/>
 				<Item Name="MecaKinematics_ToChassisSpeeds.vi" Type="VI" URL="../MecaKinematics_ToChassisSpeeds.vi"/>
+				<Item Name="MecaKinematics_ToTwist2d.vi" Type="VI" URL="../VI/MecaKinematics_ToTwist2d.vi"/>
 				<Item Name="MecaKinematics_ToWheelSpeeds.vi" Type="VI" URL="../MecaKinematics_ToWheelSpeeds.vi"/>
 				<Item Name="MecaKinematics_ToWheelSpeedsZeroCenter.vi" Type="VI" URL="../MecaKinematics_ToWheelSpeedsZeroCenter.vi"/>
 			</Item>
@@ -883,8 +885,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="MecaOdometry_New.vi" Type="VI" URL="../MecaOdometry_New.vi"/>
 				<Item Name="MecaOdometry_NewDefaultPose.vi" Type="VI" URL="../MecaOdometry_NewDefaultPose.vi"/>
 				<Item Name="MecaOdometry_Reset.vi" Type="VI" URL="../MecaOdometry_Reset.vi"/>
-				<Item Name="MecaOdometry_Update.vi" Type="VI" URL="../MecaOdometry_Update.vi"/>
 				<Item Name="MecaOdometry_UpdateWithTime.vi" Type="VI" URL="../MecaOdometry_UpdateWithTime.vi"/>
+			</Item>
+			<Item Name="MecaWheelPositions" Type="Folder">
+				<Item Name="MecaWheelPos_New.vi" Type="VI" URL="../VI/MecaWheelPos_New.vi"/>
 			</Item>
 			<Item Name="MecaWheelSpeeds" Type="Folder">
 				<Item Name="MecaWheel_GetAll.vi" Type="VI" URL="../MecaWheel_GetAll.vi"/>
