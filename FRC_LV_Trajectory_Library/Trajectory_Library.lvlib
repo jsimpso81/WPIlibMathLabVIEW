@@ -56,6 +56,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="FRC_LV_CtrlLib_Matrix2.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Matrix2.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Matrix_Helper.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Matrix_Helper.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Meca_Drive_Pose_Est.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Meca_Drive_Pose_Est.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Meca_Wheel_Pos.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_Meca_Wheel_Pos.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_MerweScaledSigmaPts.mnu" Type="Document" URL="../FRC_LV_CtrlLib_MerweScaledSigmaPts.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_NumericalIntegration.mnu" Type="Document" URL="../FRC_LV_CtrlLib_NumericalIntegration.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_NumericalJacobian.mnu" Type="Document" URL="../FRC_LV_CtrlLib_NumericalJacobian.mnu"/>
@@ -71,6 +72,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="FRC_LV_CtrlLib_StateSpaceModel.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceModel.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtil.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtil.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Swerve_Wheel_Pos.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_Swerve_Wheel_Pos.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_SwervePoseEst.mnu" Type="Document" URL="../FRC_LV_CtrlLib_SwervePoseEst.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_TimeInterp_Boolean.mnu" Type="Document" URL="../FRC_LV_CtrlLib_TimeInterp_Boolean.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_TimeInterp_Double.mnu" Type="Document" URL="../FRC_LV_CtrlLib_TimeInterp_Double.mnu"/>
