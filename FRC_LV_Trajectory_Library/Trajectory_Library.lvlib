@@ -218,6 +218,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_MathUtils_ClampInput.vi" Type="VI" URL="../Macros/macro_MathUtils_ClampInput.vi"/>
 		<Item Name="macro_MatrixHelper_CoerceSize.vi" Type="VI" URL="../Macros/macro_MatrixHelper_CoerceSize.vi"/>
 		<Item Name="macro_MecaDriveKineNew.vi" Type="VI" URL="../Macros/macro_MecaDriveKineNew.vi"/>
+		<Item Name="macro_MecaDriveOdomNew.vi" Type="VI" URL="../Macros/macro_MecaDriveOdomNew.vi"/>
 		<Item Name="macro_MedianFilter_Execute.vi" Type="VI" URL="../Macros/macro_MedianFilter_Execute.vi"/>
 		<Item Name="macro_PIDAutoTune.vi" Type="VI" URL="../Macros/macro_PIDAutoTune.vi"/>
 		<Item Name="macro_PIDController_AdvExecute.vi" Type="VI" URL="../Macros/macro_PIDController_AdvExecute.vi"/>
