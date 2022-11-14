@@ -219,6 +219,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_MatrixHelper_CoerceSize.vi" Type="VI" URL="../Macros/macro_MatrixHelper_CoerceSize.vi"/>
 		<Item Name="macro_MecaDriveKineNew.vi" Type="VI" URL="../Macros/macro_MecaDriveKineNew.vi"/>
 		<Item Name="macro_MecaDriveOdomNew.vi" Type="VI" URL="../Macros/macro_MecaDriveOdomNew.vi"/>
+		<Item Name="macro_MecaDriveOdomUpdate.vi" Type="VI" URL="../Macros/macro_MecaDriveOdomUpdate.vi"/>
 		<Item Name="macro_MedianFilter_Execute.vi" Type="VI" URL="../Macros/macro_MedianFilter_Execute.vi"/>
 		<Item Name="macro_PIDAutoTune.vi" Type="VI" URL="../Macros/macro_PIDAutoTune.vi"/>
 		<Item Name="macro_PIDController_AdvExecute.vi" Type="VI" URL="../Macros/macro_PIDController_AdvExecute.vi"/>
@@ -245,6 +246,11 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_SlewRateLimter_Execute.vi" Type="VI" URL="../Macros/macro_SlewRateLimter_Execute.vi"/>
 		<Item Name="macro_SwerveDriveKineNew4.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNew4.vi"/>
 		<Item Name="macro_SwerveDriveKineNewX.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNewX.vi"/>
+		<Item Name="macro_SwerveDriveOdomNew4.vi" Type="VI" URL="../Macros/macro_SwerveDriveOdomNew4.vi"/>
+		<Item Name="macro_SwerveDriveOdomUpdate4.vi" Type="VI" URL="../Macros/macro_SwerveDriveOdomUpdate4.vi"/>
+		<Item Name="macro_SwerveModPosNew4.vi" Type="VI" URL="../Macros/macro_SwerveModPosNew4.vi"/>
+		<Item Name="macro_SwerveModStateNew4.vi" Type="VI" URL="../Macros/macro_SwerveModStateNew4.vi"/>
+		<Item Name="macro_SwerveModStatePosNew4.vi" Type="VI" URL="../Macros/macro_SwerveModStatePosNew4.vi"/>
 		<Item Name="macro_Trajectory_FGV_Template.vi" Type="VI" URL="../Macros/macro_Trajectory_FGV_Template.vi"/>
 		<Item Name="macro_TrajectoryConstraint_CentripAccel.vi" Type="VI" URL="../Macros/macro_TrajectoryConstraint_CentripAccel.vi"/>
 		<Item Name="macro_TrajectoryConstraint_DiffKine.vi" Type="VI" URL="../Macros/macro_TrajectoryConstraint_DiffKine.vi"/>
