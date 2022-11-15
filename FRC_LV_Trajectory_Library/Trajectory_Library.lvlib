@@ -220,6 +220,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_MecaDriveKineNew.vi" Type="VI" URL="../Macros/macro_MecaDriveKineNew.vi"/>
 		<Item Name="macro_MecaDriveOdomNew.vi" Type="VI" URL="../Macros/macro_MecaDriveOdomNew.vi"/>
 		<Item Name="macro_MecaDriveOdomUpdate.vi" Type="VI" URL="../Macros/macro_MecaDriveOdomUpdate.vi"/>
+		<Item Name="macro_MecaWheelSpeedNormalize.vi" Type="VI" URL="../Macros/macro_MecaWheelSpeedNormalize.vi"/>
 		<Item Name="macro_MedianFilter_Execute.vi" Type="VI" URL="../Macros/macro_MedianFilter_Execute.vi"/>
 		<Item Name="macro_PIDAutoTune.vi" Type="VI" URL="../Macros/macro_PIDAutoTune.vi"/>
 		<Item Name="macro_PIDController_AdvExecute.vi" Type="VI" URL="../Macros/macro_PIDController_AdvExecute.vi"/>
