@@ -392,9 +392,32 @@ This implements the math section (and some other routines) contained in FRC WPIL
 	</Item>
 	<Item Name="VI" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
-		<Item Name="Base_Analog" Type="Folder">
+		<Item Name="Base_Time" Type="Folder">
+			<Item Name="Timer" Type="Folder">
+				<Item Name="Timer_Close.vi" Type="VI" URL="../Timer_Close.vi"/>
+				<Item Name="Timer_Get.vi" Type="VI" URL="../Timer_Get.vi"/>
+				<Item Name="Timer_GetAndReset.vi" Type="VI" URL="../Timer_GetAndReset.vi"/>
+				<Item Name="Timer_GetInternal.vi" Type="VI" URL="../Timer_GetInternal.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+				<Item Name="Timer_HasPeriodPassed.vi" Type="VI" URL="../Timer_HasPeriodPassed.vi"/>
+				<Item Name="Timer_HasPeriodPassedOnce.vi" Type="VI" URL="../Timer_HasPeriodPassedOnce.vi"/>
+				<Item Name="Timer_New.vi" Type="VI" URL="../Timer_New.vi"/>
+				<Item Name="Timer_Reset.vi" Type="VI" URL="../Timer_Reset.vi"/>
+				<Item Name="Timer_ResetInternal.vi" Type="VI" URL="../Timer_ResetInternal.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+				<Item Name="Timer_Start.vi" Type="VI" URL="../Timer_Start.vi"/>
+				<Item Name="Timer_Stop.vi" Type="VI" URL="../Timer_Stop.vi"/>
+				<Item Name="Timer_StopInternal.vi" Type="VI" URL="../Timer_StopInternal.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+			</Item>
+			<Item Name="WaitAdjust.vi" Type="VI" URL="../VI/WaitAdjust.vi"/>
+		</Item>
+		<Item Name="Classical Analog" Type="Folder">
 			<Item Name="AnalogDelay" Type="Folder">
-				<Item Name="Analog_Delay.vi" Type="VI" URL="../VI/Analog_Delay.vi"/>
+				<Item Name="AnalogDelay_Execute.vi" Type="VI" URL="../VI/AnalogDelay_Execute.vi"/>
 			</Item>
 			<Item Name="BumplessTransfer" Type="Folder">
 				<Item Name="BumplessTransfer_Execute.vi" Type="VI" URL="../VI/BumplessTransfer_Execute.vi"/>
@@ -453,45 +476,6 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="SlewRateLimiter_Reset.vi" Type="VI" URL="../SlewRateLimiter_Reset.vi"/>
 				<Item Name="SlewRateLimiter_SetRate.vi" Type="VI" URL="../SlewRateLimiter_SetRate.vi"/>
 			</Item>
-		</Item>
-		<Item Name="Base_Digital" Type="Folder">
-			<Item Name="Debouncer" Type="Folder">
-				<Item Name="Debouncer_Calculate.vi" Type="VI" URL="../Debouncer_Calculate.vi"/>
-				<Item Name="Debouncer_Execute.vi" Type="VI" URL="../Debouncer_Execute.vi"/>
-				<Item Name="Debouncer_HasElapsed.vi" Type="VI" URL="../Debouncer_HasElapsed.vi"/>
-				<Item Name="Debouncer_New.vi" Type="VI" URL="../Debouncer_New.vi"/>
-				<Item Name="Debouncer_Reset.vi" Type="VI" URL="../Debouncer_Reset.vi"/>
-			</Item>
-			<Item Name="DigSeqLogic" Type="Folder">
-				<Item Name="DigSeqLogic_Delay.vi" Type="VI" URL="../VI/DigSeqLogic_Delay.vi"/>
-				<Item Name="DigSeqLogic_Off_Delay.vi" Type="VI" URL="../DigSeqLogic_Off_Delay.vi"/>
-				<Item Name="DigSeqLogic_On_Delay.vi" Type="VI" URL="../DigSeqLogic_On_Delay.vi"/>
-				<Item Name="DigSeqLogic_One_Shot.vi" Type="VI" URL="../DigSeqLogic_One_Shot.vi"/>
-				<Item Name="DigSeqLogic_SR_FlipFlop.vi" Type="VI" URL="../DigSeqLogic_SR_FlipFlop.vi"/>
-			</Item>
-		</Item>
-		<Item Name="Base_Time" Type="Folder">
-			<Item Name="Timer" Type="Folder">
-				<Item Name="Timer_Close.vi" Type="VI" URL="../Timer_Close.vi"/>
-				<Item Name="Timer_Get.vi" Type="VI" URL="../Timer_Get.vi"/>
-				<Item Name="Timer_GetAndReset.vi" Type="VI" URL="../Timer_GetAndReset.vi"/>
-				<Item Name="Timer_GetInternal.vi" Type="VI" URL="../Timer_GetInternal.vi">
-					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-				</Item>
-				<Item Name="Timer_HasPeriodPassed.vi" Type="VI" URL="../Timer_HasPeriodPassed.vi"/>
-				<Item Name="Timer_HasPeriodPassedOnce.vi" Type="VI" URL="../Timer_HasPeriodPassedOnce.vi"/>
-				<Item Name="Timer_New.vi" Type="VI" URL="../Timer_New.vi"/>
-				<Item Name="Timer_Reset.vi" Type="VI" URL="../Timer_Reset.vi"/>
-				<Item Name="Timer_ResetInternal.vi" Type="VI" URL="../Timer_ResetInternal.vi">
-					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-				</Item>
-				<Item Name="Timer_Start.vi" Type="VI" URL="../Timer_Start.vi"/>
-				<Item Name="Timer_Stop.vi" Type="VI" URL="../Timer_Stop.vi"/>
-				<Item Name="Timer_StopInternal.vi" Type="VI" URL="../Timer_StopInternal.vi">
-					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-				</Item>
-			</Item>
-			<Item Name="WaitAdjust.vi" Type="VI" URL="../VI/WaitAdjust.vi"/>
 		</Item>
 		<Item Name="Controller" Type="Folder">
 			<Item Name="ArmFeedforward" Type="Folder">
@@ -674,6 +658,22 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="Conv_Rotations_Degrees.vi" Type="VI" URL="../VI/Conv_Rotations_Degrees.vi"/>
 			<Item Name="Conv_Rotations_Radians.vi" Type="VI" URL="../VI/Conv_Rotations_Radians.vi"/>
 			<Item Name="Conv_Yards_Meters.vi" Type="VI" URL="../Conv_Yards_Meters.vi"/>
+		</Item>
+		<Item Name="Digital Control" Type="Folder">
+			<Item Name="Debouncer" Type="Folder">
+				<Item Name="Debouncer_Calculate.vi" Type="VI" URL="../Debouncer_Calculate.vi"/>
+				<Item Name="Debouncer_Execute.vi" Type="VI" URL="../Debouncer_Execute.vi"/>
+				<Item Name="Debouncer_HasElapsed.vi" Type="VI" URL="../Debouncer_HasElapsed.vi"/>
+				<Item Name="Debouncer_New.vi" Type="VI" URL="../Debouncer_New.vi"/>
+				<Item Name="Debouncer_Reset.vi" Type="VI" URL="../Debouncer_Reset.vi"/>
+			</Item>
+			<Item Name="DigSeqLogic" Type="Folder">
+				<Item Name="DigSeqLogic_Delay.vi" Type="VI" URL="../VI/DigSeqLogic_Delay.vi"/>
+				<Item Name="DigSeqLogic_Off_Delay.vi" Type="VI" URL="../DigSeqLogic_Off_Delay.vi"/>
+				<Item Name="DigSeqLogic_On_Delay.vi" Type="VI" URL="../DigSeqLogic_On_Delay.vi"/>
+				<Item Name="DigSeqLogic_One_Shot.vi" Type="VI" URL="../DigSeqLogic_One_Shot.vi"/>
+				<Item Name="DigSeqLogic_SR_FlipFlop.vi" Type="VI" URL="../DigSeqLogic_SR_FlipFlop.vi"/>
+			</Item>
 		</Item>
 		<Item Name="Geometry" Type="Folder">
 			<Item Name="CoordinateAxis" Type="Folder">
