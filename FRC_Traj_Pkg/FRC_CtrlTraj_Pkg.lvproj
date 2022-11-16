@@ -54,6 +54,9 @@
 			<Item Name="LICENSE.txt" Type="Document" URL="../UtilExe/bin/LICENSE.txt"/>
 			<Item Name="pathfinder.dll" Type="Document" URL="../UtilExe/bin/pathfinder.dll"/>
 		</Item>
+		<Item Name="Doc" Type="Folder">
+			<Item Name="FRC_Ctrl_Traj_Lib_Reference.pdf" Type="Document" URL="../Doc/FRC_Ctrl_Traj_Lib_Reference.pdf"/>
+		</Item>
 		<Item Name="Dummy_Function_References" Type="Folder">
 			<Item Name="Dummy_Func_VAR_dblX.vi" Type="VI" URL="../Dummy_Func_VAR_dblX.vi"/>
 			<Item Name="Dummy_Func_VAR_dblXU.vi" Type="VI" URL="../Dummy_Func_VAR_dblXU.vi"/>
@@ -261,7 +264,7 @@
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">392</Property>
+				<Property Name="Bld_version.build" Type="Int">393</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">12</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -399,7 +402,7 @@
 				<Property Name="Bld_previewCacheID" Type="Str">{8D079E02-BFA0-46FB-8CDC-1B67AE60BD8E}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/Book_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">40</Property>
+				<Property Name="Bld_version.build" Type="Int">42</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -410,12 +413,15 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/Book/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FA8221F2-04C1-4033-A50E-101B162FBA9A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{6C870DD8-9186-44BF-A12F-2586B7DD418F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 			</Item>
 			<Item Name="JASFrcCtrlTrajLib" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
@@ -428,7 +434,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASFrcCtrlTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.12-211_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.12-212_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -437,7 +443,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">212</Property>
+				<Property Name="PKG_buildNumber" Type="Int">213</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASFrcCtrlTrajLib</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -521,7 +527,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_packageName" Type="Str">jasjunkfrctrajlib</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">5</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">6</Property>
 				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
 				<Property Name="PKG_shortcuts[0].Name" Type="Str">ConvertPathWeaverJSON</Property>
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">JASJunk/TrajLib</Property>
@@ -557,6 +563,13 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
 				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
 				<Property Name="PKG_shortcuts[4].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[5].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[5].Name" Type="Str">LabVIEW Control and Trajectory Library Reference</Property>
+				<Property Name="PKG_shortcuts[5].Path" Type="Path">JASJunk/TrajLib</Property>
+				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
+				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_sources.Count" Type="Int">3</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
@@ -581,7 +594,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlibutils_2.0.12-207_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlibutils_2.0.12-208_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library Utility Programs</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -589,7 +602,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">208</Property>
+				<Property Name="PKG_buildNumber" Type="Int">209</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASFrcCtrlTrajLib_UtilsOnly</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -721,7 +734,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2020_2.0.12-207_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2020_2.0.12-208_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -730,7 +743,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">208</Property>
+				<Property Name="PKG_buildNumber" Type="Int">209</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASFrcCtrlTrajLibLv2020</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -814,7 +827,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_packageName" Type="Str">jasjunkfrctrajliblv2020</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">5</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">6</Property>
 				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
 				<Property Name="PKG_shortcuts[0].Name" Type="Str">ConvertPathWeaverJSON</Property>
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">JASJunk/TrajLib</Property>
@@ -850,6 +863,13 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
 				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
 				<Property Name="PKG_shortcuts[4].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[5].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[5].Name" Type="Str">LabVIEW Control and Trajectory Library Reference</Property>
+				<Property Name="PKG_shortcuts[5].Path" Type="Path">JASJunk/TrajLib</Property>
+				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
+				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_sources.Count" Type="Int">3</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
@@ -874,7 +894,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2021_2.0.12-207_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2021_2.0.12-208_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -883,7 +903,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">208</Property>
+				<Property Name="PKG_buildNumber" Type="Int">209</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASFrcCtrlTrajLibLv2021</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -967,7 +987,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_packageName" Type="Str">jasjunkfrctrajliblv2021</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">5</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">6</Property>
 				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
 				<Property Name="PKG_shortcuts[0].Name" Type="Str">ConvertPathWeaverJSON</Property>
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">JASJunk/TrajLib</Property>
@@ -1003,6 +1023,13 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
 				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
 				<Property Name="PKG_shortcuts[4].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[5].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[5].Name" Type="Str">LabVIEW Control and Trajectory Library Reference</Property>
+				<Property Name="PKG_shortcuts[5].Path" Type="Path">JASJunk/TrajLib</Property>
+				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
+				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_sources.Count" Type="Int">3</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
