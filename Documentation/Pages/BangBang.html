@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="BangBang" >BangBang</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="BangBang_AtSetpoint" >BangBang_AtSetpoint</h3>
+<p><IMG SRC="LVtemp20221117042627_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns true if the error is within the tolerance of the setpoint.<BR>
+<BR>
+Input:<BR>
+   - BangBang  -- Data cluster<BR>
+<BR>
+Output<BR>
+   - AtSetpoint  -- Returns TRUE if within error tolerance.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="BangBang_Calculate_PV" >BangBang_Calculate_PV</h3>
+<p><IMG SRC="LVtemp20221117042630_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the calculated control output.<BR>
+  <BR>
+Always ensure that your motor controllers are set to "coast" before attempting to control them with a bang-bang controller.<BR>
+  <BR>
+Input:<BR>
+   - BangBang  -- Data cluster<BR>
+   - measurement  --  The most recent measurement of the process variable.<BR>
+    - setpoint  --  The setpoint for the process variable.<BR>
+<BR>
+Output<BR>
+   - outBangBang  -- Updated data  cluster<BR>
+   - ControlOutput  --  The calculated motor output (0 or 1).<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="BangBang_Calculate_SP_PV" >BangBang_Calculate_SP_PV</h3>
+<p><IMG SRC="LVtemp20221117042638_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the calculated control output.<BR>
+  <BR>
+Always ensure that your motor controllers are set to "coast" before attempting to control them with a bang-bang controller.<BR>
+  <BR>
+Input:<BR>
+   - BangBang  -- Data cluster<BR>
+   - measurement  --  The most recent measurement of the process variable.<BR>
+    - setpoint  --  The setpoint for the process variable.<BR>
+<BR>
+Output<BR>
+   - outBangBang  -- Updated data  cluster<BR>
+   - ControlOutput  --  The calculated motor output (0 or 1).<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="BangBang_Execute" >BangBang_Execute</h3>
+<p><IMG SRC="LVtemp20221117042647_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Implements and executes bang-bang controller, which outputs either 0 or 1 depending on whether the measurement is less than the setpoint. This maximally-aggressive control approach works very well for velocity control of high-inertia mechanisms, and poorly on most other things.  <BR>
+ <BR>
+Note that this is an *asymmetric* bang-bang controller - it will not exert any control effort in the reverse direction (e.g. it won't try to slow down an over-speeding shooter wheel). This asymmetry is *extremely important.* Bang-bang control is extremely simple, but also potentially hazardous. Always ensure that your motor controllers are set to "coast" before attempting to<BR>
+control them with a bang-bang controller.<BR>
+<BR>
+Always ensure that your motor controllers are set to "coast" before attempting to control<BR>
+them with a bang-bang controller.<BR>
+<BR>
+Inputs:<BR>
+   - Tolerance --  Tolerance for "at setpoint"<BR>
+   - measurement  --  The most recent measurement of the process variable.<BR>
+   - setpoint  --  The setpoint for the process variable.<BR>
+<BR>
+Outputs:<BR>
+   - ControlOutput  --  The calculated motor output (0 or 1).<BR>
+   - AtSetpoint  -- Returns TRUE if within error tolerance.  <BR>
+   - BangBang  -- Data clusterReturns the calculated control output.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="BangBang_GetAll" >BangBang_GetAll</h3>
+<p><IMG SRC="LVtemp20221117042651_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Gets elements of the internal data cluster<BR>
+<BR>
+Input:<BR>
+   - BangBang  -- Data cluster<BR>
+<BR>
+Output<BR>
+   - Setpoint  -- Current stored setpoint (SP)<BR>
+   - Measurement  --  Current stored process variable (PV)<BR>
+   - Tolerance  --  Current stored tolerance.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="BangBang_GetError" >BangBang_GetError</h3>
+<p><IMG SRC="LVtemp20221117042655_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns current error, which is Setpoint - Process Variable<BR>
+<BR>
+Input:<BR>
+   - BangBang  -- Data cluster<BR>
+<BR>
+Output:<BR>
+   - Error  -- Current error value.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="BangBang_New" >BangBang_New</h3>
+<p><IMG SRC="LVtemp20221117042700_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Implements a bang-bang controller, which outputs either 0 or 1 depending on whether the measurement is less than the setpoint. This maximally-aggressive control approach works very well for velocity control of high-inertia mechanisms, and poorly on most other things.  <BR>
+ <BR>
+Note that this is an *asymmetric* bang-bang controller - it will not exert any control effort in the reverse direction (e.g. it won't try to slow down an over-speeding shooter wheel). This asymmetry is *extremely important.* Bang-bang control is extremely simple, but also potentially hazardous. Always ensure that your motor controllers are set to "coast" before attempting to<BR>
+control them with a bang-bang controller.<BR>
+<BR>
+Creates a new bang-bang controller.<BR>
+  <BR>
+Always ensure that your motor controllers are set to "coast" before attempting to control<BR>
+them with a bang-bang controller.<BR>
+<BR>
+Inputs:<BR>
+   - Tolerance --  Tolerance for "at setpoint"<BR>
+<BR>
+Outputs:<BR>
+   - BangBang  -- Data cluster</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="BangBang_SetSetpoint" >BangBang_SetSetpoint</h3>
+<p><IMG SRC="LVtemp20221117042703_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the setpoint for the bang-bang controller.<BR>
+  <BR>
+  <BR>
+Input:<BR>
+   - BangBang  -- Data cluster<BR>
+    - Setpoint  --  The desired setpoint.<BR>
+<BR>
+Output<BR>
+   - outBangBang  -- Updated data  cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="BangBang_SetTolerance" >BangBang_SetTolerance</h3>
+<p><IMG SRC="LVtemp20221117042707_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the error within which atSetpoint will return true.<BR>
+  <BR>
+  <BR>
+Input:<BR>
+   - BangBang  -- Data cluster<BR>
+    - tolerance  --  Position error which is tolerable.<BR>
+<BR>
+Output<BR>
+   - outBangBang  -- Updated data  cluster<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

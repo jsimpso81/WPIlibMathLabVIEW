@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="Translation2d" >Translation2d</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_Create" >Translation2d_Create</h3>
+<p><IMG SRC="LVtemp20221117052743_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a Translation2d with the X and Y components equal to the provided values.<BR>
+<BR>
+Represents a translation in 2d space.  This object can be used to represent a point or a vector.<BR>
+<BR>
+This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.<BR>
+<BR>
+Parameters:<BR>
+  - X - The x component of the translation.<BR>
+  - Y - The y component of the translation.<BR>
+<BR>
+Returns<BR>
+  - TRANSLATION - The TRANSLATION data structure<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_Create_DistAng" >Translation2d_Create_DistAng</h3>
+<p><IMG SRC="LVtemp20221117052747_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a Translation2d with the provided distance and angle. This is essentially converting from polar coordinates to Cartesian coordinates.<BR>
+<BR>
+Represents a translation in 2d space.  This object can be used to represent a point or a vector.<BR>
+<BR>
+This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.<BR>
+<BR>
+Parameters:<BR>
+  - Dist - Distance.<BR>
+  - Ang - Rotation representing the angle.<BR>
+<BR>
+Returns<BR>
+  - TRANSLATION - The TRANSLATION data structure<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_Div" >Translation2d_Div</h3>
+<p><IMG SRC="LVtemp20221117052751_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Divides the translation by a scalar and returns the new translation.<BR>
+<BR>
+Parameters:<BR>
+  - In Translation  -  This translation data structure<BR>
+  - scalar  -  The value to divide the translation by<BR>
+<BR>
+Result:<BR>
+  - Out Translation  - The resulting translation<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_Equals" >Translation2d_Equals</h3>
+<p><IMG SRC="LVtemp20221117052754_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Checks equality between this Translation2d and another object.<BR>
+<BR>
+Parameters:<BR>
+ - IN TRANSLATION - This TRANSLATION data structure<BR>
+ - OTHER TRANSLATION - The other TRANSLATION data structure<BR>
+<BR>
+Returns:<BR>
+ - EQUALS - Value is set to TRUE if the two TRANSLATIONS are equal.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_GetAngle" >Translation2d_GetAngle</h3>
+<p><IMG SRC="LVtemp20221117052758_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the angle this translation forms with the positive X axis.<BR>
+<BR>
+<BR>
+Parameters: <BR>
+  - IN TRANSLATION2d - This TRANSLATION2 data structure<BR>
+<BR>
+Returns:<BR>
+    - Angle  --   The angle of the translation (Radians)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_GetDistance" >Translation2d_GetDistance</h3>
+<p><IMG SRC="LVtemp20221117052801_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Calculates the distance between two translations in 2d space.<BR>
+<BR>
+This function uses the pythagorean theorem to calculate the distance. distance = sqrt((x2 - x1)^2 + (y2 - y1)^2)<BR>
+<BR>
+Parameters: <BR>
+  - IN TRANSLATION - This TRANSLATION data structure<BR>
+  - OTHER TRANSLATION - The translation to compute the distance to.<BR>
+<BR>
+Returns:<BR>
+   - Distance - The distance between the two translations.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_GetNorm" >Translation2d_GetNorm</h3>
+<p><IMG SRC="LVtemp20221117052804_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the norm, or distance from the origin to the translation.<BR>
+<BR>
+Parameters:<BR>
+   - IN TRANSLATION - This translation data structure<BR>
+<BR>
+Returns:<BR>
+  - Norm - The norm of the translation.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_GetX" >Translation2d_GetX</h3>
+<p><IMG SRC="LVtemp20221117052808_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the X component of the translation.<BR>
+<BR>
+Parameters<BR>
+  - IN Translation - This Translation data structure<BR>
+<BR>
+Returns:<BR>
+  - X- The x component of the translation.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_GetXY" >Translation2d_GetXY</h3>
+<p><IMG SRC="LVtemp20221117052811_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the X and Ycomponents of the translation.<BR>
+<BR>
+Parameters<BR>
+  - IN Translation - This Translation data structure<BR>
+<BR>
+Returns:<BR>
+  - X- The X component of the translation.<BR>
+  - Y- The Y component of the translation.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_GetY" >Translation2d_GetY</h3>
+<p><IMG SRC="LVtemp20221117052814_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Returns the Y component of the translation.<BR>
+<BR>
+Parameters<BR>
+  - IN Translation - This Translation data structure<BR>
+<BR>
+Returns:<BR>
+  - Y- The Y component of the translation.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_Interpolate" >Translation2d_Interpolate</h3>
+<p><IMG SRC="LVtemp20221117052818_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Inerpolate between this and an End Value translation<BR>
+   <BR>
+<BR>
+Parameters:<BR>
+  - IN Translation  -  This translation data structure<BR>
+  - EndValue Translation  -  The translation data structure<BR>
+<BR>
+Returns<BR>
+  -  Interpolated Translation  - The interpolated translation.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_Minus" >Translation2d_Minus</h3>
+<p><IMG SRC="LVtemp20221117052821_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Subtracts the other translation from the other translation and returns the difference.<BR>
+   <BR>
+For example, Translation2d{5.0, 4.0} - Translation2d{1.0, 2.0} = Translation2d{4.0, 2.0}<BR>
+<BR>
+Parameters:<BR>
+  - IN Translation  -  This translation data structure<BR>
+  - other Translation  -  The translation data structure to subtract<BR>
+<BR>
+Returns<BR>
+  -  Out Translation  - The difference between the two translations.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_Plus" >Translation2d_Plus</h3>
+<p><IMG SRC="LVtemp20221117052825_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Adds two translations in 2d space and returns the sum. This is similar to vector addition.<BR>
+   <BR>
+For example, Translation2d{1.0, 2.5} + Translation2d{2.0, 5.5} = Translation2d{3.0, 8.0}<BR>
+<BR>
+Parameters:<BR>
+  - IN Translation  -  This translation data structure<BR>
+  - other Translation  -  The translation data structure to add<BR>
+<BR>
+Returns<BR>
+  -  Out Translation  - The summation of the two translations.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_RotateBy" >Translation2d_RotateBy</h3>
+<p><IMG SRC="LVtemp20221117052828_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Applies a rotation to the translation in 2d space.<BR>
+<BR>
+This multiplies the translation vector by a counterclockwise rotation matrix of the given angle.<BR>
+    [x_new]   [other.cos, -other.sin][x]<BR>
+    [y_new] = [other.sin,  other.cos][y]<BR>
+   <BR>
+For example, rotating a Translation2d of {2, 0} by 90 degrees will return a Translation2d of {0, 2}.<BR>
+<BR>
+Parameters:<BR>
+  - In Translation  -  This data structure<BR>
+  - Other Rotation  -  The rotation to rotate the translation by. <BR>
+<BR>
+Returns:<BR>
+  - Out Translation - The resulting Translation data structure<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_Times" >Translation2d_Times</h3>
+<p><IMG SRC="LVtemp20221117052831_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Multiplies the translation by a scalar and returns the new translation.<BR>
+<BR>
+For example, Translation2d{2.0, 2.5} * 2 = Translation2d{4.0, 5.0}<BR>
+<BR>
+Parameters:<BR>
+  - In Translation  -  This translation data structure<BR>
+  - scalar  -  The value to multiply the translation by<BR>
+<BR>
+Result:<BR>
+  - Out Translation  - The resulting translation<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Translation2d_UnaryMinus" >Translation2d_UnaryMinus</h3>
+<p><IMG SRC="LVtemp20221117052835_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the inverse of the current translation. This is equivalent to rotating by 180 degrees, flipping the point over both axes, or simply negating both components of the translation.<BR>
+   <BR>
+Parameters:<BR>
+  - In Translation  -  This translation data structure<BR>
+<BR>
+Result:<BR>
+  - Out Translation  - The inverse of the current translation.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

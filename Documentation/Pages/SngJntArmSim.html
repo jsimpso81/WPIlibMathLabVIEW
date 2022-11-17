@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="SngJntArmSim" >SngJntArmSim</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SngJntArmSim_EstimateMOI" >SngJntArmSim_EstimateMOI</h3>
+<p><IMG SRC="LVtemp20221117051439_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Calculates a rough estimate of the moment of inertia of an arm given its length and mass.<BR>
+ <BR>
+Inputs:<BR>
+   - lengthMeters  --  The length of the arm.<BR>
+   - massKg  --  The mass of the arm.<BR>
+<BR>
+Outputs:<BR>
+   - MOI  --  The calculated moment of inertia.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SngJntArmSim_GetAngleRads" >SngJntArmSim_GetAngleRads</h3>
+<p><IMG SRC="LVtemp20221117051442_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Returns the current arm angle.<BR>
+ <BR>
+Inputs:<BR>
+   - SingleJointArmSim  --  updated system data cluster<BR>
+<BR>
+Outputs:<BR>
+   - ArmAngle-Radians  --  The current arm angle (Radians).<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SngJntArmSim_GetCurrentDraw" >SngJntArmSim_GetCurrentDraw</h3>
+<p><IMG SRC="LVtemp20221117051446_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Returns the arm current draw.<BR>
+ <BR>
+Inputs:<BR>
+   - SingleJointArmSim  --  updated system data cluster<BR>
+<BR>
+Outputs:<BR>
+   - Current_Amps  --  The aram current draw.  (Amps)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SngJntArmSim_GetVelocityRadsPerSec" >SngJntArmSim_GetVelocityRadsPerSec</h3>
+<p><IMG SRC="LVtemp20221117051450_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Returns the current arm velocity.<BR>
+ <BR>
+Inputs:<BR>
+   - SingleJointArmSim  --  updated system data cluster<BR>
+<BR>
+Outputs:<BR>
+   - Velocity_RadPerSec  --  The current arm velocity (Radians/Sec).<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SngJntArmSim_HasHitLowerLimit" >SngJntArmSim_HasHitLowerLimit</h3>
+<p><IMG SRC="LVtemp20221117051453_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns whether the arm has hit the lower limit.<BR>
+ <BR>
+Inputs:<BR>
+   - SingleJointArmSim  --  system data cluster<BR>
+<BR>
+Outputs:<BR>
+   - AtLowLimit  --  Whether the arm has hit the lower limit.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SngJntArmSim_HasHitUpperLimit" >SngJntArmSim_HasHitUpperLimit</h3>
+<p><IMG SRC="LVtemp20221117051457_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Returns whether the arm has hit the upper limit.<BR>
+ <BR>
+Inputs:<BR>
+   - SingleJointArmSim  --  updated system data cluster<BR>
+<BR>
+Outputs:<BR>
+   - AtHighLimit  --  Whether the arm has hit the upper limit.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SngJntArmSim_New" >SngJntArmSim_New</h3>
+<p><IMG SRC="LVtemp20221117051500_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Creates a simulated arm mechanism.<BR>
+ <BR>
+Inputs:<BR>
+   - maxAngleRads  --  The maximum angle that the arm is capable of.<BR>
+   - minAngleRads  --  The minimum angle that the arm is capable of.<BR>
+   - gearbox  --  The type of and number of motors in the arm gearbox.<BR>
+   - gearing  --  The gearing of the arm (numbers greater than 1 represent reductions).<BR>
+   - armMassKg  --  The mass of the arm.<BR>
+   - measurementStdDevs  --  The standard deviations of the measurements.<BR>
+   - armLengthMeters  --  The length of the arm.<BR>
+   - jKgMetersSquared  --  The moment of inertia of the arm; can be calculated from CAD software.<BR>
+   - simulateGravity  --  Whether gravity should be simulated or not.<BR>
+<BR>
+Outputs:<BR>
+   - SingleJointArmSim  --  system data cluster\<BR>
+   - error  --  If TRUE, an error occured.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SngJntArmSim_Rkf45_Func" >SngJntArmSim_Rkf45_Func</h3>
+<p><IMG SRC="LVtemp20221117051504_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Custom function to calculate the newX used for integrating to get updated HatX <BR>
+<BR>
+<BR>
+Inputs:<BR>
+   - Variant  --  extra data used by function<BR>
+                          for this function, the extra data is;  Matrix A, Matrix B, Arm length, Simulator gravity flag.<BR>
+   - X   -  X matrix<BR>
+   - U   - U matrix<BR>
+<BR>
+Outputs:<BR>
+   - NewX  --  X value as a function of (X, U, extra data)<BR>
+   - error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SngJntArmSim_SetInputVoltage" >SngJntArmSim_SetInputVoltage</h3>
+<p><IMG SRC="LVtemp20221117051509_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Sets the input voltage for the arm.<BR>
+ <BR>
+Inputs:<BR>
+   - SingleJointArmSim  --  system data cluster<BR>
+   - volts  --  The input voltage.<BR>
+   - Battery_Volts  --  current battery voltage<BR>
+<BR>
+Outputs:<BR>
+   - SingleJointArmSim  --  updated system data cluster<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SngJntArmSim_SetState" >SngJntArmSim_SetState</h3>
+<p><IMG SRC="LVtemp20221117051513_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the system state.<BR>
+  <BR>
+Inputs:<BR>
+   - SngJntArmSim  --  Data cluster<BR>
+   - state  --  The new state.<BR>
+<BR>
+Outputs:<BR>
+   - OutSngJntArmSim  --  Updated data cluster<BR>
+   - SizeCoerced  --  If TRUE, an error occured.  Execution may continue.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SngJntArmSim_Update" >SngJntArmSim_Update</h3>
+<p><IMG SRC="LVtemp20221117051518_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Updates the simulation.<BR>
+  <BR>
+Inputs:<BR>
+   - SngJntArmSim  --  Data cluster<BR>
+   - dtSeconds  --  The time between updates.<BR>
+<BR>
+Outputs:<BR>
+   - OutSngJntArmSim  --  Updated data cluster<BR>
+   - Error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SngJntArmSim_UpdateX" >SngJntArmSim_UpdateX</h3>
+<p><IMG SRC="LVtemp20221117051524_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Updates the state of the arm.<BR>
+ <BR>
+Inputs:<BR>
+   - currentXhat  --  The current state estimate.<BR>
+   - u  --  The system inputs (voltage).<BR>
+   - dtSeconds  --  The time difference between controller updates.<BR>
+<BR>
+Outputs:<BR>
+   - updated_Xhat  --  Updated current state estimate<BR>
+   - error  --  If TRUE, an error occured.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SngJntArmSim_WouldHitLowerLimit" >SngJntArmSim_WouldHitLowerLimit</h3>
+<p><IMG SRC="LVtemp20221117051529_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Returns whether the arm would hit the lower limit.<BR>
+ <BR>
+Inputs:<BR>
+   - SingleJointArmSim  --  updated system data cluster<BR>
+   - currentAngleRads  --  The current arm height.<BR>
+<BR>
+Outputs:<BR>
+   - WouldHitLowLimit  --  Whether the arm would hit the lower limit.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SngJntArmSim_WouldHitUpperLimit" >SngJntArmSim_WouldHitUpperLimit</h3>
+<p><IMG SRC="LVtemp20221117051533_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns whether the arm has hit the upper limit.<BR>
+ <BR>
+Inputs:<BR>
+   - SingleJointArmSim  --  updated system data cluster<BR>
+   - currentAngleRads  --  The current arm height.<BR>
+<BR>
+Outputs:<BR>
+   - WouldHitHighLimit  --  Whether the arm would hit the upper limit.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

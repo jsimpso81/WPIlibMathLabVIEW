@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="SplineHelp" >SplineHelp</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SplineHelp_GetCubicCtrlVector" >SplineHelp_GetCubicCtrlVector</h3>
+<p><IMG SRC="LVtemp20221117051536_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SplineHelp_GetCubicCtrlVectorsFromWayPts" >SplineHelp_GetCubicCtrlVectorsFromWayPts</h3>
+<p><IMG SRC="LVtemp20221117051540_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns 2 cubic control vectors from a set of exterior waypoints and interior translations.<BR>
+<BR>
+Parameters:   <BR>
+  - startPose - The starting pose.<BR>
+  - interiorWaypoints - The interior waypoints.<BR>
+  - endPose - The ending pose.<BR>
+<BR>
+Returns:<BR>
+ - SplineControlVectors - Array of cubic control vectors.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SplineHelp_GetCubicCtrlVectorsFromWeightedWayPts" >SplineHelp_GetCubicCtrlVectorsFromWeightedWayPts</h3>
+<p><IMG SRC="LVtemp20221117051543_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns cubic spline control vectors and interior waypoints from a set of exterior weighted waypoints.<BR>
+<BR>
+Parameters:   <BR>
+  - WeightedWaypoints  --  The weighted waypoints.<BR>
+  -  UseWeights  --  boolean indicating that weights should be used.<BR>
+<BR>
+Returns:<BR>
+  - SplineControlVectors - Array of cubic control vectors.<BR>
+  - InteriorWaypoints  -- Array of interior waypoints.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SplineHelp_GetCubicSpline_Calc1" >SplineHelp_GetCubicSpline_Calc1</h3>
+<p><IMG SRC="LVtemp20221117051547_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal routine called by: SplineHelp_getCubicSplinesFromControlVectors.vi</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SplineHelp_GetCubicSpline_Calc2" >SplineHelp_GetCubicSpline_Calc2</h3>
+<p><IMG SRC="LVtemp20221117051550_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal routine called by: SplineHelp_getCubicSplinesFromControlVectors.vi</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SplineHelp_GetCubicSpline_Calc3" >SplineHelp_GetCubicSpline_Calc3</h3>
+<p><IMG SRC="LVtemp20221117051553_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal routine called by: SplineHelp_getCubicSplinesFromControlVectors.vi</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SplineHelp_GetQuinticCtrlVector" >SplineHelp_GetQuinticCtrlVector</h3>
+<p><IMG SRC="LVtemp20221117051557_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SplineHelp_GetQuinticSplinesFromWayPts" >SplineHelp_GetQuinticSplinesFromWayPts</h3>
+<p><IMG SRC="LVtemp20221117051600_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns quintic splines from a set of waypoints.<BR>
+<BR>
+Parameters:<BR>
+  -  waypoints - The array of waypoints (Translation)<BR>
+<BR>
+Returns:<BR>
+  - Splines -  Array of splines<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SplineHelp_GetQuinticSplinesFromWeightedWayPts" >SplineHelp_GetQuinticSplinesFromWeightedWayPts</h3>
+<p><IMG SRC="LVtemp20221117051605_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns quintic splines from a set of weighted waypoints.<BR>
+<BR>
+Parameters:<BR>
+  -  weighted waypoints - The array of weighted waypoints <BR>
+<BR>
+Returns:<BR>
+  - Splines -  Array of splines<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SplineHelp_ThomasAlgorithm" >SplineHelp_ThomasAlgorithm</h3>
+<p><IMG SRC="LVtemp20221117051609_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Thomas algorithm for solving tridiagonal systems Af = d.<BR>
+   <BR>
+Parameters:<BR>
+   - a    -          the values of A above the diagonal<BR>
+   - b   -           the values of A on the diagonal<BR>
+   - c   -           the values of A below the diagonal<BR>
+   - d  -            the vector on the rhs<BR>
+   - InputSolutionVector - the unknown (solution) vector<BR>
+<BR>
+Returns:<BR>
+    - SolutionVector - The modifed solution vector<BR>
+    - Error Out - Returned error cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SplineHelp_getCubicSplinesFromControlVectors" >SplineHelp_getCubicSplinesFromControlVectors</h3>
+<p><IMG SRC="LVtemp20221117051613_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns a set of cubic splines corresponding to the provided control vectors. The user is free to set the direction of the start and end point. The directions for the middle waypoints are determined automatically to ensure continuous curvature throughout the path.<BR>
+<BR>
+Parameters:   <BR>
+  - startCtrlVector     - The starting control vector.<BR>
+  - waypoints - The middle waypoints. This can be left blank if you only wish to create a path with two waypoints.<BR>
+  - endCtrlVector       - The ending control vector.<BR>
+<BR>
+Returns:<BR>
+  - A vector of cubic hermite splines that interpolate through the provided waypoints and control vectors.<BR>
+  - Error Out - Output error cluster<BR>
+  - X init  - For diagnostics only (these may be deleted in the future)<BR>
+  - X final - For diagnostics only (these may be deleted in the future)<BR>
+  - Y init  - For diagnostics only (these may be deleted in the future)<BR>
+  - Y final - For diagnostics only (these may be deleted in the future)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SplineHelp_getQuinticSplinesFromControlVectors" >SplineHelp_getQuinticSplinesFromControlVectors</h3>
+<p><IMG SRC="LVtemp20221117051617_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns a set of quintic splines corresponding to the provided control vectors.  The user is free to set the direction of all control vectors. Continuous curvature is guaranteed throughout the path.<BR>
+<BR>
+Parameters:<BR>
+  - controlVectors - The control vectors.<BR>
+<BR>
+Returns:<BR>
+  - Splines - A vector of quintic hermite splines that interpolate through the provided waypoints.<BR>
+  - Error Out - The returned error cluster</pre></p>
+<br>
+</BODY>
+</HTML>

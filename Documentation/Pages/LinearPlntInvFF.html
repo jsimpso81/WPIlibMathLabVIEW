@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="LinearPlntInvFF" >LinearPlntInvFF</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearPlntInvFF_Calculate" >LinearPlntInvFF_Calculate</h3>
+<p><IMG SRC="LVtemp20221117044728_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Calculate the feedforward with current and future reference vectors.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearPlntInversionFF  --  system data cluster<BR>
+   - r  --  The reference state of the current timestep (k).<BR>
+   - nextR  --  The reference state of the future timestep (k + dt).<BR>
+<BR>
+Outputs:<BR>
+   - outLinearPlntInversionFF  -- updated system data cluster<BR>
+   - Uff  --  The calculated feedforward.<BR>
+   - error  --  If TRUE, an error occured.<BR>
+   </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearPlntInvFF_Calculate_NextR" >LinearPlntInvFF_Calculate_NextR</h3>
+<p><IMG SRC="LVtemp20221117044735_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Calculate the feedforward with only the desired future reference. This uses the internally stored "current" reference.<BR>
+   <BR>
+If this method is used the initial state of the system is the one set using {@link LinearPlantInversionFeedforward#reset(Matrix)}. If the initial state is not set it defaults to a zero vector.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearPlntInversionFF  --  system data cluster<BR>
+   - nextR  --  The reference state of the future timestep (k + dt).<BR>
+<BR>
+Outputs:<BR>
+   - outLinearPlntInversionFF  -- updated system data cluster<BR>
+   - Uff  --  The calculated feedforward.<BR>
+   - error  --  If TRUE, an error occured.<BR>
+   </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearPlntInvFF_GetR" >LinearPlntInvFF_GetR</h3>
+<p><IMG SRC="LVtemp20221117044740_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the current reference vector r.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearPlntInversionFF  --  system data cluster<BR>
+<BR>
+Outputs:<BR>
+   - R  --  The current reference vector.<BR>
+   <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearPlntInvFF_GetR_Single" >LinearPlntInvFF_GetR_Single</h3>
+<p><IMG SRC="LVtemp20221117044743_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns an element of the current reference vector r.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearPlntInversionFF  --  system data cluster<BR>
+   - row  --  Row of r.<BR>
+<BR>
+Outputs:<BR>
+   - R  --  The row of the current reference vector.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearPlntInvFF_GetUff" >LinearPlntInvFF_GetUff</h3>
+<p><IMG SRC="LVtemp20221117044747_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the previously calculated feedforward as an input vector.<BR>
+<BR>
+Inputs:<BR>
+   - LinearPlntInversionFF  --  system data cluster<BR>
+<BR>
+Outputs:<BR>
+   - Uff  --  The calculated feedforward.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearPlntInvFF_GetUff_Single" >LinearPlntInvFF_GetUff_Single</h3>
+<p><IMG SRC="LVtemp20221117044751_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns an element of the previously calculated feedforward.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearPlntInversionFF  --  system data cluster<BR>
+   - row  --  Row of uff.<BR>
+<BR>
+Outputs:<BR>
+   - Uff  --  The row of the calculated feedforward.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearPlntInvFF_New" >LinearPlntInvFF_New</h3>
+<p><IMG SRC="LVtemp20221117044754_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a plant inversion model-based feedforward from a LinearSystem.<BR>
+ <BR>
+The feedforward is calculated as <BR>
+<BR>
+ u_ff = Binv (r_k+1 - A r_k) ,<BR>
+<BR>
+where <BR>
+<BR>
+ Binv<BR>
+<BR>
+is the pseudoinverse of B.<BR>
+ <BR>
+For more on the underlying math, read https://file.tavsys.net/control/controls-engineering-in-frc.pdf.<BR>
+<BR>
+Constructs a feedforward with the given coefficients.<BR>
+   <BR>
+Inputs:<BR>
+   - A  --  Continuous system matrix of the plant being controlled.<BR>
+   - B  --  Continuous input matrix of the plant being controlled.<BR>
+   - dtSeconds  --  Discretization timestep.<BR>
+<BR>
+Outputs:<BR>
+   - outLinearPlntInversionFF  -- updated system data cluster<BR>
+   - error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearPlntInvFF_New_Plant" >LinearPlntInvFF_New_Plant</h3>
+<p><IMG SRC="LVtemp20221117044759_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a plant inversion model-based feedforward from a LinearSystem.<BR>
+ <BR>
+The feedforward is calculated as <BR>
+<BR>
+ u_ff = Binv (r_k+1 - A r_k) ,<BR>
+<BR>
+where <BR>
+<BR>
+ Binv<BR>
+<BR>
+is the pseudoinverse of B.<BR>
+ <BR>
+For more on the underlying math, read https://file.tavsys.net/control/controls-engineering-in-frc.pdf.<BR>
+<BR>
+Constructs a feedforward with the given plant.<BR>
+   <BR>
+Inputs:<BR>
+   - plant  --  The plant being controlled.<BR>
+   - dtSeconds  --  Discretization timestep.<BR>
+<BR>
+Outputs:<BR>
+   - outLinearPlntInversionFF  -- updated system data cluster<BR>
+   - error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearPlntInvFF_Reset_Initial" >LinearPlntInvFF_Reset_Initial</h3>
+<p><IMG SRC="LVtemp20221117044803_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Resets the feedforward with a specified initial state vector.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearPlntInversionFF  --  system data cluster<BR>
+   - initialState  --  The initial state vector.<BR>
+<BR>
+Outputs:<BR>
+   - outLinearPlntInversionFF  -- updated system data cluster<BR>
+   - sizeCoerced  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearPlntInvFF_Reset_Zero" >LinearPlntInvFF_Reset_Zero</h3>
+<p><IMG SRC="LVtemp20221117044806_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Resets the feedforward with a zero initial state vector. <BR>
+<BR>
+Inputs:<BR>
+   - LinearPlntInversionFF  --  system data cluster<BR>
+<BR>
+Outputs:<BR>
+   - outLinearPlntInversionFF  -- updated system data cluster<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

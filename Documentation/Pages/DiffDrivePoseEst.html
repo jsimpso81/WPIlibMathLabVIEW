@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="DiffDrivePoseEst" >DiffDrivePoseEst</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrivePoseEst_AddVisionMeasurement" >DiffDrivePoseEst_AddVisionMeasurement</h3>
+<p><IMG SRC="LVtemp20221117043424_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Add a vision measurement to the Unscented Kalman Filter. This will correct the odometry pose estimate while still accounting for measurement noise.<BR>
+   <BR>
+This method can be called as infrequently as you want, as long as you are calling DifferentialDrivePoseEstimator_update every loop.<BR>
+<BR>
+To promote stability of the pose estimate and make it robust to bad vision data, we recommend only adding vision measurements that are already within one meter or so of the current pose estimate.<BR>
+<BR>
+   Inputs:<BR>
+  -  InDIffDrivePoseEstimate  --  Data cluster for this system<BR>
+  -  visionRobotPoseMeters  --  The pose of the robot as measured by the vision camera.<BR>
+  -  timestampSeconds  --  The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling DifferentialDrivePoseEstimator_updateWithTime then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as Timer.getFPGATimestamp.) This means that you should use Timer.getFPGATimestamp as your time source in this case.<BR>
+<BR>
+Outputs:<BR>
+  -  OutDIffDrivePoseEstimate  --  Data cluster for this system<BR>
+  -  Error  --  Returns TRUE if an error occured.  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrivePoseEst_FillStateVector" >DiffDrivePoseEst_FillStateVector</h3>
+<p><IMG SRC="LVtemp20221117043430_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a  vector with the current robot pose, encoder distances, and gyro<BR>
+<BR>
+Inputs:<BR>
+   -  initialPose  --  robot pose<BR>
+   -  LeftDist  --  left encoder distance<BR>
+   -  RightDist  --  right encoder distance<BR>
+<BR>
+Outputs:<BR>
+   -  output Matrix  --  filled matrix.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrivePoseEst_GetEstimatedPosition" >DiffDrivePoseEst_GetEstimatedPosition</h3>
+<p><IMG SRC="LVtemp20221117043434_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Gets the pose of the robot at the current time as estimated by the Unscented Kalman Filter.<BR>
+   <BR>
+Inputs:<BR>
+  -  DiffDrivePoseEst  -  System data cluster<BR>
+<BR>
+Outputs:<BR>
+  -  EstimatedPose  -  The estimated robot pose in meters.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrivePoseEst_Kalman_F_Callback" >DiffDrivePoseEst_Kalman_F_Callback</h3>
+<p><IMG SRC="LVtemp20221117043438_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function used by DiffDrivePoseEst_Update routines to pass to the Kalman filter Predict routine.<BR>
+<BR>
+Inputs:<BR>
+   - ExtraPassedData  --  Variant of extra data used by this function.  (This value is not used.)<BR>
+   - X  --  X matrix<BR>
+   - U  -- U matrix<BR>
+<BR>
+Outputs:<BR>
+   - Result  -- Resulting matrix<BR>
+   - Error  --  If TRUE, an error occured.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrivePoseEst_Kalman_H_Callback" >DiffDrivePoseEst_Kalman_H_Callback</h3>
+<p><IMG SRC="LVtemp20221117043441_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function used by DiffDrivePoseEst_Update routines to pass to the Kalman filter Correct routine.<BR>
+<BR>
+Inputs:<BR>
+   - ExtraPassedData  --  Variant of extra data used by this function.  (This value is not used.)<BR>
+   - X  --  X matrix<BR>
+   - U  -- U matrix<BR>
+<BR>
+Outputs:<BR>
+   - Result  -- Resulting matrix<BR>
+   - Error  --  If TRUE, an error occured.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrivePoseEst_New" >DiffDrivePoseEst_New</h3>
+<p><IMG SRC="LVtemp20221117043445_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of subVI wraps an UnscentedKalmanFilter to fuse latency-compensated vision measurements with differential drive encoder measurements. It will correct for noisy vision measurements and encoder drift. It is intended to be an easy drop-in for {@link edu.wpi.first.math.kinematics.DifferentialDriveOdometry}; in fact, if you never call DifferentialDrivePoseEstimator_addVisionMeasurement and only call DifferentialDrivePoseEstimator_update then this will behave exactly the same as DifferentialDriveOdometry.<BR>
+ <BR>
+DifferentialDrivePoseEstimator_update}should be called every robot loop (if your robot loops are faster than the default then you should change the  DifferentialDrivePoseEstimator_DifferentialDrivePoseEstimator(Rotation2d, Pose2d, Matrix, Matrix,<BR>
+Matrix, double) nominal delta time.) DifferentialDrivePoseEstimator_addVisionMeasurement can be called as infrequently as you want; if you never call it then this class will behave exactly like regular encoder odometry.<BR>
+<BR>
+To promote stability of the pose estimate and make it robust to bad vision data, we recommend only adding vision measurements that are already within one meter or so of the current pose estimate.<BR>
+<BR>
+Our state-space system is:<BR>
+<BR>
+    x = [[x, y, theta, dist_l, dist_r]]?  in the field coordinate system (dist_* are wheel distances.)<BR>
+ <BR>
+    u = [[vx, vy, omega]]?  (robot-relative velocities) -- NB: using velocities make things considerably easier, because it means that teams don't have to worry about getting an accurate model. Basically, we suspect that it's easier for teams to get good encoder data than it is for them to perform system identification well enough to get a good model.<BR>
+ <BR>
+    y = [[x, y, theta]]?  from vision, or <strong>y = [[dist_l, dist_r, theta]]  from encoders and gyro.<BR>
+ <BR>
+Constructs a DifferentialDrivePoseEstimator.<BR>
+<BR>
+Inputs<BR>
+  -  gyroAngle  --  The current gyro angle.  (radians)<BR>
+  -  initialPoseMeters  --  The starting pose estimate.<BR>
+  -  stateStdDevs  --  Standard deviations of model states. Increase these numbers to trust your<BR>
+      model's state estimates less. This matrix is in the form [x, y, theta, dist_l, dist_r]?,<BR>
+      with units in meters and radians.<BR>
+  -  localMeasurementStdDevs  --  Standard deviations of the encoder and gyro measurements.<BR>
+      Increase these numbers to trust sensor readings from encoders and gyros less. This matrix<BR>
+      is in the form [dist_l, dist_r, theta]?, with units in meters and radians.<BR>
+  -  visionMeasurementStdDevs  --  Standard deviations of the vision measurements. Increase these<BR>
+      numbers to trust global measurements from vision less. This matrix is in the form [x, y,<BR>
+      theta]?, with units in meters and radians.<BR>
+  -  nominalDtSeconds  --  The time in seconds between each robot loop. (seconds)<BR>
+  -  leftDistance_M  --  The initial left wheel distance measurement (meters)<BR>
+  -  rightDistance_M  --  The initial right wheel distance measurement (meters)<BR>
+<BR>
+Outputs:<BR>
+  -  DiffDrivePoseEst  --  Data cluster for this instance of this system.<BR>
+  -  Error  --  A value of TRUE indicates an error occured creating the system.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrivePoseEst_ResetPosition" >DiffDrivePoseEst_ResetPosition</h3>
+<p><IMG SRC="LVtemp20221117043450_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Resets the robot's position on the field.<BR>
+<BR>
+The gyroscope angle does not need to be reset here on the user's robot code. The library automatically takes care of offsetting the gyro angle.<BR>
+   <BR>
+Inputs:<BR>
+  -  inDiffDrivePoseEst  -- system data cluster.<BR>
+  -  poseMeters  --  The position on the field that your robot is at.<BR>
+  -  gyroAngle  --  The angle reported by the gyroscope.<BR>
+  -  LeftDistance  --  The current left distance measurement (meters)<BR>
+  -  RightDistance  --  The current right distance measurement (meters)<BR>
+   <BR>
+Outputs:<BR>
+  -  outDiffDrivePoseEst  -- Updated system data cluster.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrivePoseEst_SetVisionMeasurementStdDevs" >DiffDrivePoseEst_SetVisionMeasurementStdDevs</h3>
+<p><IMG SRC="LVtemp20221117043453_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the pose estimator's trust of global measurements. This might be used to change trust in vision measurements after the autonomous period, or to change trust as distance to a vision target increases.<BR>
+<BR>
+Inputs:<BR>
+  -  inDiffDrivePoseEst  --  System data cluster   <BR>
+  -  visionMeasurementStdDevs  --  Standard deviations of the vision measurements. Increase these numbers to trust global measurements from vision less. This matrix is in the form [x, y, theta]?, with units in meters and radians.<BR>
+<BR>
+Outputs:<BR>
+  -  outDiffDrivePoseEst  --  System data cluster   <BR>
+  -  error  --  A value of TRUE indicates an unexpected error occured.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrivePoseEst_Update" >DiffDrivePoseEst_Update</h3>
+<p><IMG SRC="LVtemp20221117043459_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Updates the the Unscented Kalman Filter using only wheel encoder information. Note that this should be called every loop.<BR>
+<BR>
+Inputs:<BR>
+  -  LeftSpeed  -- Left wheel speed (meters/sec)<BR>
+  -  RightSpeed  -- Right wheel speed (meters/sec)<BR>
+  -  inDiffDrivePoseEst  --  system data cluster<BR>
+  -  gyroAngle  --  The current gyro angle.  (radians)<BR>
+  -  distanceLeftMeters  --  The total distance travelled by the left wheel in meters.  This can be the encoder reading.<BR>
+  -  distanceRightMeters  --  The total distance travelled by the right wheel in meters.   This can be the encoder reading.<BR>
+<BR>
+Outputs:<BR>
+  -  outDiffDrivePoseEst  --  system data cluster<BR>
+  -  EstimatedPose  -- The estimated pose of the robot in meters.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrivePoseEst_UpdateWithTime" >DiffDrivePoseEst_UpdateWithTime</h3>
+<p><IMG SRC="LVtemp20221117043508_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Updates the the Unscented Kalman Filter using only wheel encoder information. Note that this should be called every loop.<BR>
+<BR>
+Inputs:<BR>
+  -  LeftSpeed  -- Left wheel speed (meters/sec)<BR>
+  -  RightSpeed  -- Right wheel speed (meters/sec)<BR>
+  -  inDiffDrivePoseEst  --  system data cluster<BR>
+  -  gyroAngle  --  The current gyro angle.  (radians)<BR>
+  -  currentTime  --  Time at which this method was called, in seconds.<BR>
+  -  distanceLeftMeters  --  The total distance travelled by the left wheel in meters.  This can be the encoder reading.<BR>
+  -  distanceRightMeters  --  The total distance travelled by the right wheel in meters.   This can be the encoder reading.<BR>
+<BR>
+Outputs:<BR>
+  -  outDiffDrivePoseEst  --  system data cluster<BR>
+  -  EstimatedPose  -- The estimated pose of the robot in meters.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrivePoseEst_VisionCorrect_Callback" >DiffDrivePoseEst_VisionCorrect_Callback</h3>
+<p><IMG SRC="LVtemp20221117043515_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Function used by LatencyCompensator_ApplyPastGlobalMeasurement<BR>
+<BR>
+This is a work in progress!!</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrivePoseEst_VisionCorrect_Kalman_H_Callback" >DiffDrivePoseEst_VisionCorrect_Kalman_H_Callback</h3>
+<p><IMG SRC="LVtemp20221117043521_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function used by DiffDrivePoseEst_Update routine used by the VisionCorrect routine.<BR>
+<BR>
+Inputs:<BR>
+   - ExtraPassedData  --  Variant of extra data used by this function.  (This value is not used.)<BR>
+   - X  --  X matrix<BR>
+   - U  -- U matrix<BR>
+<BR>
+Outputs:<BR>
+   - Result  -- Resulting matrix<BR>
+   - Error  --  If TRUE, an error occured.</pre></p>
+<br>
+</BODY>
+</HTML>

@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="LinearSystemLoop" >LinearSystemLoop</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_ClampInput" >LinearSystemLoop_ClampInput</h3>
+<p><IMG SRC="LVtemp20221117045010_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Clamp the input u to the min and max.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+   - unclampedU  --  The input to clamp.<BR>
+<BR>
+Outputs:<BR>
+   - U --  The clamped input.<BR>
+   - SizeCoerced  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_Correct" >LinearSystemLoop_Correct</h3>
+<p><IMG SRC="LVtemp20221117045015_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Correct the state estimate x-hat using the measurements in y.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+   - y  --  Measurement vector.<BR>
+<BR>
+Outputs:<BR>
+   - outLinearSystemLoop  --  updated system data cluster<BR>
+   - error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_GetController" >LinearSystemLoop_GetController</h3>
+<p><IMG SRC="LVtemp20221117045019_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the controller used internally.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+<BR>
+Outputs:<BR>
+   - Controller --  the controller data cluster used internally.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_GetError" >LinearSystemLoop_GetError</h3>
+<p><IMG SRC="LVtemp20221117045024_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns difference between reference r and current state x-hat.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+<BR>
+Outputs:<BR>
+   - Error --  The state error matrix.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_GetError_Single" >LinearSystemLoop_GetError_Single</h3>
+<p><IMG SRC="LVtemp20221117045028_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns difference between reference r and current state x-hat.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+   - index  --  The index of the error matrix to return.<BR>
+<BR>
+Outputs:<BR>
+   - Error --  The error at that index.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_GetFeedForward" >LinearSystemLoop_GetFeedForward</h3>
+<p><IMG SRC="LVtemp20221117045032_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the feedforward used internally.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+<BR>
+Outputs:<BR>
+   - FeedForward --  the feedforward data cluster used internally.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_GetNextR" >LinearSystemLoop_GetNextR</h3>
+<p><IMG SRC="LVtemp20221117045037_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the controller's next reference r.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+<BR>
+Outputs:<BR>
+   -NextR  --  the controller's next reference r.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_GetNextR_Single" >LinearSystemLoop_GetNextR_Single</h3>
+<p><IMG SRC="LVtemp20221117045041_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns an element of the controller's next reference r.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+   - row  --  Row of r.<BR>
+<BR>
+Outputs:<BR>
+   - NextR --  the element i of the controller's next reference r.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_GetObserver" >LinearSystemLoop_GetObserver</h3>
+<p><IMG SRC="LVtemp20221117045046_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the observer used internally.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+<BR>
+Outputs:<BR>
+   - Observer --  the observer data cluster used internally.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_GetU" >LinearSystemLoop_GetU</h3>
+<p><IMG SRC="LVtemp20221117045051_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the controller's calculated control input u plus the calculated feedforward u_ff.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+<BR>
+Outputs:<BR>
+   - U --  the calculated control input u.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_GetU_Row" >LinearSystemLoop_GetU_Row</h3>
+<p><IMG SRC="LVtemp20221117045056_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns an element of the controller's calculated control input u.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+   - row  --  Row of u.<BR>
+<BR>
+Outputs:<BR>
+   - U --  the calculated control input u at the row i.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_GetXHat" >LinearSystemLoop_GetXHat</h3>
+<p><IMG SRC="LVtemp20221117045101_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the observer's state estimate x-hat.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+<BR>
+Outputs:<BR>
+   - XHat --  the observer's state estimate x-hat.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_GetXHat_Single" >LinearSystemLoop_GetXHat_Single</h3>
+<p><IMG SRC="LVtemp20221117045106_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns an element of the observer's state estimate x-hat.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+   - row  --  Row of x-hat.<BR>
+<BR>
+Outputs:<BR>
+   - XHat --  the i-th element of the observer's state estimate x-hat.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_New" >LinearSystemLoop_New</h3>
+<p><IMG SRC="LVtemp20221117045110_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Combines a controller, feedforward, and observer for controlling a mechanism with full state feedback.<BR>
+ <BR>
+For everything in this file, "inputs" and "outputs" are defined from the perspective of the plant. This means U is an input and Y is an output (because you give the plant U (powers) and it gives you back a Y (sensor values). This is the opposite of what they mean from the perspective of the controller (U is an output because that's what goes to the motors and Y is an input because that's what comes back from the sensors).<BR>
+ <BR>
+For more on the underlying math, read https://file.tavsys.net/control/controls-engineering-in-frc.pdf.<BR>
+<BR>
+Constructs a state-space loop with the given controller, feedforward and observer. By default, the initial reference is all zeros. Users should call reset with the initial system state before enabling the loop.<BR>
+   <BR>
+Inputs:<BR>
+   - controller  --  State-space controller.<BR>
+   - feedforward  --  Plant inversion feedforward.<BR>
+   - observer  --  State-space observer.<BR>
+   - maxVoltageVolts  --  The maximum voltage that can be applied. Assumes that the inputs are voltages.<BR>
+<BR>
+Outputs:<BR>
+   - outLinearSystemLoop  --  updated system data cluster<BR>
+   - error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_New_LinearSystem_ClampVal" >LinearSystemLoop_New_LinearSystem_ClampVal</h3>
+<p><IMG SRC="LVtemp20221117045116_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Combines a controller, feedforward, and observer for controlling a mechanism with full state feedback.<BR>
+ <BR>
+For everything in this file, "inputs" and "outputs" are defined from the perspective of the plant. This means U is an input and Y is an output (because you give the plant U (powers) and it gives you back a Y (sensor values). This is the opposite of what they mean from the perspective of the controller (U is an output because that's what goes to the motors and Y is an input because that's what comes back from the sensors).<BR>
+ <BR>
+For more on the underlying math, read https://file.tavsys.net/control/controls-engineering-in-frc.pdf.<BR>
+<BR>
+Constructs a state-space loop with the given plant, controller, and observer. By default, the initial reference is all zeros. Users should call reset with the initial system state before enabling the loop. This constructor assumes that the input(s) to this system are voltage.<BR>
+   <BR>
+Inputs:<BR>
+   - plant  --  State-space plant.<BR>
+   - controller  --  State-space controller.<BR>
+   - observer  --  State-space observer.<BR>
+   - maxVoltageVolts  --  The maximum voltage that can be applied. Commonly 12.<BR>
+   - dtSeconds  --  The nominal timestep.<BR>
+<BR>
+Outputs:<BR>
+   - outLinearSystemLoop  --  updated system data cluster<BR>
+   - error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_Predict" >LinearSystemLoop_Predict</h3>
+<p><IMG SRC="LVtemp20221117045122_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets new controller output, projects model forward, and runs observer prediction.<BR>
+   <BR>
+After calling this, the user should send the elements of u to the actuators.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+   - dtSeconds  --  Timestep for model update.<BR>
+<BR>
+Outputs:<BR>
+   - outLinearSystemLoop  --  updated system data cluster<BR>
+   - error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_Reset" >LinearSystemLoop_Reset</h3>
+<p><IMG SRC="LVtemp20221117045129_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Zeroes reference r and controller output u. The previous reference of the PlantInversionFeedforward and the initial state estimate of the KalmanFilter are set to the initial state provided.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+   - initialState  --  The initial state.<BR>
+<BR>
+Outputs:<BR>
+   - outLinearSystemLoop  --  updated system data cluster<BR>
+   - sizeCoerced  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_SetNextR" >LinearSystemLoop_SetNextR</h3>
+<p><IMG SRC="LVtemp20221117045134_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Set the next reference r.<BR>
+   <BR>
+Inputs:<BR>
+   - LinearSystemLoop  --  system data cluster<BR>
+   - nextR  --  Next reference.<BR>
+<BR>
+Outputs:<BR>
+   - outLinearSystemLoop  --  updated system data cluster<BR>
+   - sizeCoerced  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

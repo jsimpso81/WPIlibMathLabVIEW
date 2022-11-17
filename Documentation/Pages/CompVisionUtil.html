@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="CompVisionUtil" >CompVisionUtil</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="CompVisionUtil_CalculateDistanceToTarget" >CompVisionUtil_CalculateDistanceToTarget</h3>
+<p><IMG SRC="LVtemp20221117042805_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Algorithm from https://docs.limelightvision.io/en/latest/cs_estimating_distance.html Estimates range to a target using the target's elevation. This method can produce more stable results than SolvePNP when well tuned, if the full 6d robot pose is not required. Note that this method requires the camera to have 0 roll (not be skewed clockwise or CCW relative to the floor), and for there to exist a height differential between goal and camera. The larger this differential, the more accurate the distance estimate will be.<BR>
+    <BR>
+Units can be converted using the conversion functions.<BR>
+     <BR>
+Inputs:<BR>
+   -  CameraHeight_Meters  --  The physical height of the camera off the floor <BR>
+                          in meters.<BR>
+   -  TargetHeightMeters  --  The physical height of the target off the floor in meters. <BR>
+                          This should be the height of whatever is being targeted (i.e. if the <BR>
+                           targeting region is set to top, this should be the height of the top <BR>
+                           of the target).<BR>
+   -  CameraPitch_Radians  --  The pitch of the camera from the horizontal plane <BR>
+                            in radians.<BR>
+                           Positive values up.<BR>
+   -  TargetPitchRadian  --  The pitch of the target in the camera's lens in radians. <BR>
+                            Positive values up.<BR>
+   -  TargetYawRadians  --  The yaw of the target in the camera's lens in radians.<BR>
+<BR>
+Outputs<BR>
+   -  DistanceToTarget_Meters  --  The estimated distance to the target in meters.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="CompVisionUtil_EstimateCameraToTarget" >CompVisionUtil_EstimateCameraToTarget</h3>
+<p><IMG SRC="LVtemp20221117042809_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Estimates a Transform2d that maps the camera position to the target position, using the robot's gyro. Note that the gyro angle provided *must* line up with the field coordinate system -- that is, it should read zero degrees when pointed towards the opposing alliance station, and increase as the robot rotates CCW.<BR>
+  <BR>
+Inputs:  <BR>
+   -  CameraToTargetTranslation  --  A Translation3d that encodes the x/y position <BR>
+                   of the target relative to the camera.<BR>
+   -  FieldToTarget  --  A Pose3d representing the target position in the field coordinate <BR>
+                   system.<BR>
+   -  GyroAngle  --  A rotation2d representing the current robot gyro angle, likely from odometry.<BR>
+<BR>
+Outputs:<BR>
+   -  EstimateCameraToTarget  --  A Transform3d that takes us from the camera to <BR>
+                    the target.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="CompVisionUtil_EstimateFieldToCamera" >CompVisionUtil_EstimateFieldToCamera</h3>
+<p><IMG SRC="LVtemp20221117042812_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Estimates the pose of the camera in the field coordinate system, given the position of the target relative to the camera, and the target relative to the field. This *only* tracks the position of the camera, not the position of the robot itself.<BR>
+<BR>
+Inputs:<BR>
+  --  CameraToTarget  --  Transform3d containing the position of the target relative to the camera.<BR>
+  --  FieldToTarget  --  Pose3d containing the position of the target in the field.<BR>
+<BR>
+Output:<BR>
+  --   EstimateFieldToCamera  --  Pose3d containing position of the camera in the field.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="CompVisionUtil_EstimateFieldToRobot" >CompVisionUtil_EstimateFieldToRobot</h3>
+<p><IMG SRC="LVtemp20221117042816_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Estimate the position of the robot in the field.<BR>
+<BR>
+Inputs:<BR>
+   -  CameraHeightMeters  --  The physical height of the camera off the floor in meters.<BR>
+   -  TargetHeightMeters  --  The physical height of the target off the floor in meters. <BR>
+                 This should be the height of whatever is being targeted (i.e. if the targeting<BR>
+                  region is set to top, this should be the height of the top of the target).<BR>
+   -  CameraPitchRadians  --  The pitch of the camera from the horizontal plane in <BR>
+                  radians.  Positive values up.<BR>
+   -  TargetPitchRadians  --  The pitch of the target in the camera's lens in radians. Positive<BR>
+                 values up.<BR>
+   -  TargetYaw  --  Rotation2d representing the observed yaw of the target. Note that this *must* be <BR>
+                 CCW-positive, and Photon returns CW-positive.<BR>
+   -  GyroAngle  --  Rotation2d representing he current robot gyro angle, likely from odometry.<BR>
+   -  FieldToTarget --  A Pose3d representing the target position in the field coordinate <BR>
+                  system.<BR>
+   -  CameraToRobot  --  The Transform3d position of the robot relative to the camera. If the camera <BR>
+                 was mounted 3 inches behind the "origin" (usually physical center) of the<BR>
+                 robot, this would be Transform3d (3 inches, 0 inches, 0 inches, 0 degrees).<BR>
+                 ( Make certain to convert from inches to meters! )<BR>
+<BR>
+Outputs<BR>
+   -  EstimateFieldToRobot  --  The Pose3d position of the robot in the field.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="CompVisionUtil_EstimateFieldToRobot_Alt" >CompVisionUtil_EstimateFieldToRobot_Alt</h3>
+<p><IMG SRC="LVtemp20221117042819_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Estimates the pose of the robot in the field coordinate system, given the position of the target relative to the camera, the target relative to the field, and the robot relative to the camera.<BR>
+<BR>
+Inputs:<BR>
+  --  CameraToTarget  -- Transform3d containing the position of the target relative to the camera.<BR>
+  --  FieldToTarget  --  Pose3d containing the position of the target in the field.<BR>
+  --  CameraToRobot  --  Transform3d containing the position of the robot relative to the camera. If the camera was mounted 3 inches behind the "origin" (usually physical center) of the robot, this would be Transform2d(3 inches, 0 inches, 0 inches, 0 degrees).<BR>
+<BR>
+Output:<BR>
+  --  EstimatedFieldToRobot  --  A Pose3d containing the position of the robot in the field.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

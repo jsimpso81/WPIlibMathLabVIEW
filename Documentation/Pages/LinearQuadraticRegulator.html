@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="LinearQuadraticRegulator" >LinearQuadraticRegulator</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearQuadraticRegulator_Calculate" >LinearQuadraticRegulator_Calculate</h3>
+<p><IMG SRC="LVtemp20221117044810_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the next output of the controller.<BR>
+<BR>
+Inputs:<BR>
+  -  LinearQuadraticRegulator  --  controller data cluster   <BR>
+  -  x  --  The current state x.<BR>
+<BR>
+Output:<BR>
+  -  outLinearQuadraticRegulator  --  updated controller data cluster<BR>
+  -  U  --  The next controller output.<BR>
+  -  error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearQuadraticRegulator_Calculate_NextR" >LinearQuadraticRegulator_Calculate_NextR</h3>
+<p><IMG SRC="LVtemp20221117044816_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the next output of the controller.<BR>
+<BR>
+Inputs:<BR>
+  -  LinearQuadraticRegulator  --  controller data cluster   <BR>
+  -  x  --  The current state x.<BR>
+  -  nextR  --  the next reference vector r.<BR>
+<BR>
+Output:<BR>
+  -  outLinearQuadraticRegulator  --  updated controller data cluster<BR>
+  -  U  --  The next controller output.<BR>
+  -  error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearQuadraticRegulator_GetK" >LinearQuadraticRegulator_GetK</h3>
+<p><IMG SRC="LVtemp20221117044820_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the controller matrix K.<BR>
+   <BR>
+Input:<BR>
+  -  LinearQuadraticRegulator  --  controller data cluster<BR>
+<BR>
+Outputs:<BR>
+  -  K  --  the controller matrix K.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearQuadraticRegulator_GetK_Single" >LinearQuadraticRegulator_GetK_Single</h3>
+<p><IMG SRC="LVtemp20221117044824_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns a single element of the controller matrix K.<BR>
+   <BR>
+Input:<BR>
+  -  LinearQuadraticRegulator  --  controller data cluster<BR>
+  -  row  --  index into the row of K (0-n)<BR>
+<BR>
+Outputs:<BR>
+  -  K  --  the controller single value K.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearQuadraticRegulator_GetR" >LinearQuadraticRegulator_GetR</h3>
+<p><IMG SRC="LVtemp20221117044827_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the reference vector r.<BR>
+   <BR>
+Inputs:<BR>
+  -  LinearQuadraticRegulator  --  controller data cluster<BR>
+<BR>
+Outputs:<BR>
+  -  R  --  The reference vector.<BR>
+  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearQuadraticRegulator_GetR_Single" >LinearQuadraticRegulator_GetR_Single</h3>
+<p><IMG SRC="LVtemp20221117044831_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns a single element of the reference vector r.<BR>
+   <BR>
+Inputs:<BR>
+  -  LinearQuadraticRegulator  --  controller data cluster<BR>
+  -  row  --  index into the R matrix (0-n)<BR>
+<BR>
+Outputs:<BR>
+  -  R  --  The single requested reference value.<BR>
+  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearQuadraticRegulator_GetU" >LinearQuadraticRegulator_GetU</h3>
+<p><IMG SRC="LVtemp20221117044834_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the control input vector u.<BR>
+   <BR>
+Inputs:<BR>
+  -  LinearQuadraticRegulator  -- controller data cluster<BR>
+<BR>
+Outputs:<BR>
+  -  U  --  The control input.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearQuadraticRegulator_GetU_Single" >LinearQuadraticRegulator_GetU_Single</h3>
+<p><IMG SRC="LVtemp20221117044838_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns a single element of the control input vector u.<BR>
+   <BR>
+Inputs:<BR>
+  -  LinearQuadraticRegulator  -- controller data cluster<BR>
+  -  row  --  Index of U to be returned (0-n)<BR>
+<BR>
+Outputs:<BR>
+  -  U  --  The control input single value.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearQuadraticRegulator_LatencyCompensate" >LinearQuadraticRegulator_LatencyCompensate</h3>
+<p><IMG SRC="LVtemp20221117044843_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Adjusts LQR controller gain to compensate for a pure time delay in the input.<BR>
+   <BR>
+Linear-Quadratic regulator controller gains tend to be aggressive. If sensor measurements are time-delayed too long, the LQR may be unstable. However, if we know the amount of delay, we can compute the control based on where the system will be after the time delay.<BR>
+   <BR>
+See https://file.tavsys.net/control/controls-engineering-in-frc.pdf appendix C.4 for a derivation.<BR>
+   <BR>
+Inputs:<BR>
+  -  inLinearQuadraticRegulator  --  controller data cluster<BR>
+  -  plant  --  The plant being controlled.<BR>
+  -  dtSeconds  --  Discretization timestep in seconds.<BR>
+  -  inputDelaySeconds  --  Input time delay in seconds.<BR>
+<BR>
+Output:<BR>
+  -  outLinearQuadraticRegulator  -- updated data cluster<BR>
+  -  error  --  If TRUE, an error occured.<BR>
+  -  exponentNotRational  -- if TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearQuadraticRegulator_New" >LinearQuadraticRegulator_New</h3>
+<p><IMG SRC="LVtemp20221117044850_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Contains the controller coefficients and logic for a linear-quadratic regulator (LQR). LQRs use the control law u = K(r - x).<BR>
+ <BR>
+For more on the underlying math, read https://file.tavsys.net/control/controls-engineering-in-frc.pdf.<BR>
+<BR>
+Constructs a controller with the given coefficients and plant.<BR>
+<BR>
+Inputs:<BR>
+  -  A  --  Continuous system matrix of the plant being controlled.<BR>
+  -  B  --  Continuous input matrix of the plant being controlled.<BR>
+  -  Q  --  The state cost matrix.<BR>
+  -  R  --  The input cost matrix.<BR>
+  -  dtSeconds  --  Discretization timestep.<BR>
+<BR>
+Outputs:<BR>
+  -  LinearQuadraticRegulator  --  controller data cluster<BR>
+  - Error  --  if TRUE, and error occured<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearQuadraticRegulator_New_ELMS" >LinearQuadraticRegulator_New_ELMS</h3>
+<p><IMG SRC="LVtemp20221117044858_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Contains the controller coefficients and logic for a linear-quadratic regulator (LQR). LQRs use the control law u = K(r - x).<BR>
+ <BR>
+For more on the underlying math, read https://file.tavsys.net/control/controls-engineering-in-frc.pdf.<BR>
+<BR>
+Constructs a controller with the given coefficients and plant.<BR>
+<BR>
+Inputs:<BR>
+  -  A  --  Continuous system matrix of the plant being controlled.<BR>
+  -  B  --  Continuous input matrix of the plant being controlled.<BR>
+  -  qelms  --  The maximum desired error tolerance for each state.<BR>
+  -  relms  --  The maximum desired control effort for each input.<BR>
+  -  dtSeconds  --  Discretization timestep.<BR>
+<BR>
+Outputs:<BR>
+  -  LinearQuadraticRegulator  -- controller data cluster<BR>
+  -  Error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearQuadraticRegulator_New_N" >LinearQuadraticRegulator_New_N</h3>
+<p><IMG SRC="LVtemp20221117044906_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Contains the controller coefficients and logic for a linear-quadratic regulator (LQR). LQRs use the control law u = K(r - x).<BR>
+ <BR>
+For more on the underlying math, read https://file.tavsys.net/control/controls-engineering-in-frc.pdf.<BR>
+<BR>
+Constructs a controller with the given coefficients and plant.<BR>
+<BR>
+Inputs:<BR>
+  -  A  --  Continuous system matrix of the plant being controlled.<BR>
+  -  B  --  Continuous input matrix of the plant being controlled.<BR>
+  -  Q  --  The state cost matrix.<BR>
+  -  R  --  The input cost matrix.<BR>
+   - N  --  The state-input cross-term cost matrix.<BR>
+  -  dtSeconds  --  Discretization timestep.<BR>
+<BR>
+Outputs:<BR>
+  -  LinearQuadraticRegulator  --  controller data cluster<BR>
+  - Error  --  if TRUE, and error occured<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearQuadraticRegulator_New_SystemELMS" >LinearQuadraticRegulator_New_SystemELMS</h3>
+<p><IMG SRC="LVtemp20221117044915_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Contains the controller coefficients and logic for a linear-quadratic regulator (LQR). LQRs use<BR>
+the control law u = K(r - x).<BR>
+ <BR>
+For more on the underlying math, read<BR>
+https://file.tavsys.net/control/controls-engineering-in-frc.pdf.<BR>
+<BR>
+Constructs a controller with the given coefficients and plant. Rho is defaulted to 1.<BR>
+<BR>
+Inputs:<BR>
+  -  LinearSystem  -  The plant being controlled.<BR>
+  -  qelms  --  The maximum desired error tolerance for each state.<BR>
+  -  relms  --  The maximum desired control effort for each input.<BR>
+  -  dtSeconds  --  Discretization timestep.<BR>
+<BR>
+Outputs:<BR>
+  -  LinearQuadraticRegullator  --  controller data cluster<BR>
+  -  Error  -- If TRUE, and error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearQuadraticRegulator_Reset" >LinearQuadraticRegulator_Reset</h3>
+<p><IMG SRC="LVtemp20221117044921_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Resets the controller.<BR>
+<BR>
+Inputs:<BR>
+  --  LinearQuadraticRegulator  --  controller data cluster<BR>
+<BR>
+Outputs:<BR>
+  --  outLinearQuadraticRegulator  --  updated controller data cluster<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

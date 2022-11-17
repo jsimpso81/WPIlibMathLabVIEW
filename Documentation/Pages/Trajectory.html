@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="Trajectory" >Trajectory</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Trajectory_Concatenate" >Trajectory_Concatenate</h3>
+<p><IMG SRC="LVtemp20221117052542_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Concatenates another trajectory to the current trajectory. The user is responsible for making sure that the end pose of this trajectory and the start pose of the other trajectory match (if that is the desired behavior).<BR>
+   <BR>
+Inputs:<BR>
+   -  Trajectory 1  --  Initial trajectory<BR>
+   -  Trajectory 2  --  Trajectory to add to end of Trajectory 1<BR>
+<BR>
+Outputs:<BR>
+   -  OutTrajectory  --  Concatenated trajectory<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Trajectory_Equals" >Trajectory_Equals</h3>
+<p><IMG SRC="LVtemp20221117052546_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Determines if two trajectories are equal.<BR>
+<BR>
+Parameters:<BR>
+  - Trajectory - Trajectory data structure<BR>
+  - Other Trajectory - Trajectory data structure<BR>
+<BR>
+Returns:<BR>
+  - Equals -  boolean indicating if the two trajectories are equal.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Trajectory_GetStates" >Trajectory_GetStates</h3>
+<p><IMG SRC="LVtemp20221117052549_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Gets the array of trajectory states for this trajectory<BR>
+<BR>
+Parameters:<BR>
+  - Trajectory - Trajectory data structure<BR>
+<BR>
+Returns:<BR>
+  - States -  Array of trajectory states for this trajectory</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Trajectory_GetTotalTime" >Trajectory_GetTotalTime</h3>
+<p><IMG SRC="LVtemp20221117052553_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Gets the total time in seconds for this trajectory<BR>
+<BR>
+Parameters:<BR>
+  - Trajectory - Trajectory data structure<BR>
+<BR>
+Returns:<BR>
+  - TotalTime_SEC -  Total trajectory time in seconds.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Trajectory_New" >Trajectory_New</h3>
+<p><IMG SRC="LVtemp20221117052556_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a trajectory from a vector of states.<BR>
+<BR>
+Represents a time-parameterized trajectory. The trajectory contains of various States that represent the pose, curvature, time elapsed, velocity, and acceleration at that point.<BR>
+<BR>
+Parameters:<BR>
+  - TrajStates - A vector of states.<BR>
+<BR>
+Returns:<BR>
+  - Trajectory - Trajectory data structure</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Trajectory_New_Empty" >Trajectory_New_Empty</h3>
+<p><IMG SRC="LVtemp20221117052559_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs an empty trajectory.<BR>
+<BR>
+Represents a time-parameterized trajectory. The trajectory contains of various States that represent the pose, curvature, time elapsed, velocity, and acceleration at that point.<BR>
+<BR>
+Parameters:<BR>
+  - <None><BR>
+<BR>
+Returns:<BR>
+  - Trajectory - Trajectory data structure</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Trajectory_RelativeTo" >Trajectory_RelativeTo</h3>
+<p><IMG SRC="LVtemp20221117052603_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Transforms all poses in the trajectory so that they are relative to the given pose. This is useful for converting a field-relative trajectory into a robot-relative trajectory.<BR>
+   <BR>
+Parameters:<BR>
+  - InputTrajectory - Trajectory data structure<BR>
+  - pose -The pose that is the origin of the coordinate frame that the current trajectory will be transformed into.<BR>
+ <BR>
+Returns:<BR>
+  - OutputTrajectory - The transformed trajectory.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Trajectory_Sample" >Trajectory_Sample</h3>
+<p><IMG SRC="LVtemp20221117052606_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sample the trajectory at a point in time.<BR>
+   <BR>
+Parameters:<BR>
+   - InputTrajectory - The Trajectory data structure<BR>
+   - time -  The point in time since the beginning of the trajectory to sample. (seconds)<BR>
+<BR>
+Returns:<BR>
+   - OutputTrajState - The state at that point in time.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Trajectory_SampleReverse" >Trajectory_SampleReverse</h3>
+<p><IMG SRC="LVtemp20221117052610_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sample the trajectory at a point in time.  The trajectory is sampled in reverse such that the ending time becomes 0 and the beginning time is the maximum time.  The selected trajectory state is then transformed to be relative to end of the trajectory.<BR>
+<BR>
+For this subVI to work correctly, sampling must start at time 0.0.  <BR>
+<BR>
+The result is a relative trajectory which starts at 0,0,0.   This assumes that the robot follows the trajectory such that the orientation of the robot equals the ending state of the trajectory.  <BR>
+<BR>
+This routine does not exist in WPILIB<BR>
+   <BR>
+Parameters:<BR>
+   - InputTrajectory - The Trajectory data structure<BR>
+   - time -  The point in time since the beginning of the trajectory to sample. (seconds)<BR>
+<BR>
+Returns:<BR>
+   - OutputTrajState - The state at that point in time.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Trajectory_TransformBy" >Trajectory_TransformBy</h3>
+<p><IMG SRC="LVtemp20221117052613_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Transforms all poses in the trajectory by the given transform. This is useful for converting a robot-relative trajectory into a field-relative trajectory. This works with respect to the first pose in the trajectory.<BR>
+   <BR>
+Parameters:<BR>
+  - InputTrajectory - Trajectory data structure<BR>
+  - transform - The transform to transform the trajectory by.<BR>
+<BR>
+Returns:<BR>
+  - OutputTrajectory - The transformed trajectory.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Trajectory_lerp_Pose" >Trajectory_lerp_Pose</h3>
+<p><IMG SRC="LVtemp20221117052617_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This is an internal routine.   Linearly interpolates between two values.<BR>
+<BR>
+Parameters:<BR>
+  - startPose - The start Pose.<BR>
+   - endPose  - The end Pose.<BR>
+   - fraction     - The fraction for interpolation.<BR>
+<BR>
+Return:<BR>
+   - outputPose - The interpolated Pose.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Trajectory_lerp_double" >Trajectory_lerp_double</h3>
+<p><IMG SRC="LVtemp20221117052621_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This is an internal routine.   Linearly interpolates between two values.<BR>
+<BR>
+Parameters:<BR>
+  - startValue - The start value.<BR>
+   - endValue  - The end value.<BR>
+   - fraction     - The fraction for interpolation.<BR>
+<BR>
+Return:<BR>
+   - outputValue - The interpolated value.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

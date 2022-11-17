@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="Transform3d" >Transform3d</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Transform3d_Create_Default" >Transform3d_Create_Default</h3>
+<p><IMG SRC="LVtemp20221117052703_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs the identity transform -- maps an initial pose to itself.<BR>
+<BR>
+Parameters:<BR>
+  -- none  --<BR>
+<BR>
+Result:<BR>
+  - transform3d  --  TRANSFORM3d data structure<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Transform3d_Create_Pose3dPose3d" >Transform3d_Create_Pose3dPose3d</h3>
+<p><IMG SRC="LVtemp20221117052707_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs the transform that maps the initial pose to the final pose.<BR>
+<BR>
+Parameters:<BR>
+   - initial pose3d  --  The initial pose for the transformation.<BR>
+   - last pose3d   --  The final pose for the transformation.<BR>
+<BR>
+Returns:<BR>
+    - Transform 3d  -- The TRANSFORM3d data structure<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Transform3d_Create_Trans3dRot3d" >Transform3d_Create_Trans3dRot3d</h3>
+<p><IMG SRC="LVtemp20221117052711_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a transform with the given translation and rotation components.<BR>
+<BR>
+Parameters:<BR>
+  -  translation3d  -- Translational component of the transform.<BR>
+  -  rotation3e  --   Rotational component of the transform.<BR>
+<BR>
+Result:<BR>
+  -  transform3d  --  TRANSFORM3d data structure<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Transform3d_Div" >Transform3d_Div</h3>
+<p><IMG SRC="LVtemp20221117052715_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Divides the transform3d by the scalar.<BR>
+<BR>
+Parameters:<BR>
+ - IN TRANSFORM3d  --  This TRANSFORM data structure<BR>
+ - SCALAR  --  The scalar value to divide the transform by<BR>
+<BR>
+Results:<BR>
+ - OUT TRANSFORM3d  --  The multiplied transform data structure<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Transform3d_Equals" >Transform3d_Equals</h3>
+<p><IMG SRC="LVtemp20221117052718_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Checks equality between this Transform3d and another Transform3d.<BR>
+<BR>
+Parameters:<BR>
+ - IN TRANSFORM3d  --  This TRANSFORM data structure<BR>
+ - OTHER TRANSFORM3d  --  The other TRANSFORM to compare <BR>
+<BR>
+Results:<BR>
+  - EQUALS - Returns TRUE when both TRANSFORMs are the same.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Transform3d_GetRotation3d" >Transform3d_GetRotation3d</h3>
+<p><IMG SRC="LVtemp20221117052722_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the rotational3d component of the transformation3d.<BR>
+<BR>
+Parameters:<BR>
+  - IN TRANSFORM3d  --  The TRANSFORM3d data structure<BR>
+<BR>
+Returns:<BR>
+ - ROTATION3d  --  The rotational component of the transform.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Transform3d_GetTranslation3d" >Transform3d_GetTranslation3d</h3>
+<p><IMG SRC="LVtemp20221117052725_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the translation3d component of the transformation3d.<BR>
+<BR>
+Parameters:<BR>
+ - IN TRANSFORM3d  --  THis TRANSFORM data structure<BR>
+<BR>
+Returns:<BR>
+ - TRANSLATION3d  --  The translational component of the transform.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Transform3d_GetXYZ" >Transform3d_GetXYZ</h3>
+<p><IMG SRC="LVtemp20221117052729_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the X, Y, Z elements of the translation3d component of the transformation3d.<BR>
+<BR>
+Parameters:<BR>
+ - IN TRANSFORM3d  --  THis TRANSFORM data structure<BR>
+<BR>
+Returns:<BR>
+ - X - The X element of the translational component of the transform.<BR>
+ - Y - The Y element of the translational component of the transform.<BR>
+ - Z - The Z element of the translational component of the transform.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Transform3d_Inverse" >Transform3d_Inverse</h3>
+<p><IMG SRC="LVtemp20221117052732_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Invert the transformation3d. This is useful for undoing a transformation.<BR>
+<BR>
+Parameters:<BR>
+ - IN TRANSFORM3D  --  This TRANSFORM3d data structure<BR>
+<BR>
+Results:<BR>
+ - OUT TRANSFORM3D  --  The inverted transformation.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Transform3d_Plus" >Transform3d_Plus</h3>
+<p><IMG SRC="LVtemp20221117052736_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Composes two transformations.<BR>
+<BR>
+Parameters:<BR>
+  - IN TRANSFORM3d  --  This TRANSFORM data structure<BR>
+  - other Transform3d   --  The transform to compose with this one.<BR>
+<BR>
+Results:<BR>
+ - OUT TRANSFORM3d --  The composition of the two transformations.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Transform3d_Times" >Transform3d_Times</h3>
+<p><IMG SRC="LVtemp20221117052739_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Scales the transform3d by the scalar.<BR>
+<BR>
+Parameters:<BR>
+ - IN TRANSFORM3d  --  This TRANSFORM data structure<BR>
+ - SCALAR  --  The scalar value to multiply the transform by<BR>
+<BR>
+Results:<BR>
+ - OUT TRANSFORM3d  --  The multiplied transform data structure<BR>
+<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

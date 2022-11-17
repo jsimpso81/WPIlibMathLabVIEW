@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="TimeInterpPose2d" >TimeInterpPose2d</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpPose2d_AddSample" >TimeInterpPose2d_AddSample</h3>
+<p><IMG SRC="LVtemp20221117052114_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Add a sample to the buffer.<BR>
+  <BR>
+Inputs:<BR>
+  -  In TimeInterpPose2d  -- Time Interp data cluster <BR>
+  - Time  --  The time stamp of the sample (seconds)<BR>
+  - Value  -- The Pose2d value<BR>
+<BR>
+Outputs:<BR>
+  -  out TimeInterpPose2d  -- Updated Time Interp data cluster <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpPose2d_CleanUp" >TimeInterpPose2d_CleanUp</h3>
+<p><IMG SRC="LVtemp20221117052119_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Removes samples older than our current history size.<BR>
+<BR>
+Inputs:<BR>
+  -  In TimeInterpPose2d  --  Input data cluster.<BR>
+<BR>
+Outputs:<BR>
+  -  Out TimeInterpPose2d  --  Updated data cluster.<BR>
+  -  Error  --  Returns TRUE if an error occured.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpPose2d_Clear" >TimeInterpPose2d_Clear</h3>
+<p><IMG SRC="LVtemp20221117052123_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Removes all samples from the history buffer.<BR>
+<BR>
+Inputs:<BR>
+  -  In TimeInterpPose2d  --  Input data cluster.<BR>
+<BR>
+Outputs:<BR>
+  -  Out TimeInterpPose2d   --  Updated data cluster.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpPose2d_GetSample" >TimeInterpPose2d_GetSample</h3>
+<p><IMG SRC="LVtemp20221117052127_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sample the buffer at the given time.<BR>
+<BR>
+Inputs:<BR>
+   -  TimeInterpPose2d  -- Input data cluster<BR>
+   -  TimeStamp  -- Time at which to  sample (seconds)<BR>
+<BR>
+Outputs<BR>
+  -  OutputPose  -- Sampled Pose2d.   This is an exact value if there is a sample in the buffer at this time.  Otherwise the value is interpolated.  <BR>
+  -  IsPresent  -- Returns TRUE if the buffer contains data as far back as TimeStamp.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpPose2d_New" >TimeInterpPose2d_New</h3>
+<p><IMG SRC="LVtemp20221117052131_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create the data cluster for a TIME_INTERPOLATABLE_POSE2D.<BR>
+<BR>
+The TimeInterpolatableBuffer provides an easy way to estimate past measurements. One application might be in conjunction with the DifferentialDrivePoseEstimator, where knowledge of the robot pose at the time when vision or other global measurement were recorded is necessary, or for recording the past angles of mechanisms as measured by encoders.<BR>
+<BR>
+The TIME_INTERPOLATABLE_POSE2D stores and returns POSE2D values.<BR>
+<BR>
+Inputs:<BR>
+  - Max Time -- The maximum time (seconds) of data to store in the buffer.<BR>
+<BR>
+Outputs:<BR>
+  -  Time Inter Pose2d  -- Created data structure cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpPose2d_SetMaxTime" >TimeInterpPose2d_SetMaxTime</h3>
+<p><IMG SRC="LVtemp20221117052134_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the maximum time period that should be stored in the buffer.<BR>
+<BR>
+Inputs:<BR>
+  -  In TimeInterpPose2d  --  Input data cluster.<BR>
+  - Max Time --  Maximum time period to store in the buffer (seconds)<BR>
+<BR>
+Outputs:<BR>
+  -  Out TimeInterpPose2d   --  Updated data cluster.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

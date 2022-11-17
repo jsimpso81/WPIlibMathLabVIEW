@@ -1,0 +1,456 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="DiffDriveTrainSim" >DiffDriveTrainSim</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_ClampInput" >DiffDriveTrainSim_ClampInput</h3>
+<p><IMG SRC="LVtemp20221117043525_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Clamp the input vector such that no element exceeds the battery voltage. If any does, the relative magnitudes of the input will be maintained.<BR>
+   <BR>
+Inputs:<BR>
+   -  u  --  The input vector.<BR>
+   - BatteryVoltage  --  The battery voltage (volts)<BR>
+<BR>
+Outputs:<BR>
+   -  NormalizedU  --  The normalized input.<BR>
+   - SizeCoerced  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_CreateKitbotSim" >DiffDriveTrainSim_CreateKitbotSim</h3>
+<p><IMG SRC="LVtemp20221117043530_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a sim for the standard FRC kitbot.<BR>
+   <BR>
+Inputs:<BR>
+   -  jKgMetersSquared  --  The moment of inertia of the drivebase. This can be calculated using SysId.<BR>
+   -  mass  --  mass of robot - kg<BR>
+   -  motor  --  The motors installed in the bot.<BR>
+   -  gearing  --  The gearing reduction used.<BR>
+   -  wheelSize  --  The wheel size.<BR>
+   - trackWidth  --  Width between left and right wheels - Meters<BR>
+   -  measurementStdDevs  --  Standard deviations for measurements, in the form [x, y, heading, left velocity, right velocity, left distance, right distance]?. Can be null if no noise is desired. Gyro standard deviations of 0.0001 radians, velocity standard deviations of 0.05 m/s, and position measurement standard deviations of 0.005 meters are a reasonable starting point.<BR>
+<BR>
+Outputs:<BR>
+   -  OutDiffDriveTraimSim  --  Updated data cluster.<BR>
+   -  SizeCoerced  --  If TRUE, an error occured.  Execution may continue<BR>
+   </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_CreateKitbotSim_EstMass" >DiffDriveTrainSim_CreateKitbotSim_EstMass</h3>
+<p><IMG SRC="LVtemp20221117043534_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a sim for the standard FRC kitbot.<BR>
+<BR>
+The mass of the robot is estimated at 25 pounds, converted to kg before use.<BR>
+   <BR>
+Inputs:<BR>
+   -  jKgMetersSquared  --  The moment of inertia of the drivebase. This can be calculated using SysId.<BR>
+   -  motor  --  The motors installed in the bot.<BR>
+   -  gearing  --  The gearing reduction used.<BR>
+   -  wheelSize  --  The wheel size.<BR>
+   - trackWidth  --  Width between left and right wheels - Meters<BR>
+   -  measurementStdDevs  --  Standard deviations for measurements, in the form [x, y, heading, left velocity, right velocity, left distance, right distance]?. Can be null if no noise is desired. Gyro standard deviations of 0.0001 radians, velocity standard deviations of 0.05 m/s, and position measurement standard deviations of 0.005 meters are a reasonable starting point.<BR>
+<BR>
+Outputs:<BR>
+   -  OutDiffDriveTraimSim  --  Updated data cluster.<BR>
+   -  SizeCoerced  --  If TRUE, an error occured.  Execution may continue<BR>
+   </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_CreateKitbotSim_EstMassMOI" >DiffDriveTrainSim_CreateKitbotSim_EstMassMOI</h3>
+<p><IMG SRC="LVtemp20221117043538_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a sim for the standard FRC kitbot.<BR>
+<BR>
+The robot's mass of the robot is estimated at 25 pounds, converted to kg before use.<BR>
+<BR>
+The robot;s moment of inertia (MOI) is estimated.<BR>
+   <BR>
+Inputs:<BR>
+   -  motor  --  The motors installed in the bot.<BR>
+   -  gearing  --  The gearing reduction used.<BR>
+   -  wheelSize  --  The wheel size.<BR>
+   - trackWidth  --  Width between left and right wheels - Meters<BR>
+   -  measurementStdDevs  --  Standard deviations for measurements, in the form [x, y, heading, left velocity, right velocity, left distance, right distance]?. Can be null if no noise is desired. Gyro standard deviations of 0.0001 radians, velocity standard deviations of 0.05 m/s, and position measurement standard deviations of 0.005 meters are a reasonable starting point.<BR>
+<BR>
+Outputs:<BR>
+   -  OutDiffDriveTraimSim  --  Updated data cluster.<BR>
+   -  SizeCoerced  --  If TRUE, an error occured.  Execution may continue<BR>
+   </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_GetCurrentDrawAmps" >DiffDriveTrainSim_GetCurrentDrawAmps</h3>
+<p><IMG SRC="LVtemp20221117043542_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the current draw of the drivetrain.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   -  TotalCurrent_Amps  --  the current draw, in amps<BR>
+   <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_GetCurrentGearing" >DiffDriveTrainSim_GetCurrentGearing</h3>
+<p><IMG SRC="LVtemp20221117043545_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the drivetrain gearing.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   -  CurrentGearing  --  the gearing ration<BR>
+   <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_GetDynamics" >DiffDriveTrainSim_GetDynamics</h3>
+<p><IMG SRC="LVtemp20221117043551_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Diff Drive Train Sim internal call back function to get dynamics.  This is used by the Update function.<BR>
+<BR>
+Inputs:<BR>
+   -  Info  --  Extra data variant value containing:<BR>
+                       Matrix  A<BR>
+                       Matrix  B<BR>
+                       Double  CurrentGear<BR>
+                       Double  OriginalGear<BR>
+                       Double  m_rb <BR>
+   -  X  --  X matrix<BR>
+   -  U  --  U matrix<BR>
+<BR>
+Outputs:<BR>
+   -  xDot<BR>
+   -  Error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_GetHeading" >DiffDriveTrainSim_GetHeading</h3>
+<p><IMG SRC="LVtemp20221117043557_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the direction the robot is pointing.<BR>
+   <BR>
+Note that this angle is counterclockwise-positive, while most gyros are clockwise positive.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   -  Heading  --  The direction the robot is pointing.<BR>
+   <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_GetLeftCurrentDrawAmps" >DiffDriveTrainSim_GetLeftCurrentDrawAmps</h3>
+<p><IMG SRC="LVtemp20221117043600_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the current draw of the left side of the drivetrain.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   -  LeftCurrentDraw_Amp  --  the drivetrain's left side current draw, in amps<BR>
+   <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_GetLeftPositionMeters" >DiffDriveTrainSim_GetLeftPositionMeters</h3>
+<p><IMG SRC="LVtemp20221117043604_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the left encoder position in meters.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   -  LeftPosition_Meters  --  The encoder position.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_GetLeftVelocityMetersPerSecond" >DiffDriveTrainSim_GetLeftVelocityMetersPerSecond</h3>
+<p><IMG SRC="LVtemp20221117043608_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the left encoder velocity in meters per second.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   -  LeftVelocity_M_Per_Sec  --  The encoder velocity.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_GetOutput_Single" >DiffDriveTrainSim_GetOutput_Single</h3>
+<p><IMG SRC="LVtemp20221117043611_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the output <BR>
+<BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+   -  Row  --  The desired row.<BR>
+                      values correspond to:<BR>
+                         0  =  X<BR>
+                         1  =  Y<BR>
+                         2  =  Heading<BR>
+                         3  =  LeftVelocity<BR>
+                         4  =  RightVelocity<BR>
+                         5  =  LeftPosition<BR>
+                         6  =  RightPosition<BR>
+<BR>
+Outputs:<BR>
+   -  Output  --  The output value<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_GetPose" >DiffDriveTrainSim_GetPose</h3>
+<p><IMG SRC="LVtemp20221117043615_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the current pose.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   -  Pose  --  The current pose.<BR>
+   <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_GetRightCurrentDrawAmps" >DiffDriveTrainSim_GetRightCurrentDrawAmps</h3>
+<p><IMG SRC="LVtemp20221117043618_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the current draw of the right side of the drivetrain.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   -  RightCurrentDraw_Amps  --  the drivetrain's right side current draw, in amps<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_GetRightPositionMeters" >DiffDriveTrainSim_GetRightPositionMeters</h3>
+<p><IMG SRC="LVtemp20221117043622_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the right encoder position in meters.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   -  RightPosition_Meters  --  The encoder position.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_GetRightVelocityMetersPerSecond" >DiffDriveTrainSim_GetRightVelocityMetersPerSecond</h3>
+<p><IMG SRC="LVtemp20221117043626_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the right encoder velocity in meters per second.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   -  RightVel_M_Per_Sec  --  The encoder velocity.<BR>
+   <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_GetState" >DiffDriveTrainSim_GetState</h3>
+<p><IMG SRC="LVtemp20221117043629_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the full simulated state of the drivetrain. <BR>
+<BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   -  X  --  The state matrix<BR>
+                        The states are:   [[x, y, theta, vel_l, vel_r, dist_l, dist_r]] <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_GetState_Single" >DiffDriveTrainSim_GetState_Single</h3>
+<p><IMG SRC="LVtemp20221117043633_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get one of the drivetrain states.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+   -  row  --  the state to get<BR>
+                        The states are:   [[x, y, theta, vel_l, vel_r, dist_l, dist_r]] <BR>
+<BR>
+Outputs:<BR>
+   -  State  --  the state value<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_KitBotWheelSize" >DiffDriveTrainSim_KitBotWheelSize</h3>
+<p><IMG SRC="LVtemp20221117043636_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convience function to allow user to select kit bot wheels size from an enum selector and return the diameter in meters.<BR>
+<BR>
+Input:<BR>
+   -  Wheel Size  --  Enumerated heel size selector<BR>
+<BR>
+Output:<BR>
+   -  WheelDiameter_M  --  Wheel diameter in meters.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_New" >DiffDriveTrainSim_New</h3>
+<p><IMG SRC="LVtemp20221117043640_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a SimDrivetrain .<BR>
+<BR>
+This class simulates the state of the drivetrain. In simulationPeriodic, users should first set inputs from motors with setInputs(double, double)}, call update(double)} to update the simulation, and set estimated encoder and gyro positions, as well as estimated odometry pose. <BR>
+ <BR>
+Our state-space system is:<BR>
+ <BR>
+      x = [[x, y, theta, vel_l, vel_r, dist_l, dist_r]] <BR>
+<BR>
+      in the field coordinate system (dist_* are wheel distances.)<BR>
+ <BR>
+      u = [[voltage_l, voltage_r]]? <BR>
+<BR>
+      This is typically the control input of the last timestep from a LTVDiffDriveController.<BR>
+ <BR>
+      y = x<BR>
+ <BR>
+<BR>
+   <BR>
+Inputs:<BR>
+   -  drivetrainPlant  --  The LinearSystem representing the robot's drivetrain. This system can be created with LinearSystemId_createDrivetrainVelocitySystem(DCMotor, double, double, double, double, double)} or LinearSystemId_identifyDrivetrainSystem(double, double, double, double)}<BR>
+   -  driveMotor  --  A DCMotor representing the drivetrain.<BR>
+   -  gearing  --  The gearingRatio ratio of the robot, as output over input. This must be the same ratio as the ratio used to identify or create the drivetrainPlant.<BR>
+   -  trackWidthMeters  --  The distance between the two sides of the drivetrian. Can be found with SysId.<BR>
+   -  wheelRadiusMeters  --  The radius of the wheels on the drivetrain, in meters.<BR>
+   -  measurementStdDevs  --  Standard deviations for measurements, in the form [x, y, heading, left velocity, right velocity, left distance, right distance]?. Can be null if no noise is desired. Gyro standard deviations of 0.0001 radians, velocity standard deviations of 0.05 m/s, and position measurement standard deviations of 0.005 meters are a reasonable starting point.<BR>
+<BR>
+Outputs:<BR>
+   -  OutDiffDriveTraimSim  --  Updated data cluster.<BR>
+   <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_New_Mass_MOI" >DiffDriveTrainSim_New_Mass_MOI</h3>
+<p><IMG SRC="LVtemp20221117043643_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a SimDrivetrain.<BR>
+<BR>
+This class simulates the state of the drivetrain. In simulationPeriodic, users should first set inputs from motors with setInputs(double, double)}, call update(double)} to update the simulation, and set estimated encoder and gyro positions, as well as estimated odometry pose. <BR>
+ <BR>
+Our state-space system is:<BR>
+ <BR>
+      x = [[x, y, theta, vel_l, vel_r, dist_l, dist_r]]? <BR>
+<BR>
+      in the field coordinate system (dist_* are wheel distances.)<BR>
+ <BR>
+      u = [[voltage_l, voltage_r]]? <BR>
+<BR>
+      This is typically the control input of the last timestep<BR>
+      from a LTVDiffDriveController.<BR>
+ <BR>
+      y = x<BR>
+ <BR>
+<BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+   -  driveMotor  --  A DCMotor representing the left side of the drivetrain.<BR>
+   -  gearing  --  The gearing ratio between motor and wheel, as output over input. This must be the same ratio as the ratio used to identify or create the drivetrainPlant.<BR>
+   -  jKgMetersSquared  --  The moment of inertia of the drivetrain about its center.<BR>
+   -  massKg  --  The mass of the drivebase.<BR>
+   -  wheelRadiusMeters  --  The radius of the wheels on the drivetrain.<BR>
+   -  trackWidthMeters  --  The robot's track width, or distance between left and right wheels.<BR>
+   -  measurementStdDevs  --  Standard deviations for measurements, in the form [x, y, heading, left velocity, right velocity, left distance, right distance]?. Can be null if no noise is desired. Gyro standard deviations of 0.0001 radians, velocity standard deviations of 0.05 m/s, and position measurement standard deviations of 0.005 meters are a reasonable starting point.<BR>
+<BR>
+Outputs:<BR>
+   -  OutDiffDriveTraimSim  --  Updated data cluster.<BR>
+   -  Size Coerced  --  If TRUE, an error occured.  Execution may continue.<BR>
+   <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_SetCurrentGearing" >DiffDriveTrainSim_SetCurrentGearing</h3>
+<p><IMG SRC="LVtemp20221117043647_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the gearing reduction on the drivetrain. This is commonly used for shifting drivetrains.<BR>
+<BR>
+Inputs:<BR>
+   -  DiffDriveTrainSim  --  Data cluster   <BR>
+   -  newGearRatio  --  The new gear ratio, as output over input.<BR>
+   <BR>
+Outputs:<BR>
+   -  OutDiffDriveTraimSim  --  Updated data cluster.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_SetInputs" >DiffDriveTrainSim_SetInputs</h3>
+<p><IMG SRC="LVtemp20221117043651_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the applied voltage to the drivetrain. Note that positive voltage must make that side of the drivetrain travel forward (+X).<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+   -  leftVoltageVolts  --  The left voltage.<BR>
+   -  rightVoltageVolts  --  The right voltage.<BR>
+   -  BatteryVoltage  --  Current battery voltage (volts)   (Default = 12 volts)<BR>
+<BR>
+Outputs:<BR>
+   -  OutDiffDriveTraimSim  --  Updated data cluster.<BR>
+   -  SizeCoerced  --  If TRUE, an error occured.  Execution may continue.<BR>
+   <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_SetPose" >DiffDriveTrainSim_SetPose</h3>
+<p><IMG SRC="LVtemp20221117043655_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the system pose.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+   -  pose  --  The pose.<BR>
+<BR>
+Outputs:<BR>
+   -  OutDiffDriveTraimSim  --  Updated data cluster.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_SetState" >DiffDriveTrainSim_SetState</h3>
+<p><IMG SRC="LVtemp20221117043659_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the system state.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+   -  state  --  The state.<BR>
+                        The states are:   [[x, y, theta, vel_l, vel_r, dist_l, dist_r]] <BR>
+<BR>
+Outputs:<BR>
+   -  OutDiffDriveTraimSim  --  Updated data cluster.<BR>
+   -  SizeCoerced  --  If TRUE, an error occured.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_ToughBoxMiniGearRatio" >DiffDriveTrainSim_ToughBoxMiniGearRatio</h3>
+<p><IMG SRC="LVtemp20221117043702_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convience function to allow user to select kit bot gear ratio from an enum selector and return the ratio value<BR>
+<BR>
+Input:<BR>
+   -  StandardGearRatios  --  Enumerated gear ratio selector<BR>
+<BR>
+Output:<BR>
+   -  GearRatio  --  Gear ratio value.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_ToughBoxMiniMotor" >DiffDriveTrainSim_ToughBoxMiniMotor</h3>
+<p><IMG SRC="LVtemp20221117043705_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convience function to allow user to select standard kit bot motor choices from an enum selector and return the motor data <BR>
+<BR>
+Input:<BR>
+   -  ToughBoxMiniMotor  --  Enumerated motor selector<BR>
+<BR>
+Output:<BR>
+   -  DriveMotor  --  Selected motor data.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_Update" >DiffDriveTrainSim_Update</h3>
+<p><IMG SRC="LVtemp20221117043711_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Update the drivetrain states with the current time difference.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+   -  dtSeconds  --  the time difference<BR>
+<BR>
+Outputs:<BR>
+   -  OutDiffDriveTraimSim  --  Updated data cluster.<BR>
+   -  Error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="LinearSystemId" >LinearSystemId</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemId_CreateDCMotorSystem" >LinearSystemId_CreateDCMotorSystem</h3>
+<p><IMG SRC="LVtemp20221117044928_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a state-space model of a DC motor system. The states of the system are [angular position, angular velocity], inputs are [voltage], and outputs are [angular position, angular  velocity].<BR>
+<BR>
+Create a state-space model of a DC motor system. The states of the system are <BR>
+                          [angular position, <BR>
+                          angular velocity] <BR>
+<BR>
+inputs are <BR>
+                         [voltage]<BR>
+and outputs are <BR>
+                          [angular position, <BR>
+                           angular velocity].<BR>
+Inputs: <BR>
+  -  motor  --  The motor (or gearbox)<BR>
+  -  jKgMetersSquared  --  The moment of inertia J of the motor and attached load.  (Must be > 0)<BR>
+  -  G  --  The reduction between motor and drum, as a ratio of output to input.  (Must be > 0)<BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystem  --  A LinearSystem representing the given characterized constants.<BR>
+  -  Error  --  A boolean indicating an error occured creating the system.  A value of TRUE indicates an error.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemId_CreateDriveTrainVelocitySystem" >LinearSystemId_CreateDriveTrainVelocitySystem</h3>
+<p><IMG SRC="LVtemp20221117044936_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a state-space model of a differential drive drivetrain. In this model, the states are [v_left, v_right]?, inputs are [V_left, V_right]? and outputs are [v_left, v_right]?.<BR>
+<BR>
+Inputs: <BR>
+  -  motor  --  the gearbox representing the motors driving the drivetrain.<BR>
+  -  massKg  --  the mass of the robot.<BR>
+  -  rMeters  --  the radius of the wheels in meters.<BR>
+  -  rbMeters  --  the radius of the base (half the track width) in meters.<BR>
+  -  JKgMetersSquared  --  the moment of inertia of the robot.<BR>
+  -  G  --  the gearing reduction as output over input.<BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystem  --  A LinearSystem cluster representing a differential drivetrain.<BR>
+  -  SizeCoerced  --  A boolean indicating that sizes had to be adjusted.  A value of TRUE indicates an error.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemId_CreateElevatorSystem" >LinearSystemId_CreateElevatorSystem</h3>
+<p><IMG SRC="LVtemp20221117044939_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a state-space model of an elevator system. The states of the system are [position, velocity]?, inputs are [voltage], and outputs are [position].<BR>
+<BR>
+Inputs: <BR>
+  -  motor  --  The motor (or gearbox) attached to the arm.<BR>
+  -  massKg  --  The mass of the elevator carriage, in kilograms.<BR>
+  -  radiusMeters  --  The radius of thd driving drum of the elevator, in meters.<BR>
+  -  G  --  The reduction between motor and drum, as a ratio of output to input.<BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystem  --  A LinearSystem representing the given characterized constants.<BR>
+  -  SizeCoerced  --  A boolean indicating that sizes had to be adjusted.  A value of TRUE indicates an error.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemId_CreateFlywheelSystem" >LinearSystemId_CreateFlywheelSystem</h3>
+<p><IMG SRC="LVtemp20221117044946_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a state-space model of a flywheel system. The states of the system are [angular velocity], inputs are [voltage], and outputs are [angular velocity].<BR>
+<BR>
+Inputs: <BR>
+  -  motor  --  The motor (or gearbox) attached to the arm.<BR>
+  -  jKgMetersSquared  --  The moment of inertia J of the flywheel.<BR>
+  -  G  --  The reduction between motor and drum, as a ratio of output to input.<BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystem  --  A LinearSystem representing the given characterized constants.<BR>
+  -  Error  --  A boolean indicating an error occured creating the system.  A value of TRUE indicates an error.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemId_CreateSingleJointedArmSystem" >LinearSystemId_CreateSingleJointedArmSystem</h3>
+<p><IMG SRC="LVtemp20221117044953_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a state-space model of a single jointed arm system. The states of the system are [angle, angular velocity], inputs are [voltage], and outputs are [angle].<BR>
+<BR>
+Inputs: <BR>
+  -  motor  --  The motor (or gearbox) attached to the arm.<BR>
+  -  jKgSquaredMeters  --  The moment of inertia J of the arm.<BR>
+  -  G  --  The gearing between the motor and arm, in output over input. Most of the time this will be greater than 1.<BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystem  --  A LinearSystem representing the given characterized constants.<BR>
+  -  Error  --  A boolean indicating an error occured creating the system.  A value of TRUE indicates an error.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemId_IdentifyDriveTrainSystem" >LinearSystemId_IdentifyDriveTrainSystem</h3>
+<p><IMG SRC="LVtemp20221117044957_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Identify a standard differential drive drivetrain, given the drivetrain's kV and kA in both linear (volts/(meter/sec) and volts/(meter/sec^2)) and angular (volts/(meter/sec) and volts/(meter/sec^2)) cases. This can be found using frc-characterization. The states of the system are [left velocity, right velocity]?, inputs are [left voltage, right voltage]?, and outputs are [left velocity, right velocity]?.<BR>
+<BR>
+Inputs: <BR>
+  -  kVLinear  --  The linear velocity gain, volts per (meter per second).<BR>
+  -  kALinear  --  The linear acceleration gain, volts per (meter per second squared).<BR>
+  -  kVAngular  --  The angular velocity gain, volts per (meter per second).<BR>
+  -  kAAngular  --  The angular acceleration gain, volts per (meter per second squared).<BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystem   --  A LinearSystem representing the given characterized constants.<BR>
+  -  SizeCoerced  --  A boolean indicating an error occured creating the system.  A value of TRUE indicates an error.<BR>
+<BR>
+Additional information<BR>
+      https://github.com/wpilibsuite/frc-characterization<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemId_IdentifyPositionSystem" >LinearSystemId_IdentifyPositionSystem</h3>
+<p><IMG SRC="LVtemp20221117045001_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Identify a position system from it's kV (volts/(unit/sec)) and kA (volts/(unit/sec^2). These constants cam be found using frc-characterization. The states of the system are [position, velocity]?, inputs are [voltage], and outputs are [position].<BR>
+<BR>
+The distance unit you choose MUST be an SI unit (i.e. meters or radians). You can use the Util.Units subVI for converting between unit types.<BR>
+   <BR>
+Inputs:<BR>
+  -  kV  --  The velocity gain, in volts per (units per second)<BR>
+  -  kA  --  The acceleration gain, in volts per (units per second squared)<BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystem  --  A LinearSystem representing the given characterized constants.<BR>
+  -  SizeCoerced  --  A value of TRUE indicates an unexpected error occured.<BR>
+<BR>
+Additional information:<BR>
+    See https://github.com/wpilibsuite/frc-characterization  @SuppressWarnings("ParameterName")<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemId_IdentifyVelocitySystem" >LinearSystemId_IdentifyVelocitySystem</h3>
+<p><IMG SRC="LVtemp20221117045005_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Identify a velocity system from it's kV (volts/(unit/sec)) and kA (volts/(unit/sec^2). These constants cam be found using frc-characterization. The states of the system are [velocity], inputs are [voltage], and outputs are [velocity].<BR>
+<BR>
+The distance unit you choose MUST be an SI unit (i.e. meters or radians). You can use the Util.Units subVI for converting between unit types.<BR>
+<BR>
+Inputs:<BR>
+  -  kV  --  The velocity gain, in volts per (units per second)<BR>
+  -  kA  --  The acceleration gain, in volts per (units per second squared)<BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystem  --  A LinearSystem representing the given characterized constants.<BR>
+  -  SizeCoerced  --  A value of TRUE indicates an unexpected error occured.<BR>
+<BR>
+Additional information:<BR>
+  See https://github.com/wpilibsuite/frc-characterization<BR>
+<BR>
+<BR>
+<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

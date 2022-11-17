@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="TrapProfile" >TrapProfile</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TrapProfile_Calculate" >TrapProfile_Calculate</h3>
+<p><IMG SRC="LVtemp20221117052941_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">  <BR>
+Calculate the correct position and velocity for the profile at a time t where the beginning of the profile was at time t = 0.<BR>
+ <BR>
+Inputs:<BR>
+  -  Trapezoid_Profile  --  The Trapezoid_Profile data cluster<BR>
+  -   t  --  The time since the beginning of the profile.  (If the Trapezoid_Profile is freshly created every execution cycle, set t to be the time between calls.)<BR>
+<BR>
+Outputs:<BR>
+  -  Trapezoid_Profile  --  Initialized Trapezoid_Profile data cluster<BR>
+  -  state  --  desired position and velocity values <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TrapProfile_Direct" >TrapProfile_Direct</h3>
+<p><IMG SRC="LVtemp20221117052945_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+DO NOT USE.  THIS IS AN INTERNAL ONLY ROUTINE.<BR>
+<BR>
+Flip the sign of the velocity and position if the profile is inverted<BR>
+<BR>
+Inputs:<BR>
+  -  State   --  Trapezoid Profile State<BR>
+  -  Direction   --  SIgn value  (-1, 1)<BR>
+<BR>
+Outputs:<BR>
+  -  State  --  Updated Trapezoid Profile State</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TrapProfile_Execute" >TrapProfile_Execute</h3>
+<p><IMG SRC="LVtemp20221117052948_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+Convience, single call, LabVIEW function.  Creates and calculates a Trapezoid Profile.  Call this routine periodically to calculate the newest output for the provided inputs.   <BR>
+<BR>
+One use of a Trapezoid Profile is to calculate a velocity SP (Setpoint) for a position movement so that the velocity SP creates a trapezoid shape to allow for smoother operation and reduced overshoot.  <BR>
+ <BR>
+Inputs:<BR>
+  -  Max Speed  --  Maximum allowable speed<BR>
+  -  Max Accel  --  Maximum allowable acceleration<BR>
+  -  Goal Position  --  Deisred final position<BR>
+  -  Goal Velocity  --  Desired velocity when goal position is reached.  (Might often be zero.)<BR>
+  -  Current Position  --  Current position (This could be a measured value.)<BR>
+  -  Current Velocity  -- Current velocity (This could be a measured value.)<BR>
+  -  TimePeriod  --  Period between calls in seconds.<BR>
+  -  Initialize  --  If TRUE, the Goal values are reset to the inputs and the initial position and velocity are set to the current position and velocity.<BR>
+<BR>
+Outputs:<BR>
+  -  PositionDmd  --  Current position demand (This could be used to calculate position error, or used in control.)<BR>
+  -  VelocityDmd  -- Current velocity demand.  (This could be used as a setpoint to drive an actuator or motor.)<BR>
+  -  EstTimeLeft  --  Estimated time remaining until goal is achieved.<BR>
+   - TimeFinished  --  The goal should have been reached because the estimated calculated time has expired.<BR>
+  </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TrapProfile_Execute_AtGoal" >TrapProfile_Execute_AtGoal</h3>
+<p><IMG SRC="LVtemp20221117052951_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convience function to determine if the trapezoid profile goal has been reached.<BR>
+<BR>
+Inputs:<BR>
+  - Position Tolerance  --  Allowed position tolerance<BR>
+  - Velocity Tolerance  --  Allowed velocity tolerance (Default 9.9E+30)<BR>
+  - ConsecutiveAtGoalCount  -- How many times the position and velocity errors have to be within the tolerance to be considered "At Goal"<BR>
+  -  Goal Position  --  Deisred final position<BR>
+  -  Goal Velocity  --  Desired velocity when goal position is reached.  (Might often be zero.)<BR>
+  -  Current Position  --  Current position (This could be a measured value.)<BR>
+  -  Current Velocity  -- Current velocity (This could be a measured value.)<BR>
+<BR>
+Outputs:<BR>
+   - AtGoal  --  The position and velocity errors have been within defined tolerance for at least the defined consecutive scan times.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TrapProfile_IsFinished" >TrapProfile_IsFinished</h3>
+<p><IMG SRC="LVtemp20221117052955_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">  <BR>
+Returns true if the profile has reached the goal.<BR>
+ <BR>
+The profile has reached the goal if the time since the profile started has exceeded the profile's total time.<BR>
+ <BR>
+Inputs:<BR>
+  -  Trapezoid_Profile  --  The Trapezoid_Profile data cluster<BR>
+  -   t  --  The time since the beginning of the profile.<BR>
+<BR>
+Outputs:<BR>
+  -  Finished  --  True if the profile has reached the goal based soley on time being exceeded.<BR>
+   <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TrapProfile_New" >TrapProfile_New</h3>
+<p><IMG SRC="LVtemp20221117052958_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A trapezoid-shaped velocity profile.<BR>
+ <BR>
+While this class can be used for a profiled movement from start to finish, the intended usage is to filter a reference's dynamics based on trapezoidal velocity constraints. To compute the reference obeying this constraint, do the following.<BR>
+ <BR>
+Initialization:<BR>
+       - Create a new trapezoid profile constraint and provide Max Velocity and Max Acceleration<BR>
+       - Create an initial previous profile reference state and provide current position  (distance, angle, or other) and Velocity<BR>
+ <BR>
+Run on update:<BR>
+       - Create a new trapezoid profile given the constraints, unprofiled (current) reference  and the previous profile reference <BR>
+       -  Calculate providing the time since last update, the result is a new previous profile reference<BR>
+<BR>
+where `unprofiledReference` is free to change between calls. Note that when the unprofiled reference is within the constraints, `calculate()` returns the unprofiled reference unchanged.<BR>
+ <BR>
+Otherwise, a timer can be started to provide monotonic values for `calculate()` and to determine when the profile has completed via `isFinished()`.<BR>
+  <BR>
+Construct a TrapezoidProfile data cluster and performs initial calculations to fill data cluster<BR>
+ <BR>
+Inputs:<BR>
+  -   constraints  --  The constraints on the profile, like maximum velocity.<BR>
+  -   goal         --  The desired state when the profile is complete.<BR>
+  -   initial      --  The initial state (usually the current state).<BR>
+<BR>
+Outputs:<BR>
+  -  Trapezoid_Profile  --  Initialized Trapezoid_Profile data cluster<BR>
+   <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TrapProfile_New_DefInitial" >TrapProfile_New_DefInitial</h3>
+<p><IMG SRC="LVtemp20221117053002_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A trapezoid-shaped velocity profile.<BR>
+ <BR>
+While this class can be used for a profiled movement from start to finish, the intended usage is to filter a reference's dynamics based on trapezoidal velocity constraints. To compute the reference obeying this constraint, do the following.<BR>
+ <BR>
+Initialization:<BR>
+       - Create a new trapezoid profile constraint and provide Max Velocity and Max Acceleration<BR>
+       - Create an initial previous profile reference state and provide current position  (distance, angle, or other) and Velocity<BR>
+ <BR>
+Run on update:<BR>
+       - Create a new trapezoid profile given the constraints, unprofiled (current) reference  and the previous profile reference <BR>
+       -  Calculate providing the time since last update, the result is a new previous profile reference<BR>
+<BR>
+where `unprofiledReference` is free to change between calls. Note that when the unprofiled reference is within the constraints, `calculate()` returns the unprofiled reference unchanged.<BR>
+ <BR>
+Otherwise, a timer can be started to provide monotonic values for `calculate()` and to determine when the profile has completed via `isFinished()`.<BR>
+  <BR>
+Construct a TrapezoidProfile data cluster and performs initial calculations to fill data cluster.  A position and velocity of zero are used for as the initial state.<BR>
+ <BR>
+Inputs:<BR>
+  -   constraints  --  The constraints on the profile, like maximum velocity.<BR>
+  -   goal         --  The desired state when the profile is complete.<BR>
+<BR>
+Outputs:<BR>
+  -  Trapezoid_Profile  --  Initialized Trapezoid_Profile data cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TrapProfile_ShouldFlipAcceleration" >TrapProfile_ShouldFlipAcceleration</h3>
+<p><IMG SRC="LVtemp20221117053005_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+DO NOT USE.  THIS IS AN INTERNAL ONLY ROUTINE.<BR>
+  <BR>
+Returns true if the profile inverted.<BR>
+ <BR>
+The profile is inverted if goal position is less than the initial position.<BR>
+ <BR>
+Inputs:<BR>
+  -   initial     The initial state (usually the current state).<BR>
+  -   goal        The desired state when the profile is complete.<BR>
+<BR>
+Outputs:<BR>
+  -  flip  --  True if the profile is inverted.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TrapProfile_TimeLeftUntil" >TrapProfile_TimeLeftUntil</h3>
+<p><IMG SRC="LVtemp20221117053008_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> <BR>
+Returns the time left until a target distance in the profile is reached.<BR>
+ <BR>
+Inputs:<BR>
+  -  Trapezoid_Profile  --  The Trapezoid_Profile data cluster<BR>
+  -  target  --  The target distance.<BR>
+<BR>
+Outputs:<BR>
+  -  timeLeft  --  Time remaining to reach target (seconds)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TrapProfile_TotalTime" >TrapProfile_TotalTime</h3>
+<p><IMG SRC="LVtemp20221117053012_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">  <BR>
+Returns the total time the profile takes to reach the goal.<BR>
+   <BR>
+Inputs:<BR>
+  -  Trapezoid_Profile  --  The Trapezoid_Profile data cluster<BR>
+<BR>
+Outputs:<BR>
+  -  TotalTime  --  Total time to reach goal (seconds)<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

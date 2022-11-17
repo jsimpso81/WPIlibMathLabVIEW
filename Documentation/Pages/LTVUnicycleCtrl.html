@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="LTVUnicycleCtrl" >LTVUnicycleCtrl</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVUnicycleCtrl_AtReference" >LTVUnicycleCtrl_AtReference</h3>
+<p><IMG SRC="LVtemp20221117044545_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns true if the pose error is within tolerance of the reference.<BR>
+  <BR>
+<BR>
+Inputs:<BR>
+   - LTV Unicycle Controller  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   - At Reference  --   True if the pose error is within tolerance of the reference.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVUnicycleCtrl_Calculate" >LTVUnicycleCtrl_Calculate</h3>
+<p><IMG SRC="LVtemp20221117044549_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the linear and angular velocity outputs of the LTV controller.<BR>
+<BR>
+Inputs:<BR>
+   - in LTV Unicycle Controller  --  Controller data cluster<BR>
+    -  currentPose  --  The current pose.<BR>
+    -  poseRef  --  The desired pose.  (Setpont)<BR>
+    -  linearVelocityRef  --  The desired linear velocity in meters per second.  (Feedforward)<BR>
+    -  angularVelocityRef  --  The desired angular velocity in radians per second.  (Feedforward)<BR>
+<BR>
+Outputs:<BR>
+   - out LTV Unicycle Controller  --  Updatated data cluster<BR>
+   - Chassis Speeds  -- The linear and angular velocity outputs of the LTV controller.<BR>
+   - Error  --  Returns TRUE if an error occured.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVUnicycleCtrl_Calculate_TrajState" >LTVUnicycleCtrl_Calculate_TrajState</h3>
+<p><IMG SRC="LVtemp20221117044555_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the linear and angular velocity outputs of the LTV controller.<BR>
+<BR>
+The reference pose, linear velocity, and angular velocity should come from a drivetrain trajectory.<BR>
+<BR>
+Inputs:<BR>
+   - in LTV Unicycle Controller  --  Controller data cluster<BR>
+    -  currentPose  --  The current pose.<BR>
+   -  Traj State  --  The desired pose, linear velocity, and angular velocity from a trajectory.<BR>
+<BR>
+Outputs:<BR>
+   - out LTV Unicycle Controller  --  Updatated data cluster<BR>
+   - Chassis Speeds  -- The linear and angular velocity outputs of the LTV controller.<BR>
+   - Error  --  Returns TRUE if an error occured.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVUnicycleCtrl_New" >LTVUnicycleCtrl_New</h3>
+<p><IMG SRC="LVtemp20221117044602_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The linear time-varying unicycle controller has a similar form to the LQR, but the model used to compute the controller gain is the nonlinear model linearized around the drivetrain's current state.<BR>
+<BR>
+Constructs a linear time-varying unicycle controller.<BR>
+<BR>
+Inputs:<BR>
+   -  qelems  --  The maximum desired error tolerance for each state.  Matrix (3,1)  Defaults (0.0625 m, 0.125 m, 0.2 rad)<BR>
+   -  relems  --  The maximum desired control effort for each input.  Matrix (2,1)  Defaults (1 m/s, 2 rad/s)<BR>
+   -  dt  --  Discretization timestep in seconds.<BR>
+   -  maxVelocity  --  The maximum velocity in meters per second for the controller gain lookup table. (Option)  The default is 9 m/s.<BR>
+<BR>
+Outputs:<BR>
+   - LTV Unicycle Controller  --  Created data structure.<BR>
+   -  Error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVUnicycleCtrl_SetEnabled" >LTVUnicycleCtrl_SetEnabled</h3>
+<p><IMG SRC="LVtemp20221117044609_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Enables and disables the controller for troubleshooting purposes.<BR>
+<BR>
+When not enabled, the open loop reference values are passed through to the outputs.<BR>
+<BR>
+Inputs:<BR>
+   - in LTV Unicycle Controller  -- Controller data cluster<BR>
+   - Enabled  --  If the controller is enabled or not.<BR>
+<BR>
+Outputs:<BR>
+   -  out LTV Unicycle Controller  --  Updated data cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVUnicycleCtrl_SetTolerance" >LTVUnicycleCtrl_SetTolerance</h3>
+<p><IMG SRC="LVtemp20221117044612_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Sets the pose error which is considered tolerable for use with AtReference.<BR>
+<BR>
+The tolerance doesn't play a role in the control function.  It is only used by At Reference.<BR>
+<BR>
+Inputs:<BR>
+   -  in LTV Unicycle Controller  -- Data cluster<BR>
+   - Tolerance  --  Pose error which is tolerable.<BR>
+<BR>
+Outputs:<BR>
+   - out LTV Unicycle Contreoller  --  Updated data cluster<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

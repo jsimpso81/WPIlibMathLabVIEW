@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="KalmanFilterLatencyComp" >KalmanFilterLatencyComp</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="KalmanFilterLatencyComp_AddObserverState" >KalmanFilterLatencyComp_AddObserverState</h3>
+<p><IMG SRC="LVtemp20221117044402_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Add past observer states to the observer snapshots list.<BR>
+  <BR>
+Inputs:  <BR>
+   -  KalmanLatencyComp  --  Data cluster<BR>
+   -  observer  --  The observer. (Uncented Kalman Filter)<BR>
+   -  u  --  The input matrix at the timestamp.<BR>
+   -  localY  --  The local output matrix at the timestamp<BR>
+   -  timestampSeconds  --  The timesnap of the state.<BR>
+<BR>
+Outputs:<BR>
+   -  outKalmanLatencyComp  --  updated data cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="KalmanFilterLatencyComp_ApplyPastGlobalMeas_FuncGroup" >KalmanFilterLatencyComp_ApplyPastGlobalMeas_FuncGroup</h3>
+<p><IMG SRC="LVtemp20221117044405_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Packs the individual function references and extra data into a cluster to pass to ApplyPastGlobalMeasurements.   <BR>
+<BR>
+Inputs:<BR>
+   -  F_Func  --  <BR>
+   -  F_FuncExtra  --  variant containing the extra data, if any, required by the F_Func<BR>
+   -  H_Func  --  <BR>
+   -  H_FuncExtra  --  variant containing the extra data, if any, required by the F_Func<BR>
+   -  VisionCorrect_Func  --  <BR>
+   -  VisionCorrectExtra  --  variant containing the extra data, if any, required by the VIsionCorrect_Func<BR>
+<BR>
+Outputs:<BR>
+   -  Comp_Func_Group  --  Packed data cluster<BR>
+   -  Error  -- If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="KalmanFilterLatencyComp_ApplyPastGlobalMeasurement_UKF" >KalmanFilterLatencyComp_ApplyPastGlobalMeasurement_UKF</h3>
+<p><IMG SRC="LVtemp20221117044410_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Add past global measurements (such as from vision)to the estimator.  This routine is particular for a system that uses an Unscented Kalman FIlter.<BR>
+  <BR>
+Inputs:  <BR>
+   -  rows  --  The rows in the global measurement vector.<BR>
+   -  KalmanLatencyComp  --  Data cluster<BR>
+   -  Unscented Kalman FIlter --  Data cluster for the unscented kalman filter (observer).  This is used to recalculate the estimated position from the newly applied measurements.<BR>
+   -  y  --  The measurement.<BR>
+   -  timestampSeconds  --  The timestamp of the measurement.<BR>
+   -  nominalDtSeconds  --  The nominal timestep.<BR>
+   -  KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP --  The function references that take calls correct() on the observer.<BR>
+<BR>
+Outputs:<BR>
+   -  outKalmanLatencyComp  --  updated data cluster<BR>
+   -  outUnscented Kalman FIlter --  updated cluster for the unscented kalman filter (observer). <BR>
+   -  Error  --  Set to TRUE if an error occured. </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="KalmanFilterLatencyComp_FindClosestMeasurement" >KalmanFilterLatencyComp_FindClosestMeasurement</h3>
+<p><IMG SRC="LVtemp20221117044415_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">An internal function that finds the item in the Past Observer Snapshot list with the timestamp closest to the one passed as an input.<BR>
+<BR>
+Inputs:<BR>
+   -  inKalmanFilterLatencyCompensator  --  Data cluster<BR>
+   -  TimeStamp_Sec  --  Relative robot timestamp of the item to find (Seconds)<BR>
+<BR>
+Outputs:<BR>
+   -  Index  --  Integer index to the closest entry<BR>
+   -  NotFound   -- Boolean, whose value is TRUE if the closest entry was not found.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="KalmanFilterLatencyComp_New" >KalmanFilterLatencyComp_New</h3>
+<p><IMG SRC="LVtemp20221117044419_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Creates a new, empty, Kalman Filter Latency Compensator data cluster.  The Observer Snapshot list is created empty.<BR>
+<BR>
+Inputs:<BR>
+   <None><BR>
+<BR>
+Outputs:<BR>
+   -  KalmanFilterLatencyCompensator  --  Newly created data cluster.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="KalmanFilterLatencyComp_Observer_New" >KalmanFilterLatencyComp_Observer_New</h3>
+<p><IMG SRC="LVtemp20221117044422_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Creates the Observer List Item data cluster from individual input paramters.<BR>
+<BR>
+Inputs:<BR>
+   -  observer  --  The observer. (Uncented Kalman Filter) data cluster<BR>
+   -  u  --  The input matrix at the timestamp.<BR>
+   -  localY  --  The local output matrix at the timestamp<BR>
+   -  timestampSeconds  --  The timesnap of the state.<BR>
+<BR>
+Outputs:<BR>
+   -  ObserverListItem  --  Observer List Item data cluster (ready to push onto the list of stored items)<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="KalmanFilterLatencyComp_Reset" >KalmanFilterLatencyComp_Reset</h3>
+<p><IMG SRC="LVtemp20221117044426_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Clears the observer snapshot buffer. <BR>
+<BR>
+Inputs:  <BR>
+   - KalmanLatencyComp  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   - outKalmanLatencyComp  --  Updated data cluster</pre></p>
+<br>
+</BODY>
+</HTML>

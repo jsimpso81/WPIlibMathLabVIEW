@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="MaxVelocityConstraint" >MaxVelocityConstraint</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MaxVelocityConstraint_New" >MaxVelocityConstraint_New</h3>
+<p><IMG SRC="LVtemp20221117045557_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a maximum velocity constraint.<BR>
+<BR>
+Parameters:<BR>
+ - MaxVelocity  - Maximum velocity<BR>
+<BR>
+Returns<BR>
+ - MaxVelocityConstraint - Constraint data structure.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MaxVelocityConstraint_getMaxVelocity" >MaxVelocityConstraint_getMaxVelocity</h3>
+<p><IMG SRC="LVtemp20221117045601_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the maximum allowed velocity given the provided conditions.<BR>
+<BR>
+<BR>
+Parameters:<BR>
+ - MaxVelocityConstraint  - Constraint data structure<BR>
+ - statePose - current traj state Pose<BR>
+ - curvature - current traj curvature<BR>
+ - maxVelocity - current traj max velocity<BR>
+<BR>
+Returns<BR>
+ - maxVelocity - Maximum allowed velocity.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MaxVelocityConstraint_getMinMaxAccel" >MaxVelocityConstraint_getMinMaxAccel</h3>
+<p><IMG SRC="LVtemp20221117045605_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the minimum and maximum allowed acceleration given the provided conditions.<BR>
+<BR>
+Parameters:<BR>
+ - MaxVelocityConstraint  - Constraint data structure<BR>
+ - statePose - current traj state Pose<BR>
+ - curvature - current traj curvature<BR>
+ - maxVelocity - current traj max velocity<BR>
+<BR>
+Returns<BR>
+ - TrajConstraint_Min_Max - Data structure with Min / Max acceleration.</pre></p>
+<br>
+</BODY>
+</HTML>

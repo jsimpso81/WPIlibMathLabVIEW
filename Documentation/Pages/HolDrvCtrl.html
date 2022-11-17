@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="HolDrvCtrl" >HolDrvCtrl</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="HolDrvCtrl_AdvCalculate" >HolDrvCtrl_AdvCalculate</h3>
+<p><IMG SRC="LVtemp20221117044238_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the next output of the holonomic drive controller.<BR>
+<BR>
+This version uses the Advanced PID instead of the standard PID for X and Y control.<BR>
+<BR>
+Inputs:<BR>
+     -  inHolonomicDrvCtrl  --  controller datat structure<BR>
+     -  currentPose  --  The current pose.<BR>
+     -  poseRef  --  The desired pose.<BR>
+     -  linearVelocityRefMeters  --  The linear velocity reference.<BR>
+     -  angleRef  --  The angular reference.<BR>
+<BR>
+Outputs:<BR>
+     -  outHolonomicDrvCtrl  --  controller datat structure<BR>
+     -  calcChassisSpeed  --  The next output of the holonomic drive controller.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="HolDrvCtrl_AdvCalculate_Trajectory" >HolDrvCtrl_AdvCalculate_Trajectory</h3>
+<p><IMG SRC="LVtemp20221117044242_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the next output of the holonomic drive controller.<BR>
+<BR>
+This version uses the Advanced PID instead of the standard PID for X and Y control.<BR>
+<BR>
+Inputs:<BR>
+   -  inHolonomicDrvCtrl  --  controller data structure<BR>
+   -  currentPose  --  The current pose.<BR>
+   -  desiredState  --  The desired trajectory state.<BR>
+   -  angleRef  --  The desired end-angle.<BR>
+<BR>
+Outputs:<BR>
+   -  outHolonomicDrvCtrl  --  updated controller data structure<BR>
+   -  calcChassisSpeed  --  The next output of the holonomic drive controller.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="HolDrvCtrl_AtReference" >HolDrvCtrl_AtReference</h3>
+<p><IMG SRC="LVtemp20221117044246_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns true if the pose error is within tolerance of the reference.<BR>
+<BR>
+Parameters:<BR>
+  -Holonomic_Drv_Ctrl  - Holonomic_Drv_Ctrl data structure<BR>
+<BR>
+Returns:<BR>
+  - At Reference - Return value</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="HolDrvCtrl_Calculate" >HolDrvCtrl_Calculate</h3>
+<p><IMG SRC="LVtemp20221117044249_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the next output of the holonomic drive controller.<BR>
+<BR>
+Inputs:<BR>
+     -  inHolonomicDrvCtrl  --  controller datat structure<BR>
+     -  currentPose  --  The current pose.<BR>
+     -  poseRef  --  The desired pose.<BR>
+     -  linearVelocityRefMeters  --  The linear velocity reference.<BR>
+     -  angleRef  --  The angular reference.<BR>
+<BR>
+Outputs:<BR>
+     -  outHolonomicDrvCtrl  --  controller datat structure<BR>
+     -  calcChassisSpeed  --  The next output of the holonomic drive controller.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="HolDrvCtrl_Calculate_Trajectory" >HolDrvCtrl_Calculate_Trajectory</h3>
+<p><IMG SRC="LVtemp20221117044253_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the next output of the holonomic drive controller.<BR>
+<BR>
+Inputs:<BR>
+   -  inHolonomicDrvCtrl  --  controller data structure<BR>
+   -  currentPose  --  The current pose.<BR>
+   -  desiredState  --  The desired trajectory state.<BR>
+   -  angleRef  --  The desired end-angle.<BR>
+<BR>
+Outputs:<BR>
+   -  outHolonomicDrvCtrl  --  updated controller data structure<BR>
+   -  calcChassisSpeed  --  The next output of the holonomic drive controller.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="HolDrvCtrl_Execute" >HolDrvCtrl_Execute</h3>
+<p><IMG SRC="LVtemp20221117044256_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This convience function creates and executes a Holonomic Controller.  It uses a packed Setpoint (SP), created by the HolDrvCtrl_PackSP.vi, as the setping and the current pose as the process variable.  It returns a chassis speed as the control utput.<BR>
+<BR>
+NOTE:  This version does not support dynamic tuning.  All the unint inputs and Tolerance are used only on the first call.<BR>
+  <BR>
+Inputs:<BR>
+   - X PID Tuning   -   Input from PACK PROF PID VI<BR>
+   - Y PID Tuning   -   Input from PACK PROF PID VI<BR>
+   -  thetaController  --  A profiled PID controller to respond to error in angle.<BR>
+   - CurrentPose  --  Current location<BR>
+   -HolExecuteSP  --  Desired location and speed cluster.  This contains:<BR>
+          - Desired Pose  -- X,Y,Heading<BR>
+          - Linear Velocity  --  Desired velocity<BR>
+   - AngleRef  --  Current angle of orientation.<BR>
+   - Enable  --  Enable close loop control.  If disabled, the feedforwards from the trajectory state are used.<BR>
+   - Period  --  Execution period (Default 0.020) Seconds.<BR>
+   - Tolerance  --  Amount of position and heading error allowed to be considered on target.  (Default 0.04, 0.04, 0.034)<BR>
+<BR>
+Outputs:<BR>
+   - ChassisSpeed  --  ChassisSpeed setpoint calcuated from the inputs.<BR>
+   - AtTarget  -- Boolean indicating the position and heading are within the provided tolerance.<BR>
+   - HolonomicDriveController  --  Data structure  (can be used for debug or extracting information)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="HolDrvCtrl_Execute_Trajectory" >HolDrvCtrl_Execute_Trajectory</h3>
+<p><IMG SRC="LVtemp20221117044300_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This convience function creates and executes a Holonomic Controller.  It uses a Trajectory state as the setping and the current pose as the process variable.  It returns a chassis speed as the control utput.<BR>
+<BR>
+NOTE:  This version does not support dynamic tuning.  All the unint inputs and Tolerance are used only on the first call.<BR>
+  <BR>
+Inputs:<BR>
+   - X PID Tuning   -   Input from PACK PROF PID VI<BR>
+   - Y PID Tuning   -   Input from PACK PROF PID VI<BR>
+   -  thetaController  --  A profiled PID controller to respond to error in angle.<BR>
+   - CurrentPose  --  Current location<BR>
+   - DesiredTrajectoryState  -  Desired heading, speed, and location.<BR>
+   - AngleRef  --  Current angle of orientation.<BR>
+   - Enable  --  Enable close loop control.  If disabled, the feedforwards from the trajectory state are used.<BR>
+   - Period  --  Execution period (Default 0.020) Seconds.<BR>
+   - Tolerance  --  Amount of position and heading error allowed to be considered on target.  (Default 0.04, 0.04, 0.034)<BR>
+<BR>
+Outputs:<BR>
+   - ChassisSpeed  --  ChassisSpeed setpoint calcuated from the inputs.<BR>
+   - AtTarget  -- Boolean indicating the position and heading are within the provided tolerance.<BR>
+   - HolonomicDriveController  --  Data structure  (can be used for debug or extracting information)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="HolDrvCtrl_New" >HolDrvCtrl_New</h3>
+<p><IMG SRC="LVtemp20221117044303_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This holonomic drive controller can be used to follow trajectories using a holonomic drivetrain (i.e. swerve or mecanum). Holonomic trajectory following is a much simpler problem to solve compared to skid-steer style drivetrains because it is possible to individually control forward, sideways, and angular velocity.<BR>
+ <BR>
+The holonomic drive controller takes in one PID controller for each direction, forward and sideways, and one profiled PID controller for the angular direction. Because the heading dynamics are decoupled from translations, users can specify a custom heading that the drivetrain should point toward. This heading reference is profiled for smoothness.<BR>
+<BR>
+Constructs a holonomic drive controller.<BR>
+  <BR>
+Inputs:<BR>
+   -  xController  --  A PID Controller to respond to error in the field-relative x direction.<BR>
+   -  yController  --  A PID Controller to respond to error in the field-relative y direction.<BR>
+   -  thetaController  --  A profiled PID controller to respond to error in angle.<BR>
+<BR>
+Output:<BR>
+   -  outHolonomicDrvCtrl  --  controller data structure.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="HolDrvCtrl_PackExecuteSP" >HolDrvCtrl_PackExecuteSP</h3>
+<p><IMG SRC="LVtemp20221117044307_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convience, single call, LabVIEW function.  Packs individual values into a cluster to feed to the Holonomic controller execute function.<BR>
+<BR>
+ <BR>
+Inputs:<BR>
+   - X  --   X part of desired position<BR>
+   - Y  --  Y part f desired position<BR>
+   - Heading_Deg  --  Travel heading angle part of desired position (Degrees)<BR>
+   - LinearVel  --  Velocity in the direction of heading.<BR>
+<BR>
+Outputs:<BR>
+   - HolExecuteSP  --  Setpoint (desired position and velocity) to feed to Holonomic Execute function.  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="HolDrvCtrl_PackPID" >HolDrvCtrl_PackPID</h3>
+<p><IMG SRC="LVtemp20221117044310_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convience, single call, LabVIEW function.  Packs "standard" constants for the X and Y PID controllers used by the holonomic controller.  <BR>
+<BR>
+NOTE -- This version does NOT support dynamic tuning.  The constants are read only used during the first execution cycle.<BR>
+ <BR>
+Inputs:<BR>
+  - X  PID Tuning  -- PID Tuning parameters containing:<BR>
+          -  Kp  --  The proportional coefficient.<BR>
+          -  Ki  --  The integral coefficient.<BR>
+          -  Kd  --  The derivative coefficient.<BR>
+          -  Maximum Integral  --  The maximum value of the integrator.<BR>
+          -  Minimum Integral  --  The minimum value of the integrator.<BR>
+  - Y  PID Tuning  -- PID Tuning parameters containing:<BR>
+          -  Kp  --  The proportional coefficient.<BR>
+          -  Ki  --  The integral coefficient.<BR>
+          -  Kd  --  The derivative coefficient.<BR>
+          -  Maximum Integral  --  The maximum value of the integrator.<BR>
+          -  Minimum Integral  --  The minimum value of the integrator.<BR>
+  -  Period  --  Period of repeated calls in seconds.  (Default: 0.020)<BR>
+<BR>
+<BR>
+Outputs:<BR>
+  -  X PID_Controller  --  Created X PID_Controller data cluster<BR>
+  -  Y PID_Controller  --  Created Y PID_Controller data cluster<BR>
+  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="HolDrvCtrl_PackProfPID" >HolDrvCtrl_PackProfPID</h3>
+<p><IMG SRC="LVtemp20221117044314_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+Convience, single call, LabVIEW function.  Packs the tuning parameters of the Theta Profiled PID controller used by the Holonomic Controller.  <BR>
+<BR>
+NOTE -- This version does NOT support dynamic tuning.  The constants are read only used during the first execution cycle.<BR>
+ <BR>
+Inputs:<BR>
+  -  PID Tuning  -- PID Tuning parameters containing:<BR>
+          -  Kp  --  The proportional coefficient.<BR>
+          -  Ki  --  The integral coefficient.<BR>
+          -  Kd  --  The derivative coefficient.<BR>
+          -  Maximum Integral  --  The maximum value of the integrator.<BR>
+          -  Minimum Integral  --  The minimum value of the integrator.<BR>
+  -  PID Input Limits  --  Cluster containing:<BR>
+         -  MaxInput  --  (Default: 0)<BR>
+         -  MinInput  --  (Default: 0)<BR>
+         -  Continous  --  When True indicates that the input is continuous.  (Default: False)<BR>
+   - Max_Speed  --  Maximum speed robot rotation<BR>
+   - Max_Accel  -- Maximum acceleration of robot rotation.<BR>
+  -  Period  --  Period of repeated calls in seconds.  (Default: 0.020)<BR>
+<BR>
+Outputs:<BR>
+  -  Theta Profiled_PID_Controller  --  Created Theta Profiled PID_Controller data cluster<BR>
+  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="HolDrvCtrl_SetEnabled" >HolDrvCtrl_SetEnabled</h3>
+<p><IMG SRC="LVtemp20221117044317_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Enables and disables the controller for troubleshooting problems. When calculate() is called on a disabled controller, only feedforward values are returned.<BR>
+<BR>
+Input:<BR>
+   -  inHolonomicDrvCtrl  --  controller data cluster<BR>
+   -  enabled  --  If the controller is enabled or not.<BR>
+<BR>
+Outputs:<BR>
+   -  outHolonomicDrvCtrl  --  updated controller data cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="HolDrvCtrl_SetTolerance" >HolDrvCtrl_SetTolerance</h3>
+<p><IMG SRC="LVtemp20221117044320_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the pose error which is considered tolerance for use with atReference().<BR>
+   <BR>
+Inputs:<BR>
+   -  inHolonomicDrvCtrl  --  controller data cluster<BR>
+   -  tolerance  --  The pose error which is tolerable.<BR>
+<BR>
+Outputs:<BR>
+   -  outHolonomicDrvCtrl  --  updated controller data cluster<BR>
+  <BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="Pose3d" >Pose3d</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_Div" >Pose3d_Div</h3>
+<p><IMG SRC="LVtemp20221117050504_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Divide the pose by the given scalar and returns the new pose3d. <BR>
+<BR>
+Parameters:<BR>
+ - IN POSE3D - The input POSE data structure<BR>
+ - Scalar - The value to divide the pose by.<BR>
+<BR>
+Return:<BR>
+ - OUT POSE3D - The output pose.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_Equals" >Pose3d_Equals</h3>
+<p><IMG SRC="LVtemp20221117050508_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Checks equality between this Pose3d and another Pose3d.<BR>
+<BR>
+Parameters:<BR>
+ - this Pose3d - This POSE3D data structure<BR>
+ - other POSE3d - The other POSE23 data structure<BR>
+<BR>
+Returns: <BR>
+ - Equals - Value will be TRUE if both POSEs are the same<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_Exp" >Pose3d_Exp</h3>
+<p><IMG SRC="LVtemp20221117050514_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Obtain a new Pose3d from a (constant curvature) velocity.<BR>
+<BR>
+The twist is a change in pose in the robot's coordinate frame since the previous pose update. When the user runs exp() on the previous known field-relative pose with the argument being the twist, the user will receive the new field-relative pose.<BR>
+<BR>
+"Exp" represents the pose exponential, which is solving a differential equation moving the pose forward in time. Obtain a new Pose2d from a (constant curvature) velocity.<BR>
+<BR>
+<BR>
+PARAMETERS:<BR>
+--------------<BR>
+ - POSE3D - current POSE data structure<BR>
+ - TWIST 3D- TThe change in pose in the robot's coordinate frame since the previous pose update.  For example, if a non-holonomic robot moves forward 0.01 meters and changes angle by 0.5  degrees since the previous pose update, the twist would be Twist3d(0.01, 0.0, 0.0, new new  Rotation3d(0.0, 0.0, Units.degreesToRadians(0.5))).<BR>
+<BR>
+RETURNS:<BR>
+-----------<BR>
+- OUT POSE3D - The new pose of the robot.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_Interpolate" >Pose3d_Interpolate</h3>
+<p><IMG SRC="LVtemp20221117050523_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Interpolate between 2 poses<BR>
+<BR>
+Parameter:<BR>
+ - IN POSE3D - Current POSE data structure<BR>
+ - EndValue POSE3D  --  The end value POSE..<BR>
+  - T  --  Value between 0 and 1.  <BR>
+<BR>
+Returns:<BR>
+ - Interpolated POSE3D - The interpolated POSE.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_Log" >Pose3d_Log</h3>
+<p><IMG SRC="LVtemp20221117050531_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns a Twist3d that maps this pose to the end pose. If c is the output of a.Log(b), then a.Exp(c) would yield b.<BR>
+   <BR>
+Parmeters:<BR>
+ - IN POSE3D - The current POSE data structure<BR>
+ - OTHER POSE3D - The end pose for the transformation.<BR>
+<BR>
+Returns:<BR>
+ - OUT TWIST3D  - The twist that maps this to end.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_Minus" >Pose3d_Minus</h3>
+<p><IMG SRC="LVtemp20221117050537_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the Transform3d that maps the one pose to another.<BR>
+<BR>
+Parameter:<BR>
+ - IN POSE3D - Current POSE data structure<BR>
+ - OTHER POSE3D - The initial pose of the transformation.<BR>
+<BR>
+Returns:<BR>
+ - OUT TRANSFORM3D - The transform that maps the other pose to the current pose.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_New" >Pose3d_New</h3>
+<p><IMG SRC="LVtemp20221117050540_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a pose with x, y, and z translations instead of a separate Translation3d.<BR>
+<BR>
+Parameters:<BR>
+ - X- The x component of the translational component of the pose.<BR>
+ - Y - The y component of the translational component of the pose.<BR>
+ - Z - The z component of the translational component of the pose.<BR>
+ - Rotation3d - The rotational component of the pose.<BR>
+<BR>
+Returns:<BR>
+ - OUT POSE3D - Output POSE3D</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_New_Default" >Pose3d_New_Default</h3>
+<p><IMG SRC="LVtemp20221117050544_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a pose at the origin facing toward the positive X axis.<BR>
+<BR>
+Parameters:<BR>
+  --  none  --<BR>
+<BR>
+Return:<BR>
+ - POSE3d - Pose3d data structure</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_New_Pose2d" >Pose3d_New_Pose2d</h3>
+<p><IMG SRC="LVtemp20221117050547_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a 3D pose from a 2D pose in the X-Y plane<BR>
+<BR>
+Parameters:<BR>
+ - in Pose2  -- Pose 2d in the X-Y plane to convert to Pose 3D.<BR>
+<BR>
+Returns:<BR>
+ - OUT POSE3D - Output POSE3D<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_New_Trans3dRot3d" >Pose3d_New_Trans3dRot3d</h3>
+<p><IMG SRC="LVtemp20221117050551_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a pose with the specified translation and rotation.<BR>
+<BR>
+Parameters:<BR>
+ - translation - The translational component of the pose.<BR>
+ - rotation - The rotational component of the pose.<BR>
+<BR>
+Return:<BR>
+ - POSE3D - Pose data structure</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_Plus" >Pose3d_Plus</h3>
+<p><IMG SRC="LVtemp20221117050554_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Transforms the pose by the given transformation and returns the new transformed pose.  "plus" is the same as "transformBy"    <BR>
+<BR>
+<BR>
+Parameters:<BR>
+ - IN POSE3D - The input POSE data structure<BR>
+ - OTHER TRANSFORM3D - The transform to transform the pose by.<BR>
+<BR>
+Return:<BR>
+ - OUT POSE3D - The transformed pose.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_RelativeTo" >Pose3d_RelativeTo</h3>
+<p><IMG SRC="LVtemp20221117050557_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the other pose relative to the current pose.<BR>
+<BR>
+This function can often be used for trajectory tracking or pose stabilization algorithms to get the error between the reference and the current pose.<BR>
+<BR>
+Parameters:<BR>
+ - IN POSE3D - The POSE data structure<BR>
+ - OTHER POSE3D - The pose that is the origin of the new coordinate frame that the current pose will be converted into.<BR>
+<BR>
+Return:<BR>
+ - OUT POSE3D - The current pose relative to the new origin pose.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_RotationVectorToMatrix" >Pose3d_RotationVectorToMatrix</h3>
+<p><IMG SRC="LVtemp20221117050601_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Applies the hat operator to a rotation vector.<BR>
+   <BR>
+It takes a rotation vector and returns the corresponding matrix representation of the Lie  algebra element (a 3x3 rotation matrix).<BR>
+   <BR>
+<BR>
+Parameters:<BR>
+ -  RotationVector  -- rotation The rotation vector.<BR>
+<BR>
+Return:<BR>
+ - RotationMatrix  --  The rotation vector as a 3x3 rotation matrix.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_Times" >Pose3d_Times</h3>
+<p><IMG SRC="LVtemp20221117050605_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Multiply the pose by the given scalar and returns the new pose3d. <BR>
+<BR>
+Parameters:<BR>
+ - IN POSE3D - The input POSE data structure<BR>
+ - Scalar - The value to multiply the pose by.<BR>
+<BR>
+Return:<BR>
+ - OUT POSE3D - The output pose.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_ToPose2d" >Pose3d_ToPose2d</h3>
+<p><IMG SRC="LVtemp20221117050608_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns a Pose2d representing this Pose3d projected into the X-Y plane.<BR>
+<BR>
+Parameter:<BR>
+ - IN POSE3D - Current POSE data structure<BR>
+<BR>
+Returns:<BR>
+ - out POSE2D - A Pose2d representing this Pose3d projected into the X-Y plane.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_TransformBy" >Pose3d_TransformBy</h3>
+<p><IMG SRC="LVtemp20221117050612_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Transforms the pose by the given transformation and returns the new transformed pose.  "plus" is the same as "transformBy"<BR>
+<BR>
+Parameters:<BR>
+ - IN POSE3D - The input POSE data structure<BR>
+ - OTHER TRANSFORM3D - The transform to transform the pose by.<BR>
+<BR>
+Return:<BR>
+ - OUT POSE3D - The transformed pose.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_getRotation3d" >Pose3d_getRotation3d</h3>
+<p><IMG SRC="LVtemp20221117050615_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the rotational component of the transformation.<BR>
+<BR>
+Parmeters:<BR>
+ - IN POSE3D -- Input POSE data structure<BR>
+<BR>
+RETURNS:<BR>
+ - out ROTATION3D - The rotational component of the pose.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_getTranslation3d" >Pose3d_getTranslation3d</h3>
+<p><IMG SRC="LVtemp20221117050618_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the translation component of the transformation.<BR>
+<BR>
+Parmeters:<BR>
+- IN POSE3D - The POSE data structure<BR>
+<BR>
+RETURNS:<BR>
+ - OUT TRANSLATION3D - The translational component of the pose.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Pose3d_getXYZ" >Pose3d_getXYZ</h3>
+<p><IMG SRC="LVtemp20221117050622_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the X, Y, Z elements of the translation component of the transformation.<BR>
+<BR>
+Parmeters:<BR>
+- IN POSE3D - The POSE data structure<BR>
+<BR>
+RETURNS:<BR>
+ - X - The X element of the translational component of the pose.<BR>
+ - Y - The Y element of the translational component of the pose.<BR>
+ - Z - The Z element of the translational component of the pose.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="FunctionGenerator" >FunctionGenerator</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FunctionGenerator_Add_Value" >FunctionGenerator_Add_Value</h3>
+<p><IMG SRC="LVtemp20221117044212_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Insert new X, Y pair into an existing Function Generator data cluster.  If the X values matches an existing X value, the new X and Y values replaces the old values.<BR>
+<BR>
+Inputs:<BR>
+  - In Function Generator  -- Function generator data cluster<BR>
+  - X  -- X value<BR>
+  - Y  -- Y value<BR>
+<BR>
+Outputs:<BR>
+  -  out Function Generator  -- updated data structure<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FunctionGenerator_Add_XY" >FunctionGenerator_Add_XY</h3>
+<p><IMG SRC="LVtemp20221117044217_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Insert new X, Y pair into an existing Function Generator data cluster.  If the X values matches an existing X value, the new X and Y values replaces the old values.<BR>
+<BR>
+Inputs:<BR>
+  - In Function Generator  -- Function generator data cluster<BR>
+  - XY  -- Pair of X, Y value<BR>
+<BR>
+Outputs:<BR>
+  -  out Function Generator  -- updated data structure<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FunctionGenerator_Calculate" >FunctionGenerator_Calculate</h3>
+<p><IMG SRC="LVtemp20221117044222_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Calculate the output Y value for the provided X.  This is done by interpolating through an array of X and Y pairs.  The pairs must be ordered in increasing X value.<BR>
+<BR>
+If there's no matching key, the value returned will be a linear interpolation between the keys before and after the provided one.<BR>
+<BR>
+<BR>
+Inputs:<BR>
+  -  Function_Generator -- function generator  data structure<BR>
+  -  Input Value -- The input value. <BR>
+<BR>
+Outputs:<BR>
+  - Output Value -- Output value calcuated from the input value.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FunctionGenerator_Clear" >FunctionGenerator_Clear</h3>
+<p><IMG SRC="LVtemp20221117044226_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Clear out all X, Y entries<BR>
+<BR>
+Inputs:<BR>
+  - in Function Generator  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+  -  Function Generator  -- Updated data cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FunctionGenerator_Execute" >FunctionGenerator_Execute</h3>
+<p><IMG SRC="LVtemp20221117044230_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convience, single call, LabVIEW function.  Creates and calculates the function generator.<BR>
+<BR>
+If there's no matching key, the value returned will be a linear interpolation between the keys before and after the provided one.<BR>
+<BR>
+<BR>
+Inputs:<BR>
+  -- X Y Pairs  --  Array of pairs of X and Y values<BR>
+  -- Input Value   -- Input "X" value<BR>
+<BR>
+Outputs:<BR>
+  --  Output Value  --  Calcuated value "Y"  for the input "X" value.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FunctionGenerator_New" >FunctionGenerator_New</h3>
+<p><IMG SRC="LVtemp20221117044235_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a new Funtion Generator.   Function Generators (Interpolating Tree Maps) are used to get values at points that are not defined by making a guess from points that are defined. This uses linear interpolation.<BR>
+<BR>
+Inputs:<BR>
+  - X Y Pairs  --  (Optional)  Array of pairs of X and Y values used to define this function generator.  Additional X Y pairs can be added later.   <BR>
+<BR>
+Outputs:<BR>
+  -  Function Generator  -- Created data structure<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

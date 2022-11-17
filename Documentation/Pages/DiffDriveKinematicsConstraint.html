@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="DiffDriveKinematicsConstraint" >DiffDriveKinematicsConstraint</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveKinematicsConstraint_New" >DiffDriveKinematicsConstraint_New</h3>
+<p><IMG SRC="LVtemp20221117043411_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a differential drive dynamics constraint.<BR>
+<BR>
+<BR>
+Parameters:<BR>
+ - MaxSpeed  - Max speed (meters/sec)<BR>
+ - DiffDriveKinematics - Diff Drive Kinematics data structure<BR>
+<BR>
+Returns<BR>
+ - DiffDriveKineConstraint - Constraint data structure.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveKinematicsConstraint_getMaxVelocity" >DiffDriveKinematicsConstraint_getMaxVelocity</h3>
+<p><IMG SRC="LVtemp20221117043415_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the maximum allowed velocity given the provided conditions.<BR>
+<BR>
+Ensure each individual normalized wheel speed is within the defined maximum velocity.<BR>
+<BR>
+Parameters:<BR>
+ - DiffDriveKinematicsConstraint  - Constraint data structure<BR>
+ - statePose - current traj state Pose<BR>
+ - curvature - current traj curvature<BR>
+ - maxVelocity - current traj max velocity<BR>
+<BR>
+Returns<BR>
+ - maxVelocity - Maximum allowed velocity.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveKinematicsConstraint_getMinMaxAccel" >DiffDriveKinematicsConstraint_getMinMaxAccel</h3>
+<p><IMG SRC="LVtemp20221117043418_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the minimum and maximum allowed acceleration given the provided conditions.<BR>
+<BR>
+It appears that this routine doesn't do anything.  It returns default values.<BR>
+<BR>
+Parameters:<BR>
+ - DiffDriveKinematicsConstraint  - Constraint data structure<BR>
+ - statePose - current traj state Pose<BR>
+ - curvature - current traj curvature<BR>
+ - maxVelocity - current traj max velocity<BR>
+<BR>
+Returns<BR>
+ - TrajConstraint_Min_Max - Data structure with Min / Max acceleration.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

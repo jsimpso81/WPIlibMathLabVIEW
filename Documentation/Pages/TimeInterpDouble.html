@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="TimeInterpDouble" >TimeInterpDouble</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpDouble_AddSample" >TimeInterpDouble_AddSample</h3>
+<p><IMG SRC="LVtemp20221117052048_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Add a sample to the buffer.<BR>
+  <BR>
+Inputs:<BR>
+  -  In TimeInterpDouble  -- Time Interp data cluster <BR>
+  - Time  --  The time stamp of the sample (seconds)<BR>
+  - Value  -- The double value<BR>
+<BR>
+Outputs:<BR>
+  -  out TimeInterpDouble  -- Updated Time Interp data cluster <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpDouble_CleanUp" >TimeInterpDouble_CleanUp</h3>
+<p><IMG SRC="LVtemp20221117052053_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Removes samples older than our current history size.<BR>
+<BR>
+Inputs:<BR>
+  -  In TimeInterpDouble  --  Input data cluster.<BR>
+<BR>
+Outputs:<BR>
+  -  Out TimeInterpDouble  --  Updated data cluster.<BR>
+  -  Error  --  Returns TRUE if an error occured.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpDouble_Clear" >TimeInterpDouble_Clear</h3>
+<p><IMG SRC="LVtemp20221117052057_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Removes all samples from the history buffer.<BR>
+<BR>
+Inputs:<BR>
+  -  In TimeInterpDouble  --  Input data cluster.<BR>
+<BR>
+Outputs:<BR>
+  -  Out TimeInterpDouble   --  Updated data cluster.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpDouble_GetSample" >TimeInterpDouble_GetSample</h3>
+<p><IMG SRC="LVtemp20221117052102_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sample the buffer at the given time.<BR>
+<BR>
+Inputs:<BR>
+   -  TimeInterpDouble  -- Input data cluster<BR>
+   -  TimeStamp  -- Time at which to  sample (seconds)<BR>
+<BR>
+Outputs<BR>
+  -  OutputDouble  -- Sampled Double.   This is an exact value if there is a sample in the buffer at this time.  Otherwise the value is interpolated.  <BR>
+  -  IsPresent  -- Returns TRUE if the buffer contains data as far back as TimeStamp.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpDouble_New" >TimeInterpDouble_New</h3>
+<p><IMG SRC="LVtemp20221117052106_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create the data cluster for a TIME_INTERPOLATABLE_DOUBLE.<BR>
+<BR>
+The TimeInterpolatableBuffer provides an easy way to estimate past measurements. One application might be in conjunction with the DifferentialDrivePoseEstimator, where knowledge of the robot pose at the time when vision or other global measurement were recorded is necessary, or for recording the past angles of mechanisms as measured by encoders.<BR>
+<BR>
+The TIME_INTERPOLATABLE_DOUBLE stores and returns DOUBLE values.<BR>
+<BR>
+Inputs:<BR>
+  - Max Time -- The maximum time (seconds) of data to store in the buffer.<BR>
+<BR>
+Outputs:<BR>
+  -  Time Inter Double  -- Created data structure cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpDouble_SetMaxTime" >TimeInterpDouble_SetMaxTime</h3>
+<p><IMG SRC="LVtemp20221117052109_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Set the maximum time period that should be stored in the buffer<BR>
+<BR>
+Inputs:<BR>
+  -  In TimeInterpDouble  --  Input data cluster.<BR>
+  - Max Time --  Maximum time period to store in the buffer (seconds)<BR>
+<BR>
+Outputs:<BR>
+  -  Out TimeInterpDouble   --  Updated data cluster.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

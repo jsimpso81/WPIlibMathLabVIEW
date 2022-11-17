@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="MecaDriveKinematicsConstraint" >MecaDriveKinematicsConstraint</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDriveKinematicsConstraint_New" >MecaDriveKinematicsConstraint_New</h3>
+<p><IMG SRC="LVtemp20221117045609_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a mecanum drive dynamics constraint.<BR>
+<BR>
+Parameters:<BR>
+ - maxVelocity - Maximum allowed velocity.<BR>
+ - MecanumDriveKinematics - Data structure<BR>
+<BR>
+Returns<BR>
+ - MecanumDriveKinematicsConstraint  - Constraint data structure<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDriveKinematicsConstraint_getMaxVelocity" >MecaDriveKinematicsConstraint_getMaxVelocity</h3>
+<p><IMG SRC="LVtemp20221117045613_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the maximum allowed velocity given the provided conditions.<BR>
+<BR>
+<BR>
+Parameters:<BR>
+ - MecanumDriveKinematicsConstraint  - Constraint data structure<BR>
+ - statePose - current traj state Pose<BR>
+ - curvature - current traj curvature<BR>
+ - maxVelocity - current traj max velocity<BR>
+<BR>
+Returns<BR>
+ - maxVelocity - Maximum allowed velocity.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDriveKinematicsConstraint_getMinMaxAccel" >MecaDriveKinematicsConstraint_getMinMaxAccel</h3>
+<p><IMG SRC="LVtemp20221117045617_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the minimum and maximum allowed acceleration given the provided conditions.<BR>
+<BR>
+It appears that this routine doesn't do anything.  It returns default values.<BR>
+<BR>
+Parameters:<BR>
+ - MecanumDriveKinematicsConstraint  - Constraint data structure<BR>
+ - statePose - current traj state Pose<BR>
+ - curvature - current traj curvature<BR>
+ - maxVelocity - current traj max velocity<BR>
+<BR>
+Returns<BR>
+ - TrajConstraint_Min_Max - Data structure with Min / Max acceleration.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

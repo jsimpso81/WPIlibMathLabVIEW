@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="DCMotorSim" >DCMotorSim</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DCMotorSim_GetCurrentDrawAmps" >DCMotorSim_GetCurrentDrawAmps</h3>
+<p><IMG SRC="LVtemp20221117043221_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the DC Motor System current draw.<BR>
+<BR>
+Inputs:<BR>
+   - DCMotorSim  --  Data cluster<BR>
+ <BR>
+Outputs:<BR>
+   - Current_Amps  --  The DC Motor system current draw. (Amps)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DCMotorSim_New_MOI" >DCMotorSim_New_MOI</h3>
+<p><IMG SRC="LVtemp20221117043226_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+Creates a simulated DC Motor mechanism.<BR>
+ <BR>
+Inputs:<BR>
+   - gearbox  --  The DC Motor definition, including the type of and number of motors.<BR>
+   - gearing  --  The gearing of the flywheel (numbers greater than 1 represent reductions).<BR>
+   - jKgMetersSquared  --  The moment of inertia of the flywheel. <BR>
+   - measurementStdDevs  --  The standard deviations of the measurements. <2,1>.   Default ( 0.0, 0.0 )<BR>
+<BR>
+Outputs:<BR>
+   - outDCMotorSim  --  Updated data cluster<BR>
+   - Error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DCMotorSim_New_Plant" >DCMotorSim_New_Plant</h3>
+<p><IMG SRC="LVtemp20221117043232_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+Creates a simulated DC Motor mechanism.<BR>
+ <BR>
+Inputs:<BR>
+   -  plant  --  The linear system.<BR>
+   - gearbox  --  The motor definition including the type of and number of motors.<BR>
+   - gearing  --  The gearing of the flywheel (numbers greater than 1 represent reductions).<BR>
+   - measurementStdDevs  --  The standard deviations of the measurements. <2,1>  Default: ( 0.0, 0.0 )<BR>
+<BR>
+Outputs:<BR>
+   - outDCMotorlSim  --  Updated data cluster<BR>
+   - Error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DCMotorSim_SetInputVoltage" >DCMotorSim_SetInputVoltage</h3>
+<p><IMG SRC="LVtemp20221117043236_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the input voltage for the DC Motor system.<BR>
+ <BR>
+Inputs:<BR>
+   - DCMotorSim  --  Data cluster<BR>
+   - volts  --  The input voltage.<BR>
+   - BatteryVolts  --  Current battery voltage.<BR>
+<BR>
+Outputs:<BR>
+   - outDCMotorSim  --  Updated data cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DCMotorSim_Update" >DCMotorSim_Update</h3>
+<p><IMG SRC="LVtemp20221117043241_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Updates the simulation.<BR>
+  <BR>
+Inputs:<BR>
+   - DCMotorSim  --  Data cluster<BR>
+   - dtSeconds  --  The time between updates.<BR>
+<BR>
+Outputs:<BR>
+   - DCMotorSim  --  Updated data cluster<BR>
+   - Error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DCMotorSim_getAngularPositionRad" >DCMotorSim_getAngularPositionRad</h3>
+<p><IMG SRC="LVtemp20221117043245_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the DC Motor system position<BR>
+ <BR>
+Inputs:<BR>
+   - DCMotorlSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   - Position_Radians  --  The DC Motor system. position  (Radians)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DCMotorSim_getAngularPositionRotations" >DCMotorSim_getAngularPositionRotations</h3>
+<p><IMG SRC="LVtemp20221117043248_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the DC Motor system position in Rotations<BR>
+ <BR>
+Inputs:<BR>
+   - DCMotorlSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   - Position_Rotations  --  The DC Motor system. position  (Rotations)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DCMotorSim_getAngularVelocityRPM" >DCMotorSim_getAngularVelocityRPM</h3>
+<p><IMG SRC="LVtemp20221117043252_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the DC Motor system velocity in RPM.<BR>
+ <BR>
+Inputs:<BR>
+   - DCMotorSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   - Velocity_RPM  --  The velocity in RPM.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DCMotorSim_getAngularVelocityRadPerSec" >DCMotorSim_getAngularVelocityRadPerSec</h3>
+<p><IMG SRC="LVtemp20221117043256_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the DC Motor System velocity.<BR>
+ <BR>
+Inputs:<BR>
+   - DCMotorSim  --  Data cluster<BR>
+<BR>
+Outputs:<BR>
+   - Velocity_RadPerSec  --  The velocity.  (Rad/Sec)<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

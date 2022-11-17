@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="ExtendedKalmanFilter" >ExtendedKalmanFilter</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ExtendedKalmanFilter_Correct" >ExtendedKalmanFilter_Correct</h3>
+<p><IMG SRC="LVtemp20221117044028_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Correct the state estimate x-hat using the measurements in y.<BR>
+   <BR>
+This is useful for when the measurements available during a timestep's Correct() call vary. <BR>
+<BR>
+Inputs:<BR>
+   -  inExtendedKalmanFIlter  --  filter data cluster<BR>
+   -  rows  --  Number of rows in the result of f(x, u).<BR>
+   -  u  --  Same control input used in the predict step.<BR>
+   -  y  --  Measurement vector.<BR>
+   -  R  --  Discrete measurement noise covariance matrix.<BR>
+   -  h_Func   --  A vector-valued function reference of x and u that returns the measurement vector.<BR>
+   -  H_func_extra  --  extra data, if any, used by H_Func<BR>
+<BR>
+Returns:<BR>
+   -  outExtendedKalmanFIlter  --  updated filter data cluster<BR>
+   -  error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ExtendedKalmanFilter_Correct_OnlyUY" >ExtendedKalmanFilter_Correct_OnlyUY</h3>
+<p><IMG SRC="LVtemp20221117044036_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Correct the state estimate x-hat using the measurements in y.<BR>
+   <BR>
+Inputs:<BR>
+   -  inExtendedKalmanFIlter  --  filter data cluster<BR>
+   -  u  --  Same control input used in the predict step.<BR>
+   -  y  --  Measurement vector.<BR>
+   -  h_Func   --  A vector-valued function reference of x and u that returns the measurement vector.<BR>
+   -  H_func_extra  --  extra data, if any, used by H_Func<BR>
+<BR>
+Returns:<BR>
+   -  outExtendedKalmanFIlter  --  updated filter data cluster<BR>
+   -  error  --  If TRUE, an error occured<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ExtendedKalmanFilter_GetP" >ExtendedKalmanFilter_GetP</h3>
+<p><IMG SRC="LVtemp20221117044042_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the error covariance matrix P.<BR>
+<BR>
+Inputs:<BR>
+   -  inExtendedKalmanFIlter  --  filter data cluster<BR>
+<BR>
+Output:   <BR>
+   - P  --  the error covariance matrix P.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ExtendedKalmanFilter_GetP_Single" >ExtendedKalmanFilter_GetP_Single</h3>
+<p><IMG SRC="LVtemp20221117044045_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns an element of the error covariance matrix P.<BR>
+   <BR>
+Inputs:<BR>
+   -  inExtendedKalmanFIlter  --  filter data cluster<BR>
+   -  row Row of P.<BR>
+   -  col Column of P.<BR>
+<BR>
+Returns:<BR>
+   -  outExtendedKalmanFIlter  --  updated filter data cluster<BR>
+   -  P_Value  --  the value of the error covariance matrix P at (i, j).<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ExtendedKalmanFilter_GetXHat" >ExtendedKalmanFilter_GetXHat</h3>
+<p><IMG SRC="LVtemp20221117044049_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the state estimate x-hat.<BR>
+   <BR>
+Inputs:<BR>
+   -  inExtendedKalmanFIlter  --  filter data cluster<BR>
+<BR>
+Returns:<BR>
+   -  xHat  --  the state estimate x-hat.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ExtendedKalmanFilter_GetXHat_Single" >ExtendedKalmanFilter_GetXHat_Single</h3>
+<p><IMG SRC="LVtemp20221117044053_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns an element of the state estimate x-hat.<BR>
+   <BR>
+Inputs:<BR>
+   -  inExtendedKalmanFIlter  --  filter data cluster<BR>
+   -  row Row of x-hat.<BR>
+<BR>
+Returns:<BR>
+   -  xHat_value  --  the value of the state estimate x-hat at i.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ExtendedKalmanFilter_New" >ExtendedKalmanFilter_New</h3>
+<p><IMG SRC="LVtemp20221117044058_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Kalman filters combine predictions from a model and measurements to give an estimate of the true system state. This is useful because many states cannot be measured directly as a result of sensor noise, or because the state is "hidden".<BR>
+ <BR>
+The Extended Kalman filter is just like the KalmanFilter Kalman filter, but we make a linear approximation of nonlinear dynamics and/or nonlinear measurement models. This means that the EKF works with nonlinear systems.<BR>
+<BR>
+Constructs an extended Kalman filter.<BR>
+   <BR>
+   -  states  --  the number of states.<BR>
+   -  inputs  --  the number of inputs.<BR>
+   -  outputs  --  the number of outputs.<BR>
+   -  ExtendedKalmanFuncGroup  --  definition of external functions used by this filter.  it includes:<BR>
+                 -  f_func  --  A vector-valued function of x and u that returns the derivative of the state vector.<BR>
+                 -  f_FuncExtra  --  extra data, if any, used by the F_Func<BR>
+                 -  h_func  --  A vector-valued function of x and u that returns the measurement vector.<BR>
+                 -  h_FuncExtra  --  extra data, if any, used by the H_Func<BR>
+   -  stateStdDevs  --  Standard deviations of model states.<BR>
+   -  measurementStdDevs  --  Standard deviations of measurements.<BR>
+   -  dtSeconds  --  Nominal discretization timestep.<BR>
+<BR>
+Outputs:<BR>
+   -  ExtendedKalmanFilter  -- filter data cluster</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ExtendedKalmanFilter_Predict" >ExtendedKalmanFilter_Predict</h3>
+<p><IMG SRC="LVtemp20221117044105_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Project the model into the future with a new control input u.<BR>
+   <BR>
+Inputs:<BR>
+   -  inExtendedKalmanFIlter  --  filter data cluster<BR>
+   -  u New control input from controller.<BR>
+   -  F_Func  --  reference a function used to linearlize the model.<BR>
+   -  F_FuncExtraData  --  extra data, if any, for the F_Func.<BR>
+   -  dtSeconds Timestep for prediction.<BR>
+<BR>
+Returns:<BR>
+   -  outExtendedKalmanFIlter  --  updated filter data cluster<BR>
+   -  Error  --  If TRUE, an error occured.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ExtendedKalmanFilter_Reset" >ExtendedKalmanFilter_Reset</h3>
+<p><IMG SRC="LVtemp20221117044110_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Resets the filter.<BR>
+   <BR>
+Inputs:<BR>
+   -  inExtendedKalmanFIlter  --  filter data cluster<BR>
+<BR>
+Returns:<BR>
+   -  outExtendedKalmanFIlter  --  updated filter data cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ExtendedKalmanFilter_SetP" >ExtendedKalmanFilter_SetP</h3>
+<p><IMG SRC="LVtemp20221117044114_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the entire error covariance matrix P.<BR>
+   <BR>
+Inputs:<BR>
+   -  inExtendedKalmanFIlter  --  filter data cluster<BR>
+   -  newP The new value of P to use.<BR>
+<BR>
+Returns:<BR>
+   -  outExtendedKalmanFIlter  --  updated filter data cluster<BR>
+   -  sizeCoerced  --  If TRUE, an unexpected error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ExtendedKalmanFilter_SetXHat" >ExtendedKalmanFilter_SetXHat</h3>
+<p><IMG SRC="LVtemp20221117044117_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Set initial state estimate x-hat.<BR>
+   <BR>
+Inputs:<BR>
+   -  inExtendedKalmanFIlter  --  filter data cluster<BR>
+   -  xHat The state estimate x-hat.<BR>
+<BR>
+Returns:<BR>
+   -  outExtendedKalmanFIlter  --  updated filter data cluster<BR>
+   -  sizeCoerced  --  If TRUE, an unexpected error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ExtendedKalmanFilter_SetXHat_Single" >ExtendedKalmanFilter_SetXHat_Single</h3>
+<p><IMG SRC="LVtemp20221117044121_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Set an element of the initial state estimate x-hat.<BR>
+   <BR>
+Inputs:<BR>
+   -  inExtendedKalmanFIlter  --  filter data cluster<BR>
+   -  row Row of x-hat.<BR>
+   -  value Value for element of x-hat.<BR>
+<BR>
+Returns:<BR>
+   -  outExtendedKalmanFIlter  --  updated filter data cluster<BR>
+   -  Error  --  If TRUE, an error occurred.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

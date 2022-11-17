@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="MecaOdometry" >MecaOdometry</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaOdometry_GetKinematics" >MecaOdometry_GetKinematics</h3>
+<p><IMG SRC="LVtemp20221117045748_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Returns the kinematics data cluster for this odometry<BR>
+<BR>
+Parameters:<BR>
+   - MecaDriveOdometry - Data structure<BR>
+<BR>
+Returns:<BR>
+   Mecanum Kinematics - The kinematics data cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaOdometry_GetPose" >MecaOdometry_GetPose</h3>
+<p><IMG SRC="LVtemp20221117045752_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Returns the position of the robot on the field.<BR>
+<BR>
+Parameters:<BR>
+   - MecaDriveOdometry - Data structure<BR>
+<BR>
+Returns:<BR>
+   Pose - The pose of the robot (x and y are in meters).<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaOdometry_New" >MecaOdometry_New</h3>
+<p><IMG SRC="LVtemp20221117045755_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a MecanumDriveOdometry cluster data structure<BR>
+<BR>
+SubVIs for mecanum drive odometry. Odometry allows you to track the robot's position on the field over a course of a match using readings from your mecanum wheel encoders.<BR>
+<BR>
+Teams can use odometry during the autonomous period for complex tasks like path following. Furthermore, odometry can be used for latency compensation when using computer-vision systems.<BR>
+<BR>
+Parameters:<BR>
+    - Mecanum Kinematics  --  The mechanum kinematics data cluster for this drive<BR>
+   - GyroOffset -         The angle reported by the gyroscope. (Rotation)<BR>
+   - wheelPositions  --  The distances driven by each wheel.<BR>
+   - initialPose -         The starting position of the robot on the field. (Pose - Meters)<BR>
+<BR>
+Returns:<BR>
+   - MecaDriveOdomentry - Data structure</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaOdometry_NewDefaultPose" >MecaOdometry_NewDefaultPose</h3>
+<p><IMG SRC="LVtemp20221117045759_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a MecanumDriveOdometry cluster data structure with a default pose at the origin.<BR>
+<BR>
+SubVIs for mecanum drive odometry. Odometry allows you to track the robot's position on the field over a course of a match using readings from your mecanum wheel encoders.<BR>
+<BR>
+Teams can use odometry during the autonomous period for complex tasks like path following. Furthermore, odometry can be used for latency compensation when using computer-vision systems.<BR>
+<BR>
+Parameters:<BR>
+   - MecanumKinematics  -- Mecanum Kinematics data cluster<BR>
+   - GyroOffset -         The angle reported by the gyroscope. (Rotation)<BR>
+   - wheelPositions  --  The distances driven by each wheel.<BR>
+<BR>
+Returns:<BR>
+   - MecaDriveOdomentry - Data structure</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaOdometry_Reset" >MecaOdometry_Reset</h3>
+<p><IMG SRC="LVtemp20221117045803_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Resets the robot's position on the field.<BR>
+<BR>
+The gyroscope angle does not need to be reset here on the user's robot code. The library automatically takes care of offsetting the gyro angle.<BR>
+   <BR>
+Parameters<BR>
+   - MecaDriveOdometry - Data structure<BR>
+   -  gyroOffset -  The angle reported by the gyroscope.<BR>
+   - wheelPositions  --  The distances driven by each wheel.<BR>
+   - pose - The position on the field that your robot is at. (Meters)<BR>
+ <BR>
+Returns:<BR>
+   - MecaDriveOdometry - Updated ata structure<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaOdometry_Update" >MecaOdometry_Update</h3>
+<p><IMG SRC="LVtemp20221117045807_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Updates the robot's position on the field using forward kinematics and integration of the pose over time. This method takes in an angle parameter which is used instead of the angular rate that is calculated from forward kinematics, in addition to the current distance measurement at each wheel.<BR>
+      <BR>
+Parameters:<BR>
+   - MecaDriveOdometry - Data structure<BR>
+   - gyroAngle   - The angle reported by the gyroscope.<BR>
+   - wheelPositions - The distances driven by each wheel..<BR>
+<BR>
+Returns:<BR>
+   - MecaDriveOdometry - Updated data structure<BR>
+   - Pose - The new pose of the robot.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

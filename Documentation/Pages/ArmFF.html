@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="ArmFF" >ArmFF</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ArmFF_Calculate" >ArmFF_Calculate</h3>
+<p><IMG SRC="LVtemp20221117042545_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">  <BR>
+Calculates the feedforward from the gains and setpoints.<BR>
+<BR>
+Inputs: <BR>
+  -  ArmFF  --  The ArmFF data cluster<BR>
+  -  positionRadians  --  The position (angle) setpoint.<BR>
+  -  velocityRadPerSec  --  The velocity setpoint.<BR>
+  -  accelRadPerSecSquared  --  The acceleration setpoint.<BR>
+<BR>
+Outputs:<BR>
+  -  feedForward  --  The computed feedforward.<BR>
+  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ArmFF_CalculateVelocityOnly" >ArmFF_CalculateVelocityOnly</h3>
+<p><IMG SRC="LVtemp20221117042549_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">  <BR>
+Calculates the feedforward from the gains and velocity setpoint (acceleration is assumed to be zero).<BR>
+ <BR>
+Inputs: <BR>
+  -  ArmFF  --  The ArmFF data cluster<BR>
+  -  positionRadians  --  The position (angle) setpoint.<BR>
+  -  velocity  --  The velocity setpoint.<BR>
+<BR>
+Outputs:<BR>
+  -  feedForward  --  The computed feedforward.<BR>
+  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ArmFF_MaxAchieveAccel" >ArmFF_MaxAchieveAccel</h3>
+<p><IMG SRC="LVtemp20221117042552_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">  <BR>
+Calculates the maximum achievable acceleration given a maximum voltage supply, a position, and a velocity. Useful for ensuring that velocity and acceleration constraints for a trapezoidal profile are simultaneously achievable - enter the velocity constraint, and this will give you a simultaneously-achievable acceleration constraint.<BR>
+ <BR>
+Inputs: <BR>
+  -  ArmFF  --  The ArmFF data cluster<BR>
+  -  maxVoltage  --  The maximum voltage that can be supplied to the arm.<BR>
+  -  angle  --  The angle of the arm.<BR>
+  -  velocity  --  The velocity of the arm.<BR>
+<BR>
+Outputs:<BR>
+  -  MaxAccel  --  The maximum possible acceleration at the given velocity.<BR>
+  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ArmFF_MaxAchieveVelocity" >ArmFF_MaxAchieveVelocity</h3>
+<p><IMG SRC="LVtemp20221117042559_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">  <BR>
+Calculates the maximum achievable velocity given a maximum voltage supply, a position, and an acceleration.  Useful for ensuring that velocity and acceleration constraints for a trapezoidal profile are simultaneously achievable - enter the acceleration constraint, and this will give you a simultaneously-achievable velocity constraint.<BR>
+ <BR>
+Inputs: <BR>
+  -  ArmFF  --  The ArmFF data cluster<BR>
+  -  maxVoltage  --  The maximum voltage that can be supplied to the arm.<BR>
+  -  angle  --  The angle of the arm. (radians)<BR>
+  -  acceleration  --  The acceleration of the arm.<BR>
+<BR>
+Outputs:<BR>
+  -  MaxVelocity  --  The maximum possible velocity at the given acceleration and angle.<BR>
+  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ArmFF_MinAchieveAccel" >ArmFF_MinAchieveAccel</h3>
+<p><IMG SRC="LVtemp20221117042610_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">  <BR>
+Calculates the minimum achievable acceleration given a maximum voltage supply, a position, and a velocity. Useful for ensuring that velocity and acceleration constraints for a trapezoidal profile are simultaneously achievable - enter the velocity constraint, and this will give you a simultaneously-achievable acceleration constraint.<BR>
+ <BR>
+Inputs: <BR>
+  -  ArmFF  --  The ArmFF data cluster<BR>
+  -  maxVoltage  --  The maximum voltage that can be supplied to the arm.<BR>
+  -  angle  --  The angle of the arm.<BR>
+  -  velocity  --  The velocity of the arm.<BR>
+<BR>
+Outputs:<BR>
+  -  MinAccel  --  The minimum possible acceleration at the given velocity.<BR>
+  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ArmFF_MinAchieveVelocity" >ArmFF_MinAchieveVelocity</h3>
+<p><IMG SRC="LVtemp20221117042616_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">  <BR>
+Calculates the minimum achievable velocity given a maximum voltage supply, a position, and an acceleration.  Useful for ensuring that velocity and acceleration constraints for a trapezoidal profile are simultaneously achievable - enter the acceleration constraint, and this will give you a simultaneously-achievable velocity constraint.<BR>
+ <BR>
+Inputs: <BR>
+  -  ArmFF  --  The ArmFF data cluster<BR>
+  -  maxVoltage  --  The maximum voltage that can be supplied to the arm.<BR>
+  -  angle  --  The angle of the arm.<BR>
+  -  acceleration  --  The acceleration of the arm.<BR>
+<BR>
+Outputs:<BR>
+  -  MinVelocity  --  The minimum possible velocity at the given acceleration and angle.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ArmFF_New" >ArmFF_New</h3>
+<p><IMG SRC="LVtemp20221117042619_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> <BR>
+Creates a new ArmFeedforward data cluster with the specified gains.  Units of the gain values will dictate units of the computed feedforward.<BR>
+<BR>
+This set of subVIs computes feedforward outputs for a simple arm (modeled as a motor acting against the force of gravity on a beam suspended at an angle).<BR>
+<BR>
+Inputs: <BR>
+  -  ks  --  The static gain.<BR>
+  -  kv  --  The velocity gain.<BR>
+  -  ka  --  The acceleration gain.<BR>
+  -  kcos  --  The gravity gain.<BR>
+<BR>
+Outputs:<BR>
+  - ArmFF  --  The initialized ArmFF data cluster<BR>
+  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ArmFF_New_ZeroGravity" >ArmFF_New_ZeroGravity</h3>
+<p><IMG SRC="LVtemp20221117042623_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">  <BR>
+Creates a new ArmFeedforward data cluster with the specified gains.  Acceleration gain is defaulted to zero.  Units of the gain values will dictate units of the computed feedforward.<BR>
+<BR>
+This set of subVIs computes feedforward outputs for a simple arm (modeled as a motor acting against the force of gravity on a beam suspended at an angle).<BR>
+<BR>
+Inputs: <BR>
+  -  ks  --  The static gain.<BR>
+  -  kv  --  The velocity gain.<BR>
+  -  ka  --  The acceleration gain.<BR>
+  -  kcos  --  The gravity gain.<BR>
+<BR>
+Outputs:<BR>
+  - ArmFF  --  The initialized ArmFF data cluster<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

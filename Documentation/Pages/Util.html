@@ -1,0 +1,481 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="Util" >Util</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_ApproxEquals" >Util_ApproxEquals</h3>
+<p><IMG SRC="LVtemp20221117053243_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Determines if two values are approximately equal.  It deterines if they are within a particular tolerance.<BR>
+<BR>
+Inputs:<BR>
+   -  Value 1 --  First value to be compared.<BR>
+   -  Value 2  -- Second value to be compared<BR>
+   -  Tolerance  --  Tolerance to use when comparing the values ( Default - 1.0E-9 ) <BR>
+<BR>
+Output:<BR>
+   - ApproxEqual  --  Boolean indicating that the values are approximately equal.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_Array_PoseWCurv2d_to_XY" >Util_Array_PoseWCurv2d_to_XY</h3>
+<p><IMG SRC="LVtemp20221117053247_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This is a convience function to convert the X, Y portions of a PoseWithCurvature array into arrays of X,Y for charting.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_CalcDist" >Util_CalcDist</h3>
+<p><IMG SRC="LVtemp20221117053251_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Utility function to calculate distance (hypotenuse)   result = ( x ^2 + y ^2 ) ^ 0.5<BR>
+<BR>
+Parameters:<BR>
+  - X<BR>
+  - Y<BR>
+<BR>
+Result<BR>
+  - Distance</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_DispWaypoint_Eng_To_SI" >Util_DispWaypoint_Eng_To_SI</h3>
+<p><IMG SRC="LVtemp20221117053254_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Utility function to convert utility waypoints from Inches, degrees to meters, radians.   All the normal trajectory functions expect the units to be in meters, radians (unless otherwise specified).</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_DispWaypoint_To_CubicInput" >Util_DispWaypoint_To_CubicInput</h3>
+<p><IMG SRC="LVtemp20221117053257_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Utility function to convert utility waypoints to the input data structures needed to calculate cubic splines.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_DispWaypoint_To_QuinticInput" >Util_DispWaypoint_To_QuinticInput</h3>
+<p><IMG SRC="LVtemp20221117053301_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Utility function to convert utility waypoints to the input data structures needed to calculate cubic splines.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_DispWeightedWaypoint_Eng_To_WeightedWaypoint_SI" >Util_DispWeightedWaypoint_Eng_To_WeightedWaypoint_SI</h3>
+<p><IMG SRC="LVtemp20221117053304_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Utility function to convert utility (displayable) weighted waypoints from Inches, degrees to meters, radians.   All the normal trajectory functions expect the units to be in meters, radians (unless otherwise specified).<BR>
+<BR>
+This then converted from the utility weighted waypoints, which are good for putting on front panels, to normal weighted waypoints that are used by the trajectory generation functions.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_DispWeightedWaypoint_To_WeightedWayPoint" >Util_DispWeightedWaypoint_To_WeightedWayPoint</h3>
+<p><IMG SRC="LVtemp20221117053308_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Utility function to convert UTIL_WeightedWayPoints to WeightedWayPoints</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_GetLibUsage" >Util_GetLibUsage</h3>
+<p><IMG SRC="LVtemp20221117053311_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns how many instances of some of the systems in this library are used.  The count increments the first time a "new" routine is called for a particular pre-allocated clone or inline invocation of a system.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_GetLibraryVersion" >Util_GetLibraryVersion</h3>
+<p><IMG SRC="LVtemp20221117053314_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the library Trajectory Library version string.<BR>
+<BR>
+<BR>
+<BR>
+Copyright (c) 2020 James A. Simpson<BR>
+All rights reserved.<BR>
+<BR>
+Redistribution and use in source and binary forms, with or without<BR>
+modification, are permitted provided that the following conditions are met:<BR>
+    * Redistributions of source code must retain the above copyright<BR>
+      notice, this list of conditions and the following disclaimer.<BR>
+    * Redistributions in binary form must reproduce the above copyright<BR>
+      notice, this list of conditions and the following disclaimer in the<BR>
+      documentation and/or other materials provided with the distribution.<BR>
+    * Neither the name of the authors nor the<BR>
+      names of its contributors may be used to endorse or promote products<BR>
+      derived from this software without specific prior written permission.<BR>
+<BR>
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS``AS IS'' AND ANY<BR>
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED<BR>
+WARRANTIES OF MERCHANTABILITY NONINFRINGEMENT AND FITNESS FOR A PARTICULAR<BR>
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL AUTHORS OR CONTRIBUTORS BE LIABLE FOR<BR>
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES<BR>
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;<BR>
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND<BR>
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT<BR>
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS<BR>
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<BR>
+<BR>
+---------------------------------------------------------------------------------------------------<BR>
+==============================================================================<BR>
+Copyrights and Licenses for Third Party Software Distributed with FRC LV TRAJECTORY LIbrary<BR>
+==============================================================================<BR>
+The FRC LV Trajectory Library software contains code written by and derived from <BR>
+third parties.  The copyrights, license, and restrictions which apply to each piece <BR>
+of software is included later in this file and/or inside of the individual <BR>
+applicable source files.<BR>
+<BR>
+The disclaimer of warranty in the FRC LV Trajectory Library license above applies <BR>
+to all code in FRC LV Trajectory Library, and nothing in any of the other licenses <BR>
+gives permission to use the names of FIRST nor the names of the FRC LV Trajectory <BR>
+Library contributors to endorse or promote products derived from this software.<BR>
+<BR>
+The following pieces of software have additional or alternate copyrights,<BR>
+licenses, and/or restrictions:<BR>
+<BR>
+Program               Locations<BR>
+-------               ---------<BR>
+WPILIB                LabVIEW code derived from WPILIB<BR>
+RoboRIO Libraries     ni-libraries<BR>
+Pathfinder            Pathfinder Library<BR>
+JSON for Modern C++   LabVIEW code derived from WPILIB routines<BR>
+Team 254 Library      LabVIEW code derived from WPILIB SplineParameterizer.java, <BR>
+                      TrajectoryParameterizer.java<BR>
+<BR>
+==============================================================================<BR>
+WPILIB License<BR>
+==============================================================================<BR>
+Copyright (c) 2009-2018 FIRST<BR>
+All rights reserved.<BR>
+<BR>
+Redistribution and use in source and binary forms, with or without<BR>
+modification, are permitted provided that the following conditions are met:<BR>
+    * Redistributions of source code must retain the above copyright<BR>
+      notice, this list of conditions and the following disclaimer.<BR>
+    * Redistributions in binary form must reproduce the above copyright<BR>
+      notice, this list of conditions and the following disclaimer in the<BR>
+      documentation and/or other materials provided with the distribution.<BR>
+    * Neither the name of the FIRST nor the<BR>
+      names of its contributors may be used to endorse or promote products<BR>
+      derived from this software without specific prior written permission.<BR>
+<BR>
+THIS SOFTWARE IS PROVIDED BY FIRST AND CONTRIBUTORS``AS IS'' AND ANY<BR>
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED<BR>
+WARRANTIES OF MERCHANTABILITY NONINFRINGEMENT AND FITNESS FOR A PARTICULAR<BR>
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL FIRST OR CONTRIBUTORS BE LIABLE FOR<BR>
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES<BR>
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;<BR>
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND<BR>
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT<BR>
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS<BR>
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<BR>
+<BR>
+==============================================================================<BR>
+PATHFINDER License<BR>
+==============================================================================<BR>
+The MIT License (MIT)<BR>
+<BR>
+Copyright (c) 2016 Jaci R<BR>
+<BR>
+Permission is hereby granted, free of charge, to any person obtaining a copy<BR>
+of this software and associated documentation files (the "Software"), to deal<BR>
+in the Software without restriction, including without limitation the rights<BR>
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<BR>
+copies of the Software, and to permit persons to whom the Software is<BR>
+furnished to do so, subject to the following conditions:<BR>
+<BR>
+The above copyright notice and this permission notice shall be included in all<BR>
+copies or substantial portions of the Software.<BR>
+<BR>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<BR>
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<BR>
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<BR>
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<BR>
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<BR>
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE<BR>
+SOFTWARE.<BR>
+<BR>
+==============================================================================<BR>
+JSON for Modern C++ License<BR>
+==============================================================================<BR>
+<BR>
+    __ _____ _____ _____<BR>
+ __|  |   __|     |   | |  JSON for Modern C++<BR>
+|  |  |__   |  |  | | | |  version 2.1.1<BR>
+|_____|_____|_____|_|___|  https://github.com/nlohmann/json<BR>
+<BR>
+Licensed under the MIT License <http://opensource.org/licenses/MIT>.<BR>
+Copyright (c) 2013-2017 Niels Lohmann <http://nlohmann.me>.<BR>
+<BR>
+Permission is hereby  granted, free of charge, to any  person obtaining a copy<BR>
+of this software and associated  documentation files (the "Software"), to deal<BR>
+in the Software  without restriction, including without  limitation the rights<BR>
+to  use, copy,  modify, merge,  publish, distribute,  sublicense, and/or  sell<BR>
+copies  of  the Software,  and  to  permit persons  to  whom  the Software  is<BR>
+furnished to do so, subject to the following conditions:<BR>
+<BR>
+The above copyright notice and this permission notice shall be included in all<BR>
+copies or substantial portions of the Software.<BR>
+<BR>
+THE SOFTWARE  IS PROVIDED "AS  IS", WITHOUT WARRANTY  OF ANY KIND,  EXPRESS OR<BR>
+IMPLIED,  INCLUDING BUT  NOT  LIMITED TO  THE  WARRANTIES OF  MERCHANTABILITY,<BR>
+FITNESS FOR  A PARTICULAR PURPOSE AND  NONINFRINGEMENT. IN NO EVENT  SHALL THE<BR>
+AUTHORS  OR COPYRIGHT  HOLDERS  BE  LIABLE FOR  ANY  CLAIM,  DAMAGES OR  OTHER<BR>
+LIABILITY, WHETHER IN AN ACTION OF  CONTRACT, TORT OR OTHERWISE, ARISING FROM,<BR>
+OUT OF OR IN CONNECTION WITH THE SOFTWARE  OR THE USE OR OTHER DEALINGS IN THE<BR>
+SOFTWARE.<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+================<BR>
+Team 254 Library<BR>
+================<BR>
+MIT License<BR>
+<BR>
+Copyright (c) 2018 Team 254<BR>
+<BR>
+Permission is hereby granted, free of charge, to any person obtaining a copy<BR>
+of this software and associated documentation files (the "Software"), to deal<BR>
+in the Software without restriction, including without limitation the rights<BR>
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<BR>
+copies of the Software, and to permit persons to whom the Software is<BR>
+furnished to do so, subject to the following conditions:<BR>
+<BR>
+The above copyright notice and this permission notice shall be included in all<BR>
+copies or substantial portions of the Software.<BR>
+<BR>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<BR>
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<BR>
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<BR>
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<BR>
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<BR>
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE<BR>
+SOFTWARE.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_GetTime" >Util_GetTime</h3>
+<p><IMG SRC="LVtemp20221117053318_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This subVI returns the continuously running elapsed time in seconds.  <BR>
+<BR>
+On the RoboRIO this reads the high resolution FPGA time.  The resolution, not accuracy, of the FPGA timer is 1 microsecond.  The normal FPGA clock register (32 bits) rolls over approximately every 71 minutes.  To significantly extend the rollover time,, this routine reads both the high and low FPGA clock registers.  High/low register turnover read sequencing is dealt with by reading the high register twice, once before and once after the low register.  If the values are different, the read is repeated to assure consistency between the high and low values.  On a PC the standard operating system timer with 1 millisecond resolution is used.  <BR>
+<BR>
+Notes:<BR>
+-------<BR>
+- On the RoboRIO this routine takes approximately 4.8 microseconds to execute.   The WPI read FPGA clock routine takes approxmately 2.6 microseconds.  The difference can be attributed to this routine reading to extra words from the FPGA.  Each FPGA read takes approximately 1 microsecond.  <BR>
+<BR>
+- Set a conditional complilation variable TRAJLIB_USEOSTIME and set it to a value of 1 to force this routine to read the RoboRIO operating system time instead of the FPGA time.  This will have 1 millisecond resolution.  This routine executes faster, approx 1 microsecond.<BR>
+<BR>
+ - On the RoboRIO there is some drift between the FPGA and operating system clocks.  The drift isn't consistent, but appears to be approximately 20 milliseconds / hour.  This isn't enough to be of concern.<BR>
+<BR>
+<BR>
+Parameters:<BR>
+  - PassThroughTime  --  If wired and the value is > 0 then this time is passed through and the FPGA time is not read.  Allows calling functions to use a single time instant if desired.<BR>
+ - Input Error  --  Input error cluster<BR>
+<BR>
+Returns:<BR>
+  -  FPGA_Time_Seconds  --  Elapsed time in seconds.  <BR>
+  -  Output Error  --  Output error cluster.  An error will be returned if there are problems reading the FPGA or of the FPGA clock high register changes twice while reading the value.<BR>
+<BR>
+Custom Errors:<BR>
+  -  8020  --  The upper FPGA time register changed during both attempts to read the FPGA time values.  The returned time may not be valid.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_LibraryGlobals" >Util_LibraryGlobals</h3>
+<p><IMG SRC="LVtemp20221117053321_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">THIS IS AN INTERNAL ROUTINE.  DO NOT CALL OR USE DIRECTLY FROM USER CODE.<BR>
+<BR>
+This stores global variables for this library.  Currently it is used to store use counts for<BR>
+information reported to the Field Management System via the ReportUsage WPI call.<BR>
+<BR>
+Note:  It only contains items that currently have IDs to be reported.  Things like splines and <BR>
+trajectories are currently not included in that list.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_TrajState_to_DiffDrive_WheelPos" >Util_TrajState_to_DiffDrive_WheelPos</h3>
+<p><IMG SRC="LVtemp20221117053325_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Utility function to create the position of individual differential drive wheels from a trajectory state.  This is used to plot the wheel positions.  Inputs are Meters and Radians<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_TrajectoryState_Meters_To_Inches" >Util_TrajectoryState_Meters_To_Inches</h3>
+<p><IMG SRC="LVtemp20221117053328_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Utility function to convert a trajectory state from meters, radians to inches and degrees.  This is for DISPLAY ONLY.  Do not SAMPLE or perform other operations on this data!!!<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_Trajectory_Absolute_To_Relative" >Util_Trajectory_Absolute_To_Relative</h3>
+<p><IMG SRC="LVtemp20221117053331_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Utility function to convert an absolute trajectory to a robot relative trajectory.  A robot relative trajectory's initial pose is at X,Y,Ang = 0,0,0<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_Trajectory_ReadFile" >Util_Trajectory_ReadFile</h3>
+<p><IMG SRC="LVtemp20221117053335_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a trajectory from a CSV file.  This can be used on a PC or the RoboRIO.  Normally the CSV file is created as output from one of the trajectory utility programs.  The file could also be created manually or by a custom written program.<BR>
+<BR>
+Parameters:<BR>
+  - FileName  --  Name of the CSV file to read.  See file name notes for additional information.<BR>
+  - Error In  --  Input error cluster (optional)<BR>
+<BR>
+Returns:<BR>
+  - outTrajectory - Trajectory data structure cluster<BR>
+  - Error out - returned error cluster<BR>
+<BR>
+Notes on use:<BR>
+  -- This routine writes informational messges to the console and to the driver station log.<BR>
+<BR>
+Notes on file naming:<BR>
+  --  The file name must include the extention.  ".csv" is  not automatically appended to the name.  <BR>
+  --  The file name can be a simple file or an absolute path.  If a simple file name is used the default path on the RoboRIO is:  "home:\lvuser\natinst\LabVIEW Data".  On a Windows PC the default path is the LabVIEW default directory.  Normally this is: “%HOMEDRIVE%%HOMEPATH%\Documents\LabView Data".<BR>
+  --  Filenames on the RoboRIO, which runs Linux, are case sensitive.<BR>
+<BR>
+Notes on file contents:<BR>
+  --  Blank lines are ignored.<BR>
+  --  Lines that begin with either #, !, or ' in the first character are considered comments and are ignored. <BR>
+  -- Other lines are interpretted as comma separated data as follows:<BR>
+          --  Trajectory time -- seconds<BR>
+          --  Expected velocity  --  meters/sec<BR>
+          --  Expected acceleration -- meters/sec^2<BR>
+          --  Expected X position -- meters<BR>
+          --  Expected Y position --  meters<BR>
+          --  Expected heading (not necessarily robot orientation)  -- radians<BR>
+          --  Expected curvature (rotational portion of velocity)  --  radians/meter<BR>
+          --  Optional comment string.  This ignored when reading file<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_Trajectory_WriteFile" >Util_Trajectory_WriteFile</h3>
+<p><IMG SRC="LVtemp20221117053339_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a CSV file from a Trajectory data structure.  This can be used on a PC or the RoboRIO.<BR>
+<BR>
+Parameters:<BR>
+  - Trajectory - Data structure containing trajectory<BR>
+  - TrajectoryConfig - Trajectory configuration<BR>
+  - Trajectory File Name - File name to write to.  Existing files are overwritten.<BR>
+ - Comment - Comment string to include in file comments.<BR>
+  - Waypoints - waypoints to include in file comments<BR>
+  - TrajectoryIsRelative - Relative if TRUE otherwise absolute<BR>
+  - TrajectoryIsCubic - Cubic if TRUE otherwise Quintic<BR>
+<BR>
+Returns:<BR>
+  - Error out - returned error cluster<BR>
+<BR>
+Returns:<BR>
+  - outTrajectory - Trajectory data structure<BR>
+  - Error out - returned error cluster</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_Trajectory_WriteFile_Config" >Util_Trajectory_WriteFile_Config</h3>
+<p><IMG SRC="LVtemp20221117053342_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal routine to write the Trajectory Configuration data to a file.<BR>
+<BR>
+Parameters:<BR>
+   - ByteStream In - File stream<BR>
+  - TrajectoryConfig - Data structure containing trajectory configuration<BR>
+<BR>
+Returns:<BR>
+   - ByteStream Out - File stream<BR>
+  - Error out - returned error cluster<BR>
+<BR>
+Returns:<BR>
+  - outTrajectory - Trajectory data structure<BR>
+  - Error out - returned error cluster</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_Trajectory_WriteFile_OneState" >Util_Trajectory_WriteFile_OneState</h3>
+<p><IMG SRC="LVtemp20221117053346_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal subVI used by Util_Trajectory_WriteFile (and others).  This writes one trajectory state to a file.<BR>
+<BR>
+Parameters:<BR>
+   - Byte stream in - file stream<BR>
+   - comment - comment for this line<BR>
+   - TrajectoryState - The state to write<BR>
+<BR>
+Returns: <BR>
+   - Byte Stream Out - file stream<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_Trajectory_WriteFile_PathFinder" >Util_Trajectory_WriteFile_PathFinder</h3>
+<p><IMG SRC="LVtemp20221117053350_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a CSV file from a Trajectory data structure.  This can be used on a PC or the RoboRIO.  This is a customized version for Pathfinder created trajectories.<BR>
+<BR>
+Parameters:<BR>
+  - Trajectory - Data structure containing trajectory<BR>
+  - PathfinderConfig - Data structure with pathfinder configuration.<BR>
+  - Trajectory File Name - File name to write to.  Existing files are overwritten.<BR>
+ - Comment - Comment string to include in file comments.<BR>
+  - Waypoints - waypoints to include in file comments<BR>
+  - TrajectoryIsRelative - Relative if TRUE otherwise absolute.<BR>
+<BR>
+Returns:<BR>
+  - Error out - returned error cluster</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_Trajectory_WriteFile_PathFinderConfig" >Util_Trajectory_WriteFile_PathFinderConfig</h3>
+<p><IMG SRC="LVtemp20221117053353_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal routine to write the Pathfinder configuration to a file.  This can be used on a PC or the RoboRIO.<BR>
+<BR>
+Parameters:<BR>
+  - ByteStreamIn - file stream<BR>
+  - PathfinderConfig - cluster with configuration information.<BR>
+<BR>
+Returns:<BR>
+   - ByteStreamOut - File stream.<BR>
+  - Error out - returned error cluster<BR>
+<BR>
+Returns:<BR>
+  - outTrajectory - Trajectory data structure<BR>
+  - Error out - returned error cluster</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_Trajectory_WriteFile_Pathweaver" >Util_Trajectory_WriteFile_Pathweaver</h3>
+<p><IMG SRC="LVtemp20221117053356_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a CSV file from a Trajectory data structure.  This is a special version for Pathweaver created trajectories.  This can be used on a PC or the RoboRIO.<BR>
+<BR>
+Parameters:<BR>
+  - Trajectory - Data structure containing trajectory<BR>
+  - Trajectory File Name - File name to write to.  Existing files are overwritten.<BR>
+ - Comment - Comment string to include in file comments.<BR>
+  - Waypoints - waypoints to include in file comments (future)<BR>
+  - TrajectoryIsRelative - Relative if TRUE otherwise absolute.<BR>
+<BR>
+Returns:<BR>
+  - Error out - returned error cluster<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_Trajectory_WriteFile_States" >Util_Trajectory_WriteFile_States</h3>
+<p><IMG SRC="LVtemp20221117053400_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Write trajectory states to a file.  This is an internal routine<BR>
+<BR>
+Parameters:<BR>
+  - ByteStreamIn - File stream<BR>
+  - Trajectory - Data structure containing trajectory<BR>
+<BR>
+Returns:<BR>
+  - ByteStreamOut - File stream<BR>
+  - Error out - returned error cluster<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_Trajectory_WriteFile_WayPoints" >Util_Trajectory_WriteFile_WayPoints</h3>
+<p><IMG SRC="LVtemp20221117053403_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal routine to write trajectory waypoints to a file.  <BR>
+<BR>
+Parameters:<BR>
+  - ByteStreamIn - File stream<BR>
+  - Waypoints - waypoints to include in file comments (future)<BR>
+<BR>
+Returns:<BR>
+  - ByteStreamOut - File stream<BR>
+  - Error out - returned error cluster<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_Trajectory_to_XY" >Util_Trajectory_to_XY</h3>
+<p><IMG SRC="LVtemp20221117053407_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This is a convience function to convert the X, Y portions of trajectory states into arrays of X,Y for charting.<BR>
+<BR>
+Inputs:<BR>
+   -  trajectory  --  trajectory data structure<BR>
+<BR>
+Outputs:<BR>
+   -  outArrayXy  --  Cluster  of X and Y arrays useful for charting.</pre></p>
+<br>
+</BODY>
+</HTML>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="RungeKuttaTimeVarying" >RungeKuttaTimeVarying</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="RungeKuttaTimeVarying_Rk4_Mat_T_Y" >RungeKuttaTimeVarying_Rk4_Mat_T_Y</h3>
+<p><IMG SRC="LVtemp20221117051328_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Performs 4th order Runge-Kutta integration of dx/dt = f( t, matrix y) for dt.<BR>
+<BR>
+Inputs:<BR>
+   -  Func_T_Y_Extra  --  A strictly typed LabVIEW reference to a function to integrate  as a function of matrix T, Y, and the extra passed data<BR>
+   - PassedData  --  This is a variant that can be used to pass additional data to the function if needed.  The data must be packed into the variant in the specific way expected by the function.<BR>
+   - T  --  The initial value of T<BR>
+   - Y  --  The initial value of Y.<BR>
+   - dT  -- The time over which to integrate<BR>
+<BR>
+Outputs:<BR>
+   - OUTPUT   --  The integration of dx/dt = f(t, y) for dt.<BR>
+   - Error  -- If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

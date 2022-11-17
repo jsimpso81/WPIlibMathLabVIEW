@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="EllipRegionConstraint" >EllipRegionConstraint</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="EllipRegionConstraint_IsPoseInRegion" >EllipRegionConstraint_IsPoseInRegion</h3>
+<p><IMG SRC="LVtemp20221117044008_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Determines if the robot pose is within the defined region.<BR>
+<BR>
+Parameters:<BR>
+  - Elliptical Region Constraint  --  Constraint data cluster.<BR>
+ - statePose - current traj state Pose<BR>
+<BR>
+Returns<BR>
+ - PoseInRegion  --  TRUE if pose is within the region.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="EllipRegionConstraint_New" >EllipRegionConstraint_New</h3>
+<p><IMG SRC="LVtemp20221117044013_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a new EllipticalRegionConstraint.<BR>
+<BR>
+Parameters:<BR>
+   - center  --  The center of the ellipse in which to enforce the constraint.<BR>
+  - xWidth  --  The width of the ellipse in which to enforce the constraint.<BR>
+  - yWidth  --  The height of the ellipse in which to enforce the constraint.<BR>
+  - rotation  --  The rotation to apply to all radii around the origin.<BR>
+  - constraint  --  The constraint to enforce when the robot is within the region.<BR>
+<BR>
+Returns<BR>
+ - Ellip Region Constraint - Constraint data structure.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="EllipRegionConstraint_getMaxVelocity" >EllipRegionConstraint_getMaxVelocity</h3>
+<p><IMG SRC="LVtemp20221117044017_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the maximum allowed velocity given the provided conditions.<BR>
+<BR>
+Ensure each individual normalized wheel speed is within the defined maximum velocity.<BR>
+<BR>
+Parameters:<BR>
+ - EllipRegionConstraint  - Constraint data structure<BR>
+ - statePose - current traj state Pose<BR>
+ - curvature - current traj curvature<BR>
+ - maxVelocity - current traj max velocity<BR>
+<BR>
+Returns<BR>
+ - maxVelocity - Maximum allowed velocity.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="EllipRegionConstraint_getMinMaxAccel" >EllipRegionConstraint_getMinMaxAccel</h3>
+<p><IMG SRC="LVtemp20221117044022_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the minimum and maximum allowed acceleration given the provided conditions.<BR>
+<BR>
+It appears that this routine doesn't do anything.  It returns default values.<BR>
+<BR>
+Parameters:<BR>
+ - EllipRegionConstraint  - Constraint data structure<BR>
+ - statePose - current traj state Pose<BR>
+ - curvature - current traj curvature<BR>
+ - maxVelocity - current traj max velocity<BR>
+<BR>
+Returns<BR>
+ - TrajConstraint_Min_Max - Data structure with Min / Max acceleration.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="MathUtil" >MathUtil</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MathUtil_AngleModulus" >MathUtil_AngleModulus</h3>
+<p><IMG SRC="LVtemp20221117045333_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Wraps an angle to the range -pi to pi radians.<BR>
+  <BR>
+Inputs:<BR>
+   - angleRadians  --  Angle to wrap in radians.<BR>
+<BR>
+Outputs:<BR>
+   - modulusAngle  --  The wrapped angle.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MathUtil_ApplyDeadband" >MathUtil_ApplyDeadband</h3>
+<p><IMG SRC="LVtemp20221117045337_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns 0.0 if the given value is within the specified range around zero. The remaining range between the deadband and the maximum magnitude is scaled from 0.0 to the maximum magnitude.  <BR>
+Inputs:<BR>
+   - value  --  Value to clip.<BR>
+   - deadband  --  Range around zero.<BR>
+   - max magnitude  --  The maximum magnitude of the input. Can be infinite.  (Default: 1.0)<BR>
+<BR>
+Outputs:<BR>
+   - Result  --  The value after the deadband is applied.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MathUtil_Clamp" >MathUtil_Clamp</h3>
+<p><IMG SRC="LVtemp20221117045341_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns value clamped between low and high boundaries.<BR>
+  <BR>
+Inputs:<BR>
+   - value  --  Value to clamp.<BR>
+   - low limit  --  The lower boundary to which to clamp value.<BR>
+   - high limit --  The higher boundary to which to clamp value.<BR>
+<BR>
+Outputs:<BR>
+   - Result  --  The clamped value.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MathUtil_Clamp_Int" >MathUtil_Clamp_Int</h3>
+<p><IMG SRC="LVtemp20221117045345_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns value clamped between low and high boundaries.<BR>
+  <BR>
+Inputs:<BR>
+   - value  --  Value to clamp.<BR>
+   - low  --  The lower boundary to which to clamp value.<BR>
+   - high  --  The higher boundary to which to clamp value.<BR>
+<BR>
+Outputs:<BR>
+   - Result  --  The clamped value.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MathUtil_InputModulus" >MathUtil_InputModulus</h3>
+<p><IMG SRC="LVtemp20221117045349_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns modulus of input.  This is used for continuous systems, for example rotational systems.<BR>
+  <BR>
+Inputs:<BR>
+   - input  --  Input value to wrap.<BR>
+   - minimumInput  --  The minimum value expected from the input.<BR>
+   - maximumInput  --  The maximum value expected from the input.<BR>
+<BR>
+Outputs:<BR>
+   - modulus  --  The wrapped value.<BR>
+   - AltModulus  --  The wrapped value calculated a different way (used only for debugging).<BR>
+   - Different  --  If TRUE, then the modulus and AltModulus are different...  (used only for debugging)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MathUtil_Interpolate" >MathUtil_Interpolate</h3>
+<p><IMG SRC="LVtemp20221117045353_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Perform linear interpolation between two values.<BR>
+  <BR>
+Inputs:<BR>
+   - StartValue  --  The value to start at.<BR>
+   - EndValue  --  The value to end at.<BR>
+   - t  --  How far between the two values to interpolate. This is clamped to [0, 1].<BR>
+<BR>
+Outputs:<BR>
+   - interpolatedValue  --  The interpolated value.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

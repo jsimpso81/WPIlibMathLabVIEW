@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="DiffOdometry" >DiffOdometry</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffOdometry_Update" >DiffOdometry_Update</h3>
+<p><IMG SRC="LVtemp20221117043749_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">SubVI for differential drive odometry. Odometry allows you to track the  robot's position on the field over the course of a match using readings from  2 encoders and a gyroscope.<BR>
+<BR>
+Teams can use odometry during the autonomous period for complex tasks like path following. Furthermore, odometry can be used for latency compensation when using computer-vision systems.<BR>
+<BR>
+Updates the robot position on the field using distance measurements from encoders. This method is more numerically accurate than using velocities to integrate the pose and is also advantageous for teams that are using lower CPR encoders.<BR>
+<BR>
+This implementation slightly differs from the WPILIB C++/Java.  The constructor, Update and Reset functions are incorporated into this single routine.  There is no need to reset encoders or gyros.  This routine compensates by remembering the values at reset.  An optional "Initial POSE" can be specified to allow this routine to calculate absolute position.  If not specified the position is relative to the position at reset.  More than one instance of this can be used if needed.  One instance could track absolute field position while another instance can track relative position for executing a trajectory.<BR>
+<BR>
+Parameters:<BR>
+  - Left distance -- Left wheel encoder distance (meters)<BR>
+  - Right distance -- Right wheel encodeer distance (meters)<BR>
+  - Heading - Robot gyroscope reading<BR>
+   - Reset - When set, this resets the remembered left, right distance and gyroscope values, and sets the current pose to the initial pose.  <BR>
+    - Reset Pose - (Optional) When reset is TRUE this pose is used to set the current robot pose.  (If the inital pose is zero or not present, the result will be a relative pose.  If the reset pose is the absolute field pose, then the result current pose will be absolute.)<BR>
+<BR>
+Results:<BR>
+  - currentRelativePose - The new pose of the robot.  (If the initial pose is absolute, this will be an absolute pose.)<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

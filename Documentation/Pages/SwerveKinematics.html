@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="SwerveKinematics" >SwerveKinematics</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveKinematics_New4" >SwerveKinematics_New4</h3>
+<p><IMG SRC="LVtemp20221117051854_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a swerve drive kinematics object. This takes in a variable number of wheel locations as Translation2ds. The order in which you pass in the wheel locations is the same order that you will recieve the module states when performing inverse kinematics. It is also expected that you pass in the module states in the same order when calling the forward kinematics methods.  This subVI is customized for 4 wheel modules.<BR>
+<BR>
+This is a helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual module states (speed and angle).<BR>
+ <BR>
+The inverse kinematics (converting from a desired chassis velocity to individual module states) uses the relative locations of the modules with respect to the center of rotation. The center of rotation for inverse kinematics is also variable. This means that you can set your set your center of rotation in a corner of the robot to perform special evasion manuevers.<BR>
+ <BR>
+Forward kinematics (converting an array of module states into the overall chassis motion) is performs the exact opposite of what inverse kinematics does. Since this is an overdetermined system (more equations than variables), we use a least-squares approximation.<BR>
+ <BR>
+The inverse kinematics: [moduleStates] = [moduleLocations][chassisSpeeds] We take the Moore-Penrose pseudoinverse of [moduleLocations] and then multiply by [moduleStates] to get our chassis speeds.<BR>
+ <BR>
+Forward kinematics is also used for odometry -- determining the position of the robot on the field using encoders and a gyro.<BR>
+<BR>
+Parameters: <BR>
+  - wheel 0 - Translation data structures indicating the location of a wheel relative to the physical center of the robot.<BR>
+  - wheel 1 - Translation data structures indicating the location of a wheel relative to the physical center of the robot. (Meters)<BR>
+  - wheel 2 - Translation data structures indicating the location of a wheel relative to the physical center of the robot. (Meters)<BR>
+  - wheel 3 - Translation data structures indicating the location of a wheel relative to the physical center of the robot. (Meters)<BR>
+<BR>
+Returns:<BR>
+  - SwerveDriveKinematics - The initialized data structure</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveKinematics_NewX" >SwerveKinematics_NewX</h3>
+<p><IMG SRC="LVtemp20221117051900_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a swerve drive kinematics object. This takes in a variable number of wheel locations as Translation2ds. The order in which you pass in the wheel locations is the same order that you will recieve the module states when performing inverse kinematics. It is also expected that you pass in the module states in the same order when calling the forward kinematics methods.<BR>
+<BR>
+This is a helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual module states (speed and angle).<BR>
+ <BR>
+The inverse kinematics (converting from a desired chassis velocity to individual module states) uses the relative locations of the modules with respect to the center of rotation. The center of rotation for inverse kinematics is also variable. This means that you can set your set your center of rotation in a corner of the robot to perform special evasion manuevers.<BR>
+ <BR>
+Forward kinematics (converting an array of module states into the overall chassis motion) is performs the exact opposite of what inverse kinematics does. Since this is an overdetermined system (more equations than variables), we use a least-squares approximation.<BR>
+ <BR>
+The inverse kinematics: [moduleStates] = [moduleLocations][chassisSpeeds] We take the Moore-Penrose pseudoinverse of [moduleLocations] and then multiply by [moduleStates] to get our chassis speeds.<BR>
+ <BR>
+Forward kinematics is also used for odometry -- determining the position of the robot on the field using encoders and a gyro.<BR>
+<BR>
+Parameters: <BR>
+  - wheels - Array of Translation data structures indicating the locations of the wheels relative to the physical center of the robot.  (Meters)<BR>
+<BR>
+Returns:<BR>
+  - SwerveDriveKinematics - The initialized data structure</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveKinematics_NormalizeWheelSpeedsX" >SwerveKinematics_NormalizeWheelSpeedsX</h3>
+<p><IMG SRC="LVtemp20221117051904_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Normalizes the wheel speeds using some max attainable speed. Sometimes, after inverse kinematics, the requested speed from a/several modules may be above the max attainable speed for the driving motor on that module. To fix this issue, one can "normalize" all the wheel speeds to make sure that all requested module speeds are below the absolute threshold, while maintaining the ratio of speeds between modules.<BR>
+   <BR>
+Parameters:<BR>
+  - moduleStates  - Array of module states. <BR>
+  - attainableMaxSpeed - The absolute max speed that a module can reach. (Meters/Sec)<BR>
+   <BR>
+<BR>
+Returns:<BR>
+  - out Wheel States -- Array of normalzied Wheel States<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveKinematics_ToChassisSpeeds4" >SwerveKinematics_ToChassisSpeeds4</h3>
+<p><IMG SRC="LVtemp20221117051908_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Performs forward kinematics to return the resulting chassis state from the given module states. This method is often used for odometry -- determining the robot's position on the field using data from the real-world speed and angle of each module on the robot.  This subVI is customized for 4 individual wheel states.<BR>
+<BR>
+Parameters:   <BR>
+  - in Swerve Drive Kinematics - Swerve drive kinematics data structure<BR>
+  - wheelState 0 - The state of a module (as a SwerveModuleState type) as measured from respective encoders and gyros. The order of the swerve module states should be same as passed into the constructor of this class.<BR>
+  - wheelState 1 - Another wheel state <BR>
+  - wheelState 2 - Another wheel state<BR>
+  - wheelState 3 -  Another wheel state<BR>
+<BR>
+Returns:<BR>
+  - The resulting chassis speed.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveKinematics_ToChassisSpeedsX" >SwerveKinematics_ToChassisSpeedsX</h3>
+<p><IMG SRC="LVtemp20221117051913_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Performs forward kinematics to return the resulting chassis state from the given module states. This method is often used for odometry -- determining the robot's position on the field using data from the real-world speed and angle of each module on the robot.<BR>
+<BR>
+Parameters:   <BR>
+  - in Swerve Drive Kinematics - Swerve drive kinematics data structure<BR>
+  - wheelStates - The state of the modules (as a SwerveModuleState type) as measured from respective encoders and gyros. The order of the swerve module states should be same as passed into the constructor of this class.<BR>
+<BR>
+Returns:<BR>
+  - The resulting chassis speed.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveKinematics_ToSwerveModuleStates" >SwerveKinematics_ToSwerveModuleStates</h3>
+<p><IMG SRC="LVtemp20221117051917_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Performs inverse kinematics to return the module states from a desired chassis velocity. This method is often used to convert joystick values into module speeds and angles.<BR>
+   <BR>
+This function also supports variable centers of rotation. During normal operations, the center of rotation is usually the same as the physical center of the robot; therefore, the argument is defaulted to that use case.  However, if you wish to change the center of rotation for evasive manuevers, vision alignment, or for any other use case, you can do so.<BR>
+<BR>
+In the case that the desired chassis speeds are zero (i.e. the robot will be stationary), the previously calculated module angle will be maintained.<BR>
+   <BR>
+Parameters:<BR>
+  -  chassisSpeeds  -- The desired chassis speed.<BR>
+  -  centerOfRotation  -- The center of rotation. For example, if you set the center of rotation at one corner of the robot and provide a chassis speed that only has a dtheta component, the robot will rotate around that corner. (Meters)<BR>
+<BR>
+Returns:<BR>
+  -  ModuleStates - An array of data structures containing the module states. Use caution because these module states are not normalized. Sometimes, a user input may cause one of the module speeds to go above the attainable max velocity. Use the {@link #normalizeWheelSpeeds(SwerveModuleState[], double) normalizeWheelSpeeds} function to rectify this issue.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveKinematics_ToSwerveModuleStatesZeroCenter" >SwerveKinematics_ToSwerveModuleStatesZeroCenter</h3>
+<p><IMG SRC="LVtemp20221117051921_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Performs inverse kinematics to return the module states from a desired chassis velocity. This method is often used to convert joystick values into module speeds and angles.<BR>
+   <BR>
+This uses the robot center as the center of rotation. During normal operations, the center of rotation is usually the same as the physical center of the robot; therefore, the argument is defaulted to that use case.  However, if you wish to change the center of rotation for evasive manuevers, vision alignment, or for any other use case, you can do so.<BR>
+   <BR>
+Parameters:<BR>
+  -  chassisSpeeds  -- The desired chassis speed.<BR>
+<BR>
+Returns:<BR>
+  -  ModuleStates - An array of data structures containing the module states. Use caution because these module states are not normalized. Sometimes, a user input may cause one of the module speeds to go above the attainable max velocity. Use the {@link #normalizeWheelSpeeds(SwerveModuleState[], double) normalizeWheelSpeeds} function to rectify this issue.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveKinematics_ToTwist2dX" >SwerveKinematics_ToTwist2dX</h3>
+<p><IMG SRC="LVtemp20221117051926_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Performs forward kinematics to return the resulting chassis state from the given module states.  This method is often used for odometry -- determining the robot's position on the field using data from the real-world speed and angle of each module on the robot.<BR>
+<BR>
+<BR>
+Parameters:   <BR>
+  - in Swerve Drive Kinematics - Swerve drive kinematics data structure<BR>
+  - wheelDeltas - An array of the latest change in position of the modules (as a SwerveModulePosition type) as measured from respective encoders and gyros. The order of the swerve module states should be same as passed into the constructor of this class.<BR>
+<BR>
+Returns:<BR>
+  - The resulting twist2d.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveKinematics_ToTwst2d4" >SwerveKinematics_ToTwst2d4</h3>
+<p><IMG SRC="LVtemp20221117051930_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Performs forward kinematics to return the resulting chassis state from the given module states.  This method is often used for odometry -- determining the robot's position on the field using data from the real-world speed and angle of each module on the robot.<BR>
+<BR>
+Parameters:   <BR>
+  - in Swerve Drive Kinematics - Swerve drive kinematics data structure<BR>
+  - wheelDelta 0 - The latest change in position of the modules (as a SwerveModulePosition type) as measured from respective encoders and gyros. The order of the swerve module states should be same as passed into the constructor of this class.<BR>
+  - wheelDelta 1 - Another wheel position <BR>
+  - wheelDelta 2 - Another wheel position<BR>
+  - wheelDelta 3 -  Another wheel position<BR>
+<BR>
+Returns:<BR>
+  - The resulting twist2d.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

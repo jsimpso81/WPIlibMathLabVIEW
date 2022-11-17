@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="ImplModelFollow" >ImplModelFollow</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ImplModelFollow_Calculate" >ImplModelFollow_Calculate</h3>
+<p><IMG SRC="LVtemp20221117044324_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the next output of the controller.<BR>
+<BR>
+Inputs:<BR>
+   -  in Implicit Model Follower  --  Input data cluster<BR>
+   -  x  --  The current state x.<BR>
+   -  u  --    The current input for the original model.<BR>
+<BR>
+Outputs:<BR>
+   -  out Implicit Model Follower  --  Updated data cluster<BR>
+   - U Out  --  The next controller output.<BR>
+   - Error  --  Returns TRUE if an error occured.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ImplModelFollow_GetU" >ImplModelFollow_GetU</h3>
+<p><IMG SRC="LVtemp20221117044328_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the control input vector u.<BR>
+<BR>
+Inputs:<BR>
+   -  Implicit Model Follower  --  Input data cluster<BR>
+<BR>
+Outputs:<BR>
+   -  U  --  The control input.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ImplModelFollow_GetU_Single" >ImplModelFollow_GetU_Single</h3>
+<p><IMG SRC="LVtemp20221117044332_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns an element of the control input vector u.<BR>
+<BR>
+Inputs:<BR>
+   -  Implicit Model Follower  --  Input data cluster<BR>
+<BR>
+Outputs:<BR>
+   -  Index  --  Row of u.<BR>
+   -  U  --  The control input value.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ImplModelFollow_New" >ImplModelFollow_New</h3>
+<p><IMG SRC="LVtemp20221117044337_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Implicit model following lets us design a feedback controller that erases the dynamics of our system and makes it behave like some other system. This can be used to make a drivetrain more controllable during teleop driving by making it behave like a slower or more benign drivetrain.<BR>
+<BR>
+Create implicit model follower<BR>
+<BR>
+Inputs:<BR>
+   -  A < states, states >  --  Continuous system matrix of the plant being controlled.<BR>
+   -  B < states, inputs >  --  Continuous input matrix of the plant being controlled.<BR>
+   -  A_Ref  < states, states >  --  Continuous system matrix whose dymanics should be followed.<BR>
+   -  B_Ref < states, inputs >  --  Continuous input matrix x whose dymanics should be followed.<BR>
+<BR>
+Outputs:<BR>
+   -  Implicit Model Follower  --  Created data cluster<BR>
+   -  Error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ImplModelFollow_New_Plant" >ImplModelFollow_New_Plant</h3>
+<p><IMG SRC="LVtemp20221117044343_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Implicit model following lets us design a feedback controller that erases the dynamics of our system and makes it behave like some other system. This can be used to make a drivetrain more controllable during teleop driving by making it behave like a slower or more benign drivetrain.<BR>
+<BR>
+Create implicit model follower<BR>
+<BR>
+Inputs:<BR>
+   -  Plant  --  The plant being controlled.<BR>
+   -  PlantRef  --  The plant whose dynamics should be followed.<BR>
+<BR>
+Outputs:<BR>
+   -  Implicit Model Follower  -- Created data cluster<BR>
+   -  Error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="ImplModelFollow_Reset" >ImplModelFollow_Reset</h3>
+<p><IMG SRC="LVtemp20221117044348_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Resets the controller.<BR>
+<BR>
+Inputs:<BR>
+   -  in Implicit Model Follower  --  Input data cluster<BR>
+<BR>
+Outputs:<BR>
+   -  out Implicit Model Follower  --  Updated data cluster<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

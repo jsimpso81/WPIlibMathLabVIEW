@@ -1,0 +1,263 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="Rotation2d" >Rotation2d</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_CreateAngle" >Rotation2d_CreateAngle</h3>
+<p><IMG SRC="LVtemp20221117051113_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Constructs a Rotation2d with the given radian value.  The x and y don't have to be normalized.<BR>
+<BR>
+Parmeters:<BR>
+ - value - The value of the angle in radians.<BR>
+<BR>
+Returns<BR>
+ - rotation data structure<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_CreateAngleDegrees" >Rotation2d_CreateAngleDegrees</h3>
+<p><IMG SRC="LVtemp20221117051116_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Constructs a Rotation2d with the given angle value in degrees.  <BR>
+Parmeters:<BR>
+ - value - The value of the angle in degrees..<BR>
+<BR>
+Returns<BR>
+ - rotation data structure<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_CreateAngleRotations" >Rotation2d_CreateAngleRotations</h3>
+<p><IMG SRC="LVtemp20221117051119_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Constructs a Rotation2d with the given angle value in rotations.<BR>
+Parmeters:<BR>
+ - value - The value of the angle in rotations.<BR>
+<BR>
+Returns<BR>
+ - rotation data structure<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_CreateXY" >Rotation2d_CreateXY</h3>
+<p><IMG SRC="LVtemp20221117051123_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a Rotation2d with the given x and y (cosine and sine) components.  X and Y don't have to be normalized.<BR>
+<BR>
+Parameters:<BR>
+<BR>
+ - X -The x component or cosine of the rotation.<BR>
+ - Y - The y component or sine of the rotation.<BR>
+<BR>
+Returns:<BR>
+    Rotation data structure<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_Div" >Rotation2d_Div</h3>
+<p><IMG SRC="LVtemp20221117051126_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Divides the current rotation (angle) by a scalar.<BR>
+<BR>
+Parameters: <BR>
+- IN ROTATION - This ROTATION data structure<BR>
+- SCALAR - The value to divide the rotation by.<BR>
+<BR>
+Returns:<BR>
+ - OUT ROTATION - THe new ROTATION data structure.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_Equals" >Rotation2d_Equals</h3>
+<p><IMG SRC="LVtemp20221117051130_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Checks equality between this Rotation2d and another object.<BR>
+<BR>
+Parameters:<BR>
+ - in ROTATION - This Rotation data structure<BR>
+ - other ROTATION - The other Rotation to compare<BR>
+<BR>
+Returns:<BR>
+ - equals - Whether the two objects are equal or not.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_GetAngleCosSin" >Rotation2d_GetAngleCosSin</h3>
+<p><IMG SRC="LVtemp20221117051133_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the angle, sine, and cosine of the rotation.<BR>
+<BR>
+Parameters:<BR>
+ - in ROTATION - This ROTATION data structure<BR>
+<BR>
+Returns:<BR>
+ - Angle - The angle of the ROTATION (radians)<BR>
+ - Cosine of the ROTATAION<BR>
+ - Sine of the ROTATAION<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_GetCos" >Rotation2d_GetCos</h3>
+<p><IMG SRC="LVtemp20221117051136_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the cosine of the rotation.<BR>
+<BR>
+Parameters:<BR>
+ - in ROTATION - This ROTATION data structure<BR>
+<BR>
+Returns:<BR>
+ - Cosine of the ROTATAION<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_GetDegrees" >Rotation2d_GetDegrees</h3>
+<p><IMG SRC="LVtemp20221117051140_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the angle in degrees from the rotation.<BR>
+<BR>
+Parameters:<BR>
+- ROTATION - The rotation data structure<BR>
+<BR>
+Results:<BR>
+- Angle in degrees.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_GetRadians" >Rotation2d_GetRadians</h3>
+<p><IMG SRC="LVtemp20221117051143_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the angle in radians from the rotation.<BR>
+<BR>
+Parameters:<BR>
+- ROTATION - The rotation data structure<BR>
+<BR>
+Results:<BR>
+- Angle in radians.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_GetRotations" >Rotation2d_GetRotations</h3>
+<p><IMG SRC="LVtemp20221117051146_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the angle in degrees from the rotation.<BR>
+<BR>
+Parameters:<BR>
+- ROTATION - The rotation data structure<BR>
+<BR>
+Results:<BR>
+- Angle in rotations.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_GetSin" >Rotation2d_GetSin</h3>
+<p><IMG SRC="LVtemp20221117051150_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the sine of the rotation.<BR>
+<BR>
+Parameters:<BR>
+ - in ROTATION - This ROTATION data structure<BR>
+<BR>
+Returns:<BR>
+ - Sine of the ROTATAION<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_GetTan" >Rotation2d_GetTan</h3>
+<p><IMG SRC="LVtemp20221117051153_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the tanget of the rotation.<BR>
+<BR>
+Parameters:<BR>
+ - in ROTATION - This ROTATION data structure<BR>
+<BR>
+Returns:a<BR>
+ - Tangent of the ROTATAION<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_Interpolate" >Rotation2d_Interpolate</h3>
+<p><IMG SRC="LVtemp20221117051157_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Interpolate between 2 rotations<BR>
+<BR>
+Parameters:<BR>
+- in ROTATION - This rotation data structure<BR>
+ - EndValue ROTATION - The end value rotation<BR>
+ - T  --  Value between 0 and 1.<BR>
+<BR>
+Returns:<BR>
+  - Interpolated ROTATION - The interpolated rotation.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_Minus" >Rotation2d_Minus</h3>
+<p><IMG SRC="LVtemp20221117051200_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Subtracts the new rotation from the current rotation and returns the new rotation.<BR>
+<BR>
+For example, Rotation2d.fromDegrees(10) - Rotation2d.fromDegrees(100) = Rotation2d{-pi/2}<BR>
+<BR>
+Parameters:<BR>
+- in ROTATION - This rotation data structure<BR>
+ - other ROTATION - The rotation to subtract.<BR>
+<BR>
+Returns:<BR>
+  - out ROTATION - The difference between the two rotations.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_Plus" >Rotation2d_Plus</h3>
+<p><IMG SRC="LVtemp20221117051203_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Adds two rotations together, with the result being bounded between -pi and pi.<BR>
+<BR>
+For example, Rotation2d.fromDegrees(30) + Rotation2d.fromDegrees(60) = Rotation2d{-pi/2}<BR>
+<BR>
+This function is the same as RotateBy.<BR>
+<BR>
+Parameters:<BR>
+<BR>
+ - IN ROTATION - This rotation data structure<BR>
+ - OTHER ROTATION - The rotation to add.<BR>
+<BR>
+Returns:<BR>
+- OUT ROTATION - The sum of the two rotations.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_RotateBy" >Rotation2d_RotateBy</h3>
+<p><IMG SRC="LVtemp20221117051207_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Adds the new rotation to the current rotation using a rotation matrix.<BR>
+<BR>
+The matrix multiplication is as follows:<BR>
+     [cos_new]   [other.cos, -other.sin][cos]<BR>
+     [sin_new] = [other.sin,  other.cos][sin]<BR>
+      value_new = atan2(cos_new, sin_new)<BR>
+<BR>
+This is the same as Plus.<BR>
+<BR>
+Parameters:<BR>
+  - IN ROTATION - This ROTATION data structure<BR>
+  - OTHER ROTATION - The rotation to rotate by<BR>
+<BR>
+Returns:<BR>
+   - OUT ROTATION - The new rotated Rotation2d.<BR>
+  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_Times" >Rotation2d_Times</h3>
+<p><IMG SRC="LVtemp20221117051210_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Multiplies the current rotation (angle) by a scalar.<BR>
+<BR>
+Parameters: <BR>
+- IN ROTATION - This ROTATION data structure<BR>
+- SCALAR - The value to multiiply the rotation by.<BR>
+<BR>
+Returns:<BR>
+ - OUT ROTATION - THe new ROTATION data structure.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Rotation2d_UnaryMinus" >Rotation2d_UnaryMinus</h3>
+<p><IMG SRC="LVtemp20221117051213_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Takes the inverse of the current rotation. This is simply the negative of the current angular value.<BR>
+<BR>
+Parameters:<BR>
+ - IN ROTATION - This ROTATION data structure<BR>
+<BR>
+Results:<BR>
+ - OUT ROTATION  - The negated ROTATION data structure.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

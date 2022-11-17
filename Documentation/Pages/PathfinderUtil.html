@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="PathfinderUtil" >PathfinderUtil</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PathfinderUtil_Continuous_Heading_Difference" >PathfinderUtil_Continuous_Heading_Difference</h3>
+<p><IMG SRC="LVtemp20221117050354_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Normalize a heading difference so that it falls withing (+/- PI).</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PathfinderUtil_OptimizeTrajectoryStates" >PathfinderUtil_OptimizeTrajectoryStates</h3>
+<p><IMG SRC="LVtemp20221117050358_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Optimize trajectory states by removing states that are too similar.  The first and last states are always kept.  This reduces the overall number of states.  This also prevents potential divide by zero errors during sample interpoloation.  This is used when convering a Pathfinder Path to a Trajectory.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PathfinderUtil_ToTrajectory" >PathfinderUtil_ToTrajectory</h3>
+<p><IMG SRC="LVtemp20221117050402_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This routine provides a complete conversion of a Pathfinder Path to a Trajectory.  Each Pathfinder path sample is converted to a Trajectory State.  The Trajectory states are optimied.  (This is required to ensure that divide by zero doesn't occur when interpolating between states.)  Then a Trajectory is created from the array of Trajectory states.<BR>
+<BR>
+Parameters:<BR>
+ - Pathfinder Path - Array of pathfinder created states<BR>
+<BR>
+Returns:<BR>
+  - Trajectory - Trajectory data structure.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PathfinderUtil_ToTrajectoryStates" >PathfinderUtil_ToTrajectoryStates</h3>
+<p><IMG SRC="LVtemp20221117050406_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convert an array of Pathfinder created Path states to an array of Trajectory States.   Inches are converted to Meters.  Angles are converted to headings (+/- PI).  This routine only does a portion of the work needed to convert a Pathfinder Path to a complete Trajectory.  (See PathfinderUtil_ToTrajectory for a complete routine.)<BR>
+<BR>
+Parameters:<BR>
+ - Pathfinder Path - Array of pathfinder created states<BR>
+<BR>
+Returns:<BR>
+  - Trajectory States - Array of Trajectory states.</pre></p>
+<br>
+</BODY>
+</HTML>

@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="SwerveOdometry" >SwerveOdometry</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveOdometry_GetPosition" >SwerveOdometry_GetPosition</h3>
+<p><IMG SRC="LVtemp20221117051959_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the position of the robot on the field.<BR>
+   <BR>
+Parameters:<BR>
+  - In SwerveDriveOdometry  - Input data structure<BR>
+<BR>
+Returns:<BR>
+   - Pose -  The pose of the robot (x and y are in meters).<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveOdometry_New" >SwerveOdometry_New</h3>
+<p><IMG SRC="LVtemp20221117052003_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a SwerveDriveOdometry object.<BR>
+   <BR>
+Parameters:<BR>
+  - gyroAngle   The angle reported by the gyroscope.<BR>
+  - ModulePostions  --  Array of module positions (distances)<BR>
+  - initialPose The starting position of the robot on the field.<BR>
+<BR>
+Returns<BR>
+ - SwerveDriveOdometry - Data Structure</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveOdometry_NewZeroCenter" >SwerveOdometry_NewZeroCenter</h3>
+<p><IMG SRC="LVtemp20221117052006_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a SwerveDriveOdometry object with the default pose at the origin.<BR>
+   <BR>
+Parameters:<BR>
+  - gyroAngle  - The angle reported by the gyroscope.<BR>
+  - ModulePostions  --  Array of module positions (distances)<BR>
+<BR>
+Returns:<BR>
+   - SwerveDriveOdometry - Data Structure<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveOdometry_ResetPosition" >SwerveOdometry_ResetPosition</h3>
+<p><IMG SRC="LVtemp20221117052010_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Resets the robot's position on the field.<BR>
+   <BR>
+The gyroscope angle does not need to be reset here on the user's robot code.  The library automatically takes care of offsetting the gyro angle.<BR>
+   <BR>
+Parameters:<BR>
+  - in SwerveDriveOdometry -- input SwerveDriveOdometry data structure<BR>
+  - pose  -     The position on the field that your robot is at.<BR>
+  - gyroAngle - The angle reported by the gyroscope.<BR>
+<BR>
+Returns:<BR>
+  - out SwerveDriveOdometry -- Updated data structure<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveOdometry_Update4" >SwerveOdometry_Update4</h3>
+<p><IMG SRC="LVtemp20221117052013_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Updates the robot's position on the field using forward kinematics and integration of the pose over time. Thisalso takes in an angle parameter which is used instead of the angular rate that is calculated from forward kinematics.<BR>
+<BR>
+This subVI is customized for 4 swerve modules.<BR>
+<BR>
+Parameters:<BR>
+  - InSwerveDriveOdometry - This data structure   <BR>
+  - gyroAngle     -     The angle reported by the gyroscope.<BR>
+  - modulePosition 0  -      The current position (distance) of a swerve module. Please provide the states in the same order in which you instantiated your SwerveDriveKinematics.<BR>
+  - modulePosition 1  -      The current position (distance) of a swerve module. <BR>
+  - modulePosition 2  -      The current position (distance) of a swerve module. <BR>
+  - modulePosition 3  -      The current position (distance) of a swerve module. <BR>
+<BR>
+Returns:<BR>
+  - OutSwerveDriveOdometry - Updated data structure<BR>
+  - The new pose of the robot.<BR>
+  - Error  -- TRUE if an error occured (number of modules doesn't match)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveOdometry_UpdateX" >SwerveOdometry_UpdateX</h3>
+<p><IMG SRC="LVtemp20221117052018_0_0c.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Updates the robot's position on the field using forward kinematics and integration of the pose over time. This method takes in the current time as a parameter to calculate period (difference between two timestamps). The period is used to calculate the change in distance from a velocity. Thisalso takes in an angle parameter which is used instead of the angular rate that is calculated from forward kinematics.<BR>
+<BR>
+Parameters:<BR>
+  - InSwerveDriveKinematics - The data structure   <BR>
+  - InSwerveDriveOdometry - This data structure   <BR>
+  - gyroAngle      -    The angle reported by the gyroscope.<BR>
+  - modulePositions  -     The current positions (distances) of all swerve modules. Please provide the states in the same order in which you instantiated your SwerveDriveKinematics.<BR>
+<BR>
+Returns:<BR>
+  - OutSwerveDriveOdometry - Updated data structure<BR>
+  - The new pose of the robot.<BR>
+  - Error  -- TRUE if an error occured (number of modules doesn't match)<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>
