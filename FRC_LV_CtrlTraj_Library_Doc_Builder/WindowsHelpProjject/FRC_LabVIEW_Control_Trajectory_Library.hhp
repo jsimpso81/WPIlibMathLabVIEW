@@ -1,41 +1,144 @@
 [OPTIONS]
+Auto Index=Yes
 Compatibility=1.1 or later
 Compiled file=FRC_LabVIEW_Control_Trajectory_Library.chm
 Contents file=Table of Contents.hhc
-Default topic=..\Documentation\Analog_Delay.html
-Display compile progress=No
+Default topic=..\..\Documentation\Pages\default.html
+Display compile progress=Yes
+Enhanced decompilation=Yes
+Full-text search=Yes
 Index file=Index.hhk
 Language=0x409 English (United States)
+Title=FRC LabVIEW Control Trajectory Library Reference
 
 
 [FILES]
-..\Documentation\Analog_Delay.html
-..\Documentation\ArmFF.html
-..\Documentation\BangBang.html
-..\Documentation\ControllerUtil__GetModulusError.html
-..\Documentation\Conv.html
-..\Documentation\CoordAxis.html
-..\Documentation\CoordSystem.html
-..\Documentation\Debouncer.html
-..\Documentation\DigSeqLogic.html
-..\Documentation\ElevFF.html
-..\Documentation\FunctionGenerator.html
-..\Documentation\FunctionGeneratorMatrix.html
-..\Documentation\HolDrvCtrl.html
-..\Documentation\LinearFilter.html
-..\Documentation\MedianFilter.html
-..\Documentation\PIDController.html
-..\Documentation\Pose2d.html
-..\Documentation\Pose3d.html
-..\Documentation\ProfiledPIDController.html
-..\Documentation\Ramsete.html
-..\Documentation\Rotation2d.html
-..\Documentation\SimpleMotorFF.html
-..\Documentation\SlewRateLimiter.html
-..\Documentation\Timer.html
-..\Documentation\Transform2d.html
-..\Documentation\Translation2d.html
-..\Documentation\Twist2d.html
+..\..\Documentation\Pages\AnalogDelay.html
+..\..\Documentation\Pages\AngleStats.html
+..\..\Documentation\Pages\ArmFF.html
+..\..\Documentation\Pages\BangBang.html
+..\..\Documentation\Pages\BatterySim.html
+..\..\Documentation\Pages\BumplessTransfer.html
+..\..\Documentation\Pages\CallbackHelp.html
+..\..\Documentation\Pages\CentripetalAccelConstraint.html
+..\..\Documentation\Pages\ChassisSpeeds.html
+..\..\Documentation\Pages\CompVisionUtil.html
+..\..\Documentation\Pages\ConstrainedState.html
+..\..\Documentation\Pages\Constraint.html
+..\..\Documentation\Pages\ControllerUtil.html
+..\..\Documentation\Pages\Conv.html
+..\..\Documentation\Pages\CoordAxis.html
+..\..\Documentation\Pages\CoordSystem.html
+..\..\Documentation\Pages\CubicHermiteSpline.html
+..\..\Documentation\Pages\DCMotor.html
+..\..\Documentation\Pages\DCMotorSim.html
+..\..\Documentation\Pages\Debouncer.html
+..\..\Documentation\Pages\DiffDriveKinematicsConstraint.html
+..\..\Documentation\Pages\DiffDrivePoseEst.html
+..\..\Documentation\Pages\DiffDriveTrainSim.html
+..\..\Documentation\Pages\DiffDriveVoltageConstraint.html
+..\..\Documentation\Pages\DiffDrvAccelLimit.html
+..\..\Documentation\Pages\DiffKinematics.html
+..\..\Documentation\Pages\DiffOdometry.html
+..\..\Documentation\Pages\DiffWheel.html
+..\..\Documentation\Pages\DigSeqLogic.html
+..\..\Documentation\Pages\Discretization.html
+..\..\Documentation\Pages\ElevatorSim.html
+..\..\Documentation\Pages\ElevFF.html
+..\..\Documentation\Pages\EllipRegionConstraint.html
+..\..\Documentation\Pages\Enum.html
+..\..\Documentation\Pages\ExtendedKalmanFilter.html
+..\..\Documentation\Pages\FlyWheelSim.html
+..\..\Documentation\Pages\FunctionGenerator.html
+..\..\Documentation\Pages\FunctionGeneratorMatrix.html
+..\..\Documentation\Pages\HolDrvCtrl.html
+..\..\Documentation\Pages\ImplModelFollow.html
+..\..\Documentation\Pages\JerkConstraint.html
+..\..\Documentation\Pages\KalmanFilter.html
+..\..\Documentation\Pages\KalmanFilterLatencyComp.html
+..\..\Documentation\Pages\LeadLag.html
+..\..\Documentation\Pages\LinearFilter.html
+..\..\Documentation\Pages\LinearPlntInvFF.html
+..\..\Documentation\Pages\LinearQuadraticRegulator.html
+..\..\Documentation\Pages\LinearSystem.html
+..\..\Documentation\Pages\LinearSystemId.html
+..\..\Documentation\Pages\LinearSystemLoop.html
+..\..\Documentation\Pages\LinearSystemSim.html
+..\..\Documentation\Pages\LTVDiffDriveCtrl.html
+..\..\Documentation\Pages\LTVUnicycleCtrl.html
+..\..\Documentation\Pages\MatBuilder.html
+..\..\Documentation\Pages\MathUtil.html
+..\..\Documentation\Pages\Matrix.html
+..\..\Documentation\Pages\MatrixHelper.html
+..\..\Documentation\Pages\MaxVelocityConstraint.html
+..\..\Documentation\Pages\MecaDriveKinematicsConstraint.html
+..\..\Documentation\Pages\MecaDrivePoseEst.html
+..\..\Documentation\Pages\MecaKinematics.html
+..\..\Documentation\Pages\MecaOdometry.html
+..\..\Documentation\Pages\MecaWheel.html
+..\..\Documentation\Pages\MecaWheelPos.html
+..\..\Documentation\Pages\MedianFilter.html
+..\..\Documentation\Pages\MerweScSigPts.html
+..\..\Documentation\Pages\NumIntegrate.html
+..\..\Documentation\Pages\NumJacobian.html
+..\..\Documentation\Pages\PathfinderUtil.html
+..\..\Documentation\Pages\PIDAutoTune.html
+..\..\Documentation\Pages\PIDController.html
+..\..\Documentation\Pages\Pose2d.html
+..\..\Documentation\Pages\Pose3d.html
+..\..\Documentation\Pages\PoseWithCurve.html
+..\..\Documentation\Pages\ProfiledPIDController.html
+..\..\Documentation\Pages\Quaternion.html
+..\..\Documentation\Pages\QuinticHermiteSpline.html
+..\..\Documentation\Pages\Ramsete.html
+..\..\Documentation\Pages\RectRegionConstraint.html
+..\..\Documentation\Pages\Riccati.html
+..\..\Documentation\Pages\Rotation2d.html
+..\..\Documentation\Pages\Rotation3d.html
+..\..\Documentation\Pages\RungeKuttaTimeVarying.html
+..\..\Documentation\Pages\SimpleMatrix.html
+..\..\Documentation\Pages\SimpleMotorFF.html
+..\..\Documentation\Pages\SlewRateLimiter.html
+..\..\Documentation\Pages\SngJntArmSim.html
+..\..\Documentation\Pages\Spline.html
+..\..\Documentation\Pages\SplineHelp.html
+..\..\Documentation\Pages\SplineParam.html
+..\..\Documentation\Pages\StateSpaceUtil.html
+..\..\Documentation\Pages\SwerveDriveKinematicsConstraint.html
+..\..\Documentation\Pages\SwerveDrivePoseEst.html
+..\..\Documentation\Pages\SwerveKinematics.html
+..\..\Documentation\Pages\SwerveModulePosition.html
+..\..\Documentation\Pages\SwerveModuleState.html
+..\..\Documentation\Pages\SwerveOdometry.html
+..\..\Documentation\Pages\TimeInterpBoolean.html
+..\..\Documentation\Pages\TimeInterpDouble.html
+..\..\Documentation\Pages\TimeInterpPose2d.html
+..\..\Documentation\Pages\TimeInterpRotation2d.html
+..\..\Documentation\Pages\Timer.html
+..\..\Documentation\Pages\TrajConstraint.html
+..\..\Documentation\Pages\Trajectory.html
+..\..\Documentation\Pages\TrajectoryConfig.html
+..\..\Documentation\Pages\TrajectoryGenerate.html
+..\..\Documentation\Pages\TrajectoryParam.html
+..\..\Documentation\Pages\TrajectoryState.html
+..\..\Documentation\Pages\TrajectoryUtil.html
+..\..\Documentation\Pages\Transform2d.html
+..\..\Documentation\Pages\Transform3d.html
+..\..\Documentation\Pages\Translation2d.html
+..\..\Documentation\Pages\Translation3d.html
+..\..\Documentation\Pages\TrapProfConstraint.html
+..\..\Documentation\Pages\TrapProfile.html
+..\..\Documentation\Pages\TrapProfState.html
+..\..\Documentation\Pages\Twist2d.html
+..\..\Documentation\Pages\Twist3d.html
+..\..\Documentation\Pages\TypeDef.html
+..\..\Documentation\Pages\Units.html
+..\..\Documentation\Pages\UnscentedKalmanFilter.html
+..\..\Documentation\Pages\Util.html
+..\..\Documentation\Pages\VecBuilder.html
+..\..\Documentation\Pages\Vector.html
+..\..\Documentation\Pages\WaitAdjust.html
+..\..\Documentation\Pages\default.html
 
 [INFOTYPES]
 
