@@ -27,6 +27,8 @@
 				<Item Name="2022-field.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2022-field.png"/>
 				<Item Name="BlankField.png" Type="Document" URL="../UtilExe/bin/FieldInfo/BlankField.png"/>
 				<Item Name="field_info.ini" Type="Document" URL="../UtilExe/bin/FieldInfo/field_info.ini"/>
+				<Item Name="Grid-1-Foot-Light.png" Type="Document" URL="../UtilExe/bin/FieldInfo/Grid-1-Foot-Light.png"/>
+				<Item Name="Grid-1-Foot.png" Type="Document" URL="../UtilExe/bin/FieldInfo/Grid-1-Foot.png"/>
 			</Item>
 			<Item Name="Samples" Type="Folder">
 				<Item Name="PathWeaverTestPathOne.wpilib.json" Type="Document" URL="../UtilExe/bin/Samples/PathWeaverTestPathOne.wpilib.json"/>
@@ -42,6 +44,9 @@
 			<Item Name="Convert_PathWeaver_JSON_To_Trajectory_File.aliases" Type="Document" URL="../UtilExe/bin/Convert_PathWeaver_JSON_To_Trajectory_File.aliases"/>
 			<Item Name="Convert_PathWeaver_JSON_To_Trajectory_File.exe" Type="Document" URL="../UtilExe/bin/Convert_PathWeaver_JSON_To_Trajectory_File.exe"/>
 			<Item Name="Convert_PathWeaver_JSON_To_Trajectory_File.ini" Type="Document" URL="../UtilExe/bin/Convert_PathWeaver_JSON_To_Trajectory_File.ini"/>
+			<Item Name="Convert_Trajectory_CSV_To_PathWeaver_JSON_File.aliases" Type="Document" URL="../UtilExe/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.aliases"/>
+			<Item Name="Convert_Trajectory_CSV_To_PathWeaver_JSON_File.exe" Type="Document" URL="../UtilExe/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.exe"/>
+			<Item Name="Convert_Trajectory_CSV_To_PathWeaver_JSON_File.ini" Type="Document" URL="../UtilExe/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.ini"/>
 			<Item Name="Create_Trajectory_Using_Pathfinder_Differential.aliases" Type="Document" URL="../UtilExe/bin/Create_Trajectory_Using_Pathfinder_Differential.aliases"/>
 			<Item Name="Create_Trajectory_Using_Pathfinder_Differential.exe" Type="Document" URL="../UtilExe/bin/Create_Trajectory_Using_Pathfinder_Differential.exe"/>
 			<Item Name="Create_Trajectory_Using_Pathfinder_Differential.ini" Type="Document" URL="../UtilExe/bin/Create_Trajectory_Using_Pathfinder_Differential.ini"/>
@@ -53,6 +58,16 @@
 			<Item Name="Create_Trajectory_Using_TrajectoryLibrary.ini" Type="Document" URL="../UtilExe/bin/Create_Trajectory_Using_TrajectoryLibrary.ini"/>
 			<Item Name="LICENSE.txt" Type="Document" URL="../UtilExe/bin/LICENSE.txt"/>
 			<Item Name="pathfinder.dll" Type="Document" URL="../UtilExe/bin/pathfinder.dll"/>
+			<Item Name="Robot_kitbot_4.png" Type="Document" URL="../UtilExe/bin/Robot_kitbot_4.png"/>
+			<Item Name="Robot_Romi_Top_VerySmall.png" Type="Document" URL="../UtilExe/bin/Robot_Romi_Top_VerySmall.png"/>
+			<Item Name="robot_signal_light_small_OFF.png" Type="Document" URL="../UtilExe/bin/robot_signal_light_small_OFF.png"/>
+			<Item Name="robot_signal_light_small_ON.png" Type="Document" URL="../UtilExe/bin/robot_signal_light_small_ON.png"/>
+			<Item Name="Simulated_Robot_Diff_Drive.aliases" Type="Document" URL="../UtilExe/bin/Simulated_Robot_Diff_Drive.aliases"/>
+			<Item Name="Simulated_Robot_Diff_Drive.exe" Type="Document" URL="../UtilExe/bin/Simulated_Robot_Diff_Drive.exe"/>
+			<Item Name="Simulated_Robot_Diff_Drive.ini" Type="Document" URL="../UtilExe/bin/Simulated_Robot_Diff_Drive.ini"/>
+			<Item Name="Simulated_Robot_Romi.aliases" Type="Document" URL="../UtilExe/bin/Simulated_Robot_Romi.aliases"/>
+			<Item Name="Simulated_Robot_Romi.exe" Type="Document" URL="../UtilExe/bin/Simulated_Robot_Romi.exe"/>
+			<Item Name="Simulated_Robot_Romi.ini" Type="Document" URL="../UtilExe/bin/Simulated_Robot_Romi.ini"/>
 		</Item>
 		<Item Name="Doc" Type="Folder">
 			<Item Name="FRC_Ctrl_Traj_Lib_Reference.pdf" Type="Document" URL="../Doc/FRC_Ctrl_Traj_Lib_Reference.pdf"/>
@@ -264,7 +279,7 @@
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">398</Property>
+				<Property Name="Bld_version.build" Type="Int">399</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">12</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -434,7 +449,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASFrcCtrlTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.12-215_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.12-217_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -443,7 +458,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">216</Property>
+				<Property Name="PKG_buildNumber" Type="Int">218</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASFrcCtrlTrajLib</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -527,7 +542,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_packageName" Type="Str">jasjunkfrctrajlib</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">6</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">8</Property>
 				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
 				<Property Name="PKG_shortcuts[0].Name" Type="Str">ConvertPathWeaverJSON</Property>
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">JASJunk/TrajLib</Property>
@@ -570,6 +585,20 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
 				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
 				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[6].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[6].Name" Type="Str">Simulate Differential Drive Robot</Property>
+				<Property Name="PKG_shortcuts[6].Path" Type="Path">JASJunk/TrajLib</Property>
+				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
+				<Property Name="PKG_shortcuts[6].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[6].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[6].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[7].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[7].Name" Type="Str">Simulate Romi Robot</Property>
+				<Property Name="PKG_shortcuts[7].Path" Type="Path">JASJunk/TrajLib</Property>
+				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
+				<Property Name="PKG_shortcuts[7].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[7].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[7].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_sources.Count" Type="Int">3</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
@@ -594,7 +623,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlibutils_2.0.12-215_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlibutils_2.0.12-217_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library Utility Programs</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -602,7 +631,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">216</Property>
+				<Property Name="PKG_buildNumber" Type="Int">218</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASFrcCtrlTrajLib_UtilsOnly</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -674,7 +703,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_packageName" Type="Str">jasjunkfrctrajlibutils</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">4</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">6</Property>
 				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
 				<Property Name="PKG_shortcuts[0].Name" Type="Str">ConvertPathWeaverJSON</Property>
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">JASJunk/TrajLib</Property>
@@ -704,12 +733,19 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[3].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[3].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[4].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[4].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
+				<Property Name="PKG_shortcuts[4].Name" Type="Str">Simulate Differential Drive Robot</Property>
 				<Property Name="PKG_shortcuts[4].Path" Type="Path">JASJunk/TrajLib</Property>
-				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
-				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
+				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[4].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[5].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[5].Name" Type="Str">Simulate Romi Robot</Property>
+				<Property Name="PKG_shortcuts[5].Path" Type="Path">JASJunk/TrajLib</Property>
+				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
+				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_sources.Count" Type="Int">1</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
@@ -734,7 +770,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2020_2.0.12-215_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2020_2.0.12-216_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -743,7 +779,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">216</Property>
+				<Property Name="PKG_buildNumber" Type="Int">217</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASFrcCtrlTrajLibLv2020</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -827,7 +863,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_packageName" Type="Str">jasjunkfrctrajliblv2020</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">6</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">8</Property>
 				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
 				<Property Name="PKG_shortcuts[0].Name" Type="Str">ConvertPathWeaverJSON</Property>
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">JASJunk/TrajLib</Property>
@@ -870,6 +906,20 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
 				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
 				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[6].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[6].Name" Type="Str">Simulate Differential Drive Robot</Property>
+				<Property Name="PKG_shortcuts[6].Path" Type="Path">JASJunk/TrajLib</Property>
+				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
+				<Property Name="PKG_shortcuts[6].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[6].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[6].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[7].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[7].Name" Type="Str">Simulate Romi Robot</Property>
+				<Property Name="PKG_shortcuts[7].Path" Type="Path">JASJunk/TrajLib</Property>
+				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
+				<Property Name="PKG_shortcuts[7].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[7].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[7].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_sources.Count" Type="Int">3</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
@@ -894,7 +944,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2021_2.0.12-215_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2021_2.0.12-216_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -903,7 +953,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">216</Property>
+				<Property Name="PKG_buildNumber" Type="Int">217</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASFrcCtrlTrajLibLv2021</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -987,7 +1037,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_packageName" Type="Str">jasjunkfrctrajliblv2021</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">6</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">8</Property>
 				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
 				<Property Name="PKG_shortcuts[0].Name" Type="Str">ConvertPathWeaverJSON</Property>
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">JASJunk/TrajLib</Property>
@@ -1030,6 +1080,20 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
 				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
 				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[6].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[6].Name" Type="Str">Simulate Differential Drive Robot</Property>
+				<Property Name="PKG_shortcuts[6].Path" Type="Path">JASJunk/TrajLib</Property>
+				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
+				<Property Name="PKG_shortcuts[6].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[6].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[6].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[7].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[7].Name" Type="Str">Simulate Romi Robot</Property>
+				<Property Name="PKG_shortcuts[7].Path" Type="Path">JASJunk/TrajLib</Property>
+				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
+				<Property Name="PKG_shortcuts[7].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[7].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[7].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_sources.Count" Type="Int">3</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
@@ -1065,7 +1129,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E685BE58-8AC4-40ED-B368-C46CA560D1D1}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/UtilExe_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">199</Property>
+				<Property Name="Bld_version.build" Type="Int">202</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">12</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -1076,7 +1140,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/UtilExe/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{D01EB654-1443-4A36-95AB-5EDDDE530149}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{55663442-D07E-4C3C-98CC-FAA9531D0F61}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
