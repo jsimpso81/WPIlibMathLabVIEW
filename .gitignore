@@ -24,4 +24,5 @@
 # ignore ni packages
 *.nipkg
 
-
+# ignore doc builder temp files
+FRC_LV_CtrlTraj_Library_Doc_Builder/HTML_Build_Work/Temp/*
