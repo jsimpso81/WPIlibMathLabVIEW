@@ -185,9 +185,26 @@ The installed library contains a number of utility programs.
 	trapezoids.
 
 
-- **Convert PathWeaver JSON File To Trajectory File**
+- **Convert PathWeaver JSON File To Trajectory CSV File**
 
 	Read a JSON file created by the PathWeaver utility.  Write this trajectory as a CSV file for use with this library.
+
+- **Convert Trajectory CSV File to PathWeaver JSON File **
+
+	Read a CSV file created by the Trajectory utility.  Write this trajectory as a JSON file for use with other robot code.
+
+- **Simulate Romi Robot**
+
+	Simulate a Romi robot.
+
+- **Simulate Differential Drive Robot**
+
+	Simulate a Differential Drive robot.  Test robot code and trajectories.
+
+	![Simulator Robot Definition Dialog!](images/DiffSim_1.png)
+
+	![Simulator Field Display!](images/DiffSim_2.png)
+
 
 ---
 ## Special Notes
