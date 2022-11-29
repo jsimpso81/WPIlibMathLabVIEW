@@ -20,6 +20,7 @@
 # ignore builds
 **/builds/**
 **/bin/**
+**/buildsALL/**
 
 # ignore ni packages
 *.nipkg
