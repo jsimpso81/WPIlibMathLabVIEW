@@ -13,61 +13,8 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="bin" Type="Folder">
-			<Item Name="FieldInfo" Type="Folder">
-				<Item Name="2018-field.jpg" Type="Document" URL="../UtilExe/bin/FieldInfo/2018-field.jpg"/>
-				<Item Name="2019-field.jpg" Type="Document" URL="../UtilExe/bin/FieldInfo/2019-field.jpg"/>
-				<Item Name="2020-Field.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2020-Field.png"/>
-				<Item Name="2021-barrel.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-barrel.png"/>
-				<Item Name="2021-bounce.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-bounce.png"/>
-				<Item Name="2021-galacticsearcha.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-galacticsearcha.png"/>
-				<Item Name="2021-galacticsearchb.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-galacticsearchb.png"/>
-				<Item Name="2021-slalom.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2021-slalom.png"/>
-				<Item Name="2022-field-capture-cropped.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2022-field-capture-cropped.png"/>
-				<Item Name="2022-field.png" Type="Document" URL="../UtilExe/bin/FieldInfo/2022-field.png"/>
-				<Item Name="BlankField.png" Type="Document" URL="../UtilExe/bin/FieldInfo/BlankField.png"/>
-				<Item Name="field_info.ini" Type="Document" URL="../UtilExe/bin/FieldInfo/field_info.ini"/>
-				<Item Name="Grid-1-Foot-Light.png" Type="Document" URL="../UtilExe/bin/FieldInfo/Grid-1-Foot-Light.png"/>
-				<Item Name="Grid-1-Foot.png" Type="Document" URL="../UtilExe/bin/FieldInfo/Grid-1-Foot.png"/>
-			</Item>
-			<Item Name="Samples" Type="Folder">
-				<Item Name="PathWeaverTestPathOne.wpilib.json" Type="Document" URL="../UtilExe/bin/Samples/PathWeaverTestPathOne.wpilib.json"/>
-				<Item Name="PathWeaverTestPathTwo.wpilib.json" Type="Document" URL="../UtilExe/bin/Samples/PathWeaverTestPathTwo.wpilib.json"/>
-				<Item Name="RapidReact2022Sample.csv" Type="Document" URL="../UtilExe/bin/Samples/RapidReact2022Sample.csv"/>
-				<Item Name="RapidReact2022Sample.json" Type="Document" URL="../UtilExe/bin/Samples/RapidReact2022Sample.json"/>
-				<Item Name="RapidReact2022Sample.xml" Type="Document" URL="../UtilExe/bin/Samples/RapidReact2022Sample.xml"/>
-				<Item Name="Sample-JSON-to-Trajectory-Conversion.csv" Type="Document" URL="../UtilExe/bin/Samples/Sample-JSON-to-Trajectory-Conversion.csv"/>
-				<Item Name="Sample-Robot-2-Trajectory-Pathfinder.csv" Type="Document" URL="../UtilExe/bin/Samples/Sample-Robot-2-Trajectory-Pathfinder.csv"/>
-				<Item Name="Sample-Robot-2-Trajectory-TrajLibrary.csv" Type="Document" URL="../UtilExe/bin/Samples/Sample-Robot-2-Trajectory-TrajLibrary.csv"/>
-				<Item Name="Sample-Robot-2-Trajectory-TrajLibrary.xml" Type="Document" URL="../UtilExe/bin/Samples/Sample-Robot-2-Trajectory-TrajLibrary.xml"/>
-			</Item>
-			<Item Name="Convert_PathWeaver_JSON_To_Trajectory_File.aliases" Type="Document" URL="../UtilExe/bin/Convert_PathWeaver_JSON_To_Trajectory_File.aliases"/>
-			<Item Name="Convert_PathWeaver_JSON_To_Trajectory_File.exe" Type="Document" URL="../UtilExe/bin/Convert_PathWeaver_JSON_To_Trajectory_File.exe"/>
-			<Item Name="Convert_PathWeaver_JSON_To_Trajectory_File.ini" Type="Document" URL="../UtilExe/bin/Convert_PathWeaver_JSON_To_Trajectory_File.ini"/>
-			<Item Name="Convert_Trajectory_CSV_To_PathWeaver_JSON_File.aliases" Type="Document" URL="../UtilExe/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.aliases"/>
-			<Item Name="Convert_Trajectory_CSV_To_PathWeaver_JSON_File.exe" Type="Document" URL="../UtilExe/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.exe"/>
-			<Item Name="Convert_Trajectory_CSV_To_PathWeaver_JSON_File.ini" Type="Document" URL="../UtilExe/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.ini"/>
-			<Item Name="Create_Trajectory_Using_Pathfinder_Differential.aliases" Type="Document" URL="../UtilExe/bin/Create_Trajectory_Using_Pathfinder_Differential.aliases"/>
-			<Item Name="Create_Trajectory_Using_Pathfinder_Differential.exe" Type="Document" URL="../UtilExe/bin/Create_Trajectory_Using_Pathfinder_Differential.exe"/>
-			<Item Name="Create_Trajectory_Using_Pathfinder_Differential.ini" Type="Document" URL="../UtilExe/bin/Create_Trajectory_Using_Pathfinder_Differential.ini"/>
-			<Item Name="Create_Trajectory_Using_Pathfinder_Swerve.aliases" Type="Document" URL="../UtilExe/bin/Create_Trajectory_Using_Pathfinder_Swerve.aliases"/>
-			<Item Name="Create_Trajectory_Using_Pathfinder_Swerve.exe" Type="Document" URL="../UtilExe/bin/Create_Trajectory_Using_Pathfinder_Swerve.exe"/>
-			<Item Name="Create_Trajectory_Using_Pathfinder_Swerve.ini" Type="Document" URL="../UtilExe/bin/Create_Trajectory_Using_Pathfinder_Swerve.ini"/>
-			<Item Name="Create_Trajectory_Using_TrajectoryLibrary.aliases" Type="Document" URL="../UtilExe/bin/Create_Trajectory_Using_TrajectoryLibrary.aliases"/>
-			<Item Name="Create_Trajectory_Using_TrajectoryLibrary.exe" Type="Document" URL="../UtilExe/bin/Create_Trajectory_Using_TrajectoryLibrary.exe"/>
-			<Item Name="Create_Trajectory_Using_TrajectoryLibrary.ini" Type="Document" URL="../UtilExe/bin/Create_Trajectory_Using_TrajectoryLibrary.ini"/>
-			<Item Name="LICENSE.txt" Type="Document" URL="../UtilExe/bin/LICENSE.txt"/>
-			<Item Name="pathfinder.dll" Type="Document" URL="../UtilExe/bin/pathfinder.dll"/>
-			<Item Name="Robot_kitbot_4.png" Type="Document" URL="../UtilExe/bin/Robot_kitbot_4.png"/>
-			<Item Name="Robot_Romi_Top_VerySmall.png" Type="Document" URL="../UtilExe/bin/Robot_Romi_Top_VerySmall.png"/>
-			<Item Name="robot_signal_light_small_OFF.png" Type="Document" URL="../UtilExe/bin/robot_signal_light_small_OFF.png"/>
-			<Item Name="robot_signal_light_small_ON.png" Type="Document" URL="../UtilExe/bin/robot_signal_light_small_ON.png"/>
-			<Item Name="Simulated_Robot_Diff_Drive.aliases" Type="Document" URL="../UtilExe/bin/Simulated_Robot_Diff_Drive.aliases"/>
-			<Item Name="Simulated_Robot_Diff_Drive.exe" Type="Document" URL="../UtilExe/bin/Simulated_Robot_Diff_Drive.exe"/>
-			<Item Name="Simulated_Robot_Diff_Drive.ini" Type="Document" URL="../UtilExe/bin/Simulated_Robot_Diff_Drive.ini"/>
-			<Item Name="Simulated_Robot_Romi.aliases" Type="Document" URL="../UtilExe/bin/Simulated_Robot_Romi.aliases"/>
-			<Item Name="Simulated_Robot_Romi.exe" Type="Document" URL="../UtilExe/bin/Simulated_Robot_Romi.exe"/>
-			<Item Name="Simulated_Robot_Romi.ini" Type="Document" URL="../UtilExe/bin/Simulated_Robot_Romi.ini"/>
+		<Item Name="bin" Type="Folder" URL="../UtilExe/bin">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Doc" Type="Folder">
 			<Item Name="FRC_Ctrl_Traj_Lib_Reference.pdf" Type="Document" URL="../Doc/FRC_Ctrl_Traj_Lib_Reference.pdf"/>
@@ -78,6 +25,9 @@
 			<Item Name="Dummy_Func_VAR_matTY.vi" Type="VI" URL="../Dummy_Func_VAR_matTY.vi"/>
 			<Item Name="Dummy_Func_VAR_matX.vi" Type="VI" URL="../Dummy_Func_VAR_matX.vi"/>
 			<Item Name="Dummy_Func_VAR_matXU.vi" Type="VI" URL="../Dummy_Func_VAR_matXU.vi"/>
+		</Item>
+		<Item Name="HtmlHelp" Type="Folder" URL="../HtmlHelp">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="JAS_Junk" Type="Folder">
 			<Item Name="dir.mnu" Type="Document" URL="../JAS_Junk/dir.mnu"/>
@@ -279,7 +229,7 @@
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">399</Property>
+				<Property Name="Bld_version.build" Type="Int">401</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">12</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -395,10 +345,10 @@
 				<Property Name="Source[9].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">20</Property>
 			</Item>
-			<Item Name="Book" Type="Source Distribution">
+			<Item Name="DocFiles" Type="Source Distribution">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{657F479B-E8FB-4969-98B9-EBB81BD0F6A4}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Book</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">DocFiles</Property>
 				<Property Name="Bld_excludedDirectory[0]" Type="Path">vi.lib</Property>
 				<Property Name="Bld_excludedDirectory[0].pathType" Type="Str">relativeToAppDir</Property>
 				<Property Name="Bld_excludedDirectory[1]" Type="Path">resource/objmgr</Property>
@@ -412,23 +362,23 @@
 				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
 				<Property Name="Bld_excludeDependentDLLs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/Book</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/DocFiles</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8D079E02-BFA0-46FB-8CDC-1B67AE60BD8E}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/Book_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">43</Property>
+				<Property Name="Bld_version.build" Type="Int">47</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">3</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/Book</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/DocFiles</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/Book/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/DocFiles/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{6C870DD8-9186-44BF-A12F-2586B7DD418F}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{55229426-93BA-413A-98AA-028A5D57FEC3}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
@@ -436,20 +386,180 @@
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="Source[3].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/HtmlHelp</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
 			</Item>
-			<Item Name="JASFrcCtrlTrajLib" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
+			<Item Name="JASFrcCtrlTrajLib_UtilsOnly" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
 				<Property Name="NIPKG_certificates" Type="Bool">false</Property>
 				<Property Name="NIPKG_createInstaller" Type="Bool">false</Property>
-				<Property Name="NIPKG_feedLocation" Type="Path">../builds/NI_AB_PROJECTNAME/JASFrcCtrlTrajLib/Feed</Property>
+				<Property Name="NIPKG_feedLocation" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Feed</Property>
 				<Property Name="NIPKG_feedLocation.Type" Type="Str">relativeToCommon</Property>
 				<Property Name="NIPKG_installerArtifacts" Type="Str">Install.exe|InstallCHS.dll|InstallDEU.dll|InstallFRA.dll|InstallJPN.dll|InstallKOR.dll|bin|feeds|pool|system-packages
 </Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
-				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASFrcCtrlTrajLib/Package Installer</Property>
+				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.12-219_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlibutils_2.0.12-222_windows_all.nipkg</Property>
+				<Property Name="NIPKG_license" Type="Ref"></Property>
+				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library Utility Programs</Property>
+				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
+				<Property Name="NIPKG_VisibleForRuntimeDeployment" Type="Bool">false</Property>
+				<Property Name="PKG_actions.Count" Type="Int">0</Property>
+				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
+				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
+				<Property Name="PKG_buildNumber" Type="Int">223</Property>
+				<Property Name="PKG_buildSpecName" Type="Str">JASFrcCtrlTrajLib_UtilsOnly</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
+				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[0].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
+				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[1].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[1].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[1].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[1].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[1].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
+				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
+				<Property Name="PKG_dependencies[1].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str"></Property>
+				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[1].Type" Type="Str">Package</Property>
+				<Property Name="PKG_description" Type="Str">LabVIEW FRC Trajectory Library Utility Programs</Property>
+				<Property Name="PKG_destinations.Count" Type="Int">8</Property>
+				<Property Name="PKG_destinations[0].ID" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">TrajLib</Property>
+				<Property Name="PKG_destinations[0].Subdir.Parent" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_destinations[0].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[1].ID" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
+				<Property Name="PKG_destinations[1].Subdir.Directory" Type="Str">vi.lib</Property>
+				<Property Name="PKG_destinations[1].Subdir.Parent" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
+				<Property Name="PKG_destinations[1].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[2].ID" Type="Str">{0F066F2A-972E-433B-AEE8-A1CB56CA5B94}</Property>
+				<Property Name="PKG_destinations[2].Subdir.Directory" Type="Str">WPI</Property>
+				<Property Name="PKG_destinations[2].Subdir.Parent" Type="Str">{36B48E19-EB5A-4ABB-8B6B-2BB1FC0B801D}</Property>
+				<Property Name="PKG_destinations[2].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[3].ID" Type="Str">{36B48E19-EB5A-4ABB-8B6B-2BB1FC0B801D}</Property>
+				<Property Name="PKG_destinations[3].Subdir.Directory" Type="Str">Rock Robotics</Property>
+				<Property Name="PKG_destinations[3].Subdir.Parent" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
+				<Property Name="PKG_destinations[3].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[4].ID" Type="Str">{5456162E-D653-4986-87C3-8C7318A905D8}</Property>
+				<Property Name="PKG_destinations[4].Subdir.Directory" Type="Str">ThirdParty</Property>
+				<Property Name="PKG_destinations[4].Subdir.Parent" Type="Str">{0F066F2A-972E-433B-AEE8-A1CB56CA5B94}</Property>
+				<Property Name="PKG_destinations[4].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[5].ID" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_destinations[5].Subdir.Directory" Type="Str">JASJunk</Property>
+				<Property Name="PKG_destinations[5].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[5].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[6].ID" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
+				<Property Name="PKG_destinations[6].Subdir.Directory" Type="Str">LabVIEW 2019</Property>
+				<Property Name="PKG_destinations[6].Subdir.Parent" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
+				<Property Name="PKG_destinations[6].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[7].ID" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
+				<Property Name="PKG_destinations[7].Subdir.Directory" Type="Str">National Instruments</Property>
+				<Property Name="PKG_destinations[7].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[7].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_displayName" Type="Str">JAS_Junk_FRC_TrajLibUtilityOnly</Property>
+				<Property Name="PKG_displayVersion" Type="Str"></Property>
+				<Property Name="PKG_feedDescription" Type="Str"></Property>
+				<Property Name="PKG_feedName" Type="Str"></Property>
+				<Property Name="PKG_homepage" Type="Str">https://github.com/jsimpso81/FRC_LV_TrajLib</Property>
+				<Property Name="PKG_hostname" Type="Str"></Property>
+				<Property Name="PKG_lvrteTracking" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
+				<Property Name="PKG_maintainer" Type="Str">J. A. Simpson &lt;&gt;</Property>
+				<Property Name="PKG_output" Type="Path">../buildsALL</Property>
+				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="PKG_packageName" Type="Str">jasjunkfrctrajlibutils</Property>
+				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
+				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">7</Property>
+				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[0].Name" Type="Str">Convert Traj JSON to CSV</Property>
+				<Property Name="PKG_shortcuts[0].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[0].Target.Child" Type="Ref">/My Computer/bin/Convert_PathWeaver_JSON_To_Trajectory_File.exe</Property>
+				<Property Name="PKG_shortcuts[0].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[0].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[0].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[1].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[1].Name" Type="Str">Create Trajectory</Property>
+				<Property Name="PKG_shortcuts[1].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[1].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_TrajectoryLibrary.exe</Property>
+				<Property Name="PKG_shortcuts[1].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[1].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[1].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[2].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[2].Name" Type="Str">Create Traj PathFinder Swerve</Property>
+				<Property Name="PKG_shortcuts[2].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[2].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Swerve.exe</Property>
+				<Property Name="PKG_shortcuts[2].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[2].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[2].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[3].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[3].Name" Type="Str">Create Traj PathFinder Diff Drive</Property>
+				<Property Name="PKG_shortcuts[3].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[3].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Differential.exe</Property>
+				<Property Name="PKG_shortcuts[3].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[3].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[3].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[4].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[4].Name" Type="Str">Sim Differential Drive Robot</Property>
+				<Property Name="PKG_shortcuts[4].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
+				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[4].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[5].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[5].Name" Type="Str">Sim Romi Robot</Property>
+				<Property Name="PKG_shortcuts[5].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
+				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[6].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[6].Name" Type="Str">Convert Traj CSV to JSON</Property>
+				<Property Name="PKG_shortcuts[6].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.exe</Property>
+				<Property Name="PKG_shortcuts[6].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[6].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[6].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_sources.Count" Type="Int">1</Property>
+				<Property Name="PKG_sources[0].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
+				<Property Name="PKG_sources[1].Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
+				<Property Name="PKG_sources[1].Type" Type="Str">Build</Property>
+				<Property Name="PKG_sources[2].Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
+				<Property Name="PKG_sources[2].Type" Type="Str">Build</Property>
+				<Property Name="PKG_synopsis" Type="Str">FRC_LV_Trajectory_Package_Utility_Only</Property>
+				<Property Name="PKG_version" Type="Str">2.0.12</Property>
+			</Item>
+			<Item Name="JASFrcCtrlTrajLibLv2019" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
+				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
+				<Property Name="NIPKG_certificates" Type="Bool">false</Property>
+				<Property Name="NIPKG_createInstaller" Type="Bool">false</Property>
+				<Property Name="NIPKG_feedLocation" Type="Path">../builds/NI_AB_PROJECTNAME/JASFrcCtrlTrajLibLv2019/Feed</Property>
+				<Property Name="NIPKG_feedLocation.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="NIPKG_installerArtifacts" Type="Str">Install.exe|InstallCHS.dll|InstallDEU.dll|InstallFRA.dll|InstallJPN.dll|InstallKOR.dll|bin|feeds|pool|system-packages
+</Property>
+				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
+				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASFrcCtrlTrajLibLv2019/Package Installer</Property>
+				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlib_2.0.12-222_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -458,8 +568,8 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">220</Property>
-				<Property Name="PKG_buildSpecName" Type="Str">JASFrcCtrlTrajLib</Property>
+				<Property Name="PKG_buildNumber" Type="Int">223</Property>
+				<Property Name="PKG_buildSpecName" Type="Str">JASFrcCtrlTrajLibLv2019</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
@@ -537,240 +647,107 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_hostname" Type="Str"></Property>
 				<Property Name="PKG_lvrteTracking" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
 				<Property Name="PKG_maintainer" Type="Str">J. A. Simpson &lt;&gt;</Property>
-				<Property Name="PKG_output" Type="Path">../builds/JASFrcCtrlTrajLib</Property>
-				<Property Name="PKG_output.Type" Type="Str">relativeToProject</Property>
+				<Property Name="PKG_output" Type="Path">../buildsALL</Property>
+				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
 				<Property Name="PKG_packageName" Type="Str">jasjunkfrctrajlib</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">10</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">12</Property>
 				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[0].Name" Type="Str">ConvertPathWeaverJSON</Property>
+				<Property Name="PKG_shortcuts[0].Name" Type="Str">Convert Traj JSON to CSV</Property>
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[0].Target.Child" Type="Ref">/My Computer/bin/Convert_PathWeaver_JSON_To_Trajectory_File.exe</Property>
 				<Property Name="PKG_shortcuts[0].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[0].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[1].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[1].Name" Type="Str">CreateTrajectory</Property>
+				<Property Name="PKG_shortcuts[1].Name" Type="Str">Create Trajectory</Property>
 				<Property Name="PKG_shortcuts[1].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[1].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_TrajectoryLibrary.exe</Property>
 				<Property Name="PKG_shortcuts[1].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[1].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[1].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[10].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[10].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
+				<Property Name="PKG_shortcuts[10].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[10].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
+				<Property Name="PKG_shortcuts[10].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[10].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
+				<Property Name="PKG_shortcuts[10].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[11].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[11].Name" Type="Str">Convert Traj CSV to JSON</Property>
+				<Property Name="PKG_shortcuts[11].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[11].Target.Child" Type="Ref">/My Computer/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.exe</Property>
+				<Property Name="PKG_shortcuts[11].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[11].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[11].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[2].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[2].Name" Type="Str">CreatePathFinderSwerveTraj</Property>
+				<Property Name="PKG_shortcuts[2].Name" Type="Str">Create Trajectory PathFinder Swerve</Property>
 				<Property Name="PKG_shortcuts[2].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[2].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Swerve.exe</Property>
 				<Property Name="PKG_shortcuts[2].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[2].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[2].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[3].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[3].Name" Type="Str">CreatePathFinderDiffTraj</Property>
+				<Property Name="PKG_shortcuts[3].Name" Type="Str">Create Trajectory PathFinder Diff Drive</Property>
 				<Property Name="PKG_shortcuts[3].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[3].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Differential.exe</Property>
 				<Property Name="PKG_shortcuts[3].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[3].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[3].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[4].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[4].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
-				<Property Name="PKG_shortcuts[4].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
-				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
-				<Property Name="PKG_shortcuts[4].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[5].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[5].Name" Type="Str">LabVIEW Control and Trajectory Library Reference</Property>
-				<Property Name="PKG_shortcuts[5].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
-				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
-				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[6].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[6].Name" Type="Str">Simulate Differential Drive Robot</Property>
-				<Property Name="PKG_shortcuts[6].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
-				<Property Name="PKG_shortcuts[6].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_shortcuts[6].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
-				<Property Name="PKG_shortcuts[6].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[7].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[7].Name" Type="Str">Simulate Romi Robot</Property>
-				<Property Name="PKG_shortcuts[7].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
-				<Property Name="PKG_shortcuts[7].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_shortcuts[7].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
-				<Property Name="PKG_shortcuts[7].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[8].Destination" Type="Str">root_1</Property>
-				<Property Name="PKG_shortcuts[8].Name" Type="Str">Robotics LV Ctrl and Trajectory Lib Reference</Property>
-				<Property Name="PKG_shortcuts[8].Path" Type="Path"></Property>
-				<Property Name="PKG_shortcuts[8].Target.Child" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
-				<Property Name="PKG_shortcuts[8].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[8].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
-				<Property Name="PKG_shortcuts[8].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[9].Destination" Type="Str">root_1</Property>
-				<Property Name="PKG_shortcuts[9].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
-				<Property Name="PKG_shortcuts[9].Path" Type="Path"></Property>
-				<Property Name="PKG_shortcuts[9].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
-				<Property Name="PKG_shortcuts[9].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[9].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
-				<Property Name="PKG_shortcuts[9].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_sources.Count" Type="Int">3</Property>
-				<Property Name="PKG_sources[0].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
-				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
-				<Property Name="PKG_sources[1].Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/Book</Property>
-				<Property Name="PKG_sources[1].Type" Type="Str">Build</Property>
-				<Property Name="PKG_sources[2].Destination" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
-				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
-				<Property Name="PKG_sources[2].Type" Type="Str">Build</Property>
-				<Property Name="PKG_synopsis" Type="Str">FRC_LV_Trajectory_Package</Property>
-				<Property Name="PKG_version" Type="Str">2.0.12</Property>
-			</Item>
-			<Item Name="JASFrcCtrlTrajLib_UtilsOnly" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
-				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
-				<Property Name="NIPKG_certificates" Type="Bool">false</Property>
-				<Property Name="NIPKG_createInstaller" Type="Bool">false</Property>
-				<Property Name="NIPKG_feedLocation" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Feed</Property>
-				<Property Name="NIPKG_feedLocation.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_installerArtifacts" Type="Str">Install.exe|InstallCHS.dll|InstallDEU.dll|InstallFRA.dll|InstallJPN.dll|InstallKOR.dll|bin|feeds|pool|system-packages
-</Property>
-				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
-				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
-				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajlibutils_2.0.12-219_windows_all.nipkg</Property>
-				<Property Name="NIPKG_license" Type="Ref"></Property>
-				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library Utility Programs</Property>
-				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
-				<Property Name="NIPKG_VisibleForRuntimeDeployment" Type="Bool">false</Property>
-				<Property Name="PKG_actions.Count" Type="Int">0</Property>
-				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
-				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">220</Property>
-				<Property Name="PKG_buildSpecName" Type="Str">JASFrcCtrlTrajLib_UtilsOnly</Property>
-				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
-				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
-				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[0].MinVersion" Type="Str"></Property>
-				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
-				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
-				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_dependencies[1].Enhanced" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[1].MaxVersion" Type="Str"></Property>
-				<Property Name="PKG_dependencies[1].MaxVersionInclusive" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[1].MinVersion" Type="Str"></Property>
-				<Property Name="PKG_dependencies[1].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
-				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[1].Package.Section" Type="Str"></Property>
-				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str"></Property>
-				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[1].Type" Type="Str">Package</Property>
-				<Property Name="PKG_description" Type="Str">LabVIEW FRC Trajectory Library Utility Programs</Property>
-				<Property Name="PKG_destinations.Count" Type="Int">8</Property>
-				<Property Name="PKG_destinations[0].ID" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">TrajLib</Property>
-				<Property Name="PKG_destinations[0].Subdir.Parent" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_destinations[0].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[1].ID" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
-				<Property Name="PKG_destinations[1].Subdir.Directory" Type="Str">vi.lib</Property>
-				<Property Name="PKG_destinations[1].Subdir.Parent" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
-				<Property Name="PKG_destinations[1].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[2].ID" Type="Str">{0F066F2A-972E-433B-AEE8-A1CB56CA5B94}</Property>
-				<Property Name="PKG_destinations[2].Subdir.Directory" Type="Str">WPI</Property>
-				<Property Name="PKG_destinations[2].Subdir.Parent" Type="Str">{36B48E19-EB5A-4ABB-8B6B-2BB1FC0B801D}</Property>
-				<Property Name="PKG_destinations[2].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[3].ID" Type="Str">{36B48E19-EB5A-4ABB-8B6B-2BB1FC0B801D}</Property>
-				<Property Name="PKG_destinations[3].Subdir.Directory" Type="Str">Rock Robotics</Property>
-				<Property Name="PKG_destinations[3].Subdir.Parent" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
-				<Property Name="PKG_destinations[3].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[4].ID" Type="Str">{5456162E-D653-4986-87C3-8C7318A905D8}</Property>
-				<Property Name="PKG_destinations[4].Subdir.Directory" Type="Str">ThirdParty</Property>
-				<Property Name="PKG_destinations[4].Subdir.Parent" Type="Str">{0F066F2A-972E-433B-AEE8-A1CB56CA5B94}</Property>
-				<Property Name="PKG_destinations[4].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[5].ID" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_destinations[5].Subdir.Directory" Type="Str">JASJunk</Property>
-				<Property Name="PKG_destinations[5].Subdir.Parent" Type="Str">root_5</Property>
-				<Property Name="PKG_destinations[5].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[6].ID" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
-				<Property Name="PKG_destinations[6].Subdir.Directory" Type="Str">LabVIEW 2019</Property>
-				<Property Name="PKG_destinations[6].Subdir.Parent" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
-				<Property Name="PKG_destinations[6].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[7].ID" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
-				<Property Name="PKG_destinations[7].Subdir.Directory" Type="Str">National Instruments</Property>
-				<Property Name="PKG_destinations[7].Subdir.Parent" Type="Str">root_5</Property>
-				<Property Name="PKG_destinations[7].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_displayName" Type="Str">JAS_Junk_FRC_TrajLibUtilityOnly</Property>
-				<Property Name="PKG_displayVersion" Type="Str"></Property>
-				<Property Name="PKG_feedDescription" Type="Str"></Property>
-				<Property Name="PKG_feedName" Type="Str"></Property>
-				<Property Name="PKG_homepage" Type="Str">https://github.com/jsimpso81/FRC_LV_TrajLib</Property>
-				<Property Name="PKG_hostname" Type="Str"></Property>
-				<Property Name="PKG_lvrteTracking" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_maintainer" Type="Str">J. A. Simpson &lt;&gt;</Property>
-				<Property Name="PKG_output" Type="Path">../builds/jasjunkfrctrajlibutils</Property>
-				<Property Name="PKG_output.Type" Type="Str">relativeToProject</Property>
-				<Property Name="PKG_packageName" Type="Str">jasjunkfrctrajlibutils</Property>
-				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
-				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">6</Property>
-				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[0].Name" Type="Str">ConvertPathWeaverJSON</Property>
-				<Property Name="PKG_shortcuts[0].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[0].Target.Child" Type="Ref">/My Computer/bin/Convert_PathWeaver_JSON_To_Trajectory_File.exe</Property>
-				<Property Name="PKG_shortcuts[0].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_shortcuts[0].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
-				<Property Name="PKG_shortcuts[0].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[1].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[1].Name" Type="Str">CreateTrajectory</Property>
-				<Property Name="PKG_shortcuts[1].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[1].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_TrajectoryLibrary.exe</Property>
-				<Property Name="PKG_shortcuts[1].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_shortcuts[1].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
-				<Property Name="PKG_shortcuts[1].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[2].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[2].Name" Type="Str">CreatePathFinderSwerveTraj</Property>
-				<Property Name="PKG_shortcuts[2].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[2].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Swerve.exe</Property>
-				<Property Name="PKG_shortcuts[2].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_shortcuts[2].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
-				<Property Name="PKG_shortcuts[2].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[3].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[3].Name" Type="Str">CreatePathFinderDiffTraj</Property>
-				<Property Name="PKG_shortcuts[3].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[3].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Differential.exe</Property>
-				<Property Name="PKG_shortcuts[3].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_shortcuts[3].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
-				<Property Name="PKG_shortcuts[3].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[4].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[4].Name" Type="Str">Simulate Differential Drive Robot</Property>
+				<Property Name="PKG_shortcuts[4].Name" Type="Str">Sim Differential Drive Robot</Property>
 				<Property Name="PKG_shortcuts[4].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
 				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[4].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[5].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[5].Name" Type="Str">Simulate Romi Robot</Property>
+				<Property Name="PKG_shortcuts[5].Name" Type="Str">Sim Romi Robot</Property>
 				<Property Name="PKG_shortcuts[5].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
 				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_sources.Count" Type="Int">1</Property>
+				<Property Name="PKG_shortcuts[6].Destination" Type="Str">root_1</Property>
+				<Property Name="PKG_shortcuts[6].Name" Type="Str">Robotics LV Ctrl and Trajectory Lib Reference</Property>
+				<Property Name="PKG_shortcuts[6].Path" Type="Path"></Property>
+				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
+				<Property Name="PKG_shortcuts[6].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[6].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
+				<Property Name="PKG_shortcuts[6].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[7].Destination" Type="Str">root_1</Property>
+				<Property Name="PKG_shortcuts[7].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
+				<Property Name="PKG_shortcuts[7].Path" Type="Path"></Property>
+				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
+				<Property Name="PKG_shortcuts[7].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[7].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
+				<Property Name="PKG_shortcuts[7].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[8].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[8].Name" Type="Str">LV Ctrl and Trajectory Lib Reference</Property>
+				<Property Name="PKG_shortcuts[8].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[8].Target.Child" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
+				<Property Name="PKG_shortcuts[8].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[8].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
+				<Property Name="PKG_shortcuts[8].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[9].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[9].Name" Type="Str">LV Ctrl and Trajectory Lib HTML Help</Property>
+				<Property Name="PKG_shortcuts[9].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[9].Target.Child" Type="Ref">/My Computer/HtmlHelp/default.html</Property>
+				<Property Name="PKG_shortcuts[9].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[9].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
+				<Property Name="PKG_shortcuts[9].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_sources.Count" Type="Int">3</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
 				<Property Name="PKG_sources[1].Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_sources[1].Type" Type="Str">Build</Property>
-				<Property Name="PKG_sources[2].Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_sources[2].Destination" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
+				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
 				<Property Name="PKG_sources[2].Type" Type="Str">Build</Property>
-				<Property Name="PKG_synopsis" Type="Str">FRC_LV_Trajectory_Package_Utility_Only</Property>
+				<Property Name="PKG_synopsis" Type="Str">FRC_LV_Trajectory_Package</Property>
 				<Property Name="PKG_version" Type="Str">2.0.12</Property>
 			</Item>
 			<Item Name="JASFrcCtrlTrajLibLv2020" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
@@ -784,7 +761,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2020_2.0.12-219_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2020_2.0.12-222_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -793,7 +770,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">220</Property>
+				<Property Name="PKG_buildNumber" Type="Int">223</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASFrcCtrlTrajLibLv2020</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -872,14 +849,14 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_hostname" Type="Str"></Property>
 				<Property Name="PKG_lvrteTracking" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
 				<Property Name="PKG_maintainer" Type="Str">J. A. Simpson &lt;&gt;</Property>
-				<Property Name="PKG_output" Type="Path">../builds/JASFrcCtrlTrajLibLv2020</Property>
-				<Property Name="PKG_output.Type" Type="Str">relativeToProject</Property>
+				<Property Name="PKG_output" Type="Path">../buildsALL</Property>
+				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
 				<Property Name="PKG_packageName" Type="Str">jasjunkfrctrajliblv2020</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">10</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">12</Property>
 				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[0].Name" Type="Str">ConvertPathWeaverJSON</Property>
+				<Property Name="PKG_shortcuts[0].Name" Type="Str">Convert Traj JSON to CSV</Property>
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[0].Target.Child" Type="Ref">/My Computer/bin/Convert_PathWeaver_JSON_To_Trajectory_File.exe</Property>
 				<Property Name="PKG_shortcuts[0].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
@@ -892,68 +869,82 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[1].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[1].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[1].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[10].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[10].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
+				<Property Name="PKG_shortcuts[10].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[10].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
+				<Property Name="PKG_shortcuts[10].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[10].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
+				<Property Name="PKG_shortcuts[10].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[11].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[11].Name" Type="Str">Convert Traj CSV to JSON</Property>
+				<Property Name="PKG_shortcuts[11].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[11].Target.Child" Type="Ref">/My Computer/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.exe</Property>
+				<Property Name="PKG_shortcuts[11].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[11].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[11].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[2].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[2].Name" Type="Str">CreatePathFinderSwerveTraj</Property>
+				<Property Name="PKG_shortcuts[2].Name" Type="Str">Create Trajectory PathFinder Swerve</Property>
 				<Property Name="PKG_shortcuts[2].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[2].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Swerve.exe</Property>
 				<Property Name="PKG_shortcuts[2].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[2].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[2].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[3].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[3].Name" Type="Str">CreatePathFinderDiffTraj</Property>
+				<Property Name="PKG_shortcuts[3].Name" Type="Str">Create Trajectory PathFinder Diff Drive</Property>
 				<Property Name="PKG_shortcuts[3].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[3].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Differential.exe</Property>
 				<Property Name="PKG_shortcuts[3].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[3].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[3].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[4].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[4].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
+				<Property Name="PKG_shortcuts[4].Name" Type="Str">Sim Differential Drive Robot</Property>
 				<Property Name="PKG_shortcuts[4].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
-				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
+				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[4].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[5].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[5].Name" Type="Str">LabVIEW Control and Trajectory Library Reference</Property>
+				<Property Name="PKG_shortcuts[5].Name" Type="Str">Sim Romi Robot</Property>
 				<Property Name="PKG_shortcuts[5].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
-				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
+				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[6].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[6].Name" Type="Str">Simulate Differential Drive Robot</Property>
-				<Property Name="PKG_shortcuts[6].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
-				<Property Name="PKG_shortcuts[6].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_shortcuts[6].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[6].Destination" Type="Str">root_1</Property>
+				<Property Name="PKG_shortcuts[6].Name" Type="Str">Robotics LV Ctrl and Trajectory Lib Reference</Property>
+				<Property Name="PKG_shortcuts[6].Path" Type="Path"></Property>
+				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
+				<Property Name="PKG_shortcuts[6].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[6].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[6].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[7].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[7].Name" Type="Str">Simulate Romi Robot</Property>
-				<Property Name="PKG_shortcuts[7].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
-				<Property Name="PKG_shortcuts[7].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_shortcuts[7].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[7].Destination" Type="Str">root_1</Property>
+				<Property Name="PKG_shortcuts[7].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
+				<Property Name="PKG_shortcuts[7].Path" Type="Path"></Property>
+				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
+				<Property Name="PKG_shortcuts[7].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[7].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[7].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[8].Destination" Type="Str">root_1</Property>
-				<Property Name="PKG_shortcuts[8].Name" Type="Str">Robotics LV Ctrl and Trajectory Lib Reference</Property>
-				<Property Name="PKG_shortcuts[8].Path" Type="Path"></Property>
+				<Property Name="PKG_shortcuts[8].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[8].Name" Type="Str">LV Ctrl and Trajectory Lib Reference</Property>
+				<Property Name="PKG_shortcuts[8].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[8].Target.Child" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
 				<Property Name="PKG_shortcuts[8].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[8].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_shortcuts[8].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[8].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[9].Destination" Type="Str">root_1</Property>
-				<Property Name="PKG_shortcuts[9].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
-				<Property Name="PKG_shortcuts[9].Path" Type="Path"></Property>
-				<Property Name="PKG_shortcuts[9].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
+				<Property Name="PKG_shortcuts[9].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[9].Name" Type="Str">LV Ctrl and Trajectory Lib HTML Help</Property>
+				<Property Name="PKG_shortcuts[9].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[9].Target.Child" Type="Ref">/My Computer/HtmlHelp/default.html</Property>
 				<Property Name="PKG_shortcuts[9].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[9].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_shortcuts[9].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[9].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_sources.Count" Type="Int">3</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
 				<Property Name="PKG_sources[1].Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_sources[1].Type" Type="Str">Build</Property>
 				<Property Name="PKG_sources[2].Destination" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
 				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
@@ -972,7 +963,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2021_2.0.12-219_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">jasjunkfrctrajliblv2021_2.0.12-222_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">JAS_Junk FRC Trajectory Library.  
 This version contains much of the state space control from WPILIB</Property>
@@ -981,7 +972,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">220</Property>
+				<Property Name="PKG_buildNumber" Type="Int">223</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">JASFrcCtrlTrajLibLv2021</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -1060,88 +1051,102 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_hostname" Type="Str"></Property>
 				<Property Name="PKG_lvrteTracking" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
 				<Property Name="PKG_maintainer" Type="Str">J. A. Simpson &lt;&gt;</Property>
-				<Property Name="PKG_output" Type="Path">../builds/JASFrcCtrlTrajLibLv2021</Property>
-				<Property Name="PKG_output.Type" Type="Str">relativeToProject</Property>
+				<Property Name="PKG_output" Type="Path">../buildsALL</Property>
+				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
 				<Property Name="PKG_packageName" Type="Str">jasjunkfrctrajliblv2021</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">10</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">12</Property>
 				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[0].Name" Type="Str">ConvertPathWeaverJSON</Property>
+				<Property Name="PKG_shortcuts[0].Name" Type="Str">Convert Traj JSON to CSV</Property>
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[0].Target.Child" Type="Ref">/My Computer/bin/Convert_PathWeaver_JSON_To_Trajectory_File.exe</Property>
 				<Property Name="PKG_shortcuts[0].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[0].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[1].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[1].Name" Type="Str">CreateTrajectory</Property>
+				<Property Name="PKG_shortcuts[1].Name" Type="Str">Create Trajectory</Property>
 				<Property Name="PKG_shortcuts[1].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[1].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_TrajectoryLibrary.exe</Property>
 				<Property Name="PKG_shortcuts[1].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[1].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[1].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[10].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[10].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
+				<Property Name="PKG_shortcuts[10].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[10].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
+				<Property Name="PKG_shortcuts[10].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[10].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
+				<Property Name="PKG_shortcuts[10].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_shortcuts[11].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[11].Name" Type="Str">Convert Traj CSV to JSON</Property>
+				<Property Name="PKG_shortcuts[11].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[11].Target.Child" Type="Ref">/My Computer/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.exe</Property>
+				<Property Name="PKG_shortcuts[11].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[11].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[11].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[2].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[2].Name" Type="Str">CreatePathFinderSwerveTraj</Property>
+				<Property Name="PKG_shortcuts[2].Name" Type="Str">Create Trajectory PathFinder Swerve</Property>
 				<Property Name="PKG_shortcuts[2].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[2].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Swerve.exe</Property>
 				<Property Name="PKG_shortcuts[2].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[2].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[2].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[3].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[3].Name" Type="Str">CreatePathFinderDiffTraj</Property>
+				<Property Name="PKG_shortcuts[3].Name" Type="Str">Create Trajectory PathFinder Diff Drive</Property>
 				<Property Name="PKG_shortcuts[3].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[3].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Differential.exe</Property>
 				<Property Name="PKG_shortcuts[3].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[3].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[3].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[4].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[4].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
+				<Property Name="PKG_shortcuts[4].Name" Type="Str">Sim Differential Drive Robot</Property>
 				<Property Name="PKG_shortcuts[4].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
-				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
+				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[4].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[5].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[5].Name" Type="Str">LabVIEW Control and Trajectory Library Reference</Property>
+				<Property Name="PKG_shortcuts[5].Name" Type="Str">Sim Romi Robot</Property>
 				<Property Name="PKG_shortcuts[5].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
-				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
+				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[6].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[6].Name" Type="Str">Simulate Differential Drive Robot</Property>
-				<Property Name="PKG_shortcuts[6].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
-				<Property Name="PKG_shortcuts[6].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_shortcuts[6].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[6].Destination" Type="Str">root_1</Property>
+				<Property Name="PKG_shortcuts[6].Name" Type="Str">Robotics LV Ctrl and Trajectory Lib Reference</Property>
+				<Property Name="PKG_shortcuts[6].Path" Type="Path"></Property>
+				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
+				<Property Name="PKG_shortcuts[6].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[6].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[6].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[7].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[7].Name" Type="Str">Simulate Romi Robot</Property>
-				<Property Name="PKG_shortcuts[7].Path" Type="Path">JAS Robotics Stuff</Property>
-				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
-				<Property Name="PKG_shortcuts[7].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_shortcuts[7].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[7].Destination" Type="Str">root_1</Property>
+				<Property Name="PKG_shortcuts[7].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
+				<Property Name="PKG_shortcuts[7].Path" Type="Path"></Property>
+				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
+				<Property Name="PKG_shortcuts[7].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[7].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[7].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[8].Destination" Type="Str">root_1</Property>
-				<Property Name="PKG_shortcuts[8].Name" Type="Str">Robotics LV Ctrl and Trajectory Lib Reference</Property>
-				<Property Name="PKG_shortcuts[8].Path" Type="Path"></Property>
+				<Property Name="PKG_shortcuts[8].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[8].Name" Type="Str">LV Ctrl and Trajectory Lib Reference</Property>
+				<Property Name="PKG_shortcuts[8].Path" Type="Path">JAS Robotics Stuff</Property>
 				<Property Name="PKG_shortcuts[8].Target.Child" Type="Ref">/My Computer/Doc/FRC_Ctrl_Traj_Lib_Reference.pdf</Property>
 				<Property Name="PKG_shortcuts[8].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[8].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_shortcuts[8].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[8].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[9].Destination" Type="Str">root_1</Property>
-				<Property Name="PKG_shortcuts[9].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
-				<Property Name="PKG_shortcuts[9].Path" Type="Path"></Property>
-				<Property Name="PKG_shortcuts[9].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
+				<Property Name="PKG_shortcuts[9].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[9].Name" Type="Str">LV Ctrl and Trajectory Lib HTML Help</Property>
+				<Property Name="PKG_shortcuts[9].Path" Type="Path">JAS Robotics Stuff</Property>
+				<Property Name="PKG_shortcuts[9].Target.Child" Type="Ref">/My Computer/HtmlHelp/default.html</Property>
 				<Property Name="PKG_shortcuts[9].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[9].Target.Source" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_shortcuts[9].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[9].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_sources.Count" Type="Int">3</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
 				<Property Name="PKG_sources[1].Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/Book</Property>
+				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_sources[1].Type" Type="Str">Build</Property>
 				<Property Name="PKG_sources[2].Destination" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
 				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
@@ -1166,23 +1171,23 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
 				<Property Name="Bld_excludeDependentDLLs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/UtilExe</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/bin</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E685BE58-8AC4-40ED-B368-C46CA560D1D1}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/UtilExe_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">202</Property>
+				<Property Name="Bld_version.build" Type="Int">207</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">12</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/UtilExe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/bin</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/UtilExe/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{55663442-D07E-4C3C-98CC-FAA9531D0F61}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{55229426-93BA-413A-98AA-028A5D57FEC3}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
