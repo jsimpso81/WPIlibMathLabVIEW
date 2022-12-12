@@ -18,15 +18,13 @@
 		<Item Name="SubVI" Type="Folder" URL="../SubVI">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="ReadTrajectory_CSV_File_Example.vi" Type="VI" URL="../VI/ReadTrajectory_CSV_File_Example.vi"/>
-		<Item Name="ReadTrajectory_CSV_File_WriteFGV_Example.vi" Type="VI" URL="../VI/ReadTrajectory_CSV_File_WriteFGV_Example.vi"/>
-		<Item Name="ReadTrajectory_CSV_FIle_WriteGlobal_Example.vi" Type="VI" URL="../VI/ReadTrajectory_CSV_FIle_WriteGlobal_Example.vi"/>
+		<Item Name="ReadTrajectory_JSON_File_Example.vi" Type="VI" URL="../VI/ReadTrajectory_JSON_File_Example.vi"/>
+		<Item Name="ReadTrajectory_JSON_File_WriteFGV_Example.vi" Type="VI" URL="../VI/ReadTrajectory_JSON_File_WriteFGV_Example.vi"/>
+		<Item Name="ReadTrajectory_JSON_FIle_WriteGlobal_Example.vi" Type="VI" URL="../VI/ReadTrajectory_JSON_FIle_WriteGlobal_Example.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
 				<Item Name="Trajectory_Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/JAS_Junk/TrajLib/Trajectory_Library.lvlib"/>
-				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
@@ -120,9 +118,9 @@ DirectoryIndex index.htm
 		<Item Name="SubVI" Type="Folder" URL="../SubVI">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="ReadTrajectory_CSV_File_Example.vi" Type="VI" URL="../VI/ReadTrajectory_CSV_File_Example.vi"/>
-		<Item Name="ReadTrajectory_CSV_File_WriteFGV_Example.vi" Type="VI" URL="../VI/ReadTrajectory_CSV_File_WriteFGV_Example.vi"/>
-		<Item Name="ReadTrajectory_CSV_FIle_WriteGlobal_Example.vi" Type="VI" URL="../VI/ReadTrajectory_CSV_FIle_WriteGlobal_Example.vi"/>
+		<Item Name="ReadTrajectory_JSON_File_Example.vi" Type="VI" URL="../VI/ReadTrajectory_JSON_File_Example.vi"/>
+		<Item Name="ReadTrajectory_JSON_File_WriteFGV_Example.vi" Type="VI" URL="../VI/ReadTrajectory_JSON_File_WriteFGV_Example.vi"/>
+		<Item Name="ReadTrajectory_JSON_FIle_WriteGlobal_Example.vi" Type="VI" URL="../VI/ReadTrajectory_JSON_FIle_WriteGlobal_Example.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
