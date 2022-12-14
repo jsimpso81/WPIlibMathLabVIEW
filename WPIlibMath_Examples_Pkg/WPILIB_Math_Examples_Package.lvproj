@@ -16,6 +16,9 @@
 		<Item Name="examples" Type="Folder" URL="../examples">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="examples_exbin" Type="Folder" URL="../examples_exbin">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="_Read_Me.txt" Type="Document" URL="../_Read_Me.txt"/>
 		<Item Name="License.RTF" Type="Document" URL="../License.RTF"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -122,7 +125,7 @@
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">411</Property>
+				<Property Name="Bld_version.build" Type="Int">412</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">12</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -160,7 +163,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv19_3.0.0-236_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv19_3.0.0-238_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -168,7 +171,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">237</Property>
+				<Property Name="PKG_buildNumber" Type="Int">239</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathexampleslv19</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -195,7 +198,7 @@
 				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[1].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC robotics control and trajectory library examples  These are placed where they can be found by LabVIEW find examples</Property>
-				<Property Name="PKG_destinations.Count" Type="Int">6</Property>
+				<Property Name="PKG_destinations.Count" Type="Int">7</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
 				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">examples</Property>
 				<Property Name="PKG_destinations[0].Subdir.Parent" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
@@ -224,17 +227,17 @@
 				<Property Name="PKG_destinations[3].Subdir.Directory" Type="Str">roboRIO</Property>
 				<Property Name="PKG_destinations[3].Subdir.Parent" Type="Str">{3B89E16C-24AF-4B9E-8F93-AC218451ED62}</Property>
 				<Property Name="PKG_destinations[3].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[4].ID" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
-				<Property Name="PKG_destinations[4].Subdir.Directory" Type="Str">LabVIEW 2019</Property>
-				<Property Name="PKG_destinations[4].Subdir.Parent" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
+				<Property Name="PKG_destinations[4].ID" Type="Str">{86E4A9A5-1656-4921-900B-B219D3F6AE6C}</Property>
+				<Property Name="PKG_destinations[4].Subdir.Directory" Type="Str">exbins</Property>
+				<Property Name="PKG_destinations[4].Subdir.Parent" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
 				<Property Name="PKG_destinations[4].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[5].ID" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
-				<Property Name="PKG_destinations[5].Subdir.Directory" Type="Str">National Instruments</Property>
-				<Property Name="PKG_destinations[5].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[5].ID" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
+				<Property Name="PKG_destinations[5].Subdir.Directory" Type="Str">LabVIEW 2019</Property>
+				<Property Name="PKG_destinations[5].Subdir.Parent" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
 				<Property Name="PKG_destinations[5].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[6].ID" Type="Str">{5456162E-D653-4986-87C3-8C7318A905D8}</Property>
-				<Property Name="PKG_destinations[6].Subdir.Directory" Type="Str">ThirdParty</Property>
-				<Property Name="PKG_destinations[6].Subdir.Parent" Type="Str">{0F066F2A-972E-433B-AEE8-A1CB56CA5B94}</Property>
+				<Property Name="PKG_destinations[6].ID" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
+				<Property Name="PKG_destinations[6].Subdir.Directory" Type="Str">National Instruments</Property>
+				<Property Name="PKG_destinations[6].Subdir.Parent" Type="Str">root_5</Property>
 				<Property Name="PKG_destinations[6].Type" Type="Str">Subdir</Property>
 				<Property Name="PKG_destinations[7].ID" Type="Str">{65D737A7-565F-4847-9A64-B6550E7F408A}</Property>
 				<Property Name="PKG_destinations[7].Subdir.Directory" Type="Str">FRC_ThirdParty</Property>
@@ -346,13 +349,13 @@
 				<Property Name="PKG_shortcuts[9].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
 				<Property Name="PKG_shortcuts[9].Target.Source" Type="Ref"></Property>
 				<Property Name="PKG_shortcuts[9].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_sources.Count" Type="Int">1</Property>
+				<Property Name="PKG_sources.Count" Type="Int">2</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">{3484B1F5-870A-4915-9694-10373498F5F4}</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
-				<Property Name="PKG_sources[1].Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_sources[1].ID" Type="Ref"></Property>
-				<Property Name="PKG_sources[1].Type" Type="Str">Build</Property>
+				<Property Name="PKG_sources[1].Destination" Type="Str">{86E4A9A5-1656-4921-900B-B219D3F6AE6C}</Property>
+				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/examples_exbin/WPIlibMathExamples.bin3</Property>
+				<Property Name="PKG_sources[1].Type" Type="Str">File</Property>
 				<Property Name="PKG_sources[2].Destination" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
 				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
 				<Property Name="PKG_sources[2].Type" Type="Str">Build</Property>
@@ -370,7 +373,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv20_3.0.0-236_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv20_3.0.0-238_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -378,7 +381,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">237</Property>
+				<Property Name="PKG_buildNumber" Type="Int">239</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathexampleslv20</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -405,7 +408,7 @@
 				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[1].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC robotics control and trajectory library examples  These are placed where they can be found by LabVIEW find examples</Property>
-				<Property Name="PKG_destinations.Count" Type="Int">6</Property>
+				<Property Name="PKG_destinations.Count" Type="Int">7</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
 				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">examples</Property>
 				<Property Name="PKG_destinations[0].Subdir.Parent" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
@@ -430,21 +433,21 @@
 				<Property Name="PKG_destinations[2].Subdir.Directory" Type="Str">FRC</Property>
 				<Property Name="PKG_destinations[2].Subdir.Parent" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
 				<Property Name="PKG_destinations[2].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[3].ID" Type="Str">{5ECDAD42-BDE8-48E6-B94C-ECF411465442}</Property>
-				<Property Name="PKG_destinations[3].Subdir.Directory" Type="Str">roboRIO</Property>
-				<Property Name="PKG_destinations[3].Subdir.Parent" Type="Str">{3B89E16C-24AF-4B9E-8F93-AC218451ED62}</Property>
+				<Property Name="PKG_destinations[3].ID" Type="Str">{54F094C3-7AA0-4232-8D93-095762CE29B0}</Property>
+				<Property Name="PKG_destinations[3].Subdir.Directory" Type="Str">exbins</Property>
+				<Property Name="PKG_destinations[3].Subdir.Parent" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
 				<Property Name="PKG_destinations[3].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[4].ID" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
-				<Property Name="PKG_destinations[4].Subdir.Directory" Type="Str">LabVIEW 2020</Property>
-				<Property Name="PKG_destinations[4].Subdir.Parent" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
+				<Property Name="PKG_destinations[4].ID" Type="Str">{5ECDAD42-BDE8-48E6-B94C-ECF411465442}</Property>
+				<Property Name="PKG_destinations[4].Subdir.Directory" Type="Str">roboRIO</Property>
+				<Property Name="PKG_destinations[4].Subdir.Parent" Type="Str">{3B89E16C-24AF-4B9E-8F93-AC218451ED62}</Property>
 				<Property Name="PKG_destinations[4].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[5].ID" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
-				<Property Name="PKG_destinations[5].Subdir.Directory" Type="Str">National Instruments</Property>
-				<Property Name="PKG_destinations[5].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[5].ID" Type="Str">{92AA0833-BE42-411D-A310-2B0D54219BC2}</Property>
+				<Property Name="PKG_destinations[5].Subdir.Directory" Type="Str">LabVIEW 2020</Property>
+				<Property Name="PKG_destinations[5].Subdir.Parent" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
 				<Property Name="PKG_destinations[5].Type" Type="Str">Subdir</Property>
-				<Property Name="PKG_destinations[6].ID" Type="Str">{5456162E-D653-4986-87C3-8C7318A905D8}</Property>
-				<Property Name="PKG_destinations[6].Subdir.Directory" Type="Str">ThirdParty</Property>
-				<Property Name="PKG_destinations[6].Subdir.Parent" Type="Str">{0F066F2A-972E-433B-AEE8-A1CB56CA5B94}</Property>
+				<Property Name="PKG_destinations[6].ID" Type="Str">{D66EC292-2882-47DC-ABB0-C59AA4300140}</Property>
+				<Property Name="PKG_destinations[6].Subdir.Directory" Type="Str">National Instruments</Property>
+				<Property Name="PKG_destinations[6].Subdir.Parent" Type="Str">root_5</Property>
 				<Property Name="PKG_destinations[6].Type" Type="Str">Subdir</Property>
 				<Property Name="PKG_destinations[7].ID" Type="Str">{65D737A7-565F-4847-9A64-B6550E7F408A}</Property>
 				<Property Name="PKG_destinations[7].Subdir.Directory" Type="Str">FRC_ThirdParty</Property>
@@ -556,13 +559,13 @@
 				<Property Name="PKG_shortcuts[9].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
 				<Property Name="PKG_shortcuts[9].Target.Source" Type="Ref"></Property>
 				<Property Name="PKG_shortcuts[9].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_sources.Count" Type="Int">1</Property>
+				<Property Name="PKG_sources.Count" Type="Int">2</Property>
 				<Property Name="PKG_sources[0].Destination" Type="Str">{3484B1F5-870A-4915-9694-10373498F5F4}</Property>
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
-				<Property Name="PKG_sources[1].Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_sources[1].ID" Type="Ref"></Property>
-				<Property Name="PKG_sources[1].Type" Type="Str">Build</Property>
+				<Property Name="PKG_sources[1].Destination" Type="Str">{54F094C3-7AA0-4232-8D93-095762CE29B0}</Property>
+				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/examples_exbin/WPIlibMathExamples.bin3</Property>
+				<Property Name="PKG_sources[1].Type" Type="Str">File</Property>
 				<Property Name="PKG_sources[2].Destination" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
 				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
 				<Property Name="PKG_sources[2].Type" Type="Str">Build</Property>
