@@ -1,7 +1,36 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="19008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Property Name="NI.Project.Description" Type="Str"></Property>
+	<Property Name="NI.Project.Description" Type="Str">This example shows one method to read a trajectory JSON file.   JSON files are created by the Path Weaver tool or the LabVIEW trajectory creation tool.  </Property>
+	<Property Name="ThirdParty.LV.ExampleFinder" Type="Str">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;nidna:ExampleProgram 
+    xmlns:nidna="http://www.ni.com/Schemas/DNA/1.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.ni.com/Schemas/DNA/1.0 ..\DNA\1.0\NiExampleProgram.xsd" 
+    SchemaVersion="1.0" 
+    ContentType="EXAMPLE" 
+&lt;Title&gt;
+	&lt;Text Locale="US"&gt;ReadTrajectory_JSON_File_Example.lvproj&lt;/Text&gt;
+&lt;/Title&gt;
+&lt;Description&gt;
+	&lt;Text Locale="US"&gt;This example shows one method to read a trajectory JSON file.   JSON files are created by the Path Weaver tool or the LabVIEW trajectory creation tool.  &lt;/Text&gt;
+&lt;/Description&gt;
+&lt;Keywords&gt;
+	&lt;Item&gt;trajectory&lt;/Item&gt;
+&lt;/Keywords&gt;
+&lt;Navigation&gt;
+	&lt;Item&gt;3329&lt;/Item&gt;
+&lt;/Navigation&gt;
+&lt;FileType&gt;LV Project&lt;/FileType&gt;
+&lt;Metadata&gt;
+&lt;Item Name="RTSupport"&gt;&lt;/Item&gt;
+&lt;/Metadata&gt;
+&lt;ProgrammingLanguages&gt;
+&lt;Item&gt;LabVIEW&lt;/Item&gt;
+&lt;/ProgrammingLanguages&gt;
+&lt;RequiredSoftware&gt;
+&lt;NiSoftware MinVersion="19.0"&gt;LabVIEW&lt;/NiSoftware&gt; 
+&lt;/RequiredSoftware&gt;</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -125,8 +154,6 @@ DirectoryIndex index.htm
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
 				<Item Name="Trajectory_Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/JAS_Junk/TrajLib/Trajectory_Library.lvlib"/>
-				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>

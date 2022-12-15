@@ -1,7 +1,39 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="19008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Property Name="NI.Project.Description" Type="Str"></Property>
+	<Property Name="NI.Project.Description" Type="Str">This example use the state-space modeling and simulatin to simulate a motor driven flywheel (shooter).  The flywheel is controlled using the state-space Kalman filter / linear quadratic  regulator. </Property>
+	<Property Name="ThirdParty.LV.ExampleFinder" Type="Str">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;nidna:ExampleProgram 
+    xmlns:nidna="http://www.ni.com/Schemas/DNA/1.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.ni.com/Schemas/DNA/1.0 ..\DNA\1.0\NiExampleProgram.xsd" 
+    SchemaVersion="1.0" 
+    ContentType="EXAMPLE" 
+&lt;Title&gt;
+	&lt;Text Locale="US"&gt;FlyWheel_Simulation_Example.lvproj&lt;/Text&gt;
+&lt;/Title&gt;
+&lt;Description&gt;
+	&lt;Text Locale="US"&gt;This example use the state-space modeling and simulatin to simulate a motor driven flywheel (shooter).  The flywheel is controlled using the state-space Kalman filter / linear quadratic  regulator. &lt;/Text&gt;
+&lt;/Description&gt;
+&lt;Keywords&gt;
+	&lt;Item&gt;simulation&lt;/Item&gt;
+	&lt;Item&gt;state-space&lt;/Item&gt;
+	&lt;Item&gt;Kalman&lt;/Item&gt;
+	&lt;Item&gt;LQR&lt;/Item&gt;
+&lt;/Keywords&gt;
+&lt;Navigation&gt;
+	&lt;Item&gt;3329&lt;/Item&gt;
+&lt;/Navigation&gt;
+&lt;FileType&gt;LV Project&lt;/FileType&gt;
+&lt;Metadata&gt;
+&lt;Item Name="RTSupport"&gt;&lt;/Item&gt;
+&lt;/Metadata&gt;
+&lt;ProgrammingLanguages&gt;
+&lt;Item&gt;LabVIEW&lt;/Item&gt;
+&lt;/ProgrammingLanguages&gt;
+&lt;RequiredSoftware&gt;
+&lt;NiSoftware MinVersion="19.0"&gt;LabVIEW&lt;/NiSoftware&gt; 
+&lt;/RequiredSoftware&gt;</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -118,13 +150,18 @@ DirectoryIndex index.htm
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="NetComm_UsageReport_report.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UsageReport_report.vi"/>
+				<Item Name="NetComm_UsageReport_ResourceType.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UsageReport_ResourceType.ctl"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
 				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="Trajectory_Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/JAS_Junk/TrajLib/Trajectory_Library.lvlib"/>
 			</Item>
+			<Item Name="fw-battery-sim-exec.vi" Type="VI" URL="../SubVI/fw-battery-sim-exec.vi"/>
+			<Item Name="fw-fly-ctrl-exec.vi" Type="VI" URL="../SubVI/fw-fly-ctrl-exec.vi"/>
 			<Item Name="fw-fly-ctrl-init.vi" Type="VI" URL="../SubVI/fw-fly-ctrl-init.vi"/>
+			<Item Name="fw-fly-sim-exec.vi" Type="VI" URL="../SubVI/fw-fly-sim-exec.vi"/>
 			<Item Name="fw-fly-sim-init-load.vi" Type="VI" URL="../SubVI/fw-fly-sim-init-load.vi"/>
 			<Item Name="fw-fly-sim-init.vi" Type="VI" URL="../SubVI/fw-fly-sim-init.vi"/>
 			<Item Name="fw-fly-sim-replace-ab.vi" Type="VI" URL="../SubVI/fw-fly-sim-replace-ab.vi"/>

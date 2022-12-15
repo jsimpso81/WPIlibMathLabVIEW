@@ -1089,6 +1089,11 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		</Item>
 		<Item Name="NEW_THINGS_USE_WITH_CAUTION" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
+			<Item Name="NetworkUDP" Type="Folder">
+				<Item Name="NetworkUDP_Close.vi" Type="VI" URL="../VI/NetworkUDP_Close.vi"/>
+				<Item Name="NetworkUDP_Recieve.vi" Type="VI" URL="../VI/NetworkUDP_Recieve.vi"/>
+				<Item Name="NetworkUDP_Send.vi" Type="VI" URL="../VI/NetworkUDP_Send.vi"/>
+			</Item>
 			<Item Name="State Space Control" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="ControlAffinePlantInversionFeedforward" Type="Folder"/>
