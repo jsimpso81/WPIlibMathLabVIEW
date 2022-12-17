@@ -1,41 +1,37 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="19008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Property Name="NI.Project.Description" Type="Str">The example demonstrates the use of a standard PID (Proportional, Integral, Derivative) controller.  This PID matches the WPILIB PID available with other languages.  (This is a non-interacting PID implementation.   The Kp, Ki, Kd constants don't interact.)</Property>
+	<Property Name="NI.Project.Description" Type="Str">The example demonstrates the use of the Simple Motor Feedforward function.  A sample procedure for collecting data and calculating tuning constants Ks and Kv is presented.  A methodolgy and sample code is also presented to test and calculate Ka.</Property>
 	<Property Name="ThirdParty.LV.ExampleFinder" Type="Str">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;nidna:ExampleProgram 
     xmlns:nidna="http://www.ni.com/Schemas/DNA/1.0" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://www.ni.com/Schemas/DNA/1.0 ..\DNA\1.0\NiExampleProgram.xsd" 
     SchemaVersion="1.0" 
-    ContentType="EXAMPLE" 
-&lt;Title&gt;
-	&lt;Text Locale="US"&gt;PID_Controller_Example.lvproj&lt;/Text&gt;
-&lt;/Title&gt;
-&lt;Description&gt;
-	&lt;Text Locale="US"&gt;The example demonstrates the use of a standard PID (Proportional, Integral, Derivative) controller.  This PID matches the WPILIB PID available with other languages.  (This is a non-interacting PID implementation.   The Kp, Ki, Kd constants don't interact.)&lt;/Text&gt;
-&lt;/Description&gt;
-&lt;Keywords&gt;
-	&lt;Item&gt;PID&lt;/Item&gt;
-	&lt;Item&gt;proportional&lt;/Item&gt;
-	&lt;Item&gt;integral&lt;/Item&gt;
-	&lt;Item&gt;derivative&lt;/Item&gt;
-	&lt;Item&gt;controller&lt;/Item&gt;
-	&lt;Item&gt;control&lt;/Item&gt;
-	&lt;Item&gt;algorithm&lt;/Item&gt;
-&lt;/Keywords&gt;
-&lt;Navigation&gt;
-	&lt;Item&gt;3329&lt;/Item&gt;
-&lt;/Navigation&gt;
-&lt;FileType&gt;LV Project&lt;/FileType&gt;
-&lt;Metadata&gt;
-&lt;Item Name="RTSupport"&gt;&lt;/Item&gt;
-&lt;/Metadata&gt;
-&lt;ProgrammingLanguages&gt;
-&lt;Item&gt;LabVIEW&lt;/Item&gt;
-&lt;/ProgrammingLanguages&gt;
-&lt;RequiredSoftware&gt;
-&lt;NiSoftware MinVersion="19.0"&gt;LabVIEW&lt;/NiSoftware&gt; 
+    ContentType="EXAMPLE" 
+&lt;Title&gt;
+	&lt;Text Locale="US"&gt;SimpleMotorFeedForward_Example.lvproj&lt;/Text&gt;
+&lt;/Title&gt;
+&lt;Description&gt;
+	&lt;Text Locale="US"&gt;The example demonstrates the use of the Simple Motor Feedforward function.  A sample procedure for collecting data and calculating tuning constants Ks and Kv is presented.  A methodolgy and sample code is also presented to test and calculate Ka.&lt;/Text&gt;
+&lt;/Description&gt;
+&lt;Keywords&gt;
+	&lt;Item&gt;control&lt;/Item&gt;
+	&lt;Item&gt;algorithm&lt;/Item&gt;
+	&lt;Item&gt;feedforward&lt;/Item&gt;
+&lt;/Keywords&gt;
+&lt;Navigation&gt;
+	&lt;Item&gt;3329&lt;/Item&gt;
+&lt;/Navigation&gt;
+&lt;FileType&gt;LV Project&lt;/FileType&gt;
+&lt;Metadata&gt;
+&lt;Item Name="RTSupport"&gt;&lt;/Item&gt;
+&lt;/Metadata&gt;
+&lt;ProgrammingLanguages&gt;
+&lt;Item&gt;LabVIEW&lt;/Item&gt;
+&lt;/ProgrammingLanguages&gt;
+&lt;RequiredSoftware&gt;
+&lt;NiSoftware MinVersion="19.0"&gt;LabVIEW&lt;/NiSoftware&gt; 
 &lt;/RequiredSoftware&gt;</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>

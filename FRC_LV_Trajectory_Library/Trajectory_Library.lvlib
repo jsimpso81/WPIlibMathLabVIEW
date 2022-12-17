@@ -1498,6 +1498,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				</Item>
 				<Item Name="TimeInterpDouble_Clear.vi" Type="VI" URL="../VI/TimeInterpDouble_Clear.vi"/>
 				<Item Name="TimeInterpDouble_GetSample.vi" Type="VI" URL="../VI/TimeInterpDouble_GetSample.vi"/>
+				<Item Name="TimeInterpDouble_GetTimeForValue.vi" Type="VI" URL="../VI/TimeInterpDouble_GetTimeForValue.vi"/>
 				<Item Name="TimeInterpDouble_New.vi" Type="VI" URL="../VI/TimeInterpDouble_New.vi"/>
 				<Item Name="TimeInterpDouble_SetMaxTime.vi" Type="VI" URL="../VI/TimeInterpDouble_SetMaxTime.vi"/>
 			</Item>
