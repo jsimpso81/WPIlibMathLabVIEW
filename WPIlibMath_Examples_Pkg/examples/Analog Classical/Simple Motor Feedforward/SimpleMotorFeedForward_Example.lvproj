@@ -47,7 +47,6 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="SimpleMotorFeedForward_Example.vi" Type="VI" URL="../VIs/SimpleMotorFeedForward_Example.vi"/>
-		<Item Name="SimpleMotorFeedForward_Example_2.vi" Type="VI" URL="../VIs/SimpleMotorFeedForward_Example_2.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
@@ -175,7 +174,6 @@ DirectoryIndex index.htm
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="SimpleMotorFeedForward_Example.vi" Type="VI" URL="../VIs/SimpleMotorFeedForward_Example.vi"/>
-		<Item Name="SimpleMotorFeedForward_Example_2.vi" Type="VI" URL="../VIs/SimpleMotorFeedForward_Example_2.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
