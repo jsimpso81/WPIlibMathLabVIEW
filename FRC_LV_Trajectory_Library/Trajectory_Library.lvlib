@@ -347,6 +347,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="ROTATION2D.ctl" Type="VI" URL="../TypeDef/ROTATION2D.ctl"/>
 		<Item Name="ROTATION3D.ctl" Type="VI" URL="../TypeDef/ROTATION3D.ctl"/>
 		<Item Name="SIMPLE_MOTOR_FF.ctl" Type="VI" URL="../TypeDef/SIMPLE_MOTOR_FF.ctl"/>
+		<Item Name="SIMPLE_MOTOR_FF_KA_TUNE_PARAMS.ctl" Type="VI" URL="../TypeDef/SIMPLE_MOTOR_FF_KA_TUNE_PARAMS.ctl"/>
 		<Item Name="SINGLE_JOINT_ARM_SIM.ctl" Type="VI" URL="../TypeDef/SINGLE_JOINT_ARM_SIM.ctl"/>
 		<Item Name="SLEW_RATE_LIMITER.ctl" Type="VI" URL="../TypeDef/SLEW_RATE_LIMITER.ctl"/>
 		<Item Name="SPLINE.ctl" Type="VI" URL="../TypeDef/SPLINE.ctl"/>
@@ -631,11 +632,13 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="SimpleMotorFF_Calculate_CalcAccel.vi" Type="VI" URL="../SimpleMotorFF_Calculate_CalcAccel.vi"/>
 				<Item Name="SimpleMotorFF_Calculate_NextV_Dt.vi" Type="VI" URL="../SimpleMotorFF_Calculate_NextV_Dt.vi"/>
 				<Item Name="SimpleMotorFF_CalculateVelocityOnly.vi" Type="VI" URL="../SimpleMotorFF_CalculateVelocityOnly.vi"/>
+				<Item Name="SimpleMotorFF_Ka_AutoTune.vi" Type="VI" URL="../VI/SimpleMotorFF_Ka_AutoTune.vi"/>
 				<Item Name="SimpleMotorFF_MaxAchieveAccel.vi" Type="VI" URL="../SimpleMotorFF_MaxAchieveAccel.vi"/>
 				<Item Name="SimpleMotorFF_MaxAchieveVel.vi" Type="VI" URL="../SimpleMotorFF_MaxAchieveVel.vi"/>
 				<Item Name="SimpleMotorFF_MinAchieveAccel.vi" Type="VI" URL="../SimpleMotorFF_MinAchieveAccel.vi"/>
 				<Item Name="SimpleMotorFF_MinAchieveVel.vi" Type="VI" URL="../SimpleMotorFF_MinAchieveVel.vi"/>
 				<Item Name="SimpleMotorFF_New.vi" Type="VI" URL="../SimpleMotorFF_New.vi"/>
+				<Item Name="SimpleMotorFF_Pack__Ka_Tune_Params.vi" Type="VI" URL="../VI/SimpleMotorFF_Pack__Ka_Tune_Params.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Conversion" Type="Folder">
