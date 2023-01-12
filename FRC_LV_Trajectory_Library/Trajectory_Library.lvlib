@@ -58,6 +58,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="FRC_LV_CtrlLib_Meca_Drive_Pose_Est.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Meca_Drive_Pose_Est.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Meca_Wheel_Pos.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_Meca_Wheel_Pos.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_MerweScaledSigmaPts.mnu" Type="Document" URL="../FRC_LV_CtrlLib_MerweScaledSigmaPts.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Network.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_Network.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Network_UDP.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_Network_UDP.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_NumericalIntegration.mnu" Type="Document" URL="../FRC_LV_CtrlLib_NumericalIntegration.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_NumericalJacobian.mnu" Type="Document" URL="../FRC_LV_CtrlLib_NumericalJacobian.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_PIDAutoTune.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_PIDAutoTune.mnu"/>
@@ -244,6 +246,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_SimpleMotorFF_Calc_NextV.vi" Type="VI" URL="../Macros/macro_SimpleMotorFF_Calc_NextV.vi"/>
 		<Item Name="macro_SimpleMotorFF_Calculate.vi" Type="VI" URL="../Macros/macro_SimpleMotorFF_Calculate.vi"/>
 		<Item Name="macro_SimpleMotorFF_Calculate_CalcAccel.vi" Type="VI" URL="../Macros/macro_SimpleMotorFF_Calculate_CalcAccel.vi"/>
+		<Item Name="macro_SimpleMotorFF_Ka_AutoTune.vi" Type="VI" URL="../Macros/macro_SimpleMotorFF_Ka_AutoTune.vi"/>
 		<Item Name="macro_SlewRateLimter_Execute.vi" Type="VI" URL="../Macros/macro_SlewRateLimter_Execute.vi"/>
 		<Item Name="macro_SwerveDriveKineNew4.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNew4.vi"/>
 		<Item Name="macro_SwerveDriveKineNewX.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNewX.vi"/>
