@@ -48,36 +48,41 @@ Here is a short list of the types of functions included in the library
 |                                                            |                                                            |
 |------------------------------------------------------------|------------------------------------------------------------|
 |**Control Functions / Math Functions**                      |**Model (State Space)**                                     |
-|-- angle modulus                                            |-- dc motor                                                 |
-|-- apply deadband                                           |-- linear system id                                         |
-|-- clamp                                                    |                                                            |
-|-- get modulus error                                        |**Simulation (Physical system, not actuator/sensor)**       |
-|-- function generator                                       |-- battery simulation                                       |
-|-- input modulus                                            |-- differential drive train simulation                      |
-|-- interpolate                                              |-- elevator simulation                                      |
-|-- *slew* rate limiter                                      |-- flywheel simulation                                      |
-|                                                            |-- linear system simulation                                 |
-|**Filters (Classical)**                                     |-- single joint arm simulation                              |
-|-- linear filter (including 1st, 2nd order low/high pass)   |                                                            |
-|-- median filter                                            |**Geometry**                                                |
-|-- moving average filter                                    |-- pose                                                     |
-|                                                            |-- rotation                                                 |
-|**Filters / Estimators (State Space)**                      |-- transform                                                |
-|-- differential drive pose estimator (similar to odometry)  |-- translation                                              |
-|-- kalman filter                                            |-- twist                                                    |
-|-- kalman filter latency compensator                        |                                                            |
-|-- swerve drive pose estimator                              |**Kinematics / Odometry**                                   |
-|-- unscented kalman filter                                  |-- chassis speeds                                           |
-|                                                            |-- differential drive (tank/arcade)                         |
-|**Controllers (Classical)**                                 |-- mecanum drive                                            |
-|-- arm feedforward                                          |-- swerve drive                                             |
-|-- bang bang                                                |                                                            |
-|-- elevator feedforward                                     |**Trajectory / Spline**                                     |
-|-- holonomic drive                                          |-- cubic, quintic splines                                   |
-|-- pid / advanced pid                                       |-- configure, with constraints                              |
+|-- analog delay                                             |-- dc motor                                                 |
+|-- angle modulus                                            |-- linear system id                                         |
+|-- apply deadband                                           |                                                            |
+|-- bumpless transfer                                        |**Network**                                                 |
+|-- clamp                                                    |-- UDP send/receive                                         |
+|-- get modulus error                                        |                                                            |
+|-- function generator                                       |**Simulation (Physical system, not actuator/sensor)**       |
+|-- input modulus                                            |-- battery simulation                                       |
+|-- interpolate                                              |-- DC Motor simulation                                      |
+|-- *slew* rate limiter                                      |-- differential drive train simulation                      |
+|                                                            |-- elevator simulation                                      |
+|**Filters (Classical)**                                     |-- flywheel simulation                                      |
+|-- linear filter (including 1st, 2nd order low/high pass)   |-- linear system simulation                                 |
+|-- median filter                                            |-- single joint arm simulation                              |
+|-- moving average filter                                    |                                                            |
+|                                                            |**Geometry 2D / 3D **                                       |
+|**Filters / Estimators (State Space)**                      |-- pose                                                     |
+|-- differential drive pose estimator  w/vision estimates    |-- quaternion                                               |
+|-- kalman filter                                            |-- rotation                                                 |
+|-- kalman filter latency compensator                        |-- transform                                                |
+|-- mecanum drive pose estimator w/vision estimates          |-- translation                                              |
+|-- swerve drive pose estimator  w/vision estimates          |-- twist                                                    |
+|-- unscented kalman filter                                  |                                                            |
+|                                                            |**Kinematics / Odometry**                                   |
+|**Controllers (Classical)**                                 |-- chassis speeds                                           |
+|-- arm feedforward                                          |-- differential drive (tank/arcade)                         |
+|-- bang bang                                                |-- mecanum drive                                            |
+|-- elevator feedforward                                     |-- swerve drive                                             |
+|-- holonomic drive                                          |                                                            |
+|-- lead / lag                                               |**Trajectory / Spline**                                     |
+|-- pid / advanced pid                                       |-- cubic, quintic splines                                   |
+|-- pid autotune                                             |-- configure, with constraints                              |
 |-- profiled pid                                             |-- generate                                                 |
 |-- ramsete                                                  |-- sample (forward and reverse)                             |
-|-- simple motor feedforward                                 |                                                            |
+|-- simple motor feedforward w/tuning helpers                |                                                            |
 |-- trapezoid profile                                        |**Pathfinder Utilities**                                    |
 |                                                            |-- convert to trajectory                                    |
 |**Controllers (State Space)**                               |                                                            |
@@ -86,21 +91,23 @@ Here is a short list of the types of functions included in the library
 |-- linear quadratic regulator                               |**Units Conversion**                                        |
 |-- linear system                                            |                                                            |
 |-- linear system loop                                       |**Math Utilities**                                          |
-|                                                            |-- angle statistics                                         |
-|**Timer**                                                   |-- merwe scaled sigma points                                |
-|-- timer functions                                          |-- numerical integration                                    |
-|                                                            |-- numerical jacobian                                       |
-|**Digital Logic**                                           |-- ricatti equation                                         |
-|-- debounce                                                 |                                                            |
-|-- off delay                                                |**Matrix Utilities**                                        |
-|-- on delay                                                 |                                                            |
-|-- one shot                                                 |**State Space Utilities**                                   |
+|-- linear time varying differential drive ctrl              |-- angle statistics                                         |
+|-- linear time varying unicycle ctrl                        |-- merwe scaled sigma points                                |
+|                                                            |-- numerical integration                                    |
+|**Time**                                                    |-- numerical jacobian                                       |
+|-- read fpga TIME(with rollover protection)                 |-- ricatti equation                                         |
+|-- timer functions                                          |                                                            |
+|-- time interpolatable buffer                               |**Matrix Utilities**                                        |
+|-- loop wait adjust                                         |                                                            |
+|                                                            |**State Space Utilities**                                   |
+|**Digital Logic**                                           |                                                            |
+|-- debounce                                                 |**Utilities**                                               |
+|-- delay                                                    |-- library use and version information                      |
+|-- off delay                                                |-- read trajectory csv file                                 |
+|-- on delay                                                 |-- write and document trajectory csv file                   |
+|-- one shot                                                 |                                                            |
 |-- set reset flip flop                                      |                                                            |
-|                                                            |**Utilities**                                               |
-|                                                            |-- read fpga TIME(with rollover protection)                 |
-|                                                            |-- library use and version information                      |
-|                                                            |-- read trajectory csv file                                 |
-|                                                            |-- write and document trajectory csv file                   |
+
 
 ### Menus
  
