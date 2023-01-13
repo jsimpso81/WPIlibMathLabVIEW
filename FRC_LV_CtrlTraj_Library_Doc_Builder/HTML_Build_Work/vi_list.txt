@@ -63,6 +63,7 @@ MecaWheel.html
 MecaWheelPos.html
 MedianFilter.html
 MerweScSigPts.html
+NetworkUDP.html
 NumIntegrate.html
 NumJacobian.html
 PathfinderUtil.html
