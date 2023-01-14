@@ -1,4 +1,4 @@
-# FRC Control and Trajectory Library
+# WPILib LabVIEW Math Library
 
 This library is an UNOFFICIAL port of the Java/C++ WPILIB routines that don't already exist in LabVIEW.  The library is used for the First FRC robotics competition.
 
@@ -11,7 +11,7 @@ programs are installed along with the library.  These programs may be of use to 
 
 This repository contains the library and a LabVIEW project used to build the library install package.  There is an accompanying repository containing samples, 
 the source of the utility programs, and a number of test programs.  This repository 
-can be found here: https://github.com/jsimpso81/FRC_LV_TrajLib_Util_and_Samp
+can be found here: https://github.com/jsimpso81/WPIlibMathLabVIEW
 
 ---
 ## Installs
@@ -22,7 +22,7 @@ There are a number of prerequisites needed before installing this library.
 1. Install the FRC version of LabVIEW.  (If only the utility programs are desired, LabVIEW may not need to be installed.  However this has **NOT** been tested.)
 1. Install the FRC game tools
 
-Download the latest install package.  These can be found in the **Releases** section of the github repository.  Here is a direct link.  https://github.com/jsimpso81/FRC_LV_TrajLib/releases/latest
+Download the latest install package.  These can be found in the **Releases** section of the github repository.  Here is a direct link.  https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest
 
 Select the *.nipkg* installation file, then double click it, or right click and select install.  Administrative privledges will be needed to perform this installation.  Follow the instructions.  Usually selection of all the default answers is sufficient.  Installation should take 5 minutes or less.
 
@@ -32,7 +32,7 @@ Previous versions do not have to be uninstalled prior to installing a new versio
 
 ### Removal
 
-To uninstall, open NI Package Manager.  Select the *Installed* tab.  Find and highlight  **JAS_Junk_FRC_TrajLib**.  Then click the *REMOVE* button.  The uninstall should start. It should take 5 minutes or less.
+To uninstall, open NI Package Manager.  Select the *Installed* tab.  Find and highlight  **WPILIBmath**.  Then click the *REMOVE* button.  The uninstall should start. It should take 5 minutes or less.  Also do this for **WPILIBmathexamples**.
 
 ![sample uninstall!](images/SampleUninstall.png)
 
@@ -242,4 +242,4 @@ should be written solely by FRC student members, with confirmation from a mentor
 See ![Contributing.md!](Contributing.md) for additional details.
 
 ---
-File last updated: 5/02/2022
+File last updated: 1/13/2023
