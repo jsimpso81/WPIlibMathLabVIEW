@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>WPILib LabVIEW Math Library - Description and Conventions</TITLE>
+</HEAD>
+
+<BODY>
+<h2>WPILib LabVIEW Math Library - Description and Conventions</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+
+<br><br>
+<h3>Function Naming</h3>
+<HR SIZE="3" WIDTH=" 100.000000%" COLOR="GREY">
+The VI in this library are grouped into categories mostly according to functionality.  The VI file 
+name starts with the group name followed by a suffix describing the function of the particular VI.
+<p>
+Since this library was patterned after the C++/Java version of the WPILIB, many of the group names are 
+similar to their C++/Java counterpart.  As such, those familiar with the C++/Java library should be
+able to use this library fairly easily.  Also, while these functions are fully documented, the C++ or 
+Java documentation will mostly describe this library as well.  
+<p>
+The HTML and PDF reference documentation for the library is organized by these function groups. 
+<br><br>
+<h3>"Execute" Fuctions</h3>
+<HR SIZE="3" WIDTH=" 100.000000%" COLOR="GREY">
+In order simplify engineering control systems with LabVIEW and this library, additional functions
+providing the all the functionality of a function group in a single VI have been provided for most
+function groups.  The names of these VI end with the "_EXECUTE" suffix.  For many function groups
+they may be the only function that is needed. 
+<p>
+In some cases where the number of inputs to a function is large, helper functions have also been
+provided that feed the "_EXECUTE" function all the needed data.
+<p>
+The following picture shows the "_EXECUTE" function for the Advanced PID Function".
+<p>
+<img src="images/Advanced_PID_Execute.png" alt="sample execute function"> 
+
+<br><br>
+<h3>Function Menu</h3>
+<HR SIZE="3" WIDTH=" 100.000000%" COLOR="GREY">
+Menu items for all the subVI's are included as part of the standard LabVIEW WPI Robotics Library menu
+<p>
+<img src="images/SampleLabViewMenu.png" alt="menu"> 
+<p>
+The functions anticipated to be the most used have been gathered into general sub-menus located at
+the top of the main menu.
+<p>
+<img src="images/GeneralControl.png" alt="menu"> 
+<p>
+Below are the Analog, Digital (boolean), and Trajectory general menus
+<p>
+<img src="images/GeneralControlAnalog.png" alt="menu"> 
+<p>
+<img src="images/GeneralControlDigital.png" alt="menu"> 
+<p>
+<img src="images/GeneralControlTrajectory.png" alt="menu"> 
+<p>
+<br><br>
+<h3>Function Snippets</h3>
+<HR SIZE="3" WIDTH=" 100.000000%" COLOR="GREY">
+To make the functions easier to use, a number of the menu items place "snippets" of code that includes
+the desired function and and other functions or constants often wired to the function.  Unless the name
+is too long, the menu name ends with "snippet".  The "general" function sub-menus are all snippets.<p>
+<img src="images/MacroSample.png" alt="menu"> 
+<p>
+
+
+
+<br><br>
+<h3>Function Help</h3>
+<HR SIZE="3" WIDTH=" 100.000000%" COLOR="GREY">
+Each VI includes help that can be accessed using the standard LabVIEW help toggle (Ctrl H).
+<p>
+<img src="images/SampleViHelp.png" alt="sample help"> 
+
+
+<br><br>
+<h3>Function Examples</h3>
+<HR SIZE="3" WIDTH=" 100.000000%" COLOR="GREY">
+Many of the functions have examples that can be found under the LabVIEW "Find examples..." function.  
+(Help -> Find Examples...).  The function examples are easiest to find when "Directory Structure" is
+selected.  
+<p>
+<img src="images/LabVIEWFindHelp.png" alt="sample help"> 
+
+
+<br><br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+
+</BODY>
+</HTML>

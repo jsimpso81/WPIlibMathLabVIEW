@@ -9,7 +9,7 @@
 <h2 id="SimpleMotorFF" >SimpleMotorFF</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SimpleMotorFF_Calculate" >SimpleMotorFF_Calculate</h3>
-<p><IMG SRC="LVtemp20221117051336_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SimpleMotorFF_Calculate_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Calculates the feedforward from the gains and setpoints.<BR>
    <BR>
 Parameters:<BR>
@@ -24,7 +24,7 @@ Returns:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SimpleMotorFF_CalculateVelocityOnly" >SimpleMotorFF_CalculateVelocityOnly</h3>
-<p><IMG SRC="LVtemp20221117051339_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SimpleMotorFF_CalculateVelocityOnly_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Calculates the feedforward from the gains and setpoints.  (acceleration is assumed to be zero)<BR>
    <BR>
 Parameters:<BR>
@@ -37,7 +37,7 @@ Returns:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SimpleMotorFF_Calculate_CalcAccel" >SimpleMotorFF_Calculate_CalcAccel</h3>
-<p><IMG SRC="LVtemp20221117051343_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SimpleMotorFF_Calculate_CalcAccel_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Calculates the feedforward from the gains and setpoints.   Instead of Acceleration Setpoint being supplied as a setpoint, the acceleration is calculated based on the change in the Velocity setpoint.<BR>
    <BR>
 Parameters:<BR>
@@ -50,7 +50,7 @@ Returns:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SimpleMotorFF_Calculate_NextV_Dt" >SimpleMotorFF_Calculate_NextV_Dt</h3>
-<p><IMG SRC="LVtemp20221117051348_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SimpleMotorFF_Calculate_NextV_Dt_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Calculates the feedforward from the gains and setpoints.   This VI calculates the acceleration by using a Linear System and a Linear Plant Inversion Feedforward.  These systems are only created upon the first call or when one of the Kv or Ka values change.<BR>
   <BR>
 Input parameters:<BR>
@@ -65,8 +65,29 @@ Returns:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SimpleMotorFF_Ka_AutoTune" >SimpleMotorFF_Ka_AutoTune</h3>
+<p><IMG SRC="SimpleMotorFF_Ka_AutoTune_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This function will ramp the SP up and down while collecting data.  Once the ramp is complete Ka will be calculated.<BR>
+<BR>
+Inputs:  <BR>
+  --  PackedParams  --  SimpleMotorFF_KA_Tune_Params  --  Data cluster containing the parameters defining the test.<BR>
+  --  PV ProcessVariable  --  Double  --  The measured variable.<BR>
+  --  CO Control Output  --  Double  -- The actuator output demand<BR>
+  --  Run Test  -- Boolean  -- When TRUE, run the test.<BR>
+  --  Pass Through Time  --  Double  -- Current time (seconds).  If not specified, the FPGA time will be read and used.<BR>
+<BR>
+Outputs:<BR>
+  --  SP Setpoint  -- Double  - The desired while performing the test.  When not testing the value is set to zero.<BR>
+  -- Test Complete  -- Boolean  -- TRUE indicates tht the test has completed and a new Ka value has been calculationed.<BR>
+  --  Ka Calc   -- Double  -- Newly calculated Ka value.  Only valid when Test Complete is TRUE.    This value is averaged from a number of individual Ka calculations made between the Min and Max eval SP values.<BR>
+  --  Error  -- Boolean  -- TRUE indicates an error has occured.<BR>
+  --  Ka Std Dev  -- Double  -- Standard deviation of the array of Ka used to calculate the average Ka.<BR>
+  --  Samples  -- Double  -- The number of samples used to calculte Ka.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SimpleMotorFF_MaxAchieveAccel" >SimpleMotorFF_MaxAchieveAccel</h3>
-<p><IMG SRC="LVtemp20221117051353_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SimpleMotorFF_MaxAchieveAccel_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Calculates the maximum achievable acceleration given a maximum voltage supply and a velocity. Useful for ensuring that velocity and acceleration constraints for a trapezoidal profile are simultaneously achievable - enter the velocity constraint, and this will give you  a simultaneously-achievable acceleration constraint.<BR>
 <BR>
 Parameters:<BR>
@@ -81,7 +102,7 @@ Returns:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SimpleMotorFF_MaxAchieveVel" >SimpleMotorFF_MaxAchieveVel</h3>
-<p><IMG SRC="LVtemp20221117051356_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SimpleMotorFF_MaxAchieveVel_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Calculates the maximum achievable velocity given a maximum voltage supply and an acceleration.  Useful for ensuring that velocity and acceleration constraints for a trapezoidal profile are simultaneously achievable - enter the acceleration constraint, and this will give you a simultaneously-achievable velocity constraint.<BR>
 <BR>
 Parameters:<BR>
@@ -96,7 +117,7 @@ Returns:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SimpleMotorFF_MinAchieveAccel" >SimpleMotorFF_MinAchieveAccel</h3>
-<p><IMG SRC="LVtemp20221117051400_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SimpleMotorFF_MinAchieveAccel_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Calculates the minimum achievable acceleration given a maximum voltage supply and a velocity. Useful for ensuring that velocity and acceleration constraints for a trapezoidal profile are simultaneously achievable - enter the velocity constraint, and this will give you a simultaneously-achievable acceleration constraint.<BR>
 <BR>
 Parameters:<BR>
@@ -111,7 +132,7 @@ Returns:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SimpleMotorFF_MinAchieveVel" >SimpleMotorFF_MinAchieveVel</h3>
-<p><IMG SRC="LVtemp20221117051403_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SimpleMotorFF_MinAchieveVel_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Calculates the minimum achievable velocity given a maximum voltage supply and an acceleration.  Useful for ensuring that velocity and acceleration constraints for a trapezoidal profile are simultaneously achievable - enter the acceleration constraint, and this will give you a simultaneously-achievable velocity constraint.<BR>
 <BR>
 Parameters:<BR>
@@ -126,7 +147,7 @@ Returns:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SimpleMotorFF_New" >SimpleMotorFF_New</h3>
-<p><IMG SRC="LVtemp20221117051407_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SimpleMotorFF_New_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Creates a new SimpleMotorFeedforward with the specified gains.  Units of the gain values will dictate units of the computed feedforward.  (Generally units should be in meters to match other internal routines.)<BR>
 <BR>
 These can be obtained by using the FRC Characterization routine to test your robot.<BR>
@@ -137,6 +158,22 @@ Parameters<BR>
    - ka  --  The acceleration gain.  (volts seconds^2 / meter )<BR>
    - Kn  --  The normalization constant.  When using the advanced PID, this constant helps<BR>
                   match the output of this routine to input of the advanced PID.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SimpleMotorFF_Pack__Ka_Tune_Params" >SimpleMotorFF_Pack__Ka_Tune_Params</h3>
+<p><IMG SRC="SimpleMotorFF_Pack__Ka_Tune_Params_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack individual parameters into the data cluster used by the Simple Motor Feed Forward Ka Auto Tune function.   This function will ramp the SP up and down while collecting data.  Once the ramp is complete Ka will be calculated.<BR>
+<BR>
+Inputs:  <BR>
+  --  Max Sp --  Double -- The maximum value for the setpoint when ramping.<BR>
+  --  Min Eval SP  --  Double  --  The lowest setpoint value to use when evaluating Ka<BR>
+  --  Max Eval SP  --  Double  --  The highest setpoint value to use when evaluating Ka<BR>
+  --  Ramp Rate  --  Double  --  The rate at which to ramp the setpoint (Units/Sec)<BR>
+<BR>
+Outputs:<BR>
+  --  PackedParams  --  SimpleMotorFF_KA_Tune_Params  --  The packed data cluster.<BR>
+<BR>
 </pre></p>
 <br>
 </BODY>

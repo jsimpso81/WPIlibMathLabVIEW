@@ -9,7 +9,7 @@
 <h2 id="StateSpaceUtil" >StateSpaceUtil</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="StateSpaceUtil_Check_Stabilizable" >StateSpaceUtil_Check_Stabilizable</h3>
-<p><IMG SRC="LVtemp20221117051648_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="StateSpaceUtil_Check_Stabilizable_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">THIS IS AN INTERNAL ROUTINE.  USE IsStabalizable INSTEAD.<BR>
 Returns true if (A, B) is a stabilizable pair.<BR>
  <BR>
@@ -25,7 +25,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="StateSpaceUtil_ClampInputMaxMagnitude" >StateSpaceUtil_ClampInputMaxMagnitude</h3>
-<p><IMG SRC="LVtemp20221117051654_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="StateSpaceUtil_ClampInputMaxMagnitude_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Clamp the input u to the min and max.<BR>
  <BR>
 Inputs:<BR>
@@ -39,7 +39,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="StateSpaceUtil_IsDetectable" >StateSpaceUtil_IsDetectable</h3>
-<p><IMG SRC="LVtemp20221117051659_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="StateSpaceUtil_IsDetectable_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns true if (A, C) is a detectable pair.<BR>
   <BR>
 (A, C) is detectable if and only if the unobservable eigenvalues of A, if any, have absolute values less than one, where an eigenvalue is unobservable if rank(Lambda - A; C) < n where n is the number of states.<BR>
@@ -55,7 +55,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="StateSpaceUtil_IsStabilizable" >StateSpaceUtil_IsStabilizable</h3>
-<p><IMG SRC="LVtemp20221117051707_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="StateSpaceUtil_IsStabilizable_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns true if (A, B) is a stabilizable pair.<BR>
  <BR>
 (A,B) is stabilizable if and only if the uncontrollable eigenvalues of A, if any, have absolute values less than one, where an eigenvalue is uncontrollable if rank(Lambda - A, B) < n where n is number of states.<BR>
@@ -70,7 +70,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="StateSpaceUtil_MakeCostMatrix" >StateSpaceUtil_MakeCostMatrix</h3>
-<p><IMG SRC="LVtemp20221117051713_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="StateSpaceUtil_MakeCostMatrix_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Creates a cost matrix from the given vector for use with LQR.<BR>
 <BR>
 The cost matrix is constructed using Bryson's rule. The inverse square of each tolerance is placed on the cost matrix diagonal. If a tolerance is infinity, its cost matrix entry is set to zero.<BR>
@@ -85,7 +85,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="StateSpaceUtil_MakeCovarianceMatrix" >StateSpaceUtil_MakeCovarianceMatrix</h3>
-<p><IMG SRC="LVtemp20221117051717_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="StateSpaceUtil_MakeCovarianceMatrix_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Creates a covariance matrix from the given vector for use with Kalman filters.<BR>
  <BR>
 Each element is squared and placed on the covariance matrix diagonal.<BR>
@@ -101,7 +101,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="StateSpaceUtil_MakeWhiteNoiseVector" >StateSpaceUtil_MakeWhiteNoiseVector</h3>
-<p><IMG SRC="LVtemp20221117051721_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="StateSpaceUtil_MakeWhiteNoiseVector_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Creates a vector of normally distributed white noise with the given noise intensities for each element.<BR>
 <BR>
 <BR>
@@ -114,7 +114,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="StateSpaceUtil_NormalizeInputVector" >StateSpaceUtil_NormalizeInputVector</h3>
-<p><IMG SRC="LVtemp20221117051725_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="StateSpaceUtil_NormalizeInputVector_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Normalize all inputs if any excedes the maximum magnitude. Useful for systems such as differential drivetrains.<BR>
  <BR>
 Inputs:<BR>
@@ -128,7 +128,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="StateSpaceUtil_PoseTo3dVector" >StateSpaceUtil_PoseTo3dVector</h3>
-<p><IMG SRC="LVtemp20221117051729_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="StateSpaceUtil_PoseTo3dVector_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convert a Pose2d to a vector of [x, y, theta], where theta is in radians.<BR>
  <BR>
 Inputs:<BR>
@@ -140,7 +140,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="StateSpaceUtil_PoseTo4dVector" >StateSpaceUtil_PoseTo4dVector</h3>
-<p><IMG SRC="LVtemp20221117051733_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="StateSpaceUtil_PoseTo4dVector_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convert a Pose2d}to a vector of [x, y, cos(theta), sin(theta)], where theta is in radians.<BR>
  <BR>
 <BR>
@@ -153,7 +153,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="StateSpaceUtil_PoseToVector" >StateSpaceUtil_PoseToVector</h3>
-<p><IMG SRC="LVtemp20221117051737_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="StateSpaceUtil_PoseToVector_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convert a Pose2d to a vector of [x, y, theta], where theta is in radians.<BR>
 <BR>
 Inputs:<BR>

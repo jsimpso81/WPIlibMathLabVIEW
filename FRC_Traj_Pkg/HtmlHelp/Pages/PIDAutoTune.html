@@ -9,28 +9,120 @@
 <h2 id="PIDAutoTune" >PIDAutoTune</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PIDAutoTune_ClosedLoopStep" >PIDAutoTune_ClosedLoopStep</h3>
-<p><IMG SRC="LVtemp20221117050111_0_0c.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="PIDAutoTune_ClosedLoopStep_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This routine can be used to make a step change to a PID control loop, track the results, and calculate PID tuning parameters.  It wraps the NI LabVIEW PID auto-tuning functions for use with the WPILIB LabVIEW Math PID.  This uses the CLOSED LOOP STEP type of test.  <BR>
+<BR>
+Warning -- This routine will modify the control output.  Use it in such a manner to be able to stop the tuning if problems occur -- like running out of field space while tuning a drive motor.  <BR>
+<BR>
+Inputs:<BR>
+  --  Configuration Parameters  -- cluster -- This contains the parameters defining the conditions of the test.  Use the Pack routine to create this data cluster.<BR>
+  --  Control Output  --  double  -- The Control Output (CO) value from the output of the PID to be tuned.<BR>
+  --  Measurement (PV)  -- double  -- The Process Variable (PV) value used by the PID to be tuned.<BR>
+  -- Tune  -- boolean  -- When TRUE, tuning is performed..<BR>
+  -- Sampling time  --  double  --  Loop time in seconds.  How fast the PID and this autotune function are executed.   (Optional:  Default 0.02 seconds) <BR>
+<BR>
+Outputs:<BR>
+  --  Adj CO -- double -- The adjusted CO.  This is sent to the actuator.  (This vi is put between the PID and the actuator device)<BR>
+  --  Tuning Done -- boolean -- This is set to TRUE when tuning has completed.  Depending on the PV noise, tuning may never be "DONE".   However if the new tuning parameters are relatively constant, they can still be used.<BR>
+  --  New Tuning Parameters  -- cluster --- Data cluster containing the calculated PID tuning parameters.  <BR>
+  -- Plant and Test Data -- cluster --  Data cluster containing information describing the transfer function of the system being controlled (Plant).<BR>
+  -- Error Occured  --  Boolean  -- If TRUE, an error occured.<BR>
+  -- Diagnostic Info  -- cluster  -- This contains additional information about the test being perfromed.<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PIDAutoTune_Convert_Academic_To_NonInteracting" >PIDAutoTune_Convert_Academic_To_NonInteracting</h3>
-<p><IMG SRC="LVtemp20221117050117_0_0c.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="PIDAutoTune_Convert_Academic_To_NonInteracting_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convert PID tuning parameters calculated by the NI LabVIEW PID autotuning from the NI Academic (classical) PID form to the non-interacting PID form used by the WPILIB LabVIEW Math library.<BR>
+<BR>
+Inputs:<BR>
+  --  PID Gains NI Academic  -- cluster  -- PID tuning parameters in NI Academic form.<BR>
+  -- Kn  -- double  -- PID normalization constant.  This is normally Max CO / Max PV  (If normalization constant is not used, this value should be set to 1.0)<BR>
+<BR>
+Outputs:<BR>
+  -- PID Gains  -- cluster -- Converted PID tuning parameter gains.<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PIDAutoTune_OpenLoopStep" >PIDAutoTune_OpenLoopStep</h3>
-<p><IMG SRC="LVtemp20221117050122_0_0c.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="PIDAutoTune_OpenLoopStep_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This routine can be used to make a step change to a PID control loop, track the results, and calculate PID tuning parameters.  It wraps the NI LabVIEW PID auto-tuning functions for use with the WPILIB LabVIEW Math PID.  This uses the OPEN LOOP STEP type of test.  <BR>
+<BR>
+Warning -- This routine will modify the control output.  Use it in such a manner to be able to stop the tuning if problems occur -- like running out of field space while tuning a drive motor.  <BR>
+<BR>
+Inputs:<BR>
+  --  Configuration Parameters  -- cluster -- This contains the parameters defining the conditions of the test.  Use the Pack routine to create this data cluster.<BR>
+  --  Control Output  --  double  -- The Control Output (CO) value from the output of the PID to be tuned.<BR>
+  --  Measurement (PV)  -- double  -- The Process Variable (PV) value used by the PID to be tuned.<BR>
+  -- Tune  -- boolean  -- When TRUE, tuning is performed..<BR>
+  -- Sampling time  --  double  --  Loop time in seconds.  How fast the PID and this autotune function are executed.   (Optional:  Default 0.02 seconds) <BR>
+<BR>
+Outputs:<BR>
+  --  Adj CO -- double -- The adjusted CO.  This is sent to the actuator.  (This vi is put between the PID and the actuator device)<BR>
+  --  Tuning Done -- boolean -- This is set to TRUE when tuning has completed.  Depending on the PV noise, tuning may never be "DONE".   However if the new tuning parameters are relatively constant, they can still be used.<BR>
+  --  New Tuning Parameters  -- cluster --- Data cluster containing the calculated PID tuning parameters.  <BR>
+  -- Plant and Test Data -- cluster --  Data cluster containing information describing the transfer function of the system being controlled (Plant).<BR>
+  -- Error Occured  --  Boolean  -- If TRUE, an error occured.<BR>
+  -- Diagnostic Info  -- cluster  -- This contains additional information about the test being perfromed.<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PIDAutoTune_SetTuningArguments" >PIDAutoTune_SetTuningArguments</h3>
-<p><IMG SRC="LVtemp20221117050128_0_0c.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="PIDAutoTune_SetTuningArguments_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack the individual PID AutoTune testing parameters into a data cluster for use with the PID AutoTune functions.<BR>
+<BR>
+Inputs:<BR>
+  --  Control Constant Type  --  enum  -- Desired PID performance.  This guides the calculation of the tuning parameters after the system transfer function (plant) has been determined.    This choice determines how agressive the PID is in controlling the system error.  Choices are:<BR>
+            - Ziegler Nicols - Fast<BR>
+            - Ziegler Nicols - Normal<BR>
+            - Ziegler Nicols - Slow<BR>
+            - CHR Regulator - 0% Overshoot<BR>
+            - CHR Regulator - 20% Overshoot<BR>
+            - CHR Servo - 0% Overshoot<BR>
+            - CHR Servo - 20% Overshoot<BR>
+<BR>
+--  Type of Controller  --  enum  -- Type of PID.  Choices are:<BR>
+             - P -- Proportional only<BR>
+             - PI  -- Proportional and Integral only<BR>
+             - PID  -- Full Proportional, Integral, Derivative.<BR>
+ <BR>
+-- CO Offset  -- double -- The amount to step the control output to perform the test<BR>
+-- Kn  -- double  -- Normaliztion constant.  This is the same value that is used with the PID.  This is normally Max CO / Max PV.  If this isn't used, set the value to 1.0.  (Optional.  Default: 1.0)<BR>
+--  Tuning Tolerance  -- double  -- Value used to determine if the tuning is complete.  (Optional.  Default 0.001)<BR>
+--  Plant Tolerance  -- double  -- Value used to determine if the tuning process is complete.  (Optional.  Default: 0.001)<BR>
+-- Newest Avg Time -- double  -- Time in seconds to average most recent calculated tuning constants.  (Optional.  Default: 1.0 )<BR>
+--  Long Avg Time  -- double  -- Time in seconds to average tuning constants to determine if the values are still changing.  (Optional.  Default 6.0 )<BR>
+<BR>
+Outputs:<BR>
+  --  Configuration Parameters  -- cluster -- This contains the parameters defining the conditions of the test.  Use the Pack routine to create this data cluster.<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-<h3 id="PIDAutoTune_Step" >PIDAutoTune_Step</h3>
-<p><IMG SRC="LVtemp20221117050133_0_0c.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<h3 id="PIDAutoTune_Step_Execute" >PIDAutoTune_Step_Execute</h3>
+<p><IMG SRC="PIDAutoTune_Step_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This routine can be used to make a step change to a PID control loop, track the results, and calculate PID tuning parameters.  It wraps the NI LabVIEW PID auto-tuning functions for use with the WPILIB LabVIEW Math PID.  <BR>
+<BR>
+Warning -- This routine will modify the control output.  Use it in such a manner to be able to stop the tuning if problems occur -- like running out of field space while tuning a drive motor.  <BR>
+<BR>
+Inputs:<BR>
+  --  Procedure Type -- enum  -- The type of tuning procedure to be used:  Values are:<BR>
+                --  Open Loop Step  -- This uses the frozen CO  input when the test starts.   A step change is made to the output.  This is the recommended method<BR>
+                --  Closed Loop Step  --  This uses the continually changing CO input and adds an offset value to this during the test.  <BR>
+<BR>
+  --  Configuration Parameters  -- cluster -- This contains the parameters defining the conditions of the test.  Use the Pack routine to create this data cluster.<BR>
+  --  Control Output  --  double  -- The Control Output (CO) value from the output of the PID to be tuned.<BR>
+  --  Measurement (PV)  -- double  -- The Process Variable (PV) value used by the PID to be tuned.<BR>
+  -- Tune  -- boolean  -- When TRUE, tuning is performed..<BR>
+  -- Sampling time  --  double  --  Loop time in seconds.  How fast the PID and this autotune function are executed.   (Optional:  Default 0.02 seconds) <BR>
+<BR>
+Outputs:<BR>
+  --  Adj CO -- double -- The adjusted CO.  This is sent to the actuator.  (This vi is put between the PID and the actuator device)<BR>
+  --  Tuning Done -- boolean -- This is set to TRUE when tuning has completed.  Depending on the PV noise, tuning may never be "DONE".   However if the new tuning parameters are relatively constant, they can still be used.<BR>
+  --  New Tuning Parameters  -- cluster --- Data cluster containing the calculated PID tuning parameters.  <BR>
+  -- Plant and Test Data -- cluster --  Data cluster containing information describing the transfer function of the system being controlled (Plant).<BR>
+  -- Error Occured  --  Boolean  -- If TRUE, an error occured.<BR>
+  -- Diagnostic Info  -- cluster  -- This contains additional information about the test being perfromed.<BR>
+</pre></p>
 <br>
 </BODY>
 </HTML>

@@ -9,7 +9,7 @@
 <h2 id="TimeInterpDouble" >TimeInterpDouble</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TimeInterpDouble_AddSample" >TimeInterpDouble_AddSample</h3>
-<p><IMG SRC="LVtemp20221117052048_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TimeInterpDouble_AddSample_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Add a sample to the buffer.<BR>
   <BR>
 Inputs:<BR>
@@ -23,7 +23,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TimeInterpDouble_CleanUp" >TimeInterpDouble_CleanUp</h3>
-<p><IMG SRC="LVtemp20221117052053_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TimeInterpDouble_CleanUp_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Removes samples older than our current history size.<BR>
 <BR>
 Inputs:<BR>
@@ -35,7 +35,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TimeInterpDouble_Clear" >TimeInterpDouble_Clear</h3>
-<p><IMG SRC="LVtemp20221117052057_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TimeInterpDouble_Clear_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Removes all samples from the history buffer.<BR>
 <BR>
 Inputs:<BR>
@@ -47,7 +47,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TimeInterpDouble_GetSample" >TimeInterpDouble_GetSample</h3>
-<p><IMG SRC="LVtemp20221117052102_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TimeInterpDouble_GetSample_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sample the buffer at the given time.<BR>
 <BR>
 Inputs:<BR>
@@ -59,8 +59,21 @@ Outputs<BR>
   -  IsPresent  -- Returns TRUE if the buffer contains data as far back as TimeStamp.</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpDouble_GetTimeForValue" >TimeInterpDouble_GetTimeForValue</h3>
+<p><IMG SRC="TimeInterpDouble_GetTimeForValue_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Find the time for a particular value in the buffer.   The first instance of a value is found.  If an exact match isn't fond, interpolation is used to calculate the time for the value.  If there multiple instances of a value exist, only the first one is returned.  <BR>
+<BR>
+Inputs:<BR>
+   -  TimeInterpDouble  -- Input data cluster<BR>
+   -  Value  -- The value to search for.<BR>
+<BR>
+Outputs<BR>
+  - TimeState  --  Time stamp for the input value.<BR>
+  -  IsPresent  -- Returns TRUE if the buffer contains data as far back as TimeStamp.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TimeInterpDouble_New" >TimeInterpDouble_New</h3>
-<p><IMG SRC="LVtemp20221117052106_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TimeInterpDouble_New_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create the data cluster for a TIME_INTERPOLATABLE_DOUBLE.<BR>
 <BR>
 The TimeInterpolatableBuffer provides an easy way to estimate past measurements. One application might be in conjunction with the DifferentialDrivePoseEstimator, where knowledge of the robot pose at the time when vision or other global measurement were recorded is necessary, or for recording the past angles of mechanisms as measured by encoders.<BR>
@@ -76,7 +89,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TimeInterpDouble_SetMaxTime" >TimeInterpDouble_SetMaxTime</h3>
-<p><IMG SRC="LVtemp20221117052109_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TimeInterpDouble_SetMaxTime_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Set the maximum time period that should be stored in the buffer<BR>
 <BR>
 Inputs:<BR>

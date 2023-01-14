@@ -9,8 +9,20 @@
 <h2 id="LeadLag" >LeadLag</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LeadLag_Execute" >LeadLag_Execute</h3>
-<p><IMG SRC="LVtemp20221117044616_0_0c.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LeadLag_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This function provides a classical control lead / lag calculation (or filter).  This can be used as a lag only, lead only, or lead / lag function.  <BR>
+<BR>
+Inputs:<BR>
+  --  Input value  --  double float  -- input value<BR>
+  --  Enable  -- boolean --  When true the lead / lag calculation is performed.  When false, the output = the input.  (optional.  Default: TRUE).   <BR>
+  --  Lead Time Const --  double float  --  Lead time constant (seconds).  If the value is zero (or missig), lead fuction function is not performed.  (optional.  Default: 0.0)  <BR>
+  --  Lag Time Const --  double float  --  Lag time constant (seconds).  If the value is zero (or missig), lag fuction function is not performed.  (optional.  Default: 0.0)  <BR>
+  --  Time  -- double float  -- Elapsed time (seconds).  (Optional,  Default: read FPGA time)<BR>
+<BR>
+OutputsL<BR>
+  --  Output  --  double float  -- The result of the leag / lag calculation.   If Enable is False, the output will track (equal) the input.<BR>
+<BR>
+</pre></p>
 <br>
 </BODY>
 </HTML>

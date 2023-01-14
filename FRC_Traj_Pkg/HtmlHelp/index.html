@@ -1,148 +1,87 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 <HEAD>
-<TITLE>FRC LabVIEW Control / Trajectory Library Reference</TITLE>
+<TITLE>WPILib LabVIEW Math - Control / Trajectory Library Reference</TITLE>
 </HEAD>
 
 <BODY>
-<h1>FRC LabVIEW Control / Trajectory Library Reference</h1>
+<h1>WPILib LabVIEW Math - Control / Trajectory Library Reference</h1>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h2>Introduction</h2>
+The WPILib LabVIEW Math contains LabVIEW functions, data clusters, and utility programs 
+for use in the First Robototics Competition.  It implements the routines found mostly in 
+the "math" section WPILIB library for Java and C++ that don't already exist in LabVIEW. 
+<p>
+The utility programs, found under WPILib LabVIEW in the Windows start menu, include trajectory editors, trajectory file conversions, and robot code simulators.
+
+<p>
+The library has an extensive set of examples that can be found under the LabVIEW "Find examples..." menu.
+
+<p>
+A separate github repository stores additional function examples and sample robot code.  It
+can be found here.  <a href="https://github.com/jsimpso81/WPIlibMathLabVIEW_Examples">https://github.com/jsimpso81/WPIlibMathLabVIEW_Examples</a> 
+
+<p>
+The library source code, package build specifications, help builder tools, and test package can be found
+here <a href="https://github.com/jsimpso81/WPIlibMathLabVIEW">https://github.com/jsimpso81/WPIlibMathLabVIEW</a>
+
+<br><br>
+<HR SIZE="3" WIDTH=" 100.000000%" COLOR="GREY">
+<h3>Disclaimer</h3>
+
+The WPILib LabVIEW Math library and its developers have no accociation with Worcester Polytechnic Institute.
+                                                                      
+<br><br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h2>Copyright</h2>
+<a href="pages/Copyright.html">Copyright</a>
+
+
+<br><br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h2>Library Description and Conventions</h2>
+<a href="pages/DescriptionAndConventions.html">Description and Conventions</a>
+
+
+<br><br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h2>Utility Programs</h2>
+<a href="pages/Utility_Programs.html">Utility Programs</a>
+
+<br><br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h2>Trajectory Creation Methods</h2>
+<a href="pages/TrajectoryCreation.html">Trajectory Creation</a>
+
+<br><br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h2>Reporting Issues</h2>
+<a href="pages/ReportingIssues.html">Reporting Issues</a>
+
+<br><br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h2>Contributing</h2>
+<a href="pages/Contributing.html">Contributing</a>
+
+
+<br><br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h2>Function Groups</h2>
-<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-<li><a href="pages/AnalogDelay.html">AnalogDelay</a> - 
-<li><a href="pages/AngleStats.html">AngleStats</a> - 
-<li><a href="pages/ArmFF.html">ArmFF</a> - 
-<li><a href="pages/BangBang.html">BangBang</a> - 
-<li><a href="pages/BatterySim.html">BatterySim</a> - 
-<li><a href="pages/BumplessTransfer.html">BumplessTransfer</a> - 
-<li><a href="pages/CallbackHelp.html">CallbackHelp</a> - 
-<li><a href="pages/CentripetalAccelConstraint.html">CentripetalAccelConstraint</a> - 
-<li><a href="pages/ChassisSpeeds.html">ChassisSpeeds</a> - 
-<li><a href="pages/CompVisionUtil.html">CompVisionUtil</a> - 
-<li><a href="pages/ConstrainedState.html">ConstrainedState</a> - 
-<li><a href="pages/Constraint.html">Constraint</a> - 
-<li><a href="pages/ControllerUtil.html">ControllerUtil</a> - 
-<li><a href="pages/Conv.html">Conv</a> - 
-<li><a href="pages/CoordAxis.html">CoordAxis</a> - 
-<li><a href="pages/CoordSystem.html">CoordSystem</a> - 
-<li><a href="pages/CubicHermiteSpline.html">CubicHermiteSpline</a> - 
-<li><a href="pages/DCMotor.html">DCMotor</a> - 
-<li><a href="pages/DCMotorSim.html">DCMotorSim</a> - 
-<li><a href="pages/Debouncer.html">Debouncer</a> - 
-<li><a href="pages/DiffDriveKinematicsConstraint.html">DiffDriveKinematicsConstraint</a> - 
-<li><a href="pages/DiffDrivePoseEst.html">DiffDrivePoseEst</a> - 
-<li><a href="pages/DiffDriveTrainSim.html">DiffDriveTrainSim</a> - 
-<li><a href="pages/DiffDriveVoltageConstraint.html">DiffDriveVoltageConstraint</a> - 
-<li><a href="pages/DiffDrvAccelLimit.html">DiffDrvAccelLimit</a> - 
-<li><a href="pages/DiffKinematics.html">DiffKinematics</a> - 
-<li><a href="pages/DiffOdometry.html">DiffOdometry</a> - 
-<li><a href="pages/DiffWheel.html">DiffWheel</a> - 
-<li><a href="pages/DigSeqLogic.html">DigSeqLogic</a> - 
-<li><a href="pages/Discretization.html">Discretization</a> - 
-<li><a href="pages/ElevatorSim.html">ElevatorSim</a> - 
-<li><a href="pages/ElevFF.html">ElevFF</a> - 
-<li><a href="pages/EllipRegionConstraint.html">EllipRegionConstraint</a> - 
-<li><a href="pages/ExtendedKalmanFilter.html">ExtendedKalmanFilter</a> - 
-<li><a href="pages/FlyWheelSim.html">FlyWheelSim</a> - 
-<li><a href="pages/FunctionGenerator.html">FunctionGenerator</a> - 
-<li><a href="pages/FunctionGeneratorMatrix.html">FunctionGeneratorMatrix</a> - 
-<li><a href="pages/HolDrvCtrl.html">HolDrvCtrl</a> - 
-<li><a href="pages/ImplModelFollow.html">ImplModelFollow</a> - 
-<li><a href="pages/JerkConstraint.html">JerkConstraint</a> - 
-<li><a href="pages/KalmanFilter.html">KalmanFilter</a> - 
-<li><a href="pages/KalmanFilterLatencyComp.html">KalmanFilterLatencyComp</a> - 
-<li><a href="pages/LeadLag.html">LeadLag</a> - 
-<li><a href="pages/LinearFilter.html">LinearFilter</a> - 
-<li><a href="pages/LinearPlntInvFF.html">LinearPlntInvFF</a> - 
-<li><a href="pages/LinearQuadraticRegulator.html">LinearQuadraticRegulator</a> - 
-<li><a href="pages/LinearSystem.html">LinearSystem</a> - 
-<li><a href="pages/LinearSystemId.html">LinearSystemId</a> - 
-<li><a href="pages/LinearSystemLoop.html">LinearSystemLoop</a> - 
-<li><a href="pages/LinearSystemSim.html">LinearSystemSim</a> - 
-<li><a href="pages/LTVDiffDriveCtrl.html">LTVDiffDriveCtrl</a> - 
-<li><a href="pages/LTVUnicycleCtrl.html">LTVUnicycleCtrl</a> - 
-<li><a href="pages/MatBuilder.html">MatBuilder</a> - 
-<li><a href="pages/MathUtil.html">MathUtil</a> - 
-<li><a href="pages/Matrix.html">Matrix</a> - 
-<li><a href="pages/MatrixHelper.html">MatrixHelper</a> - 
-<li><a href="pages/MaxVelocityConstraint.html">MaxVelocityConstraint</a> - 
-<li><a href="pages/MecaDriveKinematicsConstraint.html">MecaDriveKinematicsConstraint</a> - 
-<li><a href="pages/MecaDrivePoseEst.html">MecaDrivePoseEst</a> - 
-<li><a href="pages/MecaKinematics.html">MecaKinematics</a> - 
-<li><a href="pages/MecaOdometry.html">MecaOdometry</a> - 
-<li><a href="pages/MecaWheel.html">MecaWheel</a> - 
-<li><a href="pages/MecaWheelPos.html">MecaWheelPos</a> - 
-<li><a href="pages/MedianFilter.html">MedianFilter</a> - 
-<li><a href="pages/MerweScSigPts.html">MerweScSigPts</a> - 
-<li><a href="pages/NumIntegrate.html">NumIntegrate</a> - 
-<li><a href="pages/NumJacobian.html">NumJacobian</a> - 
-<li><a href="pages/PathfinderUtil.html">PathfinderUtil</a> - 
-<li><a href="pages/PIDAutoTune.html">PIDAutoTune</a> - 
-<li><a href="pages/PIDController.html">PIDController</a> - 
-<li><a href="pages/Pose2d.html">Pose2d</a> - 
-<li><a href="pages/Pose3d.html">Pose3d</a> - 
-<li><a href="pages/PoseWithCurve.html">PoseWithCurve</a> - 
-<li><a href="pages/ProfiledPIDController.html">ProfiledPIDController</a> - 
-<li><a href="pages/Quaternion.html">Quaternion</a> - 
-<li><a href="pages/QuinticHermiteSpline.html">QuinticHermiteSpline</a> - 
-<li><a href="pages/Ramsete.html">Ramsete</a> - 
-<li><a href="pages/RectRegionConstraint.html">RectRegionConstraint</a> - 
-<li><a href="pages/Riccati.html">Riccati</a> - 
-<li><a href="pages/Rotation2d.html">Rotation2d</a> - 
-<li><a href="pages/Rotation3d.html">Rotation3d</a> - 
-<li><a href="pages/RungeKuttaTimeVarying.html">RungeKuttaTimeVarying</a> - 
-<li><a href="pages/SimpleMatrix.html">SimpleMatrix</a> - 
-<li><a href="pages/SimpleMotorFF.html">SimpleMotorFF</a> - 
-<li><a href="pages/SlewRateLimiter.html">SlewRateLimiter</a> - 
-<li><a href="pages/SngJntArmSim.html">SngJntArmSim</a> - 
-<li><a href="pages/Spline.html">Spline</a> - 
-<li><a href="pages/SplineHelp.html">SplineHelp</a> - 
-<li><a href="pages/SplineParam.html">SplineParam</a> - 
-<li><a href="pages/StateSpaceUtil.html">StateSpaceUtil</a> - 
-<li><a href="pages/SwerveDriveKinematicsConstraint.html">SwerveDriveKinematicsConstraint</a> - 
-<li><a href="pages/SwerveDrivePoseEst.html">SwerveDrivePoseEst</a> - 
-<li><a href="pages/SwerveKinematics.html">SwerveKinematics</a> - 
-<li><a href="pages/SwerveModulePosition.html">SwerveModulePosition</a> - 
-<li><a href="pages/SwerveModuleState.html">SwerveModuleState</a> - 
-<li><a href="pages/SwerveOdometry.html">SwerveOdometry</a> - 
-<li><a href="pages/TimeInterpBoolean.html">TimeInterpBoolean</a> - 
-<li><a href="pages/TimeInterpDouble.html">TimeInterpDouble</a> - 
-<li><a href="pages/TimeInterpPose2d.html">TimeInterpPose2d</a> - 
-<li><a href="pages/TimeInterpRotation2d.html">TimeInterpRotation2d</a> - 
-<li><a href="pages/Timer.html">Timer</a> - 
-<li><a href="pages/TrajConstraint.html">TrajConstraint</a> - 
-<li><a href="pages/Trajectory.html">Trajectory</a> - 
-<li><a href="pages/TrajectoryConfig.html">TrajectoryConfig</a> - 
-<li><a href="pages/TrajectoryGenerate.html">TrajectoryGenerate</a> - 
-<li><a href="pages/TrajectoryParam.html">TrajectoryParam</a> - 
-<li><a href="pages/TrajectoryState.html">TrajectoryState</a> - 
-<li><a href="pages/TrajectoryUtil.html">TrajectoryUtil</a> - 
-<li><a href="pages/Transform2d.html">Transform2d</a> - 
-<li><a href="pages/Transform3d.html">Transform3d</a> - 
-<li><a href="pages/Translation2d.html">Translation2d</a> - 
-<li><a href="pages/Translation3d.html">Translation3d</a> - 
-<li><a href="pages/TrapProfConstraint.html">TrapProfConstraint</a> - 
-<li><a href="pages/TrapProfile.html">TrapProfile</a> - 
-<li><a href="pages/TrapProfState.html">TrapProfState</a> - 
-<li><a href="pages/Twist2d.html">Twist2d</a> - 
-<li><a href="pages/Twist3d.html">Twist3d</a> - 
-<li><a href="pages/Units.html">Units</a> - 
-<li><a href="pages/UnscentedKalmanFilter.html">UnscentedKalmanFilter</a> - 
-<li><a href="pages/Util.html">Util</a> - 
-<li><a href="pages/VecBuilder.html">VecBuilder</a> - 
-<li><a href="pages/Vector.html">Vector</a> - 
-<li><a href="pages/WaitAdjust.html">WaitAdjust</a> - 
+<a href="pages/Function_Groups.html">Function Groups</a>
 
+<br><br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h2>Type Definitions</h2>
-<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+
 <li><a href="pages/TypeDef.html">Typedef</a> - 
+
+<br><br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-
-
 <h2>Enumerated Type Definitions</h2>
-<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+
 <li><a href="pages/Enum.html">Enum</a> - 
+
+<br><br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 
 </BODY>

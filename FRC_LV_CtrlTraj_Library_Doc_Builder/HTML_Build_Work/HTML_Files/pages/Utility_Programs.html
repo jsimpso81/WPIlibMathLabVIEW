@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Utility Programs</TITLE>
+</HEAD>
+
+<BODY>
+<h2>Utiity Programs</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+The WPILIB LabVIEW Math library contains a number of utility programs.  These can be accessed from 
+the Windows Start menu under the "WPILib LabVIEW" group.  These programs include:
+<p>
+<p><li>Create/Edit Trajectory
+<p><li>Create/Edit PathFinder Differential Drive Trajectory
+<p><li>Create/Edit PathFinder Swerve Drive Trajectory
+<p><li>Convert Trajectory JSON file to CSV
+<p><li>Convert Trajectory CSV file to JSON
+<p><li>Simulate a Romi robot
+<p><li>Simulate a Differential Drive robot
+<p><li>WPILIb LabVIEW Math HTML help
+<p><li>WPILib LabVIEW Math PDF help
+
+<p>
+<img src="images/InstalledProgramMenu.png" alt="windows program menu"> 
+
+<br><br>
+<h3>Create/Edit Trajectory</h3>
+<HR SIZE="3" WIDTH=" 100.000000%" COLOR="GREY">
+
+Create or edit a trajectory using the WPILIB LabVIEW Math routines and write it to a CSV 
+(comma separated value) or JSON file that can be copied to a RoboRIO and read by 
+the robot code. The trajectory is created by:
+
+    <p><li>Defining robot properties
+    <p><li>Defining drive system constraints
+    <p><li>Defining the trajectory "waypoints".
+    <p><li>Creating and reviewing the trajectory. If changes need to be made, repeat the previous steps as needed.
+    <p><li>Write the trajectory to a file. (CSV or JSON)
+    <p><li>Optionally write trajectory definition configuration. This allows future modification without redefining entire trajectory information.
+
+<p>
+Sample screen shots
+<p>
+<img src="images/Util_create_traj.PNG" alt=Create/Edit Trajectory>
+<p>
+<img src="images/Util_create_traj2.PNG" alt=Create/Edit Trajectory>
+<p>
+Sample CSV trajectory file
+<p>
+<img src="images/trajectory_sample.PNG" alt=Create/Edit Trajectory>
+
+
+<br><br>
+<h3>Create/Edit PathFinder Differential Drive Trajectory</h3>
+<HR SIZE="3" WIDTH=" 100.000000%" COLOR="GREY">
+Create a trajectory using Jaci Brunning's Pathfinder library for a robot using a "differential 
+drive" and write it to a CSV (comma separated value) file that can be used by the WPILib LabVIEW Math 
+library.
+<p>
+More information on Pathfinder can be found here <a href="https://github.com/JaciBrunning/Pathfinder">
+https://github.com/JaciBrunning/Pathfinder</a>
+<p>
+One of the biggest differences between this Trajectory Library and Pathfinder is that Pathfinder 
+contains acceleration limiting (jerk) that does not exist in the other available libraries.
+<p>
+sample trajectory file
+<p>
+<img src="images/trajectory_pathfinder_sample.PNG" alt=Sample PathFinder Trajectory>
+
+<br><br>
+<h3>Create/Edit PathFinder Swerve Drive Trajectory</h3>
+<HR SIZE="3" WIDTH=" 100.000000%" COLOR="GREY">
+Create a trajectory using Jaci Brunning's Pathfinder library for a robot using a "swerve  
+drive" and write it to a CSV (comma separated value) file that can be used by the WPILib LabVIEW 
+Math library.
+<p>
+More information on Pathfinder can be found here <a href="https://github.com/JaciBrunning/Pathfinder">
+https://github.com/JaciBrunning/Pathfinder</a>
+<p>
+One of the biggest differences between this Trajectory Library and Pathfinder is that Pathfinder 
+contains acceleration limiting (jerk) that does not exist in the other available libraries.
+<p>
+sample trajectory file
+<p>
+<img src="images/trajectory_pathfinder_sample.PNG" alt=Sample PathFinder Trajectory>
+<p>
+
+<br><br>
+<h3>Convert Traject JSON file to CSV</h3>
+<HR SIZE="3" WIDTH=" 100.000000%" COLOR="GREY">
+This utility reads a JSON file created by the Trajectory Creation utility, PathWeaver, PathPlanner, or
+other WPILib compatible tool and converts it to a CSV file that can be used by the WPILib LabVIEW Math 
+library (The WPILib LabVIEW math library can also use the JSON file directly.)
+
+<br><br>
+<h3>Convert Traject CSV file to JSON</h3>
+<HR SIZE="3" WIDTH=" 100.000000%" COLOR="GREY">
+This utility reads a CSV file created by the Trajectory Creation utility and converts it to a JSON file 
+that can be used by the WPILib C++/Java library.  (The WPILib LabVIEW math trajectory creation tool
+can also write JSON files directly.)
+
+<br><br>
+<h3>Romi Robot Simulator</h3>
+<HR SIZE="3" WIDTH=" 100.000000%" COLOR="GREY">
+Simulate a Differential Drive robot.  
+
+
+<br><br>
+<h3>Differential Drive Simulator</h3>
+<HR SIZE="3" WIDTH=" 100.000000%" COLOR="GREY">
+Simulate a Differential Drive robot.  This allows for testing of drive code and execution of trajectories.
+<p>
+<img src="images/DiffSim_1.png" alt=Diff Drive simulator>
+<p>
+<img src="images/DiffSim_2.png" alt=Diff Drive simulator>
+<p>
+
+
+
+<br><br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+
+</BODY>
+</HTML>

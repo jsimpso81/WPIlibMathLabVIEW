@@ -9,7 +9,7 @@
 <h2 id="TypeDef" >TypeDef</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-ARM_FF" >TypeDef-ARM_FF</h3>
-<p><IMG SRC="LVtemp20221117040731_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="ARM_FF_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Data cluster for a set of functions. that compute feedforward outputs for a simple arm (modeled as a motor acting against the force of gravity on a beam suspended at an angle. <BR>
 <BR>
 Units of the gain values will dictate units of the computed feedforward.<BR>
@@ -20,11 +20,11 @@ Elements"<BR>
    - Ka - The acceleration gain.<BR>
    - KCos - The gravity gain.<BR>
    </pre></p>
-<p><IMG SRC="LVtemp20221117040735_0_0.png"  ALT="Trajectory_Library.lvlib:ARM_FF.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173405_0_0.png"  ALT="Trajectory_Library.lvlib:ARM_FF.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-BANG_BANG" >TypeDef-BANG_BANG</h3>
-<p><IMG SRC="LVtemp20221117040737_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="BANG_BANG_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Implements a bang-bang controller, which outputs either 0 or 1 depending on whether the measurement is less than the setpoint. This maximally-aggressive control approach works very well for velocity control of high-inertia mechanisms, and poorly on most other things.  <BR>
  <BR>
 Note that this is an *asymmetric* bang-bang controller - it will not exert any control effort in the reverse direction (e.g. it won't try to slow down an over-speeding shooter wheel). This asymmetry is *extremely important.* Bang-bang control is extremely simple, but also potentially hazardous. Always ensure that your motor controllers are set to "coast" before attempting to<BR>
@@ -35,17 +35,17 @@ Data stored in this cluster<BR>
    -  Setpoint<BR>
    - Measurment<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040740_0_0.png"  ALT="Trajectory_Library.lvlib:BANG_BANG.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173411_0_0.png"  ALT="Trajectory_Library.lvlib:BANG_BANG.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-BiCon_Matrix_FUNC_TYPE" >TypeDef-BiCon_Matrix_FUNC_TYPE</h3>
-<p><IMG SRC="LVtemp20221117040742_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="BiCon_Matrix_FUNC_TYPE_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
-<p><IMG SRC="LVtemp20221117040746_0_0.png"  ALT="Trajectory_Library.lvlib:BiCon_Matrix_FUNC_TYPE.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173417_0_0.png"  ALT="Trajectory_Library.lvlib:BiCon_Matrix_FUNC_TYPE.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-CALLBACK_FUNC_TYPE" >TypeDef-CALLBACK_FUNC_TYPE</h3>
-<p><IMG SRC="LVtemp20221117040747_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="CALLBACK_FUNC_TYPE_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This strictly typed function reference it used by various functions to declare the call-backs needed for operation.  It has the following parameters:<BR>
 <BR>
 Inputs:<BR>
@@ -56,45 +56,45 @@ Inputs:<BR>
 Outputs:<BR>
    - Mat Output  --  Output Matrix<BR>
    - Error  -- Boolean, If TRUE indicates an error has occured.</pre></p>
-<p><IMG SRC="LVtemp20221117040751_0_0.png"  ALT="Trajectory_Library.lvlib:CALLBACK_FUNC_TYPE.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173426_0_0.png"  ALT="Trajectory_Library.lvlib:CALLBACK_FUNC_TYPE.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-CHASSIS_SPEEDS" >TypeDef-CHASSIS_SPEEDS</h3>
-<p><IMG SRC="LVtemp20221117040753_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="CHASSIS_SPEEDS_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents the speed of a robot chassis. Although this struct contains similar members compared to a Twist2d, they do NOT represent the same thing.  Whereas a Twist2d represents a change in pose w.r.t to the robot frame of reference, this ChassisSpeeds struct represents a velocity w.r.t to the robot frame of<BR>
 reference.<BR>
 <BR>
 A strictly non-holonomic drivetrain, such as a differential drive, should never have a dy component because it can never move sideways. Holonomic drivetrains such as swerve and mecanum will often have all three components.<BR>
 <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040756_0_0.png"  ALT="Trajectory_Library.lvlib:CHASSIS_SPEEDS.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173434_0_0.png"  ALT="Trajectory_Library.lvlib:CHASSIS_SPEEDS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-CONSTRAINED_STATE" >TypeDef-CONSTRAINED_STATE</h3>
-<p><IMG SRC="LVtemp20221117040758_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="CONSTRAINED_STATE_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal data structure used by TrajectoryParam_timeParam.</pre></p>
-<p><IMG SRC="LVtemp20221117040801_0_0.png"  ALT="Trajectory_Library.lvlib:CONSTRAINED_STATE.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173440_0_0.png"  ALT="Trajectory_Library.lvlib:CONSTRAINED_STATE.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-COORDINATE_AXIS" >TypeDef-COORDINATE_AXIS</h3>
-<p><IMG SRC="LVtemp20221117040803_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="COORDINATE_AXIS_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A data cluster representing a coordinate system axis within the NWU coordinate system.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040806_0_0.png"  ALT="Trajectory_Library.lvlib:COORDINATE_AXIS.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173446_0_0.png"  ALT="Trajectory_Library.lvlib:COORDINATE_AXIS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-COORDINATE_SYSTEM" >TypeDef-COORDINATE_SYSTEM</h3>
-<p><IMG SRC="LVtemp20221117040808_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="COORDINATE_SYSTEM_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A helper data cluster that converts Pose3d objects between different standard coordinate frames. <BR>
 <BR>
 Contains:<BR>
   -- Rotation 3d  --  Rotation from this coordinate system to NWU coordinate system<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040811_0_0.png"  ALT="Trajectory_Library.lvlib:COORDINATE_SYSTEM.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173452_0_0.png"  ALT="Trajectory_Library.lvlib:COORDINATE_SYSTEM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DCMOTOR" >TypeDef-DCMOTOR</h3>
-<p><IMG SRC="LVtemp20221117040813_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="DCMOTOR_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Holds the constants for a DC motor.<BR>
 <BR>
 Data<BR>
@@ -111,11 +111,11 @@ The following pieces of data may not exit for all motors.<BR>
    -  L_H  --  Winding inductance (Henrys)  --  <BR>
    - Jr_KgM2  --  Motor moment of inertia  --  <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040816_0_0.png"  ALT="Trajectory_Library.lvlib:DCMOTOR.CTL" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173457_0_0.png"  ALT="Trajectory_Library.lvlib:DCMOTOR.CTL" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DCMOTOR_SIM" >TypeDef-DCMOTOR_SIM</h3>
-<p><IMG SRC="LVtemp20221117040818_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="DCMOTOR_SIM_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a simulated DC Motor mechanism.<BR>
 <BR>
 Cluster contains:<BR>
@@ -124,11 +124,11 @@ Cluster contains:<BR>
    - LinearSystemSim  -- Cluster for the simulation.<BR>
 <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040822_0_0.png"  ALT="Trajectory_Library.lvlib:DCMOTOR_SIM.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173503_0_0.png"  ALT="Trajectory_Library.lvlib:DCMOTOR_SIM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DEBOUNCER" >TypeDef-DEBOUNCER</h3>
-<p><IMG SRC="LVtemp20221117040824_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="DEBOUNCER_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A simple debounce filter for boolean streams. Requires that the boolean change value from baseline for a specified period of time before the filtered value changes.<BR>
 <BR>
 This cluster contains:<BR>
@@ -137,11 +137,11 @@ This cluster contains:<BR>
    - DebounceType  --  Debouce Type enum<BR>
    - Baseline  --  Boolean<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040827_0_0.png"  ALT="Trajectory_Library.lvlib:DEBOUNCER.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173510_0_0.png"  ALT="Trajectory_Library.lvlib:DEBOUNCER.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DIFF_DRIVE_ACCEL_LIMIT" >TypeDef-DIFF_DRIVE_ACCEL_LIMIT</h3>
-<p><IMG SRC="LVtemp20221117040829_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="DIFF_DRIVE_ACCEL_LIMIT_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Filters the provided voltages to limit a differential drive's linear and angular acceleration.<BR>
 <BR>
 The differential drive model can be created via the functions in LinearSystemId.<BR>
@@ -153,20 +153,20 @@ The data values are:<BR>
    - maxLinearAccel  --  (meters/sec*2)<BR>
    - maxAngularAccel   --  (radians/sec^2)<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040832_0_0.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_ACCEL_LIMIT.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173520_0_0.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_ACCEL_LIMIT.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DIFF_DRIVE_KINEMATICS" >TypeDef-DIFF_DRIVE_KINEMATICS</h3>
-<p><IMG SRC="LVtemp20221117040834_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="DIFF_DRIVE_KINEMATICS_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Helper class that converts a chassis velocity (dx and dtheta components) to left and right wheel velocities for a differential drive.<BR>
 <BR>
 Inverse kinematics converts a desired chassis speed into left and right velocity components whereas forward kinematics converts left and right component velocities into a linear and angular chassis speed.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040838_0_0.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_KINEMATICS.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173527_0_0.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_KINEMATICS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DIFF_DRIVE_POSE_EST" >TypeDef-DIFF_DRIVE_POSE_EST</h3>
-<p><IMG SRC="LVtemp20221117040839_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="DIFF_DRIVE_POSE_EST_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of subVI wraps an UnscentedKalmanFilter to fuse latency-compensated vision measurements with differential drive encoder measurements. It will correct for noisy vision measurements and encoder drift. It is intended to be an easy drop-in for DifferentialDriveOdometry; in fact, if you never call DifferentialDrivePoseEstimator_addVisionMeasurement and only call DifferentialDrivePoseEstimator_update then this will behave exactly the same as DifferentialDriveOdometry.<BR>
  <BR>
 DifferentialDrivePoseEstimator_update should be called every robot loop (if your robot loops are faster than the default then you should change specify the update time when creating this data cluster. DifferentialDrivePoseEstimator_addVisionMeasurement can be called as infrequently as you want; if you never call it then this class will behave exactly like regular encoder odometry.<BR>
@@ -185,11 +185,11 @@ Our state-space system is:<BR>
     y = [[x, y, theta]]?  from vision, or y = [[dist_l, dist_r, theta]]  from encoders and gyro.<BR>
  <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040843_0_0.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_POSE_EST.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173534_0_0.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_POSE_EST.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DIFF_DRIVE_TRAIN_SIM" >TypeDef-DIFF_DRIVE_TRAIN_SIM</h3>
-<p><IMG SRC="LVtemp20221117040845_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="DIFF_DRIVE_TRAIN_SIM_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This data cluster holds the values for the Differential Drive Train functions that  simulate the state of the drivetrain. In simulationPeriodic, users should first set inputs from motors with setInputs(double, double)}, call update(double)} to update the simulation, and set estimated encoder and gyro positions, as well as estimated odometry pose. <BR>
  <BR>
 Our state-space system is:<BR>
@@ -215,23 +215,23 @@ The data values are:<BR>
    - CurrentGearing  --  <BR>
    - WheelRadius  --  (Meters)<BR>
    - RB  -- Radius of the robot base ( TrackWidth / 2 )  (Meters)</pre></p>
-<p><IMG SRC="LVtemp20221117040849_0_0.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_TRAIN_SIM.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173540_0_0.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_TRAIN_SIM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DISPLAY_WAYPOINT" >TypeDef-DISPLAY_WAYPOINT</h3>
-<p><IMG SRC="LVtemp20221117040850_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="DISPLAY_WAYPOINT_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Defines a trajectory waypoint.  This is a convienence TypeDef for use with utility programs.  The actual trajectory creation subVI take a number of different data types, which can all be derived from this way point.  In some cases, such as cubic spline creation, the angle data for the interior waypoints is ignored.  The cubic routine calculates optimum angles.</pre></p>
-<p><IMG SRC="LVtemp20221117040854_0_0.png"  ALT="Trajectory_Library.lvlib:DISPLAY_WAYPOINT.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173545_0_0.png"  ALT="Trajectory_Library.lvlib:DISPLAY_WAYPOINT.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DISPLAY_WEIGHTED_WAYPOINT" >TypeDef-DISPLAY_WEIGHTED_WAYPOINT</h3>
-<p><IMG SRC="LVtemp20221117040855_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="DISPLAY_WEIGHTED_WAYPOINT_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Defines a trajectory waypoint.  This is a convienence TypeDef for use to display weighted waypoint.  The actual trajectory creation subVI take a number of different data types, which can all be derived from this way point.  In some cases, such as cubic spline creation, the angle data for the interior waypoints is ignored.  The cubic routine calculates optimum angles.</pre></p>
-<p><IMG SRC="LVtemp20221117040859_0_0.png"  ALT="Trajectory_Library.lvlib:DISPLAY_WEIGHTED_WAYPOINT.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173551_0_0.png"  ALT="Trajectory_Library.lvlib:DISPLAY_WEIGHTED_WAYPOINT.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-ELEVATOR_SIM" >TypeDef-ELEVATOR_SIM</h3>
-<p><IMG SRC="LVtemp20221117040901_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="ELEVATOR_SIM_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a simulated elevator mechanism.<BR>
 <BR>
 Cluster contains:<BR>
@@ -243,11 +243,11 @@ Cluster contains:<BR>
    - CarriageMass  -- Double, the mass of the elevator carriage (Kilograms)<BR>
    - LinearSystemSim  -- Cluster for the simulated system.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040904_0_0.png"  ALT="Trajectory_Library.lvlib:ELEVATOR_SIM.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173557_0_0.png"  ALT="Trajectory_Library.lvlib:ELEVATOR_SIM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-ELEV_FF" >TypeDef-ELEV_FF</h3>
-<p><IMG SRC="LVtemp20221117040906_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="ELEV_FF_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A helper set of functions that computes feedforward outputs for a simple elevator (modeled as a motor acting against the force of gravity).<BR>
 <BR>
 Data cluster contents:<BR>
@@ -256,11 +256,11 @@ Data cluster contents:<BR>
    - Ka  --  The acceration gain<BR>
    - Kg  -- The gravity gain<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040909_0_0.png"  ALT="Trajectory_Library.lvlib:ELEV_FF.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173602_0_0.png"  ALT="Trajectory_Library.lvlib:ELEV_FF.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-EXTENDED_KALMAN_CORRECT_FUNC_GROUP" >TypeDef-EXTENDED_KALMAN_CORRECT_FUNC_GROUP</h3>
-<p><IMG SRC="LVtemp20221117040911_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="EXTENDED_KALMAN_CORRECT_FUNC_GROUP_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This data cluster holds data for the call back functions used by the Extended Kalman FIlter.<BR>
 <BR>
 The cluster contains:<BR>
@@ -269,22 +269,22 @@ The cluster contains:<BR>
    - H_Func  --  Strictly typed function referenced.<BR>
    - H_FuncExtra  --  Variant containing extra data, if any, used by the callback function.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040914_0_0.png"  ALT="Trajectory_Library.lvlib:EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173608_0_0.png"  ALT="Trajectory_Library.lvlib:EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-EXTENDED_KALMAN_FILTER" >TypeDef-EXTENDED_KALMAN_FILTER</h3>
-<p><IMG SRC="LVtemp20221117040916_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="EXTENDED_KALMAN_FILTER_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">THIS IS A WORK IN PROGRESS.  PROBABLY NOT FIT FOR USE YET...<BR>
 <BR>
 Kalman filters combine predictions from a model and measurements to give an estimate of the true system state. This is useful because many states cannot be measured directly as a result of sensor noise, or because the state is "hidden".<BR>
  <BR>
 The Extended Kalman filter is just like the KalmanFilter Kalman filter, but we make a linear approximation of nonlinear dynamics and/or nonlinear measurement models. This means that the EKF works with nonlinear systems.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040920_0_0.png"  ALT="Trajectory_Library.lvlib:EXTENDED_KALMAN_FILTER.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173613_0_0.png"  ALT="Trajectory_Library.lvlib:EXTENDED_KALMAN_FILTER.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-FLYWHEEL_SIM" >TypeDef-FLYWHEEL_SIM</h3>
-<p><IMG SRC="LVtemp20221117040922_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="FLYWHEEL_SIM_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a simulated flywheel mechanism.<BR>
 <BR>
 Cluster contains:<BR>
@@ -293,11 +293,11 @@ Cluster contains:<BR>
    - LinearSystemSim  -- Cluster for the simulation.<BR>
 <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040925_0_0.png"  ALT="Trajectory_Library.lvlib:FLYWHEEL_SIM.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173619_0_0.png"  ALT="Trajectory_Library.lvlib:FLYWHEEL_SIM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-FUNCTION_GENERATOR" >TypeDef-FUNCTION_GENERATOR</h3>
-<p><IMG SRC="LVtemp20221117040927_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="FUNCTION_GENERATOR_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Function Generators (Interpolating Tree Maps) are used to get values at points that are not defined by making a guess from points that are defined. This uses linear interpolation.<BR>
 <BR>
 The data cluster contains:<BR>
@@ -307,17 +307,17 @@ The data cluster contains:<BR>
    --  MaxX  -- Largest X value.  <BR>
    --  ItemCount  -- Number of items in the X and Y arrays.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040930_0_0.png"  ALT="Trajectory_Library.lvlib:FUNCTION_GENERATOR.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173625_0_0.png"  ALT="Trajectory_Library.lvlib:FUNCTION_GENERATOR.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-FUNCTION_GENERATOR_MATRIX" >TypeDef-FUNCTION_GENERATOR_MATRIX</h3>
-<p><IMG SRC="LVtemp20221117040932_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="FUNCTION_GENERATOR_MATRIX_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Function Generator data cluster</pre></p>
-<p><IMG SRC="LVtemp20221117040935_0_0.png"  ALT="Trajectory_Library.lvlib:FUNCTION_GENERATOR_MATRIX.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173630_0_0.png"  ALT="Trajectory_Library.lvlib:FUNCTION_GENERATOR_MATRIX.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-HOLONOMIC_DRV_CTRL" >TypeDef-HOLONOMIC_DRV_CTRL</h3>
-<p><IMG SRC="LVtemp20221117040937_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="HOLONOMIC_DRV_CTRL_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This holonomic drive controller can be used to follow trajectories using a holonomic drive train (i.e. swerve or mecanum). Holonomic trajectory following is a much simpler problem to solve compared to skid-steer style drivetrains because it is possible to individually control forward, sideways, and angular velocity.<BR>
 <BR>
 The holonomic drive controller takes in one PID controller for each direction, forward and sideways, and one profiled PID controller for the angular direction. Because the heading dynamics are decoupled from translations, users can specify a custom heading that the drivetrain should point toward. This heading reference is profiled for smoothness.<BR>
@@ -332,11 +332,11 @@ The cluster contains:<BR>
    - PID_yCtrl  --  PID to control the Y position<BR>
    - PROF_PID_ThetaCtrl  -- Profiled PID to control the rotation.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040941_0_0.png"  ALT="Trajectory_Library.lvlib:HOLONOMIC_DRV_CTRL.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173636_0_0.png"  ALT="Trajectory_Library.lvlib:HOLONOMIC_DRV_CTRL.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-IMPLICIT_MODEL_FOLLOWER" >TypeDef-IMPLICIT_MODEL_FOLLOWER</h3>
-<p><IMG SRC="LVtemp20221117040943_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="IMPLICIT_MODEL_FOLLOWER_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Contains the controller coefficients and logic for an implicit model follower.<BR>
 <BR>
 Implicit model following lets us design a feedback controller that erases the dynamics of our system and makes it behave like some other system. This can be used to make a drivetrain more controllable during teleop driving by making it behave like a slower or more benign drivetrain.<BR>
@@ -350,11 +350,11 @@ The data cluster contains:<BR>
    - inputs<BR>
 <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040946_0_0.png"  ALT="Trajectory_Library.lvlib:IMPLICIT_MODEL_FOLLOWER.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173642_0_0.png"  ALT="Trajectory_Library.lvlib:IMPLICIT_MODEL_FOLLOWER.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-KALMAN_FILTER" >TypeDef-KALMAN_FILTER</h3>
-<p><IMG SRC="LVtemp20221117040948_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="KALMAN_FILTER_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A Kalman filter combines predictions from a model and measurements to give an estimate of the true system state. This is useful because many states cannot be measured directly as a result of sensor noise, or because the state is "hidden".<BR>
  <BR>
 Kalman filters use a K gain matrix to determine whether to trust the model or measurements more. Kalman filter theory uses statistics to compute an optimal K gain which minimizes the sum of squares error in the state estimate. This K gain is used to correct the state estimate by some amount of the difference between the actual measurements and the measurements predicted by the model.<BR>
@@ -370,11 +370,11 @@ The cluster contains:<BR>
 <BR>
 <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040952_0_0.png"  ALT="Trajectory_Library.lvlib:KALMAN_FILTER.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173647_0_0.png"  ALT="Trajectory_Library.lvlib:KALMAN_FILTER.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-KALMAN_FILTER_LATENCY_COMP" >TypeDef-KALMAN_FILTER_LATENCY_COMP</h3>
-<p><IMG SRC="LVtemp20221117040953_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="KALMAN_FILTER_LATENCY_COMP_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Data cluster holding past Observer snapshots that can be used to compensate for time latency.<BR>
 <BR>
 The cluster contains:<BR>
@@ -382,11 +382,11 @@ The cluster contains:<BR>
         - TimeStamp  --  Time stamp of snapshot<BR>
         - ObserverSnapShot  --  System state at time of snapshot.  <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117040957_0_0.png"  ALT="Trajectory_Library.lvlib:KALMAN_FILTER_LATENCY_COMP.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173653_0_0.png"  ALT="Trajectory_Library.lvlib:KALMAN_FILTER_LATENCY_COMP.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP" >TypeDef-KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP</h3>
-<p><IMG SRC="LVtemp20221117040959_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This data cluster holds data for the call back functions used by the Kalman FIlter Latency Compensator.<BR>
 <BR>
 The cluster contains:<BR>
@@ -396,11 +396,11 @@ The cluster contains:<BR>
    - H_FuncExtra  --  Variant containing extra data, if any, used by the callback function.<BR>
    - VisionCorrect_Func  --  Strictly typed function referenced.<BR>
    - VIsionCorrectExtra  --  Variant containing extra data, if any, used by the callback function.</pre></p>
-<p><IMG SRC="LVtemp20221117041002_0_0.png"  ALT="Trajectory_Library.lvlib:KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173659_0_0.png"  ALT="Trajectory_Library.lvlib:KALMAN_FILTER_LATENCY_COMP_FUNC_GROUP.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_FILTER" >TypeDef-LINEAR_FILTER</h3>
-<p><IMG SRC="LVtemp20221117041004_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="LINEAR_FILTER_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This cluster stores the data for a set of Vis that implement a linear, digital filter. All types of FIR and IIR filters are supported.  A set of VIs are provided to create commonly used types of filters.<BR>
  <BR>
 Filters are of the form: <BR>
@@ -441,11 +441,11 @@ Elements:<BR>
    - Outputs - Array of the last n saved outputs<BR>
    -  InGainCount - Number of input gain terms<BR>
    -  OutGainCount - number of output gain terms</pre></p>
-<p><IMG SRC="LVtemp20221117041007_0_0.png"  ALT="Trajectory_Library.lvlib:LINEAR_FILTER.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173704_0_0.png"  ALT="Trajectory_Library.lvlib:LINEAR_FILTER.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_PLANT_INV_FF" >TypeDef-LINEAR_PLANT_INV_FF</h3>
-<p><IMG SRC="LVtemp20221117041009_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="LINEAR_PLANT_INV_FF_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A plant inversion model-based feedforward from a LinearSystem<BR>
 <BR>
 The feedforward is calculated as <BR>
@@ -460,11 +460,11 @@ This cluster contains:<BR>
    - m_A  --  Discrete system matrix of the plant being controlled<BR>
    - States  --  Number of states<BR>
    - Inputs  --  Number of inputs</pre></p>
-<p><IMG SRC="LVtemp20221117041013_0_0.png"  ALT="Trajectory_Library.lvlib:LINEAR_PLANT_INV_FF.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173710_0_0.png"  ALT="Trajectory_Library.lvlib:LINEAR_PLANT_INV_FF.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_QUADRATIC_REGULATOR" >TypeDef-LINEAR_QUADRATIC_REGULATOR</h3>
-<p><IMG SRC="LVtemp20221117041015_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="LINEAR_QUADRATIC_REGULATOR_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Contains the controller coefficients and logic for a linear-quadratic regulator (LQR). LQRs use the control law u = K(r - x).<BR>
  <BR>
 This cluster contains:<BR>
@@ -473,11 +473,11 @@ This cluster contains:<BR>
    -  m_K  --  Controller gain.<BR>
    - States  --  Number of states<BR>
    - Inputs  --  Number of inputs.</pre></p>
-<p><IMG SRC="LVtemp20221117041019_0_0.png"  ALT="Trajectory_Library.lvlib:LINEAR_QUADRATIC_REGULATOR.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173715_0_0.png"  ALT="Trajectory_Library.lvlib:LINEAR_QUADRATIC_REGULATOR.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_SYSTEM" >TypeDef-LINEAR_SYSTEM</h3>
-<p><IMG SRC="LVtemp20221117041021_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="LINEAR_SYSTEM_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Holds the data for a linear system.  The data cluster contains:<BR>
 <BR>
    - m_A  --  Continuous system matrix.<BR>
@@ -486,11 +486,11 @@ This cluster contains:<BR>
    - m_D  --  Feedthrough matrix.<BR>
 <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041024_0_0.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173721_0_0.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_SYSTEM_LOOP" >TypeDef-LINEAR_SYSTEM_LOOP</h3>
-<p><IMG SRC="LVtemp20221117041026_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="LINEAR_SYSTEM_LOOP_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Combines a controller, feedforward, and observer for controlling a mechanism with full state  feedback.<BR>
  <BR>
 For everything in this file, "inputs" and "outputs" are defined from the perspective of the  plant. This means U is an input and Y is an output (because you give the plant U (powers) and it  gives you back a Y (sensor values). This is the opposite of what they mean from the perspective of the controller (U is an output because that's what goes to the motors and Y is an input because that's what comes back from the sensors).<BR>
@@ -501,11 +501,11 @@ This cluster contains:<BR>
    - Observer  --  Kalman Filter data cluster<BR>
    - Next_R  --  Controllers next reference<BR>
    - Clamp Max  --  Maximum clamping values</pre></p>
-<p><IMG SRC="LVtemp20221117041030_0_0.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173727_0_0.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_SYSTEM_SIM" >TypeDef-LINEAR_SYSTEM_SIM</h3>
-<p><IMG SRC="LVtemp20221117041032_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="LINEAR_SYSTEM_SIM_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This cluster helps simulate linear systems. To use this class, implement a loop, perhaps in Periodic Tasks.  Then call "setInput" with the inputs to the system (usually voltage).   Then call "update" to update the simulation.   Then, set simulated sensor readings with the simulated positions in "getOutput".<BR>
 <BR>
 The cluster contains:<BR>
@@ -515,11 +515,11 @@ The cluster contains:<BR>
    - m_U  --  input variable<BR>
    - MeasureStdDev  --  The standard deviations of measurements, used for adding noise to the measurements.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041035_0_0.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_SIM.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173733_0_0.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_SIM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LTV_DIFF_DRIVE_CTRL" >TypeDef-LTV_DIFF_DRIVE_CTRL</h3>
-<p><IMG SRC="LVtemp20221117041037_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="LTV_DIFF_DRIVE_CTRL_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The linear time-varying differential drive controller has a similar form to the LQR, but the model used to compute the controller gain is the nonlinear model linearized around the drivetrain's current state. We precomputed gains for important places in our state-space, then interpolated between them with a LUT to save computational resources.Filters the provided voltages to limit a differential drive's linear and angular acceleration.<BR>
 <BR>
 The differential drive model can be created via the functions in LinearSystemId.<BR>
@@ -530,17 +530,17 @@ The data values are:<BR>
    - tolerance<BR>
    - trackWidth -- trackwidth (meters) <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041041_0_0.png"  ALT="Trajectory_Library.lvlib:LTV_DIFF_DRIVE_CTRL.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173740_0_0.png"  ALT="Trajectory_Library.lvlib:LTV_DIFF_DRIVE_CTRL.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LTV_DIFF_DRIVE_CTRL_STATE_ENUM" >TypeDef-LTV_DIFF_DRIVE_CTRL_STATE_ENUM</h3>
-<p><IMG SRC="LVtemp20221117041043_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="LTV_DIFF_DRIVE_CTRL_STATE_ENUM_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">An enumerated varible containing names for the state indices of the LTV Differential Drive Train controller.</pre></p>
-<p><IMG SRC="LVtemp20221117041046_0_0.png"  ALT="Trajectory_Library.lvlib:LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173747_0_0.png"  ALT="Trajectory_Library.lvlib:LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LTV_UNICYCLE_CONTROLLER" >TypeDef-LTV_UNICYCLE_CONTROLLER</h3>
-<p><IMG SRC="LVtemp20221117041048_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="LTV_UNICYCLE_CONTROLLER_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The linear time-varying unicycle controller has a similar form to the LQR, but the model used to compute the controller gain is the nonlinear model linearized around the drivetrain's current state.<BR>
 <BR>
 Holds the data an LTV Unicycle Controller.  The data cluster contains:<BR>
@@ -554,11 +554,11 @@ Holds the data an LTV Unicycle Controller.  The data cluster contains:<BR>
    - LQR K Table<BR>
 <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041051_0_0.png"  ALT="Trajectory_Library.lvlib:LTV_UNICYCLE_CONTROLLER.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173753_0_0.png"  ALT="Trajectory_Library.lvlib:LTV_UNICYCLE_CONTROLLER.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-MECA_DRIVE_KINEMATICS" >TypeDef-MECA_DRIVE_KINEMATICS</h3>
-<p><IMG SRC="LVtemp20221117041053_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="MECA_DRIVE_KINEMATICS_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual wheel speeds.<BR>
 <BR>
 The inverse kinematics (converting from a desired chassis velocity to individual wheel speeds) uses the relative locations of the wheels with respect to the center of rotation. The center of rotation for inverse kinematics is also variable. This means that you can set your set your center of rotation in a corner of the robot to perform special evasion manuevers.<BR>
@@ -569,20 +569,20 @@ The inverse kinematics: [wheelSpeeds] = [wheelLocations][chassisSpeeds] We take 
  <BR>
 Forward kinematics is also used for odometry -- determining the position of the robot on the field using encoders and a gyro.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041057_0_0.png"  ALT="Trajectory_Library.lvlib:MECA_DRIVE_KINEMATICS.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173800_0_0.png"  ALT="Trajectory_Library.lvlib:MECA_DRIVE_KINEMATICS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-MECA_DRIVE_ODOMETRY" >TypeDef-MECA_DRIVE_ODOMETRY</h3>
-<p><IMG SRC="LVtemp20221117041059_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="MECA_DRIVE_ODOMETRY_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Class for mecanum drive odometry. Odometry allows you to track the robot's position on the field over a course of a match using readings from your mecanum wheel encoders.<BR>
  <BR>
 Teams can use odometry during the autonomous period for complex tasks like path following. Furthermore, odometry can be used for latency compensation when using computer-vision systems.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041102_0_0.png"  ALT="Trajectory_Library.lvlib:MECA_DRIVE_ODOMETRY.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173807_0_0.png"  ALT="Trajectory_Library.lvlib:MECA_DRIVE_ODOMETRY.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-MECA_DRIVE_POSE_EST" >TypeDef-MECA_DRIVE_POSE_EST</h3>
-<p><IMG SRC="LVtemp20221117041104_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="MECA_DRIVE_POSE_EST_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This data cluster and its associated function blocks wrap an UnscentedKalmanFilter Unscented Kalman Filter to fuse latency-compensated vision measurements with mecanum drive encoder velocity measurements. It will correct for noisy measurements and encoder drift. It is intended to be an easy but more accurate drop-in for MecanumDriveOdometry.<BR>
  <BR>
 MecanumDrivePoseEstimator_update should be called every robot loop. If your loops are faster or slower than the default of 20 ms, then you should change the nominal delta time using the secondary constructor: MecanumDrivePoseEstimator_MecanumDrivePoseEstimator(Rotation2d, Pose2d MecanumDriveWheelPositions, MecanumDriveKinematics, Matrix, Matrix, Matrix, double).<BR>
@@ -610,11 +610,11 @@ The state-space system used internally has the following states (x), inputs (u),
         containing gyro heading, followed by the distance driven by the front left, front <BR>
         right, rear left, and rear right wheels.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041108_0_0.png"  ALT="Trajectory_Library.lvlib:MECA_DRIVE_POSE_EST.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173816_0_0.png"  ALT="Trajectory_Library.lvlib:MECA_DRIVE_POSE_EST.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-MECA_WHEEL_POSITIONS" >TypeDef-MECA_WHEEL_POSITIONS</h3>
-<p><IMG SRC="LVtemp20221117041110_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="MECA_WHEEL_POSITIONS_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents the mechanum drive wheel positions.  Cluster contains:<BR>
 <BR>
    --  frontLeft  --  double -- Distance measured by the front left wheel. (Meters)<BR>
@@ -622,17 +622,17 @@ The state-space system used internally has the following states (x), inputs (u),
    --  rearLeft  --  double -- Distance measured by the rear left wheel. (Meters)<BR>
    --  rearRight  --  double -- Distance measured by the rear right wheel. (Meters)<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041113_0_0.png"  ALT="Trajectory_Library.lvlib:MECA_WHEEL_POSITIONS.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173822_0_0.png"  ALT="Trajectory_Library.lvlib:MECA_WHEEL_POSITIONS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-MECA_WHEEL_SPEEDS" >TypeDef-MECA_WHEEL_SPEEDS</h3>
-<p><IMG SRC="LVtemp20221117041115_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="MECA_WHEEL_SPEEDS_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents the mechanum drive wheel speeds</pre></p>
-<p><IMG SRC="LVtemp20221117041118_0_0.png"  ALT="Trajectory_Library.lvlib:MECA_WHEEL_SPEEDS.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173828_0_0.png"  ALT="Trajectory_Library.lvlib:MECA_WHEEL_SPEEDS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-MEDIAN_FILTER" >TypeDef-MEDIAN_FILTER</h3>
-<p><IMG SRC="LVtemp20221117041120_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="MEDIAN_FILTER_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A cluster that implements a moving-window median filter. Useful for reducing measurement noise especially with processes that generate occasional, extreme outliers (such as values from vision processing, LIDAR, or ultrasonic sensors).<BR>
 <BR>
 This cluster contains:<BR>
@@ -640,11 +640,11 @@ This cluster contains:<BR>
    - Size  --  Number of values allowed in buffer.   The number of samples in the moving window.<BR>
    - CurrentSize  -- Current number of values in buffer;<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041123_0_0.png"  ALT="Trajectory_Library.lvlib:MEDIAN_FILTER.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173834_0_0.png"  ALT="Trajectory_Library.lvlib:MEDIAN_FILTER.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-MERWE_SCALED_SIGMA_PTS" >TypeDef-MERWE_SCALED_SIGMA_PTS</h3>
-<p><IMG SRC="LVtemp20221117041125_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="MERWE_SCALED_SIGMA_PTS_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Generates sigma points and weights according to Van der Merwe's 2004 dissertation[1] for the UnscentedKalmanFilter function.<BR>
  <BR>
 It parametrizes the sigma points using alpha, beta, kappa terms, and is the version seen in most publications. Unless you know better, this should be your default choice.<BR>
@@ -663,11 +663,11 @@ This cluster contains:<BR>
 Note:<BR>
    - Beta is not included in the data, it is calculated or passed as a parameter.  (Default: 3 - States)<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041129_0_0.png"  ALT="Trajectory_Library.lvlib:MERWE_SCALED_SIGMA_PTS.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173841_0_0.png"  ALT="Trajectory_Library.lvlib:MERWE_SCALED_SIGMA_PTS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-OBSERVER_SNAPSHOT" >TypeDef-OBSERVER_SNAPSHOT</h3>
-<p><IMG SRC="LVtemp20221117041131_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="OBSERVER_SNAPSHOT_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster containing the data for a single snap shot of the Kalman Filter Latency Compensator.<BR>
 <BR>
 The cluster contains:<BR>
@@ -676,30 +676,30 @@ The cluster contains:<BR>
    - Inputs<BR>
    - LocalMeasurements<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041134_0_0.png"  ALT="Trajectory_Library.lvlib:OBSERVER_SNAPSHOT.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173848_0_0.png"  ALT="Trajectory_Library.lvlib:OBSERVER_SNAPSHOT.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-OBSERVER_SNAP_LIST_ITEM" >TypeDef-OBSERVER_SNAP_LIST_ITEM</h3>
-<p><IMG SRC="LVtemp20221117041136_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="OBSERVER_SNAP_LIST_ITEM_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Observer List Item cluster contains a timestamped Observer Snapshot used by the Kalman Filter Latency Compensator.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041140_0_0.png"  ALT="Trajectory_Library.lvlib:OBSERVER_SNAP_LIST_ITEM.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173853_0_0.png"  ALT="Trajectory_Library.lvlib:OBSERVER_SNAP_LIST_ITEM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PARAM_STACK" >TypeDef-PARAM_STACK</h3>
-<p><IMG SRC="LVtemp20221117041142_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="PARAM_STACK_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Stack (Array) of data used by SplineParam_Spline_T0_T1.  </pre></p>
-<p><IMG SRC="LVtemp20221117041145_0_0.png"  ALT="Trajectory_Library.lvlib:PARAM_STACK.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173859_0_0.png"  ALT="Trajectory_Library.lvlib:PARAM_STACK.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PARAM_STACK_ITEM" >TypeDef-PARAM_STACK_ITEM</h3>
-<p><IMG SRC="LVtemp20221117041147_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="PARAM_STACK_ITEM_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Stack data item used by SplineParam_Spline_T0_T1.  </pre></p>
-<p><IMG SRC="LVtemp20221117041150_0_0.png"  ALT="Trajectory_Library.lvlib:PARAM_STACK_ITEM.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173905_0_0.png"  ALT="Trajectory_Library.lvlib:PARAM_STACK_ITEM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PID_ADV_LIMITS" >TypeDef-PID_ADV_LIMITS</h3>
-<p><IMG SRC="LVtemp20221117041152_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="PID_ADV_LIMITS_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster containing the limits for the Advanced PID controller.  <BR>
 <BR>
 This cluster contains:<BR>
@@ -710,11 +710,11 @@ This cluster contains:<BR>
    - Min_Output  --  Minimum allowed output (Used when applying integral windup protection.)<BR>
 <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041155_0_0.png"  ALT="Trajectory_Library.lvlib:PID_ADV_LIMITS.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173912_0_0.png"  ALT="Trajectory_Library.lvlib:PID_ADV_LIMITS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PID_ADV_TUNING" >TypeDef-PID_ADV_TUNING</h3>
-<p><IMG SRC="LVtemp20221117041157_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="PID_ADV_TUNING_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This cluster contains the tuning parameters used by the Advanced PID controller.<BR>
 <BR>
 This cluster contains:<BR>
@@ -726,11 +726,11 @@ This cluster contains:<BR>
    - Min_Integral  --  Minimum allowed integral value (Default -1.0)<BR>
    - DerivativeFilter  --  Boolean indicating that derivative error value filtering is desired.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041201_0_0.png"  ALT="Trajectory_Library.lvlib:PID_ADV_TUNING.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173917_0_0.png"  ALT="Trajectory_Library.lvlib:PID_ADV_TUNING.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PID_CONTROLLER" >TypeDef-PID_CONTROLLER</h3>
-<p><IMG SRC="LVtemp20221117041202_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="PID_CONTROLLER_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This implements a non-interacting PID where the Kp, Ki, Kd constants do not interact with each other (as is the case with a classical PID implementation).  Tuning schemes applicable to "classical" PIDs will need to consider the independence of the K values when applying new tuning.<BR>
 <BR>
 This cluster contains:<BR>
@@ -764,11 +764,11 @@ These values are used with the Advanced PID<BR>
    - Prev_F_P2  --  Internal value.<BR>
    - AntiWindupActive  --  Boolean indicating that integral anti-windup protection is active (limiting the integral term)<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041206_0_0.png"  ALT="Trajectory_Library.lvlib:PID_CONTROLLER.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173923_0_0.png"  ALT="Trajectory_Library.lvlib:PID_CONTROLLER.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PID_ERROR_TOLERANCE" >TypeDef-PID_ERROR_TOLERANCE</h3>
-<p><IMG SRC="LVtemp20221117041207_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="PID_ERROR_TOLERANCE_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This cluster contains the velocity and position tolerance for determining AtSetpoint.<BR>
 <BR>
 This cluster contains:<BR>
@@ -776,11 +776,11 @@ This cluster contains:<BR>
    - VelocityTolerance  --  The velocity error that is considered at setpoint.  (Not used in control.)  (Default: Infinity)<BR>
 <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041211_0_0.png"  ALT="Trajectory_Library.lvlib:PID_ERROR_TOLERANCE.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173929_0_0.png"  ALT="Trajectory_Library.lvlib:PID_ERROR_TOLERANCE.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PID_INPUT_LIMITS" >TypeDef-PID_INPUT_LIMITS</h3>
-<p><IMG SRC="LVtemp20221117041212_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="PID_INPUT_LIMITS_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This cluster contains the input limit parameters for the "normal" PID controller<BR>
 <BR>
 This cluster contains:<BR>
@@ -788,11 +788,11 @@ This cluster contains:<BR>
    - Min_Input  --  If Continuous, this defins the minimum input value.  (Going below this wraps to the Max_Input.)<BR>
    - Continuous  --  Boolean indicating that the measurement value wraps around (absoulte encoder or gyro)<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041216_0_0.png"  ALT="Trajectory_Library.lvlib:PID_INPUT_LIMITS.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173935_0_0.png"  ALT="Trajectory_Library.lvlib:PID_INPUT_LIMITS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PID_TUNING" >TypeDef-PID_TUNING</h3>
-<p><IMG SRC="LVtemp20221117041217_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="PID_TUNING_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This cluster contains the tuning parameters for the "normal" PID controller.<BR>
 <BR>
 This cluster contains:<BR>
@@ -802,32 +802,32 @@ This cluster contains:<BR>
    - Max_Integral  --  Maximum allowed integral value (Default 1.0)<BR>
    - Min_Integral  --  Minimum allowed integral value (Default -1.0)<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041221_0_0.png"  ALT="Trajectory_Library.lvlib:PID_TUNING.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173940_0_0.png"  ALT="Trajectory_Library.lvlib:PID_TUNING.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-POSE2D" >TypeDef-POSE2D</h3>
-<p><IMG SRC="LVtemp20221117041222_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="POSE2D_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a 2d pose containing translational and rotational elements.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041226_0_0.png"  ALT="Trajectory_Library.lvlib:POSE2D.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173946_0_0.png"  ALT="Trajectory_Library.lvlib:POSE2D.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-POSE3D" >TypeDef-POSE3D</h3>
-<p><IMG SRC="LVtemp20221117041227_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="POSE3D_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a 3D pose containing translational and rotational elements. <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041231_0_0.png"  ALT="Trajectory_Library.lvlib:POSE3D.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173951_0_0.png"  ALT="Trajectory_Library.lvlib:POSE3D.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-POSEwCURVATURE" >TypeDef-POSEwCURVATURE</h3>
-<p><IMG SRC="LVtemp20221117041232_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="POSEwCURVATURE_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a pair of a pose and a curvature.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041236_0_0.png"  ALT="Trajectory_Library.lvlib:POSEwCURVATURE.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113173956_0_0.png"  ALT="Trajectory_Library.lvlib:POSEwCURVATURE.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PROFILED_PID_CONTROLLER" >TypeDef-PROFILED_PID_CONTROLLER</h3>
-<p><IMG SRC="LVtemp20221117041237_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="PROFILED_PID_CONTROLLER_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Implements a PID control loop whose setpoint is constrained by a trapezoid profile. Users should call reset when they first start running the controller to avoid unwanted behavior.<BR>
 <BR>
 This cluster contains:<BR>
@@ -836,18 +836,18 @@ This cluster contains:<BR>
    - Setpoint  --  TrapezoidProfile containing the setpoint.<BR>
    -Constraing  --  TrapezoidProfileConstraints containing the velocity and acceleration constraint.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041241_0_0.png"  ALT="Trajectory_Library.lvlib:PROFILED_PID_CONTROLLER.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174002_0_0.png"  ALT="Trajectory_Library.lvlib:PROFILED_PID_CONTROLLER.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-QUATERNION" >TypeDef-QUATERNION</h3>
-<p><IMG SRC="LVtemp20221117041243_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="QUATERNION_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Quaternion.  One use of this is  to represent a 3d Rotation.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041246_0_0.png"  ALT="Trajectory_Library.lvlib:QUATERNION.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174008_0_0.png"  ALT="Trajectory_Library.lvlib:QUATERNION.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-RAMSETE" >TypeDef-RAMSETE</h3>
-<p><IMG SRC="LVtemp20221117041248_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="RAMSETE_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Ramsete is a nonlinear time-varying feedback controller for unicycle models that drives the model to a desired pose along a two-dimensional trajectory. Why would we need a nonlinear control law in addition to the linear ones we have used so far like PID? If we use the original approach with PID controllers for left and right position and velocity states, the controllers only deal with the local pose. If the robot deviates from the path, there is no way for the controllers to correct and the robot may not reach the desired global pose. This is due to multiple endpoints existing for the robot which have the same encoder path arc lengths.<BR>
  <BR>
 Instead of using wheel path arc lengths (which are in the robot's local coordinate frame), nonlinear controllers like pure pursuit and Ramsete use global pose. The controller uses this extra information to guide a linear reference tracker like the PID controllers back in by adjusting the references of the PID controllers.<BR>
@@ -866,11 +866,11 @@ This cluster contains:<BR>
   -- Pose Error  -- Current position and heading error.<BR>
 <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041251_0_0.png"  ALT="Trajectory_Library.lvlib:RAMSETE.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174013_0_0.png"  ALT="Trajectory_Library.lvlib:RAMSETE.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-RAMSETE_EXE_TUNING" >TypeDef-RAMSETE_EXE_TUNING</h3>
-<p><IMG SRC="LVtemp20221117041253_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="RAMSETE_EXE_TUNING_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Tuning parameters for the Ramsete EXE function.<BR>
 <BR>
 This cluster contains:<BR>
@@ -888,25 +888,25 @@ This cluster contains:<BR>
   --  Y Tolerance  -- The Y direction tolerance (Meters) used when calculating "on target"  (Default 0.051)<BR>
 <BR>
   --  Heading Tolerance  -- The rotational Heading tolerance (Radians) used when calculating "on target"  (Default 0.035)</pre></p>
-<p><IMG SRC="LVtemp20221117041256_0_0.png"  ALT="Trajectory_Library.lvlib:RAMSETE_EXE_TUNING.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174019_0_0.png"  ALT="Trajectory_Library.lvlib:RAMSETE_EXE_TUNING.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-ROTATION2D" >TypeDef-ROTATION2D</h3>
-<p><IMG SRC="LVtemp20221117041258_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="ROTATION2D_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).<BR>
 <BR>
 Default values are set for 0 degrees (0 radians).</pre></p>
-<p><IMG SRC="LVtemp20221117041301_0_0.png"  ALT="Trajectory_Library.lvlib:ROTATION2D.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174024_0_0.png"  ALT="Trajectory_Library.lvlib:ROTATION2D.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-ROTATION3D" >TypeDef-ROTATION3D</h3>
-<p><IMG SRC="LVtemp20221117041303_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="ROTATION3D_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A rotation in a 3D coordinate</pre></p>
-<p><IMG SRC="LVtemp20221117041306_0_0.png"  ALT="Trajectory_Library.lvlib:ROTATION3D.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174030_0_0.png"  ALT="Trajectory_Library.lvlib:ROTATION3D.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-SIMPLE_MOTOR_FF" >TypeDef-SIMPLE_MOTOR_FF</h3>
-<p><IMG SRC="LVtemp20221117041308_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SIMPLE_MOTOR_FF_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A helper class that computes feedforward outputs for a simple permanent-magnet DC motor.<BR>
 <BR>
 Elements"<BR>
@@ -915,11 +915,25 @@ Elements"<BR>
    - Ka - The acceleration gain.<BR>
    - KnInv  -- Optional 1/Kn constant used with the Advanced PID.  This helps to match the output units.<BR>
    </pre></p>
-<p><IMG SRC="LVtemp20221117041311_0_0.png"  ALT="Trajectory_Library.lvlib:SIMPLE_MOTOR_FF.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174035_0_0.png"  ALT="Trajectory_Library.lvlib:SIMPLE_MOTOR_FF.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-SIMPLE_MOTOR_FF_KA_TUNE_PARAMS" >TypeDef-SIMPLE_MOTOR_FF_KA_TUNE_PARAMS</h3>
+<p><IMG SRC="SIMPLE_MOTOR_FF_KA_TUNE_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster data structure used to pack parameters that define the test to be performed when calculating the Simple Motor Feedforward Ka value.<BR>
+<BR>
+Elements:<BR>
+  --  Max Sp --  Double -- The maximum value for the setpoint when ramping.<BR>
+  --  Min Eval SP  --  Double  --  The lowest setpoint value to use when evaluating Ka<BR>
+  --  Max Eval SP  --  Double  --  The highest setpoint value to use when evaluating Ka<BR>
+  --  Ramp Rate  --  Double  --  The rate at which to ramp the setpoint (Units/Sec)<BR>
+<BR>
+</pre></p>
+<p><IMG SRC="LVtemp20230113174041_0_0.png"  ALT="Trajectory_Library.lvlib:SIMPLE_MOTOR_FF_KA_TUNE_PARAMS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-SINGLE_JOINT_ARM_SIM" >TypeDef-SINGLE_JOINT_ARM_SIM</h3>
-<p><IMG SRC="LVtemp20221117041313_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SINGLE_JOINT_ARM_SIM_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a simulated single jointed arm mechanism. <BR>
 <BR>
 This cluster contains:<BR>
@@ -932,11 +946,11 @@ This cluster contains:<BR>
    - SimulateGravity  --  Boolean indicating whether the simulator should simulate gravity.<BR>
 <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041317_0_0.png"  ALT="Trajectory_Library.lvlib:SINGLE_JOINT_ARM_SIM.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174047_0_0.png"  ALT="Trajectory_Library.lvlib:SINGLE_JOINT_ARM_SIM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-SLEW_RATE_LIMITER" >TypeDef-SLEW_RATE_LIMITER</h3>
-<p><IMG SRC="LVtemp20221117041318_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SLEW_RATE_LIMITER_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Data cluster for a set of functions that limits the rate of change of an input value. Useful for implementing voltage, setpoint, and/or output ramps. A slew-rate limit is most appropriate when the quantity being controlled is a velocity or a voltage; when controlling a position, consider using a TrapezoidProfile}instead.<BR>
 <BR>
 Data:<BR>
@@ -945,27 +959,27 @@ Data:<BR>
    - PrevTime  --  Time (Seconds) of last call when PrevValue was gathered.<BR>
 <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041322_0_0.png"  ALT="Trajectory_Library.lvlib:SLEW_RATE_LIMITER.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174052_0_0.png"  ALT="Trajectory_Library.lvlib:SLEW_RATE_LIMITER.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-SPLINE" >TypeDef-SPLINE</h3>
-<p><IMG SRC="LVtemp20221117041323_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SPLINE_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a two-dimensional parametric spline that interpolates between two points.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041327_0_0.png"  ALT="Trajectory_Library.lvlib:SPLINE.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174058_0_0.png"  ALT="Trajectory_Library.lvlib:SPLINE.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-SPLINE_CTRL_VECTOR" >TypeDef-SPLINE_CTRL_VECTOR</h3>
-<p><IMG SRC="LVtemp20221117041329_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SPLINE_CTRL_VECTOR_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a control vector for a spline.<BR>
 <BR>
 Each element in each array represents the value of the derivative at the index. For example, the value of x[2] is the second derivative in the x dimension.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041332_0_0.png"  ALT="Trajectory_Library.lvlib:SPLINE_CTRL_VECTOR.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174103_0_0.png"  ALT="Trajectory_Library.lvlib:SPLINE_CTRL_VECTOR.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-SWERVE_DRIVE_KINEMATICS" >TypeDef-SWERVE_DRIVE_KINEMATICS</h3>
-<p><IMG SRC="LVtemp20221117041334_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SWERVE_DRIVE_KINEMATICS_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual module states (speed and angle).<BR>
  <BR>
 The inverse kinematics (converting from a desired chassis velocity to individual module states) uses the relative locations of the modules with respect to the center of rotation. The center of rotation for inverse kinematics is also variable. This means that you can set your set your center of rotation in a corner of the robot to perform special evasion manuevers.<BR>
@@ -976,36 +990,36 @@ The inverse kinematics: [moduleStates] = [moduleLocations][chassisSpeeds] We tak
  <BR>
 Forward kinematics is also used for odometry -- determining the position of the robot on the field using encoders and a gyro.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041337_0_0.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_KINEMATICS.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174109_0_0.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_KINEMATICS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-SWERVE_DRIVE_MODULE_POSITION" >TypeDef-SWERVE_DRIVE_MODULE_POSITION</h3>
-<p><IMG SRC="LVtemp20221117041339_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SWERVE_DRIVE_MODULE_POSITION_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents the position of one swerve module.   This cluster includes:<BR>
 <BR>
    -   Distance measured by the wheel of the module. <BR>
    -  Angle of the module.   (Rotation2d)<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041342_0_0.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_MODULE_POSITION.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174115_0_0.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_MODULE_POSITION.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-SWERVE_DRIVE_MODULE_STATE" >TypeDef-SWERVE_DRIVE_MODULE_STATE</h3>
-<p><IMG SRC="LVtemp20221117041344_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SWERVE_DRIVE_MODULE_STATE_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents the state of one swerve module.</pre></p>
-<p><IMG SRC="LVtemp20221117041347_0_0.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_MODULE_STATE.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174121_0_0.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_MODULE_STATE.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-SWERVE_DRIVE_ODOMETRY" >TypeDef-SWERVE_DRIVE_ODOMETRY</h3>
-<p><IMG SRC="LVtemp20221117041349_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SWERVE_DRIVE_ODOMETRY_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Class for swerve drive odometry. Odometry allows you to track the robot's position on the field over a course of a match using readings from your swerve drive encoders and swerve azimuth encoders.<BR>
  <BR>
 Teams can use odometry during the autonomous period for complex tasks like path following. Furthermore, odometry can be used for latency compensationwhen using computer-vision systems.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041352_0_0.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_ODOMETRY.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174127_0_0.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_ODOMETRY.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-SWERVE_DRIVE_POSE_EST" >TypeDef-SWERVE_DRIVE_POSE_EST</h3>
-<p><IMG SRC="LVtemp20221117041354_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="SWERVE_DRIVE_POSE_EST_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The functions that use this data cluster wrap an UnscentedKalmanFilter Unscented Kalman Filter to fuse latency-compensated vision measurements with swerve drive encoder velocity measurements. It will correct for noisy measurements and encoder drift. It is intended to be an easy but more accurate drop-in for SwerveDriveOdometry.<BR>
  <BR>
 The generic arguments to this data cluster define the size of the state, input and output vectors used in the underlying UnscentedKalmanFilter Unscented Kalman Filter. Num States must be equal to the module count + 3. Num Inputs must be equal to the module count + 3.  Num Outputs must be equal to the module count + 1.<BR>
@@ -1032,11 +1046,11 @@ y = [theta, s_0, ..., s_n]t  <BR>
 <BR>
 containing gyro heading, followed by the distance travelled by each wheel.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041358_0_0.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_POSE_EST.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174133_0_0.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_POSE_EST.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TIMER" >TypeDef-TIMER</h3>
-<p><IMG SRC="LVtemp20221117041400_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TIMER_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Data cluster holding values required by the TImer functions.  These functions allow timing between events without interrupting execution of other robot code.  <BR>
 <BR>
 Data:<BR>
@@ -1044,92 +1058,92 @@ Data:<BR>
    - AccumulatedTime  --  Internal time variable<BR>
    - Running  -- If TRUE, the timer is running<BR>
    - Semaphore  -- Used to synchronize interactions between threads.</pre></p>
-<p><IMG SRC="LVtemp20221117041403_0_0.png"  ALT="Trajectory_Library.lvlib:TIMER.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174139_0_0.png"  ALT="Trajectory_Library.lvlib:TIMER.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TIME_INTERPOLATABLE_BOOLEAN" >TypeDef-TIME_INTERPOLATABLE_BOOLEAN</h3>
-<p><IMG SRC="LVtemp20221117041405_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TIME_INTERPOLATABLE_BOOLEAN_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The TimeInterpolatableBuffer provides an easy way to estimate past measurements. One application might be in conjunction with the DifferentialDrivePoseEstimator, where knowledge of the robot pose at the time when vision or other global measurement were recorded is necessary, or for recording the past angles of mechanisms as measured by encoders.<BR>
 <BR>
 The TIME_INTERPOLATABLE_BOOLEAN stores and returns boolean values.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041408_0_0.png"  ALT="Trajectory_Library.lvlib:TIME_INTERPOLATABLE_BOOLEAN.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174144_0_0.png"  ALT="Trajectory_Library.lvlib:TIME_INTERPOLATABLE_BOOLEAN.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TIME_INTERPOLATABLE_DOUBLE" >TypeDef-TIME_INTERPOLATABLE_DOUBLE</h3>
-<p><IMG SRC="LVtemp20221117041410_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TIME_INTERPOLATABLE_DOUBLE_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The TimeInterpolatableBuffer provides an easy way to estimate past measurements. One application might be in conjunction with the DifferentialDrivePoseEstimator, where knowledge of the robot pose at the time when vision or other global measurement were recorded is necessary, or for recording the past angles of mechanisms as measured by encoders.<BR>
 <BR>
 The TIME_INTERPOLATABLE_DOUBLE stores and returns DOUBLE values.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041413_0_0.png"  ALT="Trajectory_Library.lvlib:TIME_INTERPOLATABLE_DOUBLE.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174150_0_0.png"  ALT="Trajectory_Library.lvlib:TIME_INTERPOLATABLE_DOUBLE.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TIME_INTERPOLATABLE_POSE2D" >TypeDef-TIME_INTERPOLATABLE_POSE2D</h3>
-<p><IMG SRC="LVtemp20221117041415_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TIME_INTERPOLATABLE_POSE2D_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The TimeInterpolatableBuffer provides an easy way to estimate past measurements. One application might be in conjunction with the DifferentialDrivePoseEstimator, where knowledge of the robot pose at the time when vision or other global measurement were recorded is necessary, or for recording the past angles of mechanisms as measured by encoders.<BR>
 <BR>
 The TIME_INTERPOLATABLE_POSE stores and returns POSE2D values.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041418_0_0.png"  ALT="Trajectory_Library.lvlib:TIME_INTERPOLATABLE_POSE2D.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174155_0_0.png"  ALT="Trajectory_Library.lvlib:TIME_INTERPOLATABLE_POSE2D.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TIME_INTERPOLATABLE_ROTATION2D" >TypeDef-TIME_INTERPOLATABLE_ROTATION2D</h3>
-<p><IMG SRC="LVtemp20221117041420_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TIME_INTERPOLATABLE_ROTATION2D_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The TimeInterpolatableBuffer provides an easy way to estimate past measurements. One application might be in conjunction with the DifferentialDrivePoseEstimator, where knowledge of the robot pose at the time when vision or other global measurement were recorded is necessary, or for recording the past angles of mechanisms as measured by encoders.<BR>
 <BR>
 The TIME_INTERPOLATABLE_ROTATION stores and returns ROTATION2D values.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041423_0_0.png"  ALT="Trajectory_Library.lvlib:TIME_INTERPOLATABLE_ROTATION2D.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174201_0_0.png"  ALT="Trajectory_Library.lvlib:TIME_INTERPOLATABLE_ROTATION2D.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAJECTORY" >TypeDef-TRAJECTORY</h3>
-<p><IMG SRC="LVtemp20221117041425_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAJECTORY_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a time-parameterized trajectory. The trajectory contains of various States that represent the pose, curvature, time elapsed, velocity, and acceleration at that point.</pre></p>
-<p><IMG SRC="LVtemp20221117041428_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJECTORY.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174206_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJECTORY.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAJ_CONFIG" >TypeDef-TRAJ_CONFIG</h3>
-<p><IMG SRC="LVtemp20221117041430_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAJ_CONFIG_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents the configuration for generating a trajectory. This class stores the start velocity, end velocity, max velocity, max acceleration, custom constraints, and the reversed flag.<BR>
  <BR>
 The cluster must be constructed with a max velocity and max acceleration. The other parameters (start velocity, end velocity, constraints, reversed) have been defaulted to reasonable values (0, 0, {}, false). These values can be changed via the setXXX methods.<BR>
 <BR>
 It also contains the data for each contraint and a flag indicating if a particular constraint is active.  As new constraints are added, this cluster will be modified to conain them.</pre></p>
-<p><IMG SRC="LVtemp20221117041433_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONFIG.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174212_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONFIG.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL" >TypeDef-TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL</h3>
-<p><IMG SRC="LVtemp20221117041435_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A constraint on the maximum absolute centripetal acceleration allowed when traversing a trajectory. The centripetal acceleration of a robot is defined as the velocity squared divided by the radius of curvature.<BR>
 <BR>
 Effectively, limiting the maximum centripetal acceleration will cause the robot to slow down around tight turns, making it easier to track trajectories with sharp turns.<BR>
 <BR>
 Elements:<BR>
   - MaxCentripetalAccerl - The max centripetal acceleration. (meters/Sec^2)</pre></p>
-<p><IMG SRC="LVtemp20221117041438_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174217_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAJ_CONSTRAINT_DIIF_DRIVE_KINEMATICS" >TypeDef-TRAJ_CONSTRAINT_DIIF_DRIVE_KINEMATICS</h3>
-<p><IMG SRC="LVtemp20221117041440_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAJ_CONSTRAINT_DIIF_DRIVE_KINEMATICS_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A class that enforces constraints on the differential drive kinematics.  This can be used to ensure that the trajectory is constructed so that the commanded velocities for both sides of the drivetrain stay below a certain limit.<BR>
 <BR>
 Elements:<BR>
   - Max Speed (Meters/Sec)<BR>
   - DiffDriveKinematics - data structure<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041443_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_DIIF_DRIVE_KINEMATICS.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174223_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_DIIF_DRIVE_KINEMATICS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE" >TypeDef-TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE</h3>
-<p><IMG SRC="LVtemp20221117041445_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A class that enforces constraints on differential drive voltage expenditure based on the motor dynamics and the drive kinematics.  Ensures that the acceleration of any wheel of the robot while following the trajectory is never higher than what can be achieved with the given maximum voltage.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041448_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174229_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_DIIF_DRIVE_VOLTAGE.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAJ_CONSTRAINT_ELLIP_REGION" >TypeDef-TRAJ_CONSTRAINT_ELLIP_REGION</h3>
-<p><IMG SRC="LVtemp20221117041450_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAJ_CONSTRAINT_ELLIP_REGION_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A class that enforces a constraint when robot pose is withiin a defined elliptical region.  <BR>
 <BR>
 Elements:<BR>
@@ -1138,50 +1152,50 @@ Elements:<BR>
    - Constraint  -- Variant holding the constraint data cluster to enforce when inside the ellipse.<BR>
    - Constraint Type  --  Enum that indicates the type of the constraint to enforce.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041453_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_ELLIP_REGION.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174234_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_ELLIP_REGION.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAJ_CONSTRAINT_JERK" >TypeDef-TRAJ_CONSTRAINT_JERK</h3>
-<p><IMG SRC="LVtemp20221117041455_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAJ_CONSTRAINT_JERK_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A constraint on the maximum absolute centripetal acceleration allowed when traversing a trajectory. The centripetal acceleration of a robot is defined as the velocity squared divided by the radius of curvature.<BR>
 <BR>
 Effectively, limiting the maximum centripetal acceleration will cause the robot to slow down around tight turns, making it easier to track trajectories with sharp turns.<BR>
 <BR>
 Elements:<BR>
   - MaxCentripetalAccerl - The max centripetal acceleration. (meters/Sec^2)</pre></p>
-<p><IMG SRC="LVtemp20221117041458_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_JERK.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174240_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_JERK.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAJ_CONSTRAINT_MAX_VELOCITY" >TypeDef-TRAJ_CONSTRAINT_MAX_VELOCITY</h3>
-<p><IMG SRC="LVtemp20221117041500_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAJ_CONSTRAINT_MAX_VELOCITY_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A constraint on the maximum absolute velocity allowed when traversing a trajectory. <BR>
 <BR>
 Elements:<BR>
   - MaxVelocity - The max velocity. (meters/Sec)</pre></p>
-<p><IMG SRC="LVtemp20221117041503_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_MAX_VELOCITY.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174245_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_MAX_VELOCITY.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS" >TypeDef-TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS</h3>
-<p><IMG SRC="LVtemp20221117041505_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A class that enforces constraints on the mecanum drive kinematics.  This can be used to ensure that the trajectory is constructed so that the commanded velocities all wheels of the drivetrain stay below a certain limit.<BR>
 <BR>
 Elements:<BR>
   - Max Speed (Meters/Sec)<BR>
   - MecanumDriveKinematics - data structure<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041509_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174252_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_MECA_DRIVE_KINEMATICS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAJ_CONSTRAINT_MINMAX" >TypeDef-TRAJ_CONSTRAINT_MINMAX</h3>
-<p><IMG SRC="LVtemp20221117041510_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAJ_CONSTRAINT_MINMAX_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a minimum and maximum acceleration.   This is used exclusively by TrajectoryParam_timeParam and its internal routines.<BR>
 <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041514_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_MINMAX.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174257_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_MINMAX.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAJ_CONSTRAINT_RECT_REGION" >TypeDef-TRAJ_CONSTRAINT_RECT_REGION</h3>
-<p><IMG SRC="LVtemp20221117041515_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAJ_CONSTRAINT_RECT_REGION_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A class that enforces constraints when inside a rectangular area.  <BR>
 <BR>
 Elements:<BR>
@@ -1191,22 +1205,22 @@ Elements:<BR>
    - Constraint Type  -- Enum containing the type of constraint.<BR>
   - DiffDriveKinematics - data structure<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041519_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_RECT_REGION.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174303_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_RECT_REGION.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS" >TypeDef-TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS</h3>
-<p><IMG SRC="LVtemp20221117041521_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A class that enforces constraints on the swerve drive kinematics.  This can be used to ensure that the trajectory is constructed so that the commanded velocities drivetrain modules stay below a certain limit.<BR>
 <BR>
 Elements:<BR>
   -- Max Speed (meters/sec)<BR>
   -- Swerve Drive Kinematics data cluster<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041524_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174309_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_CONSTRAINT_SWERVE_DRIVE_KINEMATICS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAJ_STATE" >TypeDef-TRAJ_STATE</h3>
-<p><IMG SRC="LVtemp20221117041526_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAJ_STATE_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a time-parameterized trajectory. The trajectory contains of various States that represent the pose, curvature, time elapsed, velocity, and acceleration at that point.<BR>
 <BR>
 Elements:<BR>
@@ -1215,43 +1229,43 @@ Elements:<BR>
   - Accleration - The acceleration at that point of the trajectory.  (meters/Sec^2)<BR>
   - POSE - The pose at that point of the trajectory.<BR>
   - Curvature - The curvature at that point of the trajectory. (Radians/Meter)</pre></p>
-<p><IMG SRC="LVtemp20221117041529_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_STATE.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174315_0_0.png"  ALT="Trajectory_Library.lvlib:TRAJ_STATE.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRANSFORM2D" >TypeDef-TRANSFORM2D</h3>
-<p><IMG SRC="LVtemp20221117041531_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRANSFORM2D_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a transformation for a Pose2d.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041534_0_0.png"  ALT="Trajectory_Library.lvlib:TRANSFORM2D.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174321_0_0.png"  ALT="Trajectory_Library.lvlib:TRANSFORM2D.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRANSFORM3D" >TypeDef-TRANSFORM3D</h3>
-<p><IMG SRC="LVtemp20221117041536_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRANSFORM3D_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a transformation for a Pose3d.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041539_0_0.png"  ALT="Trajectory_Library.lvlib:TRANSFORM3D.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174326_0_0.png"  ALT="Trajectory_Library.lvlib:TRANSFORM3D.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRANSLATION2D" >TypeDef-TRANSLATION2D</h3>
-<p><IMG SRC="LVtemp20221117041541_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRANSLATION2D_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a translation in 2d space.  This object can be used to represent a point or a vector.<BR>
 <BR>
 This assumes that you are using conventional mathematical axes.  When the robot is placed on the origin, facing toward the X direction, moving forward increases the X, whereas moving to the left increases the Y.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041544_0_0.png"  ALT="Trajectory_Library.lvlib:TRANSLATION2D.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174332_0_0.png"  ALT="Trajectory_Library.lvlib:TRANSLATION2D.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRANSLATION3D" >TypeDef-TRANSLATION3D</h3>
-<p><IMG SRC="LVtemp20221117041546_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRANSLATION3D_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a translation in 3D space. This object can be used to represent a point or a vector.<BR>
 <BR>
 This assumes that you are using conventional mathematical axes. When the robot is at the origin facing in the positive X direction, forward is positive X, left is positive Y, and up is  positive Z.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041549_0_0.png"  ALT="Trajectory_Library.lvlib:TRANSLATION3D.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174338_0_0.png"  ALT="Trajectory_Library.lvlib:TRANSLATION3D.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAPEZOID_PROFILE" >TypeDef-TRAPEZOID_PROFILE</h3>
-<p><IMG SRC="LVtemp20221117041551_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAPEZOID_PROFILE_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A trapezoid-shaped velocity profile.<BR>
  <BR>
 While this class can be used for a profiled movement from start to finish, the intended usage is to filter a reference's dynamics based on trapezoidal velocity constraints. To compute the reference obeying this constraint, do the following.<BR>
@@ -1278,48 +1292,48 @@ Otherwise, a timer can be started to provide monotonic values for `calculate()` 
 <BR>
 <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041554_0_0.png"  ALT="Trajectory_Library.lvlib:TRAPEZOID_PROFILE.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174343_0_0.png"  ALT="Trajectory_Library.lvlib:TRAPEZOID_PROFILE.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAPEZOID_PROFILE_CONSTRAINT" >TypeDef-TRAPEZOID_PROFILE_CONSTRAINT</h3>
-<p><IMG SRC="LVtemp20221117041556_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAPEZOID_PROFILE_CONSTRAINT_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Contains the constraints for a TrapezoidProfile.<BR>
     <BR>
      - maxVelocity  --  maximum velocity<BR>
      - maxAcceleration --  maximum acceleration<BR>
   <BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041559_0_0.png"  ALT="Trajectory_Library.lvlib:TRAPEZOID_PROFILE_CONSTRAINT.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174349_0_0.png"  ALT="Trajectory_Library.lvlib:TRAPEZOID_PROFILE_CONSTRAINT.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAPEZOID_PROFILE_STATE" >TypeDef-TRAPEZOID_PROFILE_STATE</h3>
-<p><IMG SRC="LVtemp20221117041601_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TRAPEZOID_PROFILE_STATE_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Contains the State, initial, current, or goal, for a Trapezoid Profile<BR>
 <BR>
    - Position  --  Distance, or heading, or other parameter for which the profile is created.<BR>
    - Velocity  --  Velocity</pre></p>
-<p><IMG SRC="LVtemp20221117041604_0_0.png"  ALT="Trajectory_Library.lvlib:TRAPEZOID_PROFILE_STATE.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174354_0_0.png"  ALT="Trajectory_Library.lvlib:TRAPEZOID_PROFILE_STATE.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TWIST2D" >TypeDef-TWIST2D</h3>
-<p><IMG SRC="LVtemp20221117041606_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TWIST2D_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A change in distance along arc since the last pose update. We can use ideas  from differential calculus to create new Pose2ds from a Twist2d and vise versa.<BR>
  <BR>
 A Twist can be used to represent a difference between two poses.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041609_0_0.png"  ALT="Trajectory_Library.lvlib:TWIST2D.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174400_0_0.png"  ALT="Trajectory_Library.lvlib:TWIST2D.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TWIST3D" >TypeDef-TWIST3D</h3>
-<p><IMG SRC="LVtemp20221117041611_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TWIST3D_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A change in distance along a 3D arc since the last pose update. We can use ideas from differential calculus to create new Pose3ds from a Twist3d and vise versa.<BR>
  <BR>
 A Twist can be used to represent a difference between two poses.</pre></p>
-<p><IMG SRC="LVtemp20221117041614_0_0.png"  ALT="Trajectory_Library.lvlib:TWIST3D.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174405_0_0.png"  ALT="Trajectory_Library.lvlib:TWIST3D.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-UNSCENTED_KALMAN_CORRECT_FUNC_GROUP" >TypeDef-UNSCENTED_KALMAN_CORRECT_FUNC_GROUP</h3>
-<p><IMG SRC="LVtemp20221117041616_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="UNSCENTED_KALMAN_CORRECT_FUNC_GROUP_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster containing the packed function group data to pass to the Correct subVI.<BR>
     <BR>
 Data:<BR>
@@ -1334,11 +1348,11 @@ Data:<BR>
    -  addFuncX  --  A strict function reference that adds two state vectors.<BR>
    -  addFuncXExtra  --  Variant containing extra data used by the addY function.  The contents of the variant are specific to the  function.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041619_0_0.png"  ALT="Trajectory_Library.lvlib:UNSCENTED_KALMAN_CORRECT_FUNC_GROUP.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174411_0_0.png"  ALT="Trajectory_Library.lvlib:UNSCENTED_KALMAN_CORRECT_FUNC_GROUP.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-UNSCENTED_KALMAN_FILTER" >TypeDef-UNSCENTED_KALMAN_FILTER</h3>
-<p><IMG SRC="LVtemp20221117041621_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="UNSCENTED_KALMAN_FILTER_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A Kalman filter combines predictions from a model and measurements to give an estimate of the true system state. This is useful because many states cannot be measured directly as a result of sensor noise, or because the state is "hidden".<BR>
  <BR>
 Kalman filters use a K gain matrix to determine whether to trust the model or measurements more. Kalman filter theory uses statistics to compute an optimal K gain which minimizes the sum of squares error in the state estimate. This K gain is used to correct the state estimate by some amount of the difference between the actual measurements and the measurements predicted by the model.<BR>
@@ -1367,11 +1381,11 @@ The data contained in this cluster is:<BR>
    -  residualFuncY  --  A strict function reference that computes the residual of two measurement vectors (i.e. it subtracts them.)<BR>
    -  residualFuncYExtra  --  A variant containing extra data for the residualY function<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041625_0_0.png"  ALT="Trajectory_Library.lvlib:UNSCENTED_KALMAN_FILTER.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174418_0_0.png"  ALT="Trajectory_Library.lvlib:UNSCENTED_KALMAN_FILTER.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-UNSCENTED_KALMAN_NEW_FUNC_GROUP" >TypeDef-UNSCENTED_KALMAN_NEW_FUNC_GROUP</h3>
-<p><IMG SRC="LVtemp20221117041626_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="UNSCENTED_KALMAN_NEW_FUNC_GROUP_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A packed cluster to hold the call back function reference information:<BR>
 <BR>
 The cluster contains:<BR>
@@ -1386,17 +1400,17 @@ The cluster contains:<BR>
    -  addFuncX  --  A strict function reference that adds two state vectors.<BR>
    -  addFuncXExtra  --  A variant containing extra data for the addX function<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041630_0_0.png"  ALT="Trajectory_Library.lvlib:UNSCENTED_KALMAN_NEW_FUNC_GROUP.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174423_0_0.png"  ALT="Trajectory_Library.lvlib:UNSCENTED_KALMAN_NEW_FUNC_GROUP.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-UTIL_PATHFINDER_CONFIG" >TypeDef-UTIL_PATHFINDER_CONFIG</h3>
-<p><IMG SRC="LVtemp20221117041631_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="UTIL_PATHFINDER_CONFIG_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Util data structure for printing of pathfinder path data.</pre></p>
-<p><IMG SRC="LVtemp20221117041635_0_0.png"  ALT="Trajectory_Library.lvlib:UTIL_PATHFINDER_CONFIG.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174429_0_0.png"  ALT="Trajectory_Library.lvlib:UTIL_PATHFINDER_CONFIG.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-WEIGHTED_WAYPOINT" >TypeDef-WEIGHTED_WAYPOINT</h3>
-<p><IMG SRC="LVtemp20221117041636_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="WEIGHTED_WAYPOINT_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Spline / Trajectory way point with scalar weight. <BR>
 <BR>
 Data:<BR>
@@ -1406,13 +1420,13 @@ Data:<BR>
    - Rotation  -- Heading (direction of travel)<BR>
    - Scalar  --  Weight value.  When using weights, the value must be greater than 0.  Larger values cause the spline to be straighter entering and leaving this waypoint.<BR>
 </pre></p>
-<p><IMG SRC="LVtemp20221117041640_0_0.png"  ALT="Trajectory_Library.lvlib:WEIGHTED_WAYPOINT.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174434_0_0.png"  ALT="Trajectory_Library.lvlib:WEIGHTED_WAYPOINT.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-X_Y_PAIR" >TypeDef-X_Y_PAIR</h3>
-<p><IMG SRC="LVtemp20221117041641_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="X_Y_PAIR_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pair of X and Y value</pre></p>
-<p><IMG SRC="LVtemp20221117041645_0_0.png"  ALT="Trajectory_Library.lvlib:X_Y_PAIR.ctl" ALIGN=BOTTOM></p><br>
+<p><IMG SRC="LVtemp20230113174440_0_0.png"  ALT="Trajectory_Library.lvlib:X_Y_PAIR.ctl" ALIGN=BOTTOM></p><br>
 <br>
 </BODY>
 </HTML>

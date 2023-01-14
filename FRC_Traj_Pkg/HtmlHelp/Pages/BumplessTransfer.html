@@ -9,8 +9,21 @@
 <h2 id="BumplessTransfer" >BumplessTransfer</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="BumplessTransfer_Execute" >BumplessTransfer_Execute</h3>
-<p><IMG SRC="LVtemp20221117042721_0_0c.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This VI averages the last seven samples of an analog value.  The sample rate is determined by how often this VI is called.</pre></p>
+<p><IMG SRC="BumplessTransfer_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This function selects one of two inputs depending on the state of a third boolean input.  The output will equal the selected input.  When switching between input values the difference between the two inputs values at the time of the switched is ramped to zero at the rate defined by the input parameters.   This provides a bumpless transfer function.<BR>
+<BR>
+Inputs:<BR>
+  --  Input 1  -- double float  --  Input Value 1<BR>
+  --  Input 2  --  double float  -- Input value 2<BR>
+  --  Select 2  -- boolean  -- When true Input Value 2 is selected.  When false Input Value 1 is selected.<BR>
+  --  Rate 1  -- double float  --  Rate (units/sec) used when transferring to Input 1 to remove the difference between inputs.  If the value is zero, the value is switched immediately.<BR>
+  --  Rate 2  --  double float  --  Rate (units/sec) used when transferring to Input 2to remove the difference between inputs.  If the value is zero, the value is switched immediately.<BR>
+<BR>
+ Outputs:<BR>
+  --  Output -- double float  -- Selected value.<BR>
+<BR>
+<BR>
+</pre></p>
 <br>
 </BODY>
 </HTML>

@@ -9,7 +9,7 @@
 <h2 id="LTVDiffDriveCtrl" >LTVDiffDriveCtrl</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVDiffDriveCtrl_AtReference" >LTVDiffDriveCtrl_AtReference</h3>
-<p><IMG SRC="LVtemp20221117044512_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="LTVDiffDriveCtrl_AtReference_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns true if the pose error is within tolerance of the reference.<BR>
 <BR>
 Inputs:<BR>
@@ -21,7 +21,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVDiffDriveCtrl_Calculate" >LTVDiffDriveCtrl_Calculate</h3>
-<p><IMG SRC="LVtemp20221117044519_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="LTVDiffDriveCtrl_Calculate_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the left and right output voltages of the LTV controller.<BR>
 <BR>
 The reference pose, linear velocity, and angular velocity should come from a drivetrain trajectory.<BR>
@@ -44,7 +44,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVDiffDriveCtrl_Calculate_TrajState" >LTVDiffDriveCtrl_Calculate_TrajState</h3>
-<p><IMG SRC="LVtemp20221117044527_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="LTVDiffDriveCtrl_Calculate_TrajState_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the left and right output voltages of the LTV controller.<BR>
 <BR>
 The reference pose, linear velocity, and angular velocity should come from a drivetrain trajectory.<BR>
@@ -65,7 +65,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVDiffDriveCtrl_New" >LTVDiffDriveCtrl_New</h3>
-<p><IMG SRC="LVtemp20221117044535_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="LTVDiffDriveCtrl_New_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The linear time-varying (LTV) differential drive controller has a similar form to the LQR, but the model used to compute the controller gain is the nonlinear model linearized around the drivetrain's current state. We precomputed gains for important places in our state-space, then interpolated between them with a LUT to save computational resources.Filters the provided voltages to limit a differential drive's linear and angular acceleration.<BR>
 <BR>
 Constructs a linear time-varying differential drive controller.<BR>
@@ -85,7 +85,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVDiffDriveCtrl_SetTolerance" >LTVDiffDriveCtrl_SetTolerance</h3>
-<p><IMG SRC="LVtemp20221117044541_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="LTVDiffDriveCtrl_SetTolerance_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the pose error which is considered tolerable for use with the 'At Reference' function.<BR>
 <BR>
 Inputs:<BR>

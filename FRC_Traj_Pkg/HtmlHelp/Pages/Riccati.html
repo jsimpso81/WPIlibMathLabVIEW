@@ -9,7 +9,7 @@
 <h2 id="Riccati" >Riccati</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Riccati_Check_Detectable" >Riccati_Check_Detectable</h3>
-<p><IMG SRC="LVtemp20221117051010_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="Riccati_Check_Detectable_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This function is for internal use, by the riccati_iput_check, ONLY.<BR>
 <BR>
 This function check if (A,C) is a detectable pair, where Q = C' * C.  (A,C) is detectable if and only if the unobservable eigenvalues of A, if any, have absolute values less than one, where an eigenvalue is unobservable if Rank[lambda * I - A; C] < n.   Also, (A,C) is detectable if and only if (A',C') is stabilizable.<BR>
@@ -24,7 +24,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Riccati_Check_Stabilizable" >Riccati_Check_Stabilizable</h3>
-<p><IMG SRC="LVtemp20221117051018_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="Riccati_Check_Stabilizable_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This function is for internal use, by the riccati_iput_check, ONLY.<BR>
 <BR>
 This function checks if (A,B) is a stabilizable pair.   (A,B) is stabilizable if and only if the uncontrollable eigenvalues of A, if any, have absolute values less than one, where an eigenvalue is uncontrollable if Rank[lambda * I - A, B] < n.  (n is the number or rows or columns of A, which must be a square matrix.)<BR>
@@ -39,7 +39,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Riccati_DARE" >Riccati_DARE</h3>
-<p><IMG SRC="LVtemp20221117051026_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="Riccati_DARE_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Solves the discrete alegebraic Riccati equation.<BR>
    <BR>
 Input:<BR>
@@ -56,7 +56,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Riccati_DARE_Choose" >Riccati_DARE_Choose</h3>
-<p><IMG SRC="LVtemp20221117051034_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="Riccati_DARE_Choose_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Solves the discrete alegebraic Riccati equation.<BR>
    <BR>
 Input:<BR>
@@ -73,7 +73,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Riccati_DARE_Iterate" >Riccati_DARE_Iterate</h3>
-<p><IMG SRC="LVtemp20221117051042_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="Riccati_DARE_Iterate_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Solves the discrete alegebraic Riccati equation.<BR>
 <BR>
 This uses an iterative method to arrive at the solution.  Run time is not deterministic and this routine should not be used during run-time, only during initialization.<BR>
@@ -92,7 +92,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Riccati_DARE_N" >Riccati_DARE_N</h3>
-<p><IMG SRC="LVtemp20221117051050_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="Riccati_DARE_N_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Solves the discrete alegebraic Riccati equation.<BR>
    <BR>
 Input:<BR>
@@ -112,7 +112,7 @@ See   https://en.wikipedia.org/wiki/Linear%E2%80%93quadratic_regulator#Infinite-
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Riccati_DARE_StructDoubling" >Riccati_DARE_StructDoubling</h3>
-<p><IMG SRC="LVtemp20221117051058_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="Riccati_DARE_StructDoubling_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Solves the discrete alegebraic Riccati equation using the structued doubling method.<BR>
 <BR>
 This uses an iterative method to arrive at the solution.  While this is a quick algorithm, its run time is not deterministic and this routine should not be used during run-time, only during initialization.<BR>
@@ -131,7 +131,7 @@ Outputs:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Riccati_Input_Check" >Riccati_Input_Check</h3>
-<p><IMG SRC="LVtemp20221117051106_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="Riccati_Input_Check_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This is an internal function, called only by the DARE routines.<BR>
 <BR>
 This routine checks the inputs for validity prior to calling DARE.<BR>

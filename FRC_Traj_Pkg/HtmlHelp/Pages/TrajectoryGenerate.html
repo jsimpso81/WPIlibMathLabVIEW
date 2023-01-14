@@ -9,7 +9,7 @@
 <h2 id="TrajectoryGenerate" >TrajectoryGenerate</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TrajectoryGenerate_Make_Cubic" >TrajectoryGenerate_Make_Cubic</h3>
-<p><IMG SRC="LVtemp20221117052411_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TrajectoryGenerate_Make_Cubic_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Generates a trajectory from the given waypoints and config. This method uses clamped cubic splines -- a method in which the initial pose, final pose, and interior waypoints are provided.  The headings are automatically determined at the interior points to ensure continuous curvature.   <BR>
 Parameters:<BR>
   - startingPose -      The initial Pose.<BR>
@@ -23,7 +23,7 @@ Returns:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TrajectoryGenerate_Make_Cubic_CtrlVect" >TrajectoryGenerate_Make_Cubic_CtrlVect</h3>
-<p><IMG SRC="LVtemp20221117052417_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TrajectoryGenerate_Make_Cubic_CtrlVect_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Generates a trajectory from the given control vectors and config. This method uses clamped cubic splines -- a method in which the exterior control vectors and interior waypoints are provided. The headings are automatically determined at the interior points to ensure continuous curvature.<BR>
    <BR>
 Parameters:<BR>
@@ -38,7 +38,7 @@ Returns:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TrajectoryGenerate_Make_Generic" >TrajectoryGenerate_Make_Generic</h3>
-<p><IMG SRC="LVtemp20221117052423_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TrajectoryGenerate_Make_Generic_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Generates a trajectory from the given waypoints and config.  The type of spline used and whether to use weights or auto-calcualte weights is provided as an input.  <BR>
 <BR>
 Parameters:<BR>
@@ -52,7 +52,7 @@ Returns:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TrajectoryGenerate_Make_Quintic" >TrajectoryGenerate_Make_Quintic</h3>
-<p><IMG SRC="LVtemp20221117052428_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TrajectoryGenerate_Make_Quintic_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Generates a trajectory from the given waypoints and config. This method uses quintic hermite splines -- therefore, all points must be represented by Pose2d objects. Continuous curvature is guaranteed in this method.<BR>
 <BR>
 Parameters:<BR>
@@ -66,7 +66,7 @@ Returns:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TrajectoryGenerate_Make_Quintic_CtrlVect" >TrajectoryGenerate_Make_Quintic_CtrlVect</h3>
-<p><IMG SRC="LVtemp20221117052434_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TrajectoryGenerate_Make_Quintic_CtrlVect_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Generates a trajectory from the given quintic control vectors and config. This method uses quintic hermite splines -- therefore, all points must be represented by control vectors. Continuous curvature is guaranteed in this method.<BR>
 <BR>
 Parameters:<BR>
@@ -79,7 +79,7 @@ Returns:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TrajectoryGenerate_Make_Quintic_Weighted" >TrajectoryGenerate_Make_Quintic_Weighted</h3>
-<p><IMG SRC="LVtemp20221117052439_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TrajectoryGenerate_Make_Quintic_Weighted_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Generates a trajectory from the given weighted waypoints and config. This method uses quintic hermite splines -- therefore, all points must be represented by Pose2d objects. Continuous curvature is guaranteed in this method.<BR>
 <BR>
 Parameters:<BR>
@@ -93,7 +93,7 @@ Returns:<BR>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TrajectoryGenerate_splinePointsFromSplines" >TrajectoryGenerate_splinePointsFromSplines</h3>
-<p><IMG SRC="LVtemp20221117052445_0_0c.png"  ALIGN=BOTTOM></p>
+<p><IMG SRC="TrajectoryGenerate_splinePointsFromSplines_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Generate spline points from a vector of splines by parameterizing the splines.<BR>
    <BR>
 Parameters:<BR>
