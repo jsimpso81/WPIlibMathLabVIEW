@@ -396,6 +396,18 @@ This implements the math section (and some other routines) contained in FRC WPIL
 	</Item>
 	<Item Name="VI" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
+		<Item Name="AprilTag" Type="Folder">
+			<Item Name="AprilTag" Type="Folder">
+				<Item Name="AprilTag.ctl" Type="VI" URL="../TypeDef/AprilTag.ctl"/>
+				<Item Name="AprilTag_Equals.vi" Type="VI" URL="../VI/AprilTag_Equals.vi"/>
+				<Item Name="AprilTag_GetAll.vi" Type="VI" URL="../VI/AprilTag_GetAll.vi"/>
+				<Item Name="AprilTag_New.vi" Type="VI" URL="../VI/AprilTag_New.vi"/>
+			</Item>
+			<Item Name="AprilTagFieldLayout" Type="Folder"/>
+			<Item Name="AprilTagPoseEstimate" Type="Folder"/>
+			<Item Name="AprilTagPoseEstimator" Type="Folder"/>
+			<Item Name="AprilTagFields_ENUM.ctl" Type="VI" URL="../Enum/AprilTagFields_ENUM.ctl"/>
+		</Item>
 		<Item Name="Classical Analog" Type="Folder">
 			<Item Name="AnalogDelay" Type="Folder">
 				<Item Name="AnalogDelay_Execute.vi" Type="VI" URL="../VI/AnalogDelay_Execute.vi"/>
