@@ -403,8 +403,26 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="AprilTag_GetAll.vi" Type="VI" URL="../VI/AprilTag_GetAll.vi"/>
 				<Item Name="AprilTag_New.vi" Type="VI" URL="../VI/AprilTag_New.vi"/>
 			</Item>
-			<Item Name="AprilTagFieldLayout" Type="Folder"/>
-			<Item Name="AprilTagPoseEstimate" Type="Folder"/>
+			<Item Name="AprilTagFieldLayout" Type="Folder">
+				<Item Name="AprilTagFieldLayout.ctl" Type="VI" URL="../TypeDef/AprilTagFieldLayout.ctl"/>
+				<Item Name="AprilTagFieldLayout_GetField.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetField.vi"/>
+				<Item Name="AprilTagFieldLayout_GetOriginPosition.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetOriginPosition.vi"/>
+				<Item Name="AprilTagFieldLayout_GetTagPose.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetTagPose.vi"/>
+				<Item Name="AprilTagFieldLayout_GetTags.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetTags.vi"/>
+				<Item Name="AprilTagFieldLayout_New.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New.vi"/>
+				<Item Name="AprilTagFieldLayout_New2022.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New2022.vi"/>
+				<Item Name="AprilTagFieldLayout_New2023.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New2023.vi"/>
+				<Item Name="AprilTagFieldLayout_NewSelect.vi" Type="VI" URL="../VI/AprilTagFieldLayout_NewSelect.vi"/>
+				<Item Name="AprilTagFieldLayout_SetOrigin.vi" Type="VI" URL="../VI/AprilTagFieldLayout_SetOrigin.vi"/>
+				<Item Name="AprilTagFieldLayout_SetOriginPosition.vi" Type="VI" URL="../VI/AprilTagFieldLayout_SetOriginPosition.vi"/>
+				<Item Name="AprilTagFieldLayoutOrignPosition_ENUM.ctl" Type="VI" URL="../Enum/AprilTagFieldLayoutOrignPosition_ENUM.ctl"/>
+			</Item>
+			<Item Name="AprilTagPoseEstimate" Type="Folder">
+				<Item Name="AprilTagPoseEstimate.ctl" Type="VI" URL="../TypeDef/AprilTagPoseEstimate.ctl"/>
+				<Item Name="AprilTagPoseEstimate_GetAll.vi" Type="VI" URL="../VI/AprilTagPoseEstimate_GetAll.vi"/>
+				<Item Name="AprilTagPoseEstimate_GetAmbifuity.vi" Type="VI" URL="../VI/AprilTagPoseEstimate_GetAmbifuity.vi"/>
+				<Item Name="AprilTagPoseEstimate_New.vi" Type="VI" URL="../VI/AprilTagPoseEstimate_New.vi"/>
+			</Item>
 			<Item Name="AprilTagPoseEstimator" Type="Folder"/>
 			<Item Name="AprilTagFields_ENUM.ctl" Type="VI" URL="../Enum/AprilTagFields_ENUM.ctl"/>
 		</Item>
