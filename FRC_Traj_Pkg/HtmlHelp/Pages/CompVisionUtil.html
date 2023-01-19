@@ -104,5 +104,23 @@ Output:<BR>
   --  EstimatedFieldToRobot  --  A Pose3d containing the position of the robot in the field.<BR>
 </pre></p>
 <br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="CompVisionUtil_ObjectToRobotPose" >CompVisionUtil_ObjectToRobotPose</h3>
+<p><IMG SRC="CompVisionUtil_ObjectToRobotPose_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the robot's pose in the field coordinate system given an object's field-relative pose, the transformation from the camera's pose to the object's pose (obtained via computer vision), and the transformation from the robot's pose to the camera's pose.<BR>
+<BR>
+The object could be a target or a fiducial marker.<BR>
+   <BR>
+Inputs:<BR>
+  --  ObjectInField  -- Pose3d  -- An object's field-relative pose.<BR>
+  --  CameraToObject  --  Transform3d  --   The transformation from the camera's pose to the object's pose. This comes from computer vision.<BR>
+  --  RobotToCamera  --  Transform3d  --  The transformation from the robot's pose to the camera's pose. This can either be a constant for a rigidly mounted camera, or variable if the camera is mounted to<BR>
+ a turret. If the camera was mounted 3 inches in front of the "origin" (usually physical center) of the robot, this would be new Transform3d(Units.inchesToMeters(3.0), 0.0, 0.0,<BR>
+ new Rotation3d()).<BR>
+<BR>
+Returns:<BR>
+  --  ObjectToRobotPose  --  Pose3d  --  The robot's field-relative pose.<BR>
+</pre></p>
+<br>
 </BODY>
 </HTML>

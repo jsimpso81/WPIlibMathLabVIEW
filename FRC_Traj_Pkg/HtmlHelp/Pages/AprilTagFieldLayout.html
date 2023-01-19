@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="AprilTagFieldLayout" >AprilTagFieldLayout</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTagFieldLayout_GetField" >AprilTagFieldLayout_GetField</h3>
+<p><IMG SRC="AprilTagFieldLayout_GetField_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns data about an AprilTagFieldLayout.<BR>
+<BR>
+Inputs:<BR>
+  --  AprilTagFIeldLayout  -- AprilTagFieldLayout  -- Data cluster <BR>
+<BR>
+Outputs:<BR>
+  -- FieldLength  -- double  -- Field length (meters)<BR>
+  -- FieldWidth  -- double  -- Field width (meters)<BR>
+  --  OrginPosition  -- enum  -- Location of field origin<BR>
+  --  OrignPose3d  -- Pose3  -- Position of the field origin.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTagFieldLayout_GetOriginPosition" >AprilTagFieldLayout_GetOriginPosition</h3>
+<p><IMG SRC="AprilTagFieldLayout_GetOriginPosition_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns data about an AprilTagFieldLayout.<BR>
+<BR>
+Inputs:<BR>
+  --  AprilTagFIeldLayout  -- AprilTagFieldLayout  -- Data cluster <BR>
+<BR>
+Outputs:<BR>
+  --  OrginPosition  -- enum  -- Location of field origin<BR>
+  --  OrignPose3d  -- Pose3  -- Position of the field origin.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTagFieldLayout_GetTagPose" >AprilTagFieldLayout_GetTagPose</h3>
+<p><IMG SRC="AprilTagFieldLayout_GetTagPose_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the location of a particular AprilTag on the field.  <BR>
+<BR>
+Inputs:<BR>
+  --  AprilTagFIeldLayout  -- AprilTagFieldLayout  -- Data cluster <BR>
+  --  TagID  -- Integer  -- The AprilTag to locate.<BR>
+<BR>
+Outputs:<BR>
+  -- TagPose3d  -- Pose3d  -- Location of the AprilTag.  This is relative to the specifc origin specified in the AprilTagFieldLayout. <BR>
+  --  Found  --  Boolean  --  TRUE if the TagID was found in the field definition.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTagFieldLayout_GetTags" >AprilTagFieldLayout_GetTags</h3>
+<p><IMG SRC="AprilTagFieldLayout_GetTags_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns an array of all the AprilTags for the provided field layout.<BR>
+<BR>
+Inputs:<BR>
+  --  AprilTagFIeldLayout  -- AprilTagFieldLayout  -- Data cluster <BR>
+<BR>
+Outputs:<BR>
+  --  AprilTags  -- Array of AprilTags  --  All AprilTags defined for this field.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTagFieldLayout_New" >AprilTagFieldLayout_New</h3>
+<p><IMG SRC="AprilTagFieldLayout_New_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Construct a new AprilTagFieldLayout from a list of AprilTag data clusters and other field definition data.<BR>
+<BR>
+Inputs:<BR>
+  -- AprilTags  --  Array of AprilTags  --  List of AprilTags<BR>
+  -- FieldLength  -- double  -- Field length (meters)<BR>
+  --  FieldWidth  -- double  -- Field width (meters)<BR>
+<BR>
+Outputs:<BR>
+  --  AprilTagFieldLayout  -- AprilTagFieldLayout  -- Field layout data cluster.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTagFieldLayout_New2022" >AprilTagFieldLayout_New2022</h3>
+<p><IMG SRC="AprilTagFieldLayout_New2022_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Define the FRC 2022 April Tag field layout.<BR>
+<BR>
+NOTE -- This function has not been completed.<BR>
+<BR>
+Inputs:<BR>
+  <none><BR>
+<BR>
+Outputs:<BR>
+  --  AprilTagFieldLayout  -- AprilTagFieldLayout  -- Data cluster containing field definition.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTagFieldLayout_New2023" >AprilTagFieldLayout_New2023</h3>
+<p><IMG SRC="AprilTagFieldLayout_New2023_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Define the FRC 2023 April Tag field layout.<BR>
+<BR>
+Inputs:<BR>
+  <none><BR>
+<BR>
+Outputs:<BR>
+  --  AprilTagFieldLayout  -- AprilTagFieldLayout  -- Data cluster containing field definition.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTagFieldLayout_NewSelect" >AprilTagFieldLayout_NewSelect</h3>
+<p><IMG SRC="AprilTagFieldLayout_NewSelect_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Define the April Tag field layout based on the input FRC year.<BR>
+<BR>
+Inputs:<BR>
+  --  AprilTagField  -- enum  -- Selected Field.<BR>
+<BR>
+Outputs:<BR>
+  --  AprilTagFieldLayout  -- AprilTagFieldLayout  -- Data cluster containing field definition.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTagFieldLayout_SetOrigin" >AprilTagFieldLayout_SetOrigin</h3>
+<p><IMG SRC="AprilTagFieldLayout_SetOrigin_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the origin based on a predefined enumeration of coordinate frame origins. The origins are calculated from the field dimensions.<BR>
+<BR>
+This transforms the Pose3d objects returned by {@link #getTagPose(int)} to return the correct pose relative to a predefined coordinate frame.<BR>
+<BR>
+Inputs:<BR>
+  -- in AprilTagFieldLayout  -- AprilTagFieldLayout  -- Input field data cluster.<BR>
+  --  OriginPosition  -- enum  --  The predefined origin<BR>
+<BR>
+Outputs:<BR>
+  --  out AprilTagFieldLayout  -- AprilTagFieldLayout  -- Modified field data cluster<BR>
+  --  OriginPosition3d  -- Pose3d  -- Position of the origin.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTagFieldLayout_SetOrigin_Position" >AprilTagFieldLayout_SetOrigin_Position</h3>
+<p><IMG SRC="AprilTagFieldLayout_SetOrigin_Position_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the origin for tag pose transformation.<BR>
+<BR>
+This transforms the Pose3d objects returned by getTagPose(int) to return the correct pose relative to the provided origin.<BR>
+   <BR>
+Inputs:<BR>
+  --  In AprilTagFieldLayout  -- AprilTagFieldLayout  --  Input data cluster<BR>
+  --  OriginPose3d  -- Pose3d  -- Position of the origin.<BR>
+<BR>
+Outputs:<BR>
+   --  outAprilTagFieldLayout  -- AprilTagFieldLayout  -- Modified data cluster.<BR>
+<BR>
+   * @param origin The new origin for tag transformations<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

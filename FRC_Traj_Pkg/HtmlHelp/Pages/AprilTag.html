@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="AprilTag" >AprilTag</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTag_Equals" >AprilTag_Equals</h3>
+<p><IMG SRC="AprilTag_Equals_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Determine if two April Tag data clusters are equal.<BR>
+<BR>
+Inputs:<BR>
+  --  AprilTag  -- AprilTag  -- First data cluster to check<BR>
+  --  OtherAprilTag  -- AprilTag  -- Second data cluster to check<BR>
+<BR>
+Outputs:<BR>
+  --  Equal  -- Boolean  -- TRUE if both data clusters are the same.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTag_GetAll" >AprilTag_GetAll</h3>
+<p><IMG SRC="AprilTag_GetAll_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get individual items from the AprilTag data cluster<BR>
+<BR>
+Inputs:<BR>
+  --  AprilTag  -- AprilTag  -- Data cluster storing AprilTag<BR>
+<BR>
+Outputs:<BR>
+  --  ID  --  Integer  -- AprilTag ID value<BR>
+  --  POSE3d  -- Pose3d  -- Position of the April Tag.  This could be relative or absolute.  It is most often absolute position.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTag_New" >AprilTag_New</h3>
+<p><IMG SRC="AprilTag_New_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a new April Tag data cluster<BR>
+<BR>
+Inputs:<BR>
+  --  ID  --  Integer  -- April Tag ID value<BR>
+  -- Pose3d  - Pose3d  -- Position of the April tag.  Most often this will be an absolute position.  Relative positions can be used.</pre></p>
+<br>
+</BODY>
+</HTML>

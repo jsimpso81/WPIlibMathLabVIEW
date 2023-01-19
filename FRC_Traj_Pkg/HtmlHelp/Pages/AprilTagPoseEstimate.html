@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="AprilTagPoseEstimate" >AprilTagPoseEstimate</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTagPoseEstimate_GetAll" >AprilTagPoseEstimate_GetAll</h3>
+<p><IMG SRC="AprilTagPoseEstimate_GetAll_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get individual data items from the AprilTagPoseEstimate data cluster.<BR>
+<BR>
+Inputs:<BR>
+  --  AprilTagPoseEstimate  -- AprilTagPoseEstimate  -- Input data cluster<BR>
+<BR>
+Outputs:<BR>
+  --  AprilTransform3d_1  -- Transform3d  -- First april tag transform<BR>
+  --  AprilTransform3d_1  -- Transform3d  -- First april tag transform<BR>
+  --  Error1  -- double  --  Object-space error of pose 1<BR>
+  --  Error2  -- double  --  Object-space error of pose 2<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTagPoseEstimate_GetAmbifuity" >AprilTagPoseEstimate_GetAmbifuity</h3>
+<p><IMG SRC="AprilTagPoseEstimate_GetAmbifuity_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the ratio of pose reprojection errors, called ambiguity. Numbers above 0.2 are likely to be ambiguous.<BR>
+   <BR>
+Inputs:<BR>
+  --  AprilTagPoseEstimate  --  AprilTagPoseEstimate  --  Input data cluster<BR>
+<BR>
+Outputs:<BR>
+  --  Ambiguity  -- double  --  The ratio of pose reprojection errors.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="AprilTagPoseEstimate_New" >AprilTagPoseEstimate_New</h3>
+<p><IMG SRC="AprilTagPoseEstimate_New_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a new AprilTagPoseEstimate data cluster from two transoform and their individual errors.<BR>
+<BR>
+Inputs:<BR>
+  --  AprilTransform_1  --  Transform3d  --  <BR>
+  --  AprilTransform_1  --  Transform3d  --  <BR>
+  --  Error1  -- double    --  Object-space error of pose 1<BR>
+  --  Error2  -- double    --  Object-space error of pose 2<BR>
+<BR>
+Outputs:<BR>
+  --  AprilTagPoseEstimate  --  AprilTagPoseEstimate  -- Output data cluster.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>
