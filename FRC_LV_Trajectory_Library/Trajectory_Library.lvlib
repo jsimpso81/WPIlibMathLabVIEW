@@ -14,6 +14,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 	<Item Name="_Menus" Type="Folder">
 		<Item Name="FRC_LV_CtrlLib_AnalogDelay.mnu" Type="Document" URL="../FRC_LV_CtrlLib_AnalogDelay.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_AngleStatistics.mnu" Type="Document" URL="../FRC_LV_CtrlLib_AngleStatistics.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_AprilTag.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_AprilTag.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_AprilTagField.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_AprilTagField.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_AprilTagPoseEstimate.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_AprilTagPoseEstimate.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_BangBang.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BangBang.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_BatterySim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BatterySim.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_BiFuncHelp.mnu" Type="Document" URL="../FRC_LV_CtrlLib_BiFuncHelp.mnu"/>
@@ -1762,6 +1765,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="CompVisionUtil_EstimateFieldToCamera.vi" Type="VI" URL="../VI/CompVisionUtil_EstimateFieldToCamera.vi"/>
 				<Item Name="CompVisionUtil_EstimateFieldToRobot.vi" Type="VI" URL="../VI/CompVisionUtil_EstimateFieldToRobot.vi"/>
 				<Item Name="CompVisionUtil_EstimateFieldToRobot_Alt.vi" Type="VI" URL="../VI/CompVisionUtil_EstimateFieldToRobot_Alt.vi"/>
+				<Item Name="CompVisionUtil_ObjectToRobotPose.vi" Type="VI" URL="../VI/CompVisionUtil_ObjectToRobotPose.vi"/>
 			</Item>
 		</Item>
 	</Item>
