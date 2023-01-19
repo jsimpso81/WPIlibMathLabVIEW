@@ -414,8 +414,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="AprilTagFieldLayout_New2023.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New2023.vi"/>
 				<Item Name="AprilTagFieldLayout_NewSelect.vi" Type="VI" URL="../VI/AprilTagFieldLayout_NewSelect.vi"/>
 				<Item Name="AprilTagFieldLayout_SetOrigin.vi" Type="VI" URL="../VI/AprilTagFieldLayout_SetOrigin.vi"/>
-				<Item Name="AprilTagFieldLayout_SetOriginPosition.vi" Type="VI" URL="../VI/AprilTagFieldLayout_SetOriginPosition.vi"/>
+				<Item Name="AprilTagFieldLayout_SetOrigin_Position.vi" Type="VI" URL="../VI/AprilTagFieldLayout_SetOrigin_Position.vi"/>
 				<Item Name="AprilTagFieldLayoutOrignPosition_ENUM.ctl" Type="VI" URL="../Enum/AprilTagFieldLayoutOrignPosition_ENUM.ctl"/>
+				<Item Name="AprilTagFields_ENUM.ctl" Type="VI" URL="../Enum/AprilTagFields_ENUM.ctl"/>
 			</Item>
 			<Item Name="AprilTagPoseEstimate" Type="Folder">
 				<Item Name="AprilTagPoseEstimate.ctl" Type="VI" URL="../TypeDef/AprilTagPoseEstimate.ctl"/>
@@ -424,7 +425,6 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="AprilTagPoseEstimate_New.vi" Type="VI" URL="../VI/AprilTagPoseEstimate_New.vi"/>
 			</Item>
 			<Item Name="AprilTagPoseEstimator" Type="Folder"/>
-			<Item Name="AprilTagFields_ENUM.ctl" Type="VI" URL="../Enum/AprilTagFields_ENUM.ctl"/>
 		</Item>
 		<Item Name="Classical Analog" Type="Folder">
 			<Item Name="AnalogDelay" Type="Folder">
