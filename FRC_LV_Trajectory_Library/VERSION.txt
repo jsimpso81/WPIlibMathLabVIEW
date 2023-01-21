@@ -1,2 +1,2 @@
-FRC LV Trajectory Library
-Version 3.03
+WPILib LabVIEW Math Library
+Version 3.04
