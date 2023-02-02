@@ -1078,6 +1078,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="DCMotor" Type="Folder">
 				<Item Name="DCMotor_GetAndymark9015.vi" Type="VI" URL="../DCMotor_GetAndymark9015.vi"/>
 				<Item Name="DCMotor_GetAndymarkRs775_125.vi" Type="VI" URL="../DCMotor_GetAndymarkRs775_125.vi"/>
+				<Item Name="DCMotor_GetAndymarkSnowBlower2235.vi" Type="VI" URL="../DCMotor_GetAndymarkSnowBlower2235.vi"/>
 				<Item Name="DCMotor_GetBag.vi" Type="VI" URL="../DCMotor_GetBag.vi"/>
 				<Item Name="DCMotor_GetBanebotsRs550.vi" Type="VI" URL="../DCMotor_GetBanebotsRs550.vi"/>
 				<Item Name="DCMotor_GetBanebotsRs775.vi" Type="VI" URL="../DCMotor_GetBanebotsRs775.vi"/>
@@ -1743,7 +1744,6 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="Util_GetLibraryVersion.vi" Type="VI" URL="../Util_GetLibraryVersion.vi"/>
 			<Item Name="Util_GetLibUsage.vi" Type="VI" URL="../Util_GetLibUsage.vi"/>
 			<Item Name="Util_GetTime.vi" Type="VI" URL="../Util_GetTime.vi"/>
-			<Item Name="Util_GetTime_Orig.vi" Type="VI" URL="../VI/Util_GetTime_Orig.vi"/>
 			<Item Name="Util_GetTime_U32.vi" Type="VI" URL="../VI/Util_GetTime_U32.vi"/>
 			<Item Name="Util_GetTime_U64.vi" Type="VI" URL="../VI/Util_GetTime_U64.vi"/>
 			<Item Name="Util_LibraryGlobals.vi" Type="VI" URL="../Util_LibraryGlobals.vi"/>
