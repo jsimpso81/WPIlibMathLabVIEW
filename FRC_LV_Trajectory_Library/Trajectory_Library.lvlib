@@ -1743,6 +1743,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="Util_GetLibraryVersion.vi" Type="VI" URL="../Util_GetLibraryVersion.vi"/>
 			<Item Name="Util_GetLibUsage.vi" Type="VI" URL="../Util_GetLibUsage.vi"/>
 			<Item Name="Util_GetTime.vi" Type="VI" URL="../Util_GetTime.vi"/>
+			<Item Name="Util_GetTime_Orig.vi" Type="VI" URL="../VI/Util_GetTime_Orig.vi"/>
+			<Item Name="Util_GetTime_U32.vi" Type="VI" URL="../VI/Util_GetTime_U32.vi"/>
+			<Item Name="Util_GetTime_U64.vi" Type="VI" URL="../VI/Util_GetTime_U64.vi"/>
 			<Item Name="Util_LibraryGlobals.vi" Type="VI" URL="../Util_LibraryGlobals.vi"/>
 			<Item Name="Util_Trajectory_Absolute_To_Relative.vi" Type="VI" URL="../Util_Trajectory_Absolute_To_Relative.vi"/>
 			<Item Name="Util_Trajectory_ReadFile.vi" Type="VI" URL="../Util_Trajectory_ReadFile.vi"/>
