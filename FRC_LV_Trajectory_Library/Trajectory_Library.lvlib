@@ -1515,7 +1515,11 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Timer_ResetInternal.vi" Type="VI" URL="../Timer_ResetInternal.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
+				<Item Name="Timer_Restart.vi" Type="VI" URL="../VI/Timer_Restart.vi"/>
 				<Item Name="Timer_Start.vi" Type="VI" URL="../Timer_Start.vi"/>
+				<Item Name="Timer_Start_Internal.vi" Type="VI" URL="../VI/Timer_Start_Internal.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
 				<Item Name="Timer_Stop.vi" Type="VI" URL="../Timer_Stop.vi"/>
 				<Item Name="Timer_StopInternal.vi" Type="VI" URL="../Timer_StopInternal.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
