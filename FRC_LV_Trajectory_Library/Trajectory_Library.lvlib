@@ -1077,8 +1077,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="Model " Type="Folder">
 			<Item Name="DCMotor" Type="Folder">
 				<Item Name="DCMotor_GetAndymark9015.vi" Type="VI" URL="../DCMotor_GetAndymark9015.vi"/>
+				<Item Name="DCMotor_GetAndymarkAM2235A.vi" Type="VI" URL="../VI/DCMotor_GetAndymarkAM2235A.vi"/>
+				<Item Name="DCMotor_GetAndymarkAM3493.vi" Type="VI" URL="../VI/DCMotor_GetAndymarkAM3493.vi"/>
 				<Item Name="DCMotor_GetAndymarkRs775_125.vi" Type="VI" URL="../DCMotor_GetAndymarkRs775_125.vi"/>
-				<Item Name="DCMotor_GetAndymarkSnowBlower2235.vi" Type="VI" URL="../DCMotor_GetAndymarkSnowBlower2235.vi"/>
 				<Item Name="DCMotor_GetBag.vi" Type="VI" URL="../DCMotor_GetBag.vi"/>
 				<Item Name="DCMotor_GetBanebotsRs550.vi" Type="VI" URL="../DCMotor_GetBanebotsRs550.vi"/>
 				<Item Name="DCMotor_GetBanebotsRs775.vi" Type="VI" URL="../DCMotor_GetBanebotsRs775.vi"/>
