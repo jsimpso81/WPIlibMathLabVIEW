@@ -180,6 +180,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="TRAJ_CONSTRAINT_TYPES_ENUM.ctl" Type="VI" URL="../Enum/TRAJ_CONSTRAINT_TYPES_ENUM.ctl"/>
 		<Item Name="TRAJECTORY_SPLINE_TYPE_ENUM.ctl" Type="VI" URL="../Enum/TRAJECTORY_SPLINE_TYPE_ENUM.ctl"/>
 	</Item>
+	<Item Name="Globals" Type="Folder">
+		<Item Name="AprilTagPoseEstimator_Globals.vi" Type="VI" URL="../Globals/AprilTagPoseEstimator_Globals.vi"/>
+		<Item Name="Util_LibraryGlobals.vi" Type="VI" URL="../Globals/Util_LibraryGlobals.vi"/>
+	</Item>
 	<Item Name="Menu VI Macros" Type="Folder">
 		<Item Name="macro_Analog_Delay.vi" Type="VI" URL="../Macros/macro_Analog_Delay.vi"/>
 		<Item Name="macro_Angle_Modulus.vi" Type="VI" URL="../Macros/macro_Angle_Modulus.vi"/>
@@ -288,6 +292,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 	</Item>
 	<Item Name="TypDef" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
+		<Item Name="APRIL_TAG_POSE_ESTIMATOR.ctl" Type="VI" URL="../TypeDef/APRIL_TAG_POSE_ESTIMATOR.ctl"/>
 		<Item Name="ARM_FF.ctl" Type="VI" URL="../TypeDef/ARM_FF.ctl"/>
 		<Item Name="BANG_BANG.ctl" Type="VI" URL="../TypeDef/BANG_BANG.ctl"/>
 		<Item Name="BiCon_Matrix_FUNC_TYPE.ctl" Type="VI" URL="../TypeDef/BiCon_Matrix_FUNC_TYPE.ctl"/>
@@ -427,7 +432,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="AprilTagPoseEstimate_GetAmbifuity.vi" Type="VI" URL="../VI/AprilTagPoseEstimate_GetAmbifuity.vi"/>
 				<Item Name="AprilTagPoseEstimate_New.vi" Type="VI" URL="../VI/AprilTagPoseEstimate_New.vi"/>
 			</Item>
-			<Item Name="AprilTagPoseEstimator" Type="Folder"/>
+			<Item Name="AprilTagPoseEstimator" Type="Folder">
+				<Item Name="AprilTagPoseEstimator_New.vi" Type="VI" URL="../AprilTagPoseEstimator_New.vi"/>
+			</Item>
 		</Item>
 		<Item Name="Classical Analog" Type="Folder">
 			<Item Name="AnalogDelay" Type="Folder">
@@ -1751,7 +1758,6 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="Util_GetTime.vi" Type="VI" URL="../Util_GetTime.vi"/>
 			<Item Name="Util_GetTime_U32.vi" Type="VI" URL="../VI/Util_GetTime_U32.vi"/>
 			<Item Name="Util_GetTime_U64.vi" Type="VI" URL="../VI/Util_GetTime_U64.vi"/>
-			<Item Name="Util_LibraryGlobals.vi" Type="VI" URL="../Util_LibraryGlobals.vi"/>
 			<Item Name="Util_Trajectory_Absolute_To_Relative.vi" Type="VI" URL="../Util_Trajectory_Absolute_To_Relative.vi"/>
 			<Item Name="Util_Trajectory_ReadFile.vi" Type="VI" URL="../Util_Trajectory_ReadFile.vi"/>
 			<Item Name="Util_Trajectory_to_XY.vi" Type="VI" URL="../Util_Trajectory_to_XY.vi"/>
