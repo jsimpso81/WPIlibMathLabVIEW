@@ -165,7 +165,6 @@ DirectoryIndex index.htm
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Timer_Example_1.vi" Type="VI" URL="../VIs/Timer_Example_1.vi"/>
 		<Item Name="Timer_StateMachine_Complex_Example.vi" Type="VI" URL="../VIs/Timer_StateMachine_Complex_Example.vi"/>
-		<Item Name="Timer_StateMachine_Simple_Example.vi" Type="VI" URL="../VIs/Timer_StateMachine_Simple_Example.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
