@@ -307,7 +307,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="DEBOUNCER_TYPE_ENUM.ctl" Type="VI" URL="../Enum/DEBOUNCER_TYPE_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_ACCEL_LIMIT.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_ACCEL_LIMIT.ctl"/>
 		<Item Name="DIFF_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_KINEMATICS.ctl"/>
+		<Item Name="DIFF_DRIVE_ODOM2.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_ODOM2.ctl"/>
 		<Item Name="DIFF_DRIVE_POSE_EST.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_POSE_EST.ctl"/>
+		<Item Name="DIFF_DRIVE_POSE_EST2.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_POSE_EST2.ctl"/>
+		<Item Name="DIFF_DRIVE_POSE_EST2_INTERP_RECORD.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_POSE_EST2_INTERP_RECORD.ctl"/>
 		<Item Name="DIFF_DRIVE_TRAIN_SIM.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_TRAIN_SIM.ctl"/>
 		<Item Name="DISPLAY_WAYPOINT.ctl" Type="VI" URL="../TypeDef/DISPLAY_WAYPOINT.ctl"/>
 		<Item Name="DISPLAY_WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../TypeDef/DISPLAY_WEIGHTED_WAYPOINT.ctl"/>
@@ -372,6 +375,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="TIME_INTERPOLATABLE_DOUBLE.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_DOUBLE.ctl"/>
 		<Item Name="TIME_INTERPOLATABLE_POSE2D.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_POSE2D.ctl"/>
 		<Item Name="TIME_INTERPOLATABLE_ROTATION2D.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_ROTATION2D.ctl"/>
+		<Item Name="TIME_INTERPOLATABLE_VARIANT.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_VARIANT.ctl"/>
 		<Item Name="TIMER.ctl" Type="VI" URL="../TypeDef/TIMER.ctl"/>
 		<Item Name="TRAJ_CONFIG.ctl" Type="VI" URL="../TypeDef/TRAJ_CONFIG.ctl"/>
 		<Item Name="TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl" Type="VI" URL="../TypeDef/TRAJ_CONSTRAINT_CENTRIPETAL_ACCEL.ctl"/>
@@ -897,10 +901,18 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="DiffKinematics" Type="Folder">
 				<Item Name="DiffKinematics_New.vi" Type="VI" URL="../DiffKinematics_New.vi"/>
 				<Item Name="DiffKinematics_toChassisSpeed.vi" Type="VI" URL="../DiffKinematics_toChassisSpeed.vi"/>
+				<Item Name="DiffKinematics_toTwist2d.vi" Type="VI" URL="../VI/DiffKinematics_toTwist2d.vi"/>
 				<Item Name="DiffKinematics_toWheelSpeed.vi" Type="VI" URL="../DiffKinematics_toWheelSpeed.vi"/>
 			</Item>
 			<Item Name="DiffOdometry" Type="Folder">
 				<Item Name="DiffOdometry_Update.vi" Type="VI" URL="../DiffOdometry_Update.vi"/>
+			</Item>
+			<Item Name="DiffOdometry2" Type="Folder">
+				<Item Name="DiffDrvOdom2_Execute.vi" Type="VI" URL="../VI/DiffDrvOdom2_Execute.vi"/>
+				<Item Name="DiffDrvOdom2_GetPose.vi" Type="VI" URL="../VI/DiffDrvOdom2_GetPose.vi"/>
+				<Item Name="DiffDrvOdom2_New.vi" Type="VI" URL="../VI/DiffDrvOdom2_New.vi"/>
+				<Item Name="DiffDrvOdom2_Reset.vi" Type="VI" URL="../VI/DiffDrvOdom2_Reset.vi"/>
+				<Item Name="DiffDrvOdom2_Update.vi" Type="VI" URL="../VI/DiffDrvOdom2_Update.vi"/>
 			</Item>
 			<Item Name="DiffWheelSpeeds" Type="Folder">
 				<Item Name="DiffWheel_Normalize.vi" Type="VI" URL="../DiffWheel_Normalize.vi"/>
@@ -1411,6 +1423,17 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="DiffDrivePoseEst_VisionCorrect_Callback.vi" Type="VI" URL="../DiffDrivePoseEst_VisionCorrect_Callback.vi"/>
 				<Item Name="DiffDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi" Type="VI" URL="../DiffDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi"/>
 			</Item>
+			<Item Name="Diff Drive Pose Estimator 2" Type="Folder">
+				<Item Name="DiffDrivePoseEst2_AddVisionMeasurement.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_AddVisionMeasurement.vi"/>
+				<Item Name="DiffDrivePoseEst2_GetEstimatedPosition.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_GetEstimatedPosition.vi"/>
+				<Item Name="DiffDrivePoseEst2_InterpRecord_Interp.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_InterpRecord_Interp.vi"/>
+				<Item Name="DiffDrivePoseEst2_InterpRecord_New.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_InterpRecord_New.vi"/>
+				<Item Name="DiffDrivePoseEst2_New.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_New.vi"/>
+				<Item Name="DiffDrivePoseEst2_ResetPosition.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_ResetPosition.vi"/>
+				<Item Name="DiffDrivePoseEst2_SetVisionMeasurementStdDevs.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_SetVisionMeasurementStdDevs.vi"/>
+				<Item Name="DiffDrivePoseEst2_Update.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_Update.vi"/>
+				<Item Name="DiffDrivePoseEst2_UpdateWithTime.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_UpdateWithTime.vi"/>
+			</Item>
 			<Item Name="KalmanFilter" Type="Folder">
 				<Item Name="KalmanFilter_Correct.vi" Type="VI" URL="../KalmanFilter_Correct.vi"/>
 				<Item Name="KalmanFilter_GetK.vi" Type="VI" URL="../KalmanFilter_GetK.vi"/>
@@ -1575,6 +1598,17 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="TimeInterpRotation2d_GetSample.vi" Type="VI" URL="../VI/TimeInterpRotation2d_GetSample.vi"/>
 				<Item Name="TimeInterpRotation2d_New.vi" Type="VI" URL="../VI/TimeInterpRotation2d_New.vi"/>
 				<Item Name="TimeInterpRotation2d_SetMaxTime.vi" Type="VI" URL="../VI/TimeInterpRotation2d_SetMaxTime.vi"/>
+			</Item>
+			<Item Name="TimeInterpolatableVariant" Type="Folder">
+				<Item Name="TimeInterpVariant_AddSample.vi" Type="VI" URL="../VI/TimeInterpVariant_AddSample.vi"/>
+				<Item Name="TimeInterpVariant_CleanUp.vi" Type="VI" URL="../VI/TimeInterpVariant_CleanUp.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+				<Item Name="TimeInterpVariant_Clear.vi" Type="VI" URL="../VI/TimeInterpVariant_Clear.vi"/>
+				<Item Name="TimeInterpVariant_GetSample.vi" Type="VI" URL="../VI/TimeInterpVariant_GetSample.vi"/>
+				<Item Name="TimeInterpVariant_Interpolate.vi" Type="VI" URL="../VI/TimeInterpVariant_Interpolate.vi"/>
+				<Item Name="TimeInterpVariant_New.vi" Type="VI" URL="../VI/TimeInterpVariant_New.vi"/>
+				<Item Name="TimeInterpVariant_SetMaxTime.vi" Type="VI" URL="../VI/TimeInterpVariant_SetMaxTime.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Trajectory" Type="Folder">
