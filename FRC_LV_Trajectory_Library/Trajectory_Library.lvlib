@@ -1426,6 +1426,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="Diff Drive Pose Estimator 2" Type="Folder">
 				<Item Name="DiffDrivePoseEst2_AddVisionMeasurement.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_AddVisionMeasurement.vi"/>
 				<Item Name="DiffDrivePoseEst2_GetEstimatedPosition.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_GetEstimatedPosition.vi"/>
+				<Item Name="DiffDrivePoseEst2_InterpRecord_ExtractFromVar.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_InterpRecord_ExtractFromVar.vi"/>
 				<Item Name="DiffDrivePoseEst2_InterpRecord_Interp.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_InterpRecord_Interp.vi"/>
 				<Item Name="DiffDrivePoseEst2_InterpRecord_New.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_InterpRecord_New.vi"/>
 				<Item Name="DiffDrivePoseEst2_New.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_New.vi"/>
