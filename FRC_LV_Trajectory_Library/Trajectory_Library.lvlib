@@ -1567,6 +1567,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="TimeInterpBoolean_Clear.vi" Type="VI" URL="../VI/TimeInterpBoolean_Clear.vi"/>
 				<Item Name="TimeInterpBoolean_GetSample.vi" Type="VI" URL="../VI/TimeInterpBoolean_GetSample.vi"/>
 				<Item Name="TimeInterpBoolean_New.vi" Type="VI" URL="../VI/TimeInterpBoolean_New.vi"/>
+				<Item Name="TimeInterpBoolean_PopOldestSample.vi" Type="VI" URL="../VI/TimeInterpBoolean_PopOldestSample.vi"/>
 				<Item Name="TimeInterpBoolean_SetMaxTime.vi" Type="VI" URL="../VI/TimeInterpBoolean_SetMaxTime.vi"/>
 			</Item>
 			<Item Name="TimeInterpolatableDouble" Type="Folder">
@@ -1578,6 +1579,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="TimeInterpDouble_GetSample.vi" Type="VI" URL="../VI/TimeInterpDouble_GetSample.vi"/>
 				<Item Name="TimeInterpDouble_GetTimeForValue.vi" Type="VI" URL="../VI/TimeInterpDouble_GetTimeForValue.vi"/>
 				<Item Name="TimeInterpDouble_New.vi" Type="VI" URL="../VI/TimeInterpDouble_New.vi"/>
+				<Item Name="TimeInterpDouble_PopOldestSample.vi" Type="VI" URL="../VI/TimeInterpDouble_PopOldestSample.vi"/>
 				<Item Name="TimeInterpDouble_SetMaxTime.vi" Type="VI" URL="../VI/TimeInterpDouble_SetMaxTime.vi"/>
 			</Item>
 			<Item Name="TimeInterpolatablePose2d" Type="Folder">
@@ -1588,6 +1590,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="TimeInterpPose2d_Clear.vi" Type="VI" URL="../VI/TimeInterpPose2d_Clear.vi"/>
 				<Item Name="TimeInterpPose2d_GetSample.vi" Type="VI" URL="../VI/TimeInterpPose2d_GetSample.vi"/>
 				<Item Name="TimeInterpPose2d_New.vi" Type="VI" URL="../VI/TimeInterpPose2d_New.vi"/>
+				<Item Name="TimeInterpPose2d_PopOldestSample.vi" Type="VI" URL="../VI/TimeInterpPose2d_PopOldestSample.vi"/>
 				<Item Name="TimeInterpPose2d_SetMaxTime.vi" Type="VI" URL="../VI/TimeInterpPose2d_SetMaxTime.vi"/>
 			</Item>
 			<Item Name="TimeInterpolatableRotation2d" Type="Folder">
@@ -1598,6 +1601,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="TimeInterpRotation2d_Clear.vi" Type="VI" URL="../VI/TimeInterpRotation2d_Clear.vi"/>
 				<Item Name="TimeInterpRotation2d_GetSample.vi" Type="VI" URL="../VI/TimeInterpRotation2d_GetSample.vi"/>
 				<Item Name="TimeInterpRotation2d_New.vi" Type="VI" URL="../VI/TimeInterpRotation2d_New.vi"/>
+				<Item Name="TimeInterpRotation2d_PopOldestSample.vi" Type="VI" URL="../VI/TimeInterpRotation2d_PopOldestSample.vi"/>
 				<Item Name="TimeInterpRotation2d_SetMaxTime.vi" Type="VI" URL="../VI/TimeInterpRotation2d_SetMaxTime.vi"/>
 			</Item>
 			<Item Name="TimeInterpolatableVariant" Type="Folder">
@@ -1609,6 +1613,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="TimeInterpVariant_GetSample.vi" Type="VI" URL="../VI/TimeInterpVariant_GetSample.vi"/>
 				<Item Name="TimeInterpVariant_Interpolate.vi" Type="VI" URL="../VI/TimeInterpVariant_Interpolate.vi"/>
 				<Item Name="TimeInterpVariant_New.vi" Type="VI" URL="../VI/TimeInterpVariant_New.vi"/>
+				<Item Name="TimeInterpVariant_PopOldestSample.vi" Type="VI" URL="../VI/TimeInterpVariant_PopOldestSample.vi"/>
 				<Item Name="TimeInterpVariant_SetMaxTime.vi" Type="VI" URL="../VI/TimeInterpVariant_SetMaxTime.vi"/>
 			</Item>
 		</Item>
