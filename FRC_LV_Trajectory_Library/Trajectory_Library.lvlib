@@ -1111,9 +1111,12 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="DCMotor_GetNEO.vi" Type="VI" URL="../DCMotor_GetNEO.vi"/>
 				<Item Name="DCMotor_GetNEO550.vi" Type="VI" URL="../DCMotor_GetNEO550.vi"/>
 				<Item Name="DCMotor_GetRomiBuiltIn.vi" Type="VI" URL="../DCMotor_GetRomiBuiltIn.vi"/>
+				<Item Name="DCMotor_GetSpeed.vi" Type="VI" URL="../VI/DCMotor_GetSpeed.vi"/>
+				<Item Name="DCMotor_GetTorque.vi" Type="VI" URL="../VI/DCMotor_GetTorque.vi"/>
 				<Item Name="DCMotor_GetVex775Pro.vi" Type="VI" URL="../DCMotor_GetVex775Pro.vi"/>
 				<Item Name="DCMotor_New.vi" Type="VI" URL="../DCMotor_New.vi"/>
 				<Item Name="DCMotor_PickMotor.vi" Type="VI" URL="../DCMotor_PickMotor.vi"/>
+				<Item Name="DCMotor_WithReduction.vi" Type="VI" URL="../VI/DCMotor_WithReduction.vi"/>
 			</Item>
 			<Item Name="LinearsystemId" Type="Folder">
 				<Item Name="LinearSystemId_CreateDCMotorSystem.vi" Type="VI" URL="../LinearSystemId_CreateDCMotorSystem.vi"/>
