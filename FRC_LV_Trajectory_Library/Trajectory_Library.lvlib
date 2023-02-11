@@ -956,11 +956,13 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			</Item>
 			<Item Name="SwerveModulePositions" Type="Folder">
 				<Item Name="SwerveModulePosition_CompareTo.vi" Type="VI" URL="../VI/SwerveModulePosition_CompareTo.vi"/>
+				<Item Name="SwerveModulePosition_Equals.vi" Type="VI" URL="../VI/SwerveModulePosition_Equals.vi"/>
 				<Item Name="SwerveModulePosition_Get.vi" Type="VI" URL="../VI/SwerveModulePosition_Get.vi"/>
 				<Item Name="SwerveModulePosition_New.vi" Type="VI" URL="../VI/SwerveModulePosition_New.vi"/>
 			</Item>
 			<Item Name="SwerveModuleState" Type="Folder">
 				<Item Name="SwerveModuleState_CompareTo.vi" Type="VI" URL="../SwerveModuleState_CompareTo.vi"/>
+				<Item Name="SwerveModuleState_Equal.vi" Type="VI" URL="../VI/SwerveModuleState_Equal.vi"/>
 				<Item Name="SwerveModuleState_Get.vi" Type="VI" URL="../SwerveModuleState_Get.vi"/>
 				<Item Name="SwerveModuleState_New.vi" Type="VI" URL="../SwerveModuleState_New.vi"/>
 				<Item Name="SwerveModuleState_Optimize.vi" Type="VI" URL="../SwerveModuleState_Optimize.vi"/>
