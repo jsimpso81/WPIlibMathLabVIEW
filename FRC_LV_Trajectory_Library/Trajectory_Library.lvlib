@@ -27,6 +27,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="FRC_LV_CtrlLib_DC_Motor.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DC_Motor.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DC_Motor_SIM.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DC_Motor_SIM.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Debouncer.mnu" Type="Document" URL="../FRC_LV_CtrlLib_Debouncer.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Diff_Odom_2.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_Diff_Odom_2.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Diff_Pose_Est2.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_Diff_Pose_Est2.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DiffDriveAccelLimiter.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveAccelLimiter.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DiffDriveTrainPoseEst.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveTrainPoseEst.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_DiffDriveTrainSim.mnu" Type="Document" URL="../FRC_LV_CtrlLib_DiffDriveTrainSim.mnu"/>
@@ -77,8 +79,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="FRC_LV_CtrlLib_StateSpaceModel.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceModel.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtil.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtil.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu" Type="Document" URL="../FRC_LV_CtrlLib_StateSpaceUtilSubVI.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Swerve_Pose_Est_2.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_Swerve_Pose_Est_2.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_Swerve_Wheel_Pos.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_Swerve_Wheel_Pos.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_SwervePoseEst.mnu" Type="Document" URL="../FRC_LV_CtrlLib_SwervePoseEst.mnu"/>
+		<Item Name="FRC_LV_CtrlLib_Time_Interp_Variant.mnu" Type="Document" URL="../Menu/FRC_LV_CtrlLib_Time_Interp_Variant.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_TimeInterp_Boolean.mnu" Type="Document" URL="../FRC_LV_CtrlLib_TimeInterp_Boolean.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_TimeInterp_Double.mnu" Type="Document" URL="../FRC_LV_CtrlLib_TimeInterp_Double.mnu"/>
 		<Item Name="FRC_LV_CtrlLib_TimeInterp_Pose.mnu" Type="Document" URL="../FRC_LV_CtrlLib_TimeInterp_Pose.mnu"/>
