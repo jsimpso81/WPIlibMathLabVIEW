@@ -371,6 +371,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="SWERVE_DRIVE_MODULE_STATE.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_MODULE_STATE.ctl"/>
 		<Item Name="SWERVE_DRIVE_ODOMETRY.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="SWERVE_DRIVE_POSE_EST.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_POSE_EST.ctl"/>
+		<Item Name="SWERVE_DRIVE_POSE_EST2.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_POSE_EST2.ctl"/>
+		<Item Name="SWERVE_DRIVE_POSE_EST2_INTERP_RECORD.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_POSE_EST2_INTERP_RECORD.ctl"/>
 		<Item Name="TIME_INTERPOLATABLE_BOOLEAN.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_BOOLEAN.ctl"/>
 		<Item Name="TIME_INTERPOLATABLE_DOUBLE.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_DOUBLE.ctl"/>
 		<Item Name="TIME_INTERPOLATABLE_POSE2D.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_POSE2D.ctl"/>
@@ -1430,6 +1432,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			</Item>
 			<Item Name="Diff Drive Pose Estimator 2" Type="Folder">
 				<Item Name="DiffDrivePoseEst2_AddVisionMeasurement.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_AddVisionMeasurement.vi"/>
+				<Item Name="DiffDrivePoseEst2_BufferDuration.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_BufferDuration.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
 				<Item Name="DiffDrivePoseEst2_GetEstimatedPosition.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_GetEstimatedPosition.vi"/>
 				<Item Name="DiffDrivePoseEst2_InterpRecord_ExtractFromVar.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_InterpRecord_ExtractFromVar.vi"/>
 				<Item Name="DiffDrivePoseEst2_InterpRecord_Interp.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_InterpRecord_Interp.vi"/>
@@ -1486,6 +1491,27 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="SwerveDrivePoseEst_UpdateWithTime.vi" Type="VI" URL="../SwerveDrivePoseEst_UpdateWithTime.vi"/>
 				<Item Name="SwerveDrivePoseEst_VisionCorrect_Callback.vi" Type="VI" URL="../SwerveDrivePoseEst_VisionCorrect_Callback.vi"/>
 				<Item Name="SwerveDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi" Type="VI" URL="../SwerveDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi"/>
+			</Item>
+			<Item Name="Swerve Drive Pose Estimator 2" Type="Folder">
+				<Item Name="SwerveDrivePoseEst2_AddVisionMeasurement.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_AddVisionMeasurement.vi"/>
+				<Item Name="SwerveDrivePoseEst2_BufferDuration.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_BufferDuration.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+				<Item Name="SwerveDrivePoseEst2_GetEstimatedPosition.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_GetEstimatedPosition.vi"/>
+				<Item Name="SwerveDrivePoseEst2_InterpRecord_ExtractFromVar.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_InterpRecord_ExtractFromVar.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+				<Item Name="SwerveDrivePoseEst2_InterpRecord_Interp.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_InterpRecord_Interp.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+				<Item Name="SwerveDrivePoseEst2_InterpRecord_New.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_InterpRecord_New.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+				<Item Name="SwerveDrivePoseEst2_New.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_New.vi"/>
+				<Item Name="SwerveDrivePoseEst2_ResetPosition.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_ResetPosition.vi"/>
+				<Item Name="SwerveDrivePoseEst2_SetVisionMeasurementStdDevs.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_SetVisionMeasurementStdDevs.vi"/>
+				<Item Name="SwerveDrivePoseEst2_Update.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_Update.vi"/>
+				<Item Name="SwerveDrivePoseEst2_UpdateWithTime.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_UpdateWithTime.vi"/>
 			</Item>
 			<Item Name="UnscentedKalmanFilter" Type="Folder">
 				<Item Name="UnscentedKalmanFilter_Correct.vi" Type="VI" URL="../UnscentedKalmanFilter_Correct.vi"/>
@@ -1570,6 +1596,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
 				<Item Name="TimeInterpBoolean_Clear.vi" Type="VI" URL="../VI/TimeInterpBoolean_Clear.vi"/>
+				<Item Name="TimeInterpBoolean_GetNewestSample.vi" Type="VI" URL="../VI/TimeInterpBoolean_GetNewestSample.vi"/>
 				<Item Name="TimeInterpBoolean_GetSample.vi" Type="VI" URL="../VI/TimeInterpBoolean_GetSample.vi"/>
 				<Item Name="TimeInterpBoolean_New.vi" Type="VI" URL="../VI/TimeInterpBoolean_New.vi"/>
 				<Item Name="TimeInterpBoolean_PopOldestSample.vi" Type="VI" URL="../VI/TimeInterpBoolean_PopOldestSample.vi"/>
@@ -1581,6 +1608,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
 				<Item Name="TimeInterpDouble_Clear.vi" Type="VI" URL="../VI/TimeInterpDouble_Clear.vi"/>
+				<Item Name="TimeInterpDouble_GetNewestSample.vi" Type="VI" URL="../VI/TimeInterpDouble_GetNewestSample.vi"/>
 				<Item Name="TimeInterpDouble_GetSample.vi" Type="VI" URL="../VI/TimeInterpDouble_GetSample.vi"/>
 				<Item Name="TimeInterpDouble_GetTimeForValue.vi" Type="VI" URL="../VI/TimeInterpDouble_GetTimeForValue.vi"/>
 				<Item Name="TimeInterpDouble_New.vi" Type="VI" URL="../VI/TimeInterpDouble_New.vi"/>
@@ -1593,6 +1621,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
 				<Item Name="TimeInterpPose2d_Clear.vi" Type="VI" URL="../VI/TimeInterpPose2d_Clear.vi"/>
+				<Item Name="TimeInterpPose2d_GetNewestSample.vi" Type="VI" URL="../VI/TimeInterpPose2d_GetNewestSample.vi"/>
 				<Item Name="TimeInterpPose2d_GetSample.vi" Type="VI" URL="../VI/TimeInterpPose2d_GetSample.vi"/>
 				<Item Name="TimeInterpPose2d_New.vi" Type="VI" URL="../VI/TimeInterpPose2d_New.vi"/>
 				<Item Name="TimeInterpPose2d_PopOldestSample.vi" Type="VI" URL="../VI/TimeInterpPose2d_PopOldestSample.vi"/>
@@ -1604,6 +1633,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
 				<Item Name="TimeInterpRotation2d_Clear.vi" Type="VI" URL="../VI/TimeInterpRotation2d_Clear.vi"/>
+				<Item Name="TimeInterpRotation2d_GetNewestSample.vi" Type="VI" URL="../VI/TimeInterpRotation2d_GetNewestSample.vi"/>
 				<Item Name="TimeInterpRotation2d_GetSample.vi" Type="VI" URL="../VI/TimeInterpRotation2d_GetSample.vi"/>
 				<Item Name="TimeInterpRotation2d_New.vi" Type="VI" URL="../VI/TimeInterpRotation2d_New.vi"/>
 				<Item Name="TimeInterpRotation2d_PopOldestSample.vi" Type="VI" URL="../VI/TimeInterpRotation2d_PopOldestSample.vi"/>
@@ -1615,6 +1645,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
 				<Item Name="TimeInterpVariant_Clear.vi" Type="VI" URL="../VI/TimeInterpVariant_Clear.vi"/>
+				<Item Name="TimeInterpVariant_GetNewestSample.vi" Type="VI" URL="../VI/TimeInterpVariant_GetNewestSample.vi"/>
 				<Item Name="TimeInterpVariant_GetSample.vi" Type="VI" URL="../VI/TimeInterpVariant_GetSample.vi"/>
 				<Item Name="TimeInterpVariant_Interpolate.vi" Type="VI" URL="../VI/TimeInterpVariant_Interpolate.vi"/>
 				<Item Name="TimeInterpVariant_New.vi" Type="VI" URL="../VI/TimeInterpVariant_New.vi"/>
