@@ -21,6 +21,32 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DCMotor_GetAndymarkAM2235A" >DCMotor_GetAndymarkAM2235A</h3>
+<p><IMG SRC="DCMotor_GetAndymarkAM2235A_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Creates a new DC MOTOR data cluster with the specified values. for a set of AndyMark 9015 motors. <BR>
+<BR>
+Inputs: <BR>
+  -  Num Motors  --  The number of motors used together in this sytem driving the same load.<BR>
+<BR>
+Outputs:<BR>
+  -  DCMOTOR --  Cluster containing the motor modeling constants for this set of motors.<BR>
+  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DCMotor_GetAndymarkAM3493" >DCMotor_GetAndymarkAM3493</h3>
+<p><IMG SRC="DCMotor_GetAndymarkAM3493_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Creates a new DC MOTOR data cluster with the specified values. for a set of AndyMark 9015 motors. <BR>
+<BR>
+Inputs: <BR>
+  -  Num Motors  --  The number of motors used together in this sytem driving the same load.<BR>
+<BR>
+Outputs:<BR>
+  -  DCMOTOR --  Cluster containing the motor modeling constants for this set of motors.<BR>
+  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="DCMotor_GetAndymarkRs775_125" >DCMotor_GetAndymarkRs775_125</h3>
 <p><IMG SRC="DCMotor_GetAndymarkRs775_125_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Creates a new DC MOTOR data cluster with the specified values. for a set of AndyMark Rs775-125 motors. <BR>
@@ -164,6 +190,33 @@ Outputs:<BR>
  </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DCMotor_GetSpeed" >DCMotor_GetSpeed</h3>
+<p><IMG SRC="DCMotor_GetSpeed_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Calculate the speed of the mtor given torque and voltage input.<BR>
+<BR>
+Inputs: <BR>
+  -  DCMOTOR --  Cluster containing the motor modeling constants for this set of motors.<BR>
+  -  Torque  --  The torque produced by the motor. (NM)<BR>
+  -  Voltage  --  The voltage applied to the motor. (Volts)<BR>
+<BR>
+Outputs:<BR>
+  -  Speed -- double -- Motor speed (Rad/Sec)<BR>
+ </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DCMotor_GetTorque" >DCMotor_GetTorque</h3>
+<p><IMG SRC="DCMotor_GetTorque_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Estimate the torque for this motor at the given current<BR>
+<BR>
+Inputs: <BR>
+  -  DCMOTOR --  Cluster containing the motor modeling constants for this set of motors.<BR>
+  -  Current  --  Motor current (Amps)<BR>
+<BR>
+Outputs:<BR>
+  -  Torque  --  Motor torque (NM)<BR>
+ </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="DCMotor_GetVex775Pro" >DCMotor_GetVex775Pro</h3>
 <p><IMG SRC="DCMotor_GetVex775Pro_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Creates a new DC MOTOR data cluster with the specified values. for a set of Vex 775 PRO motors. <BR>
@@ -206,6 +259,19 @@ Inputs: <BR>
 <BR>
 Outputs:<BR>
   -  DCMOTOR --  Cluster containing the motor modeling constants for this set of motors.<BR>
+ </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DCMotor_WithReduction" >DCMotor_WithReduction</h3>
+<p><IMG SRC="DCMotor_WithReduction_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns a copy of this motor with the given gearbox reduction applied.<BR>
+<BR>
+Inputs: <BR>
+  -  in DCMOTOR --  Cluster containing the motor modeling constants for this set of motors.<BR>
+  -  GearboxReduction --  double  -- The gearbox reduction.<BR>
+<BR>
+Outputs:<BR>
+  -  out DCMOTOR --  Revised cluster containing the motor modeling constants for this set of motors.<BR>
  </pre></p>
 <br>
 </BODY>

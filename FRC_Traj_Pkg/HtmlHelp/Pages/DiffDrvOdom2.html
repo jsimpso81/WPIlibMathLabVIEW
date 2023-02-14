@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="DiffDrvOdom2" >DiffDrvOdom2</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrvOdom2_Execute" >DiffDrvOdom2_Execute</h3>
+<p><IMG SRC="DiffDrvOdom2_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Single call LabVIEW VI to perform differential drive odometry. Odometry allows you to track the robot's position on the field over the course of a match using readings from 2 encoders and a gyroscope.<BR>
+ <BR>
+Teams can use odometry during the autonomous period for complex tasks like path following.  Furthermore, odometry can be used for latency compensation when using computer-vision systems.<BR>
+<BR>
+Updates the robot position on the field using distance measurements from encoders. This method is more numerically accurate than using velocities to integrate the pose and is also advantageous for teams that are using lower CPR encoders.<BR>
+<BR>
+<BR>
+Inputs:<BR>
+  -  gyroAngle  -- Rotation2d  -- The angle reported by the gyroscope.<BR>
+  -  leftDistanceMeters  --  double  -- The distance traveled by the left encoder.<BR>
+  -  rightDistanceMeters  -- double  --  The distance traveled by the right encoder.<BR>
+  -  init/reset  -- boolean  -- When TRUE, position, gyro, and distances are reset.<BR>
+  -  initialPoseMeters  -- Pose2d  -- The starting position of the robot on the field.<BR>
+<BR>
+Outputs:<BR>
+  -  out_DiffDriveOdom -- DiffDriveOdom2  --  Current value of internal data cluster<BR>
+  -- Pose meters  -- Pose2d  -- Current robot location.<BR>
+<BR>
+<BR>
+<BR>
+   <BR>
+Inputs:<BR>
+  -  in_DiffDriveOdom -- DiffDriveOdom2  -- Diff Drive odometry data cluster<BR>
+  -  gyroAngle The angle reported by the gyroscope.<BR>
+  -  leftDistanceMeters The distance traveled by the left encoder.<BR>
+  -  rightDistanceMeters The distance traveled by the right encoder.<BR>
+<BR>
+Outputs:<BR>
+  -  out_DiffDriveOdom -- DiffDriveOdom2  -- Updated data cluster<BR>
+  -  pose  -- Pose2d  -- The new pose of the robot.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrvOdom2_GetPose" >DiffDrvOdom2_GetPose</h3>
+<p><IMG SRC="DiffDrvOdom2_GetPose_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the position of the robot on the field.<BR>
+   <BR>
+Inputs:<BR>
+  -  in_DiffDriveOdom -- DiffDriveOdom2  -- Diff Drive odometry data cluster<BR>
+<BR>
+Outputs:<BR>
+  -  pose --  Pose2d  -- The pose of the robot (x and y are in meters).<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrvOdom2_New" >DiffDrvOdom2_New</h3>
+<p><IMG SRC="DiffDrvOdom2_New_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster and subVI for differential drive odometry. Odometry allows you to track the robot's position on the field over the course of a match using readings from 2 encoders and a gyroscope.<BR>
+ <BR>
+Teams can use odometry during the autonomous period for complex tasks like path following.  Furthermore, odometry can be used for latency compensation when using computer-vision systems.<BR>
+<BR>
+Constructs a DifferentialDriveOdometry data cluster.<BR>
+<BR>
+Inputs:<BR>
+  -  gyroAngle  --  Rotation2d  --  The angle reported by the gyroscope.<BR>
+  -  leftDistanceMeters  -- double  -- The distance traveled by the left encoder.<BR>
+  -  rightDistanceMeters  -- double  --  The distance traveled by the right encoder.<BR>
+  -  initialPoseMeters  -- Pose2d  -- The starting position of the robot on the field.<BR>
+<BR>
+Outputs:<BR>
+  -  out_DiffDriveOdom -- DiffDriveOdom2  -- Constructed data cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrvOdom2_Reset" >DiffDrvOdom2_Reset</h3>
+<p><IMG SRC="DiffDrvOdom2_Reset_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Resets the robot's position on the field.<BR>
+<BR>
+The gyroscope angle does not need to be reset here on the user's robot code.  The encoders do not need to be reset.  The library automatically takes care of offsetting the gyro angle.<BR>
+   <BR>
+Inputs:<BR>
+  -  in_DiffDriveOdom -- DiffDriveOdom2  -- Diff Drive odometry data cluster<BR>
+  -  gyroAngle  -- Rotation2d  --  The angle reported by the gyroscope.<BR>
+  -  leftDistanceMeters  -- Double  --  The distance traveled by the left encoder.<BR>
+  -  rightDistanceMeters  -- Double  -- The distance traveled by the right encoder.<BR>
+  -  poseMeters  -- Pose2d  -- The position on the field that your robot is at.<BR>
+<BR>
+Outputs:<BR>
+  -  out_DiffDriveOdom -- DiffDriveOdom2  -- Updated data cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrvOdom2_Update" >DiffDrvOdom2_Update</h3>
+<p><IMG SRC="DiffDrvOdom2_Update_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Updates the robot position on the field using distance measurements from encoders. This method is more numerically accurate than using velocities to integrate the pose and is also advantageous for teams that are using lower CPR encoders.<BR>
+   <BR>
+Inputs:<BR>
+  -  in_DiffDriveOdom -- DiffDriveOdom2  -- Diff Drive odometry data cluster<BR>
+  -  gyroAngle  -- Rotation2d  --  The angle reported by the gyroscope.<BR>
+  -  leftDistanceMeters  -- Double  -- The distance traveled by the left encoder.<BR>
+  -  rightDistanceMeters  -- Double  -- The distance traveled by the right encoder.<BR>
+<BR>
+Outputs:<BR>
+  -  out_DiffDriveOdom -- DiffDriveOdom2  -- Updated data cluster<BR>
+  -  pose  -- Pose2d  -- The new pose of the robot.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

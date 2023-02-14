@@ -46,6 +46,19 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpRotation2d_GetNewestSample" >TimeInterpRotation2d_GetNewestSample</h3>
+<p><IMG SRC="TimeInterpRotation2d_GetNewestSample_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the newest sample<BR>
+<BR>
+Inputs:<BR>
+   -  TimeInterpRotatin2d  -- Input data cluster<BR>
+<BR>
+Outputs<BR>
+  -  OutputRotatin2d  -- Newest Rotation2d.    <BR>
+   -  TimeStamp  -- Time for this sample (seconds)<BR>
+  -  IsPresent  -- Returns TRUE if the buffer contains any data</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TimeInterpRotation2d_GetSample" >TimeInterpRotation2d_GetSample</h3>
 <p><IMG SRC="TimeInterpRotation2d_GetSample_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sample the buffer at the given time.<BR>
@@ -73,6 +86,19 @@ Inputs:<BR>
 Outputs:<BR>
   -  Time Inter Rotation2d  -- Created data structure cluster<BR>
 </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TimeInterpRotation2d_PopOldestSample" >TimeInterpRotation2d_PopOldestSample</h3>
+<p><IMG SRC="TimeInterpRotation2d_PopOldestSample_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sample the buffer at the given time.<BR>
+<BR>
+Inputs:<BR>
+   -  TimeInterpVariant  -- Input data cluster<BR>
+   -  TimeStamp  -- Time at which to  sample (seconds)<BR>
+<BR>
+Outputs<BR>
+  -  OutputPose  -- Sampled Variant.   This is an exact value if there is a sample in the buffer at this time.  Otherwise the value is interpolated.   A custom routine will need to be called to extract the custom data from the variant.  <BR>
+  -  IsPresent  -- Returns TRUE if the buffer contains data as far back as TimeStamp.</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TimeInterpRotation2d_SetMaxTime" >TimeInterpRotation2d_SetMaxTime</h3>

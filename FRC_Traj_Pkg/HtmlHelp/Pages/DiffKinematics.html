@@ -37,6 +37,20 @@ Returns:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffKinematics_toTwist2d" >DiffKinematics_toTwist2d</h3>
+<p><IMG SRC="DiffKinematics_toTwist2d_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Performs forward kinematics to return the resulting Twist2d from the given left and right side distance deltas. This method is often used for odometry -- determining the robot's position on the field using changes in the distance driven by each wheel on the robot.<BR>
+<BR>
+Parameters:<BR>
+  - DiffDriveKinematics  -- Diff_Drive_Kinematics  -- This differential drive kinematics data cluster<BR>
+  - LeftDistiance  -- double  -- Left distance (meters)<BR>
+  - RightDistance  -- double  -- Right distance (meters)<BR>
+<BR>
+Returns:<BR>
+   - Twist2d  --  Twist2d  --  The resulting Twist2d<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="DiffKinematics_toWheelSpeed" >DiffKinematics_toWheelSpeed</h3>
 <p><IMG SRC="DiffKinematics_toWheelSpeed_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns left and right component velocities from a chassis speed using inverse kinematics.<BR>

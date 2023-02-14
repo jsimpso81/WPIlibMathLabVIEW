@@ -251,7 +251,7 @@ On the RoboRIO this reads the high resolution FPGA time.  The resolution, not ac
 <BR>
 Notes:<BR>
 -------<BR>
-- On the RoboRIO this routine takes approximately 4.8 microseconds to execute.   The WPI read FPGA clock routine takes approxmately 2.6 microseconds.  The difference can be attributed to this routine reading to extra words from the FPGA.  Each FPGA read takes approximately 1 microsecond.  <BR>
+- On the RoboRIO this routine takes approximately 2.1 microseconds to execute.   When both words of the FPGA clock have to be read the routine takes approximately 4.2 microseconds.  This occurs once every 71 minutes when the routine determines that the low word has rolled over.  The WPI read FPGA clock routine takes approxmately 2.1 microseconds.  The difference can be attributed to this routine reading to extra words from the FPGA.  Each FPGA read takes approximately 1 microsecond.  <BR>
 <BR>
 - Set a conditional complilation variable TRAJLIB_USEOSTIME and set it to a value of 1 to force this routine to read the RoboRIO operating system time instead of the FPGA time.  This will have 1 millisecond resolution.  This routine executes faster, approx 1 microsecond.<BR>
 <BR>
@@ -271,15 +271,57 @@ Custom Errors:<BR>
   -  8020  --  The upper FPGA time register changed during both attempts to read the FPGA time values.  The returned time may not be valid.</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-<h3 id="Util_LibraryGlobals" >Util_LibraryGlobals</h3>
-<p><IMG SRC="Util_LibraryGlobals_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">THIS IS AN INTERNAL ROUTINE.  DO NOT CALL OR USE DIRECTLY FROM USER CODE.<BR>
+<h3 id="Util_GetTime_U32" >Util_GetTime_U32</h3>
+<p><IMG SRC="Util_GetTime_U32_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This subVI returns the low word of the FPGA continuously running elapsed time in microseconds.<BR>
 <BR>
-This stores global variables for this library.  Currently it is used to store use counts for<BR>
-information reported to the Field Management System via the ReportUsage WPI call.<BR>
+This is an internal routine and should NOT be called directly by the end user.  <BR>
 <BR>
-Note:  It only contains items that currently have IDs to be reported.  Things like splines and <BR>
-trajectories are currently not included in that list.</pre></p>
+On the RoboRIO this reads the high resolution FPGA time.  The resolution, not accuracy, of the FPGA timer is 1 microsecond.  The normal FPGA clock register (32 bits) rolls over approximately every 71 minutes.  To significantly extend the rollover time,, this routine reads both the high and low FPGA clock registers.  High/low register turnover read sequencing is dealt with by reading the high register twice, once before and once after the low register.  If the values are different, the read is repeated to assure consistency between the high and low values.  On a PC the standard operating system timer with 1 millisecond resolution is used.  <BR>
+<BR>
+NOTES:<BR>
+--------<BR>
+<BR>
+- Set a conditional complilation variable TRAJLIB_USEOSTIME and set it to a value of 1 to force this routine to read the RoboRIO operating system time instead of the FPGA time.  This will have 1 millisecond resolution.  This routine executes faster, approx 1 microsecond.<BR>
+<BR>
+ - On the RoboRIO there is some drift between the FPGA and operating system clocks.  The drift isn't consistent, but appears to be approximately 20 milliseconds / hour.  This isn't enough to be of concern.<BR>
+<BR>
+<BR>
+Input parameters:<BR>
+  -  Error In  --  Error Data Cluster  --  <BR>
+<BR>
+Returns:<BR>
+  -  FPGA_Time_LowWord_Microseconds  --  UInt32  --  Low word of continuously running FPGA clock.<BR>
+  -  Output Error  --  Output error cluster.  An error will be returned if there are problems reading the FPGA or of the FPGA clock high register changes twice while reading the value.<BR>
+<BR>
+Custom Errors:<BR>
+  -  8020  --  The upper FPGA time register changed during both attempts to read the FPGA time values.  The returned time may not be valid.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Util_GetTime_U64" >Util_GetTime_U64</h3>
+<p><IMG SRC="Util_GetTime_U64_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This subVI returns both words of the FPGA continuously running elapsed time in microseconds.<BR>
+<BR>
+This is an internal routine and should NOT be called directly by the end user.  <BR>
+<BR>
+On the RoboRIO this reads the high resolution FPGA time.  The resolution, not accuracy, of the FPGA timer is 1 microsecond.  The normal FPGA clock register (32 bits) rolls over approximately every 71 minutes.  To significantly extend the rollover time,, this routine reads both the high and low FPGA clock registers.  High/low register turnover read sequencing is dealt with by reading the high register twice, once before and once after the low register.  If the values are different, the read is repeated to assure consistency between the high and low values.  On a PC the standard operating system timer with 1 millisecond resolution is used.  <BR>
+<BR>
+NOTES:<BR>
+--------<BR>
+- Set a conditional complilation variable TRAJLIB_USEOSTIME and set it to a value of 1 to force this routine to read the RoboRIO operating system time instead of the FPGA time.  This will have 1 millisecond resolution.  This routine executes faster, approx 1 microsecond.<BR>
+<BR>
+ - On the RoboRIO there is some drift between the FPGA and operating system clocks.  The drift isn't consistent, but appears to be approximately 20 milliseconds / hour.  This isn't enough to be of concern.<BR>
+<BR>
+<BR>
+Input parameters:<BR>
+  -  Error In  --  Error Data Cluster  --  <BR>
+<BR>
+Returns:<BR>
+  -  FPGA_Time_Microseconds  --  UInt64  --  Full 64 bit value of the continously counting FPGA clock.<BR>
+  -  Output Error  --  Output error cluster.  An error will be returned if there are problems reading the FPGA or of the FPGA clock high register changes twice while reading the value.<BR>
+<BR>
+Custom Errors:<BR>
+  -  8020  --  The upper FPGA time register changed during both attempts to read the FPGA time values.  The returned time may not be valid.</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Util_TrajState_to_DiffDrive_WheelPos" >Util_TrajState_to_DiffDrive_WheelPos</h3>

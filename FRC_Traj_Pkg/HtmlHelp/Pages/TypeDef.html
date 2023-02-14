@@ -8,6 +8,21 @@
 <BODY>
 <h2 id="TypeDef" >TypeDef</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-APRIL_TAG_POSE_ESTIMATOR" >TypeDef-APRIL_TAG_POSE_ESTIMATOR</h3>
+<p><IMG SRC="APRIL_TAG_POSE_ESTIMATOR_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pose estimators for AprilTag tags.<BR>
+<BR>
+Contains:<BR>
+<BR>
+  --  tagSize --  double  -- tag size, in meters<BR>
+  --  fx  --  double  --  camera horizontal focal length, in pixels<BR>
+  --  fy  --  double  --  camera vertical focal length, in pixels<BR>
+  --  cx  -- double  --  camera horizontal focal center, in pixels<BR>
+  --  cy  --  double  --  camera vertical focal center, in pixels<BR>
+</pre></p>
+<p><IMG SRC="APRIL_TAG_POSE_ESTIMATOR_frontpanel.png"  ALT="Trajectory_Library.lvlib:APRIL_TAG_POSE_ESTIMATOR.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-ARM_FF" >TypeDef-ARM_FF</h3>
 <p><IMG SRC="ARM_FF_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Data cluster for a set of functions. that compute feedforward outputs for a simple arm (modeled as a motor acting against the force of gravity on a beam suspended at an angle. <BR>
@@ -204,9 +219,30 @@ Inverse kinematics converts a desired chassis speed into left and right velocity
 <p><IMG SRC="DIFF_DRIVE_KINEMATICS_frontpanel.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_KINEMATICS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-DIFF_DRIVE_ODOM2" >TypeDef-DIFF_DRIVE_ODOM2</h3>
+<p><IMG SRC="DIFF_DRIVE_ODOM2_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster and subVI for differential drive odometry. Odometry allows you to track the robot's position on the field over the course of a match using readings from 2 encoders and a gyroscope.<BR>
+ <BR>
+Teams can use odometry during the autonomous period for complex tasks like path following.  Furthermore, odometry can be used for latency compensation when using computer-vision systems.<BR>
+<BR>
+The gyro and encoders do NOT have to be reset before using this.<BR>
+<BR>
+This cluster contains:<BR>
+  --  M_Pose_Meters  --  Pose2d  -- Current robot position  (meters)<BR>
+  --  M_GyroOffset  --  Rotation2d  -- Initial gyro value<BR>
+  --  M_PrevLeftDist_M  -- Double  -- Previous reading of left wheel encoder distance (meters) <BR>
+  --  M_PrevRightDist_M  -- Double  -- Previous reading of right wheel encoder distance (meters) <BR>
+  --  M_InitLeftDist_M  -- Double  -- Initial reading of left wheel encoder distance (meters) <BR>
+  --  M_InitRightDist_M  -- Double  -- Initial reading of right wheel encoder distance (meters) <BR>
+</pre></p>
+<p><IMG SRC="DIFF_DRIVE_ODOM2_frontpanel.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_ODOM2.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DIFF_DRIVE_POSE_EST" >TypeDef-DIFF_DRIVE_POSE_EST</h3>
 <p><IMG SRC="DIFF_DRIVE_POSE_EST_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of subVI wraps an UnscentedKalmanFilter to fuse latency-compensated vision measurements with differential drive encoder measurements. It will correct for noisy vision measurements and encoder drift. It is intended to be an easy drop-in for DifferentialDriveOdometry; in fact, if you never call DifferentialDrivePoseEstimator_addVisionMeasurement and only call DifferentialDrivePoseEstimator_update then this will behave exactly the same as DifferentialDriveOdometry.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions is deprecated.   Suggest using the new Diff Drive Pose Est 2 instead.<BR>
+<BR>
+This set of subVI wraps an UnscentedKalmanFilter to fuse latency-compensated vision measurements with differential drive encoder measurements. It will correct for noisy vision measurements and encoder drift. It is intended to be an easy drop-in for DifferentialDriveOdometry; in fact, if you never call DifferentialDrivePoseEstimator_addVisionMeasurement and only call DifferentialDrivePoseEstimator_update then this will behave exactly the same as DifferentialDriveOdometry.<BR>
  <BR>
 DifferentialDrivePoseEstimator_update should be called every robot loop (if your robot loops are faster than the default then you should change specify the update time when creating this data cluster. DifferentialDrivePoseEstimator_addVisionMeasurement can be called as infrequently as you want; if you never call it then this class will behave exactly like regular encoder odometry.<BR>
 <BR>
@@ -225,6 +261,32 @@ Our state-space system is:<BR>
  <BR>
 </pre></p>
 <p><IMG SRC="DIFF_DRIVE_POSE_EST_frontpanel.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_POSE_EST.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-DIFF_DRIVE_POSE_EST2" >TypeDef-DIFF_DRIVE_POSE_EST2</h3>
+<p><IMG SRC="DIFF_DRIVE_POSE_EST2_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This class wraps Differential Drive Odometry to fuse latency-compensated vision measurements with differential drive encoder measurements. It is intended to be a drop-in replacement for DiffDrvOdom2; in fact, if you never call DiffDrvPoseEst2_AddVisionMeasurement and only call  DiffDrvPoseEst2_Update then this will behave exactly the same as DiffDrvOdom2.<BR>
+ <BR>
+DiffDrvPoseEst2_Update should be called every robot loop.<BR>
+ <BR>
+DiffDrvPoseEst2_AddVisionMeasurement can be called as infrequently as you want.  If you never call it then this set of VI will behave exactly like regular encoder odometry.<BR>
+<BR>
+This data cluster contains:<BR>
+  --  Diff_Drive_Kinematics  -- Diff_Drive_Kinematics  -- Kinematics data cluster that defines this drive.<BR>
+  --  Diff_Pose_Odom2  -- Diff_Drive__Odom2  --  Odometry data cluster for this drive.<BR>
+  --  M_Q -- <3,1> Matrix -- Matrix that holds standard deviations for the robot pose X, Y, theta (meters, meters, radians)<BR>
+  --  M_Vision_K  --  <3,3> Matrix  -- Matrix that holds the gain matrix for closed loop continuous Kalman filter.<BR>
+  --  Pose_Buffer -- TimeInterpBufferVariant  -- Holds last 1.5 seconds of position measurements.  <BR>
+<BR>
+</pre></p>
+<p><IMG SRC="DIFF_DRIVE_POSE_EST2_frontpanel.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_POSE_EST2.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-DIFF_DRIVE_POSE_EST2_INTERP_RECORD" >TypeDef-DIFF_DRIVE_POSE_EST2_INTERP_RECORD</h3>
+<p><IMG SRC="DIFF_DRIVE_POSE_EST2_INTERP_RECORD_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Differential Drive Pose Estimate 2 -- Interporatable Record<BR>
+</pre></p>
+<p><IMG SRC="DIFF_DRIVE_POSE_EST2_INTERP_RECORD_frontpanel.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_POSE_EST2_INTERP_RECORD.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DIFF_DRIVE_TRAIN_SIM" >TypeDef-DIFF_DRIVE_TRAIN_SIM</h3>
@@ -1059,7 +1121,9 @@ Teams can use odometry during the autonomous period for complex tasks like path 
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-SWERVE_DRIVE_POSE_EST" >TypeDef-SWERVE_DRIVE_POSE_EST</h3>
 <p><IMG SRC="SWERVE_DRIVE_POSE_EST_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The functions that use this data cluster wrap an UnscentedKalmanFilter Unscented Kalman Filter to fuse latency-compensated vision measurements with swerve drive encoder velocity measurements. It will correct for noisy measurements and encoder drift. It is intended to be an easy but more accurate drop-in for SwerveDriveOdometry.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions is deprecated.   Suggest using the new Swerve Drive Pose Est 2 instead.<BR>
+<BR>
+The functions that use this data cluster wrap an UnscentedKalmanFilter Unscented Kalman Filter to fuse latency-compensated vision measurements with swerve drive encoder velocity measurements. It will correct for noisy measurements and encoder drift. It is intended to be an easy but more accurate drop-in for SwerveDriveOdometry.<BR>
  <BR>
 The generic arguments to this data cluster define the size of the state, input and output vectors used in the underlying UnscentedKalmanFilter Unscented Kalman Filter. Num States must be equal to the module count + 3. Num Inputs must be equal to the module count + 3.  Num Outputs must be equal to the module count + 1.<BR>
  <BR>
@@ -1086,6 +1150,32 @@ y = [theta, s_0, ..., s_n]t  <BR>
 containing gyro heading, followed by the distance travelled by each wheel.<BR>
 </pre></p>
 <p><IMG SRC="SWERVE_DRIVE_POSE_EST_frontpanel.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_POSE_EST.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-SWERVE_DRIVE_POSE_EST2" >TypeDef-SWERVE_DRIVE_POSE_EST2</h3>
+<p><IMG SRC="SWERVE_DRIVE_POSE_EST2_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This class wraps Swerve Drive Odometry to fuse latency-compensated vision measurements with swerve drive encoder measurements. It is intended to be a drop-in replacement for SwerveDrvOdom; in fact, if you never call SwerveDrvPoseEst_AddVisionMeasurement and only call  SwerveDrvPoseEst_Update then this will behave exactly the same as SwerveDrvOdom.<BR>
+ <BR>
+SwerveDrvPoseEst2_Update should be called every robot loop.<BR>
+ <BR>
+SwerveDrvPoseEst2_AddVisionMeasurement can be called as infrequently as you want.  If you never call it then this set of VI will behave exactly like regular encoder odometry.<BR>
+<BR>
+This data cluster contains:<BR>
+  --  Swerve_Drive_Kinematics  -- Swerve_Drive_Kinematics  -- Kinematics data cluster that defines this drive.<BR>
+  --  Swerve_Pose_Odom  -- Swerve_Drive__Odom  --  Odometry data cluster for this drive.<BR>
+  --  M_Q -- <3,1> Matrix -- Matrix that holds standard deviations for the robot pose X, Y, theta (meters, meters, radians)<BR>
+  --  M_Vision_K  --  <3,3> Matrix  -- Matrix that holds the gain matrix for closed loop continuous Kalman filter.<BR>
+  --  Pose_Buffer -- TimeInterpBufferVariant  -- Holds last 1.5 seconds of position measurements.  <BR>
+<BR>
+</pre></p>
+<p><IMG SRC="SWERVE_DRIVE_POSE_EST2_frontpanel.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_POSE_EST2.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-SWERVE_DRIVE_POSE_EST2_INTERP_RECORD" >TypeDef-SWERVE_DRIVE_POSE_EST2_INTERP_RECORD</h3>
+<p><IMG SRC="SWERVE_DRIVE_POSE_EST2_INTERP_RECORD_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Differential Drive Pose Estimate 2 -- Interporatable Record<BR>
+</pre></p>
+<p><IMG SRC="SWERVE_DRIVE_POSE_EST2_INTERP_RECORD_frontpanel.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_POSE_EST2_INTERP_RECORD.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TIMER" >TypeDef-TIMER</h3>
@@ -1134,6 +1224,15 @@ The TIME_INTERPOLATABLE_POSE stores and returns POSE2D values.<BR>
 The TIME_INTERPOLATABLE_ROTATION stores and returns ROTATION2D values.<BR>
 </pre></p>
 <p><IMG SRC="TIME_INTERPOLATABLE_ROTATION2D_frontpanel.png"  ALT="Trajectory_Library.lvlib:TIME_INTERPOLATABLE_ROTATION2D.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-TIME_INTERPOLATABLE_VARIANT" >TypeDef-TIME_INTERPOLATABLE_VARIANT</h3>
+<p><IMG SRC="TIME_INTERPOLATABLE_VARIANT_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The TimeInterpolatableBuffer provides an easy way to estimate past measurements. One application might be in conjunction with the DifferentialDrivePoseEstimator, where knowledge of the robot pose at the time when vision or other global measurement were recorded is necessary, or for recording the past angles of mechanisms as measured by encoders.<BR>
+<BR>
+The TIME_INTERPOLATABLE_POSE stores and returns POSE2D values.<BR>
+</pre></p>
+<p><IMG SRC="TIME_INTERPOLATABLE_VARIANT_frontpanel.png"  ALT="Trajectory_Library.lvlib:TIME_INTERPOLATABLE_VARIANT.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TRAJECTORY" >TypeDef-TRAJECTORY</h3>

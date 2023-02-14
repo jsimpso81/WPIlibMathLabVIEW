@@ -10,7 +10,9 @@
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveDrivePoseEst_AddVisionMeasurement" >SwerveDrivePoseEst_AddVisionMeasurement</h3>
 <p><IMG SRC="SwerveDrivePoseEst_AddVisionMeasurement_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Add a vision measurement to the Unscented Kalman Filter. This will correct the odometry pose estimate while still accounting for measurement noise.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions is deprecated.   Suggest using the new Swerve Drive Pose Est 2 instead.<BR>
+<BR>
+Add a vision measurement to the Unscented Kalman Filter. This will correct the odometry pose estimate while still accounting for measurement noise.<BR>
    <BR>
 This method can be called as infrequently as you want, as long as you are calling SwerveDrivePoseEstimator_update  every loop.<BR>
 <BR>
@@ -38,7 +40,9 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveDrivePoseEst_GetEstimatedPosition" >SwerveDrivePoseEst_GetEstimatedPosition</h3>
 <p><IMG SRC="SwerveDrivePoseEst_GetEstimatedPosition_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Gets the pose of the robot at the current time as estimated by the Unscented Kalman Filter.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions is deprecated.   Suggest using the new Swerve Drive Pose Est 2 instead.<BR>
+<BR>
+Gets the pose of the robot at the current time as estimated by the Unscented Kalman Filter.<BR>
 <BR>
 Inputs:<BR>
    -  SwervePoseEst  --  Data cluster containing SwervePoseEst data<BR>
@@ -50,7 +54,9 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveDrivePoseEst_Kalman_F_Callback" >SwerveDrivePoseEst_Kalman_F_Callback</h3>
 <p><IMG SRC="SwerveDrivePoseEst_Kalman_F_Callback_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Swerve Drive Pose Estimator,  Kalman Filter F function.  <BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions is deprecated.   Suggest using the new Swerve Drive Pose Est 2 instead.<BR>
+<BR>
+Swerve Drive Pose Estimator,  Kalman Filter F function.  <BR>
 <BR>
 This function returns the U matrix.<BR>
 <BR>
@@ -67,7 +73,9 @@ Output:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveDrivePoseEst_Kalman_H_Callback" >SwerveDrivePoseEst_Kalman_H_Callback</h3>
 <p><IMG SRC="SwerveDrivePoseEst_Kalman_H_Callback_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Swerve Drive Pose Estimator,  Kalman Filter H function.  <BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions is deprecated.   Suggest using the new Swerve Drive Pose Est 2 instead.<BR>
+<BR>
+Swerve Drive Pose Estimator,  Kalman Filter H function.  <BR>
 <BR>
 This function returns row 2 of the X matrix.<BR>
 <BR>
@@ -84,7 +92,9 @@ Output:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveDrivePoseEst_New" >SwerveDrivePoseEst_New</h3>
 <p><IMG SRC="SwerveDrivePoseEst_New_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Constructs a SwerveDrivePoseEstimator data cluster.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions is deprecated.   Suggest using the new Swerve Drive Pose Est 2 instead.<BR>
+<BR>
+Constructs a SwerveDrivePoseEstimator data cluster.<BR>
  <BR>
 The functions that use this data cluster wrap an UnscentedKalmanFilter Unscented Kalman Filter to fuse latency-compensated vision measurements with swerve drive encoder velocity measurements. It will correct for noisy measurements and encoder drift. It is intended to be an easy but more accurate drop-in for SwerveDriveOdometry.<BR>
  <BR>
@@ -136,7 +146,9 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveDrivePoseEst_ResetPosition" >SwerveDrivePoseEst_ResetPosition</h3>
 <p><IMG SRC="SwerveDrivePoseEst_ResetPosition_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Resets the robot's position on the field.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions is deprecated.   Suggest using the new Swerve Drive Pose Est 2 instead.<BR>
+<BR>
+Resets the robot's position on the field.<BR>
    <BR>
 (NOTE -- For LabVIEW version, this may not be needed.)  You NEED to reset your encoders (to zero) when calling this method.<BR>
    <BR>
@@ -155,7 +167,9 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveDrivePoseEst_SetVisionMeasurementStdDevs" >SwerveDrivePoseEst_SetVisionMeasurementStdDevs</h3>
 <p><IMG SRC="SwerveDrivePoseEst_SetVisionMeasurementStdDevs_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the pose estimator's trust of global measurements. This might be used to change trust in vision measurements after the autonomous period, or to change trust as distance to a vision target increases.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions is deprecated.   Suggest using the new Swerve Drive Pose Est 2 instead.<BR>
+<BR>
+Sets the pose estimator's trust of global measurements. This might be used to change trust in vision measurements after the autonomous period, or to change trust as distance to a vision target increases.<BR>
    <BR>
 Inputs:<BR>
    -  SwervePoseEst  --  Data cluster containing SwervePoseEst data<BR>
@@ -173,7 +187,9 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveDrivePoseEst_Update" >SwerveDrivePoseEst_Update</h3>
 <p><IMG SRC="SwerveDrivePoseEst_Update_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Updates the the Unscented Kalman Filter using only wheel encoder information. This should be called every loop, and the correct loop period must be passed into the constructor of this class.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions is deprecated.   Suggest using the new Swerve Drive Pose Est 2 instead.<BR>
+<BR>
+Updates the the Unscented Kalman Filter using only wheel encoder information. This should be called every loop, and the correct loop period must be passed into the constructor of this class.<BR>
 <BR>
 Inputs:<BR>
    -   In Swerve Drive Pose Est  --  data cluster   <BR>
@@ -191,7 +207,9 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveDrivePoseEst_UpdateWithTime" >SwerveDrivePoseEst_UpdateWithTime</h3>
 <p><IMG SRC="SwerveDrivePoseEst_UpdateWithTime_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Updates the the Unscented Kalman Filter using only wheel encoder information. This should be called every loop, and the correct loop period must be passed into the constructor of this class.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions is deprecated.   Suggest using the new Swerve Drive Pose Est 2 instead.<BR>
+<BR>
+Updates the the Unscented Kalman Filter using only wheel encoder information. This should be called every loop, and the correct loop period must be passed into the constructor of this class.<BR>
    <BR>
 Inputs:<BR>
    -  SwervePoseEst  --  Data cluster containing SwervePoseEst data<BR>
@@ -209,7 +227,9 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveDrivePoseEst_VisionCorrect_Callback" >SwerveDrivePoseEst_VisionCorrect_Callback</h3>
 <p><IMG SRC="SwerveDrivePoseEst_VisionCorrect_Callback_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Swerve Drive Pose Estimator function used to update Kalman FIlter.  <BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions is deprecated.   Suggest using the new Swerve Drive Pose Est 2 instead.<BR>
+<BR>
+Swerve Drive Pose Estimator function used to update Kalman FIlter.  <BR>
 <BR>
 This function calls the UnscentedKalmanFIlter Correct function with U, Y, VisionContR matrices.  <BR>
 <BR>
@@ -227,7 +247,9 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveDrivePoseEst_VisionCorrect_Kalman_H_Callback" >SwerveDrivePoseEst_VisionCorrect_Kalman_H_Callback</h3>
 <p><IMG SRC="SwerveDrivePoseEst_VisionCorrect_Kalman_H_Callback_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Swerve Drive Pose Estimator,  Kalman Filter H function for vision correction.  This function passes the X matrix to the resulting matrix.  No calculations are done.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions is deprecated.   Suggest using the new Swerve Drive Pose Est 2 instead.<BR>
+<BR>
+Swerve Drive Pose Estimator,  Kalman Filter H function for vision correction.  This function passes the X matrix to the resulting matrix.  No calculations are done.<BR>
 <BR>
 Input:<BR>
    -  ExtraPassedData  --  Variant contaiing extra data for the callback  For this function the extra data should be empty..<BR>

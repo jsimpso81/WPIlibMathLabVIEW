@@ -132,6 +132,18 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Timer_Restart" >Timer_Restart</h3>
+<p><IMG SRC="Timer_Restart_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Restart the timer by stopping the timer, if it is not already stopped, resetting the accumulated time, then starting the timer again. If you want an event to periodically reoccur at some time interval from the start time, consider using HasPeriodPassed instead.<BR>
+<BR>
+Inputs:<BR>
+  - Timer  --  The Timer data cluster<BR>
+<BR>
+Outputs:<BR>
+  -  Timer  --  The modified Timer data cluster<BR>
+ </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Timer_Start" >Timer_Start</h3>
 <p><IMG SRC="Timer_Start_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> <BR>
@@ -143,6 +155,20 @@ Inputs:<BR>
 Outputs:<BR>
   -  Timer  --  The modified Timer data cluster<BR>
  </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Timer_Start_Internal" >Timer_Start_Internal</h3>
+<p><IMG SRC="Timer_Start_Internal_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Start Timer  Internal -- This is a priviate internal routine.  It should NEVER be called by users.<BR>
+<BR>
+Input:<BR>
+  -- in Timer -- data cluster<BR>
+  -- PassThroughTime --  fpga time<BR>
+<BR>
+Output<BR>
+  --  out Timer  -- data cluster<BR>
+<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Timer_Stop" >Timer_Stop</h3>
