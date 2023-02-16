@@ -812,6 +812,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Rotation3d_Create_Quaternion.vi" Type="VI" URL="../VI/Rotation3d_Create_Quaternion.vi"/>
 				<Item Name="Rotation3d_Create_RollPitchYaw.vi" Type="VI" URL="../VI/Rotation3d_Create_RollPitchYaw.vi"/>
 				<Item Name="Rotation3D_Create_RotMatrix.vi" Type="VI" URL="../VI/Rotation3D_Create_RotMatrix.vi"/>
+				<Item Name="Rotation3D_Create_RotVector.vi" Type="VI" URL="../VI/Rotation3D_Create_RotVector.vi"/>
 				<Item Name="Rotation3d_Div.vi" Type="VI" URL="../VI/Rotation3d_Div.vi"/>
 				<Item Name="Rotation3d_Equals.vi" Type="VI" URL="../VI/Rotation3d_Equals.vi"/>
 				<Item Name="Rotation3d_GetAxisAngle.vi" Type="VI" URL="../VI/Rotation3d_GetAxisAngle.vi"/>
