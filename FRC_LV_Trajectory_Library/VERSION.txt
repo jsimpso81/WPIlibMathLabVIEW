@@ -1,2 +1,2 @@
 WPILib LabVIEW Math Library
-Version 3.04
+Version 3.05
