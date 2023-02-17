@@ -741,6 +741,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Pose2d_Interpolate.vi" Type="VI" URL="../Pose2d_Interpolate.vi"/>
 				<Item Name="Pose2d_Log.vi" Type="VI" URL="../Pose2d_Log.vi"/>
 				<Item Name="Pose2d_Minus.vi" Type="VI" URL="../Pose2d_Minus.vi"/>
+				<Item Name="Pose2d_NearestTo.vi" Type="VI" URL="../VI/Pose2d_NearestTo.vi"/>
 				<Item Name="Pose2d_New.vi" Type="VI" URL="../Pose2d_New.vi"/>
 				<Item Name="Pose2d_New_TRRO.vi" Type="VI" URL="../Pose2d_New_TRRO.vi"/>
 				<Item Name="Pose2d_Plus.vi" Type="VI" URL="../Pose2d_Plus.vi"/>
@@ -867,6 +868,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Translation2d_GetY.vi" Type="VI" URL="../Translation2d_GetY.vi"/>
 				<Item Name="Translation2d_Interpolate.vi" Type="VI" URL="../Translation2d_Interpolate.vi"/>
 				<Item Name="Translation2d_Minus.vi" Type="VI" URL="../Translation2d_Minus.vi"/>
+				<Item Name="Translation2d_NearestTo.vi" Type="VI" URL="../VI/Translation2d_NearestTo.vi"/>
 				<Item Name="Translation2d_Plus.vi" Type="VI" URL="../Translation2d_Plus.vi"/>
 				<Item Name="Translation2d_RotateBy.vi" Type="VI" URL="../Translation2d_RotateBy.vi"/>
 				<Item Name="Translation2d_Times.vi" Type="VI" URL="../Translation2d_Times.vi"/>
