@@ -341,6 +341,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="MECA_DRIVE_POSE_EST.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_POSE_EST.ctl"/>
+		<Item Name="MECA_DRIVE_POSE_EST2.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_POSE_EST2.ctl"/>
+		<Item Name="MECA_DRIVE_POSE_EST2_INTERP_RECORD.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_POSE_EST2_INTERP_RECORD.ctl"/>
 		<Item Name="MECA_WHEEL_POSITIONS.ctl" Type="VI" URL="../TypeDef/MECA_WHEEL_POSITIONS.ctl"/>
 		<Item Name="MECA_WHEEL_SPEEDS.ctl" Type="VI" URL="../TypeDef/MECA_WHEEL_SPEEDS.ctl"/>
 		<Item Name="MEDIAN_FILTER.ctl" Type="VI" URL="../TypeDef/MEDIAN_FILTER.ctl"/>
@@ -1483,6 +1485,19 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="MecaDrivePoseEst_UpdateWithTime.vi" Type="VI" URL="../VI/MecaDrivePoseEst_UpdateWithTime.vi"/>
 				<Item Name="MecaDrivePoseEst_VisionCorrect_Callback.vi" Type="VI" URL="../VI/MecaDrivePoseEst_VisionCorrect_Callback.vi"/>
 				<Item Name="MecaDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi" Type="VI" URL="../VI/MecaDrivePoseEst_VisionCorrect_Kalman_H_Callback.vi"/>
+			</Item>
+			<Item Name="Mecanum Drive Pose Estimator 2" Type="Folder">
+				<Item Name="MecaDrivePoseEst2_AddVisionMeasurement.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_AddVisionMeasurement.vi"/>
+				<Item Name="MecaDrivePoseEst2_BufferDuration.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_BufferDuration.vi"/>
+				<Item Name="MecaDrivePoseEst2_GetEstimatedPosition.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_GetEstimatedPosition.vi"/>
+				<Item Name="MecaDrivePoseEst2_InterpRecord_ExtractFromVar.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_InterpRecord_ExtractFromVar.vi"/>
+				<Item Name="MecaDrivePoseEst2_InterpRecord_Interp.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_InterpRecord_Interp.vi"/>
+				<Item Name="MecaDrivePoseEst2_InterpRecord_New.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_InterpRecord_New.vi"/>
+				<Item Name="MecaDrivePoseEst2_New.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_New.vi"/>
+				<Item Name="MecaDrivePoseEst2_ResetPosition.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_ResetPosition.vi"/>
+				<Item Name="MecaDrivePoseEst2_SetVisionMeasurementStdDevs.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_SetVisionMeasurementStdDevs.vi"/>
+				<Item Name="MecaDrivePoseEst2_Update.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_Update.vi"/>
+				<Item Name="MecaDrivePoseEst2_UpdateWithTime.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_UpdateWithTime.vi"/>
 			</Item>
 			<Item Name="Swerve Drive Pose Estimator" Type="Folder">
 				<Item Name="SwerveDrivePoseEst_AddVisionMeasurement.vi" Type="VI" URL="../SwerveDrivePoseEst_AddVisionMeasurement.vi"/>
