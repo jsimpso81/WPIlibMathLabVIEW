@@ -35,6 +35,12 @@
 		<Item Name="JBRUN" Type="Folder">
 			<Item Name="dir.mnu" Type="Document" URL="../JBRUN/dir.mnu"/>
 		</Item>
+		<Item Name="Menu" Type="Folder" URL="../Menu">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="Misc" Type="Folder" URL="../Misc">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="SecretBook" Type="Folder">
 			<Item Name="The Secret Book of FRC LabVIEW V2.07.pdf" Type="Document" URL="../SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf"/>
 		</Item>
@@ -866,8 +872,12 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Destination[6].path" Type="Path">../builds/vi.lib/Rock Robotics/WPI/ThirdParty/TopLevel/JBRUN</Property>
 				<Property Name="Destination[6].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[6].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="DestinationCount" Type="Int">7</Property>
-				<Property Name="Source[0].itemID" Type="Str">{44BCB1F7-3AE7-4052-A6D1-ADF24A717D8F}</Property>
+				<Property Name="Destination[7].destName" Type="Str">MiscFiles</Property>
+				<Property Name="Destination[7].path" Type="Path">../builds/vi.lib/Rock Robotics/WPI/ThirdParty/JAS_Junk/TrajLib/Misc</Property>
+				<Property Name="Destination[7].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[7].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="DestinationCount" Type="Int">8</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B981DB5B-51E1-49F9-9A1E-531F3178A6E8}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">3</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Pathfinder.lvlib</Property>
@@ -923,6 +933,20 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">3</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/LICENSE.txt</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[20].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[20].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[20].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[20].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[20].itemID" Type="Ref">/My Computer/Menu</Property>
+				<Property Name="Source[20].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[20].type" Type="Str">Container</Property>
+				<Property Name="Source[21].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[21].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[21].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[21].destinationIndex" Type="Int">7</Property>
+				<Property Name="Source[21].itemID" Type="Ref">/My Computer/Misc</Property>
+				<Property Name="Source[21].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[21].type" Type="Str">Container</Property>
 				<Property Name="Source[3].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">3</Property>
@@ -950,7 +974,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Private/pathfinder prepare.vi</Property>
 				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[9].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">20</Property>
+				<Property Name="SourceCount" Type="Int">22</Property>
 			</Item>
 			<Item Name="DocFiles" Type="Source Distribution">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
