@@ -149,6 +149,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="COORDINATE_SYSTEM.ctl" Type="VI" URL="../TypeDef/COORDINATE_SYSTEM.ctl"/>
 		<Item Name="DCMOTOR.CTL" Type="VI" URL="../TypeDef/DCMOTOR.CTL"/>
 		<Item Name="DCMOTOR_SIM.ctl" Type="VI" URL="../TypeDef/DCMOTOR_SIM.ctl"/>
+		<Item Name="DCMOTOR_SIM_MODEL_PARAMS.ctl" Type="VI" URL="../TypeDef/DCMOTOR_SIM_MODEL_PARAMS.ctl"/>
 		<Item Name="DEBOUNCER.ctl" Type="VI" URL="../TypeDef/DEBOUNCER.ctl"/>
 		<Item Name="DEBOUNCER_TYPE_ENUM.ctl" Type="VI" URL="../Enum/DEBOUNCER_TYPE_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_ACCEL_LIMIT.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_ACCEL_LIMIT.ctl"/>
@@ -162,9 +163,12 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="DISPLAY_WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../TypeDef/DISPLAY_WEIGHTED_WAYPOINT.ctl"/>
 		<Item Name="ELEV_FF.ctl" Type="VI" URL="../TypeDef/ELEV_FF.ctl"/>
 		<Item Name="ELEVATOR_SIM.ctl" Type="VI" URL="../TypeDef/ELEVATOR_SIM.ctl"/>
+		<Item Name="ELEVATOR_SIM_MODEL_PARAMS.CTL" Type="VI" URL="../TypeDef/ELEVATOR_SIM_MODEL_PARAMS.CTL"/>
+		<Item Name="ELEVATOR_SIM_SIMULATION_PARAMS.ctl" Type="VI" URL="../TypeDef/ELEVATOR_SIM_SIMULATION_PARAMS.ctl"/>
 		<Item Name="EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl" Type="VI" URL="../TypeDef/EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl"/>
 		<Item Name="EXTENDED_KALMAN_FILTER.ctl" Type="VI" URL="../TypeDef/EXTENDED_KALMAN_FILTER.ctl"/>
 		<Item Name="FLYWHEEL_SIM.ctl" Type="VI" URL="../TypeDef/FLYWHEEL_SIM.ctl"/>
+		<Item Name="FLYWHEEL_SIM_MODEL_PARAMS.ctl" Type="VI" URL="../TypeDef/FLYWHEEL_SIM_MODEL_PARAMS.ctl"/>
 		<Item Name="FUNCTION_GENERATOR.ctl" Type="VI" URL="../TypeDef/FUNCTION_GENERATOR.ctl"/>
 		<Item Name="FUNCTION_GENERATOR_MATRIX.ctl" Type="VI" URL="../TypeDef/FUNCTION_GENERATOR_MATRIX.ctl"/>
 		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../TypeDef/HOLONOMIC_DRV_CTRL.ctl"/>
@@ -211,6 +215,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="SIMPLE_MOTOR_FF.ctl" Type="VI" URL="../TypeDef/SIMPLE_MOTOR_FF.ctl"/>
 		<Item Name="SIMPLE_MOTOR_FF_KA_TUNE_PARAMS.ctl" Type="VI" URL="../TypeDef/SIMPLE_MOTOR_FF_KA_TUNE_PARAMS.ctl"/>
 		<Item Name="SINGLE_JOINT_ARM_SIM.ctl" Type="VI" URL="../TypeDef/SINGLE_JOINT_ARM_SIM.ctl"/>
+		<Item Name="SINGLE_JOINT_ARM_SIM_MODEL_PARAMS.ctl" Type="VI" URL="../TypeDef/SINGLE_JOINT_ARM_SIM_MODEL_PARAMS.ctl"/>
+		<Item Name="SINGLE_JOINT_ARM_SIM_SIMULATION_PARAMS.ctl" Type="VI" URL="../TypeDef/SINGLE_JOINT_ARM_SIM_SIMULATION_PARAMS.ctl"/>
 		<Item Name="SLEW_RATE_LIMITER.ctl" Type="VI" URL="../TypeDef/SLEW_RATE_LIMITER.ctl"/>
 		<Item Name="SPLINE.ctl" Type="VI" URL="../TypeDef/SPLINE.ctl"/>
 		<Item Name="SPLINE_CTRL_VECTOR.ctl" Type="VI" URL="../TypeDef/SPLINE_CTRL_VECTOR.ctl"/>
@@ -1024,8 +1030,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="BatterySim" Type="Folder">
 				<Item Name="BatterySim_CalculateDefaultBatteryLoadedVoltage.vi" Type="VI" URL="../BatterySim_CalculateDefaultBatteryLoadedVoltage.vi"/>
 				<Item Name="BatterySim_CalculateLoadedBatteryVoltage.vi" Type="VI" URL="../BatterySim_CalculateLoadedBatteryVoltage.vi"/>
+				<Item Name="BatterySim_Execute.vi" Type="VI" URL="../VI/BatterySim_Execute.vi"/>
 			</Item>
 			<Item Name="DC Motor Sim" Type="Folder">
+				<Item Name="DcMotorSim_Execute.vi" Type="VI" URL="../VI/DcMotorSim_Execute.vi"/>
 				<Item Name="DCMotorSim_getAngularPositionRad.vi" Type="VI" URL="../DCMotorSim_getAngularPositionRad.vi"/>
 				<Item Name="DCMotorSim_getAngularPositionRotations.vi" Type="VI" URL="../DCMotorSim_getAngularPositionRotations.vi"/>
 				<Item Name="DCMotorSim_getAngularVelocityRadPerSec.vi" Type="VI" URL="../DCMotorSim_getAngularVelocityRadPerSec.vi"/>
@@ -1033,6 +1041,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="DCMotorSim_GetCurrentDrawAmps.vi" Type="VI" URL="../DCMotorSim_GetCurrentDrawAmps.vi"/>
 				<Item Name="DCMotorSim_New_MOI.vi" Type="VI" URL="../DCMotorSim_New_MOI.vi"/>
 				<Item Name="DCMotorSim_New_Plant.vi" Type="VI" URL="../DCMotorSim_New_Plant.vi"/>
+				<Item Name="DCMotorSim_Pack_Model_Params.vi" Type="VI" URL="../VI/DCMotorSim_Pack_Model_Params.vi"/>
 				<Item Name="DCMotorSim_SetInputVoltage.vi" Type="VI" URL="../DCMotorSim_SetInputVoltage.vi"/>
 				<Item Name="DCMotorSim_Update.vi" Type="VI" URL="../DCMotorSim_Update.vi"/>
 			</Item>
@@ -1067,12 +1076,15 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="DiffDriveTrainSim_Update.vi" Type="VI" URL="../DiffDriveTrainSim_Update.vi"/>
 			</Item>
 			<Item Name="ElevatorSim" Type="Folder">
+				<Item Name="ElevatorSim_Execute.vi" Type="VI" URL="../VI/ElevatorSim_Execute.vi"/>
 				<Item Name="ElevatorSim_GetCurrentDraw.vi" Type="VI" URL="../ElevatorSim_GetCurrentDraw.vi"/>
 				<Item Name="ElevatorSim_GetPositionMeters.vi" Type="VI" URL="../ElevatorSim_GetPositionMeters.vi"/>
 				<Item Name="ElevatorSim_GetVelocityMetersPerSecond.vi" Type="VI" URL="../ElevatorSim_GetVelocityMetersPerSecond.vi"/>
 				<Item Name="ElevatorSim_HasHitLowerLimit.vi" Type="VI" URL="../ElevatorSim_HasHitLowerLimit.vi"/>
 				<Item Name="ElevatorSim_HasHitUpperLimit.vi" Type="VI" URL="../ElevatorSim_HasHitUpperLimit.vi"/>
 				<Item Name="ElevatorSim_New.vi" Type="VI" URL="../ElevatorSim_New.vi"/>
+				<Item Name="ElevatorSim_Pack_Model_Params.vi" Type="VI" URL="../VI/ElevatorSim_Pack_Model_Params.vi"/>
+				<Item Name="ElevatorSim_Pack_Simulation_Params.vi" Type="VI" URL="../VI/ElevatorSim_Pack_Simulation_Params.vi"/>
 				<Item Name="ElevatorSim_Rkf45_Func.vi" Type="VI" URL="../ElevatorSim_Rkf45_Func.vi"/>
 				<Item Name="ElevatorSim_SetInputVoltage.vi" Type="VI" URL="../ElevatorSim_SetInputVoltage.vi"/>
 				<Item Name="ElevatorSim_SetState.vi" Type="VI" URL="../ElevatorSim_SetState.vi"/>
@@ -1082,10 +1094,12 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="ElevatorSim_WouldHitUpperLimit.vi" Type="VI" URL="../ElevatorSim_WouldHitUpperLimit.vi"/>
 			</Item>
 			<Item Name="FlywheelSim" Type="Folder">
+				<Item Name="FlyWheelSim_Execute.vi" Type="VI" URL="../VI/FlyWheelSim_Execute.vi"/>
 				<Item Name="FlyWheelSim_getAngularVelocityRadPerSec.vi" Type="VI" URL="../FlyWheelSim_getAngularVelocityRadPerSec.vi"/>
 				<Item Name="FlyWheelSim_getAngularVelocityRPM.vi" Type="VI" URL="../FlyWheelSim_getAngularVelocityRPM.vi"/>
 				<Item Name="FlyWheelSim_GetCurrentDrawAmps.vi" Type="VI" URL="../FlyWheelSim_GetCurrentDrawAmps.vi"/>
 				<Item Name="FlyWheelSim_New_MOI.vi" Type="VI" URL="../FlyWheelSim_New_MOI.vi"/>
+				<Item Name="FlyWheelSim_Pack_Model_Params.vi" Type="VI" URL="../VI/FlyWheelSim_Pack_Model_Params.vi"/>
 				<Item Name="FlyWheelSim_SetInput.vi" Type="VI" URL="../FlyWheelSim_SetInput.vi"/>
 				<Item Name="FlyWheelSim_SetState.vi" Type="VI" URL="../FlyWheelSim_SetState.vi"/>
 				<Item Name="FlyWheelSim_Update.vi" Type="VI" URL="../FlyWheelSim_Update.vi"/>
@@ -1105,12 +1119,15 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			</Item>
 			<Item Name="Single Joint Arm Sim" Type="Folder">
 				<Item Name="SngJntArmSim_EstimateMOI.vi" Type="VI" URL="../SngJntArmSim_EstimateMOI.vi"/>
+				<Item Name="SngJntArmSim_Execute.vi" Type="VI" URL="../VI/SngJntArmSim_Execute.vi"/>
 				<Item Name="SngJntArmSim_GetAngleRads.vi" Type="VI" URL="../SngJntArmSim_GetAngleRads.vi"/>
 				<Item Name="SngJntArmSim_GetCurrentDraw.vi" Type="VI" URL="../SngJntArmSim_GetCurrentDraw.vi"/>
 				<Item Name="SngJntArmSim_GetVelocityRadsPerSec.vi" Type="VI" URL="../SngJntArmSim_GetVelocityRadsPerSec.vi"/>
 				<Item Name="SngJntArmSim_HasHitLowerLimit.vi" Type="VI" URL="../SngJntArmSim_HasHitLowerLimit.vi"/>
 				<Item Name="SngJntArmSim_HasHitUpperLimit.vi" Type="VI" URL="../SngJntArmSim_HasHitUpperLimit.vi"/>
 				<Item Name="SngJntArmSim_New.vi" Type="VI" URL="../SngJntArmSim_New.vi"/>
+				<Item Name="SngJntArmSim_Pack_Model_Params.vi" Type="VI" URL="../VI/SngJntArmSim_Pack_Model_Params.vi"/>
+				<Item Name="SngJntArmSim_Pack_Simulation_Params.vi" Type="VI" URL="../VI/SngJntArmSim_Pack_Simulation_Params.vi"/>
 				<Item Name="SngJntArmSim_Rkf45_Func.vi" Type="VI" URL="../SngJntArmSim_Rkf45_Func.vi"/>
 				<Item Name="SngJntArmSim_SetInputVoltage.vi" Type="VI" URL="../SngJntArmSim_SetInputVoltage.vi"/>
 				<Item Name="SngJntArmSim_SetState.vi" Type="VI" URL="../SngJntArmSim_SetState.vi"/>
