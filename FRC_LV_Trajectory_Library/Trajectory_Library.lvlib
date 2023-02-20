@@ -46,6 +46,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_CallbackHelp_MatrixPlus.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixPlus.vi"/>
 		<Item Name="macro_Clamp.vi" Type="VI" URL="../Macros/macro_Clamp.vi"/>
 		<Item Name="macro_DCMotor_Pick.vi" Type="VI" URL="../Macros/macro_DCMotor_Pick.vi"/>
+		<Item Name="macro_DCMotor_Sim_Execute.vi" Type="VI" URL="../Macros/macro_DCMotor_Sim_Execute.vi"/>
 		<Item Name="macro_Debouncer_Execute.vi" Type="VI" URL="../Macros/macro_Debouncer_Execute.vi"/>
 		<Item Name="macro_DiffDriveKineNew.vi" Type="VI" URL="../Macros/macro_DiffDriveKineNew.vi"/>
 		<Item Name="macro_Digital_And.vi" Type="VI" URL="../Macros/macro_Digital_And.vi"/>
@@ -57,9 +58,11 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_DigSeqLogic_Off_Delay.vi" Type="VI" URL="../Macros/macro_DigSeqLogic_Off_Delay.vi"/>
 		<Item Name="macro_DigSeqLogic_On_Delay.vi" Type="VI" URL="../Macros/macro_DigSeqLogic_On_Delay.vi"/>
 		<Item Name="macro_DigSeqLogic_OneShot.vi" Type="VI" URL="../Macros/macro_DigSeqLogic_OneShot.vi"/>
+		<Item Name="macro_Elevator_Sim_Execute.vi" Type="VI" URL="../Macros/macro_Elevator_Sim_Execute.vi"/>
 		<Item Name="macro_ElevatorFF_Calculate.vi" Type="VI" URL="../Macros/macro_ElevatorFF_Calculate.vi"/>
 		<Item Name="macro_FiniteStateMachine_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_Template.vi"/>
 		<Item Name="macro_FiniteStateMachine_w_Timer_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_w_Timer_Template.vi"/>
+		<Item Name="macro_FlyWheel_Sim_Execute.vi" Type="VI" URL="../Macros/macro_FlyWheel_Sim_Execute.vi"/>
 		<Item Name="macro_Function_Generator.vi" Type="VI" URL="../Macros/macro_Function_Generator.vi"/>
 		<Item Name="macro_HolDrvController_Execute.vi" Type="VI" URL="../Macros/macro_HolDrvController_Execute.vi"/>
 		<Item Name="macro_HolDrvController_ExecuteSP.vi" Type="VI" URL="../Macros/macro_HolDrvController_ExecuteSP.vi"/>
@@ -101,6 +104,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_SimpleMotorFF_Calculate_CalcAccel.vi" Type="VI" URL="../Macros/macro_SimpleMotorFF_Calculate_CalcAccel.vi"/>
 		<Item Name="macro_SimpleMotorFF_Ka_AutoTune.vi" Type="VI" URL="../Macros/macro_SimpleMotorFF_Ka_AutoTune.vi"/>
 		<Item Name="macro_SlewRateLimter_Execute.vi" Type="VI" URL="../Macros/macro_SlewRateLimter_Execute.vi"/>
+		<Item Name="macro_SngJntArm_Sim_Execute.vi" Type="VI" URL="../Macros/macro_SngJntArm_Sim_Execute.vi"/>
 		<Item Name="macro_SwerveDriveKineNew4.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNew4.vi"/>
 		<Item Name="macro_SwerveDriveKineNewX.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNewX.vi"/>
 		<Item Name="macro_SwerveDriveOdomNew4.vi" Type="VI" URL="../Macros/macro_SwerveDriveOdomNew4.vi"/>
