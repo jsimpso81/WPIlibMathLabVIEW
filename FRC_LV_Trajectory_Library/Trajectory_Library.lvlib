@@ -74,6 +74,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_LinearSystemLoop_DCMotor_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_DCMotor_Execute.vi"/>
 		<Item Name="macro_LinearSystemLoop_Elevator_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_Elevator_Execute.vi"/>
 		<Item Name="macro_LinearSystemLoop_FlyWheel_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_FlyWheel_Execute.vi"/>
+		<Item Name="macro_LinearSystemLoop_LinearSystem_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_LinearSystem_Execute.vi"/>
 		<Item Name="macro_LinearSystemLoop_SngJntArm_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_SngJntArm_Execute.vi"/>
 		<Item Name="macro_MatBuilder_Create.vi" Type="VI" URL="../Macros/macro_MatBuilder_Create.vi"/>
 		<Item Name="macro_MatBuilder_Fill.vi" Type="VI" URL="../Macros/macro_MatBuilder_Fill.vi"/>
@@ -192,7 +193,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="LINEAR_SYSTEM_ID_FLYWHEEL_MODEL.ctl" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_ID_FLYWHEEL_MODEL.ctl"/>
 		<Item Name="LINEAR_SYSTEM_ID_SINGLE_JOINT_ARM_MODEL.ctl" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_ID_SINGLE_JOINT_ARM_MODEL.ctl"/>
 		<Item Name="LINEAR_SYSTEM_LOOP.ctl" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_LOOP.ctl"/>
+		<Item Name="LINEAR_SYSTEM_LOOP_CTRL_PARAMS.CTL" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_LOOP_CTRL_PARAMS.CTL"/>
 		<Item Name="LINEAR_SYSTEM_LOOP_DCMOTOR_CTRL_PARAMS.ctl" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_LOOP_DCMOTOR_CTRL_PARAMS.ctl"/>
+		<Item Name="LINEAR_SYSTEM_LOOP_DIFF_DRV_CTRL_PARAMS.CTL" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_LOOP_DIFF_DRV_CTRL_PARAMS.CTL"/>
 		<Item Name="LINEAR_SYSTEM_LOOP_ELEVATOR_CTRL_PARAMS.CTL" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_LOOP_ELEVATOR_CTRL_PARAMS.CTL"/>
 		<Item Name="LINEAR_SYSTEM_LOOP_FLYWHEEL_CTRL_PARAMS.CTL" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_LOOP_FLYWHEEL_CTRL_PARAMS.CTL"/>
 		<Item Name="LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS.ctl" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS.ctl"/>
@@ -1000,6 +1003,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="LinearSystemId_CreateFlywheelSystem.vi" Type="VI" URL="../LinearSystemId_CreateFlywheelSystem.vi"/>
 				<Item Name="LinearSystemId_CreateSingleJointedArmSystem.vi" Type="VI" URL="../LinearSystemId_CreateSingleJointedArmSystem.vi"/>
 				<Item Name="LinearSystemId_DCMotor_Pack_Model_Params.vi" Type="VI" URL="../VI/LinearSystemId_DCMotor_Pack_Model_Params.vi"/>
+				<Item Name="LinearSystemId_DiffDrv_ID_Pack_Model_Params.vi" Type="VI" URL="../VI/LinearSystemId_DiffDrv_ID_Pack_Model_Params.vi"/>
+				<Item Name="LinearSystemId_DiffDrv_Pack_Model_Params.vi" Type="VI" URL="../VI/LinearSystemId_DiffDrv_Pack_Model_Params.vi"/>
 				<Item Name="LinearSystemId_Elevator_Pack_Model_Params.vi" Type="VI" URL="../VI/LinearSystemId_Elevator_Pack_Model_Params.vi"/>
 				<Item Name="LinearSystemId_FlyWheel_Pack_Model_Params.vi" Type="VI" URL="../VI/LinearSystemId_FlyWheel_Pack_Model_Params.vi"/>
 				<Item Name="LinearSystemId_IdentifyDriveTrainSystem.vi" Type="VI" URL="../LinearSystemId_IdentifyDriveTrainSystem.vi"/>
@@ -1270,8 +1275,11 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="LinearSystemLoop_Correct.vi" Type="VI" URL="../LinearSystemLoop_Correct.vi"/>
 				<Item Name="LinearSystemLoop_DCMotor_Execute.vi" Type="VI" URL="../VI/LinearSystemLoop_DCMotor_Execute.vi"/>
 				<Item Name="LinearSystemLoop_DCMotor_Pack_Ctrl.vi" Type="VI" URL="../VI/LinearSystemLoop_DCMotor_Pack_Ctrl.vi"/>
+				<Item Name="LinearSystemLoop_DiffDrv_Execute.vi" Type="VI" URL="../VI/LinearSystemLoop_DiffDrv_Execute.vi"/>
+				<Item Name="LinearSystemLoop_DiffDrv_Pack_Ctrl.vi" Type="VI" URL="../VI/LinearSystemLoop_DiffDrv_Pack_Ctrl.vi"/>
 				<Item Name="LinearSystemLoop_Elevator_Execute.vi" Type="VI" URL="../VI/LinearSystemLoop_Elevator_Execute.vi"/>
 				<Item Name="LinearSystemLoop_Elevator_Pack_Ctrl.vi" Type="VI" URL="../VI/LinearSystemLoop_Elevator_Pack_Ctrl.vi"/>
+				<Item Name="LinearSystemLoop_Execute.vi" Type="VI" URL="../VI/LinearSystemLoop_Execute.vi"/>
 				<Item Name="LinearSystemLoop_FlyWheel_Execute.vi" Type="VI" URL="../VI/LinearSystemLoop_FlyWheel_Execute.vi"/>
 				<Item Name="LinearSystemLoop_FlyWheel_Pack_Ctrl.vi" Type="VI" URL="../VI/LinearSystemLoop_FlyWheel_Pack_Ctrl.vi"/>
 				<Item Name="LinearSystemLoop_GetController.vi" Type="VI" URL="../LinearSystemLoop_GetController.vi"/>
@@ -1287,6 +1295,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="LinearSystemLoop_GetXHat_Single.vi" Type="VI" URL="../LinearSystemLoop_GetXHat_Single.vi"/>
 				<Item Name="LinearSystemLoop_New.vi" Type="VI" URL="../LinearSystemLoop_New.vi"/>
 				<Item Name="LinearSystemLoop_New_LinearSystem_ClampVal.vi" Type="VI" URL="../LinearSystemLoop_New_LinearSystem_ClampVal.vi"/>
+				<Item Name="LinearSystemLoop_Pack_Ctrl_Params.vi" Type="VI" URL="../VI/LinearSystemLoop_Pack_Ctrl_Params.vi"/>
 				<Item Name="LinearSystemLoop_Predict.vi" Type="VI" URL="../LinearSystemLoop_Predict.vi"/>
 				<Item Name="LinearSystemLoop_Reset.vi" Type="VI" URL="../LinearSystemLoop_Reset.vi"/>
 				<Item Name="LinearSystemLoop_SetNextR.vi" Type="VI" URL="../LinearSystemLoop_SetNextR.vi"/>
