@@ -49,6 +49,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_DCMotor_Sim_Execute.vi" Type="VI" URL="../Macros/macro_DCMotor_Sim_Execute.vi"/>
 		<Item Name="macro_Debouncer_Execute.vi" Type="VI" URL="../Macros/macro_Debouncer_Execute.vi"/>
 		<Item Name="macro_DiffDriveKineNew.vi" Type="VI" URL="../Macros/macro_DiffDriveKineNew.vi"/>
+		<Item Name="macro_DiffDrv_Sim_Execute.vi" Type="VI" URL="../Macros/macro_DiffDrv_Sim_Execute.vi"/>
 		<Item Name="macro_Digital_And.vi" Type="VI" URL="../Macros/macro_Digital_And.vi"/>
 		<Item Name="macro_Digital_AndMany.vi" Type="VI" URL="../Macros/macro_Digital_AndMany.vi"/>
 		<Item Name="macro_Digital_Not.vi" Type="VI" URL="../Macros/macro_Digital_Not.vi"/>
@@ -72,6 +73,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_LinearFilter_ExecuteAVG.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteAVG.vi"/>
 		<Item Name="macro_LinearFilter_ExecuteTC.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteTC.vi"/>
 		<Item Name="macro_LinearSystemLoop_DCMotor_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_DCMotor_Execute.vi"/>
+		<Item Name="macro_LinearSystemLoop_DiffDrv_ID_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_DiffDrv_ID_Execute.vi"/>
+		<Item Name="macro_LinearSystemLoop_DiffDrv_Model_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_DiffDrv_Model_Execute.vi"/>
 		<Item Name="macro_LinearSystemLoop_Elevator_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_Elevator_Execute.vi"/>
 		<Item Name="macro_LinearSystemLoop_FlyWheel_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_FlyWheel_Execute.vi"/>
 		<Item Name="macro_LinearSystemLoop_LinearSystem_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_LinearSystem_Execute.vi"/>
@@ -167,6 +170,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="DIFF_DRIVE_POSE_EST.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_POSE_EST.ctl"/>
 		<Item Name="DIFF_DRIVE_POSE_EST2.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_POSE_EST2.ctl"/>
 		<Item Name="DIFF_DRIVE_POSE_EST2_INTERP_RECORD.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_POSE_EST2_INTERP_RECORD.ctl"/>
+		<Item Name="DIFF_DRIVE_SIM_MODEL_PARAMS.CTL" Type="VI" URL="../TypeDef/DIFF_DRIVE_SIM_MODEL_PARAMS.CTL"/>
+		<Item Name="DIFF_DRIVE_SIM_SIMULATION_PARAMS.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_SIM_SIMULATION_PARAMS.ctl"/>
 		<Item Name="DIFF_DRIVE_TRAIN_SIM.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_TRAIN_SIM.ctl"/>
 		<Item Name="DISPLAY_WAYPOINT.ctl" Type="VI" URL="../TypeDef/DISPLAY_WAYPOINT.ctl"/>
 		<Item Name="DISPLAY_WEIGHTED_WAYPOINT.ctl" Type="VI" URL="../TypeDef/DISPLAY_WEIGHTED_WAYPOINT.ctl"/>
@@ -1073,6 +1078,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="DiffDriveTrainSim_CreateKitbotSim.vi" Type="VI" URL="../DiffDriveTrainSim_CreateKitbotSim.vi"/>
 				<Item Name="DiffDriveTrainSim_CreateKitbotSim_EstMass.vi" Type="VI" URL="../DiffDriveTrainSim_CreateKitbotSim_EstMass.vi"/>
 				<Item Name="DiffDriveTrainSim_CreateKitbotSim_EstMassMOI.vi" Type="VI" URL="../DiffDriveTrainSim_CreateKitbotSim_EstMassMOI.vi"/>
+				<Item Name="DiffDriveTrainSim_Execute.vi" Type="VI" URL="../VI/DiffDriveTrainSim_Execute.vi"/>
 				<Item Name="DiffDriveTrainSim_GetCurrentDrawAmps.vi" Type="VI" URL="../DiffDriveTrainSim_GetCurrentDrawAmps.vi"/>
 				<Item Name="DiffDriveTrainSim_GetCurrentGearing.vi" Type="VI" URL="../DiffDriveTrainSim_GetCurrentGearing.vi"/>
 				<Item Name="DiffDriveTrainSim_GetDynamics.vi" Type="VI" URL="../DiffDriveTrainSim_GetDynamics.vi"/>
@@ -1090,6 +1096,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="DiffDriveTrainSim_KitBotWheelSize.vi" Type="VI" URL="../DiffDriveTrainSim_KitBotWheelSize.vi"/>
 				<Item Name="DiffDriveTrainSim_New.vi" Type="VI" URL="../DiffDriveTrainSim_New.vi"/>
 				<Item Name="DiffDriveTrainSim_New_Mass_MOI.vi" Type="VI" URL="../DiffDriveTrainSim_New_Mass_MOI.vi"/>
+				<Item Name="DiffDriveTrainSim_Pack_Model_Params.vi" Type="VI" URL="../VI/DiffDriveTrainSim_Pack_Model_Params.vi"/>
+				<Item Name="DiffDriveTrainSim_Pack_Simulation_Params.vi" Type="VI" URL="../VI/DiffDriveTrainSim_Pack_Simulation_Params.vi"/>
 				<Item Name="DiffDriveTrainSim_SetCurrentGearing.vi" Type="VI" URL="../DiffDriveTrainSim_SetCurrentGearing.vi"/>
 				<Item Name="DiffDriveTrainSim_SetInputs.vi" Type="VI" URL="../DiffDriveTrainSim_SetInputs.vi"/>
 				<Item Name="DiffDriveTrainSim_SetPose.vi" Type="VI" URL="../DiffDriveTrainSim_SetPose.vi"/>
@@ -1310,12 +1318,16 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="LTVDiffDriveCtrl_SetTolerance.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_SetTolerance.vi"/>
 			</Item>
 			<Item Name="LTV Unicycle Controller" Type="Folder">
-				<Item Name="LTVUnicycleCtrl_AtReference.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_AtReference.vi"/>
+				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="LTVUnicycleCtrl_Calculate.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Calculate.vi"/>
 				<Item Name="LTVUnicycleCtrl_Calculate_TrajState.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Calculate_TrajState.vi"/>
+				<Item Name="LTVUnicycleCtrl_AtReference.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_AtReference.vi"/>
+				<Item Name="LTVUnicycleCtrl_Execute.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Execute.vi"/>
+				<Item Name="LTVUnicycleCtrl_Execute_TrajState.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Execute_TrajState.vi"/>
 				<Item Name="LTVUnicycleCtrl_New.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_New.vi"/>
 				<Item Name="LTVUnicycleCtrl_SetEnabled.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_SetEnabled.vi"/>
 				<Item Name="LTVUnicycleCtrl_SetTolerance.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_SetTolerance.vi"/>
+				<Item Name="LTVUnicycleCtrl_Pack_Model_Params.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Pack_Model_Params.vi"/>
 			</Item>
 		</Item>
 		<Item Name="State Space Estimator" Type="Folder">
