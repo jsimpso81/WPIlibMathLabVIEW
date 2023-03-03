@@ -15,6 +15,7 @@
 		</Item>
 		<Item Name="Gen_TrajLib_Doc.vi" Type="VI" URL="../Gen_TrajLib_Doc.vi"/>
 		<Item Name="Gen_TrajLib_Doc_Enum.vi" Type="VI" URL="../Gen_TrajLib_Doc_Enum.vi"/>
+		<Item Name="Gen_TrajLib_Doc_Macros.vi" Type="VI" URL="../Gen_TrajLib_Doc_Macros.vi"/>
 		<Item Name="Gen_TrajLib_Doc_TypeDef.vi" Type="VI" URL="../Gen_TrajLib_Doc_TypeDef.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
