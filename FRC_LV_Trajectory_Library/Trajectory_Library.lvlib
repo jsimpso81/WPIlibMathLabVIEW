@@ -79,6 +79,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_LinearSystemLoop_FlyWheel_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_FlyWheel_Execute.vi"/>
 		<Item Name="macro_LinearSystemLoop_LinearSystem_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_LinearSystem_Execute.vi"/>
 		<Item Name="macro_LinearSystemLoop_SngJntArm_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_SngJntArm_Execute.vi"/>
+		<Item Name="macro_LTV_DiffDriveCtrl_Execute.vi" Type="VI" URL="../Macros/macro_LTV_DiffDriveCtrl_Execute.vi"/>
+		<Item Name="macro_LTV_DiffDriveCtrl_Traj_Sample_Execute.vi" Type="VI" URL="../Macros/macro_LTV_DiffDriveCtrl_Traj_Sample_Execute.vi"/>
+		<Item Name="macro_LTV_Unicycle_Ctrl_Execute.vi" Type="VI" URL="../Macros/macro_LTV_Unicycle_Ctrl_Execute.vi"/>
+		<Item Name="macro_LTV_Unicycle_Ctrl_TrajSample_Execute.vi" Type="VI" URL="../Macros/macro_LTV_Unicycle_Ctrl_TrajSample_Execute.vi"/>
 		<Item Name="macro_MatBuilder_Create.vi" Type="VI" URL="../Macros/macro_MatBuilder_Create.vi"/>
 		<Item Name="macro_MatBuilder_Fill.vi" Type="VI" URL="../Macros/macro_MatBuilder_Fill.vi"/>
 		<Item Name="macro_MathUtils_ClampInput.vi" Type="VI" URL="../Macros/macro_MathUtils_ClampInput.vi"/>
@@ -206,6 +210,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS.ctl" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS.ctl"/>
 		<Item Name="LINEAR_SYSTEM_SIM.ctl" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_SIM.ctl"/>
 		<Item Name="LTV_DIFF_DRIVE_CTRL.ctl" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL.ctl"/>
+		<Item Name="LTV_DIFF_DRIVE_CTRL_MODEL_PARAMS.CTL" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL_MODEL_PARAMS.CTL"/>
+		<Item Name="LTV_DIFF_DRIVE_CTRL_TOLERANCE.CTL" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL_TOLERANCE.CTL"/>
 		<Item Name="LTV_UNICYCLE_CONTROLLER.ctl" Type="VI" URL="../TypeDef/LTV_UNICYCLE_CONTROLLER.ctl"/>
 		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_ODOMETRY.ctl"/>
@@ -1314,7 +1320,12 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="LTVDiffDriveCtrl_AtReference.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_AtReference.vi"/>
 				<Item Name="LTVDiffDriveCtrl_Calculate.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_Calculate.vi"/>
 				<Item Name="LTVDiffDriveCtrl_Calculate_TrajState.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_Calculate_TrajState.vi"/>
+				<Item Name="LTVDiffDriveCtrl_Execute.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_Execute.vi"/>
+				<Item Name="LTVDiffDriveCtrl_Execute_TrajState.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_Execute_TrajState.vi"/>
 				<Item Name="LTVDiffDriveCtrl_New.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_New.vi"/>
+				<Item Name="LTVDiffDriveCtrl_Pack_Ctrl_Params.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_Pack_Ctrl_Params.vi"/>
+				<Item Name="LTVDiffDriveCtrl_Pack_Model_Params.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_Pack_Model_Params.vi"/>
+				<Item Name="LTVDiffDriveCtrl_Pack_Tolerance.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_Pack_Tolerance.vi"/>
 				<Item Name="LTVDiffDriveCtrl_SetTolerance.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_SetTolerance.vi"/>
 			</Item>
 			<Item Name="LTV Unicycle Controller" Type="Folder">
@@ -1328,6 +1339,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="LTVUnicycleCtrl_SetEnabled.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_SetEnabled.vi"/>
 				<Item Name="LTVUnicycleCtrl_SetTolerance.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_SetTolerance.vi"/>
 				<Item Name="LTVUnicycleCtrl_Pack_Model_Params.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Pack_Model_Params.vi"/>
+				<Item Name="LTVUnicycleCtrl_Pack_Tolerance.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Pack_Tolerance.vi"/>
 			</Item>
 		</Item>
 		<Item Name="State Space Estimator" Type="Folder">
