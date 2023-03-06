@@ -91,9 +91,6 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="WPI_UtilitiesFRC Build Error.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesFRC Build Error.vi"/>
 			</Item>
-			<Item Name="LTV_DIFF_DRIVE_CTRL_CONTROL_PARAMS.CTL" Type="VI" URL="../../FRC_LV_Trajectory_Library/TypeDef/LTV_DIFF_DRIVE_CTRL_CONTROL_PARAMS.CTL"/>
-			<Item Name="LTV_UNICYCLE_CONTROLLER_MODEL_PARAMS.CTL" Type="VI" URL="../../FRC_LV_Trajectory_Library/TypeDef/LTV_UNICYCLE_CONTROLLER_MODEL_PARAMS.CTL"/>
-			<Item Name="LTV_UNICYCLE_CONTROLLER_TOLERANCE.CTL" Type="VI" URL="../../FRC_LV_Trajectory_Library/TypeDef/LTV_UNICYCLE_CONTROLLER_TOLERANCE.CTL"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>

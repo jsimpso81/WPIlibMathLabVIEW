@@ -173,6 +173,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="DIFF_DRIVE_ODOM2.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_ODOM2.ctl"/>
 		<Item Name="DIFF_DRIVE_POSE_EST.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_POSE_EST.ctl"/>
 		<Item Name="DIFF_DRIVE_POSE_EST2.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_POSE_EST2.ctl"/>
+		<Item Name="DIFF_DRIVE_POSE_EST2_CONFIG.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_POSE_EST2_CONFIG.ctl"/>
 		<Item Name="DIFF_DRIVE_POSE_EST2_INTERP_RECORD.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_POSE_EST2_INTERP_RECORD.ctl"/>
 		<Item Name="DIFF_DRIVE_SIM_MODEL_PARAMS.CTL" Type="VI" URL="../TypeDef/DIFF_DRIVE_SIM_MODEL_PARAMS.CTL"/>
 		<Item Name="DIFF_DRIVE_SIM_SIMULATION_PARAMS.ctl" Type="VI" URL="../TypeDef/DIFF_DRIVE_SIM_SIMULATION_PARAMS.ctl"/>
@@ -210,13 +211,17 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS.ctl" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS.ctl"/>
 		<Item Name="LINEAR_SYSTEM_SIM.ctl" Type="VI" URL="../TypeDef/LINEAR_SYSTEM_SIM.ctl"/>
 		<Item Name="LTV_DIFF_DRIVE_CTRL.ctl" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL.ctl"/>
+		<Item Name="LTV_DIFF_DRIVE_CTRL_CONTROL_PARAMS.CTL" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL_CONTROL_PARAMS.CTL"/>
 		<Item Name="LTV_DIFF_DRIVE_CTRL_MODEL_PARAMS.CTL" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL_MODEL_PARAMS.CTL"/>
 		<Item Name="LTV_DIFF_DRIVE_CTRL_TOLERANCE.CTL" Type="VI" URL="../TypeDef/LTV_DIFF_DRIVE_CTRL_TOLERANCE.CTL"/>
 		<Item Name="LTV_UNICYCLE_CONTROLLER.ctl" Type="VI" URL="../TypeDef/LTV_UNICYCLE_CONTROLLER.ctl"/>
+		<Item Name="LTV_UNICYCLE_CONTROLLER_MODEL_PARAMS.CTL" Type="VI" URL="../TypeDef/LTV_UNICYCLE_CONTROLLER_MODEL_PARAMS.CTL"/>
+		<Item Name="LTV_UNICYCLE_CONTROLLER_TOLERANCE.CTL" Type="VI" URL="../TypeDef/LTV_UNICYCLE_CONTROLLER_TOLERANCE.CTL"/>
 		<Item Name="MECA_DRIVE_KINEMATICS.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_KINEMATICS.ctl"/>
 		<Item Name="MECA_DRIVE_ODOMETRY.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="MECA_DRIVE_POSE_EST.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_POSE_EST.ctl"/>
 		<Item Name="MECA_DRIVE_POSE_EST2.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_POSE_EST2.ctl"/>
+		<Item Name="MECA_DRIVE_POSE_EST2_CONFIG.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_POSE_EST2_CONFIG.ctl"/>
 		<Item Name="MECA_DRIVE_POSE_EST2_INTERP_RECORD.ctl" Type="VI" URL="../TypeDef/MECA_DRIVE_POSE_EST2_INTERP_RECORD.ctl"/>
 		<Item Name="MECA_WHEEL_POSITIONS.ctl" Type="VI" URL="../TypeDef/MECA_WHEEL_POSITIONS.ctl"/>
 		<Item Name="MECA_WHEEL_SPEEDS.ctl" Type="VI" URL="../TypeDef/MECA_WHEEL_SPEEDS.ctl"/>
@@ -254,6 +259,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="SWERVE_DRIVE_ODOMETRY.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_ODOMETRY.ctl"/>
 		<Item Name="SWERVE_DRIVE_POSE_EST.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_POSE_EST.ctl"/>
 		<Item Name="SWERVE_DRIVE_POSE_EST2.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_POSE_EST2.ctl"/>
+		<Item Name="SWERVE_DRIVE_POSE_EST2_CONFIG.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_POSE_EST2_CONFIG.ctl"/>
 		<Item Name="SWERVE_DRIVE_POSE_EST2_INTERP_RECORD.ctl" Type="VI" URL="../TypeDef/SWERVE_DRIVE_POSE_EST2_INTERP_RECORD.ctl"/>
 		<Item Name="TIME_INTERPOLATABLE_BOOLEAN.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_BOOLEAN.ctl"/>
 		<Item Name="TIME_INTERPOLATABLE_DOUBLE.ctl" Type="VI" URL="../TypeDef/TIME_INTERPOLATABLE_DOUBLE.ctl"/>
@@ -1362,6 +1368,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="DiffDrivePoseEst2_BufferDuration.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_BufferDuration.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
+				<Item Name="DiffDrivePoseEst2_Execute.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_Execute.vi"/>
 				<Item Name="DiffDrivePoseEst2_GetEstimatedPosition.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_GetEstimatedPosition.vi"/>
 				<Item Name="DiffDrivePoseEst2_InterpRecord_ExtractFromVar.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_InterpRecord_ExtractFromVar.vi"/>
 				<Item Name="DiffDrivePoseEst2_InterpRecord_Interp.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_InterpRecord_Interp.vi"/>
@@ -1409,6 +1416,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="Mecanum Drive Pose Estimator 2" Type="Folder">
 				<Item Name="MecaDrivePoseEst2_AddVisionMeasurement.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_AddVisionMeasurement.vi"/>
 				<Item Name="MecaDrivePoseEst2_BufferDuration.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_BufferDuration.vi"/>
+				<Item Name="MecaDrivePoseEst2_Execute.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_Execute.vi"/>
 				<Item Name="MecaDrivePoseEst2_GetEstimatedPosition.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_GetEstimatedPosition.vi"/>
 				<Item Name="MecaDrivePoseEst2_InterpRecord_ExtractFromVar.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_InterpRecord_ExtractFromVar.vi"/>
 				<Item Name="MecaDrivePoseEst2_InterpRecord_Interp.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_InterpRecord_Interp.vi"/>
@@ -1437,6 +1445,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="SwerveDrivePoseEst2_BufferDuration.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_BufferDuration.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
+				<Item Name="SwerveDrivePoseEst2_Execute.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_Execute.vi"/>
 				<Item Name="SwerveDrivePoseEst2_GetEstimatedPosition.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_GetEstimatedPosition.vi"/>
 				<Item Name="SwerveDrivePoseEst2_InterpRecord_ExtractFromVar.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_InterpRecord_ExtractFromVar.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
