@@ -49,6 +49,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_DCMotor_Sim_Execute.vi" Type="VI" URL="../Macros/macro_DCMotor_Sim_Execute.vi"/>
 		<Item Name="macro_Debouncer_Execute.vi" Type="VI" URL="../Macros/macro_Debouncer_Execute.vi"/>
 		<Item Name="macro_DiffDriveKineNew.vi" Type="VI" URL="../Macros/macro_DiffDriveKineNew.vi"/>
+		<Item Name="macro_DiffDrivePoseEst2_Execute.vi" Type="VI" URL="../Macros/macro_DiffDrivePoseEst2_Execute.vi"/>
 		<Item Name="macro_DiffDrv_Sim_Execute.vi" Type="VI" URL="../Macros/macro_DiffDrv_Sim_Execute.vi"/>
 		<Item Name="macro_Digital_And.vi" Type="VI" URL="../Macros/macro_Digital_And.vi"/>
 		<Item Name="macro_Digital_AndMany.vi" Type="VI" URL="../Macros/macro_Digital_AndMany.vi"/>
@@ -90,6 +91,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_MecaDriveKineNew.vi" Type="VI" URL="../Macros/macro_MecaDriveKineNew.vi"/>
 		<Item Name="macro_MecaDriveOdomNew.vi" Type="VI" URL="../Macros/macro_MecaDriveOdomNew.vi"/>
 		<Item Name="macro_MecaDriveOdomUpdate.vi" Type="VI" URL="../Macros/macro_MecaDriveOdomUpdate.vi"/>
+		<Item Name="macro_MecaDrivePoseEst2_Execute.vi" Type="VI" URL="../Macros/macro_MecaDrivePoseEst2_Execute.vi"/>
 		<Item Name="macro_MecaWheelSpeedNormalize.vi" Type="VI" URL="../Macros/macro_MecaWheelSpeedNormalize.vi"/>
 		<Item Name="macro_MedianFilter_Execute.vi" Type="VI" URL="../Macros/macro_MedianFilter_Execute.vi"/>
 		<Item Name="macro_PIDAutoTune.vi" Type="VI" URL="../Macros/macro_PIDAutoTune.vi"/>
@@ -121,6 +123,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_SwerveDriveKineNewX.vi" Type="VI" URL="../Macros/macro_SwerveDriveKineNewX.vi"/>
 		<Item Name="macro_SwerveDriveOdomNew4.vi" Type="VI" URL="../Macros/macro_SwerveDriveOdomNew4.vi"/>
 		<Item Name="macro_SwerveDriveOdomUpdate4.vi" Type="VI" URL="../Macros/macro_SwerveDriveOdomUpdate4.vi"/>
+		<Item Name="macro_SwerveDrivePoseEst2_Execute.vi" Type="VI" URL="../Macros/macro_SwerveDrivePoseEst2_Execute.vi"/>
 		<Item Name="macro_SwerveModPosNew4.vi" Type="VI" URL="../Macros/macro_SwerveModPosNew4.vi"/>
 		<Item Name="macro_SwerveModStateNew4.vi" Type="VI" URL="../Macros/macro_SwerveModStateNew4.vi"/>
 		<Item Name="macro_SwerveModStatePosNew4.vi" Type="VI" URL="../Macros/macro_SwerveModStatePosNew4.vi"/>
@@ -1374,6 +1377,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="DiffDrivePoseEst2_InterpRecord_Interp.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_InterpRecord_Interp.vi"/>
 				<Item Name="DiffDrivePoseEst2_InterpRecord_New.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_InterpRecord_New.vi"/>
 				<Item Name="DiffDrivePoseEst2_New.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_New.vi"/>
+				<Item Name="DiffDrivePoseEst2_Pack_Config.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_Pack_Config.vi"/>
 				<Item Name="DiffDrivePoseEst2_ResetPosition.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_ResetPosition.vi"/>
 				<Item Name="DiffDrivePoseEst2_SetVisionMeasurementStdDevs.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_SetVisionMeasurementStdDevs.vi"/>
 				<Item Name="DiffDrivePoseEst2_Update.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_Update.vi"/>
@@ -1422,6 +1426,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="MecaDrivePoseEst2_InterpRecord_Interp.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_InterpRecord_Interp.vi"/>
 				<Item Name="MecaDrivePoseEst2_InterpRecord_New.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_InterpRecord_New.vi"/>
 				<Item Name="MecaDrivePoseEst2_New.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_New.vi"/>
+				<Item Name="MecaDrivePoseEst2_Pack_Config.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_Pack_Config.vi"/>
 				<Item Name="MecaDrivePoseEst2_ResetPosition.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_ResetPosition.vi"/>
 				<Item Name="MecaDrivePoseEst2_SetVisionMeasurementStdDevs.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_SetVisionMeasurementStdDevs.vi"/>
 				<Item Name="MecaDrivePoseEst2_Update.vi" Type="VI" URL="../VI/MecaDrivePoseEst2_Update.vi"/>
@@ -1457,6 +1462,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
 				<Item Name="SwerveDrivePoseEst2_New.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_New.vi"/>
+				<Item Name="SwerveDrivePoseEst2_Pack_Config.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_Pack_Config.vi"/>
 				<Item Name="SwerveDrivePoseEst2_ResetPosition.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_ResetPosition.vi"/>
 				<Item Name="SwerveDrivePoseEst2_SetVisionMeasurementStdDevs.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_SetVisionMeasurementStdDevs.vi"/>
 				<Item Name="SwerveDrivePoseEst2_Update.vi" Type="VI" URL="../VI/SwerveDrivePoseEst2_Update.vi"/>
