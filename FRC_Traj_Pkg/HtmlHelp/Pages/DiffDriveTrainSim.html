@@ -82,6 +82,20 @@ Outputs:<BR>
    </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_Execute" >DiffDriveTrainSim_Execute</h3>
+<p><IMG SRC="DiffDriveTrainSim_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Update the drivetrain states with the current time difference.<BR>
+   <BR>
+Inputs:<BR>
+   -  DiffDriveTraimSim  --  Data cluster<BR>
+   -  dtSeconds  --  the time difference<BR>
+<BR>
+Outputs:<BR>
+   -  OutDiffDriveTraimSim  --  Updated data cluster.<BR>
+   -  Error  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="DiffDriveTrainSim_GetCurrentDrawAmps" >DiffDriveTrainSim_GetCurrentDrawAmps</h3>
 <p><IMG SRC="DiffDriveTrainSim_GetCurrentDrawAmps_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the current draw of the drivetrain.<BR>
@@ -294,6 +308,19 @@ Output:<BR>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a SimDrivetrain .<BR>
 <BR>
 This class simulates the state of the drivetrain. In simulationPeriodic, users should first set inputs from motors with setInputs(double, double)}, call update(double)} to update the simulation, and set estimated encoder and gyro positions, as well as estimated odometry pose. <BR>
+<BR>
+The input linear state space system is:<BR>
+The linear system is define as:<BR>
+  -  states<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+  -  inputs<BR>
+      -  left voltage (volts)<BR>
+      -  right voltage(volts)<BR>
+  -  outputs<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+<BR>
  <BR>
 Our state-space system is:<BR>
  <BR>
@@ -358,6 +385,16 @@ Outputs:<BR>
    -  Size Coerced  --  If TRUE, an error occured.  Execution may continue.<BR>
    <BR>
 </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_Pack_Model_Params" >DiffDriveTrainSim_Pack_Model_Params</h3>
+<p><IMG SRC="DiffDriveTrainSim_Pack_Model_Params_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDriveTrainSim_Pack_Simulation_Params" >DiffDriveTrainSim_Pack_Simulation_Params</h3>
+<p><IMG SRC="DiffDriveTrainSim_Pack_Simulation_Params_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="DiffDriveTrainSim_SetCurrentGearing" >DiffDriveTrainSim_SetCurrentGearing</h3>

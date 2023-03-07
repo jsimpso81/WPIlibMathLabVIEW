@@ -36,6 +36,37 @@ This is an internal routine.  It should NOT be called by the end user.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveDrivePoseEst2_Execute" >SwerveDrivePoseEst2_Execute</h3>
+<p><IMG SRC="SwerveDrivePoseEst2_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This single call LabVIEW function wraps Swerve Drive Odometry to fuse latency-compensated vision measurements with swerve drive module measurements. It is intended to be a drop-in replacement for SwerveDrvOdom2; in fact, if you never call SwerveDrvPoseEst2_AddVisionMeasurement and only call  SwerveDrvPoseEst2_Update then this will behave exactly the same as SwerveDrvOdom2.<BR>
+ <BR>
+This function should be called every robot loop, or perhaps put into a separaate loop.<BR>
+<BR>
+When the "Game Started" input is false, the position is reset using the initial pose, wheel distances, and gyro position.  Use this to wait processing changes in measurements until the game starts.<BR>
+<BR>
+When a new vision measurement is available it can be passed into this function to merge it with the other odometry data.   This is done by setting the "Add Vision Meas" input to TRUE.  To promote stability of the pose estimate and make it robust to bad vision data, we recommend only adding vision measurements that are already within one meter or so of the current pose estimate.<BR>
+<BR>
+The default standard deviations of the model states are 0.1 meters for x, 0.1 meters for y, and 0.1 radians for heading. The default standard deviations of the vision measurements are 0.9 meters for x, 0.9 meters for y, and 0.9 radians for heading.<BR>
+<BR>
+Inputs:   <BR>
+  -  SwervePoseEst2Config  --  cluster  --  Packed configuration data used to define how this function operates.  It includes inforation used to define kinematics and position standard deviations.<BR>
+  -  Game Started  --  boolean  --  When FALSE, resets the initial position.  (Default: TRUE)<BR>
+  -  InitialPose  -- Pose2d  -- Initial position.  (meters, meters, rotation2d)<BR>
+  -  ModulePositions  -- SwerveModulePositions array  --  Array of distances measured by the drive wheel encoders. (Meters)<BR>
+  -  gyroAngle  --  Rotation2d  --  The current gyro angle.  (Degrees)<BR>
+  -  Pass Through Time  -- double  -- Current FPGA time.  If input is unwired, FPGA time will be read internally.<BR>
+  - AddVisionMeas  -- boolean --  When TRUE the provided vision measurement is merged with the odometry data.<BR>
+  -  VisionRobotPose  --  Pose2d  --  The pose from vision measurements.<BR>
+  -  Vision Time Stamp  --  double  --  The FPGA time stamp of the vision meausrement.  This helps to account for latency of the vision measurement.<BR>
+   <BR>
+Outputs:<BR>
+  - EstimatedPose  -- Pose2d  -- Current estimated pose (meters, rotation2d) <BR>
+  -  Error  -- boolean -- If TRUE, and error occured. <BR>
+<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveDrivePoseEst2_GetEstimatedPosition" >SwerveDrivePoseEst2_GetEstimatedPosition</h3>
 <p><IMG SRC="SwerveDrivePoseEst2_GetEstimatedPosition_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Gets the pose of the robot at the current time as estimated by the Unscented Kalman Filter.<BR>
@@ -59,10 +90,16 @@ This is an internal routine.   It should NOT be called by the end user.<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveDrivePoseEst2_InterpRecord_Interp" >SwerveDrivePoseEst2_InterpRecord_Interp</h3>
 <p><IMG SRC="SwerveDrivePoseEst2_InterpRecord_Interp_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Performs interpolation for a SwerveDrivePoseEstimator2  Interpolation Record.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the interpolated record. This object is assumed to be the starting position, or lower bound.<BR>
 <BR>
-This is an internal routine.  It should NOT be used by end users.<BR>
+Inputs:<BR>
+  -  Input 1  --  The lower bound data cluster<BR>
+  - end Input 2   --  The upper bound, or end, data cluster<BR>
+  -  time frac   --  How far between the lower and upper bound we are. This should be bounded in [0, 1].<BR>
+  -  extra  -- variant  -- extra data needed for the calculation.<BR>
 <BR>
+Returns:<BR>
+  - The interpolated cluster value.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -97,6 +134,24 @@ Inputs:   <BR>
    <BR>
 Outputs:<BR>
   --  SwerveDrivePoseEst2  -- SwerveDrivePoseEst2  -- Created data cluster.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveDrivePoseEst2_Pack_Config" >SwerveDrivePoseEst2_Pack_Config</h3>
+<p><IMG SRC="SwerveDrivePoseEst2_Pack_Config_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack indvidual values into the cluster required by the SwerveDrivePoseEst2_Execute function.  <BR>
+<BR>
+Inputs<BR>
+  -  Wheel Locations M  -- Translation2d array  --  Locations of module wheels in relation to center of robot. (meters)<BR>
+  -  Odom X Std Dev M  -- double  --  Odometry X position standard deviation (Default: 0.02)  (meters)<BR>
+  -  Odom Y Std Dev M  -- double  --  Odometry Y position standard deviation (Default: 0.02)  (meters)<BR>
+  -  Odom Heading Std Dev M  -- double  --  Odometry Heading (gyro) position standard deviation (Default: 0.01)  (radians)<BR>
+  -  Vision X Std Dev M  -- double  --  Vision X position standard deviation (Default: 0.1)  (meters)<BR>
+  -  Vision Y Std Dev M  -- double  --  Vision Y position standard deviation (Default: 0.1)  (meters)<BR>
+  -  Vision Heading Std Dev M  -- double  --  Vision Heading (gyro) position standard deviation (Default: 0.05)  (radians)<BR>
+<BR>
+Outputs:<BR>
+  -  SwervePoseEst2Config  -- cluster  --  Packed data values.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">

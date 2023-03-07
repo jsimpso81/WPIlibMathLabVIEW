@@ -36,6 +36,140 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_DCMotor_Execute" >LinearSystemLoop_DCMotor_Execute</h3>
+<p><IMG SRC="LinearSystemLoop_DCMotor_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create and control a DC Motor system using a Kalman FIlter and LQR controller.  This is a single call LabVIEW function.<BR>
+<BR>
+The DC Motor linear system is defined as:<BR>
+  -  states: <BR>
+      -  angular position (rad)<BR>
+      -  angular velocity (rad/sec)<BR>
+  -  inputs:<BR>
+      -  motor voltage<BR>
+  -  outputs: <BR>
+      -  angular position (rad) <BR>
+      -  angular velocity (rad/sec)<BR>
+<BR>
+Inputs:<BR>
+<BR>
+Outputs:<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_DCMotor_Pack_Ctrl" >LinearSystemLoop_DCMotor_Pack_Ctrl</h3>
+<p><IMG SRC="LinearSystemLoop_DCMotor_Pack_Ctrl_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack the control parameters for a DC motor linear system.   <BR>
+<BR>
+The DC Motor linear system is defined as:<BR>
+  -  states: <BR>
+      -  angular position (rad)<BR>
+      -  angular velocity (rad/sec)<BR>
+  -  inputs:<BR>
+      -  motor voltage<BR>
+  -  outputs: <BR>
+      -  angular position (rad) <BR>
+      -  angular velocity (rad/sec)<BR>
+<BR>
+Inputs:<BR>
+  -  Vel Model Std Dev  --  double  --  Standard deviation for modeled velocity (rad/sec)<BR>
+  -  Pos Model Std Dev  --  double  --  Standard deviation for modeled position (rad)<BR>
+  -  Vel Meas Std Dev  --  double  --  Standard deviation for measured velocity (rad/sec)<BR>
+  -  Pos Meas Std Dev  --  double  --  Standard deviation for measured position (rad)<BR>
+  -  Vel Ctrl Tol Std Dev  --  double  --  Control tolerance for velocity (rad/sec)<BR>
+  -  Pos Ctrl Tol Std Dev  --  double  --  Control tolerance for position (rad)<BR>
+  -  Max Ctrl Out  -- double  -- Maximum control output (Default: 12)  (volts)<BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystemLoop DCMotor Ctrl Params --  cluster  --  Packed control parameters</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_DiffDrv_Execute" >LinearSystemLoop_DiffDrv_Execute</h3>
+<p><IMG SRC="LinearSystemLoop_DiffDrv_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The linear system is define as:<BR>
+  -  states<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+  -  inputs<BR>
+      -  left voltage (volts)<BR>
+      -  right voltage(volts)<BR>
+  -  outputs<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_DiffDrv_Pack_Ctrl" >LinearSystemLoop_DiffDrv_Pack_Ctrl</h3>
+<p><IMG SRC="LinearSystemLoop_DiffDrv_Pack_Ctrl_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_Elevator_Execute" >LinearSystemLoop_Elevator_Execute</h3>
+<p><IMG SRC="LinearSystemLoop_Elevator_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The Elevator linear system definition is:<BR>
+  - States<BR>
+      -  position (meters)<BR>
+  - Inputs:<BR>
+      -  motor voltage (volts)<BR>
+  -  Outputs:<BR>
+      -  position (meters)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_Elevator_Pack_Ctrl" >LinearSystemLoop_Elevator_Pack_Ctrl</h3>
+<p><IMG SRC="LinearSystemLoop_Elevator_Pack_Ctrl_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack the control parameters for an elevator linear system.   <BR>
+<BR>
+The Elevator linear system definition is:<BR>
+  - States<BR>
+      -  position (meters)<BR>
+  - Inputs:<BR>
+      -  motor voltage (volts)<BR>
+  -  Outputs:<BR>
+      -  position (meters)<BR>
+<BR>
+Inputs:<BR>
+  -  Pos Model Std Dev  --  double  --  Standard deviation for modeled position (meters)<BR>
+  -  Pos Meas Std Dev  --  double  --  Standard deviation for measured position (meters)<BR>
+  -  Vel Ctrl Tol Std Dev  --  double  --  Control tolerance for velocity (meters/sec)<BR>
+  -  Pos Ctrl Tol Std Dev  --  double  --  Control tolerance for position (meters)<BR>
+  -  Max Ctrl Out  -- double  -- Maximum control output (Default: 12)  (volts)<BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystemLoop DCMotor Ctrl Params --  cluster  --  Packed control parameters<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_Execute" >LinearSystemLoop_Execute</h3>
+<p><IMG SRC="LinearSystemLoop_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_FlyWheel_Execute" >LinearSystemLoop_FlyWheel_Execute</h3>
+<p><IMG SRC="LinearSystemLoop_FlyWheel_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+The flywheel linear system definition is:<BR>
+  - States<BR>
+      -  angular velocity (Rad/Sec)<BR>
+  - Inputs:<BR>
+      -  motor voltage<BR>
+  -  Outputs:<BR>
+      -  angular velocity (rad/sec)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_FlyWheel_Pack_Ctrl" >LinearSystemLoop_FlyWheel_Pack_Ctrl</h3>
+<p><IMG SRC="LinearSystemLoop_FlyWheel_Pack_Ctrl_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+The flywheel linear system definition is:<BR>
+  - States<BR>
+      -  angular velocity (Rad/Sec)<BR>
+  - Inputs:<BR>
+      -  motor voltage<BR>
+  -  Outputs:<BR>
+      -  angular velocity (rad/sec)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemLoop_GetController" >LinearSystemLoop_GetController</h3>
 <p><IMG SRC="LinearSystemLoop_GetController_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the controller used internally.<BR>
@@ -217,6 +351,11 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_Pack_Ctrl_Params" >LinearSystemLoop_Pack_Ctrl_Params</h3>
+<p><IMG SRC="LinearSystemLoop_Pack_Ctrl_Params_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemLoop_Predict" >LinearSystemLoop_Predict</h3>
 <p><IMG SRC="LinearSystemLoop_Predict_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets new controller output, projects model forward, and runs observer prediction.<BR>
@@ -258,6 +397,32 @@ Inputs:<BR>
 Outputs:<BR>
    - outLinearSystemLoop  --  updated system data cluster<BR>
    - sizeCoerced  --  If TRUE, an error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_SngJntArm_Execute" >LinearSystemLoop_SngJntArm_Execute</h3>
+<p><IMG SRC="LinearSystemLoop_SngJntArm_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+The single jointed arm linear system definition is:<BR>
+  - States<BR>
+      -  angle position (Rad)<BR>
+  - Inputs:<BR>
+      -  motor voltage<BR>
+  -  Outputs:<BR>
+      -  angle position (rad)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemLoop_SngJntArm_Pack_Ctrl" >LinearSystemLoop_SngJntArm_Pack_Ctrl</h3>
+<p><IMG SRC="LinearSystemLoop_SngJntArm_Pack_Ctrl_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+The single jointed arm linear system definition is:<BR>
+  - States<BR>
+      -  angle position (Rad)<BR>
+  - Inputs:<BR>
+      -  motor voltage<BR>
+  -  Outputs:<BR>
+      -  angle position (rad)<BR>
 </pre></p>
 <br>
 </BODY>

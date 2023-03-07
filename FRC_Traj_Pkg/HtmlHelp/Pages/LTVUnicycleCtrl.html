@@ -55,6 +55,40 @@ Outputs:<BR>
    - Error  --  Returns TRUE if an error occured.</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVUnicycleCtrl_Execute" >LTVUnicycleCtrl_Execute</h3>
+<p><IMG SRC="LTVUnicycleCtrl_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the linear and angular velocity outputs of the LTV controller.<BR>
+<BR>
+Inputs:<BR>
+   - in LTV Unicycle Controller  --  Controller data cluster<BR>
+    -  currentPose  --  The current pose.<BR>
+    -  poseRef  --  The desired pose.  (Setpont)<BR>
+    -  linearVelocityRef  --  The desired linear velocity in meters per second.  (Feedforward)<BR>
+    -  angularVelocityRef  --  The desired angular velocity in radians per second.  (Feedforward)<BR>
+<BR>
+Outputs:<BR>
+   - out LTV Unicycle Controller  --  Updatated data cluster<BR>
+   - Chassis Speeds  -- The linear and angular velocity outputs of the LTV controller.<BR>
+   - Error  --  Returns TRUE if an error occured.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVUnicycleCtrl_Execute_TrajState" >LTVUnicycleCtrl_Execute_TrajState</h3>
+<p><IMG SRC="LTVUnicycleCtrl_Execute_TrajState_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the linear and angular velocity outputs of the LTV controller.<BR>
+<BR>
+The reference pose, linear velocity, and angular velocity should come from a drivetrain trajectory.<BR>
+<BR>
+Inputs:<BR>
+   - in LTV Unicycle Controller  --  Controller data cluster<BR>
+    -  currentPose  --  The current pose.<BR>
+   -  Traj State  --  The desired pose, linear velocity, and angular velocity from a trajectory.<BR>
+<BR>
+Outputs:<BR>
+   - out LTV Unicycle Controller  --  Updatated data cluster<BR>
+   - Chassis Speeds  -- The linear and angular velocity outputs of the LTV controller.<BR>
+   - Error  --  Returns TRUE if an error occured.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVUnicycleCtrl_New" >LTVUnicycleCtrl_New</h3>
 <p><IMG SRC="LTVUnicycleCtrl_New_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The linear time-varying unicycle controller has a similar form to the LQR, but the model used to compute the controller gain is the nonlinear model linearized around the drivetrain's current state.<BR>
@@ -71,6 +105,16 @@ Outputs:<BR>
    - LTV Unicycle Controller  --  Created data structure.<BR>
    -  Error  --  If TRUE, an error occured.<BR>
 </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVUnicycleCtrl_Pack_Model_Params" >LTVUnicycleCtrl_Pack_Model_Params</h3>
+<p><IMG SRC="LTVUnicycleCtrl_Pack_Model_Params_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVUnicycleCtrl_Pack_Tolerance" >LTVUnicycleCtrl_Pack_Tolerance</h3>
+<p><IMG SRC="LTVUnicycleCtrl_Pack_Tolerance_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVUnicycleCtrl_SetEnabled" >LTVUnicycleCtrl_SetEnabled</h3>

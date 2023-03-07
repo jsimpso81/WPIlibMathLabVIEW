@@ -29,13 +29,45 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="DiffDrivePoseEst2_BufferDuration" >DiffDrivePoseEst2_BufferDuration</h3>
 <p><IMG SRC="DiffDrivePoseEst2_BufferDuration_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Gets the pose of the robot at the current time as estimated by the Unscented Kalman Filter.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Maximum buffer duration of diff pose est 2 buffer.<BR>
    <BR>
 Inputs:<BR>
-  -  DiffDrivePoseEst  -  System data cluster<BR>
+  -  none<BR>
 <BR>
 Outputs:<BR>
-  -  EstimatedPose  -  The estimated robot pose in meters.<BR>
+  -  Buffer Duration  -- double  --  buffer duration (seconds)<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrivePoseEst2_Execute" >DiffDrivePoseEst2_Execute</h3>
+<p><IMG SRC="DiffDrivePoseEst2_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This single call LabVIEW function wraps Differential Drive Odometry to fuse latency-compensated vision measurements with differential drive encoder measurements. It is intended to be a drop-in replacement for DiffDrvOdom2; in fact, if you never call DiffDrvPoseEst2_AddVisionMeasurement and only call  DiffDrvPoseEst2_Update then this will behave exactly the same as DiffDrvOdom2.<BR>
+ <BR>
+This function should be called every robot loop, or perhaps put into a separaate loop.<BR>
+<BR>
+When the "Game Started" input is false, the position is reset using the initial pose, wheel distances, and gyro position.  Use this to wait processing changes in measurements until the game starts.<BR>
+<BR>
+When a new vision measurement is available it can be passed into this function to merge it with the other odometry data.   This is done by setting the "Add Vision Meas" input to TRUE.  To promote stability of the pose estimate and make it robust to bad vision data, we recommend only adding vision measurements that are already within one meter or so of the current pose estimate.<BR>
+<BR>
+The default standard deviations of the model states are 0.02 meters for x, 0.02 meters for y, and 0.01 radians for heading. The default standard deviations of the vision measurements are 0.1 meters for x, 0.1 meters for y, and 0.1 radians for heading.<BR>
+<BR>
+Inputs:   <BR>
+  -  DiffPoseEst2Config  --  cluster  --  Packed configuration data used to define how this function operates.  It includes inforation used to define kinematics and position standard deviations.<BR>
+  -  Game Started  --  boolean  --  When FALSE, resets the initial position.  (Default: TRUE)<BR>
+  -  InitialPose  -- Pose2d  -- Initial position.  (meters, meters, rotation2d)<BR>
+  -  leftDistanceMeters  -- double  --  The distance traveled by the left encoder. (Meters)<BR>
+  -  rightDistanceMeters  --  double  --  The distance traveled by the right encoder. (Meters)<BR>
+  -  gyroAngle  --  Rotation2d  --  The current gyro angle.  (Degrees)<BR>
+  -  Pass Through Time  -- double  -- Current FPGA time.  If input is unwired, FPGA time will be read internally.<BR>
+  - AddVisionMeas  -- boolean --  When TRUE the provided vision measurement is merged with the odometry data.<BR>
+  -  VisionRobotPose  --  Pose2d  --  The pose from vision measurements.<BR>
+  -  Vision Time Stamp  --  double  --  The FPGA time stamp of the vision meausrement.  This helps to account for latency of the vision measurement.<BR>
+   <BR>
+Outputs:<BR>
+  - EstimatedPose  -- Pose2d  -- Current estimated pose (meters, rotation2d) <BR>
+  -  Error  -- boolean -- If TRUE, and error occured. <BR>
+<BR>
+<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -89,6 +121,24 @@ Inputs:   <BR>
    <BR>
 Outputs:<BR>
   --  DiffDrivePoseEst2  -- DiffDrivePoseEst2  -- Created data cluster.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="DiffDrivePoseEst2_Pack_Config" >DiffDrivePoseEst2_Pack_Config</h3>
+<p><IMG SRC="DiffDrivePoseEst2_Pack_Config_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack indvidual values into the cluster required by the DiffDrivePoseEst2_Execute function.  <BR>
+<BR>
+Inputs<BR>
+  -  TrackWidth_Meters  -- double  --  Effective tract width (meters)<BR>
+  -  Odom X Std Dev M  -- double  --  Odometry X position standard deviation (Default: 0.02)  (meters)<BR>
+  -  Odom Y Std Dev M  -- double  --  Odometry Y position standard deviation (Default: 0.02)  (meters)<BR>
+  -  Odom Heading Std Dev M  -- double  --  Odometry Heading (gyro) position standard deviation (Default: 0.01)  (radians)<BR>
+  -  Vision X Std Dev M  -- double  --  Vision X position standard deviation (Default: 0.1)  (meters)<BR>
+  -  Vision Y Std Dev M  -- double  --  Vision Y position standard deviation (Default: 0.1)  (meters)<BR>
+  -  Vision Heading Std Dev M  -- double  --  Vision Heading (gyro) position standard deviation (Default: 0.05)  (radians)<BR>
+<BR>
+Outputs:<BR>
+  -  DiffPoseEst2Config  -- cluster  --  Packed data values.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">

@@ -12,15 +12,16 @@
 <p><IMG SRC="LinearSystemId_CreateDCMotorSystem_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a state-space model of a DC motor system. The states of the system are [angular position, angular velocity], inputs are [voltage], and outputs are [angular position, angular  velocity].<BR>
 <BR>
-Create a state-space model of a DC motor system. The states of the system are <BR>
-                          [angular position, <BR>
-                          angular velocity] <BR>
+The DC Motor linear system is defined as:<BR>
+  -  states: <BR>
+      -  angular position (rad)<BR>
+      -  angular velocity (rad/sec)<BR>
+  -  inputs:<BR>
+      -  motor voltage<BR>
+  -  outputs: <BR>
+      -  angular position (rad) <BR>
+      -  angular velocity (rad/sec)<BR>
 <BR>
-inputs are <BR>
-                         [voltage]<BR>
-and outputs are <BR>
-                          [angular position, <BR>
-                           angular velocity].<BR>
 Inputs: <BR>
   -  motor  --  The motor (or gearbox)<BR>
   -  jKgMetersSquared  --  The moment of inertia J of the motor and attached load.  (Must be > 0)<BR>
@@ -34,7 +35,18 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemId_CreateDriveTrainVelocitySystem" >LinearSystemId_CreateDriveTrainVelocitySystem</h3>
 <p><IMG SRC="LinearSystemId_CreateDriveTrainVelocitySystem_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a state-space model of a differential drive drivetrain. In this model, the states are [v_left, v_right]?, inputs are [V_left, V_right]? and outputs are [v_left, v_right]?.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a state-space model of a differential drive drivetrain.  This linear system is defined as follows:<BR>
+<BR>
+  -  states<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+  -  inputs<BR>
+      -  left voltage (volts)<BR>
+      -  right voltage(volts)<BR>
+  -  outputs<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+<BR>
 <BR>
 Inputs: <BR>
   -  motor  --  the gearbox representing the motors driving the drivetrain.<BR>
@@ -70,6 +82,16 @@ Outputs:<BR>
 <p><IMG SRC="LinearSystemId_CreateFlywheelSystem_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a state-space model of a flywheel system. The states of the system are [angular velocity], inputs are [voltage], and outputs are [angular velocity].<BR>
 <BR>
+<BR>
+The flywheel linear system definition is:<BR>
+  - States<BR>
+      -  angular velocity (Rad/Sec)<BR>
+  - Inputs:<BR>
+      -  motor voltage<BR>
+  -  Outputs:<BR>
+      -  angular velocity (rad/sec)<BR>
+<BR>
+<BR>
 Inputs: <BR>
   -  motor  --  The motor (or gearbox) attached to the arm.<BR>
   -  jKgMetersSquared  --  The moment of inertia J of the flywheel.<BR>
@@ -96,9 +118,120 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemId_DCMotor_Pack_Model_Params" >LinearSystemId_DCMotor_Pack_Model_Params</h3>
+<p><IMG SRC="LinearSystemId_DCMotor_Pack_Model_Params_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack the model parameters used to create a DC Motor Linear System.<BR>
+<BR>
+Inputs<BR>
+  -  DCMOTOR_TYPE  --  enum  --  Model of motor being used.<BR>
+  -  Num Numtors  --  integer  --  Number of motors used.<BR>
+  -  Gearing  -- double  -- Gear ratio.    (Input speed / Output Speed )<BR>
+  -  MOI  --  double  -- Moment of inertia  - kg m^2<BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystemId DC Motor Model  --  cluster  -- packed model parameters.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemId_DiffDrv_ID_Pack_Model_Params" >LinearSystemId_DiffDrv_ID_Pack_Model_Params</h3>
+<p><IMG SRC="LinearSystemId_DiffDrv_ID_Pack_Model_Params_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Creates a Differential Drive Train linear system from the drive train characterization (identification) data.  <BR>
+<BR>
+The linear system is define as:<BR>
+  -  states<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+  -  inputs<BR>
+      -  left voltage (volts)<BR>
+      -  right voltage(volts)<BR>
+  -  outputs<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+<BR>
+Inputs:<BR>
+  -  Kv Linear -- double  -- Linear velocity constant  (volts/(meter/sec)<BR>
+  -  Ka Linear  -- double  -- Linear acceleration constant (volts/(meter/sec^2))<BR>
+  -  Kv Angular  -- double  -- Rotational velocity constant (volts/(meter/sec)<BR>
+  -  Ka Angular  -- double  -- Rotational acceleration constant  (volts/(meter/sec^2))<BR>
+<BR>
+Outputs:<BR>
+  -  DiffDrive Linear Syste  -- Linear System  -- The resulting differential drive linear system.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemId_DiffDrv_Pack_Model_Params" >LinearSystemId_DiffDrv_Pack_Model_Params</h3>
+<p><IMG SRC="LinearSystemId_DiffDrv_Pack_Model_Params_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Creates a Differential Drive Train linear system from the physical parameters of the robot..  <BR>
+<BR>
+The linear system is defined as:<BR>
+  -  states<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+  -  inputs<BR>
+      -  left voltage (volts)<BR>
+      -  right voltage(volts)<BR>
+  -  outputs<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+<BR>
+Inputs:<BR>
+  -  DC Motor Type  -- enum  -- Model of the drive motor<BR>
+  -  Num Motors Per Side  -- integer  -- Number of motoes on each side of the drive<BR>
+  -  Mass -- double  -- Robot mass (kg)<BR>
+  -  Wheel Radius  -- double  -- Radius of drive wheel (meters)  Note this is radius, not diameter.<BR>
+  -  Track Radius  -- double  -- 1/2 of the distance between wheels (meters).  This is effective radius which may be more than the physical radius.<BR>
+  -  MOI  -- double  -- Moment of inertia (kg m^2)<BR>
+  -  Gear Ratio  -- double -- Drive gear ratio (Input/Output)<BR>
+<BR>
+Output:<BR>
+  -  DiffDrive Linear System  --  Linear System  --  Created differential drive linear system<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemId_Elevator_Pack_Model_Params" >LinearSystemId_Elevator_Pack_Model_Params</h3>
+<p><IMG SRC="LinearSystemId_Elevator_Pack_Model_Params_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack the physical parameters describing an elevator linear system.<BR>
+<BR>
+Inputs:<BR>
+  -  DC Motor  -- enum  -- Model of the motor used for the flywheel<BR>
+  -  Num Motors  --  integer  --  Number of flywheel drive motors<BR>
+  -  Winch Radius  -- double  -- Radius of the winch (meters).  Note this is radius, not diameter.<BR>
+  -  Mass  -- double  -- Elevator mass (kg)<BR>
+  -  Gearing  -- double  -- Gear ratio (Input/Output)<BR>
+<BR>
+Outputs:<BR>
+  -  Elevator Model Params  -- cluster  --  Packed elevator physical modeling parameters<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemId_FlyWheel_Pack_Model_Params" >LinearSystemId_FlyWheel_Pack_Model_Params</h3>
+<p><IMG SRC="LinearSystemId_FlyWheel_Pack_Model_Params_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack the physical parameters describing a FlyWheel system.<BR>
+<BR>
+Inputs:<BR>
+  -  DC Motor  -- enum  -- Model of the motor used for the flywheel<BR>
+  -  Num Motors  --  integer  --  Number of flywheel drive motors<BR>
+  -  Gearing  -- double  -- Gear ratio (Input/Output)<BR>
+  -  MOI  -- double  --  Moment of inertia (kg m^2)<BR>
+<BR>
+Outputs:<BR>
+  -  FlyWheel Model Params  -- cluster  --  Packed flywheel physical modeling parameters<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemId_IdentifyDriveTrainSystem" >LinearSystemId_IdentifyDriveTrainSystem</h3>
 <p><IMG SRC="LinearSystemId_IdentifyDriveTrainSystem_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Identify a standard differential drive drivetrain, given the drivetrain's kV and kA in both linear (volts/(meter/sec) and volts/(meter/sec^2)) and angular (volts/(meter/sec) and volts/(meter/sec^2)) cases. This can be found using frc-characterization. The states of the system are [left velocity, right velocity]?, inputs are [left voltage, right voltage]?, and outputs are [left velocity, right velocity]?.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Identify a standard differential drive drivetrain, given the drivetrain's kV and kA in both linear (volts/(meter/sec) and volts/(meter/sec^2)) and angular (volts/(meter/sec) and volts/(meter/sec^2)) cases. This can be found using frc-characterization.   The linear system is defined as follows:<BR>
+<BR>
+  -  states<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+  -  inputs<BR>
+      -  left voltage (volts)<BR>
+      -  right voltage(volts)<BR>
+  -  outputs<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
 <BR>
 Inputs: <BR>
   -  kVLinear  --  The linear velocity gain, volts per (meter per second).<BR>
@@ -154,6 +287,24 @@ Additional information:<BR>
 <BR>
 <BR>
 <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemId_SngJntArm_Pack_Model_Params" >LinearSystemId_SngJntArm_Pack_Model_Params</h3>
+<p><IMG SRC="LinearSystemId_SngJntArm_Pack_Model_Params_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack the physical parameters describing a single jointed arm linear system.<BR>
+<BR>
+Inputs:<BR>
+  -  DC Motor  -- enum  -- Model of the motor used for the single jointed arm<BR>
+  -  Num Motors  --  integer  --  Number of drive motors<BR>
+  -  Arm Length  -- double  -- Length of arm (meters).<BR>
+  -  Mass  -- double  -- Elevator mass (kg)<BR>
+  -  Gearing  -- double  -- Gear ratio (Input/Output)<BR>
+  -  MOI  -- double  --  Moment of inertia (kg m^2)<BR>
+  -  Estimate MOI  -- boolean  -- If TRUE, estimate MOI from mass and arm length.  (Default: TRUE)<BR>
+<BR>
+Outputs:<BR>
+  -  Single Jointed Arm Model Params  -- cluster  --  Packed single jointed arm physical modeling parameters<BR>
 </pre></p>
 <br>
 </BODY>

@@ -64,9 +64,56 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVDiffDriveCtrl_Execute" >LTVDiffDriveCtrl_Execute</h3>
+<p><IMG SRC="LTVDiffDriveCtrl_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the linear and angular velocity outputs of the LTV controller.<BR>
+<BR>
+Inputs:<BR>
+   - in LTV Unicycle Controller  --  Controller data cluster<BR>
+    -  currentPose  --  The current pose.<BR>
+    -  poseRef  --  The desired pose.  (Setpont)<BR>
+    -  linearVelocityRef  --  The desired linear velocity in meters per second.  (Feedforward)<BR>
+    -  angularVelocityRef  --  The desired angular velocity in radians per second.  (Feedforward)<BR>
+<BR>
+Outputs:<BR>
+   - out LTV Unicycle Controller  --  Updatated data cluster<BR>
+   - Chassis Speeds  -- The linear and angular velocity outputs of the LTV controller.<BR>
+   - Error  --  Returns TRUE if an error occured.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVDiffDriveCtrl_Execute_TrajState" >LTVDiffDriveCtrl_Execute_TrajState</h3>
+<p><IMG SRC="LTVDiffDriveCtrl_Execute_TrajState_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the linear and angular velocity outputs of the LTV controller.<BR>
+<BR>
+Inputs:<BR>
+   - in LTV Unicycle Controller  --  Controller data cluster<BR>
+    -  currentPose  --  The current pose.<BR>
+    -  poseRef  --  The desired pose.  (Setpont)<BR>
+    -  linearVelocityRef  --  The desired linear velocity in meters per second.  (Feedforward)<BR>
+    -  angularVelocityRef  --  The desired angular velocity in radians per second.  (Feedforward)<BR>
+<BR>
+Outputs:<BR>
+   - out LTV Unicycle Controller  --  Updatated data cluster<BR>
+   - Chassis Speeds  -- The linear and angular velocity outputs of the LTV controller.<BR>
+   - Error  --  Returns TRUE if an error occured.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVDiffDriveCtrl_New" >LTVDiffDriveCtrl_New</h3>
 <p><IMG SRC="LTVDiffDriveCtrl_New_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The linear time-varying (LTV) differential drive controller has a similar form to the LQR, but the model used to compute the controller gain is the nonlinear model linearized around the drivetrain's current state. We precomputed gains for important places in our state-space, then interpolated between them with a LUT to save computational resources.Filters the provided voltages to limit a differential drive's linear and angular acceleration.<BR>
+<BR>
+The input linear system is defined as:<BR>
+The linear system is define as:<BR>
+  -  states<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+  -  inputs<BR>
+      -  left voltage (volts)<BR>
+      -  right voltage(volts)<BR>
+  -  outputs<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+<BR>
 <BR>
 Constructs a linear time-varying differential drive controller.<BR>
 <BR>
@@ -82,6 +129,21 @@ Outputs:<BR>
    - DiffDriveCtrl  --  Created data cluster<BR>
    -  Error  --  If TRUE, an error occured.<BR>
 </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVDiffDriveCtrl_Pack_Ctrl_Params" >LTVDiffDriveCtrl_Pack_Ctrl_Params</h3>
+<p><IMG SRC="LTVDiffDriveCtrl_Pack_Ctrl_Params_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVDiffDriveCtrl_Pack_Model_Params" >LTVDiffDriveCtrl_Pack_Model_Params</h3>
+<p><IMG SRC="LTVDiffDriveCtrl_Pack_Model_Params_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LTVDiffDriveCtrl_Pack_Tolerance" >LTVDiffDriveCtrl_Pack_Tolerance</h3>
+<p><IMG SRC="LTVDiffDriveCtrl_Pack_Tolerance_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVDiffDriveCtrl_SetTolerance" >LTVDiffDriveCtrl_SetTolerance</h3>

@@ -181,6 +181,12 @@ Cluster contains:<BR>
 <p><IMG SRC="DCMOTOR_SIM_frontpanel.png"  ALT="Trajectory_Library.lvlib:DCMOTOR_SIM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-DCMOTOR_SIM_SIMULATION_PARAMS" >TypeDef-DCMOTOR_SIM_SIMULATION_PARAMS</h3>
+<p><IMG SRC="DCMOTOR_SIM_SIMULATION_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="DCMOTOR_SIM_SIMULATION_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:DCMOTOR_SIM_SIMULATION_PARAMS.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DEBOUNCER" >TypeDef-DEBOUNCER</h3>
 <p><IMG SRC="DEBOUNCER_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A simple debounce filter for boolean streams. Requires that the boolean change value from baseline for a specified period of time before the filtered value changes.<BR>
@@ -265,7 +271,7 @@ Our state-space system is:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DIFF_DRIVE_POSE_EST2" >TypeDef-DIFF_DRIVE_POSE_EST2</h3>
 <p><IMG SRC="DIFF_DRIVE_POSE_EST2_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This class wraps Differential Drive Odometry to fuse latency-compensated vision measurements with differential drive encoder measurements. It is intended to be a drop-in replacement for DiffDrvOdom2; in fact, if you never call DiffDrvPoseEst2_AddVisionMeasurement and only call  DiffDrvPoseEst2_Update then this will behave exactly the same as DiffDrvOdom2.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions wraps Differential Drive Odometry to fuse latency-compensated vision measurements with differential drive encoder measurements. It is intended to be a drop-in replacement for DiffDrvOdom2; in fact, if you never call DiffDrvPoseEst2_AddVisionMeasurement and only call  DiffDrvPoseEst2_Update then this will behave exactly the same as DiffDrvOdom2.<BR>
  <BR>
 DiffDrvPoseEst2_Update should be called every robot loop.<BR>
  <BR>
@@ -282,11 +288,40 @@ This data cluster contains:<BR>
 <p><IMG SRC="DIFF_DRIVE_POSE_EST2_frontpanel.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_POSE_EST2.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-DIFF_DRIVE_POSE_EST2_CONFIG" >TypeDef-DIFF_DRIVE_POSE_EST2_CONFIG</h3>
+<p><IMG SRC="DIFF_DRIVE_POSE_EST2_CONFIG_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Clustere containing configuration data required by the DiffDrivePoseEst2_Execute function.  <BR>
+<BR>
+Contains:<BR>
+  -  TrackWidth_Meters  -- double  --  Effective tract width (meters)<BR>
+  -  Odom X Std Dev M  -- double  --  Odometry X position standard deviation (Default: 0.02)  (meters)<BR>
+  -  Odom Y Std Dev M  -- double  --  Odometry Y position standard deviation (Default: 0.02)  (meters)<BR>
+  -  Odom Heading Std Dev M  -- double  --  Odometry Heading (gyro) position standard deviation (Default: 0.01)  (radians)<BR>
+  -  Vision X Std Dev M  -- double  --  Vision X position standard deviation (Default: 0.1)  (meters)<BR>
+  -  Vision Y Std Dev M  -- double  --  Vision Y position standard deviation (Default: 0.1)  (meters)<BR>
+  -  Vision Heading Std Dev M  -- double  --  Vision Heading (gyro) position standard deviation (Default: 0.05)  (radians)<BR>
+<BR>
+</pre></p>
+<p><IMG SRC="DIFF_DRIVE_POSE_EST2_CONFIG_frontpanel.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_POSE_EST2_CONFIG.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DIFF_DRIVE_POSE_EST2_INTERP_RECORD" >TypeDef-DIFF_DRIVE_POSE_EST2_INTERP_RECORD</h3>
 <p><IMG SRC="DIFF_DRIVE_POSE_EST2_INTERP_RECORD_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Differential Drive Pose Estimate 2 -- Interporatable Record<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Differential Drive Pose Estimate 2 -- Interporatable Record. <BR>
 </pre></p>
 <p><IMG SRC="DIFF_DRIVE_POSE_EST2_INTERP_RECORD_frontpanel.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_POSE_EST2_INTERP_RECORD.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-DIFF_DRIVE_SIM_MODEL_PARAMS" >TypeDef-DIFF_DRIVE_SIM_MODEL_PARAMS</h3>
+<p><IMG SRC="DIFF_DRIVE_SIM_MODEL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="DIFF_DRIVE_SIM_MODEL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_SIM_MODEL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-DIFF_DRIVE_SIM_SIMULATION_PARAMS" >TypeDef-DIFF_DRIVE_SIM_SIMULATION_PARAMS</h3>
+<p><IMG SRC="DIFF_DRIVE_SIM_SIMULATION_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="DIFF_DRIVE_SIM_SIMULATION_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:DIFF_DRIVE_SIM_SIMULATION_PARAMS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DIFF_DRIVE_TRAIN_SIM" >TypeDef-DIFF_DRIVE_TRAIN_SIM</h3>
@@ -347,6 +382,12 @@ Cluster contains:<BR>
 <p><IMG SRC="ELEVATOR_SIM_frontpanel.png"  ALT="Trajectory_Library.lvlib:ELEVATOR_SIM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-ELEVATOR_SIM_SIMULATION_PARAMS" >TypeDef-ELEVATOR_SIM_SIMULATION_PARAMS</h3>
+<p><IMG SRC="ELEVATOR_SIM_SIMULATION_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="ELEVATOR_SIM_SIMULATION_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:ELEVATOR_SIM_SIMULATION_PARAMS.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-ELEV_FF" >TypeDef-ELEV_FF</h3>
 <p><IMG SRC="ELEV_FF_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">A helper set of functions that computes feedforward outputs for a simple elevator (modeled as a motor acting against the force of gravity).<BR>
@@ -395,6 +436,12 @@ Cluster contains:<BR>
 <BR>
 </pre></p>
 <p><IMG SRC="FLYWHEEL_SIM_frontpanel.png"  ALT="Trajectory_Library.lvlib:FLYWHEEL_SIM.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-FLYWHEEL_SIM_SIMULATION_PARAMS" >TypeDef-FLYWHEEL_SIM_SIMULATION_PARAMS</h3>
+<p><IMG SRC="FLYWHEEL_SIM_SIMULATION_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="FLYWHEEL_SIM_SIMULATION_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:FLYWHEEL_SIM_SIMULATION_PARAMS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-FUNCTION_GENERATOR" >TypeDef-FUNCTION_GENERATOR</h3>
@@ -590,6 +637,30 @@ This cluster contains:<BR>
 <p><IMG SRC="LINEAR_SYSTEM_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LINEAR_SYSTEM_ID_DCMOTOR_MODEL" >TypeDef-LINEAR_SYSTEM_ID_DCMOTOR_MODEL</h3>
+<p><IMG SRC="LINEAR_SYSTEM_ID_DCMOTOR_MODEL_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LINEAR_SYSTEM_ID_DCMOTOR_MODEL_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_ID_DCMOTOR_MODEL.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LINEAR_SYSTEM_ID_ELEVATOR_MODEL" >TypeDef-LINEAR_SYSTEM_ID_ELEVATOR_MODEL</h3>
+<p><IMG SRC="LINEAR_SYSTEM_ID_ELEVATOR_MODEL_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LINEAR_SYSTEM_ID_ELEVATOR_MODEL_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_ID_ELEVATOR_MODEL.CTL" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LINEAR_SYSTEM_ID_FLYWHEEL_MODEL" >TypeDef-LINEAR_SYSTEM_ID_FLYWHEEL_MODEL</h3>
+<p><IMG SRC="LINEAR_SYSTEM_ID_FLYWHEEL_MODEL_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LINEAR_SYSTEM_ID_FLYWHEEL_MODEL_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_ID_FLYWHEEL_MODEL.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LINEAR_SYSTEM_ID_SINGLE_JOINT_ARM_MODEL" >TypeDef-LINEAR_SYSTEM_ID_SINGLE_JOINT_ARM_MODEL</h3>
+<p><IMG SRC="LINEAR_SYSTEM_ID_SINGLE_JOINT_ARM_MODEL_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LINEAR_SYSTEM_ID_SINGLE_JOINT_ARM_MODEL_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_ID_SINGLE_JOINT_ARM_MODEL.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_SYSTEM_LOOP" >TypeDef-LINEAR_SYSTEM_LOOP</h3>
 <p><IMG SRC="LINEAR_SYSTEM_LOOP_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Combines a controller, feedforward, and observer for controlling a mechanism with full state  feedback.<BR>
@@ -603,6 +674,42 @@ This cluster contains:<BR>
    - Next_R  --  Controllers next reference<BR>
    - Clamp Max  --  Maximum clamping values</pre></p>
 <p><IMG SRC="LINEAR_SYSTEM_LOOP_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LINEAR_SYSTEM_LOOP_CTRL_PARAMS" >TypeDef-LINEAR_SYSTEM_LOOP_CTRL_PARAMS</h3>
+<p><IMG SRC="LINEAR_SYSTEM_LOOP_CTRL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LINEAR_SYSTEM_LOOP_CTRL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP_CTRL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LINEAR_SYSTEM_LOOP_DCMOTOR_CTRL_PARAMS" >TypeDef-LINEAR_SYSTEM_LOOP_DCMOTOR_CTRL_PARAMS</h3>
+<p><IMG SRC="LINEAR_SYSTEM_LOOP_DCMOTOR_CTRL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LINEAR_SYSTEM_LOOP_DCMOTOR_CTRL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP_DCMOTOR_CTRL_PARAMS.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LINEAR_SYSTEM_LOOP_DIFF_DRV_CTRL_PARAMS" >TypeDef-LINEAR_SYSTEM_LOOP_DIFF_DRV_CTRL_PARAMS</h3>
+<p><IMG SRC="LINEAR_SYSTEM_LOOP_DIFF_DRV_CTRL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LINEAR_SYSTEM_LOOP_DIFF_DRV_CTRL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP_DIFF_DRV_CTRL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LINEAR_SYSTEM_LOOP_ELEVATOR_CTRL_PARAMS" >TypeDef-LINEAR_SYSTEM_LOOP_ELEVATOR_CTRL_PARAMS</h3>
+<p><IMG SRC="LINEAR_SYSTEM_LOOP_ELEVATOR_CTRL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LINEAR_SYSTEM_LOOP_ELEVATOR_CTRL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP_ELEVATOR_CTRL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LINEAR_SYSTEM_LOOP_FLYWHEEL_CTRL_PARAMS" >TypeDef-LINEAR_SYSTEM_LOOP_FLYWHEEL_CTRL_PARAMS</h3>
+<p><IMG SRC="LINEAR_SYSTEM_LOOP_FLYWHEEL_CTRL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LINEAR_SYSTEM_LOOP_FLYWHEEL_CTRL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP_FLYWHEEL_CTRL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS" >TypeDef-LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS</h3>
+<p><IMG SRC="LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_SYSTEM_SIM" >TypeDef-LINEAR_SYSTEM_SIM</h3>
@@ -634,10 +741,28 @@ The data values are:<BR>
 <p><IMG SRC="LTV_DIFF_DRIVE_CTRL_frontpanel.png"  ALT="Trajectory_Library.lvlib:LTV_DIFF_DRIVE_CTRL.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LTV_DIFF_DRIVE_CTRL_CONTROL_PARAMS" >TypeDef-LTV_DIFF_DRIVE_CTRL_CONTROL_PARAMS</h3>
+<p><IMG SRC="LTV_DIFF_DRIVE_CTRL_CONTROL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LTV_DIFF_DRIVE_CTRL_CONTROL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LTV_DIFF_DRIVE_CTRL_CONTROL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LTV_DIFF_DRIVE_CTRL_MODEL_PARAMS" >TypeDef-LTV_DIFF_DRIVE_CTRL_MODEL_PARAMS</h3>
+<p><IMG SRC="LTV_DIFF_DRIVE_CTRL_MODEL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LTV_DIFF_DRIVE_CTRL_MODEL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LTV_DIFF_DRIVE_CTRL_MODEL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LTV_DIFF_DRIVE_CTRL_STATE_ENUM" >TypeDef-LTV_DIFF_DRIVE_CTRL_STATE_ENUM</h3>
 <p><IMG SRC="LTV_DIFF_DRIVE_CTRL_STATE_ENUM_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">An enumerated varible containing names for the state indices of the LTV Differential Drive Train controller.</pre></p>
 <p><IMG SRC="LTV_DIFF_DRIVE_CTRL_STATE_ENUM_frontpanel.png"  ALT="Trajectory_Library.lvlib:LTV_DIFF_DRIVE_CTRL_STATE_ENUM.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LTV_DIFF_DRIVE_CTRL_TOLERANCE" >TypeDef-LTV_DIFF_DRIVE_CTRL_TOLERANCE</h3>
+<p><IMG SRC="LTV_DIFF_DRIVE_CTRL_TOLERANCE_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LTV_DIFF_DRIVE_CTRL_TOLERANCE_frontpanel.png"  ALT="Trajectory_Library.lvlib:LTV_DIFF_DRIVE_CTRL_TOLERANCE.CTL" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LTV_UNICYCLE_CONTROLLER" >TypeDef-LTV_UNICYCLE_CONTROLLER</h3>
@@ -656,6 +781,18 @@ Holds the data an LTV Unicycle Controller.  The data cluster contains:<BR>
 <BR>
 </pre></p>
 <p><IMG SRC="LTV_UNICYCLE_CONTROLLER_frontpanel.png"  ALT="Trajectory_Library.lvlib:LTV_UNICYCLE_CONTROLLER.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LTV_UNICYCLE_CONTROLLER_MODEL_PARAMS" >TypeDef-LTV_UNICYCLE_CONTROLLER_MODEL_PARAMS</h3>
+<p><IMG SRC="LTV_UNICYCLE_CONTROLLER_MODEL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LTV_UNICYCLE_CONTROLLER_MODEL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LTV_UNICYCLE_CONTROLLER_MODEL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-LTV_UNICYCLE_CONTROLLER_TOLERANCE" >TypeDef-LTV_UNICYCLE_CONTROLLER_TOLERANCE</h3>
+<p><IMG SRC="LTV_UNICYCLE_CONTROLLER_TOLERANCE_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="LTV_UNICYCLE_CONTROLLER_TOLERANCE_frontpanel.png"  ALT="Trajectory_Library.lvlib:LTV_UNICYCLE_CONTROLLER_TOLERANCE.CTL" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-MECA_DRIVE_KINEMATICS" >TypeDef-MECA_DRIVE_KINEMATICS</h3>
@@ -712,6 +849,59 @@ The state-space system used internally has the following states (x), inputs (u),
         right, rear left, and rear right wheels.<BR>
 </pre></p>
 <p><IMG SRC="MECA_DRIVE_POSE_EST_frontpanel.png"  ALT="Trajectory_Library.lvlib:MECA_DRIVE_POSE_EST.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-MECA_DRIVE_POSE_EST2" >TypeDef-MECA_DRIVE_POSE_EST2</h3>
+<p><IMG SRC="MECA_DRIVE_POSE_EST2_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions wraps MecaDriveOdometry to fuse latency-compensated vision measurements with mecanum drive encoder distance measurements. It will correct for noisy measurements and encoder drift. It is intended to be a drop-in replacement MecaDriveOdometry.<BR>
+ <BR>
+MecaDrivePoseEst2_update should be called every robot loop.<BR>
+ <BR>
+MecaDrivePoseEst2_addVisionMeasurement can be called as infrequently as you want; if you never call it, then this class will behave mostly like regular encoder odometry.<BR>
+<BR>
+This data cluster contains:<BR>
+  --  Meca_Drive_Odom  -- Meca_Drive__Odom  --  Odometry data cluster for this drive.<BR>
+  --  M_Q -- <3,1> Matrix -- Matrix that holds standard deviations for the robot pose X, Y, theta (meters, meters, radians)<BR>
+  --  M_Vision_K  --  <3,3> Matrix  -- Matrix that holds the gain matrix for closed loop continuous Kalman filter.<BR>
+  --  Pose_Buffer -- TimeInterpBufferVariant  -- Holds last 1.5 seconds of position measurements.  <BR>
+<BR>
+</pre></p>
+<p><IMG SRC="MECA_DRIVE_POSE_EST2_frontpanel.png"  ALT="Trajectory_Library.lvlib:MECA_DRIVE_POSE_EST2.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-MECA_DRIVE_POSE_EST2_CONFIG" >TypeDef-MECA_DRIVE_POSE_EST2_CONFIG</h3>
+<p><IMG SRC="MECA_DRIVE_POSE_EST2_CONFIG_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster containing data required by the MecaDrivePoseEst2_Execute function.  <BR>
+<BR>
+Contains:<BR>
+  -  Front Left Wheel M  -- Translation2d  --  Locations front left wheel in relation to center of robot. (meters)<BR>
+  -  Front Right Wheel M  -- Translation2d  --  Locations front right wheel in relation to center of robot. (meters)<BR>
+  -  Rear Left Wheel M  -- Translation2d  --  Locations rear left wheel in relation to center of robot. (meters)<BR>
+  -  Rear Right Wheel M  -- Translation2d  --  Locations rear right wheel in relation to center of robot. (meters)<BR>
+  -  Odom X Std Dev M  -- double  --  Odometry X position standard deviation (Default: 0.02)  (meters)<BR>
+  -  Odom Y Std Dev M  -- double  --  Odometry Y position standard deviation (Default: 0.02)  (meters)<BR>
+  -  Odom Heading Std Dev M  -- double  --  Odometry Heading (gyro) position standard deviation (Default: 0.01)  (radians)<BR>
+  -  Vision X Std Dev M  -- double  --  Vision X position standard deviation (Default: 0.1)  (meters)<BR>
+  -  Vision Y Std Dev M  -- double  --  Vision Y position standard deviation (Default: 0.1)  (meters)<BR>
+  -  Vision Heading Std Dev M  -- double  --  Vision Heading (gyro) position standard deviation (Default: 0.05)  (radians)<BR>
+<BR>
+</pre></p>
+<p><IMG SRC="MECA_DRIVE_POSE_EST2_CONFIG_frontpanel.png"  ALT="Trajectory_Library.lvlib:MECA_DRIVE_POSE_EST2_CONFIG.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-MECA_DRIVE_POSE_EST2_INTERP_RECORD" >TypeDef-MECA_DRIVE_POSE_EST2_INTERP_RECORD</h3>
+<p><IMG SRC="MECA_DRIVE_POSE_EST2_INTERP_RECORD_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Differential Drive Pose Estimate 2 -- Interporatable Record<BR>
+<BR>
+Represents an odometry record. The record contains the inputs provided as well as the pose that was observed based on these inputs, as well as the previous record and its inputs.<BR>
+<BR>
+Contains:<BR>
+  -  PoseMeters  --  Pose2d  -- The pose observed given the current sensor inputs and the previous pose.<BR>
+  -  GyroAngle  -- Rotation2d  -- The current gyro angle.<BR>
+  -  WheelPositions  --  MecaWheelPositions  --  The distances traveled by each wheel encoder.<BR>
+<BR>
+</pre></p>
+<p><IMG SRC="MECA_DRIVE_POSE_EST2_INTERP_RECORD_frontpanel.png"  ALT="Trajectory_Library.lvlib:MECA_DRIVE_POSE_EST2_INTERP_RECORD.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-MECA_WHEEL_POSITIONS" >TypeDef-MECA_WHEEL_POSITIONS</h3>
@@ -1050,6 +1240,12 @@ This cluster contains:<BR>
 <p><IMG SRC="SINGLE_JOINT_ARM_SIM_frontpanel.png"  ALT="Trajectory_Library.lvlib:SINGLE_JOINT_ARM_SIM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-SINGLE_JOINT_ARM_SIM_SIMULATION_PARAMS" >TypeDef-SINGLE_JOINT_ARM_SIM_SIMULATION_PARAMS</h3>
+<p><IMG SRC="SINGLE_JOINT_ARM_SIM_SIMULATION_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="SINGLE_JOINT_ARM_SIM_SIMULATION_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:SINGLE_JOINT_ARM_SIM_SIMULATION_PARAMS.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-SLEW_RATE_LIMITER" >TypeDef-SLEW_RATE_LIMITER</h3>
 <p><IMG SRC="SLEW_RATE_LIMITER_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Data cluster for a set of functions that limits the rate of change of an input value. Useful for implementing voltage, setpoint, and/or output ramps. A slew-rate limit is most appropriate when the quantity being controlled is a velocity or a voltage; when controlling a position, consider using a TrapezoidProfile}instead.<BR>
@@ -1169,6 +1365,23 @@ This data cluster contains:<BR>
 <BR>
 </pre></p>
 <p><IMG SRC="SWERVE_DRIVE_POSE_EST2_frontpanel.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_POSE_EST2.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-SWERVE_DRIVE_POSE_EST2_CONFIG" >TypeDef-SWERVE_DRIVE_POSE_EST2_CONFIG</h3>
+<p><IMG SRC="SWERVE_DRIVE_POSE_EST2_CONFIG_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster containing data required by the SwerveDrivePoseEst2_Execute function.  <BR>
+<BR>
+Contains:<BR>
+  -  Wheel Locations M  -- Translation2d array  --  Locations of module wheels in relation to center of robot. (meters)<BR>
+  -  Odom X Std Dev M  -- double  --  Odometry X position standard deviation (Default: 0.02)  (meters)<BR>
+  -  Odom Y Std Dev M  -- double  --  Odometry Y position standard deviation (Default: 0.02)  (meters)<BR>
+  -  Odom Heading Std Dev M  -- double  --  Odometry Heading (gyro) position standard deviation (Default: 0.01)  (radians)<BR>
+  -  Vision X Std Dev M  -- double  --  Vision X position standard deviation (Default: 0.1)  (meters)<BR>
+  -  Vision Y Std Dev M  -- double  --  Vision Y position standard deviation (Default: 0.1)  (meters)<BR>
+  -  Vision Heading Std Dev M  -- double  --  Vision Heading (gyro) position standard deviation (Default: 0.05)  (radians)<BR>
+<BR>
+</pre></p>
+<p><IMG SRC="SWERVE_DRIVE_POSE_EST2_CONFIG_frontpanel.png"  ALT="Trajectory_Library.lvlib:SWERVE_DRIVE_POSE_EST2_CONFIG.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-SWERVE_DRIVE_POSE_EST2_INTERP_RECORD" >TypeDef-SWERVE_DRIVE_POSE_EST2_INTERP_RECORD</h3>

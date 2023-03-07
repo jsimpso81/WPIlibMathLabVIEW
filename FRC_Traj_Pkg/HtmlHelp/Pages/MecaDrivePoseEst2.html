@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="MecaDrivePoseEst2" >MecaDrivePoseEst2</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDrivePoseEst2_AddVisionMeasurement" >MecaDrivePoseEst2_AddVisionMeasurement</h3>
+<p><IMG SRC="MecaDrivePoseEst2_AddVisionMeasurement_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Add a vision measurement to the Unscented Kalman Filter. This will correct the odometry pose estimate while still accounting for measurement noise.<BR>
+   <BR>
+This method can be called as infrequently as you want, as long as you are calling MecaDrivePoseEst2_update every loop.<BR>
+<BR>
+To promote stability of the pose estimate and make it robust to bad vision data, we recommend only adding vision measurements that are already within one meter or so of the current pose estimate.<BR>
+<BR>
+   Inputs:<BR>
+  -  InMecaDrivePoseEstimate  --  Data cluster for this system<BR>
+  -  visionRobotPoseMeters  --  The pose of the robot as measured by the vision camera.<BR>
+  -  timestampSeconds  --  The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling MecaDrivePoseEst2_updateWithTime then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as Util_GetFPGATime.) This means that you should use Util_GetFPGATime as your time source in this case.<BR>
+<BR>
+Outputs:<BR>
+  -  OutMecaDrivePoseEstimate2  --  Data cluster for this system<BR>
+  -  Error  --  Returns TRUE if an error occured.  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDrivePoseEst2_BufferDuration" >MecaDrivePoseEst2_BufferDuration</h3>
+<p><IMG SRC="MecaDrivePoseEst2_BufferDuration_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Gets the maximum duration for the Time Interp Variant buffer.<BR>
+<BR>
+This is an internal routine.  It should NOT be called by the end user.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDrivePoseEst2_Execute" >MecaDrivePoseEst2_Execute</h3>
+<p><IMG SRC="MecaDrivePoseEst2_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This single call LabVIEW function wraps Mecanum Drive Odometry to fuse latency-compensated vision measurements with mecanum drive encoder measurements. It is intended to be a drop-in replacement for MecaDrvOdom2; in fact, if you never call MecaDrvPoseEst2_AddVisionMeasurement and only call  MecaDrvPoseEst2_Update then this will behave exactly the same as MecaDrvOdom2.<BR>
+ <BR>
+This function should be called every robot loop, or perhaps put into a separaate loop.<BR>
+<BR>
+When the "Game Started" input is false, the position is reset using the initial pose, wheel distances, and gyro position.  Use this to wait processing changes in measurements until the game starts.<BR>
+<BR>
+When a new vision measurement is available it can be passed into this function to merge it with the other odometry data.   This is done by setting the "Add Vision Meas" input to TRUE.  To promote stability of the pose estimate and make it robust to bad vision data, we recommend only adding vision measurements that are already within one meter or so of the current pose estimate.<BR>
+<BR>
+The default standard deviations of the model states are 0.1 meters for x, 0.1 meters for y, and 0.1 radians for heading. The default standard deviations of the vision measurements are 0.45 meters for x, 0.45 meters for y, and 0.45 radians for heading.<BR>
+<BR>
+Inputs:   <BR>
+  -  MecaPoseEst2Config  --  cluster  --  Packed configuration data used to define how this function operates.  It includes inforation used to define kinematics and position standard deviations.<BR>
+  -  Game Started  --  boolean  --  When FALSE, resets the initial position.  (Default: TRUE)<BR>
+  -  InitialPose  -- Pose2d  -- Initial position.  (meters, meters, rotation2d)<BR>
+  -  WheelDistances  -- MecaWheelPositions  --  The distances measured by the drive wheel encoders. (Meters)<BR>
+  -  gyroAngle  --  Rotation2d  --  The current gyro angle.  (Degrees)<BR>
+  -  Pass Through Time  -- double  -- Current FPGA time.  If input is unwired, FPGA time will be read internally.<BR>
+  - AddVisionMeas  -- boolean --  When TRUE the provided vision measurement is merged with the odometry data.<BR>
+  -  VisionRobotPose  --  Pose2d  --  The pose from vision measurements.<BR>
+  -  Vision Time Stamp  --  double  --  The FPGA time stamp of the vision meausrement.  This helps to account for latency of the vision measurement.<BR>
+   <BR>
+Outputs:<BR>
+  - EstimatedPose  -- Pose2d  -- Current estimated pose (meters, rotation2d) <BR>
+  -  Error  -- boolean -- If TRUE, and error occured. <BR>
+<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDrivePoseEst2_GetEstimatedPosition" >MecaDrivePoseEst2_GetEstimatedPosition</h3>
+<p><IMG SRC="MecaDrivePoseEst2_GetEstimatedPosition_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Gets the pose of the robot at the current time as estimated by the Unscented Kalman Filter.<BR>
+   <BR>
+Inputs:<BR>
+  -  MecaDrivePoseEst2  -  System data cluster<BR>
+<BR>
+Outputs:<BR>
+  -  EstimatedPose  -  The estimated robot pose in meters.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDrivePoseEst2_InterpRecord_ExtractFromVar" >MecaDrivePoseEst2_InterpRecord_ExtractFromVar</h3>
+<p><IMG SRC="MecaDrivePoseEst2_InterpRecord_ExtractFromVar_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This extracts the specific data cluster of Meca Drive Pose Estimator2 Interpolation Record from a Variant.<BR>
+<BR>
+This is an internal routine.   It should NOT be called by the end user.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDrivePoseEst2_InterpRecord_Interp" >MecaDrivePoseEst2_InterpRecord_Interp</h3>
+<p><IMG SRC="MecaDrivePoseEst2_InterpRecord_Interp_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the interpolated record. This object is assumed to be the starting position, or lower bound.<BR>
+<BR>
+Inputs:<BR>
+  -  Input 1  --  The lower bound data cluster<BR>
+  - end Input 2   --  The upper bound, or end, data cluster<BR>
+  -  time frac   --  How far between the lower and upper bound we are. This should be bounded in [0, 1].<BR>
+  -  extra  -- variant  -- extra data needed for the calculation.<BR>
+<BR>
+Returns:<BR>
+  - The interpolated cluster value.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDrivePoseEst2_InterpRecord_New" >MecaDrivePoseEst2_InterpRecord_New</h3>
+<p><IMG SRC="MecaDrivePoseEst2_InterpRecord_New_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Mecal Drive Pose Estimate 2 -- Interporatable Record<BR>
+<BR>
+Represents an odometry record. The record contains the inputs provided as well as the pose that was observed based on these inputs, as well as the previous record and its inputs.<BR>
+<BR>
+Constructs an Interpolation Record with the specified parameters.<BR>
+<BR>
+This is an internal routine.  It should NOT be used by the end user.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDrivePoseEst2_New" >MecaDrivePoseEst2_New</h3>
+<p><IMG SRC="MecaDrivePoseEst2_New_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This set of functions wraps MecaDriveOdometry to fuse latency-compensated vision measurements with mecanum drive encoder distance measurements. It will correct for noisy measurements and encoder drift. It is intended to be a drop-in replacement MecaDriveOdometry.<BR>
+ <BR>
+MecaDrivePoseEst2_update should be called every robot loop.<BR>
+ <BR>
+MecaDrivePoseEst2_addVisionMeasurement can be called as infrequently as you want; if you never call it, then this class will behave mostly like regular encoder odometry.<BR>
+<BR>
+Constructs a MecaDrivePoseEst2.<BR>
+<BR>
+The default standard deviations of the model states are 0.1 meters for x, 0.1 meters for y, and 0.1 radians for heading. The default standard deviations of the vision measurements are 0.45 meters for x, 0.45 meters for y, and 0.45 radians for heading.<BR>
+<BR>
+Inputs:   <BR>
+  -  kinematics  --  MecaDriveKinematics  --  A correctly-configured kinematics data cluster for your drivetrain.<BR>
+  -  gyroAngle  --  Rotation2d  --  The current gyro angle.<BR>
+  -  ModulePositions  -- ModulePositions  --  The current module positions.<BR>
+  -  initialPoseMeters  --  Pose2d  --  The starting pose estimate.<BR>
+  -  stateStdDevs  --  <3,1> matrix  --  Standard deviations of the pose estimate (x position in meters, y position in meters, and heading in radians). Increase these numbers to trust your state estimate less.<BR>
+  -  visionMeasurementStdDevs  -- <3,1> matrix  --  Standard deviations of the vision pose measurement (x position in meters, y position in meters, and heading in radians). Increase these numbers to trust the vision pose measurement less.<BR>
+   <BR>
+Outputs:<BR>
+  --  MecaDrivePoseEst2  -- MecaDrivePoseEst2  -- Created data cluster.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDrivePoseEst2_Pack_Config" >MecaDrivePoseEst2_Pack_Config</h3>
+<p><IMG SRC="MecaDrivePoseEst2_Pack_Config_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack indvidual values into the cluster required by the MecaDrivePoseEst2_Execute function.  <BR>
+<BR>
+Inputs<BR>
+  -  Front Left Wheel M  -- Translation2d  --  Locations front left wheel in relation to center of robot. (meters)<BR>
+  -  Front Right Wheel M  -- Translation2d  --  Locations front right wheel in relation to center of robot. (meters)<BR>
+  -  Rear Left Wheel M  -- Translation2d  --  Locations rear left wheel in relation to center of robot. (meters)<BR>
+  -  Rear Right Wheel M  -- Translation2d  --  Locations rear right wheel in relation to center of robot. (meters)<BR>
+  -  Odom X Std Dev M  -- double  --  Odometry X position standard deviation (Default: 0.02)  (meters)<BR>
+  -  Odom Y Std Dev M  -- double  --  Odometry Y position standard deviation (Default: 0.02)  (meters)<BR>
+  -  Odom Heading Std Dev M  -- double  --  Odometry Heading (gyro) position standard deviation (Default: 0.01)  (radians)<BR>
+  -  Vision X Std Dev M  -- double  --  Vision X position standard deviation (Default: 0.1)  (meters)<BR>
+  -  Vision Y Std Dev M  -- double  --  Vision Y position standard deviation (Default: 0.1)  (meters)<BR>
+  -  Vision Heading Std Dev M  -- double  --  Vision Heading (gyro) position standard deviation (Default: 0.05)  (radians)<BR>
+<BR>
+Outputs:<BR>
+  -  MecaPoseEst2Config  -- cluster  --  Packed data values.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDrivePoseEst2_ResetPosition" >MecaDrivePoseEst2_ResetPosition</h3>
+<p><IMG SRC="MecaDrivePoseEst2_ResetPosition_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Resets the robot's position on the field.<BR>
+   <BR>
+The gyroscope angle does not need to be reset here on the user's robot code. The library automatically takes care of offsetting the gyro angle.<BR>
+   <BR>
+Inputs:<BR>
+  - inMecaDrvPoseEst2  -- MecaDrvPoseEst2  -- Data cluster<BR>
+  -  gyroAngle  --  Rotation2d  --  The angle reported by the gyroscope.<BR>
+  -  ModulePositions  -- ModulePositions  --  The current module positions.<BR>
+  -  poseMeters  --  Pose2d  --  The position on the field that your robot is at.<BR>
+<BR>
+Outputs:<BR>
+  - outMecaDrvPoseEst2  -- MecaDrvPoseEst2  -- Updated data cluster<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDrivePoseEst2_SetVisionMeasurementStdDevs" >MecaDrivePoseEst2_SetVisionMeasurementStdDevs</h3>
+<p><IMG SRC="MecaDrivePoseEst2_SetVisionMeasurementStdDevs_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the pose estimator's trust of global measurements. This might be used to change trust in vision measurements after the autonomous period, or to change trust as distance to a vision target increases.<BR>
+   <BR>
+Inputs:<BR>
+  - inMecaDrvPoseEst2  -- MecaDrvPoseEst2  -- Data cluster<BR>
+  - VisionMeasurementStdDevs  -- <3,1> Matrix  --  Standard deviations of the vision measurements.  Increase these numbers to trust global measurements from vision less. This matrix is in the form [x, y, theta]Time, with units in meters and radians.<BR>
+<BR>
+Outputs:<BR>
+  - outMecaDrvPoseEst2  -- MecaDrvPoseEst2  -- Updated data cluster<BR>
+  - sizeCooerced  -- boolean -- If TRUE, then the size of the vision measurement standard deviations was not 3,1.  The size was modified to allow this routine to complete.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDrivePoseEst2_Update" >MecaDrivePoseEst2_Update</h3>
+<p><IMG SRC="MecaDrivePoseEst2_Update_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Updates the the robot odometry using only wheel encoder information. Note that this should be called every loop.<BR>
+<BR>
+Inputs:<BR>
+  -  inMecaDrivePoseEst  --  system data cluster<BR>
+  -  gyroAngle  --  The current gyro angle.  (radians)<BR>
+  -  ModulePositions -- Array Module Position  --  The current module positions (distance and angle)<BR>
+  -  currentTime  --  Time at which this method was called, in seconds.<BR>
+<BR>
+Outputs:<BR>
+  -  outMecaDrivePoseEst  --  system data cluster<BR>
+  -  EstimatedPose  -- The estimated pose of the robot in meters.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="MecaDrivePoseEst2_UpdateWithTime" >MecaDrivePoseEst2_UpdateWithTime</h3>
+<p><IMG SRC="MecaDrivePoseEst2_UpdateWithTime_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Updates the the robot odometry using only wheel encoder information. Note that this should be called every loop.<BR>
+<BR>
+Inputs:<BR>
+  -  inMecaDrivePoseEst  --  system data cluster<BR>
+  -  gyroAngle  --  The current gyro angle.  (radians)<BR>
+  -  ModulePositions -- Array Module Position  --  The current module positions (distance and angle)<BR>
+  -  currentTime  --  Time at which this method was called, in seconds.<BR>
+<BR>
+Outputs:<BR>
+  -  outMecaDrivePoseEst  --  system data cluster<BR>
+  -  EstimatedPose  -- The estimated pose of the robot in meters.<BR>
+<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>
