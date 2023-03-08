@@ -183,7 +183,12 @@ Cluster contains:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-DCMOTOR_SIM_SIMULATION_PARAMS" >TypeDef-DCMOTOR_SIM_SIMULATION_PARAMS</h3>
 <p><IMG SRC="DCMOTOR_SIM_SIMULATION_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster containing packed simulation parameters used by the DC Motor Simulation Execute routine.<BR>
+<BR>
+Contains:<BR>
+  -  Pos Sim Std Dev  --  double  -- Standard deviation for the motor position (Rotations  Default: 2)<BR>
+  -  Vel Sim Std Dev  --  double  --  Standard deviation for the motor velocity (RPM, Default: 2)<BR>
+</pre></p>
 <p><IMG SRC="DCMOTOR_SIM_SIMULATION_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:DCMOTOR_SIM_SIMULATION_PARAMS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -384,7 +389,15 @@ Cluster contains:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-ELEVATOR_SIM_SIMULATION_PARAMS" >TypeDef-ELEVATOR_SIM_SIMULATION_PARAMS</h3>
 <p><IMG SRC="ELEVATOR_SIM_SIMULATION_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster contains simulation parameters used by the Elevator Simulation Execute routine.<BR>
+<BR>
+Inputs:<BR>
+  -  Min Height  --  double  --  Minimum physical elevator height (meters)<BR>
+  -  Max Height  --  double  --  Maximum physical elevator height (meters)<BR>
+  -  Pos Sim Std Dev  --  double  -- Standard deviation for the motor position (meters  Default: 0.09)<BR>
+  - SimulateGravity  --  boolean  -- Simulate gravity (Default: True)<BR>
+<BR>
+</pre></p>
 <p><IMG SRC="ELEVATOR_SIM_SIMULATION_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:ELEVATOR_SIM_SIMULATION_PARAMS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -440,7 +453,12 @@ Cluster contains:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-FLYWHEEL_SIM_SIMULATION_PARAMS" >TypeDef-FLYWHEEL_SIM_SIMULATION_PARAMS</h3>
 <p><IMG SRC="FLYWHEEL_SIM_SIMULATION_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster containing simulation parameters used by the Flywheel Simulation Execute routine.<BR>
+<BR>
+Contains:<BR>
+  -  Vel Sim Std Dev  --  double  -- Standard deviation for the flywheel velocity (rad/sec  Default: 1)<BR>
+<BR>
+</pre></p>
 <p><IMG SRC="FLYWHEEL_SIM_SIMULATION_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:FLYWHEEL_SIM_SIMULATION_PARAMS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -639,7 +657,14 @@ This cluster contains:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_SYSTEM_ID_DCMOTOR_MODEL" >TypeDef-LINEAR_SYSTEM_ID_DCMOTOR_MODEL</h3>
 <p><IMG SRC="LINEAR_SYSTEM_ID_DCMOTOR_MODEL_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster contains model parameters used to create a DC Motor Linear System.<BR>
+<BR>
+Contains:<BR>
+  -  DCMOTOR_TYPE  --  enum  --  Model of motor being used.<BR>
+  -  Num Numtors  --  integer  --  Number of motors used.<BR>
+  -  Gearing  -- double  -- Gear ratio.    (Input speed / Output Speed )<BR>
+  -  MOI  --  double  -- Moment of inertia  - kg m^2<BR>
+</pre></p>
 <p><IMG SRC="LINEAR_SYSTEM_ID_DCMOTOR_MODEL_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_ID_DCMOTOR_MODEL.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -678,37 +703,135 @@ This cluster contains:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_SYSTEM_LOOP_CTRL_PARAMS" >TypeDef-LINEAR_SYSTEM_LOOP_CTRL_PARAMS</h3>
 <p><IMG SRC="LINEAR_SYSTEM_LOOP_CTRL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster containing control parameters needed for the Linear System Loop Execute function.<BR>
+<BR>
+Contains:<BR>
+  -  Model Std Dev  --  double array (states)  --  Array of standard deviations for model states.<BR>
+  -  Measure Std Dev  -- double array(outputs)  --  Array of standard devations for model outputs<BR>
+  -  Control Tol  -- double array(states)  --  Array of standard deviations for controlled model states.<BR>
+  -  Max Control Effort  -- double array(inputs)  --  Array of maximum values for inputs (classical control outputs) <BR>
+<BR>
+</pre></p>
 <p><IMG SRC="LINEAR_SYSTEM_LOOP_CTRL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP_CTRL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_SYSTEM_LOOP_DCMOTOR_CTRL_PARAMS" >TypeDef-LINEAR_SYSTEM_LOOP_DCMOTOR_CTRL_PARAMS</h3>
 <p><IMG SRC="LINEAR_SYSTEM_LOOP_DCMOTOR_CTRL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster to contain control parameters for a DC motor linear system.   <BR>
+<BR>
+The DC Motor linear system is defined as:<BR>
+  -  states: <BR>
+      -  angular position (rad)<BR>
+      -  angular velocity (rad/sec)<BR>
+  -  inputs:<BR>
+      -  motor voltage<BR>
+  -  outputs: <BR>
+      -  angular position (rad) <BR>
+      -  angular velocity (rad/sec)<BR>
+<BR>
+Contains:<BR>
+  -  Vel Model Std Dev  --  double  --  Standard deviation for modeled velocity (rad/sec)<BR>
+  -  Pos Model Std Dev  --  double  --  Standard deviation for modeled position (rad)<BR>
+  -  Vel Meas Std Dev  --  double  --  Standard deviation for measured velocity (rad/sec)<BR>
+  -  Pos Meas Std Dev  --  double  --  Standard deviation for measured position (rad)<BR>
+  -  Vel Ctrl Tol Std Dev  --  double  --  Control tolerance for velocity (rad/sec)<BR>
+  -  Pos Ctrl Tol Std Dev  --  double  --  Control tolerance for position (rad)<BR>
+  -  Max Ctrl Out  -- double  -- Maximum control output (Default: 12)  (volts)<BR>
+</pre></p>
 <p><IMG SRC="LINEAR_SYSTEM_LOOP_DCMOTOR_CTRL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP_DCMOTOR_CTRL_PARAMS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_SYSTEM_LOOP_DIFF_DRV_CTRL_PARAMS" >TypeDef-LINEAR_SYSTEM_LOOP_DIFF_DRV_CTRL_PARAMS</h3>
 <p><IMG SRC="LINEAR_SYSTEM_LOOP_DIFF_DRV_CTRL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster contains the control parameters for a Diff Drive linear system.   <BR>
+<BR>
+The Diff Drive linear system is defined as:<BR>
+  -  states<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+  -  inputs<BR>
+      -  left voltage (volts)<BR>
+      -  right voltage(volts)<BR>
+  -  outputs<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+<BR>
+Contains:<BR>
+  -  Left Vel Model Std Dev  --  double  --  Standard deviation for modeled left velocity (meters/sec)<BR>
+  -  Right Vel Model Std Dev  --  double  --  Standard deviation for modeled right velocity (meters/sec)<BR>
+  -  Left Vel Meas Std Dev  --  double  --  Standard deviation for measured left velocity (meters/sec)<BR>
+  -  Right Vel Meas Std Dev  --  double  --  Standard deviation for measured right velocity (meters/sec)<BR>
+  -  Left Vel Ctrl Tol Std Dev  --  double  --   Control tolerance for left velocity (meters/sec)<BR>
+  -  Right Vel Ctrl Tol Std Dev  --  double  --  Control tolerance for right velocity (meters/sec)<BR>
+  -  Max Ctrl Out  -- double  -- Maximum control output (Default: 12)  (volts)<BR>
+</pre></p>
 <p><IMG SRC="LINEAR_SYSTEM_LOOP_DIFF_DRV_CTRL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP_DIFF_DRV_CTRL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_SYSTEM_LOOP_ELEVATOR_CTRL_PARAMS" >TypeDef-LINEAR_SYSTEM_LOOP_ELEVATOR_CTRL_PARAMS</h3>
 <p><IMG SRC="LINEAR_SYSTEM_LOOP_ELEVATOR_CTRL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster contains  the control parameters for an elevator linear system.   <BR>
+<BR>
+The Elevator linear system definition is:<BR>
+  - States<BR>
+      -  position (meters)<BR>
+      -  velocity (meters/sec)<BR>
+  - Inputs:<BR>
+      -  motor voltage (volts)<BR>
+  -  Outputs:<BR>
+      -  position (meters)<BR>
+<BR>
+Contains:<BR>
+  -  Pos Model Std Dev  --  double  --  Standard deviation for modeled position (meters)<BR>
+  -  Vel Model Std Dev  --  double  --  Standard deviation for modeled velocity (meters/sec)<BR>
+  -  Pos Meas Std Dev  --  double  --  Standard deviation for measured position (meters)<BR>
+  -  Pos Ctrl Tol Std Dev  --  double  --  Control tolerance for position (meters)<BR>
+  -  Max Ctrl Out  -- double  -- Maximum control output (Default: 12)  (volts)<BR>
+</pre></p>
 <p><IMG SRC="LINEAR_SYSTEM_LOOP_ELEVATOR_CTRL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP_ELEVATOR_CTRL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_SYSTEM_LOOP_FLYWHEEL_CTRL_PARAMS" >TypeDef-LINEAR_SYSTEM_LOOP_FLYWHEEL_CTRL_PARAMS</h3>
 <p><IMG SRC="LINEAR_SYSTEM_LOOP_FLYWHEEL_CTRL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster contains control parameters for a flywheel linear system.   <BR>
+<BR>
+The flywheel linear system definition is:<BR>
+  - States<BR>
+      -  angular velocity (Rad/Sec)<BR>
+  - Inputs:<BR>
+      -  motor voltage<BR>
+  -  Outputs:<BR>
+      -  angular velocity (rad/sec)<BR>
+<BR>
+Contains:<BR>
+  -  Vel Model Std Dev  --  double  --  Standard deviation for modeled velocity (rad/sec)<BR>
+  -  Vel Meas Std Dev  --  double  --  Standard deviation for measured velocity (rad/sec)<BR>
+  -  Vel Ctrl Tol Std Dev  --  double  --  Control tolerance for velocity (rad/sec)<BR>
+  -  Max Ctrl Out  -- double  -- Maximum control output (Default: 12)  (volts)<BR>
+</pre></p>
 <p><IMG SRC="LINEAR_SYSTEM_LOOP_FLYWHEEL_CTRL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP_FLYWHEEL_CTRL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS" >TypeDef-LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS</h3>
 <p><IMG SRC="LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster contains the control parameters for a single jointed arm linear system.   <BR>
+<BR>
+The single jointed arm linear system definition is:<BR>
+  - States<BR>
+      -  angle position (Rad)<BR>
+      -  velocity (Rad/Sec)<BR>
+  - Inputs:<BR>
+      -  motor voltage<BR>
+  -  Outputs:<BR>
+      -  angle position (rad)<BR>
+<BR>
+Contains:<BR>
+  -  Ang Model Std Dev  -- double  --  Standard deviation for modeled angle (Rad)<BR>
+  -  Vel Model Std Dev  --  double  --  Standard deviation for modeled velocity (rad/sec)<BR>
+  -  Ang Measl Std Dev  -- double  --  Standard deviation for measured angle (Rad)<BR>
+  -  Ang Ctrl Tol Std Dev  --  double  --  Control tolerance for angle (rad)<BR>
+  -  Max Ctrl Out  -- double  -- Maximum control output (Default: 12)  (volts)<BR>
+</pre></p>
 <p><IMG SRC="LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LINEAR_SYSTEM_LOOP_SNGJNTARM_CTRL_PARAMS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -743,13 +866,33 @@ The data values are:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LTV_DIFF_DRIVE_CTRL_CONTROL_PARAMS" >TypeDef-LTV_DIFF_DRIVE_CTRL_CONTROL_PARAMS</h3>
 <p><IMG SRC="LTV_DIFF_DRIVE_CTRL_CONTROL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster contains packed control values for LTV Diff Drive Ctrl execute function<BR>
+<BR>
+Contains:<BR>
+  -  Desired X Pos Ctrl Tol  --  double  --- Maximum desired X position control tolerance (meters, Default: 0.125)<BR>
+  -  Desired Y Pos Ctrl Tol  --  double  --- Maximum desired y position control tolerance (meters, Default: 0.125)<BR>
+  -  Desired Heading Ctrl Tol  --  double  --- Maximum desired heading control tolerance (meters, Default: 0.06)<BR>
+  -  Desired Left Vel Ctrl Tol  --  double  --- Maximum desired left velocity control tolerance (meters, Default: 0.1)<BR>
+  -  Desired Right Vel Ctrl Tol  --  double  --- Maximum desired right velocity control tolerance (meters, Default: 0.1)<BR>
+  -  Max left vel ctrl effort V  -- double  -- Maximum left motor dmd control effort (volts, default 12.0)<BR>
+  -  Max right vel ctrl effort V  -- double  -- Maximum right motor dmd control effort (volts, default 12.0)<BR>
+<BR>
+</pre></p>
 <p><IMG SRC="LTV_DIFF_DRIVE_CTRL_CONTROL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LTV_DIFF_DRIVE_CTRL_CONTROL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LTV_DIFF_DRIVE_CTRL_MODEL_PARAMS" >TypeDef-LTV_DIFF_DRIVE_CTRL_MODEL_PARAMS</h3>
 <p><IMG SRC="LTV_DIFF_DRIVE_CTRL_MODEL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster contains model, control, and tolerance values for LTV Diff Drive control execute function:<BR>
+<BR>
+Contains:<BR>
+  -  Diff Drive Linear System  -- Linear system  -- Diff Drive linear system<BR>
+  -  LTV Diff Drve Ctrl  --  cluster  --  Packed control parameters<BR>
+  -  LTV Diff Drive Tol  --  cluster  --  Packed tolerance parameters<BR>
+  -  Track Width  -- double  -- Track width (meters)<BR>
+  -  dT Sec  -- double  -- Update time (Default 0.02)<BR>
+<BR>
+</pre></p>
 <p><IMG SRC="LTV_DIFF_DRIVE_CTRL_MODEL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LTV_DIFF_DRIVE_CTRL_MODEL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -761,7 +904,16 @@ The data values are:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LTV_DIFF_DRIVE_CTRL_TOLERANCE" >TypeDef-LTV_DIFF_DRIVE_CTRL_TOLERANCE</h3>
 <p><IMG SRC="LTV_DIFF_DRIVE_CTRL_TOLERANCE_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Contains tolerance values used to deterine on target  for LTV Diff Drive Ctrl execute function<BR>
+<BR>
+Contains:<BR>
+  -  Max X tolerance  --  double  --- Maximum desired X position tolerance (meters, Default: 0.0625)<BR>
+  -  Max Y tolerance  --  double  --- Maximum desired Y position tolerance (meters, Default 0.125)<BR>
+  -  Max heading tolerance  --  double  --- Maximum desired heading tolerance (radians, Default 0.2)<BR>
+  -  Max left vel tolerance  --  double  --- Maximum desired left velocity tolerance (meters/sec, Default 0.2)<BR>
+  -  Max right vel tolerance  --  double  --- Maximum desired right velocity tolerance (meters/sec, Default: 0.2)<BR>
+<BR>
+</pre></p>
 <p><IMG SRC="LTV_DIFF_DRIVE_CTRL_TOLERANCE_frontpanel.png"  ALT="Trajectory_Library.lvlib:LTV_DIFF_DRIVE_CTRL_TOLERANCE.CTL" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -785,13 +937,29 @@ Holds the data an LTV Unicycle Controller.  The data cluster contains:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LTV_UNICYCLE_CONTROLLER_MODEL_PARAMS" >TypeDef-LTV_UNICYCLE_CONTROLLER_MODEL_PARAMS</h3>
 <p><IMG SRC="LTV_UNICYCLE_CONTROLLER_MODEL_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Contains packed model and control values for LTV Unicycle Ctrl execute function<BR>
+<BR>
+Inputs:<BR>
+  -  Max X Pos Meas Tol  --  double  --- Maximum desired X position measurement tolerance (meters, Default: 0.0625)<BR>
+  -  Max Y Pos Meas Tol  --  double  --- Maximum desired y position measurement tolerance (meters, Default: 0.125)<BR>
+  -  Max Heading Meas Tol  --  double  --- Maximum desired heading measurement tolerance (meters, Default: 0.2)<BR>
+  -  Max angular ctrl effort V  -- double  -- Maximum angular control effort (rad/sec, default 2.0)<BR>
+  -  Max linear vel ctrl effort V  -- double  -- Maximum linearcontrol effort (meters/sec, default 9.0)<BR>
+<BR>
+</pre></p>
 <p><IMG SRC="LTV_UNICYCLE_CONTROLLER_MODEL_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:LTV_UNICYCLE_CONTROLLER_MODEL_PARAMS.CTL" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-LTV_UNICYCLE_CONTROLLER_TOLERANCE" >TypeDef-LTV_UNICYCLE_CONTROLLER_TOLERANCE</h3>
 <p><IMG SRC="LTV_UNICYCLE_CONTROLLER_TOLERANCE_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster contains on target tolerance values for LTV Unicycle Ctrl execute function<BR>
+<BR>
+Contains:<BR>
+  -  Max X tolerance  --  double  --- Maximum desired X position tolerance (meters, Default: 0.0625)<BR>
+  -  Max Y tolerance  --  double  --- Maximum desired Y position tolerance (meters, Default 0.125)<BR>
+  -  Max heading tolerance  --  double  --- Maximum desired heading tolerance (radians, Default 0.2)<BR>
+<BR>
+</pre></p>
 <p><IMG SRC="LTV_UNICYCLE_CONTROLLER_TOLERANCE_frontpanel.png"  ALT="Trajectory_Library.lvlib:LTV_UNICYCLE_CONTROLLER_TOLERANCE.CTL" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -1242,7 +1410,15 @@ This cluster contains:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-SINGLE_JOINT_ARM_SIM_SIMULATION_PARAMS" >TypeDef-SINGLE_JOINT_ARM_SIM_SIMULATION_PARAMS</h3>
 <p><IMG SRC="SINGLE_JOINT_ARM_SIM_SIMULATION_PARAMS_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Cluster contains simulation parameters used by the Single Jointed Arm Simulation Execute routine.<BR>
+<BR>
+Contains:<BR>
+  -  Min Angle  --  double  --  Minimum physical arm angle (radians)<BR>
+  -  Max Angle  --  double  --  Maximum physical arm angle (radians)<BR>
+  -  Pos Sim Std Dev  --  double  -- Standard deviation for the arm position (radians  Default: 0.09)<BR>
+  - SimulateGravity  --  boolean  -- Simulate gravity (Default: True)<BR>
+<BR>
+</pre></p>
 <p><IMG SRC="SINGLE_JOINT_ARM_SIM_SIMULATION_PARAMS_frontpanel.png"  ALT="Trajectory_Library.lvlib:SINGLE_JOINT_ARM_SIM_SIMULATION_PARAMS.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">

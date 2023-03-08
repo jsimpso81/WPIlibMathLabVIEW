@@ -66,36 +66,78 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVDiffDriveCtrl_Execute" >LTVDiffDriveCtrl_Execute</h3>
 <p><IMG SRC="LTVDiffDriveCtrl_Execute_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the linear and angular velocity outputs of the LTV controller.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The linear time-varying (LTV) differential drive controller has a similar form to the LQR, but the model used to compute the controller gain is the nonlinear model linearized around the drivetrain's current state. We precomputed gains for important places in our state-space, then interpolated between them with a look up table (LUT) to save computational resources.Filters the provided voltages to limit a differential drive's linear and angular acceleration.<BR>
+<BR>
+This LabVIEW single call function creates and executes the LTV Diff Drive controller. <BR>
+<BR>
+The input linear system is defined as:<BR>
+  -  states<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+  -  inputs<BR>
+      -  left voltage (volts)<BR>
+      -  right voltage(volts)<BR>
+  -  outputs<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+<BR>
+<BR>
 <BR>
 Inputs:<BR>
-   - in LTV Unicycle Controller  --  Controller data cluster<BR>
-    -  currentPose  --  The current pose.<BR>
-    -  poseRef  --  The desired pose.  (Setpont)<BR>
-    -  linearVelocityRef  --  The desired linear velocity in meters per second.  (Feedforward)<BR>
-    -  angularVelocityRef  --  The desired angular velocity in radians per second.  (Feedforward)<BR>
+  -  LTVDiffDriveCtrl Model  --  cluster  --  Packed data used to construct the LTV Diff Drive control system.<BR>
+  -  Ref Pose  -- Pose2d  --  The desired pose setpoint.  (Meters, Radians)<BR>
+  -  Ref Left Velocity  -- double  --  The desired left velocity (Meters/sec)<BR>
+  -  Ref Right Velocity  -- double  --  The desired right velocity (Meters/sec)<BR>
+  -  Current Pose  -- Pose2d  --  The current pose.  (Meters, Radians)<BR>
+  -  Left Velocity  -- double  --  The current left velocity (Meters/sec)<BR>
+  -  Right Velocity  -- double  --  The current right velocity (Meters/sec)<BR>
 <BR>
 Outputs:<BR>
-   - out LTV Unicycle Controller  --  Updatated data cluster<BR>
-   - Chassis Speeds  -- The linear and angular velocity outputs of the LTV controller.<BR>
-   - Error  --  Returns TRUE if an error occured.</pre></p>
+  -  Left Motor Dmd  --  double  -- Left wheel motor demand (+/- 1.0)<BR>
+  -  Right Motor Dmd  --  double  -- Left wheel motor demand (+/- 1.0)<BR>
+  -  At Reference  --  boolean  --  If TRUE, the current position is within the tolerance.<BR>
+  -  Error  --  boolean  --  If TRUE, an error occured.<BR>
+  -  out LTV DiffDriveCtrl  -- cluster  -- Internal data structure.<BR>
+<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVDiffDriveCtrl_Execute_TrajState" >LTVDiffDriveCtrl_Execute_TrajState</h3>
 <p><IMG SRC="LTVDiffDriveCtrl_Execute_TrajState_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the linear and angular velocity outputs of the LTV controller.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The linear time-varying (LTV) differential drive controller has a similar form to the LQR, but the model used to compute the controller gain is the nonlinear model linearized around the drivetrain's current state. We precomputed gains for important places in our state-space, then interpolated between them with a look up table (LUT) to save computational resources.Filters the provided voltages to limit a differential drive's linear and angular acceleration.<BR>
+<BR>
+This LabVIEW single call function creates and executes the LTV Diff Drive controller. <BR>
+<BR>
+The input linear system is defined as:<BR>
+  -  states<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+  -  inputs<BR>
+      -  left voltage (volts)<BR>
+      -  right voltage(volts)<BR>
+  -  outputs<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+<BR>
+<BR>
 <BR>
 Inputs:<BR>
-   - in LTV Unicycle Controller  --  Controller data cluster<BR>
-    -  currentPose  --  The current pose.<BR>
-    -  poseRef  --  The desired pose.  (Setpont)<BR>
-    -  linearVelocityRef  --  The desired linear velocity in meters per second.  (Feedforward)<BR>
-    -  angularVelocityRef  --  The desired angular velocity in radians per second.  (Feedforward)<BR>
+  -  LTVDiffDriveCtrl Model  --  cluster  --  Packed data used to construct the LTV Diff Drive control system.<BR>
+  -  Traj state  -- Traj state  --  The desired trajectory state.  Contains desired position and velocity values. (Meters, radians)<BR>
+  -  Ref Left Velocity  -- double  --  The desired left velocity (Meters/sec)<BR>
+  -  Ref Right Velocity  -- double  --  The desired right velocity (Meters/sec)<BR>
+  -  Current Pose  -- Pose2d  --  The current pose.  (Meters, Radians)<BR>
+  -  Left Velocity  -- double  --  The current left velocity (Meters/sec)<BR>
+  -  Right Velocity  -- double  --  The current right velocity (Meters/sec)<BR>
 <BR>
 Outputs:<BR>
-   - out LTV Unicycle Controller  --  Updatated data cluster<BR>
-   - Chassis Speeds  -- The linear and angular velocity outputs of the LTV controller.<BR>
-   - Error  --  Returns TRUE if an error occured.</pre></p>
+  -  Left Motor Dmd  --  double  -- Left wheel motor demand (+/- 1.0)<BR>
+  -  Right Motor Dmd  --  double  -- Left wheel motor demand (+/- 1.0)<BR>
+  -  At Reference  --  boolean  --  If TRUE, the current position is within the tolerance.<BR>
+  -  Error  --  boolean  --  If TRUE, an error occured.<BR>
+  -  out LTV DiffDriveCtrl  -- cluster  -- Internal data structure.<BR>
+<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVDiffDriveCtrl_New" >LTVDiffDriveCtrl_New</h3>
@@ -133,17 +175,53 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVDiffDriveCtrl_Pack_Ctrl_Params" >LTVDiffDriveCtrl_Pack_Ctrl_Params</h3>
 <p><IMG SRC="LTVDiffDriveCtrl_Pack_Ctrl_Params_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack control values for LTV Diff Drive Ctrl execute function<BR>
+<BR>
+Inputs:<BR>
+  -  Desired X Pos Ctrl Tol  --  double  --- Maximum desired X position control tolerance (meters, Default: 0.0625)<BR>
+  -  Desired Y Pos Ctrl Tol  --  double  --- Maximum desired y position control tolerance (meters, Default: 0.125)<BR>
+  -  Desired Heading Ctrl Tol  --  double  --- Maximum desired heading control tolerance (meters, Default: 0.2)<BR>
+  -  Desired Left Vel Ctrl Tol  --  double  --- Maximum desired left velocity control tolerance (meters, Default: 0.3)<BR>
+  -  Desired Right Vel Ctrl Tol  --  double  --- Maximum desired right velocity control tolerance (meters, Default: 0.3)<BR>
+  -  Max left vel ctrl effort V  -- double  -- Maximum left motor dmd control effort (volts, default 12.0)<BR>
+  -  Max right vel ctrl effort V  -- double  -- Maximum right motor dmd control effort (volts, default 12.0)<BR>
+<BR>
+Outputs:<BR>
+  -  LTV Diff Drive Ctrl Control  -- cluster  -- Packed valules<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVDiffDriveCtrl_Pack_Model_Params" >LTVDiffDriveCtrl_Pack_Model_Params</h3>
 <p><IMG SRC="LTVDiffDriveCtrl_Pack_Model_Params_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack model, control, and tolerance values for LTV Diff Drive control execute function:<BR>
+<BR>
+Inputs:<BR>
+  -  LTV Diff Drve Ctrl  --  cluster  --  Packed control parameters<BR>
+  -  LTV Diff Drive Tol  --  cluster  --  Packed tolerance parameters<BR>
+  -  Diff Drive Linear System  -- Linear system  -- Diff Drive linear system<BR>
+  -  Track Width  -- double  -- Track width (meters)<BR>
+  -  dT Sec  -- double  -- Update time (Default 0.02)<BR>
+<BR>
+Outputs:<BR>
+  -  LTVDiffDrveCtrlModel  -- cluster  -- Packed model, control, tolerance values<BR>
+<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVDiffDriveCtrl_Pack_Tolerance" >LTVDiffDriveCtrl_Pack_Tolerance</h3>
 <p><IMG SRC="LTVDiffDriveCtrl_Pack_Tolerance_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack on target tolerance values for LTV Diff Drive Ctrl execute function<BR>
+<BR>
+Inputs:<BR>
+  -  Max X tolerance  --  double  --- Maximum desired X position tolerance (meters, Default: 0.04)<BR>
+  -  Max Y tolerance  --  double  --- Maximum desired Y position tolerance (meters, Default 0.04)<BR>
+  -  Max heading tolerance  --  double  --- Maximum desired heading tolerance (radians, Default 0.06)<BR>
+  -  Max left vel tolerance  --  double  --- Maximum desired left velocity tolerance (meters/sec, Default 0.15)<BR>
+  -  Max right vel tolerance  --  double  --- Maximum desired right velocity tolerance (meters/sec, Default: 0.15)<BR>
+<BR>
+Outputs:<BR>
+  -  LTV Diff Drive Ctrl Tol  -- cluster  -- Packed valules<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LTVDiffDriveCtrl_SetTolerance" >LTVDiffDriveCtrl_SetTolerance</h3>

@@ -85,17 +85,39 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="DiffDrivePoseEst2_InterpRecord_ExtractFromVar" >DiffDrivePoseEst2_InterpRecord_ExtractFromVar</h3>
 <p><IMG SRC="DiffDrivePoseEst2_InterpRecord_ExtractFromVar_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This extracts the specific data cluster of Diff Drive Pose Estimator2 Interpolation Record from a Variant.<BR>
+<BR>
+This is an internal routine.   It should NOT be called by the end user.<BR>
+<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="DiffDrivePoseEst2_InterpRecord_Interp" >DiffDrivePoseEst2_InterpRecord_Interp</h3>
 <p><IMG SRC="DiffDrivePoseEst2_InterpRecord_Interp_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Return the interpolated record. This object is assumed to be the starting position, or lower bound.<BR>
+<BR>
+Inputs:<BR>
+  -  Input 1  --  The lower bound data cluster<BR>
+  - end Input 2   --  The upper bound, or end, data cluster<BR>
+  -  time frac   --  How far between the lower and upper bound we are. This should be bounded in [0, 1].<BR>
+  -  extra  -- variant  -- extra data needed for the calculation.<BR>
+<BR>
+Returns:<BR>
+  - The interpolated cluster value.<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="DiffDrivePoseEst2_InterpRecord_New" >DiffDrivePoseEst2_InterpRecord_New</h3>
 <p><IMG SRC="DiffDrivePoseEst2_InterpRecord_New_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Diff Drive Pose Estimate 2 -- Interporatable Record<BR>
+<BR>
+Represents an odometry record. The record contains the inputs provided as well as the pose that was observed based on these inputs, as well as the previous record and its inputs.<BR>
+<BR>
+Constructs an Interpolation Record with the specified parameters.<BR>
+<BR>
+This is an internal routine.  It should NOT be used by the end user.<BR>
+<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="DiffDrivePoseEst2_New" >DiffDrivePoseEst2_New</h3>

@@ -22,6 +22,26 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="LinearSystemSim_Execute" >LinearSystemSim_Execute</h3>
+<p><IMG SRC="LinearSystemSim_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Single call LabVIEW function to simulate a linear system.   <BR>
+<BR>
+<BR>
+Inputs:<BR>
+  -  Linear System  --  Linear System  --  The linear system to be simulted.<BR>
+  -  Measurement Std Dev  --  double array (outputs)  --  Optional, siulation output standard deviations (Default: 0.0)<BR>
+  -  Initial States --  double array (states)  -- Optional, contains initial state values.  (Default: contents of linear system)<BR>
+  -  Demand Array (CO)  --  double array(inputs)  -- demand values. (+/- 1.0 )   These are turned into voltages by multiplying by the battery voltage.<BR>
+  -  Battery Voltage  --  double  -- Optional, current simulated battery voltage (Volts  Default: 12.0)<BR>
+  -  dT Sec  -- double  --  Optional,, update period (Seconds, Default: 0.02)<BR>
+<BR>
+Outputs:<BR>
+  -  Outputs  --  double array (outputs)  -- Current system outputs.<BR>
+  -  Error  -- boolean  --  If TRUE an error occured.<BR>
+   - outLinearSystemSim  --  cluster  --  Current internal data cluster.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemSim_GetOutput" >LinearSystemSim_GetOutput</h3>
 <p><IMG SRC="LinearSystemSim_GetOutput_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the current output of the plant.<BR>

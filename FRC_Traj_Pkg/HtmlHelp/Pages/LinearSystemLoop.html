@@ -38,7 +38,7 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemLoop_DCMotor_Execute" >LinearSystemLoop_DCMotor_Execute</h3>
 <p><IMG SRC="LinearSystemLoop_DCMotor_Execute_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create and control a DC Motor system using a Kalman FIlter and LQR controller.  This is a single call LabVIEW function.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Model and control a DC Motor system using a Kalman FIlter and LQR controller.  This is a single call LabVIEW function.<BR>
 <BR>
 The DC Motor linear system is defined as:<BR>
   -  states: <BR>
@@ -51,8 +51,19 @@ The DC Motor linear system is defined as:<BR>
       -  angular velocity (rad/sec)<BR>
 <BR>
 Inputs:<BR>
+  -  LinearSystemId DC Motor Model  --  cluster  --  Packed parameters used to create DC Motor linear system.<BR>
+  -  LineaarSystem DC Motor Ctrl  --  cluster  -- Packed parameters used by Kalman Filter and LQR to control the system.<BR>
+  -  Velocity Setpoint  --  double  --  Desired velocity (Rad/Sec)<BR>
+  -  Position Setpiont  -- double  --  Desired position (Radians, Default: 0)<BR>
+  -  Velocity --  double  -- Measured velocity (Rad/Sec)<BR>
+  - Position --  double  -- Measured position (Radians)<BR>
+  -  dT --  double  -- Update time (Seconds, Default: 0.02)<BR>
 <BR>
 Outputs:<BR>
+  -  Motor Dmd  -  double  -- Motor demand (+/- 1.0)<BR>
+  -  Kalman FIltered Velocity  -- double  -- Filtered velocity (Rad/Sec)<BR>
+  -  Kalman FIltered Position --  double  --  Filtered position (Radians)<BR>
+  -  Error  -- boolean  --  If TRUE an error occured.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -85,7 +96,9 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemLoop_DiffDrv_Execute" >LinearSystemLoop_DiffDrv_Execute</h3>
 <p><IMG SRC="LinearSystemLoop_DiffDrv_Execute_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The linear system is define as:<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Model and control a Diff Drive system using a Kalman FIlter and LQR controller.  This is a single call LabVIEW function.<BR>
+<BR>
+The Diff Drive linear system is define as:<BR>
   -  states<BR>
       -  left velocity (m/s)<BR>
       -  right velocity (m/s)<BR>
@@ -95,23 +108,80 @@ Outputs:<BR>
   -  outputs<BR>
       -  left velocity (m/s)<BR>
       -  right velocity (m/s)<BR>
+<BR>
+Inputs:<BR>
+  -  LinearSystem Diff Drive Model  --  Linear System  --  Diff Drive linear system.<BR>
+  -  LineaarSystem DC Motor Ctrl  --  cluster  -- Packed parameters used by Kalman Filter and LQR to control the system.<BR>
+  -  Left Velocity Setpoint  --  double  --  Desired left velocity (Meters/Sec)<BR>
+  -  Right Velocity Setpoint  --  double  --  Desired right velocity (Meters/Sec)<BR>
+  -  Left Velocity --  double  -- Measured left velocity (Meters/Sec)<BR>
+  -  Right Velocity --  double  -- Measured right velocity (Meters/Sec)<BR>
+  -  dT --  double  -- Update time (Seconds, Default: 0.02)<BR>
+<BR>
+Outputs:<BR>
+  -  Left Motor Dmd  -  double  -- Left motor demand (+/- 1.0)<BR>
+  -  Right Motor Dmd  -  double  -- Right motor demand (+/- 1.0)<BR>
+  -  Kalman FIltered States  -- double array  -- Filtered velocity states (Meters/Sec)<BR>
+  -  out LinearSystemLoop  -- cluster  -- current internal data cluster<BR>
+  -  Error  -- boolean  --  If TRUE an error occured.<BR>
+<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemLoop_DiffDrv_Pack_Ctrl" >LinearSystemLoop_DiffDrv_Pack_Ctrl</h3>
 <p><IMG SRC="LinearSystemLoop_DiffDrv_Pack_Ctrl_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack the control parameters for a Diff Drive linear system.   <BR>
+<BR>
+The Diff Drive linear system is defined as:<BR>
+  -  states<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+  -  inputs<BR>
+      -  left voltage (volts)<BR>
+      -  right voltage(volts)<BR>
+  -  outputs<BR>
+      -  left velocity (m/s)<BR>
+      -  right velocity (m/s)<BR>
+<BR>
+Inputs:<BR>
+  -  Left Vel Model Std Dev  --  double  --  Standard deviation for modeled left velocity (meters/sec)<BR>
+  -  Right Vel Model Std Dev  --  double  --  Standard deviation for modeled right velocity (meters/sec)<BR>
+  -  Left Vel Meas Std Dev  --  double  --  Standard deviation for measured left velocity (meters/sec)<BR>
+  -  Right Vel Meas Std Dev  --  double  --  Standard deviation for measured right velocity (meters/sec)<BR>
+  -  Left Vel Ctrl Tol Std Dev  --  double  --   Control tolerance for left velocity (meters/sec)<BR>
+  -  Right Vel Ctrl Tol Std Dev  --  double  --  Control tolerance for right velocity (meters/sec)<BR>
+  -  Max Ctrl Out  -- double  -- Maximum control output (Default: 12)  (volts)<BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystemLoop Diff Drive Ctrl Params --  cluster  --  Packed control parameters<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemLoop_Elevator_Execute" >LinearSystemLoop_Elevator_Execute</h3>
 <p><IMG SRC="LinearSystemLoop_Elevator_Execute_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The Elevator linear system definition is:<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Model and control an Elevator system using a Kalman FIlter and LQR controller.  This is a single call LabVIEW function.<BR>
+<BR>
+The Elevator linear system definition is:<BR>
   - States<BR>
       -  position (meters)<BR>
+      -  velocity (meters/sec)<BR>
   - Inputs:<BR>
       -  motor voltage (volts)<BR>
   -  Outputs:<BR>
       -  position (meters)<BR>
+<BR>
+Inputs:<BR>
+  -  LinearSystemId Elevator Model  --  cluster  --  Packed parameters used to create Elevator linear system.<BR>
+  -  LineaarSystem Elevator Ctrl  --  cluster  -- Packed parameters used by Kalman Filter and LQR to control the system.<BR>
+  -  Height Setpoint  --  double  --  Desired height (meters)<BR>
+  -  Speed Setpiont  -- double  --  Desired speed (meters/sec, Default: 0)<BR>
+  -  Raw Height --  double  -- Measured height (meters)<BR>
+  -  dT --  double  -- Update time (Seconds, Default: 0.02)<BR>
+<BR>
+Outputs:<BR>
+  -  Motor Dmd  -  double  -- Motor demand (+/- 1.0)<BR>
+  -  Kalman FIltered Height --  double  --  Filtered Height (meters)<BR>
+  -  Error  -- boolean  --  If TRUE an error occured.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -122,6 +192,7 @@ Outputs:<BR>
 The Elevator linear system definition is:<BR>
   - States<BR>
       -  position (meters)<BR>
+      -  velocity (meters/sec)<BR>
   - Inputs:<BR>
       -  motor voltage (volts)<BR>
   -  Outputs:<BR>
@@ -129,24 +200,40 @@ The Elevator linear system definition is:<BR>
 <BR>
 Inputs:<BR>
   -  Pos Model Std Dev  --  double  --  Standard deviation for modeled position (meters)<BR>
+  -  Vel Model Std Dev  --  double  --  Standard deviation for modeled velocity (meters/sec)<BR>
   -  Pos Meas Std Dev  --  double  --  Standard deviation for measured position (meters)<BR>
-  -  Vel Ctrl Tol Std Dev  --  double  --  Control tolerance for velocity (meters/sec)<BR>
   -  Pos Ctrl Tol Std Dev  --  double  --  Control tolerance for position (meters)<BR>
   -  Max Ctrl Out  -- double  -- Maximum control output (Default: 12)  (volts)<BR>
 <BR>
 Outputs:<BR>
-  -  LinearSystemLoop DCMotor Ctrl Params --  cluster  --  Packed control parameters<BR>
+  -  LinearSystemLoop Elevator Ctrl Params --  cluster  --  Packed control parameters<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemLoop_Execute" >LinearSystemLoop_Execute</h3>
 <p><IMG SRC="LinearSystemLoop_Execute_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This is a single call LabVIEW function to control a linear system using Kalman FIlter and LQR controller.  <BR>
+<BR>
+Inputs:<BR>
+  -  LinearSystem  --  Linear System  --  Externally created modeled or characterized (ID'd) state space linear system.<BR>
+  -  LineaarSystemLoopControlParams  --  cluster  -- Packed parameters used by Kalman Filter and LQR to control the system.<BR>
+  -  Setpoints  --  double array(states)  --  Array of desired state setpoints.<BR>
+  -  ProcessVariables --  double array(outputs)  -- Array of measured process variables (system outputs).<BR>
+  -  dT --  double  -- Update time (Seconds, Default: 0.02)<BR>
+<BR>
+Outputs:<BR>
+  -  Control Outputs  -  double array(inputs)  -- Array of control outputs (system inputs).  <BR>
+  -  Filtered States  -  double array(states)  -- Results of the Kalman filtered system states.<BR>
+  -  out LinearSystemLoop  -- cluster  -- current internal data cluster<BR>
+  -  Error  -- boolean  --  If TRUE an error occured.<BR>
+<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemLoop_FlyWheel_Execute" >LinearSystemLoop_FlyWheel_Execute</h3>
 <p><IMG SRC="LinearSystemLoop_FlyWheel_Execute_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Model and control a Flywheel system using a Kalman FIlter and LQR controller.  This is a single call LabVIEW function.<BR>
+<BR>
 The flywheel linear system definition is:<BR>
   - States<BR>
       -  angular velocity (Rad/Sec)<BR>
@@ -154,12 +241,25 @@ The flywheel linear system definition is:<BR>
       -  motor voltage<BR>
   -  Outputs:<BR>
       -  angular velocity (rad/sec)<BR>
+<BR>
+Inputs:<BR>
+  -  LinearSystemId Flywheel Model  --  cluster  --  Packed parameters used to create Flywheel linear system.<BR>
+  -  LineaarSystem Flywheel Ctrl  --  cluster  -- Packed parameters used by Kalman Filter and LQR to control the system.<BR>
+  -  Velocity Setpiont  -- double  --  Desired speed (Rad/sec)<BR>
+  -  Velocity --  double  -- Measured velocity (Rad/Sec)<BR>
+  -  dT --  double  -- Update time (Seconds, Default: 0.02)<BR>
+<BR>
+Outputs:<BR>
+  -  Motor Dmd  -  double  -- Motor demand (+/- 1.0)<BR>
+  -  Kalman FIltered Speed --  double  --  Filtered Height (Rad/Sec)<BR>
+  -  Error  -- boolean  --  If TRUE an error occured.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemLoop_FlyWheel_Pack_Ctrl" >LinearSystemLoop_FlyWheel_Pack_Ctrl</h3>
 <p><IMG SRC="LinearSystemLoop_FlyWheel_Pack_Ctrl_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack the control parameters for a flywheel linear system.   <BR>
+<BR>
 The flywheel linear system definition is:<BR>
   - States<BR>
       -  angular velocity (Rad/Sec)<BR>
@@ -167,6 +267,15 @@ The flywheel linear system definition is:<BR>
       -  motor voltage<BR>
   -  Outputs:<BR>
       -  angular velocity (rad/sec)<BR>
+<BR>
+Inputs:<BR>
+  -  Vel Model Std Dev  --  double  --  Standard deviation for modeled velocity (rad/sec)<BR>
+  -  Vel Meas Std Dev  --  double  --  Standard deviation for measured velocity (rad/sec)<BR>
+  -  Vel Ctrl Tol Std Dev  --  double  --  Control tolerance for velocity (rad/sec)<BR>
+  -  Max Ctrl Out  -- double  -- Maximum control output (Default: 12)  (volts)<BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystemLoop Flywheel Ctrl Params --  cluster  --  Packed control parameters<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -353,7 +462,17 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemLoop_Pack_Ctrl_Params" >LinearSystemLoop_Pack_Ctrl_Params</h3>
 <p><IMG SRC="LinearSystemLoop_Pack_Ctrl_Params_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack control parameters needed for the Linear System Loop Execute function.<BR>
+<BR>
+Inputs:<BR>
+  -  Model Std Dev  --  double array (states)  --  Array of standard deviations for model states.<BR>
+  -  Measure Std Dev  -- double array(outputs)  --  Array of standard devations for model outputs<BR>
+  -  Control Tol  -- double array(states)  --  Array of standard deviations for controlled model states.<BR>
+  -  Max Control Effort  -- double array(inputs)  --  Array of maximum values for inputs (classical control outputs) <BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystemLoopControlParams  --  cluster  --  Packed values.<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemLoop_Predict" >LinearSystemLoop_Predict</h3>
@@ -402,27 +521,58 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemLoop_SngJntArm_Execute" >LinearSystemLoop_SngJntArm_Execute</h3>
 <p><IMG SRC="LinearSystemLoop_SngJntArm_Execute_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Model and control a single jointed arm system using a Kalman FIlter and LQR controller.  This is a single call LabVIEW function.<BR>
+<BR>
 The single jointed arm linear system definition is:<BR>
   - States<BR>
       -  angle position (Rad)<BR>
+      - velocity (Rad/Sec)<BR>
   - Inputs:<BR>
       -  motor voltage<BR>
   -  Outputs:<BR>
       -  angle position (rad)<BR>
+<BR>
+<BR>
+Inputs:<BR>
+  -  LinearSystemId SngJntArm Model  --  cluster  --  Packed parameters used to create Single Jointed Arm  linear system.<BR>
+  -  LineaarSystem SngJntArm Ctrl  --  cluster  -- Packed parameters used by Kalman Filter and LQR to control the system.<BR>
+  -  Ang Pos Setpoint  --  double  --  Desired arm angle (radians)<BR>
+  -  Ang Vel Setpiont  -- double  --  Desired arm speed setpoint  (Rad/sec, Default: 0)<BR>
+  -  PV --  double  -- Measured arm angle (radians)<BR>
+  -  dT --  double  -- Update time (Seconds, Default: 0.02)<BR>
+<BR>
+Outputs:<BR>
+  -  Motor Dmd  -  double  -- Motor demand (+/- 1.0)<BR>
+  -  Kalman FIltered angle --  double  --  Filtered angle (radians)<BR>
+  -  Kalman filtered velocity  -- double  -- Filtered velocity (Rad/Sec)<BR>
+  -  Error  -- boolean  --  If TRUE an error occured.<BR>
+<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="LinearSystemLoop_SngJntArm_Pack_Ctrl" >LinearSystemLoop_SngJntArm_Pack_Ctrl</h3>
 <p><IMG SRC="LinearSystemLoop_SngJntArm_Pack_Ctrl_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Pack the control parameters for a single jointed arm linear system.   <BR>
+<BR>
 The single jointed arm linear system definition is:<BR>
   - States<BR>
       -  angle position (Rad)<BR>
+      -  velocity (Rad/Sec)<BR>
   - Inputs:<BR>
       -  motor voltage<BR>
   -  Outputs:<BR>
       -  angle position (rad)<BR>
+<BR>
+Inputs:<BR>
+  -  Ang Model Std Dev  -- double  --  Standard deviation for modeled angle (Rad)<BR>
+  -  Vel Model Std Dev  --  double  --  Standard deviation for modeled velocity (rad/sec)<BR>
+  -  Ang Measl Std Dev  -- double  --  Standard deviation for measured angle (Rad)<BR>
+  -  Ang Ctrl Tol Std Dev  --  double  --  Control tolerance for angle (rad)<BR>
+  -  Max Ctrl Out  -- double  -- Maximum control output (Default: 12)  (volts)<BR>
+<BR>
+Outputs:<BR>
+  -  LinearSystemLoop Single JJointed Arm Ctrl Params --  cluster  --  Packed control parameters<BR>
+<BR>
 </pre></p>
 <br>
 </BODY>
