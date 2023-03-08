@@ -73,6 +73,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_LeadLag.vi" Type="VI" URL="../Macros/macro_LeadLag.vi"/>
 		<Item Name="macro_LinearFilter_ExecuteAVG.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteAVG.vi"/>
 		<Item Name="macro_LinearFilter_ExecuteTC.vi" Type="VI" URL="../Macros/macro_LinearFilter_ExecuteTC.vi"/>
+		<Item Name="macro_LinearSystem_Sim_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystem_Sim_Execute.vi"/>
 		<Item Name="macro_LinearSystemLoop_DCMotor_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_DCMotor_Execute.vi"/>
 		<Item Name="macro_LinearSystemLoop_DiffDrv_ID_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_DiffDrv_ID_Execute.vi"/>
 		<Item Name="macro_LinearSystemLoop_DiffDrv_Model_Execute.vi" Type="VI" URL="../Macros/macro_LinearSystemLoop_DiffDrv_Model_Execute.vi"/>
@@ -1151,6 +1152,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			</Item>
 			<Item Name="LinearSystemSim" Type="Folder">
 				<Item Name="LinearSystemSim_ClampInput.vi" Type="VI" URL="../LinearSystemSim_ClampInput.vi"/>
+				<Item Name="LinearSystemSim_Execute.vi" Type="VI" URL="../VI/LinearSystemSim_Execute.vi"/>
 				<Item Name="LinearSystemSim_GetOutput.vi" Type="VI" URL="../LinearSystemSim_GetOutput.vi"/>
 				<Item Name="LinearSystemSim_GetOutput_Single.vi" Type="VI" URL="../LinearSystemSim_GetOutput_Single.vi"/>
 				<Item Name="LinearSystemSim_New.vi" Type="VI" URL="../LinearSystemSim_New.vi"/>
@@ -1338,17 +1340,17 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="LTVDiffDriveCtrl_SetTolerance.vi" Type="VI" URL="../VI/LTVDiffDriveCtrl_SetTolerance.vi"/>
 			</Item>
 			<Item Name="LTV Unicycle Controller" Type="Folder">
-				<Property Name="NI.SortType" Type="Int">3</Property>
+				<Property Name="NI.SortType" Type="Int">0</Property>
+				<Item Name="LTVUnicycleCtrl_AtReference.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_AtReference.vi"/>
 				<Item Name="LTVUnicycleCtrl_Calculate.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Calculate.vi"/>
 				<Item Name="LTVUnicycleCtrl_Calculate_TrajState.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Calculate_TrajState.vi"/>
-				<Item Name="LTVUnicycleCtrl_AtReference.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_AtReference.vi"/>
 				<Item Name="LTVUnicycleCtrl_Execute.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Execute.vi"/>
 				<Item Name="LTVUnicycleCtrl_Execute_TrajState.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Execute_TrajState.vi"/>
 				<Item Name="LTVUnicycleCtrl_New.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_New.vi"/>
-				<Item Name="LTVUnicycleCtrl_SetEnabled.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_SetEnabled.vi"/>
-				<Item Name="LTVUnicycleCtrl_SetTolerance.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_SetTolerance.vi"/>
 				<Item Name="LTVUnicycleCtrl_Pack_Model_Params.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Pack_Model_Params.vi"/>
 				<Item Name="LTVUnicycleCtrl_Pack_Tolerance.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_Pack_Tolerance.vi"/>
+				<Item Name="LTVUnicycleCtrl_SetEnabled.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_SetEnabled.vi"/>
+				<Item Name="LTVUnicycleCtrl_SetTolerance.vi" Type="VI" URL="../VI/LTVUnicycleCtrl_SetTolerance.vi"/>
 			</Item>
 		</Item>
 		<Item Name="State Space Estimator" Type="Folder">
