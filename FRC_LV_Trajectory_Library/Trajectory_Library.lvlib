@@ -535,6 +535,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Ramsete_Diff_DO_SI.vi" Type="VI" URL="../Ramsete_Diff_DO_SI.vi"/>
 				<Item Name="Ramsete_Execute.vi" Type="VI" URL="../Ramsete_Execute.vi"/>
 				<Item Name="Ramsete_Execute_ENG.vi" Type="VI" URL="../Ramsete_Execute_ENG.vi"/>
+				<Item Name="Ramsete_Execute_Ext_Odom.vi" Type="VI" URL="../VI/Ramsete_Execute_Ext_Odom.vi"/>
+				<Item Name="Ramsete_Execute_Ext_Odom_ENG.vi" Type="VI" URL="../VI/Ramsete_Execute_Ext_Odom_ENG.vi"/>
 				<Item Name="Ramsete_Execute_PackTuning.vi" Type="VI" URL="../Ramsete_Execute_PackTuning.vi"/>
 				<Item Name="Ramsete_Execute_PackTuning_ENG.vi" Type="VI" URL="../Ramsete_Execute_PackTuning_ENG.vi"/>
 				<Item Name="Ramsete_New.vi" Type="VI" URL="../Ramsete_New.vi"/>
@@ -572,6 +574,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="Conv_Killograms_Pounds.vi" Type="VI" URL="../Conv_Killograms_Pounds.vi"/>
 			<Item Name="Conv_Meters_Feet.vi" Type="VI" URL="../Conv_Meters_Feet.vi"/>
 			<Item Name="Conv_Meters_Inches.vi" Type="VI" URL="../Conv_Meters_Inches.vi"/>
+			<Item Name="Conv_POSE2D_Eng_SI.vi" Type="VI" URL="../VI/Conv_POSE2D_Eng_SI.vi"/>
 			<Item Name="Conv_POSE2D_SI_Eng.vi" Type="VI" URL="../Conv_POSE2D_SI_Eng.vi"/>
 			<Item Name="Conv_Pounds_Killograms.vi" Type="VI" URL="../Conv_Pounds_Killograms.vi"/>
 			<Item Name="Conv_Radians_Deg.vi" Type="VI" URL="../Conv_Radians_Deg.vi"/>
