@@ -148,13 +148,16 @@ Returns<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Translation3d_NearestTo" >Translation3d_NearestTo</h3>
 <p><IMG SRC="Translation3d_NearestTo_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the inverse of the current translation. This is equivalent to negating all components of the translation.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the nearest Translation3d from a list of translations. If two or more translations in the list have the same distance from this translation, return the first translation found.<BR>
    <BR>
-Parameters:<BR>
-  - In Translation3d  -  This translation3d data structure<BR>
+Parameter:<BR>
+ - IN Translation  --  Translation3d  --   The translation to compare against the OTHER TRANSLATIONS to find the closest pose.<BR>
+ - OTHER Translatios  -- Translation3d array  --  The list of translations to search for the closest translation.<BR>
 <BR>
-Result:<BR>
-  - Out Translation3d  - The inverse of the current translation.<BR>
+Returns:<BR>
+ - Nearest Translation  --  Translation3d   -- The translation closest to IN TRANSLATION.  <BR>
+ - Found  --  boolean  --  True if a TRANSLATION was found.  This should only be fasle if the Other Translation array is empty.<BR>
+<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">

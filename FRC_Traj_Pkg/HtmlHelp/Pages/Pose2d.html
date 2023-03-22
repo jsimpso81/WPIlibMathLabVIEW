@@ -98,14 +98,16 @@ Returns:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Pose2d_NearestTo" >Pose2d_NearestTo</h3>
 <p><IMG SRC="Pose2d_NearestTo_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the Transform2d that maps the one pose to another.<BR>
-<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the nearest Pose2d from a list of poses. If two or more poses in the list have the same distance from this pose, return the one with the closest rotation component.<BR>
+   <BR>
 Parameter:<BR>
- - IN POSE - Current POSE data structure<BR>
- - OTHER POSE - The initial pose of the transformation.<BR>
+ - IN POSE  --  Pose2d  --   The pose to compare against the OTHER POSES to find the closest pose.<BR>
+ - OTHER POSE S  -- Pose2d array  --  The list of poses to search for the closest pose.<BR>
 <BR>
 Returns:<BR>
- - OUT TRANSFORMATION - The transform that maps the other pose to the current pose.<BR>
+ - Nearest Pose  --  Pose2d   -- The pose closest to IN POSE.  <BR>
+ - Found  --  boolean  --  True if a POSE was found.  This should only be fasle if the Other Pose array is empty.<BR>
+<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">

@@ -53,56 +53,15 @@ Returns:<BR>
  - Chassis Speeds</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-<h3 id="Ramsete_Diff_DO_Eng" >Ramsete_Diff_DO_Eng</h3>
-<p><IMG SRC="Ramsete_Diff_DO_Eng_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This is a convience function that takes sensor data, and trajectory demands, then performs differential drive odometry, and executes ramsete control to output wheel speed demands.<BR>
-<BR>
-All input and output units are Feet, Degrees.  The TrajectoryState units are Meters,Radians<BR>
-<BR>
-Parameters:<BR>
-  - InRamsete  - Ramsete data structure<BR>
-  - LeftDist  - Left wheel distance<BR>
-  - RightDist  - Right wheel distance<BR>
-  - Gyro  - Robot gyro reading<BR>
-  - Reset - Reset's the internal saved robot position, left / right distance, and gyro readings.  This should be set true at the beginning of executing a trajectory.<BR>
-  - TrajState - The desired trajectory state<BR>
-  - WheelBase - The robot wheel base<BR>
-<BR>
-Returns:<BR>
-  - outRamsete - Updated Ramsete data structure<BR>
-  - AtReference - TRUE when robot position is withing tolerance<BR>
-  - CurrentPose - Current robot Pose<BR>
-  - LeftVelDmd  - Left wheel velocity demand  (These demands are NOT normalized.)<BR>
-   -RightVelDmd - Right wheel velocity demand  (These demands are NOT normalized.)</pre></p>
-<br>
-<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-<h3 id="Ramsete_Diff_DO_SI" >Ramsete_Diff_DO_SI</h3>
-<p><IMG SRC="Ramsete_Diff_DO_SI_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This is a convience function that takes sensor data, and trajectory demands, then performs differential drive odometry, and executes ramsete control to output wheel speed demands.<BR>
-<BR>
-All input and output units are Meters, Radians.<BR>
-<BR>
-Parameters:<BR>
-  - InRamsete  - Ramsete data structure<BR>
-  - LeftDist  - Left wheel distance<BR>
-  - RightDist  - Right wheel distance<BR>
-  - Gyro  - Robot gyro reading<BR>
-  - Reset - Reset's the internal saved robot position, left / right distance, and gyro readings.  This should be set true at the beginning of executing a trajectory.<BR>
-  - TrajState - The desired trajectory state<BR>
-  - WheelBase - The robot wheel base<BR>
-<BR>
-Returns:<BR>
-  - outRamsete - Updated Ramsete data structure<BR>
-  - AtReference - TRUE when robot position is withing tolerance<BR>
-  - CurrentPose - Current robot Pose<BR>
-  - LeftVelDmd  - Left wheel velocity demand  (These demands are NOT normalized.)<BR>
-   -RightVelDmd - Right wheel velocity demand  (These demands are NOT normalized.)</pre></p>
-<br>
-<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Ramsete_Execute" >Ramsete_Execute</h3>
 <p><IMG SRC="Ramsete_Execute_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convienience function to create and calculate the ramsete control, returning normalized desired left and right speed setpoints  <BR>
 <BR>
+Ramsete is a nonlinear time-varying feedback controller for unicycle models that drives the model to a desired pose along a two-dimensional trajectory. Why would we need a nonlinear control law in addition to the linear ones we have used so far like PID? If we use the original approach with PID controllers for left and right position and velocity states, the controllers only deal with the local pose. If the robot deviates from the path, there is no way for the controllers to correct and the robot may not reach the desired global pose. This is due to multiple endpoints existing for the robot which have the same encoder path arc lengths.<BR>
+ <BR>
+Instead of using wheel path arc lengths (which are in the robot's local coordinate frame), nonlinear controllers like pure pursuit and Ramsete use global pose. The controller uses this extra information to guide a linear reference tracker like the PID controllers back in by adjusting the references of the PID controllers.<BR>
+<BR>
+The paper "Control of Wheeled Mobile Robots: An Experimental Overview" describes a nonlinear controller for a wheeled vehicle with unicycle-like kinematics; a global pose consisting of x, y, and theta; and a desired pose consisting of x_d, y_d, and theta_d. We call it Ramsete because that's the acronym for the title of the book it came from in Italian ("Robotica Articolata e Mobile per i SErvizi e le TEcnologie").<BR>
 <BR>
 Parameters:   <BR>
    - Ramsete EXE Tuning  --  Packed data cluster containing the ramsete tuning parameters and Differntial Drive kinematics information.<BR>
@@ -129,6 +88,12 @@ Returns:<BR>
 <BR>
 This is designed for ENG units -- Feet, degrees.<BR>
 <BR>
+Ramsete is a nonlinear time-varying feedback controller for unicycle models that drives the model to a desired pose along a two-dimensional trajectory. Why would we need a nonlinear control law in addition to the linear ones we have used so far like PID? If we use the original approach with PID controllers for left and right position and velocity states, the controllers only deal with the local pose. If the robot deviates from the path, there is no way for the controllers to correct and the robot may not reach the desired global pose. This is due to multiple endpoints existing for the robot which have the same encoder path arc lengths.<BR>
+ <BR>
+Instead of using wheel path arc lengths (which are in the robot's local coordinate frame), nonlinear controllers like pure pursuit and Ramsete use global pose. The controller uses this extra information to guide a linear reference tracker like the PID controllers back in by adjusting the references of the PID controllers.<BR>
+<BR>
+The paper "Control of Wheeled Mobile Robots: An Experimental Overview" describes a nonlinear controller for a wheeled vehicle with unicycle-like kinematics; a global pose consisting of x, y, and theta; and a desired pose consisting of x_d, y_d, and theta_d. We call it Ramsete because that's the acronym for the title of the book it came from in Italian ("Robotica Articolata e Mobile per i SErvizi e le TEcnologie").<BR>
+<BR>
 <BR>
 Parameters:   <BR>
    - Ramsete EXE Tuning  --  Packed data cluster containing the ramsete tuning parameters and Differntial Drive kinematics information.<BR>
@@ -145,6 +110,64 @@ Returns:<BR>
    - Right Speed Dmd  -- Right Speed demand (Feet/Second)<BR>
    - Out Ramsete -- Updated Ramsete data structure<BR>
    - Current Relative Pose  --  Current robot relative pose.  This pose is reset to zero when the RESET input is set to TRUE.  <BR>
+   -  At Reference  --  Set to TRUE when the current robot pose is withing the specified tolerance of the desired POSE from the trajectory state input.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Ramsete_Execute_Ext_Odom" >Ramsete_Execute_Ext_Odom</h3>
+<p><IMG SRC="Ramsete_Execute_Ext_Odom_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convienience function to create and calculate the ramsete control from current pose and trajectory state inputs, returning normalized desired left and right speed setpoints  <BR>
+<BR>
+This function is designed for SI units.<BR>
+<BR>
+Ramsete is a nonlinear time-varying feedback controller for unicycle models that drives the model to a desired pose along a two-dimensional trajectory. Why would we need a nonlinear control law in addition to the linear ones we have used so far like PID? If we use the original approach with PID controllers for left and right position and velocity states, the controllers only deal with the local pose. If the robot deviates from the path, there is no way for the controllers to correct and the robot may not reach the desired global pose. This is due to multiple endpoints existing for the robot which have the same encoder path arc lengths.<BR>
+ <BR>
+Instead of using wheel path arc lengths (which are in the robot's local coordinate frame), nonlinear controllers like pure pursuit and Ramsete use global pose. The controller uses this extra information to guide a linear reference tracker like the PID controllers back in by adjusting the references of the PID controllers.<BR>
+<BR>
+The paper "Control of Wheeled Mobile Robots: An Experimental Overview" describes a nonlinear controller for a wheeled vehicle with unicycle-like kinematics; a global pose consisting of x, y, and theta; and a desired pose consisting of x_d, y_d, and theta_d. We call it Ramsete because that's the acronym for the title of the book it came from in Italian ("Robotica Articolata e Mobile per i SErvizi e le TEcnologie").<BR>
+<BR>
+<BR>
+Parameters:   <BR>
+   - Ramsete EXE Tuning  --  Packed data cluster containing the ramsete tuning parameters and Differntial Drive kinematics information.  (SI Units)<BR>
+  - TrajState - Desired trajectory state  (SI Units)<BR>
+   - Current Pose  --  Current Pose2d robot location. (SI Units)<BR>
+   - Reset  --  Resets the Ramsete data structure.<BR>
+  -  Enabled  -- When enabled uses the ramsete closed loop control to drive the left and right speed demand outputs.  When disabled the trajectory data is directly converted to left and right speed demands.<BR>
+<BR>
+<BR>
+Returns:<BR>
+   - Left Speed Dmd  --  Left Speed demand (Meters/Second)<BR>
+   - Right Speed Dmd  -- Right Speed demand (Meters/Second)<BR>
+   - Out Ramsete -- Updated Ramsete data structure (SI Units)<BR>
+   -  At Reference  --  Set to TRUE when the current robot pose is withing the specified tolerance of the desired POSE from the trajectory state input.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Ramsete_Execute_Ext_Odom_ENG" >Ramsete_Execute_Ext_Odom_ENG</h3>
+<p><IMG SRC="Ramsete_Execute_Ext_Odom_ENG_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convienience function to create and calculate the ramsete control from current pose and trajectory state inputs, returning normalized desired left and right speed setpoints  <BR>
+<BR>
+This function is designed for ENG units, with exception of the trajectory state which is SI units.<BR>
+<BR>
+Ramsete is a nonlinear time-varying feedback controller for unicycle models that drives the model to a desired pose along a two-dimensional trajectory. Why would we need a nonlinear control law in addition to the linear ones we have used so far like PID? If we use the original approach with PID controllers for left and right position and velocity states, the controllers only deal with the local pose. If the robot deviates from the path, there is no way for the controllers to correct and the robot may not reach the desired global pose. This is due to multiple endpoints existing for the robot which have the same encoder path arc lengths.<BR>
+ <BR>
+Instead of using wheel path arc lengths (which are in the robot's local coordinate frame), nonlinear controllers like pure pursuit and Ramsete use global pose. The controller uses this extra information to guide a linear reference tracker like the PID controllers back in by adjusting the references of the PID controllers.<BR>
+<BR>
+The paper "Control of Wheeled Mobile Robots: An Experimental Overview" describes a nonlinear controller for a wheeled vehicle with unicycle-like kinematics; a global pose consisting of x, y, and theta; and a desired pose consisting of x_d, y_d, and theta_d. We call it Ramsete because that's the acronym for the title of the book it came from in Italian ("Robotica Articolata e Mobile per i SErvizi e le TEcnologie").<BR>
+<BR>
+<BR>
+Parameters:   <BR>
+   - Ramsete EXE Tuning  --  Packed data cluster containing the ramsete tuning parameters and Differntial Drive kinematics information.  (SI Units)<BR>
+  - TrajState - Desired trajectory state  (SI Units)<BR>
+   - Current Pose  --  Current Pose2d robot location. (ENG Units)<BR>
+   - Reset  --  Resets the Ramsete data structure.<BR>
+  -  Enabled  -- When enabled uses the ramsete closed loop control to drive the left and right speed demand outputs.  When disabled the trajectory data is directly converted to left and right speed demands.<BR>
+<BR>
+<BR>
+Returns:<BR>
+   - Left Speed Dmd  --  Left Speed demand (Ft/Second)<BR>
+   - Right Speed Dmd  -- Right Speed demand (Ft/Second)<BR>
+   - Out Ramsete -- Updated Ramsete data structure (SI Units)<BR>
    -  At Reference  --  Set to TRUE when the current robot pose is withing the specified tolerance of the desired POSE from the trajectory state input.<BR>
 </pre></p>
 <br>

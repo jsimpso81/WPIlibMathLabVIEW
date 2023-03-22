@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="FieldDisp" >FieldDisp</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FieldDisp_Convert_IMAQ_Image_to_Picture" >FieldDisp_Convert_IMAQ_Image_to_Picture</h3>
+<p><IMG SRC="FieldDisp_Convert_IMAQ_Image_to_Picture_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function -- should not be called directly by users.<BR>
+<BR>
+Complete documentation TBD.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FieldDisp_Element_Disp" >FieldDisp_Element_Disp</h3>
+<p><IMG SRC="FieldDisp_Element_Disp_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Displays, moves and rotates the field element on the display.  <BR>
+<BR>
+Inputs:<BR>
+  -  Element Info  -- cluster  --  information defining the field element.<BR>
+  -  Element Pose  --  Pose2d  --  Location and orientation of the field element.<BR>
+<BR>
+Outputs:<BR>
+  --  NONE --  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FieldDisp_Element_Prepare" >FieldDisp_Element_Prepare</h3>
+<p><IMG SRC="FieldDisp_Element_Prepare_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Prepare a field element (robot, game piece, etc.) for display on a field.   This routine opens the image file and prepares the image for display, movement, and rotation.<BR>
+<BR>
+Image files can be PNG, BMP, or JPG.<BR>
+<BR>
+Inputs:<BR>
+  -  Element File Name  --  String  -- File name of element to display.  Relative paths start in the root directory of the application.<BR>
+  -  Element Picture Ref  --  Picture Reference  --  Reference to the control used to display the field element.<BR>
+  -  Field Picture Ref  -- Picture Reference  --  Reference to the control used to display the field.<BR>
+  -  Field Width  --  double  -- Width of the field (feet).  This is used to initialize element positioning.<BR>
+  -  Field Height  --  double  -- Height of the field (feet).   This is used to initialize element positioning.<BR>
+  -  Error in  -- error cluster  --  input error.  Often used to sequence VIs.<BR>
+<BR>
+Outputs:<BR>
+  -  Field Element Info  -- cluster  --  Contains information used for display of element.<BR>
+  -  Error out  --  error cluster  -- contains error information.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FieldDisp_Element_Rotate" >FieldDisp_Element_Rotate</h3>
+<p><IMG SRC="FieldDisp_Element_Rotate_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function -- should not be called directly by users.<BR>
+<BR>
+Complete documentation TBD.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FieldDisp_Element_Rotate_Init" >FieldDisp_Element_Rotate_Init</h3>
+<p><IMG SRC="FieldDisp_Element_Rotate_Init_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function -- should not be called directly by users.<BR>
+<BR>
+Complete documentation TBD.<BR>
+<BR>
+Initialize a PNG image to be rotated.  <BR>
+<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FieldDisp_Field_Crop_and_Scale" >FieldDisp_Field_Crop_and_Scale</h3>
+<p><IMG SRC="FieldDisp_Field_Crop_and_Scale_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function -- should not be called directly by users.<BR>
+<BR>
+Complete documentation TBD.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FieldDisp_Field_Disp" >FieldDisp_Field_Disp</h3>
+<p><IMG SRC="FieldDisp_Field_Disp_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Read the specified field image file, scale and crop the image, then update the picture control with the image.<BR>
+<BR>
+The field information INI file must be in a FieldInfo subdirectory under the application's main directory.  The field image files are also located in this subdirectory.<BR>
+<BR>
+Inputs:<BR>
+  -  Picture In -- Picture Control Reference   --  Reference to the picture control to display the field..<BR>
+  - Field Selector  --  String  --  String containing the name of the field to display.  This can be the output of a combo box control.<BR>
+<BR>
+Outputs:<BR>
+  -  Error out -- error cluster  --  If an error occured, contains error information.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FieldDisp_Field_Selector_Prepare" >FieldDisp_Field_Selector_Prepare</h3>
+<p><IMG SRC="FieldDisp_Field_Selector_Prepare_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Read the field information INI file and update a ComboBox control with the list of available fields.<BR>
+<BR>
+The field information INI file must be in a FieldInfo subdirectory under the application's main directory.  The field image files are also located in this subdirectory.<BR>
+<BR>
+Inputs:<BR>
+  -  ComboBox Ref -- ComboBox Control Reference   --  Reference to the control to be updated.<BR>
+<BR>
+Outputs:<BR>
+  -  Section Names  -- String array  --  List of field names.<BR>
+  -  Error out -- error cluster  --  If an error occured, contains error information.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FieldDisp_Get_Field_Info" >FieldDisp_Get_Field_Info</h3>
+<p><IMG SRC="FieldDisp_Get_Field_Info_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function -- should not be called directly by users.<BR>
+<BR>
+Complete documentation TBD.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FieldDisp_Open_Field_Info_File" >FieldDisp_Open_Field_Info_File</h3>
+<p><IMG SRC="FieldDisp_Open_Field_Info_File_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function -- should not be called directly by users.<BR>
+<BR>
+Complete documentation TBD.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FieldDisp_Read_Field_Pic" >FieldDisp_Read_Field_Pic</h3>
+<p><IMG SRC="FieldDisp_Read_Field_Pic_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function -- should not be called directly by users.<BR>
+<BR>
+Compelte documentation TBD.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="FieldDisp_Read_Image_File" >FieldDisp_Read_Image_File</h3>
+<p><IMG SRC="FieldDisp_Read_Image_File_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function -- should not be called directly by users.<BR>
+<BR>
+Complete documentation TBD.<BR>
+<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>
