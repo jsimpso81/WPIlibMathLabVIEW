@@ -218,6 +218,7 @@
 				<Item Name="PWM proto.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Simulation/Protocol/Devices/PWM/PWM proto.ctl"/>
 				<Item Name="PWM Update Ops.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Simulation/Protocol/Devices/PWM/PWM Update Ops.ctl"/>
 				<Item Name="PWM_PanelSim_Global.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Simulation/Protocol/Devices/PWM/PWM_PanelSim_Global.vi"/>
+				<Item Name="Ramsete_Diff_DO_SI.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/JAS_Junk/TrajLib/Ramsete_Diff_DO_SI.vi"/>
 				<Item Name="Random Number (Range) DBL.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) DBL.vi"/>
 				<Item Name="Random Number (Range) I64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) I64.vi"/>
 				<Item Name="Random Number (Range) U64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) U64.vi"/>
@@ -324,21 +325,23 @@
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/RUN_ALL_TESTS</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/PC_Run_All_Tests</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{62468727-4DDC-4557-9E15-1E307327D6B0}</Property>
-				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_CtrlTrajLib_Test/RUN_ALL_TESTS/FRC_CtrlTrajLib_Test_RUN_ALL_TESTS_log.txt</Property>
-				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_version.build" Type="Int">38</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/log_PC_Run_All_Tests.txt</Property>
+				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_version.build" Type="Int">39</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">RUN_ALL_TESTS.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/RUN_ALL_TESTS/RUN_ALL_TESTS.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/PC_Run_All_Tests/RUN_ALL_TESTS.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/RUN_ALL_TESTS/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/PC_Run_All_Tests/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7DDE2FDF-361F-4A4B-B69A-CA74B178A338}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9C4CFD97-FBF1-4B5C-B99F-6DA3014D55CC}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/_RunAllTests/RunAllTests.vi</Property>
@@ -518,6 +521,7 @@ DirectoryIndex index.htm
 				<Item Name="Obtain Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Obtain Semaphore Reference.vi"/>
 				<Item Name="POSE2D.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/JAS_Junk/TrajLib/POSE2D.ctl"/>
 				<Item Name="Prepare Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Prepare Pattern.vi"/>
+				<Item Name="Ramsete_Diff_DO_SI.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/JAS_Junk/TrajLib/Ramsete_Diff_DO_SI.vi"/>
 				<Item Name="Random Number (Range) DBL.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) DBL.vi"/>
 				<Item Name="Random Number (Range) I64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) I64.vi"/>
 				<Item Name="Random Number (Range) U64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) U64.vi"/>
@@ -576,12 +580,12 @@ DirectoryIndex index.htm
 				<Property Name="Bld_buildSpecName" Type="Str">RUN_1_Of_X_TESTS</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/RUN_1_Of_X_TESTS</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/RoboRIO_Run_Tests/Run_1</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6C971418-113E-468B-AB96-D1BB418AF805}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_CtrlTrajLib_Test/FRC_TrajLib_Test_RUN_1_Of_6_TESTS_log.txt</Property>
-				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_TrajLib_Test_RUN_1_Of_X_TESTS_log.txt</Property>
+				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_version.build" Type="Int">29</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
@@ -592,7 +596,7 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{CE7BD2E2-F0CC-4582-97E9-CF51C3357605}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D1A4B4D6-7431-4EE5-B298-5A7F7992DA96}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
@@ -621,12 +625,12 @@ DirectoryIndex index.htm
 				<Property Name="Bld_buildSpecName" Type="Str">RUN_2_Of_X_TESTS</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/RUN_2_Of_X_TESTS</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/RoboRIO_Run_Tests/Run_2</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{9C0388B9-E6F1-4995-A642-64755528C951}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_CtrlTrajLib_Test/FRC_TrajLib_Test_RUN_2_Of_6_TESTS_log.txt</Property>
-				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_TrajLib_Test_RUN_2_Of_X_TESTS_log.txt</Property>
+				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_version.build" Type="Int">25</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
@@ -637,7 +641,7 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{CE7BD2E2-F0CC-4582-97E9-CF51C3357605}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D1A4B4D6-7431-4EE5-B298-5A7F7992DA96}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
@@ -666,12 +670,12 @@ DirectoryIndex index.htm
 				<Property Name="Bld_buildSpecName" Type="Str">RUN_3_Of_X_TESTS</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/RUN_3_Of_X_TESTS</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/RoboRIO_Run_Tests/Run_3</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F4FE3138-6BBD-4866-AB52-7DF32E6C8851}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_CtrlTrajLib_Test/FRC_TrajLib_Test_RUN_3_Of_6_TESTS_log.txt</Property>
-				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_TrajLib_Test_RUN_3_Of_X_TESTS_log.txt</Property>
+				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_version.build" Type="Int">26</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
@@ -682,7 +686,7 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{CE7BD2E2-F0CC-4582-97E9-CF51C3357605}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D1A4B4D6-7431-4EE5-B298-5A7F7992DA96}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
@@ -711,12 +715,12 @@ DirectoryIndex index.htm
 				<Property Name="Bld_buildSpecName" Type="Str">RUN_4_Of_X_TESTS</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/RUN_4_Of_X_TESTS</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/RoboRIO_Run_Tests/Run_4</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{987FF05E-B406-4895-A965-D19401E30D7B}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_CtrlTrajLib_Test/FRC_TrajLib_Test_RUN_4_Of_6_TESTS_log.txt</Property>
-				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_TrajLib_Test_RUN_4_Of_X_TESTS_log.txt</Property>
+				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_version.build" Type="Int">27</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
@@ -727,7 +731,7 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{CE7BD2E2-F0CC-4582-97E9-CF51C3357605}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D1A4B4D6-7431-4EE5-B298-5A7F7992DA96}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
@@ -756,12 +760,12 @@ DirectoryIndex index.htm
 				<Property Name="Bld_buildSpecName" Type="Str">RUN_5_Of_X_TESTS</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/RUN_5_Of_X_TESTS</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/RoboRIO_Run_Tests/Run_5</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{0E959104-DB48-4BE7-975B-B8427F0A2C43}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_CtrlTrajLib_Test/FRC_TrajLib_Test_RUN_5_Of_6_TESTS_log.txt</Property>
-				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_TrajLib_Test_RUN_5_Of_X_TESTS_log.txt</Property>
+				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_version.build" Type="Int">29</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
@@ -772,7 +776,7 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{CE7BD2E2-F0CC-4582-97E9-CF51C3357605}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D1A4B4D6-7431-4EE5-B298-5A7F7992DA96}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
@@ -801,13 +805,13 @@ DirectoryIndex index.htm
 				<Property Name="Bld_buildSpecName" Type="Str">RUN_6_Of_X_TESTS</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/RUN_6_Of_X_TESTS</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/RoboRIO_Run_Tests/Run_6</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{88F1C9EB-5394-475A-A58B-03B75ED34997}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_CtrlTrajLib_Test/FRC_TrajLib_Test_RUN_6_Of_6_TESTS_log.txt</Property>
-				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_version.build" Type="Int">30</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_TrajLib_Test_RUN_6_Of_X_TESTS_log.txt</Property>
+				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_version.build" Type="Int">31</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -817,7 +821,7 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{CE7BD2E2-F0CC-4582-97E9-CF51C3357605}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D1A4B4D6-7431-4EE5-B298-5A7F7992DA96}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
@@ -846,13 +850,13 @@ DirectoryIndex index.htm
 				<Property Name="Bld_buildSpecName" Type="Str">RUN_7_Of_X_TESTS</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Copy of RUN_7_Of_X_TESTS</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/RoboRIO_Run_Tests/Run_7</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{90EFC0A4-25DC-4E9E-8677-251491B9423B}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_CtrlTrajLib_Test/FRC_TrajLib_Test_RUN_6_Of_6_TESTS_log.txt</Property>
-				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_version.build" Type="Int">30</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_TrajLib_Test_RUN_7_Of_X_TESTS_log.txt</Property>
+				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_version.build" Type="Int">31</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -862,7 +866,7 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{CE7BD2E2-F0CC-4582-97E9-CF51C3357605}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D1A4B4D6-7431-4EE5-B298-5A7F7992DA96}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
@@ -894,13 +898,13 @@ DirectoryIndex index.htm
 				<Property Name="Bld_buildSpecName" Type="Str">RUN_8_Of_8_TESTS</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Copy of RUN_8_Of_8_TESTS</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/RoboRIO_Run_Tests/Run_8</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{CC61F3CF-DF1E-442F-902D-428C7D208E9C}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_CtrlTrajLib_Test/FRC_TrajLib_Test_RUN_6_Of_6_TESTS_log.txt</Property>
-				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_version.build" Type="Int">30</Property>
+				<Property Name="Bld_userLogFile" Type="Path">../builds/FRC_TrajLib_Test_RUN_8_Of_X_TESTS_log.txt</Property>
+				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_version.build" Type="Int">31</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -910,7 +914,7 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{CE7BD2E2-F0CC-4582-97E9-CF51C3357605}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D1A4B4D6-7431-4EE5-B298-5A7F7992DA96}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
