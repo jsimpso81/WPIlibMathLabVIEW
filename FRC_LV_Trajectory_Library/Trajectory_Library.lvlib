@@ -62,6 +62,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_DigSeqLogic_OneShot.vi" Type="VI" URL="../Macros/macro_DigSeqLogic_OneShot.vi"/>
 		<Item Name="macro_Elevator_Sim_Execute.vi" Type="VI" URL="../Macros/macro_Elevator_Sim_Execute.vi"/>
 		<Item Name="macro_ElevatorFF_Calculate.vi" Type="VI" URL="../Macros/macro_ElevatorFF_Calculate.vi"/>
+		<Item Name="macro_Field_Display_Constant.vi" Type="VI" URL="../Macros/macro_Field_Display_Constant.vi"/>
+		<Item Name="macro_Field_Display_Selector.vi" Type="VI" URL="../Macros/macro_Field_Display_Selector.vi"/>
 		<Item Name="macro_FiniteStateMachine_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_Template.vi"/>
 		<Item Name="macro_FiniteStateMachine_w_Timer_Template.vi" Type="VI" URL="../Macros/macro_FiniteStateMachine_w_Timer_Template.vi"/>
 		<Item Name="macro_FlyWheel_Sim_Execute.vi" Type="VI" URL="../Macros/macro_FlyWheel_Sim_Execute.vi"/>
@@ -107,6 +109,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_ProfiledPIDController_Execute.vi" Type="VI" URL="../Macros/macro_ProfiledPIDController_Execute.vi"/>
 		<Item Name="macro_Ramsete_Execute.vi" Type="VI" URL="../Macros/macro_Ramsete_Execute.vi"/>
 		<Item Name="macro_Ramsete_Execute_ENG.vi" Type="VI" URL="../Macros/macro_Ramsete_Execute_ENG.vi"/>
+		<Item Name="macro_Ramsete_Execute_External_Odometry.vi" Type="VI" URL="../Macros/macro_Ramsete_Execute_External_Odometry.vi"/>
+		<Item Name="macro_Ramsete_Execute_External_Odometry_ENG.vi" Type="VI" URL="../Macros/macro_Ramsete_Execute_External_Odometry_ENG.vi"/>
 		<Item Name="macro_Rotation2d_AngleDeg.vi" Type="VI" URL="../Macros/macro_Rotation2d_AngleDeg.vi"/>
 		<Item Name="macro_Rotation2d_AngleRad.vi" Type="VI" URL="../Macros/macro_Rotation2d_AngleRad.vi"/>
 		<Item Name="macro_Rotation2d_X_Y.vi" Type="VI" URL="../Macros/macro_Rotation2d_X_Y.vi"/>
@@ -189,6 +193,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="ELEVATOR_SIM_SIMULATION_PARAMS.ctl" Type="VI" URL="../TypeDef/ELEVATOR_SIM_SIMULATION_PARAMS.ctl"/>
 		<Item Name="EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl" Type="VI" URL="../TypeDef/EXTENDED_KALMAN_CORRECT_FUNC_GROUP.ctl"/>
 		<Item Name="EXTENDED_KALMAN_FILTER.ctl" Type="VI" URL="../TypeDef/EXTENDED_KALMAN_FILTER.ctl"/>
+		<Item Name="FieldDisp_ElementPicture.ctl" Type="VI" URL="../TypeDef/FieldDisp_ElementPicture.ctl"/>
+		<Item Name="FieldDisp_Field_Info.ctl" Type="VI" URL="../TypeDef/FieldDisp_Field_Info.ctl"/>
+		<Item Name="FieldDisp_FieldElement.ctl" Type="VI" URL="../TypeDef/FieldDisp_FieldElement.ctl"/>
 		<Item Name="FLYWHEEL_SIM.ctl" Type="VI" URL="../TypeDef/FLYWHEEL_SIM.ctl"/>
 		<Item Name="FLYWHEEL_SIM_SIMULATION_PARAMS.ctl" Type="VI" URL="../TypeDef/FLYWHEEL_SIM_SIMULATION_PARAMS.ctl"/>
 		<Item Name="FUNCTION_GENERATOR.ctl" Type="VI" URL="../TypeDef/FUNCTION_GENERATOR.ctl"/>
@@ -302,38 +309,6 @@ This implements the math section (and some other routines) contained in FRC WPIL
 	</Item>
 	<Item Name="VI" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
-		<Item Name="AprilTag" Type="Folder">
-			<Item Name="AprilTag" Type="Folder">
-				<Item Name="AprilTag.ctl" Type="VI" URL="../TypeDef/AprilTag.ctl"/>
-				<Item Name="AprilTag_Equals.vi" Type="VI" URL="../VI/AprilTag_Equals.vi"/>
-				<Item Name="AprilTag_GetAll.vi" Type="VI" URL="../VI/AprilTag_GetAll.vi"/>
-				<Item Name="AprilTag_New.vi" Type="VI" URL="../VI/AprilTag_New.vi"/>
-			</Item>
-			<Item Name="AprilTagFieldLayout" Type="Folder">
-				<Item Name="AprilTagFieldLayout.ctl" Type="VI" URL="../TypeDef/AprilTagFieldLayout.ctl"/>
-				<Item Name="AprilTagFieldLayout_GetField.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetField.vi"/>
-				<Item Name="AprilTagFieldLayout_GetOriginPosition.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetOriginPosition.vi"/>
-				<Item Name="AprilTagFieldLayout_GetTagPose.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetTagPose.vi"/>
-				<Item Name="AprilTagFieldLayout_GetTags.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetTags.vi"/>
-				<Item Name="AprilTagFieldLayout_New.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New.vi"/>
-				<Item Name="AprilTagFieldLayout_New2022.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New2022.vi"/>
-				<Item Name="AprilTagFieldLayout_New2023.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New2023.vi"/>
-				<Item Name="AprilTagFieldLayout_NewSelect.vi" Type="VI" URL="../VI/AprilTagFieldLayout_NewSelect.vi"/>
-				<Item Name="AprilTagFieldLayout_SetOrigin.vi" Type="VI" URL="../VI/AprilTagFieldLayout_SetOrigin.vi"/>
-				<Item Name="AprilTagFieldLayout_SetOrigin_Position.vi" Type="VI" URL="../VI/AprilTagFieldLayout_SetOrigin_Position.vi"/>
-				<Item Name="AprilTagFieldLayoutOrignPosition_ENUM.ctl" Type="VI" URL="../Enum/AprilTagFieldLayoutOrignPosition_ENUM.ctl"/>
-				<Item Name="AprilTagFields_ENUM.ctl" Type="VI" URL="../Enum/AprilTagFields_ENUM.ctl"/>
-			</Item>
-			<Item Name="AprilTagPoseEstimate" Type="Folder">
-				<Item Name="AprilTagPoseEstimate.ctl" Type="VI" URL="../TypeDef/AprilTagPoseEstimate.ctl"/>
-				<Item Name="AprilTagPoseEstimate_GetAll.vi" Type="VI" URL="../VI/AprilTagPoseEstimate_GetAll.vi"/>
-				<Item Name="AprilTagPoseEstimate_GetAmbifuity.vi" Type="VI" URL="../VI/AprilTagPoseEstimate_GetAmbifuity.vi"/>
-				<Item Name="AprilTagPoseEstimate_New.vi" Type="VI" URL="../VI/AprilTagPoseEstimate_New.vi"/>
-			</Item>
-			<Item Name="AprilTagPoseEstimator" Type="Folder">
-				<Item Name="AprilTagPoseEstimator_New.vi" Type="VI" URL="../AprilTagPoseEstimator_New.vi"/>
-			</Item>
-		</Item>
 		<Item Name="Classical Analog" Type="Folder">
 			<Item Name="AnalogDelay" Type="Folder">
 				<Item Name="AnalogDelay_Execute.vi" Type="VI" URL="../VI/AnalogDelay_Execute.vi"/>
@@ -531,8 +506,6 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="Ramsete_AtReference.vi" Type="VI" URL="../Ramsete_AtReference.vi"/>
 				<Item Name="Ramsete_Calculate.vi" Type="VI" URL="../Ramsete_Calculate.vi"/>
 				<Item Name="Ramsete_Calculate_Trajectory.vi" Type="VI" URL="../Ramsete_Calculate_Trajectory.vi"/>
-				<Item Name="Ramsete_Diff_DO_Eng.vi" Type="VI" URL="../Ramsete_Diff_DO_Eng.vi"/>
-				<Item Name="Ramsete_Diff_DO_SI.vi" Type="VI" URL="../Ramsete_Diff_DO_SI.vi"/>
 				<Item Name="Ramsete_Execute.vi" Type="VI" URL="../Ramsete_Execute.vi"/>
 				<Item Name="Ramsete_Execute_ENG.vi" Type="VI" URL="../Ramsete_Execute_ENG.vi"/>
 				<Item Name="Ramsete_Execute_Ext_Odom.vi" Type="VI" URL="../VI/Ramsete_Execute_Ext_Odom.vi"/>
@@ -1809,6 +1782,38 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="Util_TrajState_to_DiffDrive_WheelPos.vi" Type="VI" URL="../Util_TrajState_to_DiffDrive_WheelPos.vi"/>
 		</Item>
 		<Item Name="Vision" Type="Folder">
+			<Item Name="AprilTag" Type="Folder">
+				<Item Name="AprilTag" Type="Folder">
+					<Item Name="AprilTag.ctl" Type="VI" URL="../TypeDef/AprilTag.ctl"/>
+					<Item Name="AprilTag_Equals.vi" Type="VI" URL="../VI/AprilTag_Equals.vi"/>
+					<Item Name="AprilTag_GetAll.vi" Type="VI" URL="../VI/AprilTag_GetAll.vi"/>
+					<Item Name="AprilTag_New.vi" Type="VI" URL="../VI/AprilTag_New.vi"/>
+				</Item>
+				<Item Name="AprilTagFieldLayout" Type="Folder">
+					<Item Name="AprilTagFieldLayout.ctl" Type="VI" URL="../TypeDef/AprilTagFieldLayout.ctl"/>
+					<Item Name="AprilTagFieldLayout_GetField.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetField.vi"/>
+					<Item Name="AprilTagFieldLayout_GetOriginPosition.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetOriginPosition.vi"/>
+					<Item Name="AprilTagFieldLayout_GetTagPose.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetTagPose.vi"/>
+					<Item Name="AprilTagFieldLayout_GetTags.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetTags.vi"/>
+					<Item Name="AprilTagFieldLayout_New.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New.vi"/>
+					<Item Name="AprilTagFieldLayout_New2022.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New2022.vi"/>
+					<Item Name="AprilTagFieldLayout_New2023.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New2023.vi"/>
+					<Item Name="AprilTagFieldLayout_NewSelect.vi" Type="VI" URL="../VI/AprilTagFieldLayout_NewSelect.vi"/>
+					<Item Name="AprilTagFieldLayout_SetOrigin.vi" Type="VI" URL="../VI/AprilTagFieldLayout_SetOrigin.vi"/>
+					<Item Name="AprilTagFieldLayout_SetOrigin_Position.vi" Type="VI" URL="../VI/AprilTagFieldLayout_SetOrigin_Position.vi"/>
+					<Item Name="AprilTagFieldLayoutOrignPosition_ENUM.ctl" Type="VI" URL="../Enum/AprilTagFieldLayoutOrignPosition_ENUM.ctl"/>
+					<Item Name="AprilTagFields_ENUM.ctl" Type="VI" URL="../Enum/AprilTagFields_ENUM.ctl"/>
+				</Item>
+				<Item Name="AprilTagPoseEstimate" Type="Folder">
+					<Item Name="AprilTagPoseEstimate.ctl" Type="VI" URL="../TypeDef/AprilTagPoseEstimate.ctl"/>
+					<Item Name="AprilTagPoseEstimate_GetAll.vi" Type="VI" URL="../VI/AprilTagPoseEstimate_GetAll.vi"/>
+					<Item Name="AprilTagPoseEstimate_GetAmbifuity.vi" Type="VI" URL="../VI/AprilTagPoseEstimate_GetAmbifuity.vi"/>
+					<Item Name="AprilTagPoseEstimate_New.vi" Type="VI" URL="../VI/AprilTagPoseEstimate_New.vi"/>
+				</Item>
+				<Item Name="AprilTagPoseEstimator" Type="Folder">
+					<Item Name="AprilTagPoseEstimator_New.vi" Type="VI" URL="../AprilTagPoseEstimator_New.vi"/>
+				</Item>
+			</Item>
 			<Item Name="ComputerVisionUtil" Type="Folder">
 				<Item Name="CompVisionUtil_CalculateDistanceToTarget.vi" Type="VI" URL="../VI/CompVisionUtil_CalculateDistanceToTarget.vi"/>
 				<Item Name="CompVisionUtil_EstimateCameraToTarget.vi" Type="VI" URL="../VI/CompVisionUtil_EstimateCameraToTarget.vi"/>
@@ -1816,6 +1821,20 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="CompVisionUtil_EstimateFieldToRobot.vi" Type="VI" URL="../VI/CompVisionUtil_EstimateFieldToRobot.vi"/>
 				<Item Name="CompVisionUtil_EstimateFieldToRobot_Alt.vi" Type="VI" URL="../VI/CompVisionUtil_EstimateFieldToRobot_Alt.vi"/>
 				<Item Name="CompVisionUtil_ObjectToRobotPose.vi" Type="VI" URL="../VI/CompVisionUtil_ObjectToRobotPose.vi"/>
+			</Item>
+			<Item Name="FieldDisplay" Type="Folder">
+				<Item Name="FieldDisp_Convert_IMAQ_Image_to_Picture.vi" Type="VI" URL="../VI/FieldDisp_Convert_IMAQ_Image_to_Picture.vi"/>
+				<Item Name="FieldDisp_Element_Disp.vi" Type="VI" URL="../VI/FieldDisp_Element_Disp.vi"/>
+				<Item Name="FieldDisp_Element_Prepare.vi" Type="VI" URL="../VI/FieldDisp_Element_Prepare.vi"/>
+				<Item Name="FieldDisp_Element_Rotate.vi" Type="VI" URL="../VI/FieldDisp_Element_Rotate.vi"/>
+				<Item Name="FieldDisp_Element_Rotate_Init.vi" Type="VI" URL="../VI/FieldDisp_Element_Rotate_Init.vi"/>
+				<Item Name="FieldDisp_Field_Crop_and_Scale.vi" Type="VI" URL="../VI/FieldDisp_Field_Crop_and_Scale.vi"/>
+				<Item Name="FieldDisp_Field_Disp.vi" Type="VI" URL="../VI/FieldDisp_Field_Disp.vi"/>
+				<Item Name="FieldDisp_Field_Selector_Prepare.vi" Type="VI" URL="../VI/FieldDisp_Field_Selector_Prepare.vi"/>
+				<Item Name="FieldDisp_Get_Field_Info.vi" Type="VI" URL="../VI/FieldDisp_Get_Field_Info.vi"/>
+				<Item Name="FieldDisp_Open_Field_Info_File.vi" Type="VI" URL="../VI/FieldDisp_Open_Field_Info_File.vi"/>
+				<Item Name="FieldDisp_Read_Field_Pic.vi" Type="VI" URL="../VI/FieldDisp_Read_Field_Pic.vi"/>
+				<Item Name="FieldDisp_Read_Image_File.vi" Type="VI" URL="../VI/FieldDisp_Read_Image_File.vi"/>
 			</Item>
 		</Item>
 	</Item>
