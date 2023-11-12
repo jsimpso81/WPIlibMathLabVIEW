@@ -12,6 +12,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 
 </Property>
 	<Item Name="Enum" Type="Folder">
+		<Item Name="_OBSOLETE_AutoHelper_Timeout_State_Enum.ctl" Type="VI" URL="../Enum/_OBSOLETE_AutoHelper_Timeout_State_Enum.ctl"/>
 		<Item Name="DCMOTOR_TYPES_ENUM.ctl" Type="VI" URL="../Enum/DCMOTOR_TYPES_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl"/>
@@ -313,6 +314,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 	</Item>
 	<Item Name="VI" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
+		<Item Name="AutoHelper" Type="Folder">
+			<Item Name="AutoHelper_Sequence.vi" Type="VI" URL="../VI/AutoHelper_Sequence.vi"/>
+			<Item Name="AutoHelper_Timeout.vi" Type="VI" URL="../VI/AutoHelper_Timeout.vi"/>
+		</Item>
 		<Item Name="Classical Analog" Type="Folder">
 			<Item Name="AnalogDelay" Type="Folder">
 				<Item Name="AnalogDelay_Execute.vi" Type="VI" URL="../VI/AnalogDelay_Execute.vi"/>
@@ -424,6 +429,22 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="HolDrvCtrl_PackProfPID.vi" Type="VI" URL="../HolDrvCtrl_PackProfPID.vi"/>
 				<Item Name="HolDrvCtrl_SetEnabled.vi" Type="VI" URL="../HolDrvCtrl_SetEnabled.vi"/>
 				<Item Name="HolDrvCtrl_SetTolerance.vi" Type="VI" URL="../HolDrvCtrl_SetTolerance.vi"/>
+			</Item>
+			<Item Name="Numeric Command" Type="Folder">
+				<Item Name="numCmd_ObtainQueue.vi" Type="VI" URL="../VI/numCmd_ObtainQueue.vi"/>
+				<Item Name="numCmd_Recv_Array.vi" Type="VI" URL="../VI/numCmd_Recv_Array.vi"/>
+				<Item Name="numCmd_Recv_Chassis.vi" Type="VI" URL="../VI/numCmd_Recv_Chassis.vi"/>
+				<Item Name="numCmd_Recv_Generic.vi" Type="VI" URL="../VI/numCmd_Recv_Generic.vi"/>
+				<Item Name="numCmd_Recv_OneDbl.vi" Type="VI" URL="../VI/numCmd_Recv_OneDbl.vi"/>
+				<Item Name="numCmd_Recv_TwoDbl.vi" Type="VI" URL="../VI/numCmd_Recv_TwoDbl.vi"/>
+				<Item Name="numCmd_Send_Array.vi" Type="VI" URL="../VI/numCmd_Send_Array.vi"/>
+				<Item Name="numCmd_Send_Chassis.vi" Type="VI" URL="../VI/numCmd_Send_Chassis.vi"/>
+				<Item Name="numCmd_Send_Generic.vi" Type="VI" URL="../VI/numCmd_Send_Generic.vi"/>
+				<Item Name="numCmd_Send_Internal.vi" Type="VI" URL="../VI/numCmd_Send_Internal.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+				<Item Name="numCmd_Send_OneDbl.vi" Type="VI" URL="../VI/numCmd_Send_OneDbl.vi"/>
+				<Item Name="numCmd_Send_TwoDbl.vi" Type="VI" URL="../VI/numCmd_Send_TwoDbl.vi"/>
 			</Item>
 			<Item Name="PIDAutoTune" Type="Folder">
 				<Item Name="PIDAutoTune_ClosedLoopStep.vi" Type="VI" URL="../VI/PIDAutoTune_ClosedLoopStep.vi"/>
@@ -562,6 +583,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		</Item>
 		<Item Name="Digital Control" Type="Folder">
 			<Item Name="Boolean Command" Type="Folder">
+				<Item Name="BoolCmd_Multiplexor.vi" Type="VI" URL="../VI/BoolCmd_Multiplexor.vi"/>
+				<Item Name="BoolCmd_Multiplexor_Array.vi" Type="VI" URL="../VI/BoolCmd_Multiplexor_Array.vi"/>
 				<Item Name="BoolCmd_ObtainQueue.vi" Type="VI" URL="../VI/BoolCmd_ObtainQueue.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
@@ -570,10 +593,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
 				<Item Name="BoolCmd_Send.vi" Type="VI" URL="../VI/BoolCmd_Send.vi"/>
-				<Item Name="BoolCmd_Send_BoolEdge.vi" Type="VI" URL="../VI/BoolCmd_Send_BoolEdge.vi"/>
 				<Item Name="BoolCmd_Send_Internal.vi" Type="VI" URL="../VI/BoolCmd_Send_Internal.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
+				<Item Name="BoolCmd_Send_OnEdge.vi" Type="VI" URL="../VI/BoolCmd_Send_OnEdge.vi"/>
 			</Item>
 			<Item Name="Debouncer" Type="Folder">
 				<Item Name="Debouncer_Calculate.vi" Type="VI" URL="../Debouncer_Calculate.vi"/>
@@ -593,7 +616,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="DigSeqLogic_SR_FlipFlop.vi" Type="VI" URL="../DigSeqLogic_SR_FlipFlop.vi"/>
 			</Item>
 			<Item Name="DrumSequencer" Type="Folder">
-				<Item Name="DrumSequence_Execute.vi" Type="VI" URL="../VI/DrumSequence_Execute.vi"/>
+				<Item Name="DrumSequence_Cont_Execute.vi" Type="VI" URL="../VI/DrumSequence_Cont_Execute.vi"/>
+				<Item Name="DrumSequence_Pulse_Execute.vi" Type="VI" URL="../VI/DrumSequence_Pulse_Execute.vi"/>
 			</Item>
 			<Item Name="SolenoidPulse" Type="Folder">
 				<Item Name="DoubleSolenoid_Pulse.vi" Type="VI" URL="../VI/DoubleSolenoid_Pulse.vi"/>
