@@ -156,7 +156,7 @@
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">427</Property>
+				<Property Name="Bld_version.build" Type="Int">428</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">12</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -194,7 +194,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv19_3.0.8-261_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv19_3.0.8-262_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -202,7 +202,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">262</Property>
+				<Property Name="PKG_buildNumber" Type="Int">263</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathexampleslv19</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -426,7 +426,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv20_3.0.8-261_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv20_3.0.8-262_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -434,7 +434,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">262</Property>
+				<Property Name="PKG_buildNumber" Type="Int">263</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathexampleslv20</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -648,8 +648,6 @@
 				<Property Name="PKG_version" Type="Str">3.0.8</Property>
 			</Item>
 			<Item Name="wpilibmathexampleslv23" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
-				<Property Name="AB_Class_Path" Type="Path">/C/Program Files/National Instruments/LabVIEW 2019/resource/Framework/Providers/Builds/Package/NIPKG/NIPKG/NIPKG.lvclass</Property>
-				<Property Name="AB_UIClass_Path" Type="Path">/C/Program Files/National Instruments/LabVIEW 2019/resource/Framework/Providers/Builds/Package/Common/UI/PackageUI.lvclass</Property>
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
 				<Property Name="NIPKG_certificates" Type="Bool">false</Property>
 				<Property Name="NIPKG_createInstaller" Type="Bool">false</Property>
@@ -660,7 +658,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv23_3.0.8-261_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv23_3.0.8-262_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -668,7 +666,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">262</Property>
+				<Property Name="PKG_buildNumber" Type="Int">263</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathexampleslv23</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
