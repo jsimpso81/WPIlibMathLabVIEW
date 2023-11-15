@@ -621,7 +621,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="DrumSequence_Pulse_Execute.vi" Type="VI" URL="../VI/DrumSequence_Pulse_Execute.vi"/>
 			</Item>
 			<Item Name="SolenoidPulse" Type="Folder">
-				<Item Name="DoubleSolenoid_Pulse.vi" Type="VI" URL="../VI/DoubleSolenoid_Pulse.vi"/>
+				<Item Name="DoubleSolenoid_Pulse_Execute.vi" Type="VI" URL="../VI/DoubleSolenoid_Pulse_Execute.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Geometry" Type="Folder">
