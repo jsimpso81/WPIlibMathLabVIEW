@@ -13,6 +13,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 </Property>
 	<Item Name="Enum" Type="Folder">
 		<Item Name="_OBSOLETE_AutoHelper_Timeout_State_Enum.ctl" Type="VI" URL="../Enum/_OBSOLETE_AutoHelper_Timeout_State_Enum.ctl"/>
+		<Item Name="AutoHelperSequence_Step_Enum.ctl" Type="VI" URL="../Enum/AutoHelperSequence_Step_Enum.ctl"/>
 		<Item Name="DCMOTOR_TYPES_ENUM.ctl" Type="VI" URL="../Enum/DCMOTOR_TYPES_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_ToughBoxMini_GearChoice_ENUM.ctl"/>
@@ -315,8 +316,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 	<Item Name="VI" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
 		<Item Name="AutoHelper" Type="Folder">
+			<Item Name="AutoHelper_DelayedAction.vi" Type="VI" URL="../VI/AutoHelper_DelayedAction.vi"/>
 			<Item Name="AutoHelper_Sequence_Execute.vi" Type="VI" URL="../VI/AutoHelper_Sequence_Execute.vi"/>
-			<Item Name="AutoHelper_Timeout.vi" Type="VI" URL="../VI/AutoHelper_Timeout.vi"/>
 		</Item>
 		<Item Name="Classical Analog" Type="Folder">
 			<Item Name="AnalogDelay" Type="Folder">
