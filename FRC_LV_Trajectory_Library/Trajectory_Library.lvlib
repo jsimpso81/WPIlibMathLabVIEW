@@ -12,7 +12,6 @@ This implements the math section (and some other routines) contained in FRC WPIL
 
 </Property>
 	<Item Name="Enum" Type="Folder">
-		<Item Name="_OBSOLETE_AutoHelper_Timeout_State_Enum.ctl" Type="VI" URL="../Enum/_OBSOLETE_AutoHelper_Timeout_State_Enum.ctl"/>
 		<Item Name="AutoHelperSequence_Step_Enum.ctl" Type="VI" URL="../Enum/AutoHelperSequence_Step_Enum.ctl"/>
 		<Item Name="DCMOTOR_TYPES_ENUM.ctl" Type="VI" URL="../Enum/DCMOTOR_TYPES_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl"/>
@@ -420,9 +419,6 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="BoolCmd_Send_OnEdge.vi" Type="VI" URL="../VI/BoolCmd_Send_OnEdge.vi"/>
 			</Item>
 			<Item Name="Numeric Command" Type="Folder">
-				<Item Name="_OBSOLETE_numCmd_Send_Internal.vi" Type="VI" URL="../VI/_OBSOLETE_numCmd_Send_Internal.vi">
-					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-				</Item>
 				<Item Name="numCmd_ObtainQueue_Array.vi" Type="VI" URL="../VI/numCmd_ObtainQueue_Array.vi"/>
 				<Item Name="numCmd_ObtainQueue_Generic.vi" Type="VI" URL="../VI/numCmd_ObtainQueue_Generic.vi"/>
 				<Item Name="numCmd_ObtainQueue_OneDbl.vi" Type="VI" URL="../VI/numCmd_ObtainQueue_OneDbl.vi"/>
