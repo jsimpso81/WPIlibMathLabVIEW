@@ -254,6 +254,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="PID_ERROR_TOLERANCE.ctl" Type="VI" URL="../TypeDef/PID_ERROR_TOLERANCE.ctl"/>
 		<Item Name="PID_INPUT_LIMITS.ctl" Type="VI" URL="../TypeDef/PID_INPUT_LIMITS.ctl"/>
 		<Item Name="PID_TUNING.ctl" Type="VI" URL="../TypeDef/PID_TUNING.ctl"/>
+		<Item Name="PosCtrl_Tuning_Type.ctl" Type="VI" URL="../TypeDef/PosCtrl_Tuning_Type.ctl"/>
 		<Item Name="POSE2D.ctl" Type="VI" URL="../TypeDef/POSE2D.ctl"/>
 		<Item Name="POSE3D.ctl" Type="VI" URL="../TypeDef/POSE3D.ctl"/>
 		<Item Name="POSEwCURVATURE.ctl" Type="VI" URL="../TypeDef/POSEwCURVATURE.ctl"/>
@@ -381,6 +382,40 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="SlewRateLimiter_SetRate.vi" Type="VI" URL="../SlewRateLimiter_SetRate.vi"/>
 			</Item>
 		</Item>
+		<Item Name="Command" Type="Folder">
+			<Item Name="Boolean Command" Type="Folder">
+				<Item Name="BoolCmd_Multiplexor.vi" Type="VI" URL="../VI/BoolCmd_Multiplexor.vi"/>
+				<Item Name="BoolCmd_Multiplexor_Array.vi" Type="VI" URL="../VI/BoolCmd_Multiplexor_Array.vi"/>
+				<Item Name="BoolCmd_ObtainQueue.vi" Type="VI" URL="../VI/BoolCmd_ObtainQueue.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+				<Item Name="BoolCmd_Recv.vi" Type="VI" URL="../VI/BoolCmd_Recv.vi"/>
+				<Item Name="BoolCmd_Recv_Internal.vi" Type="VI" URL="../VI/BoolCmd_Recv_Internal.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+				<Item Name="BoolCmd_Send.vi" Type="VI" URL="../VI/BoolCmd_Send.vi"/>
+				<Item Name="BoolCmd_Send_Internal.vi" Type="VI" URL="../VI/BoolCmd_Send_Internal.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+				<Item Name="BoolCmd_Send_OnEdge.vi" Type="VI" URL="../VI/BoolCmd_Send_OnEdge.vi"/>
+			</Item>
+			<Item Name="Numeric Command" Type="Folder">
+				<Item Name="numCmd_ObtainQueue.vi" Type="VI" URL="../VI/numCmd_ObtainQueue.vi"/>
+				<Item Name="numCmd_Recv_Array.vi" Type="VI" URL="../VI/numCmd_Recv_Array.vi"/>
+				<Item Name="numCmd_Recv_Chassis.vi" Type="VI" URL="../VI/numCmd_Recv_Chassis.vi"/>
+				<Item Name="numCmd_Recv_Generic.vi" Type="VI" URL="../VI/numCmd_Recv_Generic.vi"/>
+				<Item Name="numCmd_Recv_OneDbl.vi" Type="VI" URL="../VI/numCmd_Recv_OneDbl.vi"/>
+				<Item Name="numCmd_Recv_TwoDbl.vi" Type="VI" URL="../VI/numCmd_Recv_TwoDbl.vi"/>
+				<Item Name="numCmd_Send_Array.vi" Type="VI" URL="../VI/numCmd_Send_Array.vi"/>
+				<Item Name="numCmd_Send_Chassis.vi" Type="VI" URL="../VI/numCmd_Send_Chassis.vi"/>
+				<Item Name="numCmd_Send_Generic.vi" Type="VI" URL="../VI/numCmd_Send_Generic.vi"/>
+				<Item Name="numCmd_Send_Internal.vi" Type="VI" URL="../VI/numCmd_Send_Internal.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+				<Item Name="numCmd_Send_OneDbl.vi" Type="VI" URL="../VI/numCmd_Send_OneDbl.vi"/>
+				<Item Name="numCmd_Send_TwoDbl.vi" Type="VI" URL="../VI/numCmd_Send_TwoDbl.vi"/>
+			</Item>
+		</Item>
 		<Item Name="Controller" Type="Folder">
 			<Item Name="ArmFeedforward" Type="Folder">
 				<Item Name="ArmFF_Calculate.vi" Type="VI" URL="../ArmFF_Calculate.vi"/>
@@ -430,22 +465,6 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="HolDrvCtrl_PackProfPID.vi" Type="VI" URL="../HolDrvCtrl_PackProfPID.vi"/>
 				<Item Name="HolDrvCtrl_SetEnabled.vi" Type="VI" URL="../HolDrvCtrl_SetEnabled.vi"/>
 				<Item Name="HolDrvCtrl_SetTolerance.vi" Type="VI" URL="../HolDrvCtrl_SetTolerance.vi"/>
-			</Item>
-			<Item Name="Numeric Command" Type="Folder">
-				<Item Name="numCmd_ObtainQueue.vi" Type="VI" URL="../VI/numCmd_ObtainQueue.vi"/>
-				<Item Name="numCmd_Recv_Array.vi" Type="VI" URL="../VI/numCmd_Recv_Array.vi"/>
-				<Item Name="numCmd_Recv_Chassis.vi" Type="VI" URL="../VI/numCmd_Recv_Chassis.vi"/>
-				<Item Name="numCmd_Recv_Generic.vi" Type="VI" URL="../VI/numCmd_Recv_Generic.vi"/>
-				<Item Name="numCmd_Recv_OneDbl.vi" Type="VI" URL="../VI/numCmd_Recv_OneDbl.vi"/>
-				<Item Name="numCmd_Recv_TwoDbl.vi" Type="VI" URL="../VI/numCmd_Recv_TwoDbl.vi"/>
-				<Item Name="numCmd_Send_Array.vi" Type="VI" URL="../VI/numCmd_Send_Array.vi"/>
-				<Item Name="numCmd_Send_Chassis.vi" Type="VI" URL="../VI/numCmd_Send_Chassis.vi"/>
-				<Item Name="numCmd_Send_Generic.vi" Type="VI" URL="../VI/numCmd_Send_Generic.vi"/>
-				<Item Name="numCmd_Send_Internal.vi" Type="VI" URL="../VI/numCmd_Send_Internal.vi">
-					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-				</Item>
-				<Item Name="numCmd_Send_OneDbl.vi" Type="VI" URL="../VI/numCmd_Send_OneDbl.vi"/>
-				<Item Name="numCmd_Send_TwoDbl.vi" Type="VI" URL="../VI/numCmd_Send_TwoDbl.vi"/>
 			</Item>
 			<Item Name="PIDAutoTune" Type="Folder">
 				<Item Name="PIDAutoTune_ClosedLoopStep.vi" Type="VI" URL="../VI/PIDAutoTune_ClosedLoopStep.vi"/>
@@ -497,6 +516,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="PIDController_SetSetpoint.vi" Type="VI" URL="../PIDController_SetSetpoint.vi"/>
 				<Item Name="PIDController_SetTolerance.vi" Type="VI" URL="../PIDController_SetTolerance.vi"/>
 				<Item Name="PIDController_SetTolerancePandV.vi" Type="VI" URL="../PIDController_SetTolerancePandV.vi"/>
+			</Item>
+			<Item Name="PositionControl" Type="Folder">
+				<Item Name="PosCtrl_Config_Threshold.vi" Type="VI" URL="../VI/PosCtrl_Config_Threshold.vi"/>
+				<Item Name="PosCtrl_Execute.vi" Type="VI" URL="../VI/PosCtrl_Execute.vi"/>
 			</Item>
 			<Item Name="ProfiledPIDController" Type="Folder">
 				<Item Name="ProfiledPIDController_AtGoal.vi" Type="VI" URL="../ProfiledPIDController_AtGoal.vi"/>
@@ -583,22 +606,6 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="Conv_Yards_Meters.vi" Type="VI" URL="../Conv_Yards_Meters.vi"/>
 		</Item>
 		<Item Name="Digital Control" Type="Folder">
-			<Item Name="Boolean Command" Type="Folder">
-				<Item Name="BoolCmd_Multiplexor.vi" Type="VI" URL="../VI/BoolCmd_Multiplexor.vi"/>
-				<Item Name="BoolCmd_Multiplexor_Array.vi" Type="VI" URL="../VI/BoolCmd_Multiplexor_Array.vi"/>
-				<Item Name="BoolCmd_ObtainQueue.vi" Type="VI" URL="../VI/BoolCmd_ObtainQueue.vi">
-					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-				</Item>
-				<Item Name="BoolCmd_Recv.vi" Type="VI" URL="../VI/BoolCmd_Recv.vi"/>
-				<Item Name="BoolCmd_Recv_Internal.vi" Type="VI" URL="../VI/BoolCmd_Recv_Internal.vi">
-					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-				</Item>
-				<Item Name="BoolCmd_Send.vi" Type="VI" URL="../VI/BoolCmd_Send.vi"/>
-				<Item Name="BoolCmd_Send_Internal.vi" Type="VI" URL="../VI/BoolCmd_Send_Internal.vi">
-					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-				</Item>
-				<Item Name="BoolCmd_Send_OnEdge.vi" Type="VI" URL="../VI/BoolCmd_Send_OnEdge.vi"/>
-			</Item>
 			<Item Name="Debouncer" Type="Folder">
 				<Item Name="Debouncer_Calculate.vi" Type="VI" URL="../Debouncer_Calculate.vi"/>
 				<Item Name="Debouncer_Execute.vi" Type="VI" URL="../Debouncer_Execute.vi"/>
