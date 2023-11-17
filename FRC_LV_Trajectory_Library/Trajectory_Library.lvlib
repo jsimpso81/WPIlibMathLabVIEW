@@ -45,6 +45,11 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_Apply_Deadband.vi" Type="VI" URL="../Macros/macro_Apply_Deadband.vi"/>
 		<Item Name="macro_ArmFF_Calculate.vi" Type="VI" URL="../Macros/macro_ArmFF_Calculate.vi"/>
 		<Item Name="macro_BangBang_Execute.vi" Type="VI" URL="../Macros/macro_BangBang_Execute.vi"/>
+		<Item Name="macro_BoolCmd_Recv.vi" Type="VI" URL="../Macros/macro_BoolCmd_Recv.vi"/>
+		<Item Name="macro_BoolCmd_RecvMultiplexer.vi" Type="VI" URL="../Macros/macro_BoolCmd_RecvMultiplexer.vi"/>
+		<Item Name="macro_BoolCmd_RecvMultiplexerArray.vi" Type="VI" URL="../Macros/macro_BoolCmd_RecvMultiplexerArray.vi"/>
+		<Item Name="macro_BoolCmd_Send.vi" Type="VI" URL="../Macros/macro_BoolCmd_Send.vi"/>
+		<Item Name="macro_BoolCmd_Send_OnEdge.vi" Type="VI" URL="../Macros/macro_BoolCmd_Send_OnEdge.vi"/>
 		<Item Name="macro_BumplessTransfer.vi" Type="VI" URL="../Macros/macro_BumplessTransfer.vi"/>
 		<Item Name="macro_CallbackHelp_MatrixMinus.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMinus.vi"/>
 		<Item Name="macro_CallbackHelp_MatrixMult.vi" Type="VI" URL="../Macros/macro_CallbackHelp_MatrixMult.vi"/>
@@ -66,6 +71,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_DigSeqLogic_Off_Delay.vi" Type="VI" URL="../Macros/macro_DigSeqLogic_Off_Delay.vi"/>
 		<Item Name="macro_DigSeqLogic_On_Delay.vi" Type="VI" URL="../Macros/macro_DigSeqLogic_On_Delay.vi"/>
 		<Item Name="macro_DigSeqLogic_OneShot.vi" Type="VI" URL="../Macros/macro_DigSeqLogic_OneShot.vi"/>
+		<Item Name="macro_DoubleSolenoid_Pulse_Execute.vi" Type="VI" URL="../Macros/macro_DoubleSolenoid_Pulse_Execute.vi"/>
+		<Item Name="macro_DrumSeq_Continuous.vi" Type="VI" URL="../Macros/macro_DrumSeq_Continuous.vi"/>
+		<Item Name="macro_DrumSeq_Pulse.vi" Type="VI" URL="../Macros/macro_DrumSeq_Pulse.vi"/>
+		<Item Name="macro_DrumSeq_Pulse_Mux.vi" Type="VI" URL="../Macros/macro_DrumSeq_Pulse_Mux.vi"/>
 		<Item Name="macro_Elevator_Sim_Execute.vi" Type="VI" URL="../Macros/macro_Elevator_Sim_Execute.vi"/>
 		<Item Name="macro_ElevatorFF_Calculate.vi" Type="VI" URL="../Macros/macro_ElevatorFF_Calculate.vi"/>
 		<Item Name="macro_Field_Display_Constant.vi" Type="VI" URL="../Macros/macro_Field_Display_Constant.vi"/>
@@ -103,9 +112,20 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_MecaDrivePoseEst2_Execute.vi" Type="VI" URL="../Macros/macro_MecaDrivePoseEst2_Execute.vi"/>
 		<Item Name="macro_MecaWheelSpeedNormalize.vi" Type="VI" URL="../Macros/macro_MecaWheelSpeedNormalize.vi"/>
 		<Item Name="macro_MedianFilter_Execute.vi" Type="VI" URL="../Macros/macro_MedianFilter_Execute.vi"/>
+		<Item Name="macro_NumCmd_Recv_Array.vi" Type="VI" URL="../Macros/macro_NumCmd_Recv_Array.vi"/>
+		<Item Name="macro_NumCmd_Recv_Chassis.vi" Type="VI" URL="../Macros/macro_NumCmd_Recv_Chassis.vi"/>
+		<Item Name="macro_NumCmd_Recv_Generic.vi" Type="VI" URL="../Macros/macro_NumCmd_Recv_Generic.vi"/>
+		<Item Name="macro_NumCmd_Recv_OneDbl.vi" Type="VI" URL="../Macros/macro_NumCmd_Recv_OneDbl.vi"/>
+		<Item Name="macro_NumCmd_Recv_TwoDbl.vi" Type="VI" URL="../Macros/macro_NumCmd_Recv_TwoDbl.vi"/>
+		<Item Name="macro_NumCmd_Send_Array.vi" Type="VI" URL="../Macros/macro_NumCmd_Send_Array.vi"/>
+		<Item Name="macro_NumCmd_Send_Chassis.vi" Type="VI" URL="../Macros/macro_NumCmd_Send_Chassis.vi"/>
+		<Item Name="macro_NumCmd_Send_Generic.vi" Type="VI" URL="../Macros/macro_NumCmd_Send_Generic.vi"/>
+		<Item Name="macro_NumCmd_Send_OneDbl.vi" Type="VI" URL="../Macros/macro_NumCmd_Send_OneDbl.vi"/>
+		<Item Name="macro_NumCmd_Send_TwoDbl.vi" Type="VI" URL="../Macros/macro_NumCmd_Send_TwoDbl.vi"/>
 		<Item Name="macro_PIDAutoTune.vi" Type="VI" URL="../Macros/macro_PIDAutoTune.vi"/>
 		<Item Name="macro_PIDController_AdvExecute.vi" Type="VI" URL="../Macros/macro_PIDController_AdvExecute.vi"/>
 		<Item Name="macro_PIDController_Execute.vi" Type="VI" URL="../Macros/macro_PIDController_Execute.vi"/>
+		<Item Name="macro_PosCtrl_Execute.vi" Type="VI" URL="../Macros/macro_PosCtrl_Execute.vi"/>
 		<Item Name="macro_Pose2d_XYAngleDeg.vi" Type="VI" URL="../Macros/macro_Pose2d_XYAngleDeg.vi"/>
 		<Item Name="macro_Pose2d_XYAngleRad.vi" Type="VI" URL="../Macros/macro_Pose2d_XYAngleRad.vi"/>
 		<Item Name="macro_Pose3d_XYZ_Axis_AngleDeg.vi" Type="VI" URL="../Macros/macro_Pose3d_XYZ_Axis_AngleDeg.vi"/>
@@ -400,7 +420,13 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="BoolCmd_Send_OnEdge.vi" Type="VI" URL="../VI/BoolCmd_Send_OnEdge.vi"/>
 			</Item>
 			<Item Name="Numeric Command" Type="Folder">
-				<Item Name="numCmd_ObtainQueue.vi" Type="VI" URL="../VI/numCmd_ObtainQueue.vi"/>
+				<Item Name="_OBSOLETE_numCmd_Send_Internal.vi" Type="VI" URL="../VI/_OBSOLETE_numCmd_Send_Internal.vi">
+					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+				</Item>
+				<Item Name="numCmd_ObtainQueue_Array.vi" Type="VI" URL="../VI/numCmd_ObtainQueue_Array.vi"/>
+				<Item Name="numCmd_ObtainQueue_Generic.vi" Type="VI" URL="../VI/numCmd_ObtainQueue_Generic.vi"/>
+				<Item Name="numCmd_ObtainQueue_OneDbl.vi" Type="VI" URL="../VI/numCmd_ObtainQueue_OneDbl.vi"/>
+				<Item Name="numCmd_ObtainQueue_TwoDbl.vi" Type="VI" URL="../VI/numCmd_ObtainQueue_TwoDbl.vi"/>
 				<Item Name="numCmd_Recv_Array.vi" Type="VI" URL="../VI/numCmd_Recv_Array.vi"/>
 				<Item Name="numCmd_Recv_Chassis.vi" Type="VI" URL="../VI/numCmd_Recv_Chassis.vi"/>
 				<Item Name="numCmd_Recv_Generic.vi" Type="VI" URL="../VI/numCmd_Recv_Generic.vi"/>
@@ -409,9 +435,6 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="numCmd_Send_Array.vi" Type="VI" URL="../VI/numCmd_Send_Array.vi"/>
 				<Item Name="numCmd_Send_Chassis.vi" Type="VI" URL="../VI/numCmd_Send_Chassis.vi"/>
 				<Item Name="numCmd_Send_Generic.vi" Type="VI" URL="../VI/numCmd_Send_Generic.vi"/>
-				<Item Name="numCmd_Send_Internal.vi" Type="VI" URL="../VI/numCmd_Send_Internal.vi">
-					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-				</Item>
 				<Item Name="numCmd_Send_OneDbl.vi" Type="VI" URL="../VI/numCmd_Send_OneDbl.vi"/>
 				<Item Name="numCmd_Send_TwoDbl.vi" Type="VI" URL="../VI/numCmd_Send_TwoDbl.vi"/>
 			</Item>
