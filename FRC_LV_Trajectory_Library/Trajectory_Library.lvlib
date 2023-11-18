@@ -43,6 +43,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="macro_AngleStats_AngleResidual_CallbackHelp.vi" Type="VI" URL="../Macros/macro_AngleStats_AngleResidual_CallbackHelp.vi"/>
 		<Item Name="macro_Apply_Deadband.vi" Type="VI" URL="../Macros/macro_Apply_Deadband.vi"/>
 		<Item Name="macro_ArmFF_Calculate.vi" Type="VI" URL="../Macros/macro_ArmFF_Calculate.vi"/>
+		<Item Name="macro_AutoHelp_DelayedAction.vi" Type="VI" URL="../Macros/macro_AutoHelp_DelayedAction.vi"/>
+		<Item Name="macro_AutoHelp_Sequence.vi" Type="VI" URL="../Macros/macro_AutoHelp_Sequence.vi"/>
 		<Item Name="macro_BangBang_Execute.vi" Type="VI" URL="../Macros/macro_BangBang_Execute.vi"/>
 		<Item Name="macro_BoolCmd_Recv.vi" Type="VI" URL="../Macros/macro_BoolCmd_Recv.vi"/>
 		<Item Name="macro_BoolCmd_RecvMultiplexer.vi" Type="VI" URL="../Macros/macro_BoolCmd_RecvMultiplexer.vi"/>
