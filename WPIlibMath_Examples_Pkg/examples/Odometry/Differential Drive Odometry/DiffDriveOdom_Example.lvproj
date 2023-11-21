@@ -22,7 +22,8 @@
 		<Item Name="SubVI" Type="Folder" URL="../SubVI">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="DiffDriveOdom_Example.vi" Type="VI" URL="../VI/DiffDriveOdom_Example.vi"/>
+		<Item Name="DiffDriveOdom_Absolute_Example.vi" Type="VI" URL="../VI/DiffDriveOdom_Absolute_Example.vi"/>
+		<Item Name="DiffDriveOdom_Relative_Example.vi" Type="VI" URL="../VI/DiffDriveOdom_Relative_Example.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -184,7 +185,7 @@
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/images/Robot_kitbot_4.png</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/DiffDriveOdom_Example.vi</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/DiffDriveOdom_Relative_Example.vi</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">4</Property>
