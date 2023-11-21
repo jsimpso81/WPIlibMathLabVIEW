@@ -22,7 +22,7 @@
 		<Item Name="SubVI" Type="Folder" URL="../SubVI">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="DiffDriveOdom_Example.vi" Type="VI" URL="../VI/DiffDriveOdom_Example.vi"/>
+		<Item Name="DiffDrivePoseEst2_Example.vi" Type="VI" URL="../VI/DiffDrivePoseEst2_Example.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -117,17 +117,6 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="WPI_UtilitiesFRC Build Error.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesFRC Build Error.vi"/>
 			</Item>
-			<Item Name="DiffDrivePoseEst2_DffDrive_Exec.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/DiffDrivePoseEst2_DffDrive_Exec.vi"/>
-			<Item Name="DiffDrivePoseEst2_ExecRelativeTraj.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/DiffDrivePoseEst2_ExecRelativeTraj.vi"/>
-			<Item Name="DiffDrivePoseEst2_RelativeTrajectory_EXECUTE.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Execution_Diff_Drive/DiffDrivePoseEst2_RelativeTrajectory_EXECUTE.vi"/>
-			<Item Name="DiffDrivePoseEst2_RelativeTrajectory_Get_DiagGlobals.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Execution_Diff_Drive/DiffDrivePoseEst2_RelativeTrajectory_Get_DiagGlobals.vi"/>
-			<Item Name="DiffDrivePoseEst2_RelativeTrajectory_Globals.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Execution_Diff_Drive/DiffDrivePoseEst2_RelativeTrajectory_Globals.vi"/>
-			<Item Name="DiffDrivePoseEst2_RelativeTrajectory_ProcessAuto.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Execution_Diff_Drive/DiffDrivePoseEst2_RelativeTrajectory_ProcessAuto.vi"/>
-			<Item Name="DiffDrivePoseEst2_RelativeTrajectory_SetAuto.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Execution_Diff_Drive/DiffDrivePoseEst2_RelativeTrajectory_SetAuto.vi"/>
-			<Item Name="DiffDrivePoseEst2_RelativeTrajectory_TRAJECTORY_FGV.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Execution_Diff_Drive/DiffDrivePoseEst2_RelativeTrajectory_TRAJECTORY_FGV.vi"/>
-			<Item Name="DiffDrivePoseEst2_RelativeTrajectory_UpdateDiagGlobals.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Execution_Diff_Drive/DiffDrivePoseEst2_RelativeTrajectory_UpdateDiagGlobals.vi"/>
-			<Item Name="DiffDrivePoseEst2_SimDiffDrive_Exec.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/DiffDrivePoseEst2_SimDiffDrive_Exec.vi"/>
-			<Item Name="DiffDrivePoseEst2_TrajectoryCreation_Cubic.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Creation_Cubic/DiffDrivePoseEst2_TrajectoryCreation_Cubic.vi"/>
 			<Item Name="FRC_NetworkTablesLV.dll" Type="Document" URL="FRC_NetworkTablesLV.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -146,14 +135,14 @@
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="DiffDriveOdom_Example" Type="EXE">
+			<Item Name="DiffDriePoseEst_Example" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{4007ABAF-6D49-4D2F-BECA-D05EFC01207F}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{320A46C8-5403-4FA8-A69F-178FCD62F482}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{444A1EAE-87D0-4DF3-9137-490E21756CE4}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">DiffDriveOdom_Example</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">DiffDriePoseEst_Example</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
@@ -165,7 +154,7 @@
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_version.build" Type="Int">67</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">DiffDriveOdom_Example.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">DiffDriePoseEst_Example.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -182,7 +171,7 @@
 				<Property Name="Destination[3].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[3].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">4</Property>
-				<Property Name="Source[0].itemID" Type="Str">{60230747-802F-4827-A5BC-92EBEB5B6949}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2CF572CE-BBAB-4959-B1E9-61511D6485B9}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
@@ -195,16 +184,16 @@
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/images/Robot_kitbot_4.png</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/DiffDriveOdom_Example.vi</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/DiffDrivePoseEst2_Example.vi</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">4</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">DiffDriveOdom_Example</Property>
-				<Property Name="TgtF_internalName" Type="Str">DiffDriveOdom_Example</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">DiffDriePoseEst_Example</Property>
+				<Property Name="TgtF_internalName" Type="Str">DiffDriePoseEst_Example</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2022 J. A. Simpson</Property>
-				<Property Name="TgtF_productName" Type="Str">DiffDriveOdom_Example</Property>
+				<Property Name="TgtF_productName" Type="Str">DiffDriePoseEst_Example</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{790DE5C7-35CF-4B31-9DB1-96E09829F456}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">DiffDriveOdom_Example.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">DiffDriePoseEst_Example.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
