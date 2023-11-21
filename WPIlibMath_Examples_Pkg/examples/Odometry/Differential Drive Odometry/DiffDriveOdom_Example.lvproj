@@ -117,17 +117,6 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="WPI_UtilitiesFRC Build Error.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesFRC Build Error.vi"/>
 			</Item>
-			<Item Name="DiffDrivePoseEst2_DffDrive_Exec.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/DiffDrivePoseEst2_DffDrive_Exec.vi"/>
-			<Item Name="DiffDrivePoseEst2_ExecRelativeTraj.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/DiffDrivePoseEst2_ExecRelativeTraj.vi"/>
-			<Item Name="DiffDrivePoseEst2_RelativeTrajectory_EXECUTE.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Execution_Diff_Drive/DiffDrivePoseEst2_RelativeTrajectory_EXECUTE.vi"/>
-			<Item Name="DiffDrivePoseEst2_RelativeTrajectory_Get_DiagGlobals.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Execution_Diff_Drive/DiffDrivePoseEst2_RelativeTrajectory_Get_DiagGlobals.vi"/>
-			<Item Name="DiffDrivePoseEst2_RelativeTrajectory_Globals.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Execution_Diff_Drive/DiffDrivePoseEst2_RelativeTrajectory_Globals.vi"/>
-			<Item Name="DiffDrivePoseEst2_RelativeTrajectory_ProcessAuto.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Execution_Diff_Drive/DiffDrivePoseEst2_RelativeTrajectory_ProcessAuto.vi"/>
-			<Item Name="DiffDrivePoseEst2_RelativeTrajectory_SetAuto.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Execution_Diff_Drive/DiffDrivePoseEst2_RelativeTrajectory_SetAuto.vi"/>
-			<Item Name="DiffDrivePoseEst2_RelativeTrajectory_TRAJECTORY_FGV.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Execution_Diff_Drive/DiffDrivePoseEst2_RelativeTrajectory_TRAJECTORY_FGV.vi"/>
-			<Item Name="DiffDrivePoseEst2_RelativeTrajectory_UpdateDiagGlobals.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Execution_Diff_Drive/DiffDrivePoseEst2_RelativeTrajectory_UpdateDiagGlobals.vi"/>
-			<Item Name="DiffDrivePoseEst2_SimDiffDrive_Exec.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/DiffDrivePoseEst2_SimDiffDrive_Exec.vi"/>
-			<Item Name="DiffDrivePoseEst2_TrajectoryCreation_Cubic.vi" Type="VI" URL="../../Differential Drive Pose Estimator/SubVI/Trajectory_Creation_Cubic/DiffDrivePoseEst2_TrajectoryCreation_Cubic.vi"/>
 			<Item Name="FRC_NetworkTablesLV.dll" Type="Document" URL="FRC_NetworkTablesLV.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
