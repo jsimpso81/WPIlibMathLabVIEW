@@ -881,6 +881,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="MecaKinematics_ToWheelSpeedsZeroCenter.vi" Type="VI" URL="../MecaKinematics_ToWheelSpeedsZeroCenter.vi"/>
 			</Item>
 			<Item Name="MecaOdometry" Type="Folder">
+				<Item Name="MecaOdometry_Execute.vi" Type="VI" URL="../VI/MecaOdometry_Execute.vi"/>
 				<Item Name="MecaOdometry_GetKinematics.vi" Type="VI" URL="../MecaOdometry_GetKinematics.vi"/>
 				<Item Name="MecaOdometry_GetPose.vi" Type="VI" URL="../MecaOdometry_GetPose.vi"/>
 				<Item Name="MecaOdometry_New.vi" Type="VI" URL="../MecaOdometry_New.vi"/>
@@ -923,6 +924,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="SwerveModuleState_Optimize.vi" Type="VI" URL="../SwerveModuleState_Optimize.vi"/>
 			</Item>
 			<Item Name="SwerveOdometry" Type="Folder">
+				<Item Name="SwerveOdometry_Execute.vi" Type="VI" URL="../VI/SwerveOdometry_Execute.vi"/>
 				<Item Name="SwerveOdometry_GetPosition.vi" Type="VI" URL="../SwerveOdometry_GetPosition.vi"/>
 				<Item Name="SwerveOdometry_New.vi" Type="VI" URL="../SwerveOdometry_New.vi"/>
 				<Item Name="SwerveOdometry_NewZeroCenter.vi" Type="VI" URL="../SwerveOdometry_NewZeroCenter.vi"/>
@@ -1600,7 +1602,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
 			</Item>
-			<Item Name="WaitAdjust.vi" Type="VI" URL="../VI/WaitAdjust.vi"/>
+			<Item Name="Time_ElapsedTime.vi" Type="VI" URL="../VI/Time_ElapsedTime.vi"/>
+			<Item Name="Time_WaitAdjust.vi" Type="VI" URL="../VI/Time_WaitAdjust.vi"/>
 		</Item>
 		<Item Name="TimeInterpolatableBuffer" Type="Folder">
 			<Item Name="TimeInterpolatableBoolean" Type="Folder">
