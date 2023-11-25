@@ -228,6 +228,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 		<Item Name="FUNCTION_GENERATOR.ctl" Type="VI" URL="../TypeDef/FUNCTION_GENERATOR.ctl"/>
 		<Item Name="FUNCTION_GENERATOR_MATRIX.ctl" Type="VI" URL="../TypeDef/FUNCTION_GENERATOR_MATRIX.ctl"/>
 		<Item Name="HOLONOMIC_DRV_CTRL.ctl" Type="VI" URL="../TypeDef/HOLONOMIC_DRV_CTRL.ctl"/>
+		<Item Name="HOLONOMIC_PACK_TUNING.ctl" Type="VI" URL="../TypeDef/HOLONOMIC_PACK_TUNING.ctl"/>
 		<Item Name="IMPLICIT_MODEL_FOLLOWER.ctl" Type="VI" URL="../TypeDef/IMPLICIT_MODEL_FOLLOWER.ctl"/>
 		<Item Name="KALMAN_FILTER.ctl" Type="VI" URL="../TypeDef/KALMAN_FILTER.ctl"/>
 		<Item Name="KALMAN_FILTER_LATENCY_COMP.ctl" Type="VI" URL="../TypeDef/KALMAN_FILTER_LATENCY_COMP.ctl"/>
@@ -481,6 +482,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="HolDrvCtrl_Execute.vi" Type="VI" URL="../HolDrvCtrl_Execute.vi"/>
 				<Item Name="HolDrvCtrl_Execute_Trajectory.vi" Type="VI" URL="../HolDrvCtrl_Execute_Trajectory.vi"/>
 				<Item Name="HolDrvCtrl_New.vi" Type="VI" URL="../HolDrvCtrl_New.vi"/>
+				<Item Name="HolDrvCtrl_PackControllers.vi" Type="VI" URL="../VI/HolDrvCtrl_PackControllers.vi"/>
 				<Item Name="HolDrvCtrl_PackExecuteSP.vi" Type="VI" URL="../HolDrvCtrl_PackExecuteSP.vi"/>
 				<Item Name="HolDrvCtrl_PackPID.vi" Type="VI" URL="../HolDrvCtrl_PackPID.vi"/>
 				<Item Name="HolDrvCtrl_PackProfPID.vi" Type="VI" URL="../HolDrvCtrl_PackProfPID.vi"/>
