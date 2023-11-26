@@ -43,30 +43,30 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Support Code" Type="Folder">
-			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
+			<Item Name="SDO_Elapsed Times.vi" Type="VI" URL="../SubVI/SDO_Elapsed Times.vi"/>
 		</Item>
 		<Item Name="Swerve_Drive_System" Type="Folder" URL="../Swerve_Drive_System">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Sweve_Trajectory_Following" Type="Folder" URL="../Sweve_Trajectory_Following">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
 		<Item Name="Team Code" Type="Folder">
-			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
-			<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
-			<Item Name="Disabled.vi" Type="VI" URL="../Disabled.vi"/>
-			<Item Name="Finish.vi" Type="VI" URL="../Finish.vi"/>
-			<Item Name="Periodic Tasks.vi" Type="VI" URL="../Periodic Tasks.vi"/>
-			<Item Name="Robot Global Data.vi" Type="VI" URL="../Robot Global Data.vi"/>
-			<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
-			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
-			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
+			<Item Name="Autonomous Independent.vi" Type="VI" URL="../SubVI/Autonomous Independent.vi"/>
+			<Item Name="Begin.vi" Type="VI" URL="../SubVI/Begin.vi"/>
+			<Item Name="Disabled.vi" Type="VI" URL="../SubVI/Disabled.vi"/>
+			<Item Name="Finish.vi" Type="VI" URL="../SubVI/Finish.vi"/>
+			<Item Name="Periodic Tasks.vi" Type="VI" URL="../SubVI/Periodic Tasks.vi"/>
+			<Item Name="Robot Global Data.vi" Type="VI" URL="../SubVI/Robot Global Data.vi"/>
+			<Item Name="Teleop.vi" Type="VI" URL="../SubVI/Teleop.vi"/>
+			<Item Name="Test.vi" Type="VI" URL="../SubVI/Test.vi"/>
+			<Item Name="Vision Processing.vi" Type="VI" URL="../SubVI/Vision Processing.vi"/>
 		</Item>
 		<Item Name="Teleop_System" Type="Folder" URL="../Teleop_System">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Trajectory Following" Type="Folder" URL="../Trajectory Following">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="readme.md" Type="Document" URL="../readme.md"/>
-		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
+		<Item Name="Robot Main.vi" Type="VI" URL="../VI/Robot Main.vi"/>
 		<Item Name="Robot Simulation Readme.html" Type="Document" URL="../Robot Simulation Readme.html"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
@@ -1063,7 +1063,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="provcom_GenerateGUID.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_GenerateGUID.vi"/>
-			<Item Name="Trajectory_SampleReverseTEST_CONSTORIENT.vi" Type="VI" URL="../TestPrograms/Trajectory_SampleReverseTEST_CONSTORIENT.vi"/>
 			<Item Name="wsock32.dll" Type="Document" URL="wsock32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -1197,22 +1196,20 @@ DirectoryIndex index.htm
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Team Code" Type="Folder">
-			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
-			<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
-			<Item Name="Disabled.vi" Type="VI" URL="../Disabled.vi"/>
-			<Item Name="Finish.vi" Type="VI" URL="../Finish.vi"/>
-			<Item Name="Periodic Tasks.vi" Type="VI" URL="../Periodic Tasks.vi"/>
-			<Item Name="Robot Global Data.vi" Type="VI" URL="../Robot Global Data.vi"/>
-			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
-			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
-			<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
+			<Item Name="Autonomous Independent.vi" Type="VI" URL="../SubVI/Autonomous Independent.vi"/>
+			<Item Name="Begin.vi" Type="VI" URL="../SubVI/Begin.vi"/>
+			<Item Name="Disabled.vi" Type="VI" URL="../SubVI/Disabled.vi"/>
+			<Item Name="Finish.vi" Type="VI" URL="../SubVI/Finish.vi"/>
+			<Item Name="Periodic Tasks.vi" Type="VI" URL="../SubVI/Periodic Tasks.vi"/>
+			<Item Name="Robot Global Data.vi" Type="VI" URL="../SubVI/Robot Global Data.vi"/>
+			<Item Name="Test.vi" Type="VI" URL="../SubVI/Test.vi"/>
+			<Item Name="Vision Processing.vi" Type="VI" URL="../SubVI/Vision Processing.vi"/>
+			<Item Name="Teleop.vi" Type="VI" URL="../SubVI/Teleop.vi"/>
 		</Item>
 		<Item Name="Support Code" Type="Folder">
-			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
+			<Item Name="SDO_Elapsed Times.vi" Type="VI" URL="../SubVI/SDO_Elapsed Times.vi"/>
 		</Item>
-		<Item Name="TestPrograms" Type="Folder" URL="../TestPrograms">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
+		<Item Name="TestPrograms" Type="Folder"/>
 		<Item Name="Deploy" Type="Folder" URL="../Deploy">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -1228,16 +1225,16 @@ DirectoryIndex index.htm
 		<Item Name="Swerve_Drive_System" Type="Folder" URL="../Swerve_Drive_System">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Sweve_Trajectory_Following" Type="Folder" URL="../Sweve_Trajectory_Following">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
 		<Item Name="Teleop_System" Type="Folder" URL="../Teleop_System">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Simulation" Type="Folder" URL="../Simulation">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
+		<Item Name="Trajectory Following" Type="Folder" URL="../Trajectory Following">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="Robot Main.vi" Type="VI" URL="../VI/Robot Main.vi"/>
 		<Item Name="readme.md" Type="Document" URL="../readme.md"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -1909,8 +1906,6 @@ DirectoryIndex index.htm
 			<Item Name="ode.dll" Type="Document" URL="ode.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="_OBSOLETE_SDO_TRAJECTORY_ODOM_REL_FGV.vi" Type="VI" URL="../Sweve_Trajectory_Following/_OBSOLETE_SDO_TRAJECTORY_ODOM_REL_FGV.vi"/>
-			<Item Name="_OBSOLETE_SDO_TRAJECTORY_READFILE_BEGIN.vi" Type="VI" URL="../Sweve_Trajectory_Following/_OBSOLETE_SDO_TRAJECTORY_READFILE_BEGIN.vi"/>
 			<Item Name="ntcoreffi.dll" Type="Document" URL="ntcoreffi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
