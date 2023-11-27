@@ -1068,7 +1068,7 @@
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">443</Property>
+				<Property Name="Bld_version.build" Type="Int">444</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.patch" Type="Int">12</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -1106,7 +1106,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv19_3.0.8-271_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv19_3.0.8-272_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1114,9 +1114,9 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">272</Property>
+				<Property Name="PKG_buildNumber" Type="Int">273</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathexampleslv19</Property>
-				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">7</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
@@ -1145,10 +1145,10 @@
 				<Property Name="PKG_dependencies[2].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[2].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[2].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[2].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
-				<Property Name="PKG_dependencies[2].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[2].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[2].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[2].NIPKG.DisplayName" Type="Str">NI-Serial Runtime</Property>
+				<Property Name="PKG_dependencies[2].Package.Name" Type="Str">ni-serial-runtime</Property>
+				<Property Name="PKG_dependencies[2].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[2].Package.Synopsis" Type="Str">NI-Serial support for National Instruments RS-232 and RS-485 Hardware.</Property>
 				<Property Name="PKG_dependencies[2].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[2].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_dependencies[3].Enhanced" Type="Bool">false</Property>
@@ -1156,12 +1156,45 @@
 				<Property Name="PKG_dependencies[3].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[3].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[3].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[3].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
-				<Property Name="PKG_dependencies[3].Package.Name" Type="Str">ni-compactrio-runtime</Property>
+				<Property Name="PKG_dependencies[3].NIPKG.DisplayName" Type="Str">NI-VISA Runtime</Property>
+				<Property Name="PKG_dependencies[3].Package.Name" Type="Str">ni-visa-runtime</Property>
 				<Property Name="PKG_dependencies[3].Package.Section" Type="Str">Drivers</Property>
-				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
+				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str">Provides an API for controlling USB, TCPIP, GPIB, Serial, PXI, and other types of instruments.</Property>
 				<Property Name="PKG_dependencies[3].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[3].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[4].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[4].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[4].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[4].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[4].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[4].NIPKG.DisplayName" Type="Str">NI-IMAQdx Runtime</Property>
+				<Property Name="PKG_dependencies[4].Package.Name" Type="Str">ni-imaqdx-runtime</Property>
+				<Property Name="PKG_dependencies[4].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[4].Package.Synopsis" Type="Str">Runtime components required to deploy image acquisition applications.</Property>
+				<Property Name="PKG_dependencies[4].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[4].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[5].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[5].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[5].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[5].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[5].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[5].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
+				<Property Name="PKG_dependencies[5].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
+				<Property Name="PKG_dependencies[5].Package.Section" Type="Str">Programming Environments</Property>
+				<Property Name="PKG_dependencies[5].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[5].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[5].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[6].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[6].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[6].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[6].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[6].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[6].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
+				<Property Name="PKG_dependencies[6].Package.Name" Type="Str">ni-compactrio-runtime</Property>
+				<Property Name="PKG_dependencies[6].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[6].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
+				<Property Name="PKG_dependencies[6].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[6].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC robotics control and trajectory library examples  These are placed where they can be found by LabVIEW find examples</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">7</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
@@ -1338,7 +1371,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv20_3.0.8-271_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv20_3.0.8-272_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1346,9 +1379,9 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">272</Property>
+				<Property Name="PKG_buildNumber" Type="Int">273</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathexampleslv20</Property>
-				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">7</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
@@ -1377,10 +1410,10 @@
 				<Property Name="PKG_dependencies[2].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[2].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[2].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[2].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
-				<Property Name="PKG_dependencies[2].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[2].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[2].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[2].NIPKG.DisplayName" Type="Str">NI-Serial Runtime</Property>
+				<Property Name="PKG_dependencies[2].Package.Name" Type="Str">ni-serial-runtime</Property>
+				<Property Name="PKG_dependencies[2].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[2].Package.Synopsis" Type="Str">NI-Serial support for National Instruments RS-232 and RS-485 Hardware.</Property>
 				<Property Name="PKG_dependencies[2].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[2].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_dependencies[3].Enhanced" Type="Bool">false</Property>
@@ -1388,12 +1421,45 @@
 				<Property Name="PKG_dependencies[3].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[3].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[3].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[3].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
-				<Property Name="PKG_dependencies[3].Package.Name" Type="Str">ni-compactrio-runtime</Property>
+				<Property Name="PKG_dependencies[3].NIPKG.DisplayName" Type="Str">NI-VISA Runtime</Property>
+				<Property Name="PKG_dependencies[3].Package.Name" Type="Str">ni-visa-runtime</Property>
 				<Property Name="PKG_dependencies[3].Package.Section" Type="Str">Drivers</Property>
-				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
+				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str">Provides an API for controlling USB, TCPIP, GPIB, Serial, PXI, and other types of instruments.</Property>
 				<Property Name="PKG_dependencies[3].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[3].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[4].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[4].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[4].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[4].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[4].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[4].NIPKG.DisplayName" Type="Str">NI-IMAQdx Runtime</Property>
+				<Property Name="PKG_dependencies[4].Package.Name" Type="Str">ni-imaqdx-runtime</Property>
+				<Property Name="PKG_dependencies[4].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[4].Package.Synopsis" Type="Str">Runtime components required to deploy image acquisition applications.</Property>
+				<Property Name="PKG_dependencies[4].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[4].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[5].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[5].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[5].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[5].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[5].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[5].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
+				<Property Name="PKG_dependencies[5].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
+				<Property Name="PKG_dependencies[5].Package.Section" Type="Str">Programming Environments</Property>
+				<Property Name="PKG_dependencies[5].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[5].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[5].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[6].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[6].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[6].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[6].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[6].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[6].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
+				<Property Name="PKG_dependencies[6].Package.Name" Type="Str">ni-compactrio-runtime</Property>
+				<Property Name="PKG_dependencies[6].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[6].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
+				<Property Name="PKG_dependencies[6].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[6].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC robotics control and trajectory library examples  These are placed where they can be found by LabVIEW find examples</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">7</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
@@ -1570,7 +1636,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv23_3.0.8-271_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathexampleslv23_3.0.8-272_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1578,9 +1644,9 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">272</Property>
+				<Property Name="PKG_buildNumber" Type="Int">273</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathexampleslv23</Property>
-				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">7</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
@@ -1609,10 +1675,10 @@
 				<Property Name="PKG_dependencies[2].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[2].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[2].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[2].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
-				<Property Name="PKG_dependencies[2].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[2].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[2].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[2].NIPKG.DisplayName" Type="Str">NI-Serial Runtime</Property>
+				<Property Name="PKG_dependencies[2].Package.Name" Type="Str">ni-serial-runtime</Property>
+				<Property Name="PKG_dependencies[2].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[2].Package.Synopsis" Type="Str">NI-Serial support for National Instruments RS-232 and RS-485 Hardware.</Property>
 				<Property Name="PKG_dependencies[2].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[2].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_dependencies[3].Enhanced" Type="Bool">false</Property>
@@ -1620,12 +1686,45 @@
 				<Property Name="PKG_dependencies[3].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[3].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[3].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[3].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
-				<Property Name="PKG_dependencies[3].Package.Name" Type="Str">ni-compactrio-runtime</Property>
+				<Property Name="PKG_dependencies[3].NIPKG.DisplayName" Type="Str">NI-VISA Runtime</Property>
+				<Property Name="PKG_dependencies[3].Package.Name" Type="Str">ni-visa-runtime</Property>
 				<Property Name="PKG_dependencies[3].Package.Section" Type="Str">Drivers</Property>
-				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
+				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str">Provides an API for controlling USB, TCPIP, GPIB, Serial, PXI, and other types of instruments.</Property>
 				<Property Name="PKG_dependencies[3].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[3].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[4].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[4].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[4].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[4].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[4].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[4].NIPKG.DisplayName" Type="Str">NI-IMAQdx Runtime</Property>
+				<Property Name="PKG_dependencies[4].Package.Name" Type="Str">ni-imaqdx-runtime</Property>
+				<Property Name="PKG_dependencies[4].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[4].Package.Synopsis" Type="Str">Runtime components required to deploy image acquisition applications.</Property>
+				<Property Name="PKG_dependencies[4].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[4].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[5].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[5].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[5].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[5].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[5].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[5].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
+				<Property Name="PKG_dependencies[5].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
+				<Property Name="PKG_dependencies[5].Package.Section" Type="Str">Programming Environments</Property>
+				<Property Name="PKG_dependencies[5].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[5].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[5].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[6].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[6].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[6].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[6].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[6].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[6].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
+				<Property Name="PKG_dependencies[6].Package.Name" Type="Str">ni-compactrio-runtime</Property>
+				<Property Name="PKG_dependencies[6].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[6].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
+				<Property Name="PKG_dependencies[6].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[6].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC robotics control and trajectory library examples  These are placed where they can be found by LabVIEW find examples</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">7</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{093A5600-42FA-47C0-B36D-96CF7F3CCFF1}</Property>
