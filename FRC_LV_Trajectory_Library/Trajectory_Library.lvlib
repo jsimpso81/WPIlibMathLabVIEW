@@ -904,6 +904,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			<Item Name="SwerveKinematics" Type="Folder">
 				<Item Name="SwerveKinematics_New4.vi" Type="VI" URL="../SwerveKinematics_New4.vi"/>
 				<Item Name="SwerveKinematics_NewX.vi" Type="VI" URL="../SwerveKinematics_NewX.vi"/>
+				<Item Name="SwerveKinematics_NormalizeChassisSpeeds.vi" Type="VI" URL="../VI/SwerveKinematics_NormalizeChassisSpeeds.vi"/>
 				<Item Name="SwerveKinematics_NormalizeWheelSpeedsX.vi" Type="VI" URL="../SwerveKinematics_NormalizeWheelSpeedsX.vi"/>
 				<Item Name="SwerveKinematics_ToChassisSpeeds4.vi" Type="VI" URL="../SwerveKinematics_ToChassisSpeeds4.vi"/>
 				<Item Name="SwerveKinematics_ToChassisSpeedsX.vi" Type="VI" URL="../SwerveKinematics_ToChassisSpeedsX.vi"/>
