@@ -1242,6 +1242,9 @@ DirectoryIndex index.htm
 		<Item Name="Trajectory Following" Type="Folder" URL="../Trajectory Following">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Vision_Interface" Type="Folder" URL="../Vision_Interface">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../VI/Robot Main.vi"/>
 		<Item Name="readme.md" Type="Document" URL="../readme.md"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -1925,9 +1928,6 @@ DirectoryIndex index.htm
 			<Item Name="FRC_NetworkTablesLV.dll" Type="Document" URL="FRC_NetworkTablesLV.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="SDO_Vision_Get_Pose.vi" Type="VI" URL="../Vision_Interface/SDO_Vision_Get_Pose.vi"/>
-			<Item Name="SDO_Vision_Globals.vi" Type="VI" URL="../Vision_Interface/SDO_Vision_Globals.vi"/>
-			<Item Name="SDO_Vision_Set_Pose.vi" Type="VI" URL="../Vision_Interface/SDO_Vision_Set_Pose.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
