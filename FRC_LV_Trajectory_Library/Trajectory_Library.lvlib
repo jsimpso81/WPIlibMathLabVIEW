@@ -12,6 +12,8 @@ This implements the math section (and some other routines) contained in FRC WPIL
 
 </Property>
 	<Item Name="Enum" Type="Folder">
+		<Item Name="AprilTagFieldLayoutOrignPosition_ENUM.ctl" Type="VI" URL="../Enum/AprilTagFieldLayoutOrignPosition_ENUM.ctl"/>
+		<Item Name="AprilTagFields_ENUM.ctl" Type="VI" URL="../Enum/AprilTagFields_ENUM.ctl"/>
 		<Item Name="AutoHelperSequence_Step_Enum.ctl" Type="VI" URL="../Enum/AutoHelperSequence_Step_Enum.ctl"/>
 		<Item Name="DCMOTOR_TYPES_ENUM.ctl" Type="VI" URL="../Enum/DCMOTOR_TYPES_ENUM.ctl"/>
 		<Item Name="DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl" Type="VI" URL="../Enum/DIFF_DRIVE_KitBot_WheelSize_ENUM.ctl"/>
@@ -190,6 +192,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 	<Item Name="TypDef" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">0</Property>
 		<Item Name="APRIL_TAG_POSE_ESTIMATOR.ctl" Type="VI" URL="../TypeDef/APRIL_TAG_POSE_ESTIMATOR.ctl"/>
+		<Item Name="AprilTagFieldLayout.ctl" Type="VI" URL="../TypeDef/AprilTagFieldLayout.ctl"/>
 		<Item Name="ARM_FF.ctl" Type="VI" URL="../TypeDef/ARM_FF.ctl"/>
 		<Item Name="BANG_BANG.ctl" Type="VI" URL="../TypeDef/BANG_BANG.ctl"/>
 		<Item Name="BiCon_Matrix_FUNC_TYPE.ctl" Type="VI" URL="../TypeDef/BiCon_Matrix_FUNC_TYPE.ctl"/>
@@ -1876,7 +1879,6 @@ This implements the math section (and some other routines) contained in FRC WPIL
 					<Item Name="AprilTag_New.vi" Type="VI" URL="../VI/AprilTag_New.vi"/>
 				</Item>
 				<Item Name="AprilTagFieldLayout" Type="Folder">
-					<Item Name="AprilTagFieldLayout.ctl" Type="VI" URL="../TypeDef/AprilTagFieldLayout.ctl"/>
 					<Item Name="AprilTagFieldLayout_GetField.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetField.vi"/>
 					<Item Name="AprilTagFieldLayout_GetOriginPosition.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetOriginPosition.vi"/>
 					<Item Name="AprilTagFieldLayout_GetTagPose.vi" Type="VI" URL="../VI/AprilTagFieldLayout_GetTagPose.vi"/>
@@ -1884,11 +1886,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 					<Item Name="AprilTagFieldLayout_New.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New.vi"/>
 					<Item Name="AprilTagFieldLayout_New2022.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New2022.vi"/>
 					<Item Name="AprilTagFieldLayout_New2023.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New2023.vi"/>
+					<Item Name="AprilTagFieldLayout_New2024.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New2024.vi"/>
 					<Item Name="AprilTagFieldLayout_NewSelect.vi" Type="VI" URL="../VI/AprilTagFieldLayout_NewSelect.vi"/>
 					<Item Name="AprilTagFieldLayout_SetOrigin.vi" Type="VI" URL="../VI/AprilTagFieldLayout_SetOrigin.vi"/>
 					<Item Name="AprilTagFieldLayout_SetOrigin_Position.vi" Type="VI" URL="../VI/AprilTagFieldLayout_SetOrigin_Position.vi"/>
-					<Item Name="AprilTagFieldLayoutOrignPosition_ENUM.ctl" Type="VI" URL="../Enum/AprilTagFieldLayoutOrignPosition_ENUM.ctl"/>
-					<Item Name="AprilTagFields_ENUM.ctl" Type="VI" URL="../Enum/AprilTagFields_ENUM.ctl"/>
 				</Item>
 				<Item Name="AprilTagPoseEstimate" Type="Folder">
 					<Item Name="AprilTagPoseEstimate.ctl" Type="VI" URL="../TypeDef/AprilTagPoseEstimate.ctl"/>
