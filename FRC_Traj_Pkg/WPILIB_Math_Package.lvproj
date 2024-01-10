@@ -882,12 +882,11 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../builds/vi.lib</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{28B4C50E-6258-47A4-9812-E82EA2A09295}</Property>
-				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
+				<Property Name="Bld_removeVIObj" Type="Int">1</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">504</Property>
-				<Property Name="Bld_version.major" Type="Int">3</Property>
-				<Property Name="Bld_version.patch" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">506</Property>
+				<Property Name="Bld_version.major" Type="Int">2024</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/vi.lib</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -916,7 +915,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Destination[6].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[6].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">7</Property>
-				<Property Name="Source[0].itemID" Type="Str">{C8BCDB7A-43E6-44D4-A51A-27BC6C9F8421}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2B81FC29-B51C-4DD9-B44D-DDDF48315B25}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">3</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Pathfinder.lvlib</Property>
@@ -1023,7 +1022,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8D079E02-BFA0-46FB-8CDC-1B67AE60BD8E}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/Book_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">71</Property>
+				<Property Name="Bld_version.build" Type="Int">72</Property>
 				<Property Name="Bld_version.major" Type="Int">3</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -1227,7 +1226,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistributionMisc_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">476</Property>
+				<Property Name="Bld_version.build" Type="Int">477</Property>
 				<Property Name="Bld_version.major" Type="Int">3</Property>
 				<Property Name="Bld_version.patch" Type="Int">5</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -1291,7 +1290,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistributionMisc_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">468</Property>
+				<Property Name="Bld_version.build" Type="Int">469</Property>
 				<Property Name="Bld_version.major" Type="Int">3</Property>
 				<Property Name="Bld_version.patch" Type="Int">5</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -1354,7 +1353,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E685BE58-8AC4-40ED-B368-C46CA560D1D1}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/UtilExe_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">228</Property>
+				<Property Name="Bld_version.build" Type="Int">230</Property>
 				<Property Name="Bld_version.major" Type="Int">3</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -1386,7 +1385,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv19_3.0.8-335_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv19_2024.0.0-337_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1394,7 +1393,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">336</Property>
+				<Property Name="PKG_buildNumber" Type="Int">338</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathlv19</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -1610,7 +1609,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_sources[4].ID" Type="Ref">/My Computer/Build Specifications/Misc_Files</Property>
 				<Property Name="PKG_sources[4].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">LabVIEW FRC robotics control and trajectory library</Property>
-				<Property Name="PKG_version" Type="Str">3.0.8</Property>
+				<Property Name="PKG_version" Type="Str">2024.0.0</Property>
 			</Item>
 			<Item Name="wpilibmathlv20" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
@@ -1623,7 +1622,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv20_3.0.8-335_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv20_2024.0.0-337_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   hhttps://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1631,7 +1630,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">336</Property>
+				<Property Name="PKG_buildNumber" Type="Int">338</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathlv20</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -1847,7 +1846,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_sources[4].ID" Type="Ref">/My Computer/Build Specifications/Misc_Files</Property>
 				<Property Name="PKG_sources[4].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">LabVIEW FRC robotics control and trajectory library</Property>
-				<Property Name="PKG_version" Type="Str">3.0.8</Property>
+				<Property Name="PKG_version" Type="Str">2024.0.0</Property>
 			</Item>
 			<Item Name="wpilibmathlv23" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
@@ -1860,7 +1859,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv23_3.0.8-335_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv23_2024.0.0-337_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1868,7 +1867,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">336</Property>
+				<Property Name="PKG_buildNumber" Type="Int">338</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathlv23</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -2084,7 +2083,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_sources[4].ID" Type="Ref">/My Computer/Build Specifications/Misc_Files</Property>
 				<Property Name="PKG_sources[4].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">LabVIEW FRC robotics control and trajectory library</Property>
-				<Property Name="PKG_version" Type="Str">3.0.8</Property>
+				<Property Name="PKG_version" Type="Str">2024.0.0</Property>
 			</Item>
 		</Item>
 	</Item>
