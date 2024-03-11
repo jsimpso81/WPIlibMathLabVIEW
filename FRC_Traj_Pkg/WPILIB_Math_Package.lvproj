@@ -885,7 +885,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">1</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">506</Property>
+				<Property Name="Bld_version.build" Type="Int">507</Property>
 				<Property Name="Bld_version.major" Type="Int">2024</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/vi.lib</Property>
@@ -915,7 +915,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Destination[6].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[6].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">7</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2B81FC29-B51C-4DD9-B44D-DDDF48315B25}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B631B003-AFB9-4DE7-B1E6-3F693F7BC432}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">3</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Pathfinder.lvlib</Property>
@@ -1020,9 +1020,10 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../builds/DocFiles</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8D079E02-BFA0-46FB-8CDC-1B67AE60BD8E}</Property>
+				<Property Name="Bld_removeVIObj" Type="Int">1</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/Book_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">72</Property>
+				<Property Name="Bld_version.build" Type="Int">73</Property>
 				<Property Name="Bld_version.major" Type="Int">3</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -1033,7 +1034,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/DocFiles/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{EA54EE6A-883A-4E4A-A4A2-D0A94EE881B8}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B631B003-AFB9-4DE7-B1E6-3F693F7BC432}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
@@ -1223,10 +1224,10 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../builds/vi.lib</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{3086DA13-3AD0-486C-B83D-14210E8F1C89}</Property>
-				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
+				<Property Name="Bld_removeVIObj" Type="Int">1</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistributionMisc_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">477</Property>
+				<Property Name="Bld_version.build" Type="Int">478</Property>
 				<Property Name="Bld_version.major" Type="Int">3</Property>
 				<Property Name="Bld_version.patch" Type="Int">5</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -1241,7 +1242,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Destination[2].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{C8BCDB7A-43E6-44D4-A51A-27BC6C9F8421}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B631B003-AFB9-4DE7-B1E6-3F693F7BC432}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Private/pathfinder generate.vi</Property>
@@ -1287,10 +1288,10 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../builds/vi.lib</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{2F1D7823-45B6-4DE6-B7A1-DEE24AAF90D6}</Property>
-				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
+				<Property Name="Bld_removeVIObj" Type="Int">1</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistributionMisc_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">469</Property>
+				<Property Name="Bld_version.build" Type="Int">470</Property>
 				<Property Name="Bld_version.major" Type="Int">3</Property>
 				<Property Name="Bld_version.patch" Type="Int">5</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -1305,7 +1306,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Destination[2].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{C8BCDB7A-43E6-44D4-A51A-27BC6C9F8421}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B631B003-AFB9-4DE7-B1E6-3F693F7BC432}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Pathfinder.lvlib/Private/pathfinder generate.vi</Property>
@@ -1353,7 +1354,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E685BE58-8AC4-40ED-B368-C46CA560D1D1}</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/UtilExe_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">230</Property>
+				<Property Name="Bld_version.build" Type="Int">231</Property>
 				<Property Name="Bld_version.major" Type="Int">3</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -1364,7 +1365,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{C8E03C58-E0D6-49BC-89C4-5D3DF5B58C63}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B631B003-AFB9-4DE7-B1E6-3F693F7BC432}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
@@ -1385,7 +1386,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv19_2024.0.0-337_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv19_2024.0.0-338_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1393,7 +1394,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">338</Property>
+				<Property Name="PKG_buildNumber" Type="Int">339</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathlv19</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -1622,7 +1623,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv20_2024.0.0-337_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv20_2024.0.0-338_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   hhttps://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1630,7 +1631,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">338</Property>
+				<Property Name="PKG_buildNumber" Type="Int">339</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathlv20</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -1859,7 +1860,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv23_2024.0.0-337_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv23_2024.0.0-338_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1867,7 +1868,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">338</Property>
+				<Property Name="PKG_buildNumber" Type="Int">339</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathlv23</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>

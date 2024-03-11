@@ -534,6 +534,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="PIDController_SetFFGain_OBSOLETE_DELTE.vi" Type="VI" URL="../PIDController_SetFFGain_OBSOLETE_DELTE.vi"/>
 				<Item Name="PIDController_SetI.vi" Type="VI" URL="../PIDController_SetI.vi"/>
 				<Item Name="PIDController_SetIntegratorRange.vi" Type="VI" URL="../PIDController_SetIntegratorRange.vi"/>
+				<Item Name="PIDController_SetIntegratorZone.vi" Type="VI" URL="../VI/PIDController_SetIntegratorZone.vi"/>
 				<Item Name="PIDController_SetOutputLimits.vi" Type="VI" URL="../PIDController_SetOutputLimits.vi"/>
 				<Item Name="PIDController_SetP.vi" Type="VI" URL="../PIDController_SetP.vi"/>
 				<Item Name="PIDController_SetPeriod.vi" Type="VI" URL="../PIDController_SetPeriod.vi"/>
