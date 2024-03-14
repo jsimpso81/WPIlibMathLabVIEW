@@ -502,7 +502,7 @@ The data cluster contains:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-HOLONOMIC_DRV_CTRL" >TypeDef-HOLONOMIC_DRV_CTRL</h3>
 <p><IMG SRC="HOLONOMIC_DRV_CTRL_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This holonomic drive controller can be used to follow trajectories using a holonomic drive train (i.e. swerve or mecanum). Holonomic trajectory following is a much simpler problem to solve compared to skid-steer style drivetrains because it is possible to individually control forward, sideways, and angular velocity.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This holonomic drive controller can be used to follow trajectories using a holonomic drivetrain (i.e. swerve or mecanum). Holonomic trajectory following is a much simpler problem to solve compared to skid-steer style drivetrains because it is possible to individually control forward, sideways, and angular velocity.<BR>
 <BR>
 The holonomic drive controller takes in one PID controller for each direction, forward and sideways, and one profiled PID controller for the angular direction. Because the heading dynamics are decoupled from translations, users can specify a custom heading that the drivetrain should point toward. This heading reference is profiled for smoothness.<BR>
 <BR>
@@ -517,6 +517,25 @@ The cluster contains:<BR>
    - PROF_PID_ThetaCtrl  -- Profiled PID to control the rotation.<BR>
 </pre></p>
 <p><IMG SRC="HOLONOMIC_DRV_CTRL_frontpanel.png"  ALT="Trajectory_Library.lvlib:HOLONOMIC_DRV_CTRL.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-HOLONOMIC_PACK_TUNING" >TypeDef-HOLONOMIC_PACK_TUNING</h3>
+<p><IMG SRC="HOLONOMIC_PACK_TUNING_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This holonomic drive controller can be used to follow trajectories using a holonomic drivetrain (i.e. swerve or mecanum). Holonomic trajectory following is a much simpler problem to solve compared to skid-steer style drivetrains because it is possible to individually control forward, sideways, and angular velocity.<BR>
+<BR>
+The holonomic drive controller takes in one PID controller for each direction, forward and sideways, and one profiled PID controller for the angular direction. Because the heading dynamics are decoupled from translations, users can specify a custom heading that the drivetrain should point toward. This heading reference is profiled for smoothness.<BR>
+<BR>
+The cluster contains:<BR>
+   - Enabled  --  Boolean, indicating the controller is enabled.<BR>
+   - FirstRun  --  Boolean, indicating the controller is running its first loop<BR>
+   - PoseTolerance  --  Pose indicating allowable error for calcuating At Reference.<BR>
+   - RotationError  --  Rotation containing the current rotation error<BR>
+   - PoseError  --  Pose containing the current position error<BR>
+   - PID_xCtrl  -- PID to control the X position<BR>
+   - PID_yCtrl  --  PID to control the Y position<BR>
+   - PROF_PID_ThetaCtrl  -- Profiled PID to control the rotation.<BR>
+</pre></p>
+<p><IMG SRC="HOLONOMIC_PACK_TUNING_frontpanel.png"  ALT="Trajectory_Library.lvlib:HOLONOMIC_PACK_TUNING.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-IMPLICIT_MODEL_FOLLOWER" >TypeDef-IMPLICIT_MODEL_FOLLOWER</h3>
@@ -1202,6 +1221,8 @@ This cluster contains:<BR>
    - Max_Integral  --  Maximum allowed integral value (Default 1.0)<BR>
    - Min_Integral  --  Minimum allowed integral value (Default -1.0)<BR>
    - DerivativeFilter  --  Boolean indicating that derivative error value filtering is desired.<BR>
+   - IntegralZone -- Integration is allowed when absolute value of error is less than or <BR>
+                                  equal to this value.  (Default: 9.9E30 )<BR>
 </pre></p>
 <p><IMG SRC="PID_ADV_TUNING_frontpanel.png"  ALT="Trajectory_Library.lvlib:PID_ADV_TUNING.ctl" ALIGN=BOTTOM></p><br>
 <br>
@@ -1314,6 +1335,24 @@ This cluster contains:<BR>
    -Constraing  --  TrapezoidProfileConstraints containing the velocity and acceleration constraint.<BR>
 </pre></p>
 <p><IMG SRC="PROFILED_PID_CONTROLLER_frontpanel.png"  ALT="Trajectory_Library.lvlib:PROFILED_PID_CONTROLLER.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-PosCtrl_Tuning_Type" >TypeDef-PosCtrl_Tuning_Type</h3>
+<p><IMG SRC="PosCtrl_Tuning_Type_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Type definition for the configuration parameters used by the Position Control controller.<BR>
+<BR>
+This cluster contains:<BR>
+<BR>
+ - Slope  - double - Straight line slope for calculating the output when error outside the deadband<BR>
+ - Intercept - double - Straight line intercept for calculating the output.<BR>
+ - Error Deadband - double - Absolute value of the deadband.  When the error is within the deadband the output is set to zero.<BR>
+ - At Refereence Count - integer - Number of concecutive scan cycles the error must be within the deadband before the At Reference output is set TRUE.<BR>
+ - Max Allowed Position - double - Acts as a virtual limit switch.  When position is above this value the output isn't allowed to be greater than zero.<BR>
+  - Min Allowed Position - double - Acts as a virtual limit switch.  When position is below this value the output isn't allowed to be less than zero.<BR>
+ - Negate Output - boolean - When set the output is multiplied by negative one.<BR>
+<BR>
+</pre></p>
+<p><IMG SRC="PosCtrl_Tuning_Type_frontpanel.png"  ALT="Trajectory_Library.lvlib:PosCtrl_Tuning_Type.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-QUATERNION" >TypeDef-QUATERNION</h3>

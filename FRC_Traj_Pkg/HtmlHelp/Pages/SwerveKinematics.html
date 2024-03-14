@@ -53,6 +53,20 @@ Returns:<BR>
   - SwerveDriveKinematics - The initialized data structure</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveKinematics_NormalizeChassisSpeeds" >SwerveKinematics_NormalizeChassisSpeeds</h3>
+<p><IMG SRC="SwerveKinematics_NormalizeChassisSpeeds_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Normalizes the wheel speeds using some max attainable speed. Sometimes, after inverse kinematics, the requested speed from a/several modules may be above the max attainable speed for the driving motor on that module. To fix this issue, one can "normalize" all the wheel speeds to make sure that all requested module speeds are below the absolute threshold, while maintaining the ratio of speeds between modules.<BR>
+   <BR>
+Parameters:<BR>
+  - moduleStates  - Array of module states. <BR>
+  - attainableMaxSpeed - The absolute max speed that a module can reach. (Meters/Sec)<BR>
+   <BR>
+<BR>
+Returns:<BR>
+  - out Wheel States -- Array of normalzied Wheel States<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveKinematics_NormalizeWheelSpeedsX" >SwerveKinematics_NormalizeWheelSpeedsX</h3>
 <p><IMG SRC="SwerveKinematics_NormalizeWheelSpeedsX_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Normalizes the wheel speeds using some max attainable speed. Sometimes, after inverse kinematics, the requested speed from a/several modules may be above the max attainable speed for the driving motor on that module. To fix this issue, one can "normalize" all the wheel speeds to make sure that all requested module speeds are below the absolute threshold, while maintaining the ratio of speeds between modules.<BR>

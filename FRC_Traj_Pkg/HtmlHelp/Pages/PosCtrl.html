@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="PosCtrl" >PosCtrl</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PosCtrl_Config_Threshold" >PosCtrl_Config_Threshold</h3>
+<p><IMG SRC="PosCtrl_Config_Threshold_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This VI creates the configuraation parameters for the position control controller.  The straight line slope and intercept are calculated from the error threshold, error deadband, output threshold, and output deadband.    A separate maximum output input to the controller executable allows the rate of output reduction to be constant for different maximum output values.  <BR>
+<BR>
+The optional inputs Max Allowed Position and Min Allowed Position provide a virtual limit switch capability that forces the output to zero when it would cause movement in the direction of the exceeded limit.<BR>
+<BR>
+The optional "at refernce count" parameter specifies the number of consecutive execution cycles the absolute value of the error has to be within the deadband to set "At Reference" to true.  For a 20 millisecond loop time, the default value of 13 forces the error to be within the deadband for 260 milliseconds before At Reference is set to true.<BR>
+<BR>
+The optional Negate Output parameter causes the output value to be multiplied by negative one.<BR>
+<BR>
+Inputs:<BR>
+  - Max Allowed Position - double - (Optional,, default: 9E+30 ) <BR>
+  - Max Allowed Position - double - (Optional,, default: 9E+30 ) <BR>
+  - Error threshold- double - When the error reaches this point, the output will start reducing from Output Threshold to Output Deadband as the error decreases.  Thie value must be positive.<BR>
+  - Error Deadband - double - When the absolute value of the error is less than this, the output will be set to zero.  Thie value must be positive.<BR>
+ - Output Threshold - double - This is the output value used to calculate the slope of the slow down.  The actual Maximum Output is specified in the Execute VI.  The actual Maximum output can be  greater or smaller than this value.  Thie value must be positive.<BR>
+ - Output Deadband - double - This is the output value when error reaches the Error Deadband.    Thie value must be positive.<BR>
+ - At Reference count - integer - The number of consecutive cycles that the error has to be within the Error Deadband to set the At Reference output to TRUE.  (Optional, default: 13 )<BR>
+ - Negate Output - boolean - When TRUE causes the output to be negated.  (Optional, default: FALSE)<BR>
+<BR>
+Outputs:<BR>
+  - PosCtrl_Config_Params - cluster -  Data cluster containing the configuration parameters for the Position Control Execute VI.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PosCtrl_Execute" >PosCtrl_Execute</h3>
+<p><IMG SRC="PosCtrl_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This VI calculates closed loop position control output (CO), provided the Setpoint (SP), and Process Variable (PV).  It incorporates a position deadband.  It also incorporates output slowdown as the desired position is approached.</pre></p>
+<br>
+</BODY>
+</HTML>

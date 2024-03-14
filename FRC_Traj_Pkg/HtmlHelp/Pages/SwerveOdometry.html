@@ -8,6 +8,25 @@
 <BODY>
 <h2 id="SwerveOdometry" >SwerveOdometry</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="SwerveOdometry_Execute" >SwerveOdometry_Execute</h3>
+<p><IMG SRC="SwerveOdometry_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">SIngle call LabVIEW function to execute Swerve Drive Odometry to calculate a relative or absolute POSE.<BR>
+   <BR>
+Inputs:<BR>
+  - Swerve_Drive_Kinematics -- cluster -- swerve drive kinematics<BR>
+  - Swerve Module Positions  --  array of cluster  -- current module positions.<BR>
+  - Gyro Value  -- rotation2d  -- current gyro reading.<BR>
+  -  Init  -- boolean  -- Reset position to the value of Initial Pose.  Odometry is calculated from this position.<BR>
+  -  Initial Pose -- Pose2d  -- Pose to use when Init is TRUE.  (Optional.  Default: 0,0,0 )<BR>
+<BR>
+Returns<BR>
+  -  Current Pose --  Pose2d  -- Current position calculated by Swerve Odometry<BR>
+  - Error  -- boolean -- If TRUE an error has occured<BR>
+  -  Swerve_Drive_Odometry  -- cluster  -- current value of the swerve drive odometry cluster.  <BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="SwerveOdometry_GetPosition" >SwerveOdometry_GetPosition</h3>
 <p><IMG SRC="SwerveOdometry_GetPosition_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the position of the robot on the field.<BR>

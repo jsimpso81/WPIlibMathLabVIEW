@@ -368,6 +368,8 @@ Outputs:<BR>
 <p><IMG SRC="PIDController_Pack_AdvLimits_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convience function to pack individual input and output limit values into a cluster to pass to the Advanced PID controller<BR>
 <BR>
+Note --  These values are considered to be static after they are initially set.  Changes during run-time may be ignored.<BR>
+<BR>
 Inputs:<BR>
 <BR>
    - Max Input  --  The maximum allowed input  The units are the same as the Setpoint (SP) and Process variable (PV)  (When both Max and Min values are 0.0, input limit checking is disabled.)<BR>
@@ -391,6 +393,7 @@ Inputs:<BR>
    - Kp  --  Proportional gain constant.  The error is multiplied by this value.  (Default = 0.0)<BR>
    - Ki  --  Integral gain constant.  The integral of the error is multiplied by this value.  (Default = 0.0)<BR>
    - Kd  --  Derivative gain constant  The derivative of the error is multipled by this value.  (Default = 0.0)<BR>
+    - IntegralZone  -  double  -  Absolute value of error (in process variable units) to allow integration.  Specifying this value helps to prevent integral windup when moving from one setpoint to another.    (Default = 9.9E+30)<BR>
   -  Maximum Integral  --  The integral component of the output is not allowed to exceed this value  This limits the travel of the integral  This is in units of the output value.  ( Default = 9.9E+30 )<BR>
   -  Minimal Integral  --  The integral component of the output is not allowed to be less than this value.  This limits the travel of the integral.  This is in units of the output value.  ( Default = -9.9E+30 )<BR>
    - Filter Derivative  --  Taking a derivative of the error amplifies the noise in this signal  When this boolean is TRUE, the error value used to calculate the derivative portion of the output is passed through a 3 sample average filter.<BR>
@@ -411,7 +414,9 @@ Inputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PIDController_Pack_InputLimits" >PIDController_Pack_InputLimits</h3>
 <p><IMG SRC="PIDController_Pack_InputLimits_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convience function to pack individual input limit values into a cluster to pass to the PID controller<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convience function to pack individual input limit values into a cluster to pass to the PID controller.<BR>
+<BR>
+Note --  These values are considered to be static after they are initially set.  Changes during run-time may be ignored.<BR>
 <BR>
 Inputs:<BR>
 <BR>
@@ -435,6 +440,7 @@ Inputs:<BR>
    - Kd  --  Derivative gain constant  The derivative of the error is multipled by this value.  (Default = 0.0)<BR>
   -  Maximum Integral  --  The integral component of the output is not allowed to exceed this value  This limits the travel of the integral  This is in units of the output value.  ( Default = 9.9E+30 )<BR>
   -  Minimal Integral  --  The integral component of the output is not allowed to be less than this value.  This limits the travel of the integral  This is in units of the output value.  ( Default = -9.9E+30 )<BR>
+    - IntegralZone  -  double  -  Absolute value of error (in process variable units) to allow integration.  Specifying this value helps to prevent integral windup when moving from one setpoint to another.    (Default = 9.9E+30)<BR>
 <BR>
 Output:<BR>
    - PID Tuning  --  Cluster containing the tuning values.</pre></p>
@@ -482,22 +488,6 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-<h3 id="PIDController_SetFFGain_OBSOLETE_DELTE" >PIDController_SetFFGain_OBSOLETE_DELTE</h3>
-<p><IMG SRC="PIDController_SetFFGain_OBSOLETE_DELTE_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
-NOT DONE.     NOT NEEDED.  REMOVE.<BR>
-<BR>
-</pre></p>
-<br>
-<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-<h3 id="PIDController_SetFeedForward_OBSOLSTE_DELETE" >PIDController_SetFeedForward_OBSOLSTE_DELETE</h3>
-<p><IMG SRC="PIDController_SetFeedForward_OBSOLSTE_DELETE_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
-NOT DONE.     NOT NEEDED.  REMOVE.<BR>
-<BR>
-</pre></p>
-<br>
-<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PIDController_SetI" >PIDController_SetI</h3>
 <p><IMG SRC="PIDController_SetI_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
@@ -523,6 +513,23 @@ Inputs:<BR>
   -  PID_Controller  --  PID_Controller data cluster<BR>
   -  minimumIntegral  --  The minimum value of the integrator.<BR>
   -  maximumIntegral  --  The maximum value of the integrator.<BR>
+<BR>
+Outputs:<BR>
+  -  PID_Controller  --  Updated PID_Controller data cluster<BR>
+ <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PIDController_SetIntegratorZone" >PIDController_SetIntegratorZone</h3>
+<p><IMG SRC="PIDController_SetIntegratorZone_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"><BR>
+Sets the integrator zone.<BR>
+ <BR>
+Integration is only allowed when the absolute value of the error is less than the value of Integrator Zone.   This helps to prevent PID integral windup when moving from one setpoint to another.<BR>
+ <BR>
+Inputs:<BR>
+  -  PID_Controller  --  PID_Controller data cluster<BR>
+  -  IntegralZone  -  double -  The new integral zone.   Absolute value of the error to allow integration.<BR>
 <BR>
 Outputs:<BR>
   -  PID_Controller  --  Updated PID_Controller data cluster<BR>
