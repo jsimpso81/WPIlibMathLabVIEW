@@ -1886,7 +1886,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 					<Item Name="AprilTagFieldLayout_New2022.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New2022.vi"/>
 					<Item Name="AprilTagFieldLayout_New2023.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New2023.vi"/>
 					<Item Name="AprilTagFieldLayout_New2024.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New2024.vi"/>
+					<Item Name="AprilTagFieldLayout_New2025.vi" Type="VI" URL="../VI/AprilTagFieldLayout_New2025.vi"/>
 					<Item Name="AprilTagFieldLayout_NewSelect.vi" Type="VI" URL="../VI/AprilTagFieldLayout_NewSelect.vi"/>
+					<Item Name="AprilTagFieldLayout_NewSelect_OLD.vi" Type="VI" URL="../VI/AprilTagFieldLayout_NewSelect_OLD.vi"/>
 					<Item Name="AprilTagFieldLayout_SetOrigin.vi" Type="VI" URL="../VI/AprilTagFieldLayout_SetOrigin.vi"/>
 					<Item Name="AprilTagFieldLayout_SetOrigin_Position.vi" Type="VI" URL="../VI/AprilTagFieldLayout_SetOrigin_Position.vi"/>
 				</Item>
