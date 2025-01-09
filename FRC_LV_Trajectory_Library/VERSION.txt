@@ -1,2 +1,2 @@
 WPILib LabVIEW Math Library
-Version 2024.1
+Version 2025.0
