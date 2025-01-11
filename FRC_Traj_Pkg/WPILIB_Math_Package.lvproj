@@ -885,7 +885,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">1</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">514</Property>
+				<Property Name="Bld_version.build" Type="Int">515</Property>
 				<Property Name="Bld_version.major" Type="Int">2024</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -1024,7 +1024,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">1</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/Book_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">78</Property>
+				<Property Name="Bld_version.build" Type="Int">79</Property>
 				<Property Name="Bld_version.major" Type="Int">3</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -1381,7 +1381,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv19_2025.0.0-345_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv19_2025.0.0-346_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1389,7 +1389,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">346</Property>
+				<Property Name="PKG_buildNumber" Type="Int">347</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathlv19</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -1503,7 +1503,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_packageName" Type="Str">wpilibmathlv19</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">12</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">11</Property>
 				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
 				<Property Name="PKG_shortcuts[0].Name" Type="Str">WPILib LabVIEW Math PDF Reference</Property>
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">WPILib LabVIEW</Property>
@@ -1512,16 +1512,16 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[0].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[1].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[1].Name" Type="Str">WPILib LabVIEW Math HTML Reference</Property>
+				<Property Name="PKG_shortcuts[1].Name" Type="Str">Create Trajectory</Property>
 				<Property Name="PKG_shortcuts[1].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[1].Target.Child" Type="Ref">/My Computer/HtmlHelp/Index.html</Property>
-				<Property Name="PKG_shortcuts[1].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[1].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
+				<Property Name="PKG_shortcuts[1].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_TrajectoryLibrary.exe</Property>
+				<Property Name="PKG_shortcuts[1].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[1].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[1].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[10].Destination" Type="Str">root_1</Property>
-				<Property Name="PKG_shortcuts[10].Name" Type="Str">WPILib LabVIEW Math Reference</Property>
+				<Property Name="PKG_shortcuts[10].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
 				<Property Name="PKG_shortcuts[10].Path" Type="Path"></Property>
-				<Property Name="PKG_shortcuts[10].Target.Child" Type="Ref">/My Computer/Doc/WPILib_LabVIEW_Math_Library_Reference.pdf</Property>
+				<Property Name="PKG_shortcuts[10].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
 				<Property Name="PKG_shortcuts[10].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
 				<Property Name="PKG_shortcuts[10].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[10].Type" Type="Str">NIPKG</Property>
@@ -1533,58 +1533,58 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[11].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[11].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[2].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[2].Name" Type="Str">Create Trajectory</Property>
+				<Property Name="PKG_shortcuts[2].Name" Type="Str">Create PathFinder Differential Trajectory</Property>
 				<Property Name="PKG_shortcuts[2].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[2].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_TrajectoryLibrary.exe</Property>
+				<Property Name="PKG_shortcuts[2].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Differential.exe</Property>
 				<Property Name="PKG_shortcuts[2].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[2].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[2].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[3].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[3].Name" Type="Str">Create PathFinder Differential Trajectory</Property>
+				<Property Name="PKG_shortcuts[3].Name" Type="Str">Create PathFinder Swerve Trajectory</Property>
 				<Property Name="PKG_shortcuts[3].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[3].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Differential.exe</Property>
+				<Property Name="PKG_shortcuts[3].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Swerve.exe</Property>
 				<Property Name="PKG_shortcuts[3].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[3].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[3].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[4].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[4].Name" Type="Str">Create PathFinder Swerve Trajectory</Property>
+				<Property Name="PKG_shortcuts[4].Name" Type="Str">Convert Trajectory JSON to CSV</Property>
 				<Property Name="PKG_shortcuts[4].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Swerve.exe</Property>
+				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/bin/Convert_PathWeaver_JSON_To_Trajectory_File.exe</Property>
 				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[4].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[5].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[5].Name" Type="Str">Convert Trajectory JSON to CSV</Property>
+				<Property Name="PKG_shortcuts[5].Name" Type="Str">Convert Trajectory CSV to JSON</Property>
 				<Property Name="PKG_shortcuts[5].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/bin/Convert_PathWeaver_JSON_To_Trajectory_File.exe</Property>
+				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.exe</Property>
 				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[6].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[6].Name" Type="Str">Convert Trajectory CSV to JSON</Property>
+				<Property Name="PKG_shortcuts[6].Name" Type="Str">Diff Drive Robot Simulator</Property>
 				<Property Name="PKG_shortcuts[6].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.exe</Property>
+				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
 				<Property Name="PKG_shortcuts[6].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[6].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[6].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[7].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[7].Name" Type="Str">Diff Drive Robot Simulator</Property>
+				<Property Name="PKG_shortcuts[7].Name" Type="Str">Romi Robot Simulator</Property>
 				<Property Name="PKG_shortcuts[7].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
+				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
 				<Property Name="PKG_shortcuts[7].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[7].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[7].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[8].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[8].Name" Type="Str">Romi Robot Simulator</Property>
+				<Property Name="PKG_shortcuts[8].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
 				<Property Name="PKG_shortcuts[8].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[8].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
-				<Property Name="PKG_shortcuts[8].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_shortcuts[8].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[8].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
+				<Property Name="PKG_shortcuts[8].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[8].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[8].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[9].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[9].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
-				<Property Name="PKG_shortcuts[9].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[9].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
+				<Property Name="PKG_shortcuts[9].Destination" Type="Str">root_1</Property>
+				<Property Name="PKG_shortcuts[9].Name" Type="Str">WPILib LabVIEW Math Reference</Property>
+				<Property Name="PKG_shortcuts[9].Path" Type="Path"></Property>
+				<Property Name="PKG_shortcuts[9].Target.Child" Type="Ref">/My Computer/Doc/WPILib_LabVIEW_Math_Library_Reference.pdf</Property>
 				<Property Name="PKG_shortcuts[9].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
 				<Property Name="PKG_shortcuts[9].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[9].Type" Type="Str">NIPKG</Property>
@@ -1618,7 +1618,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv20_2025.0.0-345_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv20_2025.0.0-346_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   hhttps://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1626,7 +1626,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">346</Property>
+				<Property Name="PKG_buildNumber" Type="Int">347</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathlv20</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -1740,7 +1740,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_packageName" Type="Str">wpilibmathlv20</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">12</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">11</Property>
 				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
 				<Property Name="PKG_shortcuts[0].Name" Type="Str">WPILib LabVIEW Math PDF Reference</Property>
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">WPILib LabVIEW</Property>
@@ -1749,16 +1749,16 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[0].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[1].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[1].Name" Type="Str">WPILib LabVIEW Math HTML Reference</Property>
+				<Property Name="PKG_shortcuts[1].Name" Type="Str">Create Trajectory</Property>
 				<Property Name="PKG_shortcuts[1].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[1].Target.Child" Type="Ref">/My Computer/HtmlHelp/Index.html</Property>
-				<Property Name="PKG_shortcuts[1].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[1].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
+				<Property Name="PKG_shortcuts[1].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_TrajectoryLibrary.exe</Property>
+				<Property Name="PKG_shortcuts[1].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[1].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[1].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[10].Destination" Type="Str">root_1</Property>
-				<Property Name="PKG_shortcuts[10].Name" Type="Str">WPILib LabVIEW Math Reference</Property>
+				<Property Name="PKG_shortcuts[10].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
 				<Property Name="PKG_shortcuts[10].Path" Type="Path"></Property>
-				<Property Name="PKG_shortcuts[10].Target.Child" Type="Ref">/My Computer/Doc/WPILib_LabVIEW_Math_Library_Reference.pdf</Property>
+				<Property Name="PKG_shortcuts[10].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
 				<Property Name="PKG_shortcuts[10].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
 				<Property Name="PKG_shortcuts[10].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[10].Type" Type="Str">NIPKG</Property>
@@ -1770,58 +1770,58 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[11].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[11].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[2].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[2].Name" Type="Str">Create Trajectory</Property>
+				<Property Name="PKG_shortcuts[2].Name" Type="Str">Create PathFinder Differential Trajectory</Property>
 				<Property Name="PKG_shortcuts[2].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[2].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_TrajectoryLibrary.exe</Property>
+				<Property Name="PKG_shortcuts[2].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Differential.exe</Property>
 				<Property Name="PKG_shortcuts[2].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[2].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[2].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[3].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[3].Name" Type="Str">Create PathFinder Differential Trajectory</Property>
+				<Property Name="PKG_shortcuts[3].Name" Type="Str">Create PathFinder Swerve Trajectory</Property>
 				<Property Name="PKG_shortcuts[3].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[3].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Differential.exe</Property>
+				<Property Name="PKG_shortcuts[3].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Swerve.exe</Property>
 				<Property Name="PKG_shortcuts[3].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[3].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[3].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[4].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[4].Name" Type="Str">Create PathFinder Swerve Trajectory</Property>
+				<Property Name="PKG_shortcuts[4].Name" Type="Str">Convert Trajectory JSON to CSV</Property>
 				<Property Name="PKG_shortcuts[4].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Swerve.exe</Property>
+				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/bin/Convert_PathWeaver_JSON_To_Trajectory_File.exe</Property>
 				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[4].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[5].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[5].Name" Type="Str">Convert Trajectory JSON to CSV</Property>
+				<Property Name="PKG_shortcuts[5].Name" Type="Str">Convert Trajectory CSV to JSON</Property>
 				<Property Name="PKG_shortcuts[5].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/bin/Convert_PathWeaver_JSON_To_Trajectory_File.exe</Property>
+				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.exe</Property>
 				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[6].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[6].Name" Type="Str">Convert Trajectory CSV to JSON</Property>
+				<Property Name="PKG_shortcuts[6].Name" Type="Str">Diff Drive Robot Simulator</Property>
 				<Property Name="PKG_shortcuts[6].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.exe</Property>
+				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
 				<Property Name="PKG_shortcuts[6].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[6].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[6].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[7].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[7].Name" Type="Str">Diff Drive Robot Simulator</Property>
+				<Property Name="PKG_shortcuts[7].Name" Type="Str">Romi Robot Simulator</Property>
 				<Property Name="PKG_shortcuts[7].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
+				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
 				<Property Name="PKG_shortcuts[7].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[7].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[7].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[8].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[8].Name" Type="Str">Romi Robot Simulator</Property>
+				<Property Name="PKG_shortcuts[8].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
 				<Property Name="PKG_shortcuts[8].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[8].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
-				<Property Name="PKG_shortcuts[8].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_shortcuts[8].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[8].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
+				<Property Name="PKG_shortcuts[8].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[8].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[8].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[9].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[9].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
-				<Property Name="PKG_shortcuts[9].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[9].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
+				<Property Name="PKG_shortcuts[9].Destination" Type="Str">root_1</Property>
+				<Property Name="PKG_shortcuts[9].Name" Type="Str">WPILib LabVIEW Math Reference</Property>
+				<Property Name="PKG_shortcuts[9].Path" Type="Path"></Property>
+				<Property Name="PKG_shortcuts[9].Target.Child" Type="Ref">/My Computer/Doc/WPILib_LabVIEW_Math_Library_Reference.pdf</Property>
 				<Property Name="PKG_shortcuts[9].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
 				<Property Name="PKG_shortcuts[9].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[9].Type" Type="Str">NIPKG</Property>
@@ -1855,7 +1855,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv23_2025.0.0-345_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">wpilibmathlv23_2025.0.0-346_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/WPIlibMathLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1863,7 +1863,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">346</Property>
+				<Property Name="PKG_buildNumber" Type="Int">347</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathlv23</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -1977,7 +1977,7 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_packageName" Type="Str">wpilibmathlv23</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
-				<Property Name="PKG_shortcuts.Count" Type="Int">12</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">11</Property>
 				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
 				<Property Name="PKG_shortcuts[0].Name" Type="Str">WPILib LabVIEW Math PDF Reference</Property>
 				<Property Name="PKG_shortcuts[0].Path" Type="Path">WPILib LabVIEW</Property>
@@ -1986,16 +1986,16 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[0].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[1].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[1].Name" Type="Str">WPILib LabVIEW Math HTML Reference</Property>
+				<Property Name="PKG_shortcuts[1].Name" Type="Str">Create Trajectory</Property>
 				<Property Name="PKG_shortcuts[1].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[1].Target.Child" Type="Ref">/My Computer/HtmlHelp/Index.html</Property>
-				<Property Name="PKG_shortcuts[1].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
-				<Property Name="PKG_shortcuts[1].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
+				<Property Name="PKG_shortcuts[1].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_TrajectoryLibrary.exe</Property>
+				<Property Name="PKG_shortcuts[1].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
+				<Property Name="PKG_shortcuts[1].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[1].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[10].Destination" Type="Str">root_1</Property>
-				<Property Name="PKG_shortcuts[10].Name" Type="Str">WPILib LabVIEW Math Reference</Property>
+				<Property Name="PKG_shortcuts[10].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
 				<Property Name="PKG_shortcuts[10].Path" Type="Path"></Property>
-				<Property Name="PKG_shortcuts[10].Target.Child" Type="Ref">/My Computer/Doc/WPILib_LabVIEW_Math_Library_Reference.pdf</Property>
+				<Property Name="PKG_shortcuts[10].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
 				<Property Name="PKG_shortcuts[10].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
 				<Property Name="PKG_shortcuts[10].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[10].Type" Type="Str">NIPKG</Property>
@@ -2007,58 +2007,58 @@ This version contains much of the state space control from WPILIB</Property>
 				<Property Name="PKG_shortcuts[11].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[11].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[2].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[2].Name" Type="Str">Create Trajectory</Property>
+				<Property Name="PKG_shortcuts[2].Name" Type="Str">Create PathFinder Differential Trajectory</Property>
 				<Property Name="PKG_shortcuts[2].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[2].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_TrajectoryLibrary.exe</Property>
+				<Property Name="PKG_shortcuts[2].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Differential.exe</Property>
 				<Property Name="PKG_shortcuts[2].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[2].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[2].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[3].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[3].Name" Type="Str">Create PathFinder Differential Trajectory</Property>
+				<Property Name="PKG_shortcuts[3].Name" Type="Str">Create PathFinder Swerve Trajectory</Property>
 				<Property Name="PKG_shortcuts[3].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[3].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Differential.exe</Property>
+				<Property Name="PKG_shortcuts[3].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Swerve.exe</Property>
 				<Property Name="PKG_shortcuts[3].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[3].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[3].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[4].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[4].Name" Type="Str">Create PathFinder Swerve Trajectory</Property>
+				<Property Name="PKG_shortcuts[4].Name" Type="Str">Convert Trajectory JSON to CSV</Property>
 				<Property Name="PKG_shortcuts[4].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/bin/Create_Trajectory_Using_Pathfinder_Swerve.exe</Property>
+				<Property Name="PKG_shortcuts[4].Target.Child" Type="Ref">/My Computer/bin/Convert_PathWeaver_JSON_To_Trajectory_File.exe</Property>
 				<Property Name="PKG_shortcuts[4].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[4].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[4].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[5].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[5].Name" Type="Str">Convert Trajectory JSON to CSV</Property>
+				<Property Name="PKG_shortcuts[5].Name" Type="Str">Convert Trajectory CSV to JSON</Property>
 				<Property Name="PKG_shortcuts[5].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/bin/Convert_PathWeaver_JSON_To_Trajectory_File.exe</Property>
+				<Property Name="PKG_shortcuts[5].Target.Child" Type="Ref">/My Computer/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.exe</Property>
 				<Property Name="PKG_shortcuts[5].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[5].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[5].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[6].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[6].Name" Type="Str">Convert Trajectory CSV to JSON</Property>
+				<Property Name="PKG_shortcuts[6].Name" Type="Str">Diff Drive Robot Simulator</Property>
 				<Property Name="PKG_shortcuts[6].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/bin/Convert_Trajectory_CSV_To_PathWeaver_JSON_File.exe</Property>
+				<Property Name="PKG_shortcuts[6].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
 				<Property Name="PKG_shortcuts[6].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[6].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[6].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[7].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[7].Name" Type="Str">Diff Drive Robot Simulator</Property>
+				<Property Name="PKG_shortcuts[7].Name" Type="Str">Romi Robot Simulator</Property>
 				<Property Name="PKG_shortcuts[7].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Diff_Drive.exe</Property>
+				<Property Name="PKG_shortcuts[7].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
 				<Property Name="PKG_shortcuts[7].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
 				<Property Name="PKG_shortcuts[7].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
 				<Property Name="PKG_shortcuts[7].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_shortcuts[8].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[8].Name" Type="Str">Romi Robot Simulator</Property>
+				<Property Name="PKG_shortcuts[8].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
 				<Property Name="PKG_shortcuts[8].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[8].Target.Child" Type="Ref">/My Computer/bin/Simulated_Robot_Romi.exe</Property>
-				<Property Name="PKG_shortcuts[8].Target.Destination" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
-				<Property Name="PKG_shortcuts[8].Target.Source" Type="Ref">/My Computer/Build Specifications/UtilExe</Property>
+				<Property Name="PKG_shortcuts[8].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
+				<Property Name="PKG_shortcuts[8].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
+				<Property Name="PKG_shortcuts[8].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[8].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_shortcuts[9].Destination" Type="Str">root_8</Property>
-				<Property Name="PKG_shortcuts[9].Name" Type="Str">The Secret Book of FRC LabVIEW</Property>
-				<Property Name="PKG_shortcuts[9].Path" Type="Path">WPILib LabVIEW</Property>
-				<Property Name="PKG_shortcuts[9].Target.Child" Type="Ref">/My Computer/SecretBook/The Secret Book of FRC LabVIEW V2.07.pdf</Property>
+				<Property Name="PKG_shortcuts[9].Destination" Type="Str">root_1</Property>
+				<Property Name="PKG_shortcuts[9].Name" Type="Str">WPILib LabVIEW Math Reference</Property>
+				<Property Name="PKG_shortcuts[9].Path" Type="Path"></Property>
+				<Property Name="PKG_shortcuts[9].Target.Child" Type="Ref">/My Computer/Doc/WPILib_LabVIEW_Math_Library_Reference.pdf</Property>
 				<Property Name="PKG_shortcuts[9].Target.Destination" Type="Str">{84EA42BA-BF00-4343-8A35-ED7B99EF692D}</Property>
 				<Property Name="PKG_shortcuts[9].Target.Source" Type="Ref">/My Computer/Build Specifications/DocFiles</Property>
 				<Property Name="PKG_shortcuts[9].Type" Type="Str">NIPKG</Property>
