@@ -8,30 +8,30 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://www.ni.com/Schemas/DNA/1.0 ..\DNA\1.0\NiExampleProgram.xsd" 
     SchemaVersion="1.0" 
-    ContentType="EXAMPLE" 
-&lt;Title&gt;
-	&lt;Text Locale="US"&gt;TrapezoidProfile_Example.lvproj&lt;/Text&gt;
-&lt;/Title&gt;
-&lt;Description&gt;
-	&lt;Text Locale="US"&gt;A trapezoid profile can be used to eliminate step changes in setpoints.  This can be used alone or as part of the profiled PID controller (recommended).  One use of this is smooth out position control.&lt;/Text&gt;
-&lt;/Description&gt;
-&lt;Keywords&gt;
-	&lt;Item&gt;trapezoid&lt;/Item&gt;
-	&lt;Item&gt;control&lt;/Item&gt;
-	&lt;Item&gt;algorithm&lt;/Item&gt;
-&lt;/Keywords&gt;
-&lt;Navigation&gt;
-	&lt;Item&gt;3329&lt;/Item&gt;
-&lt;/Navigation&gt;
-&lt;FileType&gt;LV Project&lt;/FileType&gt;
-&lt;Metadata&gt;
-&lt;Item Name="RTSupport"&gt;&lt;/Item&gt;
-&lt;/Metadata&gt;
-&lt;ProgrammingLanguages&gt;
-&lt;Item&gt;LabVIEW&lt;/Item&gt;
-&lt;/ProgrammingLanguages&gt;
-&lt;RequiredSoftware&gt;
-&lt;NiSoftware MinVersion="19.0"&gt;LabVIEW&lt;/NiSoftware&gt; 
+    ContentType="EXAMPLE" 
+&lt;Title&gt;
+	&lt;Text Locale="US"&gt;TrapezoidProfile_Example.lvproj&lt;/Text&gt;
+&lt;/Title&gt;
+&lt;Description&gt;
+	&lt;Text Locale="US"&gt;A trapezoid profile can be used to eliminate step changes in setpoints.  This can be used alone or as part of the profiled PID controller (recommended).  One use of this is smooth out position control.&lt;/Text&gt;
+&lt;/Description&gt;
+&lt;Keywords&gt;
+	&lt;Item&gt;trapezoid&lt;/Item&gt;
+	&lt;Item&gt;control&lt;/Item&gt;
+	&lt;Item&gt;algorithm&lt;/Item&gt;
+&lt;/Keywords&gt;
+&lt;Navigation&gt;
+	&lt;Item&gt;3329&lt;/Item&gt;
+&lt;/Navigation&gt;
+&lt;FileType&gt;LV Project&lt;/FileType&gt;
+&lt;Metadata&gt;
+&lt;Item Name="RTSupport"&gt;&lt;/Item&gt;
+&lt;/Metadata&gt;
+&lt;ProgrammingLanguages&gt;
+&lt;Item&gt;LabVIEW&lt;/Item&gt;
+&lt;/ProgrammingLanguages&gt;
+&lt;RequiredSoftware&gt;
+&lt;NiSoftware MinVersion="19.0"&gt;LabVIEW&lt;/NiSoftware&gt; 
 &lt;/RequiredSoftware&gt;</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -58,6 +58,7 @@
 				<Item Name="FPGA_SystemGet.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemGet.vi"/>
 				<Item Name="FPGA_SystemOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemOpen.vi"/>
 				<Item Name="FPGA_SystemStart Async Agent.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemStart Async Agent.vi"/>
+				<Item Name="FPGA_UtilitiesRead LocalTime.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/Utilities/FPGA_UtilitiesRead LocalTime.vi"/>
 				<Item Name="NetComm_UnloadCPPStartupProgram.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UnloadCPPStartupProgram.vi"/>
 				<Item Name="NetComm_UsageReport_report.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UsageReport_report.vi"/>
 				<Item Name="NetComm_UsageReport_ResourceType.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UsageReport_ResourceType.ctl"/>
@@ -173,6 +174,7 @@ DirectoryIndex index.htm
 				<Item Name="FPGA_SystemGet.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemGet.vi"/>
 				<Item Name="FPGA_SystemOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemOpen.vi"/>
 				<Item Name="FPGA_SystemStart Async Agent.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemStart Async Agent.vi"/>
+				<Item Name="FPGA_UtilitiesRead LocalTime.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/Utilities/FPGA_UtilitiesRead LocalTime.vi"/>
 				<Item Name="NetComm_UnloadCPPStartupProgram.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UnloadCPPStartupProgram.vi"/>
 				<Item Name="NetComm_UsageReport_report.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UsageReport_report.vi"/>
 				<Item Name="NetComm_UsageReport_ResourceType.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UsageReport_ResourceType.ctl"/>

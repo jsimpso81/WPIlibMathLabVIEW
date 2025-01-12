@@ -159,8 +159,6 @@ DirectoryIndex index.htm
 				<Item Name="Trajectory_Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/JAS_Junk/TrajLib/Trajectory_Library.lvlib"/>
 			</Item>
 			<Item Name="fwc-battery-sim-exec.vi" Type="VI" URL="../SubVI/fwc-battery-sim-exec.vi"/>
-			<Item Name="fwc-fly-ctrl-exec.vi" Type="VI" URL="../SubVI/fwc-fly-ctrl-exec.vi"/>
-			<Item Name="fwc-fly-ctrl-init.vi" Type="VI" URL="../SubVI/fwc-fly-ctrl-init.vi"/>
 			<Item Name="fwc-fly-sim-exec.vi" Type="VI" URL="../SubVI/fwc-fly-sim-exec.vi"/>
 			<Item Name="fwc-fly-sim-init-load.vi" Type="VI" URL="../SubVI/fwc-fly-sim-init-load.vi"/>
 			<Item Name="fwc-fly-sim-init.vi" Type="VI" URL="../SubVI/fwc-fly-sim-init.vi"/>

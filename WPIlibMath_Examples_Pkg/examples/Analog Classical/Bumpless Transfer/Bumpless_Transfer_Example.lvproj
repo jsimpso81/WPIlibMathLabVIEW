@@ -8,29 +8,29 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://www.ni.com/Schemas/DNA/1.0 ..\DNA\1.0\NiExampleProgram.xsd" 
     SchemaVersion="1.0" 
-    ContentType="EXAMPLE" 
-&lt;Title&gt;
-	&lt;Text Locale="US"&gt;Bumpless_Transfer_Example.lvproj&lt;/Text&gt;
-&lt;/Title&gt;
-&lt;Description&gt;
-	&lt;Text Locale="US"&gt;Transfer an output value between two inputs without causing a step change.  When transferring from one input to another the output is ramped to the new value at the rate specified.&lt;/Text&gt;
-&lt;/Description&gt;
-&lt;Keywords&gt;
-	&lt;Item&gt;control&lt;/Item&gt;
-	&lt;Item&gt;algorithm&lt;/Item&gt;
-&lt;/Keywords&gt;
-&lt;Navigation&gt;
-	&lt;Item&gt;3329&lt;/Item&gt;
-&lt;/Navigation&gt;
-&lt;FileType&gt;LV Project&lt;/FileType&gt;
-&lt;Metadata&gt;
-&lt;Item Name="RTSupport"&gt;&lt;/Item&gt;
-&lt;/Metadata&gt;
-&lt;ProgrammingLanguages&gt;
-&lt;Item&gt;LabVIEW&lt;/Item&gt;
-&lt;/ProgrammingLanguages&gt;
-&lt;RequiredSoftware&gt;
-&lt;NiSoftware MinVersion="19.0"&gt;LabVIEW&lt;/NiSoftware&gt; 
+    ContentType="EXAMPLE" 
+&lt;Title&gt;
+	&lt;Text Locale="US"&gt;Bumpless_Transfer_Example.lvproj&lt;/Text&gt;
+&lt;/Title&gt;
+&lt;Description&gt;
+	&lt;Text Locale="US"&gt;Transfer an output value between two inputs without causing a step change.  When transferring from one input to another the output is ramped to the new value at the rate specified.&lt;/Text&gt;
+&lt;/Description&gt;
+&lt;Keywords&gt;
+	&lt;Item&gt;control&lt;/Item&gt;
+	&lt;Item&gt;algorithm&lt;/Item&gt;
+&lt;/Keywords&gt;
+&lt;Navigation&gt;
+	&lt;Item&gt;3329&lt;/Item&gt;
+&lt;/Navigation&gt;
+&lt;FileType&gt;LV Project&lt;/FileType&gt;
+&lt;Metadata&gt;
+&lt;Item Name="RTSupport"&gt;&lt;/Item&gt;
+&lt;/Metadata&gt;
+&lt;ProgrammingLanguages&gt;
+&lt;Item&gt;LabVIEW&lt;/Item&gt;
+&lt;/ProgrammingLanguages&gt;
+&lt;RequiredSoftware&gt;
+&lt;NiSoftware MinVersion="19.0"&gt;LabVIEW&lt;/NiSoftware&gt; 
 &lt;/RequiredSoftware&gt;</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -54,6 +54,7 @@
 				<Item Name="FPGA_SystemGet.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemGet.vi"/>
 				<Item Name="FPGA_SystemOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemOpen.vi"/>
 				<Item Name="FPGA_SystemStart Async Agent.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemStart Async Agent.vi"/>
+				<Item Name="FPGA_UtilitiesRead LocalTime.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/Utilities/FPGA_UtilitiesRead LocalTime.vi"/>
 				<Item Name="NetComm_UnloadCPPStartupProgram.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UnloadCPPStartupProgram.vi"/>
 				<Item Name="roboRIO_FPGA_2020_20.1.2.lvbitx" Type="Document" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/roboRIO_FPGA_2020_20.1.2.lvbitx"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
@@ -163,6 +164,7 @@ DirectoryIndex index.htm
 				<Item Name="FPGA_SystemGet.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemGet.vi"/>
 				<Item Name="FPGA_SystemOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemOpen.vi"/>
 				<Item Name="FPGA_SystemStart Async Agent.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemStart Async Agent.vi"/>
+				<Item Name="FPGA_UtilitiesRead LocalTime.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/Utilities/FPGA_UtilitiesRead LocalTime.vi"/>
 				<Item Name="NetComm_UnloadCPPStartupProgram.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UnloadCPPStartupProgram.vi"/>
 				<Item Name="roboRIO_FPGA_2020_20.1.2.lvbitx" Type="Document" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/roboRIO_FPGA_2020_20.1.2.lvbitx"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
