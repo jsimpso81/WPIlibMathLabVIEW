@@ -373,6 +373,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="LinearFilter_Calculate.vi" Type="VI" URL="../LinearFilter_Calculate.vi"/>
 				<Item Name="LinearFilter_CutoffFrequency.vi" Type="VI" URL="../LinearFilter_CutoffFrequency.vi"/>
 				<Item Name="LinearFilter_Execute.vi" Type="VI" URL="../LinearFilter_Execute.vi"/>
+				<Item Name="LinearFilter_Execute_OLD.vi" Type="VI" URL="../LinearFilter_Execute_OLD.vi"/>
 				<Item Name="LinearFilter_Factorial.vi" Type="VI" URL="../LinearFilter_Factorial.vi">
 					<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 				</Item>
@@ -380,9 +381,14 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="LinearFilter_HighPass.vi" Type="VI" URL="../LinearFilter_HighPass.vi"/>
 				<Item Name="LinearFilter_HighPassBW1.vi" Type="VI" URL="../LinearFilter_HighPassBW1.vi"/>
 				<Item Name="LinearFilter_HighPassBW2.vi" Type="VI" URL="../LinearFilter_HighPassBW2.vi"/>
+				<Item Name="LinearFilter_HP_BW1_Execute.vi" Type="VI" URL="../LinearFilter_HP_BW1_Execute.vi"/>
+				<Item Name="LinearFilter_HP_BW2_Execute.vi" Type="VI" URL="../LinearFilter_HP_BW2_Execute.vi"/>
 				<Item Name="LinearFilter_LowPassBW1.vi" Type="VI" URL="../LinearFilter_LowPassBW1.vi"/>
 				<Item Name="LinearFilter_LowPassBW2.vi" Type="VI" URL="../LinearFilter_LowPassBW2.vi"/>
+				<Item Name="LinearFilter_LP_BW1_Execute.vi" Type="VI" URL="../LinearFilter_LP_BW1_Execute.vi"/>
+				<Item Name="LinearFilter_LP_BW2_Execute.vi" Type="VI" URL="../LinearFilter_LP_BW2_Execute.vi"/>
 				<Item Name="LinearFilter_MovingAverage.vi" Type="VI" URL="../LinearFilter_MovingAverage.vi"/>
+				<Item Name="LinearFilter_MovingAvg_Execute.vi" Type="VI" URL="../LinearFilter_MovingAvg_Execute.vi"/>
 				<Item Name="LinearFilter_New.vi" Type="VI" URL="../LinearFilter_New.vi"/>
 				<Item Name="LinearFilter_Reset.vi" Type="VI" URL="../LinearFilter_Reset.vi"/>
 				<Item Name="LinearFilter_ResetToValue.vi" Type="VI" URL="../LinearFilter_ResetToValue.vi"/>
@@ -1069,15 +1075,20 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="DCMotor_GetCIM.vi" Type="VI" URL="../DCMotor_GetCIM.vi"/>
 				<Item Name="DCMotor_GetCurrent.vi" Type="VI" URL="../DCMotor_GetCurrent.vi"/>
 				<Item Name="DCMotor_GetFalcon500.vi" Type="VI" URL="../DCMotor_GetFalcon500.vi"/>
+				<Item Name="DCMotor_GetFalcon500_FOC.vi" Type="VI" URL="../VI/DCMotor_GetFalcon500_FOC.vi"/>
+				<Item Name="DCMotor_GetKrakenX60.vi" Type="VI" URL="../VI/DCMotor_GetKrakenX60.vi"/>
+				<Item Name="DCMotor_GetKrakenX60_FOC.vi" Type="VI" URL="../VI/DCMotor_GetKrakenX60_FOC.vi"/>
 				<Item Name="DCMotor_GetMiniCIM.vi" Type="VI" URL="../DCMotor_GetMiniCIM.vi"/>
 				<Item Name="DCMotor_GetNEO.vi" Type="VI" URL="../DCMotor_GetNEO.vi"/>
 				<Item Name="DCMotor_GetNEO550.vi" Type="VI" URL="../DCMotor_GetNEO550.vi"/>
+				<Item Name="DCMotor_GetNEOVortex.vi" Type="VI" URL="../VI/DCMotor_GetNEOVortex.vi"/>
 				<Item Name="DCMotor_GetRomiBuiltIn.vi" Type="VI" URL="../DCMotor_GetRomiBuiltIn.vi"/>
 				<Item Name="DCMotor_GetSpeed.vi" Type="VI" URL="../VI/DCMotor_GetSpeed.vi"/>
 				<Item Name="DCMotor_GetTorque.vi" Type="VI" URL="../VI/DCMotor_GetTorque.vi"/>
 				<Item Name="DCMotor_GetVex775Pro.vi" Type="VI" URL="../DCMotor_GetVex775Pro.vi"/>
 				<Item Name="DCMotor_New.vi" Type="VI" URL="../DCMotor_New.vi"/>
 				<Item Name="DCMotor_PickMotor.vi" Type="VI" URL="../DCMotor_PickMotor.vi"/>
+				<Item Name="DCMotor_PickMotorSelector.vi" Type="VI" URL="../DCMotor_PickMotorSelector.vi"/>
 				<Item Name="DCMotor_WithReduction.vi" Type="VI" URL="../VI/DCMotor_WithReduction.vi"/>
 			</Item>
 			<Item Name="LinearsystemId" Type="Folder">
@@ -1184,6 +1195,9 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="DiffDriveTrainSim_ToughBoxMiniGearRatio.vi" Type="VI" URL="../DiffDriveTrainSim_ToughBoxMiniGearRatio.vi"/>
 				<Item Name="DiffDriveTrainSim_ToughBoxMiniMotor.vi" Type="VI" URL="../DiffDriveTrainSim_ToughBoxMiniMotor.vi"/>
 				<Item Name="DiffDriveTrainSim_Update.vi" Type="VI" URL="../DiffDriveTrainSim_Update.vi"/>
+			</Item>
+			<Item Name="DriverStationCommunications" Type="Folder">
+				<Item Name="DriverStationSim_Comm_Loop.vi" Type="VI" URL="../VI/DriverStationSim_Comm_Loop.vi"/>
 			</Item>
 			<Item Name="ElevatorSim" Type="Folder">
 				<Item Name="ElevatorSim_Execute.vi" Type="VI" URL="../VI/ElevatorSim_Execute.vi"/>
