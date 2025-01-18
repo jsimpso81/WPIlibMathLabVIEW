@@ -3,7 +3,7 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
-		<Property Name="CCSymbols" Type="Str">SimulationMode,ODE;</Property>
+		<Property Name="CCSymbols" Type="Str">SimulationMode,ODE_NOT;</Property>
 		<Property Name="NI.SortType" Type="Int">1</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
