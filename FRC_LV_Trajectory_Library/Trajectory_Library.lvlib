@@ -662,6 +662,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="DoubleSolenoid_Pulse_Execute.vi" Type="VI" URL="../VI/DoubleSolenoid_Pulse_Execute.vi"/>
 			</Item>
 		</Item>
+		<Item Name="FileUtil" Type="Folder">
+			<Item Name="FileUtil_AddExt.vi" Type="VI" URL="../VI/FileUtil_AddExt.vi"/>
+			<Item Name="FileUtil_DefaultDir.vi" Type="VI" URL="../VI/FileUtil_DefaultDir.vi"/>
+		</Item>
 		<Item Name="Geometry" Type="Folder">
 			<Item Name="CoordinateAxis" Type="Folder">
 				<Item Name="CoordAxis_D.vi" Type="VI" URL="../VI/CoordAxis_D.vi"/>
@@ -960,6 +964,7 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="MathUtil_Clamp_Int.vi" Type="VI" URL="../MathUtil_Clamp_Int.vi"/>
 				<Item Name="MathUtil_InputModulus.vi" Type="VI" URL="../MathUtil_InputModulus.vi"/>
 				<Item Name="MathUtil_Interpolate.vi" Type="VI" URL="../MathUtil_Interpolate.vi"/>
+				<Item Name="MathUtil_RateOfChange.vi" Type="VI" URL="../VI/MathUtil_RateOfChange.vi"/>
 			</Item>
 			<Item Name="MerweScaledSigmaPts" Type="Folder">
 				<Item Name="MerweScSigPts_ComputeWeights.vi" Type="VI" URL="../MerweScSigPts_ComputeWeights.vi"/>
@@ -1109,6 +1114,10 @@ This implements the math section (and some other routines) contained in FRC WPIL
 			</Item>
 		</Item>
 		<Item Name="Network" Type="Folder">
+			<Item Name="NetworkTables" Type="Folder">
+				<Item Name="NT Client_NoDS.vi" Type="VI" URL="../VI/NT Client_NoDS.vi"/>
+				<Item Name="NT IsConnected.vi" Type="VI" URL="../VI/NT IsConnected.vi"/>
+			</Item>
 			<Item Name="NetworkUDP" Type="Folder">
 				<Item Name="NetworkUDP_Close.vi" Type="VI" URL="../VI/NetworkUDP_Close.vi"/>
 				<Item Name="NetworkUDP_Recieve.vi" Type="VI" URL="../VI/NetworkUDP_Recieve.vi"/>
