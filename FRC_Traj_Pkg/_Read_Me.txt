@@ -7,9 +7,13 @@ These first steps create and populate the "build" directory from which the insta
 
 0)Execute "clean" on all the build specifications.
 
-1)Run the "Book" build specification.  This copies the book file to the "builds" directory.
+1)Run the "DocFiles" build specification.  This copies the book file to the "builds" directory.
 
-2)Run the "UtilExec" build specification.  This copies the utility executable files to the "builds" directory.  The source for these files is: "C:\Shares\Common\FRC\FRC_TrajLib\FRC_Traj_Pkg\UtilExe\bin".  The executable files should be updated if needed before running this step.  
+2)Run the "UtilExec" build specification.  This copies the utility executable files to the "builds" directory.  The source for these files is: "C:\Shares\Common\FRC\FRC_TrajLib\FRC_Traj_Pkg\UtilExe\bin".  The executable files should be updated if needed before running this step.
+
+2.1) Run the Menu_Files build specification
+
+2.2) Run the Misc_Files build specification.  
 
 3)Run the "All Source Distribution".  This copies the library VI to the builds directory.
 
