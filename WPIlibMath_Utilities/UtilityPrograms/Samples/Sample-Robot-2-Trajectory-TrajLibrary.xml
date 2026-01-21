@@ -1,0 +1,452 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>19.0</Version>
+<Cluster>
+<Name></Name>
+<NumElts>6</NumElts>
+<Path>
+<Name>Write Config File Name</Name>
+<Val>C:\Shares\github\FRC_LV_TrajLib_Util_and_Samp\FRC_Traj_Util\UtilityPrograms\Sample-Robot-2-Trajectory-TrajLibrary.xml</Val>
+</Path>
+<String>
+<Name>Write Config File Comment</Name>
+<Val>Robot Sample 2 - Trajectory using TrajectoryLibrary</Val>
+</String>
+<Array>
+<Name>WayPoints</Name>
+<Dimsize>3</Dimsize>
+<Cluster>
+<Name>UTIL_WAYPOINT</Name>
+<NumElts>3</NumElts>
+<DBL>
+<Name>X</Name>
+<Val>0.38100000000000</Val>
+</DBL>
+<DBL>
+<Name>Y</Name>
+<Val>2.66700000000000</Val>
+</DBL>
+<DBL>
+<Name>ANGLE</Name>
+<Val>-0.78539816339745</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>UTIL_WAYPOINT</Name>
+<NumElts>3</NumElts>
+<DBL>
+<Name>X</Name>
+<Val>2.66700000000000</Val>
+</DBL>
+<DBL>
+<Name>Y</Name>
+<Val>1.65100000000000</Val>
+</DBL>
+<DBL>
+<Name>ANGLE</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>UTIL_WAYPOINT</Name>
+<NumElts>3</NumElts>
+<DBL>
+<Name>X</Name>
+<Val>5.33400000000000</Val>
+</DBL>
+<DBL>
+<Name>Y</Name>
+<Val>2.69240000000000</Val>
+</DBL>
+<DBL>
+<Name>ANGLE</Name>
+<Val>0.78539816339745</Val>
+</DBL>
+</Cluster>
+</Array>
+<Cluster>
+<Name>outTRAJECTORY_CONFIG</Name>
+<NumElts>15</NumElts>
+<DBL>
+<Name>MaxVelocity</Name>
+<Val>1.27000000000000</Val>
+</DBL>
+<DBL>
+<Name>Max Acceleration</Name>
+<Val>1.01600000000000</Val>
+</DBL>
+<DBL>
+<Name>StartVelocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>End Velocity</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<Boolean>
+<Name>Reversed</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>DiffDrKineConstntDefined</Name>
+<Val>1</Val>
+</Boolean>
+<Boolean>
+<Name>CentAcellConstntDefined</Name>
+<Val>1</Val>
+</Boolean>
+<Boolean>
+<Name>DiffDrVoltConstntDefined</Name>
+<Val>1</Val>
+</Boolean>
+<Cluster>
+<Name>DIFF_DRIVE_KINE_CONSTRAINT</Name>
+<NumElts>2</NumElts>
+<DBL>
+<Name>Max Speed (M/S)</Name>
+<Val>1.27000000000000</Val>
+</DBL>
+<Cluster>
+<Name>DIFF_DRIVE_KINEMATICS</Name>
+<NumElts>1</NumElts>
+<DBL>
+<Name>TrackWidth_Meters</Name>
+<Val>0.52999640000000</Val>
+</DBL>
+</Cluster>
+</Cluster>
+<Cluster>
+<Name>CENTRIPETAL_ACCEL_CONSTRAINT</Name>
+<NumElts>1</NumElts>
+<DBL>
+<Name>Max Cent Accel</Name>
+<Val>0.50800000000000</Val>
+</DBL>
+</Cluster>
+<Boolean>
+<Name>SwerveDrKineConstntDefined</Name>
+<Val>0</Val>
+</Boolean>
+<Cluster>
+<Name>SWERVE_DRIVE_KINE_CONSTRAINT</Name>
+<NumElts>2</NumElts>
+<DBL>
+<Name>Max Speed (M/S)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<Cluster>
+<Name>SwerveKinematics</Name>
+<NumElts>5</NumElts>
+<I32>
+<Name>NumModules</Name>
+<Val>0</Val>
+</I32>
+<Array>
+<Name>InverseKinematics</Name>
+<Dimsize>0</Dimsize>
+<Dimsize>0</Dimsize>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val></Val>
+</DBL>
+</Array>
+<Array>
+<Name>ForwardKinematics</Name>
+<Dimsize>0</Dimsize>
+<Dimsize>0</Dimsize>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val></Val>
+</DBL>
+</Array>
+<Array>
+<Name>Modules</Name>
+<Dimsize>0</Dimsize>
+<Cluster>
+<Name>TRANSLATION</Name>
+<NumElts>2</NumElts>
+<DBL>
+<Name>X</Name>
+<Val></Val>
+</DBL>
+<DBL>
+<Name>Y</Name>
+<Val></Val>
+</DBL>
+</Cluster>
+</Array>
+<Cluster>
+<Name>PrevCoR</Name>
+<NumElts>2</NumElts>
+<DBL>
+<Name>X</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Y</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+</Cluster>
+</Cluster>
+<Cluster>
+<Name>DIFF_DRIVE_VOLTAGE_CONSTRAINT</Name>
+<NumElts>3</NumElts>
+<DBL>
+<Name>Max Voltage</Name>
+<Val>10.00000000000000</Val>
+</DBL>
+<Cluster>
+<Name>DIFF_DRIVE_KINEMATICS</Name>
+<NumElts>1</NumElts>
+<DBL>
+<Name>TrackWidth_Meters</Name>
+<Val>0.52999640000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>SIMPLE_MOTOR_FF</Name>
+<NumElts>3</NumElts>
+<DBL>
+<Name>Ks</Name>
+<Val>0.90000000000000</Val>
+</DBL>
+<DBL>
+<Name>Kv</Name>
+<Val>0.16929133858268</Val>
+</DBL>
+<DBL>
+<Name>Ka</Name>
+<Val>7.67716535433071E-2</Val>
+</DBL>
+</Cluster>
+</Cluster>
+<Cluster>
+<Name>MECANUM_DRIVE_KINE_CONSTRAINT</Name>
+<NumElts>2</NumElts>
+<DBL>
+<Name>Max Speed (M/S)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<Cluster>
+<Name>MECA_DRIVE_KINEMATICS</Name>
+<NumElts>7</NumElts>
+<Cluster>
+<Name>FrontLeft</Name>
+<NumElts>2</NumElts>
+<DBL>
+<Name>X</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Y</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>FrontRight</Name>
+<NumElts>2</NumElts>
+<DBL>
+<Name>X</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Y</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>RearLeft</Name>
+<NumElts>2</NumElts>
+<DBL>
+<Name>X</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Y</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>RearRight</Name>
+<NumElts>2</NumElts>
+<DBL>
+<Name>X</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Y</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<Array>
+<Name>InverseKinematics</Name>
+<Dimsize>4</Dimsize>
+<Dimsize>4</Dimsize>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>-1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>-1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Array>
+<Array>
+<Name>ForwardKinematics</Name>
+<Dimsize>4</Dimsize>
+<Dimsize>4</Dimsize>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>-1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>-1.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Real Matrix Element</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Array>
+<Cluster>
+<Name>PrevCoR</Name>
+<NumElts>2</NumElts>
+<DBL>
+<Name>X</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Y</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+</Cluster>
+</Cluster>
+<Boolean>
+<Name>MecanumDrKineConstntDefined</Name>
+<Val>0</Val>
+</Boolean>
+</Cluster>
+<Boolean>
+<Name>IsCubic</Name>
+<Val>1</Val>
+</Boolean>
+<EW>
+<Name>Units Selector</Name>
+<Choice>Inches</Choice>
+<Choice>Feet</Choice>
+<Choice>Centimeters</Choice>
+<Choice>Meters</Choice>
+<Val>0</Val>
+</EW>
+</Cluster>
+</LVData>
