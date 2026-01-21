@@ -1081,9 +1081,12 @@ This implements the math section (and some other routines) contained in FRC WPIL
 				<Item Name="DCMotor_GetCurrent.vi" Type="VI" URL="../DCMotor_GetCurrent.vi"/>
 				<Item Name="DCMotor_GetFalcon500.vi" Type="VI" URL="../DCMotor_GetFalcon500.vi"/>
 				<Item Name="DCMotor_GetFalcon500_FOC.vi" Type="VI" URL="../VI/DCMotor_GetFalcon500_FOC.vi"/>
+				<Item Name="DCMotor_GetKrakenX44.vi" Type="VI" URL="../VI/DCMotor_GetKrakenX44.vi"/>
+				<Item Name="DCMotor_GetKrakenX44_FOC.vi" Type="VI" URL="../VI/DCMotor_GetKrakenX44_FOC.vi"/>
 				<Item Name="DCMotor_GetKrakenX60.vi" Type="VI" URL="../VI/DCMotor_GetKrakenX60.vi"/>
 				<Item Name="DCMotor_GetKrakenX60_FOC.vi" Type="VI" URL="../VI/DCMotor_GetKrakenX60_FOC.vi"/>
 				<Item Name="DCMotor_GetMiniCIM.vi" Type="VI" URL="../DCMotor_GetMiniCIM.vi"/>
+				<Item Name="DCMotor_GetMinion.vi" Type="VI" URL="../VI/DCMotor_GetMinion.vi"/>
 				<Item Name="DCMotor_GetNEO.vi" Type="VI" URL="../DCMotor_GetNEO.vi"/>
 				<Item Name="DCMotor_GetNEO550.vi" Type="VI" URL="../DCMotor_GetNEO550.vi"/>
 				<Item Name="DCMotor_GetNEOVortex.vi" Type="VI" URL="../VI/DCMotor_GetNEOVortex.vi"/>
