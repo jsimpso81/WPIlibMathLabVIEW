@@ -37,13 +37,14 @@ DiffWheel.html
 DigSeqLogic.html
 Discretization.html
 DoubleSolenoid.html
+DriverStationSim.html
 DrumSequence.html
 ElevatorSim.html
 ElevFF.html
 EllipRegionConstraint.html
-Enum.html
 ExtendedKalmanFilter.html
 FieldDisp.html
+FileUtil.html
 FlyWheelSim.html
 FunctionGenerator.html
 FunctionGeneratorMatrix.html
@@ -77,6 +78,8 @@ MecaWheelPos.html
 MedianFilter.html
 MerweScSigPts.html
 NetworkUDP.html
+NT Client.html
+NT IsConnected.html
 numCmd.html
 NumIntegrate.html
 NumJacobian.html
@@ -134,9 +137,13 @@ TrapProfile.html
 TrapProfState.html
 Twist2d.html
 Twist3d.html
-TypeDef.html
 Units.html
 UnscentedKalmanFilter.html
 Util.html
 VecBuilder.html
 Vector.html
+
+
+Enum.html
+Macro.html
+TypeDef.html
