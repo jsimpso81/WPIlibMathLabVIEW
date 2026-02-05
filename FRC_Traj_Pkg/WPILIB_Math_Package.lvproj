@@ -103,7 +103,6 @@
 				<Item Name="Multi Error Cluster.lvlib" Type="Library" URL="/&lt;vilib&gt;/MultiError/TokenizeJSON/Multi Error Cluster.lvlib"/>
 				<Item Name="NetComm_ControlWord.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_ControlWord.ctl"/>
 				<Item Name="NetComm_getControlWord.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_getControlWord.vi"/>
-				<Item Name="NetComm_getMatchTime.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_getMatchTime.vi"/>
 				<Item Name="NetComm_UnloadCPPStartupProgram.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UnloadCPPStartupProgram.vi"/>
 				<Item Name="NetComm_UsageReport_report.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UsageReport_report.vi"/>
 				<Item Name="NetComm_UsageReport_ResourceType.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UsageReport_ResourceType.ctl"/>
@@ -150,7 +149,6 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="WPI_DriverStationGetModeAndStatus.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationGetModeAndStatus.vi"/>
 				<Item Name="WPI_DriverStationGetModeAndStatusInternal.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationGetModeAndStatusInternal.vi"/>
-				<Item Name="WPI_DriverStationGetRemainingMatchTime.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationGetRemainingMatchTime.vi"/>
 				<Item Name="WPI_DriverStationReport Robot Code State.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationReport Robot Code State.vi"/>
 				<Item Name="WPI_DriverStationRobotMode2.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationRobotMode2.ctl"/>
 				<Item Name="WPI_SolenoidValue.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidValue.ctl"/>
@@ -197,7 +195,7 @@
 				<Property Name="Bld_removeVIObj" Type="Int">1</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">537</Property>
+				<Property Name="Bld_version.build" Type="Int">539</Property>
 				<Property Name="Bld_version.major" Type="Int">2026</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/vi.lib</Property>
@@ -739,10 +737,10 @@
 				<Property Name="PKG_dependencies[3].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[3].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
 				<Property Name="PKG_dependencies[3].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[3].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[3].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[3].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[3].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[3].Type" Type="Str">Package</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC robotics control and trajectory library.  This is a port of the math section of WPILIB.</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">13</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
@@ -912,7 +910,7 @@
 				<Property Name="PKG_sources[4].ID" Type="Ref">/My Computer/Build Specifications/Misc_Files</Property>
 				<Property Name="PKG_sources[4].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">LabVIEW FRC robotics control and trajectory library</Property>
-				<Property Name="PKG_version" Type="Str">2026.0.0</Property>
+				<Property Name="PKG_version" Type="Str">2026.1.0</Property>
 			</Item>
 			<Item Name="wpilibmathlv20" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
@@ -976,10 +974,10 @@
 				<Property Name="PKG_dependencies[3].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[3].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
 				<Property Name="PKG_dependencies[3].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[3].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[3].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[3].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[3].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[3].Type" Type="Str">Package</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC robotics control and trajectory library.  This is a port of the math section of WPILIB.</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">13</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
@@ -1149,7 +1147,7 @@
 				<Property Name="PKG_sources[4].ID" Type="Ref">/My Computer/Build Specifications/Misc_Files</Property>
 				<Property Name="PKG_sources[4].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">LabVIEW FRC robotics control and trajectory library</Property>
-				<Property Name="PKG_version" Type="Str">2026.0.0</Property>
+				<Property Name="PKG_version" Type="Str">2026.1.0</Property>
 			</Item>
 			<Item Name="wpilibmathlv23" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
@@ -1213,10 +1211,10 @@
 				<Property Name="PKG_dependencies[3].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[3].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
 				<Property Name="PKG_dependencies[3].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[3].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[3].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[3].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[3].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[3].Type" Type="Str">Package</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC robotics control and trajectory library.  This is a port of the math section of WPILIB.</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">13</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
@@ -1386,7 +1384,7 @@
 				<Property Name="PKG_sources[4].ID" Type="Ref">/My Computer/Build Specifications/Misc_Files</Property>
 				<Property Name="PKG_sources[4].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">LabVIEW FRC robotics control and trajectory library</Property>
-				<Property Name="PKG_version" Type="Str">2026.0.0</Property>
+				<Property Name="PKG_version" Type="Str">2026.1.0</Property>
 			</Item>
 			<Item Name="wpilibmathlv25" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
@@ -1406,10 +1404,10 @@
 				<Property Name="NIPKG_VisibleForRuntimeDeployment" Type="Bool">false</Property>
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
-				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
+				<Property Name="PKG_autoSelectDeps" Type="Bool">false</Property>
 				<Property Name="PKG_buildNumber" Type="Int">367</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">wpilibmathlv25</Property>
-				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
@@ -1450,10 +1448,10 @@
 				<Property Name="PKG_dependencies[3].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[3].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
 				<Property Name="PKG_dependencies[3].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[3].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[3].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[3].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[3].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[3].Type" Type="Str">Package</Property>
 				<Property Name="PKG_description" Type="Str">LabVIEW FRC robotics control and trajectory library.  This is a port of the math section of WPILIB.</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">13</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{023C5A00-8446-484A-9EE4-9F807D413DEE}</Property>
@@ -1514,7 +1512,6 @@
 				<Property Name="PKG_feedName" Type="Str"></Property>
 				<Property Name="PKG_homepage" Type="Str">https://github.com/jsimpso81/WPIlibMathLabVIEW</Property>
 				<Property Name="PKG_hostname" Type="Str"></Property>
-				<Property Name="PKG_lvrteTracking" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
 				<Property Name="PKG_maintainer" Type="Str">J. A. Simpson &lt;&gt;</Property>
 				<Property Name="PKG_output" Type="Path">../buildsALL</Property>
 				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
@@ -1623,7 +1620,7 @@
 				<Property Name="PKG_sources[4].ID" Type="Ref">/My Computer/Build Specifications/Misc_Files</Property>
 				<Property Name="PKG_sources[4].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">LabVIEW FRC robotics control and trajectory library</Property>
-				<Property Name="PKG_version" Type="Str">2026.0.0</Property>
+				<Property Name="PKG_version" Type="Str">2026.1.0</Property>
 			</Item>
 		</Item>
 	</Item>
